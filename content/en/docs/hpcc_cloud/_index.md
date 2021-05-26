@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "HPCC Cloud/External"
+linkTitle: "HPCC Cloud/External"
 weight: 2
 description: >
   What does your user need to know to try your project?
