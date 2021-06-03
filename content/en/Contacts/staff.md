@@ -1,5 +1,5 @@
 ---
-linkTitle: Staff&Members
+linkTitle: Facility Staff & Contacts
 title: Staff Members
 menu:
   main:

@@ -1,6 +1,6 @@
 ---
 title: Access and rate structure
-linkTitle: Access&Rates
+linkTitle: Access & Rates
 menu:
   main:
     weight: 10
