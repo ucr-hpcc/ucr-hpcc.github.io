@@ -3,9 +3,10 @@ title: Access and rate structure
 linkTitle: Access & Rates
 menu:
   main:
-    weight: 10
+    weight: 2
+description: >
+Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs.html). 
 ---
-> Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs.html). 
 
 ## User account requests
 
