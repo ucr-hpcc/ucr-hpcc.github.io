@@ -42,31 +42,31 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 1. Begin by clicking on the tools drop down on the upper menu bar
    
-   ![mobasshkey1](images/ssh1moba.png)
+   ![mobasshkey1](/img/ssh1moba.png)
 
 2. Find and click on the MobaKeyGen (SSH key generator) option
    
-   ![mobasshkey2](images/ssh2moba.png)
+   ![mobasshkey2](/img/ssh2moba.png)
 
 3. A window should appear to create a new SSH key. Click on generate to create a new SSH key pair. Follow the on menu instructions.
    
-   ![revisedkeygen](images/revisedkeygen.png)
+   ![revisedkeygen](/img/revisedkeygen.png)
 
 4. Once your key has been created, enter a password in the key passphrase field to password protect your key. Click on `conversions` in the tool bar and click on `Export OpenSSH Key`. Save this key as `id_rsa` and put the file in an easy to access location. 
 Click on `Save private key` to save the private key with an extension of `.ppk` to use with MobaXterm or FileZilla. Save the key as `mobaxterm_privkey` and put the file in an easy to access location.
    
-   ![revisedkeygen2](images/revisedkeygen2.png)
+   ![revisedkeygen2](/img/revisedkeygen2.png)
 
 5. Highlight EVERYTHING in the box labeled "Public key for pasting into OpenSSH authorized_keys file" then right-click on it and choose Copy. Open `Notepad` and paste the copied text. Save the file as `id_rsa.pub` and put the file in an easy to access location.
    
-   ![revisedkeygen3](images/revisedkeygen3.png)
+   ![revisedkeygen3](/img/revisedkeygen3.png)
 
 
 ### Keys Location
 
 SSH keys should be saved under the location `C:\Users\username\.ssh`. 
 
-   ![sshkeyloc](images/sshkeyloc.png)
+   ![sshkeyloc](/img/sshkeyloc.png)
 
 
 
@@ -85,31 +85,31 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
    * Enter your password in the `Password` field.
    * Enter `22` in the `Port` field.
 
-   ![filezilla1](images/filezilla1.png)
+   ![filezilla1](/img/filezilla1.png)
 
 3. Click on `Quickconnect`
 
-   ![filezilla2](images/filezilla2.png)
+   ![filezilla2](/img/filezilla2.png)
 
 4. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
 
-   ![filezilla3](images/filezilla3.png)
+   ![filezilla3](/img/filezilla3.png)
 
 5. You will need to create a `.ssh` directory to hold your SSH keys. On the right hand side, right click and click on the `Create directory option` under your home folder location.
-   ![createsshdir](images/createsshdir.png)
+   ![createsshdir](/img/createsshdir.png)
 
 6. A window will appear to name the new directory. Name should be the following format: `/rhome/username/.ssh`. After naming the new directory click on `OK`.
-   ![createsshdir](images/createsshdir2.png)
+   ![createsshdir](/img/createsshdir2.png)
 
 7. Right click on the new `.ssh` directory that has been created. Find and click on `File permissions`.
-   ![createsshdir](images/createsshdir3.png)
+   ![createsshdir](/img/createsshdir3.png)
 
 8. A window with the directory permissions will appear. The `.ssh` directory needs exact permissions in order for it to function properly. Follow the image below to apply the permissions.
-   ![createsshdir](images/createsshdir4.png)
+   ![createsshdir](/img/createsshdir4.png)
 
 9. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
 
-   ![filezilla4](images/filezilla4.png)
+   ![filezilla4](/img/filezilla4.png)
 
 
 #### Private SSH Key
@@ -118,11 +118,11 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
 1. Open Filezilla `Site Manager` button in the top bar of icons.
 
-   ![filezilla5](images/filezilla5.png)
+   ![filezilla5](/img/filezilla5.png)
 
 2. Click on `New Site`, rename it (optional) and press enter.
 
-   ![filezilla6](images/filezilla6.png)
+   ![filezilla6](/img/filezilla6.png)
 
 3. Make sure the following fields are correctly filled before adding your `SSH key` file:
 
@@ -134,14 +134,14 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    After these fields are finalized, click the `Browse..` button.
 
-   ![filezilla7](images/filezilla7.png)
+   ![filezilla7](/img/filezilla7.png)
 
 4. Navigate to the folder you saved your private key file in and open the private key file `mobaxterm_privkey.ppk`. You should see the added keyfile in the `Key file:` box, then click `Connect`.
 
-   ![filezilla9](images/filezilla9.png)
+   ![filezilla9](/img/filezilla9.png)
 
 5. Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button. Remember to select the `secure.hpcc.ucr.edu` address.
 
-   ![filezilla11](images/filezilla11.png)
+   ![filezilla11](/img/filezilla11.png)
 
 6. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
