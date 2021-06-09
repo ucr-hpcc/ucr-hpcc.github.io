@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Queue Policies
+title: Queue Policies
 permalink: manuals_linux-cluster_queue.html
 ---
 

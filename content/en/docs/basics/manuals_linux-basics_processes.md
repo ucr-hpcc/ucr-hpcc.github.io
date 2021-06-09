@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Process Management
+title: Process Management
 permalink: manuals_linux-basics_processes.html
 ---
 

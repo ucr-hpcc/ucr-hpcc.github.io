@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Streams
+title: Streams
 permalink: manuals_linux-basics_streams.html
 ---
 

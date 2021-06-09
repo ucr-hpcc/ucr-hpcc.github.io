@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HPCC AWS Cluster - Cost Control and Billing
+title: Cost Control and Billing
 permalink: manuals_hpcc-aws-cluster_billing.html
 ---
 
@@ -60,18 +60,18 @@ This will alert you if you are projected to spend more than $50 in a givien mont
 ### Billing Dashboard
 * Navigate to the <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">AWS Billing & Cost Management Dashboard</a> 
 * All aspects of billing are controlled from here
-<img style="box-shadow:5px 5px 5px 5px grey" src="images/cloud-aws-billing-dashboard.png" title="Dashboard" alt="Dashboard">
+<img style="box-shadow:5px 5px 5px 5px grey" src="/img/cloud-aws-billing-dashboard.png" title="Dashboard" alt="Dashboard">
 * Click Budget from the left
 
 ### Budgets
 * This is the budget control page
-<img style="box-shadow:5px 5px 5px 5px grey" src="images/cloud-aws-billing-budget1.png" title="Budget" alt="Budget">
+<img style="box-shadow:5px 5px 5px 5px grey" src="/img/cloud-aws-billing-budget1.png" title="Budget" alt="Budget">
 * Click Create Budget
 
 ### Define budget and alerts
 * This is the budget definition page
-<img style="box-shadow:5px 5px 5px 5px grey" src="images/cloud-aws-billing-budget2.png" title="Budget Config 1" alt="Budget Config 1">
-<img style="box-shadow:5px 5px 5px 5px grey" src="images/cloud-aws-billing-budget3.png" title="Budget Config 2" alt="Budget Config 2">
+<img style="box-shadow:5px 5px 5px 5px grey" src="/img/cloud-aws-billing-budget2.png" title="Budget Config 1" alt="Budget Config 1">
+<img style="box-shadow:5px 5px 5px 5px grey" src="/img/cloud-aws-billing-budget3.png" title="Budget Config 2" alt="Budget Config 2">
 * Fill out the Name field (what ever you would like to call it)
 * Fill out the Period (Monthly is preffered)
 * Fill out the Budgeted Amount (Limit we are interested in, in this example its $50)
@@ -83,7 +83,7 @@ This will alert you if you are projected to spend more than $50 in a givien mont
 
 ### Budget created
 * We are back to the budget page
-<img style="box-shadow:5px 5px 5px 5px grey" src="images/cloud-aws-billing-budget-done.png" title="Budget Done" alt="Budget Done">
+<img style="box-shadow:5px 5px 5px 5px grey" src="/img/cloud-aws-billing-budget-done.png" title="Budget Done" alt="Budget Done">
 * Notice the new budget defined
 * You will now be notified it your speding is projected to exceed your budget
 * Complete 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Getting Started
+title: Getting Started
 permalink: manuals_linux-cluster_start.html
 ---
 

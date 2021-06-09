@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HPCC AWS Cluster - Introduction
+title: Introduction
 permalink: manuals_hpcc-aws-cluster_intro.html
 ---
 

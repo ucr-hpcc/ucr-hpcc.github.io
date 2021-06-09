@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Text Editors
+title: Text Editors
 permalink: manuals_linux-basics_text.html
 ---
 

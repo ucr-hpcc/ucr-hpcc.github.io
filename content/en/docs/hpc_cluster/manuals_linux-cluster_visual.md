@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Visualization
+title: Visualization
 permalink: manuals_linux-cluster_visual.html
 ---
 

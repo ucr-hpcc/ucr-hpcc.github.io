@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Variables
+title: Variables
 permalink: manuals_linux-basics_variables.html
 ---
 

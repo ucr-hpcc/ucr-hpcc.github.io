@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Finding Things
+title: Finding Things
 permalink: manuals_linux-basics_finding-things.html
 ---
 

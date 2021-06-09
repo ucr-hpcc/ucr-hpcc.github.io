@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Piping
+title: Piping
 permalink: manuals_linux-basics_pipes.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Shell Bootcamp
+title: Shell Bootcamp
 permalink: manuals_linux-basics_shell.html
 ---
 

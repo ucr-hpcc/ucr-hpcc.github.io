@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HPCC AWS Cluster - Account Egress Waiver
+title: Account Egress Waiver
 permalink: manuals_hpcc-aws-cluster_egress.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Basics - Command Line Basics
+title: Command Line Basics
 permalink: manuals_linux-basics_cmdline-basics.html
 ---
 

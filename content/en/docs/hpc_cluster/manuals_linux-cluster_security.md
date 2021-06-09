@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Security
+title: Security
 permalink: manuals_linux-cluster_security.html
 ---
 

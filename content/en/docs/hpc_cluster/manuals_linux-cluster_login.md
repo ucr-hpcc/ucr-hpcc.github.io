@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Login
+title: Login
 permalink: manuals_linux-cluster_login.html
 ---
 

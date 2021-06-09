@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux Cluster - Introduction
+title: Introduction
 permalink: manuals_linux-cluster_intro.html
 ---
 
