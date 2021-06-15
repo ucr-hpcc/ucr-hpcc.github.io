@@ -1,17 +1,54 @@
-#Copyright 2018 Google LLC
-#
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
-#
-#    https://www.apache.org/licenses/LICENSE-2.0
-#
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
-#
+#!/bin/bash -l
+
+###########################################
+# Did you clone this repo with recursive? #
+###########################################
+#git clone --recurse-submodules --depth 1 https://github.com/my/example.git
+
+#################################################################
+# Remember to modify your config to reflect the proper base URL #
+#################################################################
+
+####################################
+# Downlad and install Hugo and npm #
+####################################
+#mkdir -p ~/bigdata/src/hugo
+#cd ~/bigdata/src/hugo
+#wget https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Linux-64bit.tar.gz
+#tar -xf hugo_extended_0.83.1_Linux-64bit.tar.gz
+
+#mkdir -p ~/bigdata/src/npm
+#cd ~/bigdata/src/npm
+#wget https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz
+#tar -xf node-v16.3.0-linux-x64.tar.xz
+
+# Load hugo
+#module load hugo
+export PATH=~/bigdata/src/hugo:$PATH
+module load GCC/8.3.0
+
+# Load newer git
+module load git
+
+# Load npm
+#module load npm
+export PATH=~/bigdata/src/npm/node-v16.3.0-linux-x64/bin:$PATH
+
+# Only do this once
+#npm install -D --save autoprefixer
+#npm install -D --save postcss-cli
+
+# Remove old build
 rm -rf public/
-HUGO_ENV="production" hugo --gc || exit 1
-s3deploy -source=public/ -region=eu-west-1 -bucket=bep.is -distribution-id=E8OKNT7W9ZYZ2 -path temp/td
+
+# Try setting permissions via umask
+umask 022
+
+# Generate html public dir
+HUGO_ENV="production" hugo --config config.toml --gc || exit 1
+#hugo server --themesDir themes/docsy
+
+# Update file permissions
+#find . -type f -exec chmod a+r {} \;
+#find . -type d -exec chmod a+rx {} \;
+
