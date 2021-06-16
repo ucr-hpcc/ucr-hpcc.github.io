@@ -45,10 +45,11 @@ rm -rf public/
 umask 022
 
 # Generate html public dir
-HUGO_ENV="production" hugo --config config.toml --gc || exit 1
+HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --gc || exit 1
+rm -rf /tmp/hugo_cache_${USER}
 #hugo server --themesDir themes/docsy
 
 # Update file permissions
-#find . -type f -exec chmod a+r {} \;
-#find . -type d -exec chmod a+rx {} \;
+#find public/ -type f -exec chmod a+r {} \;
+#find public/ -type d -exec chmod a+rx {} \;
 
