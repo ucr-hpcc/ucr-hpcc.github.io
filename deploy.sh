@@ -47,13 +47,11 @@ umask 022
 # Generate html public dir
 HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --baseURL /~${USER}/hpcc_new_site --gc || exit 1
 rm -rf /tmp/hugo_cache_${USER}
+
+# You can run a local server
 #hugo server --themesDir themes/docsy
 
 # Ensure that your symlink is in place
+# Also be sure that all parent directories are at least world execute
 #ln -s ${PWD}/public ~/.html/hpcc_new_site
-#Also be sure that all parent directories are at least world execute
-
-# Update file permissions
-#find public/ -type f -exec chmod a+r {} \;
-#find public/ -type d -exec chmod a+rx {} \;
 
