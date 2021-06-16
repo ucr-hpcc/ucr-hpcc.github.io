@@ -27,9 +27,10 @@ jobs:
           node-version: '14'
 
       - name: Build
-        run: npm install -D --save autoprefixer
-        run: npm install -D --save postcss-cli
-        run: hugo --minify
+        run: |
+            npm install -D --save autoprefixer
+            npm install -D --save postcss-cli
+            hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
