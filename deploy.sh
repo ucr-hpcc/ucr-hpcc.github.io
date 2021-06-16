@@ -39,15 +39,19 @@ export PATH=~/bigdata/src/npm/node-v16.3.0-linux-x64/bin:$PATH
 #npm install -D --save postcss-cli
 
 # Remove old build
-rm -rf public/
+rm -rf ./public
 
 # Try setting permissions via umask
 umask 022
 
 # Generate html public dir
-HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --gc || exit 1
+HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --baseURL /~${USER}/hpcc_new_site --gc || exit 1
 rm -rf /tmp/hugo_cache_${USER}
 #hugo server --themesDir themes/docsy
+
+# Ensure that your symlink is in place
+#ln -s ${PWD}/public ~/.html/hpcc_new_site
+#Also be sure that all parent directories are at least world execute
 
 # Update file permissions
 #find public/ -type f -exec chmod a+r {} \;
