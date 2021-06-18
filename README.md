@@ -1,8 +1,8 @@
 # Website of HPC Center
 
-This project is currently in a development stage.
+This project under active development.
 The website of this repository is available [here](http://dev.hpcc.ucr.edu).
-Which is automatically build using github actions, when the master branch receives a push.
+Which is automatically built using github actions, when the master branch receives a push.
 
 ## Testing
 
