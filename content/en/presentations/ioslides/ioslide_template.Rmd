@@ -1,0 +1,246 @@
+---
+title: "Template for ioslides"
+author: Thomas Girke
+date: November 21, 2020
+output: 
+  ioslides_presentation:
+    keep_md: yes
+    logo: ./images/ucr_logo.png
+    widescreen: yes
+    df_print: paged
+    smaller: true
+subtitle: "How create ioslides with Rmarkdown" 
+bibliography: bibtex.bib
+---
+
+<!---
+- ioslides manual: 
+   https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
+
+- Compile from command-line
+Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
+-->
+
+<!---
+  Note: following css chunks are required for scrolling support beyond slide boundaries
+-->
+
+<style>
+slides > slide {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+</style>
+
+```{css, echo=FALSE}
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+```
+
+```{css, echo=FALSE}
+.scroll-100 {
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: inherit;
+}
+```
+
+
+# Outline
+
+- <div class="white">__Basics__</div>
+- Scalable Complexity via Scrolling
+- Images and Graphics
+- References
+
+## Introduction 
+
+- The tutorial for ioslides is [here](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html) 
+- To render the slides to html and also extract the code chunks to a separate file, run from the command-line:
+
+```{sh eval=FALSE}
+Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
+```
+
+- Shortcuts for different display modes
+    - 'f': enable fullscreen mode
+    - 'w': toggle widescreen mode
+    - 'o': enable overview mode
+    - 'h': enable code highlight mode
+    - 'p': show presenter notes
+
+## Math Expressions
+
+$$f(k) = {n \choose k} p^{k} (1-p)^{n-k} \tag{1}$$
+$$\sigma_{M} = \frac{\sigma}{\sqrt(N)} \tag{2}$$
+
+## Citations and Bibliographies
+
+- Citations can be included autmatically by including them in BibTex format in file `bibtex.bib` and then citing the them in the text with this syntax 
+  __[\@refid1; \@refid2]__
+- For example, the citation syntax __[\@Huber2015-ag; \@Howard2013-fq]__ renders to: [@Huber2015-ag; @Howard2013-fq], and the corresponding references will then automatically 
+  be included at the end on a slide entitled 'References'.
+- More citations [@Kim2013-vg; @Langmead2012-bs; @Li2009-oc; @Li2013-oy; @Liao2013-bn; @Lawrence2013-kt]
+
+# Outline
+
+- Basics
+- <div class="white">__Scalable Complexity via Scrolling __</div>
+- Images and Graphics
+- References
+
+## Scrolling within Code Blocks, Tables and Beyond Slide Boundaries
+
+- Scrolling of code chunks supported by css code after preamble.
+
+```{r eval=FALSE}
+z <- "dajfdfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+z
+z
+z
+z
+z
+z
+z
+z
+z
+```
+
+- Note: the print behavior of `data.frames` is autmatically paged when including `df_print: paged` in preamble. 
+  In addition, one can set how many rows are shown on each page by assigning the desired number to the `rows.print` 
+  argument in the header of the corresponding code chunk (_e.g._ below it is set to 75 rows).
+
+```{r eval=TRUE, rows.print=75}
+x <- cbind(iris, iris[,5:1])
+x
+```
+
+## Job Submission with `sbatch`
+
+Print information about queues/partitions available on a cluster.
+
+```{bash eval=FALSE}
+sinfo 
+```
+
+Compute jobs are submitted with `sbatch` via a submission script (here `script_name.sh`).
+
+```{bash eval=FALSE}
+sbatch script_name.sh
+```
+
+Sample submission script
+
+```{bash eval=FALSE}
+#!/bin/bash -l
+
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=1G
+#SBATCH --time=1-00:15:00 # 1 day and 15 minutes
+#SBATCH --mail-user=useremail@address.com
+#SBATCH --mail-type=ALL
+#SBATCH --job-name="some_test"
+#SBATCH -p batch # Choose queue/parition from: intel, batch, highmem, gpu, short
+
+myscript.sh
+```
+
+Interactive session with specific resource requests
+
+```{bash eval=FALSE}
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+```
+
+## DataTables support
+
+```{r eval=TRUE}
+library(DT)
+datatable(iris)
+```
+
+## Font Size 
+
+- Note: the default in ioslides uses larger font sizes where `'smaller: false'` is used. You usually have it set to `'smaller: true'`
+- With default turned one can also set smaller font sizes on a per slide basis by specifying `'{.smaller}'` at the end of a slide title
+- To have more fine control over font size use embedded HTML code. Here are some examples:
+   + <span style="font-size: 28px;">
+        HTML font size 28px
+     </span>
+   + <span style="font-size: 18px;">
+        HTML font size 18px
+     </span>
+   + <span style="font-size: 14px;">
+        HTML font size 14px
+     </span>
+   + <span style="font-size: 12px;">
+        HTML font size 12px
+     </span>
+
+## Center Text {.flexbox .vcenter}
+
+- To vertically center content, use the `{.flexbox .vcenter}` option after the title of a slide
+- <div class="centered">HTML tags can also be used. </div>
+
+## Two Column Layout
+
+This can be useful to have a figure on the right and bullets describing it on the left.
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![](./images/nia_logo.png)
+</div>
+
+
+# Outline
+
+- Basics
+- Scalable Complexity via Scrolling 
+- <div class="white">__Images and Graphics __</div>
+- References
+
+## Images {.flexbox .vcenter .smaller}
+
+<img src="./images/DSC02629.jpg" alt="Drawing" style="width: 800px;"/>
+</div><br></br>
+
+- Using HTML code to insert image is most flexible
+
+## Background Images {data-background=./images/DSC02629.jpg data-background-size=cover}
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Real-time Graphics Code Evaluation {.flexbox .vcenter .smaller}
+
+```{r plyr_chaining1, eval=TRUE, message=FALSE, warning=FALSE}
+library(dplyr); library(ggplot2); library(reshape2)
+iris %>% 
+    group_by(Species) %>% 
+    summarize_all(mean) %>% 
+    reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%
+    ggplot(aes(Samples, Values, fill = Species)) + 
+    geom_bar(position="dodge", stat="identity")
+```
+
+# Outline
+
+- Basics
+- Scalable Complexity via Scrolling 
+- Images and Graphics
+- <div class="white">__References __</div>
+
+
+## References {.smaller}
+

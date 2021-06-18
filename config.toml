@@ -47,14 +47,14 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
+# id = "UA-00000000-0"
 
 # Language configuration
 
 [languages]
 [languages.en]
 title = "HPCC Home"
-description = "A Docsy example site"
+description = "Home of UCR's HPCC"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -84,7 +84,7 @@ privacy_policy = "https://policies.google.com/privacy"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+# version_menu = "Releases"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
@@ -113,13 +113,13 @@ github_project_repo = "https://github.com/google/docsy"
 # github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+# gcs_engine_id = "d72aa9b2712488cc3"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+# algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
@@ -156,34 +156,34 @@ enable = false
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-	name = "User mailing list"
-	url = "https://example.org/mail"
+	name = "Immediate Email Support"
+	url = "support@hpcc.ucr.edu"
 	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
+        desc = "Please email your questions to us."
 [[params.links.user]]
 	name ="Twitter"
-	url = "https://example.org/twitter"
+	url = "https://twitter.com/UCR_HPCC"
 	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
+        desc = "Follow us on Twitter for the latest updates."
 [[params.links.user]]
 	name = "Stack Overflow"
-	url = "https://example.org/stack"
+	url = "https://ucr-hpcc.slack.com/"
 	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
+        desc = "For immediate help, users can also post questions here."
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/google/docsy"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+#	name = "GitHub"
+#	url = "https://github.com/google/docsy"
+#	icon = "fab fa-github"
+#        desc = "Development takes place here!"
 [[params.links.developer]]
-	name = "Slack"
-	url = "https://example.org/slack"
-	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
+#	name = "Slack"
+#	url = "https://example.org/slack"
+#	icon = "fab fa-slack"
+#        desc = "Chat with other project developers"
 [[params.links.developer]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
+#	name = "Developer mailing list"
+#	url = "https://example.org/mail"
+#	icon = "fa fa-envelope"
+#        desc = "Discuss development issues around the project"
 
