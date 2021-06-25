@@ -1,0 +1,164 @@
+---
+title: "HPCC Infrastructure"
+author: Jordan Hayes and Thomas Girke
+date: December 18, 2020
+output: 
+  ioslides_presentation:
+    keep_md: yes
+    logo: ./images/ucr_logo.png
+    widescreen: yes
+    df_print: paged
+    smaller: false
+subtitle: "Short Overview" 
+bibliography: bibtex.bib
+---
+
+<!---
+- ioslides manual: 
+   https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
+
+- Compile from command-line
+Rscript -e "rmarkdown::render('hpcc_infrastructure.Rmd'); knitr::knit('hpcc_infrastructure.Rmd', tangle=TRUE)"
+-->
+
+<!---
+  Note: following css chunks are required for scrolling support beyond slide boundaries
+-->
+
+<style>
+slides > slide {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+</style>
+
+```{css, echo=FALSE}
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+```
+
+```{css, echo=FALSE}
+.scroll-100 {
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: inherit;
+}
+```
+
+## Mission of HPCC {.vcenter}
+
+### Mission
+
+- Campus-wide high-performance computing (HPC) infrastructure
+- Partners with other IT/HPC units at UCR and UC system
+- Training in HPC, big data processing and cloud computing
+
+### Online Portal
+
+- [HPCC Website](http://hpcc.ucr.edu/)
+
+## Hardware Infrastructure
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTjw-xM8B_-UxlwgYWzaSt07A6S8y7GSPq75sYB0AMQjcOVTdW7pf4SiagrZQ6UMxLxzt1mzbznn3-W/pub?w=955&amp;h=505">
+
+## Software {.smaller}
+
+- Large stack of __thousands__ of free and/or open-source __software tools__ and packages managed via __module system__
+- Facility frequently installs new software upon user request
+- Users can __install software themselves__ manually or via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
+- Containerization using Singularity
+- Web-based environments: Jupyter Notebooks and RStudio Server
+- Commercial tools only where necessary:
+     <span style="font-size: 14px;">
+     - GPFS for parallel storage system
+     - Gaussian
+     - MATLAB (to use ask to be added to license!)
+     - Intel Parallel Suite
+     - SAS and Stata
+     </span>
+- Additional commercial software can be installed if funding for license is available
+
+## Usage Stats
+
+<div class="columns-2">
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vRmW_GQ7paFTIAjwlg72AnItS6ULp7RLqL9-r7wH7jZmVpxhi4I6pRRytOF49-OY2FALZrDgsPzgDjd/pub?w=293&amp;h=478">
+  
+  - ~140 registered labs/groups:
+     - ~28 departments 
+     - all colleges and schools: BCOE, CNAS, CHASS, SOM, SOB, SOPP
+  - over 600 users
+</div>
+
+## Contacts and Location 
+
+- Contacts and Communication
+   - Website: [hpcc.ucr.edu](https://hpcc.ucr.edu/)
+   - Access: email account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu)
+   - Communication beyond email: [Twitter](https://twitter.com/UCR_HPCC), [Slack](https://ucr-hpcc.slack.com/) & [GitHub](https://github.com/ucr-hpcc)
+- Location
+   - Offices (currently remote): 1208/1207 Genomics Building
+   - Server room
+       - Genomics Building, Rm 1120A
+   - Server room for data back systems
+       - CoLo Server Room in SOMED Building  
+
+## Organization and Management of HPCC
+
+- Adminstered under UCR-wide Office of Research and Economic Development (RED) 
+- Staff
+  <span style="font-size: 20px;">
+    - Faculty director (Thomas Girke)
+    - 2 HPC systems administrators (Jordan Hayes & new member)
+    - Student HPC/Linux admin assistants (Melody Asghari, Abraham Park, _et al._)
+  </span>
+- Faculty advisory board
+  <span style="font-size: 20px;">
+    - Faculty and staff members with hands-on HPC experience ([current member list](https://hpcc.ucr.edu/members.html))
+  </span>
+- Modular funding model
+  <span style="font-size: 20px;">
+    - Recharging and ownership options 
+    - Grant funding
+        - Equipment grants (_e.g._ NSF-MRI and NIH-S10) 
+        - Research grants (many agencies and programs)
+    - UCR contribution 
+  </span>
+
+## Recharging and Quotas
+
+- Subscription fee
+   - Subscription based access model: $1000 per lab/yr. Includes any number of user accounts per lab, each with 20GB storage
+   - Big data storage:
+      - GB plan: $25/yr for 100GB (usable and backed up space)
+      - TB plan: $1000/yr for 10TB (usable and backed-up space)
+   - Ownership models: see next slide
+- Quota
+   - Maximum CPU core usage limited to 512 CPU cores per lab and 256 CPU cores per user per partition
+   - No charge for CPU hours! RAM quotas are queue specific.
+- Details about recharging rates: see [here](http://hpcc.ucr.edu/docs.html)
+
+## Ownership Options
+
+Ownership models for computer nodes and data storage. Attractive to labs that need 24/7 access to hundreds of CPU cores and more than 30TB storage.
+
+### Storage
+- Purchase hard drives @ current market price that will be added to GPFS storage
+- Annual maintenance fee ¼ of rental price
+- Often more cost effective for storage needs ≥30TB 
+
+### Computer nodes
+- Purchase nodes at current market price with compatible network cards
+- Administered under a priority queueing system via private queue for owners; also increases overall CPU quota by the number of owned CPU cores.
+
+## Questions {.flexbox .vcenter }
+
+### Email: [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu)
+### Website: [hpcc.ucr.edu](https://hpcc.ucr.edu/)
+
+
