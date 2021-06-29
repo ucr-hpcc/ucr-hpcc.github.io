@@ -6,9 +6,10 @@ menu:
   main:
     weight: 2
 description: >
-Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs.html). 
 ---
-
+{{% pageinfo %}}
+Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs.html). 
+{{% /pageinfo %}}
 ## User account requests
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include email address and full name of both user and PI.

@@ -1,7 +1,6 @@
 ---
-layout: page
 title: Acknowledgement of Facility
-permalink: acknowledgement.md
+
 type: docs
 ---
 
