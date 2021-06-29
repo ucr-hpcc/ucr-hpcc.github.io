@@ -1,6 +1,7 @@
 ---
 linkTitle: Facility Staff & Contacts
 title: Staff Members
+type: docs
 menu:
   main:
     weight: 10

@@ -1,6 +1,7 @@
 ---
 title: Access and rate structure
 linkTitle: Access & Rates
+type: docs
 menu:
   main:
     weight: 2
