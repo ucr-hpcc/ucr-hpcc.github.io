@@ -1,6 +1,7 @@
 ---
 linkTitle: Location
 title: Location
+type: docs
 menu:
   main:
     weight: 10
