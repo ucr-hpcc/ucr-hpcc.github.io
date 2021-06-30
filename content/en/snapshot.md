@@ -1,6 +1,6 @@
 +++
-title: "Activity Report"
-linkTitle: "Snapshot"
+title = "Activity Report"
+linkTitle = "Snapshot"
 
 +++
 
