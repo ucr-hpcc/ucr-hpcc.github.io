@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-type: docs
+type: blog
 menu:
   main:
     weight: 1
