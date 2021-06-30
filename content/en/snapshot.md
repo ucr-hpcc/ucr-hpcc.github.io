@@ -1,8 +1,7 @@
----
++++
 title: "Activity Report"
 linkTitle: "Snapshot"
-description: >
----
++++
 
 
 ## Summary report
