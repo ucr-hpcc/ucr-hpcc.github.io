@@ -191,26 +191,26 @@ enable = true
 # Top-level navigation (horizontal)
 ##
 [[menu.main]]
-  name = "Related Websites"
+  name = "Related"
   url = "/related/"
-  weight = 6
+  weight = 10
   [[menu.main]]
     name = "RED-UCR"
     url = "https://research.ucr.edu"
-    parent = "Links"
+    parent = "Related"
     weight = 1
   [[menu.main]]
     name = "Data Science Center"
     url = "http://datascience.ucr.edu"
-    parent = "Links"
+    parent = "Related"
     weight = 2
   [[menu.main]]
     name = "FIELDS Program"
     url = "http://bigdata.ucr.edu"
-    parent = "Links"
-    weight = 4
+    parent = "Related"
+    weight = 3
   [[menu.main]]
     name = "Institute of Integrative Genome Biology"
     url = "http://genomics.ucr.edu"
-    parent = "Links"
-    weight = 5
+    parent = "Related"
+    weight = 4
