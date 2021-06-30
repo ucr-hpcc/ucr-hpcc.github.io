@@ -1,9 +1,7 @@
 ---
-title: "Print Support"
-linkTitle: "Print Support"
-weight:  7
+title: "Activity Report"
+linkTitle: "Snapshot"
 description: >
-     Making it easier to print entire sections of documentation.
 ---
 
 
