@@ -1,12 +1,9 @@
 ---
-layout: page
-title: "Activity Report"
-linkTitle = "Snapshot"
-type: docs
-menu:
-  main:
-    weight: 1
+title: "Print Support"
+linkTitle: "Print Support"
+weight:  7
 description: >
+     Making it easier to print entire sections of documentation.
 ---
 
 
