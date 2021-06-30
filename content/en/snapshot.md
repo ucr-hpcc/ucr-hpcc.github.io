@@ -1,8 +1,8 @@
-+++
+---
 title = "Activity Report"
 linkTitle = "Snapshot"
 
-+++
+---
 
 
 ## Summary report
