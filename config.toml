@@ -1,4 +1,5 @@
-baseURL = "/"
+# To run locally with 'hugo server' enable baseURL
+#baseURL = "/"
 title = "HPCC Home"
 
 enableRobotsTXT = true
@@ -187,3 +188,34 @@ enable = true
 #	icon = "fa fa-envelope"
 #        desc = "Discuss development issues around the project"
 
+# Top-level navigation (horizontal)
+##
+[[menu.main]]
+  name = "Related Websites"
+  url = "/related/"
+  weight = 6
+  [[menu.main]]
+    name = "RED-UCR"
+    url = "https://research.ucr.edu"
+    parent = "Links"
+    weight = 1
+  [[menu.main]]
+    name = "Data Science Center"
+    url = "http://datascience.ucr.edu"
+    parent = "Links"
+    weight = 2
+  [[menu.main]]
+    name = "ITS Co-location Service"
+    url = "http://iresearch.ucr.edu/cluster.html"
+    parent = "Links"
+    weight = 3
+  [[menu.main]]
+    name = "FIELDS Program"
+    url = "http://bigdata.ucr.edu"
+    parent = "Links"
+    weight = 4
+  [[menu.main]]
+    name = "Institute of Integrative Genome Biology"
+    url = "http://genomics.ucr.edu"
+    parent = "Links"
+    weight = 5
