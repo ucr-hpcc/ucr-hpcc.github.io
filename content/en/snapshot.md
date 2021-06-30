@@ -1,10 +1,9 @@
 ---
 title: Activity Report
 linkTitle: Snapshot
-menu:
-  main:
-    weight: 10
-layout: docs
+type: docs
+description: >
+weight: 1
 ---
 
 
