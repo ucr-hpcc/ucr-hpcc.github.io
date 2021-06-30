@@ -1,6 +1,6 @@
 ---
 title: "Related Websites"
-linkTitle: "Related Websites"
+linkTitle: "Related"
 type: docs
 ---
 
