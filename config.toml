@@ -191,6 +191,7 @@ enable = true
 # Top-level navigation (horizontal)
 ##
 [[menu.main]]
+  identifier = "Related"
   name = "Related"
   url = "/related/"
   weight = 10
