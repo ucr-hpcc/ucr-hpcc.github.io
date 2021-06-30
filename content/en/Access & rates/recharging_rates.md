@@ -2,10 +2,6 @@
 title: Rates
 linkTitle: Rates
 type: docs
-menu:
-  main:
-    weight: 2
-description: >
 ---
 
 ## Facility description
