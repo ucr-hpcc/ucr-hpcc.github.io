@@ -1,6 +1,7 @@
 +++
 title: "Activity Report"
 linkTitle: "Snapshot"
+
 +++
 
 
