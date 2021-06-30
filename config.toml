@@ -205,11 +205,6 @@ enable = true
     parent = "Links"
     weight = 2
   [[menu.main]]
-    name = "ITS Co-location Service"
-    url = "http://iresearch.ucr.edu/cluster.html"
-    parent = "Links"
-    weight = 3
-  [[menu.main]]
     name = "FIELDS Program"
     url = "http://bigdata.ucr.edu"
     parent = "Links"
