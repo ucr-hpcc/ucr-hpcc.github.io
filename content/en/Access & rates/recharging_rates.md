@@ -1,9 +1,12 @@
 ---
-layout: page
-title: Documents
-permalink: docs.html
+title: Rates
+linkTitle: Rates
+type: docs
+menu:
+  main:
+    weight: 2
+description: >
 ---
-
 
 ## Facility description
 
