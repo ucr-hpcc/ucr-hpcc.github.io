@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Activity snapshot of cluster queues
-permalink: snapshot.html
+title: "Activity Report"
+linkTitle = "Snapshot"
+type: docs
 ---
 
 
