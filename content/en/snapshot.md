@@ -3,6 +3,10 @@ layout: page
 title: "Activity Report"
 linkTitle = "Snapshot"
 type: docs
+menu:
+  main:
+    weight: 1
+description: >
 ---
 
 
