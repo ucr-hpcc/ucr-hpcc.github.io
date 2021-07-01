@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Commercial Software
 title: Commercial Software
 permalink: software_commercial
 ---

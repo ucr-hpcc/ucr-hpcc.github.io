@@ -1,5 +1,5 @@
 ---
-layout: page
+linkTitle: About
 title: About
 type: docs
 menu:

@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Updates for HPCC Users
 title: Updates for HPCC Users
 Summary: information on changes to the HPCC.
 ---
