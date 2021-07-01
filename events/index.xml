@@ -1,1 +1,270 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – Events</title><link>https://dev.hpcc.ucr.edu/events/</link><description>Recent content in Events on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/events/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – Events</title><link>https://dev.hpcc.ucr.edu/events/</link><description>Recent content in Events on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Events: Annual workshop on HPC and big data processing</title><link>https://dev.hpcc.ucr.edu/events/events_large/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/events/events_large/</guid><description>
+&lt;h2 id="hpc">HPC&lt;/h2>
+&lt;p>To be added soon.&lt;/p>
+&lt;h2 id="big-data-processing">Big data processing&lt;/h2>
+&lt;p>To be added soon.&lt;/p>
+&lt;h2 id="cloud-computing">Cloud computing&lt;/h2>
+&lt;p>To be added soon.&lt;/p></description></item><item><title>Events: HPC and Big Data Processing Tutorials</title><link>https://dev.hpcc.ucr.edu/events/events_small/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/events/events_small/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Date &amp;amp; Time&lt;/th>
+&lt;th>Location&lt;/th>
+&lt;th style="text-align:center">Instructors&lt;/th>
+&lt;th>Title and Description&lt;/th>
+&lt;th>Material&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>December 18, 2020 &lt;br/> 1:00pm - 4:30pm&lt;/td>
+&lt;td>Virtually via Zoom&lt;/td>
+&lt;td style="text-align:center">Jordan Hayes, Melody Asghari, Isaac Salinas, Abraham Park &amp;amp; Thomas Girke&lt;/td>
+&lt;td>&lt;strong>Introduction to HPCC&amp;rsquo;s Cluster Usage&lt;/strong>&lt;br/>Topics:&lt;br/>1. HPCC Infrastructure (&lt;a href="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/hpcc_infrastructure/hpcc_infrastructure.html">Slides&lt;/a>)&lt;br/> 2. Linux Basics for HPC (&lt;a href="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/intro_linux/linux_basics_2.html">Slides A&lt;/a>, &lt;a href="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/intro_linux/linux_basics.html">Slides B&lt;/a>)&lt;br/> 3. Cluster Usage (&lt;a href="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/hpcc_usage/Cluster_Usage.html">Slides&lt;/a>) &lt;br/> 4. Special Topic: R on HPC (&lt;a href="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/R_for_HPC/R_for_HPC.html">Slides&lt;/a>)&lt;br/> 5. Special Topic: R Use Case from Statistics (&lt;a href="https://ucrgradstat.github.io/presentations/hpcc_12-18.html">Slides&lt;/a>) &lt;br/>&lt;/td>
+&lt;td>&lt;a href="https://forms.gle/VN4WytFV6Wwfbn158">Registration&lt;/a>&lt;br/>&lt;br/> &lt;a href="https://bit.ly/37aPWhm">Agenda&lt;/a>&lt;br/>&lt;br/> &lt;a href="https://bit.ly/37aPWhm">Video Recordings&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 15, 2020 &lt;br/> 2:45pm - 5:00pm&lt;/td>
+&lt;td>Virtually via Zoom&lt;/td>
+&lt;td style="text-align:center">Abraham Park, Travis Nasser, Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>Intro to HPCC&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/2JRagrJ">Slides&lt;/a>&lt;br/>&lt;a href="https://cluster.hpcc.ucr.edu/~jhayes/zoom/UCR_HPCC_Basic_HPC_Workshop_2020-04-15/basic-hpc_2020-04-15.mp4">Video&lt;/a>&lt;br/>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 14, 2020 &lt;br/> 12:15pm - 2:15pm&lt;/td>
+&lt;td>Virtually via Zoom&lt;/td>
+&lt;td style="text-align:center">Travis Nasser, Abraham Park, Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>Intro to Linux&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Basic Linux commands&lt;br/>* Linux File systems&lt;br/>* Creating Scripts&lt;br/>&lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>Linux Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/3cbCjhT">Slides&lt;/a>&lt;br/>&lt;a href="https://cluster.hpcc.ucr.edu/~jhayes/zoom/UCR_HPCC_Basic_Linux_Workshop_2020-04-14/basic-linux_2020-04-14.mp4">Video&lt;/a>&lt;br/>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>January 29, 2020 &lt;br/> 1:00pm - 3:15pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>Intro to HPCC&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;strong>HPCC Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>January 27, 2020 &lt;br/> 1:30pm - 3:15pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Abraham Park&lt;/td>
+&lt;td>&lt;strong>Intro to Linux&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Basic Linux commands&lt;br/>* Linux File systems&lt;br/>* Creating Scripts&lt;br/>&lt;br/>&lt;/td>
+&lt;td>&lt;strong>Linux Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;br>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>November 7, 2019 &lt;br/> 1:00pm - 3:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Jordan Hayes &lt;br/>&amp;amp;&lt;br/> Abraham Park&lt;/td>
+&lt;td>&lt;strong>Intro to Linux and HPCC&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;strong>Linux Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;br>&lt;br>&lt;strong>HPCC Intro &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://shorturl.at/dgsF1">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>June 17, 2019 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>Linux Basics and HPCC Cluster Introduction&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 5, 2019 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>Linux Basics and HPCC Cluster Introduction&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>February 15, 2019 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Workshop - Linux Basics and HPCC Cluster Introduction&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>December 14, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Workshop - Linux Basics and HPCC Cluster Introduction&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>November, 2, 2018 &lt;br/> 9:30pm - 4:30pm&lt;/td>
+&lt;td>Morning: HUB-355; Afternoon: HUB-268/269&lt;/td>
+&lt;td style="text-align:center">Amit Majumadar, Nicole Wolter, Mahidhar Tatineni, Robert Sinkovits, Paul Rodriguez, Mai Nguyen&lt;/td>
+&lt;td>&lt;strong>San Diego Supercomputer Center Workshop&lt;/strong>: Workshop presented by staff from the San Diego Super Computer Center. The morning will provide general information and resources, and the afternoon will split into two parallel tracks (Data Science and Compute Intensive Tasks).&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/> &lt;a href="http://bit.ly/2ENNXnh">Agenda&lt;/a> &lt;br/> &lt;a href="https://github.com/sdsc-scicomp/2018-11-02-comet-workshop-ucr">Slides &amp;amp; Tutorials&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>October 26, 2018 &lt;br/> 9:00pm - 12:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth, Jordan Hayes &lt;br/>&amp;amp;&lt;br/> Thomas Girke&lt;/td>
+&lt;td>&lt;strong>Research Computing in UCR’s HPC Center&lt;/strong>: This event will provide an overview of the resources provided by UCR&amp;rsquo;s HPC Center along with a usage tutorial. This includes a seminar-style introduction to the center&amp;rsquo;s hardware and software resources, including usage statistics, training events, online tutorials and access options via subscription and/or ownership models. The introduction will be followed by a tutorial about the general usage of the infrastructure covering the following topics: (i) user accounts, (ii) big data storage and backups, (iii) software management, installs and containerization; (iv) queuing system; (v) web-based access options; and (vi) external alternatives including AWS and XSEDE. During the tutorial section participants are welcome to follow along on their laptops. Guest accounts will be provided to new users.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/> &lt;a href="http://bit.ly/2EHHJVF">Agenda&lt;/a> &lt;br/> &lt;a href="http://bit.ly/2O9cVwK">Intro Slides&lt;/a> &lt;br/> &lt;a href="http://bit.ly/2OauIDT">Tutorial Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>October 18, 2018 &lt;br/> 1:00pm - 3:30pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Workshop - Introduction to Python&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* What is Python&lt;br/>* Logic Control&lt;br/>* Functions and Classes&lt;br/>* Simple Data/File Operations&lt;br/>* Using Python in HPC Environments&lt;br/>* Installing and Importing Python Modules&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>Python &lt;br/>Intro:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1l4b5G6lFFIwro-GhxILoESzDd18NzZA3FgOAXtIYOfQ/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_python_intro.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>October 4, 2018 &lt;br/> 1:00pm - 3:30pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Workshop - Linux Basics and HPCC Cluster Introduction&lt;/strong>&lt;br/>&lt;br/> This workshop will cover topics including: &lt;br/>* Connecting to the Cluster&lt;br/>* Basic Linux commands&lt;br/>* File systems&lt;br/>* The cluster scheduler, Slurm&lt;br/>* Cluster policies and best practices&lt;br/>* Basic job submissions to the cluster&lt;br/>* and others .. &lt;br/>&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>September 6, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Workshop - Basic Linux/Cluster Intro and Software Installation&lt;/strong>&lt;br/>&lt;br/>Part One: Basic Linux and Cluster Introduction &lt;br/>&lt;br/>Part Two: Installing software on the HPCC Cluster (Python, R, Perl, Basic Compiled Applications).&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>HPCC Linux/Cluster &lt;br/>Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1Yz3Zw34KoMFeCRDEfPfTMCbrwjar6BCH11nmSbYT6Cs/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;br/>&lt;br/>&lt;strong>Software Install:&lt;/strong>&lt;br/>&lt;a href="https://goo.gl/cnebQj">Slides&lt;/a>&lt;br/>&lt;a href="https://cluster.hpcc.ucr.edu/~jhayes/workshop/files/installs/">Files&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>August 3, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>Linux Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;br/>&lt;a href="https://cluster.hpcc.ucr.edu/~jhayes/zoom/basic-linux.mp4">Video&lt;/a>&lt;br/>&lt;br/>&lt;strong>HPCC Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;br/>&lt;a href="http://cluster.hpcc.ucr.edu/~jhayes/zoom/HPCC-Intro.mp4">Video&lt;/a>&lt;br/>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>June 15, 2018 &lt;br/> 1:00pm - 4:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth, Jordan Hayes &lt;br/>&amp;amp;&lt;br/> Thomas Girke&lt;/td>
+&lt;td>&lt;strong>Introduction to HPCC Cluster&lt;/strong>&lt;br/>I. Linux Basics; II. HPCC Cluster; III. How to work in R on HPC systems?&lt;/td>
+&lt;td>&lt;strong>Linux Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;br>&lt;br>&lt;strong>HPCC Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">Slides&lt;/a>&lt;br>&lt;a href="https://github.com/ucr-hpcc/hpcc_intro_files.git">Files&lt;/a>&lt;br>&lt;br>&lt;strong>R on HPCC:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/13ln-b0qqOr3seXqZwTod_DMOd_8p6Z6tC6FXC9hkO_o/edit?usp=sharing">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>May 4, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;br/>&lt;strong>Linux Basics:&lt;/strong>&lt;br/>&lt;a href="https://bit.ly/35KfmAk">Slides&lt;/a>&lt;br/>&lt;a href="https://cluster.hpcc.ucr.edu/~jhayes/zoom/basic-linux.mp4">Video&lt;/a>&lt;br/>&lt;br/>&lt;strong>HPCC Basics:&lt;/strong>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">Slides&lt;/a>&lt;br/>&lt;a href="http://cluster.hpcc.ucr.edu/~jhayes/zoom/HPCC-Intro.mp4">Video&lt;/a>&lt;br/>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 27, 2018 &lt;br/> 2:00pm - 3:30pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Thomas Girke&lt;/td>
+&lt;td>&lt;strong>Annual PI and User Meeting of HPC Center&lt;/strong>&lt;br/> Overview of services, hardware/software resources, usage stats, training and recharging. Followed by discussion of future directions.&lt;/td>
+&lt;td>&lt;a href="https://docs.google.com/presentation/d/1KXqfZo63vqYkoIad6MWMcAhoofJT36awSWVA5116qnk/edit?usp=sharing">Slides&lt;/a> &lt;br/> &lt;a href="https://goo.gl/Ec7cBH">Agenda&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 5, 2018 &lt;br/> 1:00pm - 2:30pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Cloud Service Presentation&lt;/strong>&lt;br/>Learn about the HPCC Cloud Service (beta). We will demonstrate how to use HPCC and Amazon Web Service (AWS) to quickly create an on-demand HPC Cluster private to you. We also explain important topics such as billing and cost control, cluster operation, types of clusters (GPU, Highmem, etc.), data management and more.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://docs.google.com/presentation/d/1zxqFl7WKrGvJ3M-ZYjFbHvdyFJlTDvzBGBAmImMK4kk/edit?usp=sharing">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>April 6, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://bit.ly/35KfmAk">Basic Linux&lt;/a>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">HPCC Cluster Intro&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>March 9, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://bit.ly/35KfmAk">Basic Linux&lt;/a>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">HPCC Cluster Intro&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>February 9, 2018 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://bit.ly/35KfmAk">Basic Linux&lt;/a>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">HPCC Cluster Intro&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>December 14, 2017 &lt;br/> 10:00am - 12:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Randy Ridgley - AWS Solutions Architect&lt;/td>
+&lt;td>&lt;strong>Introduction to AWS for Research&lt;/strong>&lt;br/> &lt;em>Introduction to AWS:&lt;/em> Overview of Amazon Web Services (AWS), key concepts and terminology for compute, storage, database and networking. &lt;em>AWS for Researchers:&lt;/em> With AWS scientists can deploy and test software, analyze their data, and share their results with collaborators around the world. This section will include a demonstration how to build HPC clusters in AWS using cfnCluster and AWSBatch.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del>, &lt;a href="https://s3-us-west-2.amazonaws.com/uci-hpc/HPC+Tech+Deep+Dive.pdf">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>November 3, 2017 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://bit.ly/35KfmAk">Basic Linux&lt;/a>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">HPCC Cluster Intro&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>October 11, 2017 &lt;br/> 2:00pm - 4:00pm&lt;/td>
+&lt;td>ULB 104&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>Linux, Scripting and HPCC Cluster Intro Workshop&lt;/strong>&lt;br/>Introdution to Linux concepts basic bash scripting and HPCC Cluster intro focused on job submission.&lt;/td>
+&lt;td>&lt;a href="https://goo.gl/J61mhy">Slides&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>September 1, 2017 &lt;br/> 2:00pm - 5:00pm&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth &lt;br/>&amp;amp;&lt;br/> Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Three part basic introdution to Linux and the HPCC Cluster along with a user interaction session.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del> &lt;br/>&lt;a href="https://bit.ly/35KfmAk">Basic Linux&lt;/a>&lt;br/>&lt;a href="https://docs.google.com/presentation/d/1piqZA7HdMdXFQEvOnORKuMFm77Av8iaaGQycPIlCCJc/edit?usp=sharing">HPCC Cluster Intro&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>July 24, 2017 &lt;br/> 9:00am - 11:00am&lt;/td>
+&lt;td>Genomics Bldg Auditorium 1102A&lt;/td>
+&lt;td style="text-align:center">Charles Forsyth&lt;/td>
+&lt;td>&lt;strong>HPCC Cluster (Biocluster) Intro Workshop&lt;/strong>&lt;br/>Basic introdution to the HPCC Cluster and Services.&lt;/td>
+&lt;td>&lt;del>Registration&lt;/del>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Jan 20, 2017 &lt;br/> 12:00pm - 2:00pm&lt;/td>
+&lt;td>Genomics Bldg 1208&lt;/td>
+&lt;td style="text-align:center">Jordan Hayes&lt;/td>
+&lt;td>&lt;strong>Slurm and Basic Linux Q&amp;amp;A&lt;/strong>&lt;br/>Job submissions, account managment and basic Linux scripting.&lt;/td>
+&lt;td>&lt;a href="http://cluster.hpcc.ucr.edu/~jhayes/slurm/examples/">Examples&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Events: Related HPC and big data analysis events</title><link>https://dev.hpcc.ucr.edu/events/events_related/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/events/events_related/</guid><description>
+&lt;h2 id="ucr-library">UCR Library&lt;/h2>
+&lt;ul>
+&lt;li>Software Carpentry Workshop - Working with Data
+&lt;ul>
+&lt;li>The Unix shell &lt;a href="https://www.eventbrite.com/e/the-unix-shell-tickets-110191172764">7-24-20&lt;/a>&lt;/li>
+&lt;li>Version Control with Git &lt;a href="https://www.eventbrite.com/e/version-control-with-git-tickets-110198913918">7-31-20&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Software Carpentry Workshop - (Python, git, and bash) &lt;a href="https://library.ucr.edu/about/events/software-carpentry-workshop-2">3-25-19, 3-26-19&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="graduate-quantitative-methods-center---gradquanthttpsgradquantucreduworkshops-spring-2019">Graduate Quantitative Methods Center - &lt;a href="https://gradquant.ucr.edu/workshops-spring-2019/">GradQuant&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Drop-in Hours &lt;a href="https://gradquant.ucr.edu/gq-calendar/">Tuesday - Thursday&lt;/a>&lt;/li>
+&lt;li>Experimental Design &lt;a href="https://www.google.com/calendar/event?eid=NDRmaHZ2dGg3bWtpZzc4ZDdrYmQya2hrcW0gNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-4-19&lt;/a>&lt;/li>
+&lt;li>Hypothesis Testing and Statistical Power &lt;a href="https://www.google.com/calendar/event?eid=MXVxN2ZlOGdtMmoydWpuY2dtM2llajJyNnMgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-9-19&lt;/a>&lt;/li>
+&lt;li>Data Management in Python &lt;a href="https://www.google.com/calendar/event?eid=MHVsOWdwcWN2azAyZmQ2bHZucGJicGNjZzcgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-11-19&lt;/a>&lt;/li>
+&lt;li>JAVA for Beginners &lt;a href="https://www.google.com/calendar/event?eid=MW5sczJxamY3ZnVwMWI1YmcyZTNoZGNwZ2QgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-15-19&lt;/a>&lt;/li>
+&lt;li>Introduction to General Linear Models &lt;a href="https://www.google.com/calendar/event?eid=MDhtZzBudXB0c3A2MDhtcHZvb2hnaGQ0MmsgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-17-19&lt;/a>&lt;/li>
+&lt;li>Computational Bayesian Inference &lt;a href="https://www.google.com/calendar/event?eid=MThrdWR2djdhdm5kMGU0czBzN3RlMzllNWogNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-24-19&lt;/a>&lt;/li>
+&lt;li>Stata Workshop with Dr. Chuck Huber &lt;a href="https://www.google.com/calendar/event?eid=M2k3ajd1a2pscjByZGZxdHNnNDQ5MW1jMHEgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-25-19&lt;/a>&lt;/li>
+&lt;li>Web Scraping with R &lt;a href="https://www.google.com/calendar/event?eid=NzcwbG5iaHMxdW4yajZnb2J1NDJ2ZHU5aGsgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">4-30-19&lt;/a>&lt;/li>
+&lt;li>Introduction to SAS &lt;a href="https://www.google.com/calendar/event?eid=Mjc0YWRpaDliM2FxcXY3NGE0dTJmbmRsNGcgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">5-2-19&lt;/a>&lt;/li>
+&lt;li>Data Visualization in Python &lt;a href="https://www.google.com/calendar/event?eid=Mm5hNDJrdGsyZWlmdjQ1ODdiaWpwMWxjcGcgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">5-7-19&lt;/a>&lt;/li>
+&lt;li>Machine Learning in R &lt;a href="https://www.google.com/calendar/event?eid=MWNvOXVwY3J1b201dXMxN2gyMTA1YzZvZWMgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">5-8-19&lt;/a>&lt;/li>
+&lt;li>A Primer on Neural Networks with Python &lt;a href="https://www.google.com/calendar/event?eid=MHU0czlwdGFvYTA4NTliaXY4dmk0bjI2aWIgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">5-13-19&lt;/a>&lt;/li>
+&lt;li>Writing Articles in LaTeX &lt;a href="https://www.google.com/calendar/event?eid=MDRiNTk3bGhwa2ZuaXBmdjFyMDJ1Z3FzaDUgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">5-28-19&lt;/a>&lt;/li>
+&lt;li>Machine Learning in MATLAB &lt;a href="https://www.google.com/calendar/event?eid=MnNoZmJzY2xoaXMyYjhlaTE3aTFxNGZoaHYgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&amp;amp;ctz=America/Los_Angeles">6-03-19&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="big-data-analysis-programming-in-genome-biology">Big data analysis programming in genome biology&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://girke.bioinformatics.ucr.edu/tutorials/">R/Bioconductor workshops&lt;/a> including annual 5-day events&lt;/li>
+&lt;li>Graduate courses using HPC
+&lt;ul>
+&lt;li>Data Analysis in Genome Biology: &lt;a href="http://girke.bioinformatics.ucr.edu/GEN242/mydoc/home.html">GEN242&lt;/a>&lt;/li>
+&lt;li>Computational Analysis of High Throughput Biological Data: &lt;a href="http://hyphaltip.github.io/GEN220_2015/">GEN220&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="others">Others&lt;/h2>
+&lt;ul>
+&lt;li>10th consecutive workshop on analyzing sequencing data, ANGUS 2019! &lt;a href="https://urldefense.proofpoint.com/v2/url?u=http-3A__ivory.idyll.org_dibsi_ANGUS.html&amp;amp;d=DwMFaQ&amp;amp;c=7ypwAowFJ8v-mw8AB-SdSueVQgSDL4HiiSaLK01W8HA&amp;amp;r=BRiKNvDIpcjDzQtuD9o7xA&amp;amp;m=apazdjJLUAfEZcBrwKdSnA8TUiYgiNlo4amo9o--Sm4&amp;amp;s=SrRrQxw086wzYgiHKEEWuC0xwy86BKkGDyEk65rvrBU&amp;amp;e=">July 1 - July 12, 2019&lt;/a>
+&lt;ul>
+&lt;li>This intensive two week summer course introduces attendees with a strong biology background to the practice of analyzing big shotgun sequencing data sets (Illumina, PacBio, and Nanopore). We introduce students to computational thinking and large-scale data analysis on UNIX platforms, and cover genome and transcriptome analysis. We also cover computational topics including R scripting, software installation with bioconda, cloud computing, and building efficient and automated workflows. We use hands-on tutorials, live coding, group notes, and in-class exercises to support an effective learning experience.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Please send us URLs of events we should list here.&lt;/p></description></item></channel></rss>
