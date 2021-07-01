@@ -1,0 +1,88 @@
+.sps-site-bg-big {
+  height: 45vh;
+}
+
+.sps-bg-subtitle {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/*.highlight td:not(:first-child) {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}*/
+
+.code-toolbar > .pre {
+  position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+.td-navbar {
+    background: $primary;
+    min-height: 4rem;
+    margin: 0;
+    z-index: 126;
+}
+
+.header-switch {
+  color: white;
+}
+
+.header-switch .custom-control-input:checked ~ .custom-control-label::before{
+  background: var(--blue);
+}
+
+/* content all set to 100%*/
+.td-max-width-on-larger-screens, .td-content > pre, .td-content > .highlight,
+.td-content > .lead, .td-content > h1, .td-content > h2, .td-content > ul,
+.td-content > ol, .td-content > p, .td-content > blockquote,
+.td-content > dl dd, .td-content .footnotes, .td-content > .alert {
+    max-width: 100%;
+}
+
+.td-content *:not(iframe) {
+  max-width: 100%;
+}
+
+.pl-md-5, .px-md-5 {
+  padding-right: 3rem !important;
+}
+
+
+/* view source code button*/
+.reading-time {
+  display: inline;
+  padding-right: 10px;
+}
+
+/* hack to fix position: sticky in driver js*/
+div#driver-highlighted-element-stage, div#driver-page-overlay {
+  background: transparent !important;
+  outline: 5000px solid rgba(0, 0, 0, .75)
+}
+
+/* highlight toc*/
+#TableOfContents li.active > a {
+	color: #333;
+	font-weight: 600;
+}
+
+/* toc font */
+.td-toc li li {
+    margin-left: 0.7rem;
+}
+
+.td-toc ul {
+    font-size: 0.9rem;;
+}
+
+/*when nav dropdown is too long, scoll it */
+/*define max-height to the height you want to start scrolling*/
+.td-navbar-nav-scroll .nav-item .dropdown-menu {
+    max-height: 80vh;
+    overflow: visible scroll;
+}
+
