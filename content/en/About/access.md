@@ -1,10 +1,8 @@
 ---
-title: Access and rate structure
-linkTitle: Access & Rates
+title: Access
+linkTitle: Access
 type: docs
-menu:
-  main:
-    weight: 2
+weight: 2
 description: >
 ---
 {{% pageinfo %}}

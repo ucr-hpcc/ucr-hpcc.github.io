@@ -1,9 +1,10 @@
 ---
 title: Acknowledgement of Facility
-
+linkTitle: Acknowledgement
 type: docs
+weight: 3
+description: >
 ---
-
 
 ## Acknowledgement in Publications 
 

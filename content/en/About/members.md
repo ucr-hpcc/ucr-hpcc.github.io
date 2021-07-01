@@ -1,9 +1,11 @@
 ---
-linkTitle: Members
 title: Staff and advisory board
+linkTitle: Members
 type: docs
-
+weight: 5
+description: >
 ---
+
 
 ## Facility Contacts
 
