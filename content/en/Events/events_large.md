@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Annual workshop on HPC and big data processing
-menu:
-    main:
 ---
 
 ## HPC 

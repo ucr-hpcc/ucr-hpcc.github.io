@@ -1,9 +1,7 @@
 ---
 title: Acknowledgement of Facility
+
 type: docs
-menu:
-   main:
-   
 ---
 
 
