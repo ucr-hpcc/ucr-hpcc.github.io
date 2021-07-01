@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – Presentations</title><link>/presentations/</link><description>Recent content in Presentations on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="/presentations/index.xml" rel="self" type="application/rss+xml"/><item><title>Presentations: Cluster Usage</title><link>/presentations/2020-12-18_workshop/hpcc_usage/cluster_usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/2020-12-18_workshop/hpcc_usage/cluster_usage/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – Presentations</title><link>https://dev.hpcc.ucr.edu/presentations/</link><description>Recent content in Presentations on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/presentations/index.xml" rel="self" type="application/rss+xml"/><item><title>Presentations: Cluster Usage</title><link>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/hpcc_usage/cluster_usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/hpcc_usage/cluster_usage/</guid><description>
 &lt;!--
 - ioslides manual:
 https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
@@ -281,7 +281,7 @@ srun -p statsdept --pty bash -l
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Check results:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">cat slurm-2909103.out
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#submitting-jobs">https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#submitting-jobs&lt;/a>&lt;/p>
-&lt;hr style='clear:both;'></description></item><item><title>Presentations: Linux basics</title><link>/presentations/2020-12-18_workshop/intro_linux/linux_basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/2020-12-18_workshop/intro_linux/linux_basics/</guid><description>
+&lt;hr style='clear:both;'></description></item><item><title>Presentations: Linux basics</title><link>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/intro_linux/linux_basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/intro_linux/linux_basics/</guid><description>
 &lt;!--
 - ioslides manual:
 https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
@@ -362,7 +362,7 @@ rm ~/acls.txt
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress FOLDER_A/ username@cluster.hpcc.ucr.edu:~/FOLDER_A/
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Transferring file from the cluster&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress username@cluster.hpcc.ucr.edu:~/FOLDER_A/ FOLDER_A/
-&lt;/code>&lt;/pre>&lt;/div>&lt;hr style='clear:both;'></description></item><item><title>Presentations: Linux basics</title><link>/presentations/2020-12-18_workshop/intro_linux/linux_basics_2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/2020-12-18_workshop/intro_linux/linux_basics_2/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;hr style='clear:both;'></description></item><item><title>Presentations: Linux basics</title><link>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/intro_linux/linux_basics_2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/intro_linux/linux_basics_2/</guid><description>
 &lt;h2 id="summary">Summary&lt;/h2>
 &lt;ul>
 &lt;li>Accessing the cluster
@@ -525,7 +525,7 @@ rm ~/acls.txt
 &lt;li>&lt;code>echo &amp;quot;hello&amp;quot;&lt;/code> → returns the word &lt;em>hello&lt;/em>&lt;/li>
 &lt;li>&lt;code>echo $?&lt;/code> → returns the exit code of the last command&lt;/li>
 &lt;li>&lt;code>echo $PATH&lt;/code> → returns the current executable variables within your path (programs you can run)&lt;/li>
-&lt;/ul></description></item><item><title>Presentations: R on HPC Systems</title><link>/presentations/2020-12-18_workshop/r_for_hpc/r_for_hpc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/2020-12-18_workshop/r_for_hpc/r_for_hpc/</guid><description>
+&lt;/ul></description></item><item><title>Presentations: R on HPC Systems</title><link>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/r_for_hpc/r_for_hpc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/presentations/2020-12-18_workshop/r_for_hpc/r_for_hpc/</guid><description>
 &lt;!---
 - ioslides manual:
 https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
@@ -960,7 +960,7 @@ after moving them to a local system.&lt;/p>
 &lt;div class="white">__References__&lt;/div>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="references">References&lt;/h2></description></item><item><title>Presentations: Template for ioslides</title><link>/presentations/ioslides/ioslide_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/ioslides/ioslide_template/</guid><description>
+&lt;h2 id="references">References&lt;/h2></description></item><item><title>Presentations: Template for ioslides</title><link>https://dev.hpcc.ucr.edu/presentations/ioslides/ioslide_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/presentations/ioslides/ioslide_template/</guid><description>
 &lt;!---
 - ioslides manual:
 https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html

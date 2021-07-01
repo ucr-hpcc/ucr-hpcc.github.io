@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – HPCC Cloud/External</title><link>/documentation/hpcc_cloud/</link><description>Recent content in HPCC Cloud/External on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="/documentation/hpcc_cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Documentation: Account Creation</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_create-acct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_create-acct/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC Home – HPCC Cloud/External</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/</link><description>Recent content in HPCC Cloud/External on HPCC Home</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Documentation: Account Creation</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_create-acct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_create-acct/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The scope of this manual section is am an introduction on how to get started using the Amazon cloud AWS to quickly create an on-demand cluster private to you.&lt;/p>
 &lt;h2 id="login-to-your-mainmaster-aws-account">Login to your Main/Master AWS account&lt;/h2>
@@ -82,7 +82,7 @@
 &lt;/ul>
 &lt;p>You now have all the information needed for a user to create their own cluster.&lt;/p>
 &lt;p>Next step:
-Setup and create a new cluster.&lt;/p></description></item><item><title>Documentation: Account Egress Waiver</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_egress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_egress/</guid><description>
+Setup and create a new cluster.&lt;/p></description></item><item><title>Documentation: Account Egress Waiver</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_egress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_egress/</guid><description>
 &lt;h2 id="learn-how-to-establish-an-amazon-web-services-aws-account-under-the-uc-agreement">Learn how to establish an Amazon Web Services (AWS) account under the UC Agreement.&lt;/h2>
 &lt;p>A UC-wide agreement for Amazon Web Services (AWS) has been established. The agreement provides &lt;strong>Data Egress Fee waiver for up to 15% of total monthly AWS fees&lt;/strong>.&lt;/p>
 &lt;p>Please follow the instructions below to ensure that an AWS account for UCR business is covered under this agreement and in compliance with UC policy and the law.&lt;/p>
@@ -122,7 +122,7 @@ Setup and create a new cluster.&lt;/p></description></item><item><title>Document
 &lt;li>Your Name&lt;/li>
 &lt;/ul>
 &lt;h2 id="aws-account-activation">AWS Account Activation&lt;/h2>
-&lt;p>You will receive an email response from AWS confirming that your AWS account is now set up for invoicing under the UC AWS agreement, and providing final instructions to activate your account. Follow the instructions in the AWS activation email and your account will be active and ready for use.&lt;/p></description></item><item><title>Documentation: Cluster Operation</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_operation/</guid><description>
+&lt;p>You will receive an email response from AWS confirming that your AWS account is now set up for invoicing under the UC AWS agreement, and providing final instructions to activate your account. Follow the instructions in the AWS activation email and your account will be active and ready for use.&lt;/p></description></item><item><title>Documentation: Cluster Operation</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_operation/</guid><description>
 &lt;h2 id="login-to-hpcc">Login to HPCC&lt;/h2>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh username@cluster.hpcc.ucr.edu
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="create-a-cluster">Create a Cluster&lt;/h2>
@@ -184,7 +184,7 @@ Output:&lt;span style="color:#4e9a06">&amp;#34;GangliaPrivateURL&amp;#34;&lt;/sp
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="8-delete-cluster">8. Delete cluster&lt;/h3>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hpcc_cloud delete new-cluster
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="start-sample-cluster-walk-through-sped-up">Start sample cluster walk through (sped up)&lt;/h2>
-&lt;script id="asciicast-lKXf3g9tVdJZiJVqoaDMVIvMY" src="https://asciinema.org/a/lKXf3g9tVdJZiJVqoaDMVIvMY.js" async data-autoplay="false" data-size="small" data-speed="5">&lt;/script></description></item><item><title>Documentation: Cost Control and Billing</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_billing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_billing/</guid><description>
+&lt;script id="asciicast-lKXf3g9tVdJZiJVqoaDMVIvMY" src="https://asciinema.org/a/lKXf3g9tVdJZiJVqoaDMVIvMY.js" async data-autoplay="false" data-size="small" data-speed="5">&lt;/script></description></item><item><title>Documentation: Cost Control and Billing</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_billing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_billing/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This page will talk about AWS costs and billing along with setting some controls for them.&lt;/p>
 &lt;h2 id="costs">Costs&lt;/h2>
@@ -253,7 +253,7 @@ It will be your main interface for the billing aspects AWS.&lt;/p>
 &lt;li>Notice the new budget defined&lt;/li>
 &lt;li>You will now be notified it your speding is projected to exceed your budget&lt;/li>
 &lt;li>Complete&lt;/li>
-&lt;/ul></description></item><item><title>Documentation: HPCC cfnCluster Setup</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_setup/</guid><description>
+&lt;/ul></description></item><item><title>Documentation: HPCC cfnCluster Setup</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_setup/</guid><description>
 &lt;h2 id="hpcc-cfncluster-setup">HPCC cfnCluster Setup.&lt;/h2>
 &lt;p>This will show how to use your HPCC account to configure cfnCluster; allowing you to create and control your own clusters.&lt;/p>
 &lt;h2 id="1-login-to-the-hpcc-cluster">1. Login to the HPCC Cluster&lt;/h2>
@@ -312,7 +312,7 @@ It will be your main interface for the billing aspects AWS.&lt;/p>
 &lt;h2 id="3-setup-complete">3. Setup complete&lt;/h2>
 &lt;p>Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section &lt;a href="manuals_hpcc-aws-cluster_operation.html">Link&lt;/a>)&lt;/p>
 &lt;h2 id="setup-walk-through">Setup Walk Through&lt;/h2>
-&lt;script id="asciicast-ewZjGbJkX0ZpE2sla5BoZ9aRq" src="https://asciinema.org/a/ewZjGbJkX0ZpE2sla5BoZ9aRq.js" async data-autoplay="false" data-size="small" data-speed="3">&lt;/script></description></item><item><title>Documentation: Introduction</title><link>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_intro/</guid><description>
+&lt;script id="asciicast-ewZjGbJkX0ZpE2sla5BoZ9aRq" src="https://asciinema.org/a/ewZjGbJkX0ZpE2sla5BoZ9aRq.js" async data-autoplay="false" data-size="small" data-speed="3">&lt;/script></description></item><item><title>Documentation: Introduction</title><link>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/documentation/hpcc_cloud/manuals_hpcc-aws-cluster_intro/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Getting started using HPCC and Amazon Web Service (AWS) to quickly create an on-demand cluster private to you.&lt;/p>
 &lt;h2 id="hpcc-aws-cluster-benefits">HPCC AWS Cluster benefits.&lt;/h2>
