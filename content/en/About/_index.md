@@ -1,6 +1,6 @@
 ---
-layout: page
 title: About
+linkTitle: About
 type: docs
 menu:
   main:
