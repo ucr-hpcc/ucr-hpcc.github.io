@@ -37,6 +37,7 @@ export PATH=~/bigdata/src/npm/node-v16.3.0-linux-x64/bin:$PATH
 # Only do this once
 #npm install -D --save autoprefixer
 #npm install -D --save postcss-cli
+npm audit fix
 
 # Remove old build
 rm -rf ./public
@@ -45,8 +46,19 @@ rm -rf ./public
 umask 022
 
 # Generate html public dir
-HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --baseURL /~${USER}/hpcc_new_site --gc || exit 1
+HUGO_ENV="production" hugo --config config.toml --cacheDir /tmp/hugo_cache_${USER} --baseURL / --gc || exit 1
 rm -rf /tmp/hugo_cache_${USER}
+
+# Build with blogdown instead
+#module unload R
+#module load R/4.1.0_gcc-8.3.0
+#Rscript -e "blogdown::build_site()"
+
+# Update perms
+echo "Fixing file perms"
+find . -type f -exec chmod a+r {} \;
+echo "Fixing dir perms"
+find . -type d -exec chmod a+rx {} \;
 
 # You can run a local server
 #hugo server --themesDir themes/docsy
