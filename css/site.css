@@ -25,13 +25,8 @@
     min-height: 4rem;
     margin: 0;
     z-index: 126;
-  }
+}
 
-  .td-navbar-transparent {
-    border-width: 0px;
-    box-shadow: 0px 0px;
-    background-color: aliceblue;
-  }
 .header-switch {
   color: white;
 }
