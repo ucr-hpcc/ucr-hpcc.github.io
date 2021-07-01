@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Software Installs
 title: Software Installs
 permalink: software_installs
 ---

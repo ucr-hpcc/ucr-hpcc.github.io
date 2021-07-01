@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Basics - Vim Manual
 title: Linux Basics - Vim Manual
 permalink: manuals_linux-basics_vim.html
 ---

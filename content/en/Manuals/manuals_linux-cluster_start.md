@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Cluster - Getting Started
 title: Linux Cluster - Getting Started
 permalink: manuals_linux-cluster_start.html
 ---

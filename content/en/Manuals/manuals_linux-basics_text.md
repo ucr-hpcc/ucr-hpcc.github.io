@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Basics - Text Editors
 title: Linux Basics - Text Editors
 permalink: manuals_linux-basics_text.html
 ---

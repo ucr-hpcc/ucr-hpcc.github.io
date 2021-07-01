@@ -1,6 +1,7 @@
 ---
-layout: page
+linkTitle: Related Events
 title: Related HPC and big data analysis events
+type: docs
 ---
 
 ## UCR Library

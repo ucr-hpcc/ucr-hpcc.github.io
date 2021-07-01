@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Cluster - Introduction
 title: Linux Cluster - Introduction
 permalink: manuals_linux-cluster_intro.html
 ---

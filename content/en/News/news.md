@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: News & Announcements
 title: News and announcements
 ---
 

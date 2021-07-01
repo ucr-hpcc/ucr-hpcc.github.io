@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Cluster - SSH Keys Microsoft Windows
 title: Linux Cluster - SSH Keys Microsoft Windows
 permalink: manuals_linux-cluster_sshkeys_winos.html
 ---

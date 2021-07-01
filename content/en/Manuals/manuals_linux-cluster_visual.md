@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Cluster - Visualization
 title: Linux Cluster - Visualization
 permalink: manuals_linux-cluster_visual.html
 ---

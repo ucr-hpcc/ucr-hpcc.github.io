@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: HPCC AWS Cluster - Cluster Operation
 title: HPCC AWS Cluster - Cluster Operation
 permalink: manuals_hpcc-aws-cluster_operation.html
 ---

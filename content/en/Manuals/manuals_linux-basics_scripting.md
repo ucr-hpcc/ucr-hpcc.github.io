@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Basics - Scripting
 title: Linux Basics - Scripting
 permalink: manuals_linux-basics_scripting.html
 ---

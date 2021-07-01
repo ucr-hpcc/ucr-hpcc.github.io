@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Linux Basics - File System and Transfers
 title: Linux Basics - File Systems and Transfers
 permalink: manuals_linux-basics_filesystems.html
 ---

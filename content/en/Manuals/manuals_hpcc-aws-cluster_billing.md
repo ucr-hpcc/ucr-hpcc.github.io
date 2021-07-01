@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: HPCC AWS Cluster - Cost Control and Billing
 title: HPCC AWS Cluster - Cost Control and Billing
 permalink: manuals_hpcc-aws-cluster_billing.html
 ---
