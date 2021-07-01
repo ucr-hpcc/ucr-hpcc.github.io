@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: User Alerts
+layout: page
 title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---

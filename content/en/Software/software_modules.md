@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Software Modules
+layout: page
 title: Software Modules
 permalink: software_modules
 ---

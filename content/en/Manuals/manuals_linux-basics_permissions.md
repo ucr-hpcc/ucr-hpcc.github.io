@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Permissions and Ownership
+layout: page
 title: Linux Basics - Permissions and Ownership
 permalink: manuals_linux-basics_permissions.html
 ---

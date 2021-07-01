@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Streams
+layout: page
 title: Linux Basics - Streams
 permalink: manuals_linux-basics_streams.html
 ---

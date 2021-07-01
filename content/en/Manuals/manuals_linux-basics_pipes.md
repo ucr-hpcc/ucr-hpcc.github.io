@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Piping
+layout: page
 title: Linux Basics - Piping
 permalink: manuals_linux-basics_pipes.html
 ---

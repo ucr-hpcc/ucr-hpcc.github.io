@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Why Linux
+layout: page
 title: Linux Basics - Why Linux
 permalink: manuals_linux-cluster_why.html
 ---

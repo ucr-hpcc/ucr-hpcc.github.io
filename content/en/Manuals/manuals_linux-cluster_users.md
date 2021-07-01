@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Communicating
+layout: page
 title: Communicating
 permalink: manuals_linux-cluster_users.html
 ---

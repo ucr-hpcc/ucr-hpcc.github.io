@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Package Management
+layout: page
 title: Package Management
 permalink: manuals_linux-cluster_package-manage.html
 ---

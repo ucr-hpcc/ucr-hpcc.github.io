@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Cluster - Security
+layout: page
 title: Linux Cluster - Security
 permalink: manuals_linux-cluster_security.html
 ---

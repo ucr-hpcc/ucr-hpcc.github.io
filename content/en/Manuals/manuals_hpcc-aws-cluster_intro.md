@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: HPCC AWS Cluster - Introduction
+layout: page
 title: HPCC AWS Cluster - Introduction
 permalink: manuals_hpcc-aws-cluster_intro.html
 ---

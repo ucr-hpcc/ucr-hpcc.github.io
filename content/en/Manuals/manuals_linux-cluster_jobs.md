@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Cluster - Managing Jobs
+layout: page
 title: Linux Cluster - Managing Jobs
 permalink: manuals_linux-cluster_jobs.html
 ---

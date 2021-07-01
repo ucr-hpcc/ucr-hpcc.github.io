@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Cluster - Data Storage
+layout: page
 title: Linux Cluster - Data Storage
 permalink: manuals_linux-cluster_storage.html
 ---

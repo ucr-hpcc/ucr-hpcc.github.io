@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Variables
+layout: page
 title: Linux Basics - Variables
 permalink: manuals_linux-basics_variables.html
 ---

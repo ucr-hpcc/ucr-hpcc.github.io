@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Basics - Access
+layout: page
 title: Linux Basics - Access
 permalink: manuals_linux-basics_intro.html
 ---

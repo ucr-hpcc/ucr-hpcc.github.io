@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Hardware Details
+layout: page
 title: Hardware Details
 ---
 

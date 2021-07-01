@@ -1,9 +1,6 @@
 ---
-linktitle: Facility
-title: Facility
-type: docs
-menu:
-   main:
+linktitle: Docs
+title: Docs
 ---
 
 

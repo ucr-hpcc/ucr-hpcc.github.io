@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: HPCC AWS Cluster - Account Egress Waiver
+layout: page
 title: HPCC AWS Cluster - Account Egress Waiver
 permalink: manuals_hpcc-aws-cluster_egress.html
 ---

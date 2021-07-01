@@ -1,7 +1,6 @@
 ---
-type: docs
+layout: page
 title: HPC and Big Data Processing Tutorials
-linkTitle: Events at a Glance
 ---
 
 | Date &amp; Time                           | Location                                 | Instructors                                                                                    | Title and Description                                                                                                                                                                                                                                                                                                                                                                                                                                   | Material                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

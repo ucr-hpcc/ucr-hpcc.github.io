@@ -1,6 +1,5 @@
 ---
-linkTitle: Full Events
-type: docs
+layout: page
 title: Annual workshop on HPC and big data processing
 menu:
     main:

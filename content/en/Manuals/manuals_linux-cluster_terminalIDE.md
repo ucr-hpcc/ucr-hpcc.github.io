@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Terminal-based Working Environments
+layout: page
 title: Terminal-based Working Environments 
 permalink: manuals_linux-cluster_terminalIDE.html
 ---

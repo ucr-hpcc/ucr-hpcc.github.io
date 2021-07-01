@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Cluster - Login
+layout: page
 title: Linux Cluster - Login
 permalink: manuals_linux-cluster_login.html
 ---

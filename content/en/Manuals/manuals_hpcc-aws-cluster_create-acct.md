@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: HPCC AWS Cluster - Account Creation
+layout: page
 title: HPCC AWS Cluster - Account Creation
 permalink: manuals_hpcc-aws-cluster_create-acct.html
 ---

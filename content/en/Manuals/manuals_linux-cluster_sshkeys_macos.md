@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Linux Cluster - SSH Keys Apple macOS
+layout: page
 title: Linux Cluster - SSH Keys Apple macOS 
 permalink: manuals_linux-cluster_sshkeys_macos.html
 ---

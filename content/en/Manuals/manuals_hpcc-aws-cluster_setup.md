@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: HPCC AWS Cluster - HPCC Cluster Setup
+layout: page
 title: HPCC AWS Cluster - HPCC cfnCluster Setup 
 permalink: manuals_hpcc-aws-cluster_setup.html
 ---

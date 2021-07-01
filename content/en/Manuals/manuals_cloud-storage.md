@@ -1,7 +1,6 @@
 ---
-type: docs
+layout: page
 title: Cloud Storage
-linkTitle: Cloud Storage
 permalink: manuals_cloud-storage.html
 ---
 

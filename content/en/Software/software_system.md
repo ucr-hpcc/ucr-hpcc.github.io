@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: System Software
+layout: page
 title: System Software
 permalink: software_system
 ---

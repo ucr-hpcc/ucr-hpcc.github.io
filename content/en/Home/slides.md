@@ -1,6 +1,5 @@
 ---
-type: docs
-linkTitle: Overview of HPCC in Slide format
+layout: page
 title: Overview slides for HPCC
 ---
 
