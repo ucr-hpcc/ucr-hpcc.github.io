@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Cluster Operation
 title: Cluster Operation
 permalink: manuals_hpcc-aws-cluster_operation.html
 ---

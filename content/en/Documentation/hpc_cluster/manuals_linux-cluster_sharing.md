@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Sharing Data
 title: Sharing Data
 permalink: manuals_linux-cluster_sharing.html
 ---

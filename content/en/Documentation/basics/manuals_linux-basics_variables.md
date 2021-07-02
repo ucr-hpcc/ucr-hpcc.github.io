@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Variables
 title: Variables
 permalink: manuals_linux-basics_variables.html
 ---

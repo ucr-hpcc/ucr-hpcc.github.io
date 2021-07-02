@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Shell Bootcamp
 title: Shell Bootcamp
 permalink: manuals_linux-basics_shell.html
 ---
