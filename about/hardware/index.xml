@@ -1,0 +1,106 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://dev.hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Details</title><link>https://dev.hpcc.ucr.edu/about/hardware/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/hardware/</guid><description>
+&lt;h2 id="storage">Storage&lt;/h2>
+&lt;ul>
+&lt;li>Four enterprise class HPC storage systems&lt;/li>
+&lt;li>Approximately 2 PB (2048 TB) of network storage&lt;/li>
+&lt;li>GPFS (NFS and SAMBA via GPFS)&lt;/li>
+&lt;li>Automatic snapshots and archival backups&lt;/li>
+&lt;/ul>
+&lt;h2 id="network">Network&lt;/h2>
+&lt;ul>
+&lt;li>Ethernet
+&lt;ul>
+&lt;li>5 x 1 Gb/s switch&lt;/li>
+&lt;li>5 x 1 Gb/s switch 10 Gig uplink&lt;/li>
+&lt;li>1 x 10 Gb/s switch for campus high performance research network&lt;/li>
+&lt;li>Redundant, load balanced, robust mesh topology&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Interconnect
+&lt;ul>
+&lt;li>56 Gb/s InfiniBand (FDR)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="head-nodes">Head Nodes&lt;/h2>
+&lt;p>All users should access the cluster via SSH through &lt;code>cluster.hpcc.ucr.edu&lt;/code>. This address will automatically balance traffic to one of the available head nodes.&lt;/p>
+&lt;ul>
+&lt;li>Pigeon
+&lt;ul>
+&lt;li>Resources: 16 cores, 128 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pelican
+&lt;ul>
+&lt;li>Resources: 32 cores, 64 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Penguin
+&lt;ul>
+&lt;li>Resources: 8 cores, 64 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Parrot
+&lt;ul>
+&lt;li>Resources: 32 cores, 32 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="worker-nodes">Worker Nodes&lt;/h2>
+&lt;ul>
+&lt;li>Batch
+&lt;ul>
+&lt;li>c01-c48: each with 64 AMD cores and 512 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Highmem
+&lt;ul>
+&lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GPU
+&lt;ul>
+&lt;li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory&lt;/li>
+&lt;li>gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (~20000 CUDA cores) and 512 GB memory&lt;/li>
+&lt;li>gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (~5200 CUDA cores) and 256 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Intel
+&lt;ul>
+&lt;li>i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>About: Hardware Overview</title><link>https://dev.hpcc.ucr.edu/about/hardware/hardware_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/hardware_overview/</guid><description>
+&lt;h2 id="computer-cluster">Computer cluster&lt;/h2>
+&lt;ul>
+&lt;li>Over 6,500 CPU cores (60% Intel, 40% AMD)&lt;/li>
+&lt;li>512-1024GB RAM per node&lt;/li>
+&lt;li>GPU (K80, P100): 67,000 cuda cores&lt;/li>
+&lt;li>IB network @ 56Gbs&lt;/li>
+&lt;li>Queueing system Slurm&lt;/li>
+&lt;/ul>
+&lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
+&lt;ul>
+&lt;li>2PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
+&lt;li>Home directories on dedicated system&lt;/li>
+&lt;/ul>
+&lt;h2 id="backup-system">Backup system&lt;/h2>
+&lt;ul>
+&lt;li>2PB GPFS storage&lt;/li>
+&lt;li>Geographically separated server room&lt;/li>
+&lt;/ul>
+&lt;h2 id="server-room">Server room&lt;/h2>
+&lt;ul>
+&lt;li>Genomics Building, Rm 1120A&lt;/li>
+&lt;li>Size 600 sqft&lt;/li>
+&lt;li>Raised floor cooling with redundant AC units&lt;/li>
+&lt;li>Backup power: UPS plus generator&lt;/li>
+&lt;/ul></description></item></channel></rss>
