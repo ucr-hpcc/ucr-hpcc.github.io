@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: HPC and Big Data Processing Tutorials
 title: HPC and Big Data Processing Tutorials
 ---
 

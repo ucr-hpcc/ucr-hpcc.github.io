@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Annual workshop on HPC and big data processing
 title: Annual workshop on HPC and big data processing
 ---
 

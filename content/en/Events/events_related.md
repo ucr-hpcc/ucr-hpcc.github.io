@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Related HPC and big data analysis events
 title: Related HPC and big data analysis events
 ---
 
