@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+  <head>
+    {{ partial "head.html" .  }}
+  </head>
+  <body class="td-{{ .Kind }} line-numbers">
+    <header>
+     {{ partial "navbar-docs.html" . }}
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            {{ partial "sidebar.html" . }}
+          </div>
+          {{$visDate := ""}}
+          {{$visHideMethod := "soft"}}
+
+          {{ if ne .Site.Params.visHideMethod nil }}
+            {{if eq .Site.Params.visHideMethod "hard"}} {{$visHideMethod = "hard"}} {{ end }}
+          {{ end }}
+
+          {{ if ne .Params.visibleDate nil }}
+            {{$serverTimeZone := "UTC"}}
+            {{ if ne .Site.Params.serverTimeLocation nil }}
+              {{$serverTimeZone = .Site.Params.serverTimeLocation}}
+            {{ end }}
+            {{$visDate = time .Params.visibleDate $serverTimeZone}}
+          {{ end }}
+          {{if not (eq $visDate "") | and (eq (printf "%T" $visDate) "time.Time") | and (gt $visDate now)}}
+            {{if eq $visHideMethod "hard"}}
+              <div class="col-12 col-md-9 col-xl-10 pl-md-5" role="main" style="margin-top: 50vh">
+                <h1 class="center-text"> Content not visible before {{$visDate}}</h1>
+              </div>
+            {{ else }}
+
+              <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+                {{ partial "toc.html" . }}
+              </div>
+              <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+                <script>
+                  hideContent({{$visDate}})
+                </script>
+                {{ partial "version-banner.html" . }}
+                {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+                {{ block "main" . }}{{ end }}
+              </main>
+            {{ end }}
+          {{ else }}
+              <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+                {{ partial "toc.html" . }}
+              </div>
+              <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+                {{ partial "version-banner.html" . }}
+                {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+                {{ block "main" . }}{{ end }}
+              </main>
+          {{end}}
+
+
+        </div>
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
