@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Parallel Evaluations in R 
 title: Parallel Evaluations in R 
 permalink: manuals_linux-cluster_parallelR.html
 ---

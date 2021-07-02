@@ -1,6 +1,7 @@
 ---
 title: "HPCC Cloud/External"
 linkTitle: "HPCC Cloud/External"
+type: docs
 weight: 2
 description: >
   What does your user need to know to try your project?

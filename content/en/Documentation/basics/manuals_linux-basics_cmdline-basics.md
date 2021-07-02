@@ -1,6 +1,7 @@
 ---
-layout: page
+linkTitle: Command Line Basics
 title: Command Line Basics
+type: docs
 permalink: manuals_linux-basics_cmdline-basics.html
 ---
 

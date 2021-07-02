@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Piping
 title: Piping
 permalink: manuals_linux-basics_pipes.html
 ---

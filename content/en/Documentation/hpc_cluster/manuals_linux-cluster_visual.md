@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Visualization
 title: Visualization
 permalink: manuals_linux-cluster_visual.html
 ---

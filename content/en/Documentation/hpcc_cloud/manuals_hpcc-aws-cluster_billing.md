@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Cost Control and Billing
 title: Cost Control and Billing
 permalink: manuals_hpcc-aws-cluster_billing.html
 ---

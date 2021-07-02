@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Access
 title: Access
 permalink: manuals_linux-basics_intro.html
 ---

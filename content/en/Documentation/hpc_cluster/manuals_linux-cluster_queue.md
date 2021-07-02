@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Queue Policies
 title: Queue Policies
 permalink: manuals_linux-cluster_queue.html
 ---

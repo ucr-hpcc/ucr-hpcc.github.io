@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: Process Management
 title: Process Management
 permalink: manuals_linux-basics_processes.html
 ---

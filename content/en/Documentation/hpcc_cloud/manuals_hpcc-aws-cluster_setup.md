@@ -1,5 +1,6 @@
 ---
-layout: page
+type: docs
+linkTitle: HPCC cfnCluster Setup 
 title: HPCC cfnCluster Setup 
 permalink: manuals_hpcc-aws-cluster_setup.html
 ---
