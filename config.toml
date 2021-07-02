@@ -1,6 +1,6 @@
 baseURL = "https://dev.hpcc.ucr.edu"
 relativeURLs = true
-title = "HPCC Home"
+title = "HPCC"
 
 enableRobotsTXT = true
 
@@ -54,7 +54,7 @@ anchor = "smart"
 
 [languages]
 [languages.en]
-title = "HPCC Home"
+title = "HPCC"
 description = "Home of UCR's HPCC"
 languageName ="English"
 # Weight used for sorting.
