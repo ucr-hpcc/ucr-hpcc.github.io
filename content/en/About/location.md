@@ -2,8 +2,7 @@
 linkTitle: Location
 title: Location
 type: docs
-weight: 10
-
+weight: 4
 ---
 
 ## Office location and mailing address

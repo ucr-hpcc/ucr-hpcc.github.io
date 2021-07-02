@@ -1,9 +1,9 @@
 ---
 title: Activity Report
-linkTitle: Snapshot
+linkTitle: Activity
 type: docs
 description: >
-weight: 1
+weight: 3
 ---
 
 ## Summary report

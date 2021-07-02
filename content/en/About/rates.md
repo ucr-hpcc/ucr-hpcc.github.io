@@ -2,6 +2,7 @@
 title: Rates
 linkTitle: Rates
 type: docs
+weight: 6
 ---
 
 ## Facility description
