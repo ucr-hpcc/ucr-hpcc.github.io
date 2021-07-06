@@ -203,13 +203,13 @@ enable = true
   name = "About"
   url = "/about"
   weight = 9
-  pre = "<i class="fas fa-info-circle"></i>"
-  [[menu.main]]
+  icon = "fas fa-info-circle"
+[[menu.main]]
   parent = "About"
   name = "Hardware"
   url = "/Hardware"
   weight = 1
-  [[menu.main]]
+[[menu.main]]
   parent = "About"
   name = "Software"
   url = "/Software"
@@ -217,7 +217,7 @@ enable = true
 [[menu.main]]
   name = "Related"
   url = "/related/"
-  pre = "<i class="fas fa-share-nodes"></i>"
+  icon = "fas fa-share-nodes"
   weight = 10
 [[menu.main]]
     name = "RED-UCR"
@@ -243,18 +243,18 @@ enable = true
   name = "Manuals"
   url = "/manuals"
   weight = 11
-  pre = "<i class="fas fa-book"></i>"
-  [[menu.main]]
+  icon = "fas fa-book"
+[[menu.main]]
   parent = "Manuals"
   name = "Linux Basics"
   url = "/Linux Basics"
   weight = 1
-  [[menu.main]]
+[[menu.main]]
   parent = "Manuals"
   name = "HPC Cluster"
   url = "/HPC Cluster"
   weight = 2
-  [[menu.main]]
+[[menu.main]]
   parent = "Manuals"
   name = "HPCC Cloud/External"
   url = "/HPCC Cloud/External"
@@ -263,4 +263,4 @@ enable = true
   name = "Community"
   url = "/Community"
   weight = 12
-  pre = "<i class="fas fa-users"></i>"
+  icon = "fas fa-users"
