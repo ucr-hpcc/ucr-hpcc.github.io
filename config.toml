@@ -200,10 +200,26 @@ enable = true
 # Top-level navigation (horizontal)
 ##
 [[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 9
+  pre = "<i class="fas fa-info-circle"></i>"
+  [[menu.main]]
+  parent = "About"
+  name = "Hardware"
+  url = "/Hardware"
+  weight = 1
+  [[menu.main]]
+  parent = "About"
+  name = "Software"
+  url = "/Software"
+  weight = 2
+[[menu.main]]
   name = "Related"
   url = "/related/"
+  pre = "<i class="fas fa-share-nodes"></i>"
   weight = 10
-  [[menu.main]]
+[[menu.main]]
     name = "RED-UCR"
     url = "https://research.ucr.edu"
     parent = "Related"
@@ -223,3 +239,28 @@ enable = true
     url = "http://genomics.ucr.edu"
     parent = "Related"
     weight = 4
+[[menu.main]]
+  name = "Manuals"
+  url = "/manuals"
+  weight = 11
+  pre = "<i class="fas fa-book"></i>"
+  [[menu.main]]
+  parent = "Manuals"
+  name = "Linux Basics"
+  url = "/Linux Basics"
+  weight = 1
+  [[menu.main]]
+  parent = "Manuals"
+  name = "HPC Cluster"
+  url = "/HPC Cluster"
+  weight = 2
+  [[menu.main]]
+  parent = "Manuals"
+  name = "HPCC Cloud/External"
+  url = "/HPCC Cloud/External"
+  weight = 3
+[[menu.main]]
+  name = "Community"
+  url = "/Community"
+  weight = 12
+  pre = "<i class="fas fa-users"></i>"
