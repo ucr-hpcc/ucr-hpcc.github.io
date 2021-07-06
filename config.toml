@@ -178,7 +178,7 @@ enable = true
 [[params.links.user]]
 	name = "Stack Overflow"
 	url = "https://ucr-hpcc.slack.com/"
-	icon = "fab fa-stack-overflow"
+	icon = "fab fa-slack"
         desc = "For immediate help, users can also post questions here."
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]

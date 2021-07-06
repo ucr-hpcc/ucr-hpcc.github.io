@@ -1,6 +1,6 @@
 +++
-title = "HPCC Home"
-linkTitle = "HPCC Home"
+title = "HPCC"
+linkTitle = "HPCC"
 +++
 
 <style>
@@ -9,54 +9,76 @@ linkTitle = "HPCC Home"
 }
 </style>
 
-{{< blocks/cover title="Welcome to UCR HPCC!" image_anchor="top" height="full" color="primary" >}}
+{{< blocks/cover title="Welcome to the UCR HPCC!" image_anchor="top" height="full" color="primary" >}}
 <div class="mx-auto">
-    <p class="lead mt-5"> Welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. This site gives an overview of the HPC resources and services provided by our center. </p>
+    <p class="lead mt-5">
+      Welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. 
+      This site gives an overview of the HPC resources and services provided by our center.
+    </p>
        
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/about" >}}">
 		About<i class="fas fa-info-circle ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/events" >}}">
-		Events<i class="fas fa-users ml-2"></i>
+
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/community" >}}">
+		Community<i class="fas fa-users ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/documentation" >}}">
-		Documentation<i class="fas fa-book ml-2"></i>
+
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/manuals" >}}">
+		Manuals<i class="fas fa-book ml-2"></i>
 	</a>
 </div>
 
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
+{{% blocks/lead color="white" %}}
+  <h3>HPCC Operation During COVID-19 Crisis </h3>
+  <p>Since the research computing infrastructure of the HPCC is designed to be
+  accessed remotely, we are currently not expecting any major downtimes or
+  restrictions for users due to the campus access restrictions caused by the
+  COVID-19 pandemic. However, even this may change depending on the extent of the
+  restrictions our university may have to implement.
+  </p>
+{{% /blocks/lead %}}
 
-{{% blocks/section %}}
-
-<h3>Mission and Services</h3>
-<p>The High-Performance Computing Center (HPCC) provides state-of-the-art research
-computing infrastructure and training accessible to all UCR researchers and affiliates
-at low cost. This includes access to the shared HPC resources and services summarized below.</p>
-<p>The main advantage of a shared research computing environment is access to a much larger HPC
-infrastructure (with thousands of CPUs/GPUs and many PBs of directly attached
-storage) than what smaller clusters of individual research groups could afford,
-while also providing a long-term sustainability plan and professional systems
-administrative support.</p>
-
-{{% /blocks/section %}}
-
-{{% blocks/section color="white" %}}
-
-<h3>HPCC Operation During COVID-19 Crisis </h3>
-<p>Since the research computing infrastructure of the HPCC is designed to be
-accessed remotely, we are currently not expecting any major downtimes or
-restrictions for users due to the campus access restrictions caused by the
-COVID-19 pandemic. However, even this may change depending on the extent of the
-restrictions our university may have to implement. A few exceptions that are
-currently in effect for the HPCC facility are the following:</p>
-
-<ul>
+{{% blocks/section color="dark" %}}
+  <h3>Exceptions</h3>
+  <p></p>
+  <p>
+    A few exceptions that are currently in effect for the HPCC facility are the following:
+  </p>
+  <ul>
     <li>Our offices in 1208/1207 Genomics Building are closed.
         The HPCC staff will continue to work as usual but exclusively via remote access from home.</li>
     <li>All in person contacts such as office visits or in-person training events are not possible during the current COVID-19 crisis.
         Alternatively, we will be offering remote training sessions via video conferencing using Zoom.</li>
-</ul>
-
+  </ul>
 {{% /blocks/section %}}
+
+{{% blocks/section color="primary" %}}
+  <h3>Mission and Services</h3>
+  <p>The High-Performance Computing Center (HPCC) provides state-of-the-art research
+  computing infrastructure and training accessible to all UCR researchers and affiliates
+  at low cost. This includes access to the shared HPC resources and services summarized below.</p>
+  <p>The main advantage of a shared research computing environment is access to a much larger HPC
+  infrastructure (with thousands of CPUs/GPUs and many PBs of directly attached
+  storage) than what smaller clusters of individual research groups could afford,
+  while also providing a long-term sustainability plan and professional systems
+  administrative support.</p>
+{{% /blocks/section %}}
+
+{{< blocks/section color="white" >}}
+  {{% blocks/feature icon="fab fa-slack" title="Join us in **Slack**" url="https://ucr-hpcc.slack.com" color="white" %}}
+  Get help and useful tips!
+  {{% /blocks/feature %}}
+
+  {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/ucr-hpcc/hpcc_new_site" color="white" %}}
+  We do a [Pull Request](https://github.com/ucr-hpcc/hpcc_new_site/pulls) contributions workflow on **GitHub**.
+  {{% /blocks/feature %}}
+
+  {{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/ucr_hpcc" color="white" %}}
+  For announcement of latest features etc.
+  {{% /blocks/feature %}}
+{{< /blocks/section >}}
+

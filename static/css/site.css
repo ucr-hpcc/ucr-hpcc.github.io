@@ -1,3 +1,8 @@
+/* Force element after header to be pushed down */
+div.row h3{
+  width: 100%;
+}
+
 .sps-site-bg-big {
   height: 45vh;
 }
