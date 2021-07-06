@@ -1,7 +1,7 @@
 ---
-type: docs
-linkTitle: HPC and Big Data Processing Tutorials
 title: HPC and Big Data Processing Tutorials
+linkTitle: Events Small
+type: docs
 ---
 
 | Date &amp; Time                           | Location                                 | Instructors                                                                                    | Title and Description                                                                                                                                                                                                                                                                                                                                                                                                                                   | Material                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

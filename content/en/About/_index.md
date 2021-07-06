@@ -2,10 +2,6 @@
 linkTitle: About
 title: About
 type: docs
-menu:
-  main:
-    weight: 1
-description: >
 ---
 
 ## Mission
