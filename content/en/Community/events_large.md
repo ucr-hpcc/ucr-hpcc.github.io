@@ -2,7 +2,8 @@
 title: Annual workshop on HPC and big data processing
 linkTitle: Events Large
 type: docs
-hidden: true
+weight: 2
+toc_hide: true
 ---
 
 ## HPC 
