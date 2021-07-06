@@ -203,7 +203,7 @@ enable = true
   name = "About"
   url = "/about"
   weight = 9
-  pre = "<i class='fas fa-info-circle'></i>"
+  pre = "<i class='fas fa-info-circle btn-primary'></i>"
 [[menu.main]]
   parent = "About"
   name = "Hardware"
@@ -217,7 +217,7 @@ enable = true
 [[menu.main]]
   name = "Related"
   url = "/related/"
-  pre = "<i class='fas fa-share-nodes'></i>"
+  pre = "<i class='fas fa-share-nodes btn-primary'></i>"
   weight = 11
 [[menu.main]]
     name = "RED-UCR"
@@ -243,7 +243,7 @@ enable = true
   name = "Manuals"
   url = "/Manuals"
   weight = 12
-  pre = "<i class='fas fa-book'></i>"
+  pre = "<i class='fas fa-book btn-primary'></i>"
 [[menu.main]]
   parent = "Manuals"
   name = "Linux Basics"
@@ -263,4 +263,4 @@ enable = true
   name = "Community"
   url = "/Community"
   weight = 10
-  pre = "<i class='fas fa-users'></i>"
+  pre = "<i class='fas fa-users btn-primary'></i>"
