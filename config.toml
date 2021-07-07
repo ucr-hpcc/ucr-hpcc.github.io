@@ -197,29 +197,34 @@ enable = true
 #	icon = "fa fa-envelope"
 #        desc = "Discuss development issues around the project"
 
-# Top-level navigation (horizontal)
-##
+###################
+# Main Menu (top) #
+###################
+
+# About
 [[menu.main]]
   name = "About"
   url = "/about"
   weight = 9
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
-[[menu.main]]
-  parent = "About"
-  name = "Hardware"
-  url = "/Hardware"
-  weight = 1
-[[menu.main]]
-  parent = "About"
-  name = "Software"
-  url = "/Software"
-  weight = 2
+  [[menu.main]]
+    parent = "About"
+    name = "Hardware"
+    url = "/Hardware"
+    weight = 1
+  [[menu.main]]
+    parent = "About"
+    name = "Software"
+    url = "/Software"
+    weight = 2
+
+# Related
 [[menu.main]]
   name = "Related"
   url = "/related/"
-  pre = "<i class='fas fa-share-nodes btn-primary'></i>"
+  pre = "<i class='fas fa-share-alt btn-primary'></i>"
   weight = 11
-[[menu.main]]
+  [[menu.main]]
     name = "RED-UCR"
     url = "https://research.ucr.edu"
     parent = "Related"
@@ -239,28 +244,43 @@ enable = true
     url = "http://genomics.ucr.edu"
     parent = "Related"
     weight = 4
+
+# Manuals
 [[menu.main]]
   name = "Manuals"
   url = "/Manuals"
   weight = 12
   pre = "<i class='fas fa-book btn-primary'></i>"
-[[menu.main]]
-  parent = "Manuals"
-  name = "Linux Basics"
-  url = "/Linux Basics"
-  weight = 1
-[[menu.main]]
-  parent = "Manuals"
-  name = "HPC Cluster"
-  url = "/HPC Cluster"
-  weight = 2
-[[menu.main]]
-  parent = "Manuals"
-  name = "HPCC Cloud/External"
-  url = "/HPCC Cloud/External"
-  weight = 3
+  [[menu.main]]
+    parent = "Manuals"
+    name = "Linux Basics"
+    url = "/Linux Basics"
+    weight = 1
+  [[menu.main]]
+    parent = "Manuals"
+    name = "HPC Cluster"
+    url = "/HPC Cluster"
+    weight = 2
+  [[menu.main]]
+    parent = "Manuals"
+    name = "HPCC Cloud/External"
+    url = "/HPCC Cloud/External"
+    weight = 3
+
+# Community
 [[menu.main]]
   name = "Community"
   url = "/Community"
   weight = 10
   pre = "<i class='fas fa-users btn-primary'></i>"
+  [[menu.main]]
+    parent = "Community"
+    name = "Small Events"
+    url = "/community/events_small/"
+    weight = 1
+  [[menu.main]]
+    parent = "Community"
+    name = "Related Events"
+    url = "/community/events_related/"
+    weight = 2
+
