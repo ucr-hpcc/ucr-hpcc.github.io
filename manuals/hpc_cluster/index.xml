@@ -1,195 +1,96 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPC Cluster</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/</link><description>Recent content in HPC Cluster on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpc_cluster/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Communicating</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
-&lt;h2 id="communicating-with-others">Communicating with others&lt;/h2>
-&lt;p>The cluster is a shared resource, and communicating with other users can help to schedule large computations.&lt;/p>
-&lt;p>&lt;strong>Looking-Up Specific Users&lt;/strong>&lt;/p>
-&lt;p>A convenient overview of all users and their lab affiliations can be retrieved with the following command:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">user_details.sh
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can search for specific users by running:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#000">MATCH1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;username1&amp;#39;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Searches by real name, and username, and email address and PI name&lt;/span>
-&lt;span style="color:#000">MATCH2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;username2&amp;#39;&lt;/span>
-user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep -P &lt;span style="color:#4e9a06">&amp;#34;&lt;/span>&lt;span style="color:#000">$MATCH1&lt;/span>&lt;span style="color:#4e9a06">|&lt;/span>&lt;span style="color:#000">$MATCH2&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Listing Users with Active Jobs on the Cluster&lt;/strong>
-To get a list of usernames:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the list of real names:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $2,$3,$4}&amp;#39;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> -f &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> --noheader &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $1,$2}&amp;#39;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the list of emails:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $4,$5}&amp;#39;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> -f &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> --noheader &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $2}&amp;#39;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Data Storage</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
-&lt;h2 id="dashboard">Dashboard&lt;/h2>
-&lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>.&lt;/p>
-&lt;h2 id="home">Home&lt;/h2>
-&lt;p>Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster. This is usually where you place the scripts and various things you are working on. This space is very limited. Please remember that the home storage space quota per user account is 20 GB.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/rhome/&lt;code>username&lt;/code>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>All Users&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>User&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="bigdata">Bigdata&lt;/h2>
-&lt;p>Bigdata is an area where large amounts of storage can be made available to users. A lab purchases bigdata space separately from access to the cluster. This space is then made available to the lab via a shared directory and individual directories for each user.&lt;/p>
-&lt;p>&lt;strong>Lab Shared Space&lt;/strong>
-This directory can be accessed by the lab as a whole.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/bigdata/&lt;code>labname&lt;/code>/shared&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>Labs that have purchased space.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>Lab&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>Individual User Space&lt;/strong>
-This directory can be accessed by specific lab members.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/bigdata/&lt;code>labname&lt;/code>/&lt;code>username&lt;/code>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>Labs that have purchased space.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>Lab&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="non-persistent-space">Non-Persistent Space&lt;/h2>
-&lt;p>Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on the HPC cluster.&lt;/p>
-&lt;p>&lt;strong>Temporary Space&lt;/strong>
-This is a standard space available on all Linux systems. Please be aware that it is limited to the amount of free disk space on the node you are running on.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/tmp&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>All Users&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>N/A&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>SSD Backed Space&lt;/strong>
-This space is much faster than the persistwnt space (/rhome,/bigdata), but slower than using RAM based storage.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/scratch&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>All Users&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>N/A&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>RAM Space&lt;/strong>
-This type of space takes away from physical memory but allows extremely fast access to the files located on it. When submitting a job you will need to factor in the space your job is using in RAM as well. For example, if you have a dataset that is 1G in size and use this space, it will take at least 1G of RAM.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Path&lt;/th>
-&lt;th>/dev/shm&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>User Availability&lt;/td>
-&lt;td>All Users&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Node Availability&lt;/td>
-&lt;td>All Nodes&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Quota Responsibility&lt;/td>
-&lt;td>N/A&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="usage-and-quotas">Usage and Quotas&lt;/h2>
-&lt;p>To quickly check your usage and quota limits:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">check_quota home
-check_quota bigdata
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the usage of your current directory, run the following command:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">du -sh .
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To calculate the sizes of each separate sub directory, run:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">du -shc *
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>This may take some time to complete, please be patient.&lt;/p>
-&lt;p>For more information on your home directory, please see the &lt;a href="manuals_linux-basics_cmdline-basics.html#orientation">Linux Basics Orientation&lt;/a>.&lt;/p>
-&lt;h2 id="automatic-backups">Automatic Backups&lt;/h2>
-&lt;p>The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
-The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. It is not a data archiving system.&lt;/p>
-&lt;p>Home backups are created daily and kept for one week.
-Bigdata backups are created weekly and kept for one month.&lt;/p>
-&lt;p>Home and bigdata backups are located under the following respective directories:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">/rhome/.snapshots/
-/bigdata/.snapshots/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The individual snapshot directories have names with numerical values in epoch time format.
-The higher the value the more recent the snapshot.&lt;/p>
-&lt;p>To view the exact time of when each snapshot was taken execute the following commands:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mmlssnapshot home
-mmlssnapshot bigdata
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Getting Started</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPC Cluster</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/</link><description>Recent content in HPC Cluster on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpc_cluster/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This manual provides an introduction to the usage of the HPCC cluster.
+All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee &lt;a href="../../#rates">(see rates)&lt;/a>.
+To request an account, please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
+The latest hardware/facility description for grant applications is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;h3 id="storage">Storage&lt;/h3>
+&lt;ul>
+&lt;li>Four enterprise class HPC storage systems&lt;/li>
+&lt;li>Approximately 2 PB (2048 TB) of network storage&lt;/li>
+&lt;li>GPFS (NFS and SAMBA via GPFS)&lt;/li>
+&lt;li>Automatic snapshots and archival backups&lt;/li>
+&lt;/ul>
+&lt;h3 id="network">Network&lt;/h3>
+&lt;ul>
+&lt;li>Ethernet
+&lt;ul>
+&lt;li>1 Gb/s switch x 5&lt;/li>
+&lt;li>1 Gb/s switch 10 Gig uplink&lt;/li>
+&lt;li>10 Gb/s switch for Campus wide Science DMZ&lt;/li>
+&lt;li>redundant, load balanced, robust mesh topology&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Interconnect
+&lt;ul>
+&lt;li>56 Gb/s InfiniBand (FDR)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="head-nodes">Head Nodes&lt;/h3>
+&lt;p>All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.&lt;/p>
+&lt;ul>
+&lt;li>Penguin
+&lt;ul>
+&lt;li>Resources: 8 cores, 64 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pigeon
+&lt;ul>
+&lt;li>Resources: 16 cores, 128 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pelican
+&lt;ul>
+&lt;li>Resources: 32 cores, 64 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Owl
+&lt;ul>
+&lt;li>Resources: 16 cores, 64 GB memory&lt;/li>
+&lt;li>Primary function: testing; running test sets of jobs&lt;/li>
+&lt;li>Secondary function: submitting jobs to the queuing system&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Globus
+&lt;ul>
+&lt;li>Resources: 32 cores, 32 GB memory&lt;/li>
+&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="worker-nodes">Worker Nodes&lt;/h3>
+&lt;ul>
+&lt;li>Batch
+&lt;ul>
+&lt;li>c01-c48: each with 64 AMD cores and 512 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Highmem
+&lt;ul>
+&lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GPU
+&lt;ul>
+&lt;li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
+&lt;li>gpu03-gpu04: each with 32 (HT) cores Intel Haswell CPUs and 4 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Intel
+&lt;ul>
+&lt;li>i01-i40: each with 32 Intel Broadwell cores and 512 GB memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
 &lt;h2 id="login-from-mac-linux-mobaxterm">Login from Mac, Linux, MobaXTerm&lt;/h2>
 &lt;p>The initial login brings users into the cluster head node (i.e. pigeon, penguin, owl). From there, users can submit jobs via qsub to the compute nodes or log into owl to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.&lt;/p>
@@ -302,171 +203,7 @@ The head nodes are a shared resource and should be accessible by all users. Nega
 &lt;p>However you may run memory intensive jobs on Owl.
 Login to Owl like so:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh -X owl.ucr.edu
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Introduction</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This manual provides an introduction to the usage of the HPCC cluster.
-All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee &lt;a href="../../#rates">(see rates)&lt;/a>.
-To request an account, please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
-The latest hardware/facility description for grant applications is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;h3 id="storage">Storage&lt;/h3>
-&lt;ul>
-&lt;li>Four enterprise class HPC storage systems&lt;/li>
-&lt;li>Approximately 2 PB (2048 TB) of network storage&lt;/li>
-&lt;li>GPFS (NFS and SAMBA via GPFS)&lt;/li>
-&lt;li>Automatic snapshots and archival backups&lt;/li>
-&lt;/ul>
-&lt;h3 id="network">Network&lt;/h3>
-&lt;ul>
-&lt;li>Ethernet
-&lt;ul>
-&lt;li>1 Gb/s switch x 5&lt;/li>
-&lt;li>1 Gb/s switch 10 Gig uplink&lt;/li>
-&lt;li>10 Gb/s switch for Campus wide Science DMZ&lt;/li>
-&lt;li>redundant, load balanced, robust mesh topology&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Interconnect
-&lt;ul>
-&lt;li>56 Gb/s InfiniBand (FDR)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="head-nodes">Head Nodes&lt;/h3>
-&lt;p>All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.&lt;/p>
-&lt;ul>
-&lt;li>Penguin
-&lt;ul>
-&lt;li>Resources: 8 cores, 64 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Pigeon
-&lt;ul>
-&lt;li>Resources: 16 cores, 128 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Pelican
-&lt;ul>
-&lt;li>Resources: 32 cores, 64 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Owl
-&lt;ul>
-&lt;li>Resources: 16 cores, 64 GB memory&lt;/li>
-&lt;li>Primary function: testing; running test sets of jobs&lt;/li>
-&lt;li>Secondary function: submitting jobs to the queuing system&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Globus
-&lt;ul>
-&lt;li>Resources: 32 cores, 32 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="worker-nodes">Worker Nodes&lt;/h3>
-&lt;ul>
-&lt;li>Batch
-&lt;ul>
-&lt;li>c01-c48: each with 64 AMD cores and 512 GB memory&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Highmem
-&lt;ul>
-&lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>GPU
-&lt;ul>
-&lt;li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
-&lt;li>gpu03-gpu04: each with 32 (HT) cores Intel Haswell CPUs and 4 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Intel
-&lt;ul>
-&lt;li>i01-i40: each with 32 Intel Broadwell cores and 512 GB memory&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Manuals: Login</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
-&lt;h2 id="login">Login&lt;/h2>
-&lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
-Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>
-&lt;p>Roll-Out Plan:&lt;/p>
-&lt;ol>
-&lt;li>Old (password) and new (secure) authentication methods are provided through &lt;code>cluster.hpcc.ucr.edu&lt;/code> and &lt;code>secure.hpcc.ucr.edu&lt;/code> respectively.&lt;/li>
-&lt;li>Users configure new authentication method.&lt;/li>
-&lt;li>Users log into the cluster using host &lt;code>secure.hpcc.ucr.edu&lt;/code>.&lt;/li>
-&lt;li>After the authentication switch over deadline (TBD), host &lt;code>cluster.hpcc.ucr.edu&lt;/code> switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.&lt;/li>
-&lt;/ol>
-&lt;h2 id="secure-authentication">Secure Authentication&lt;/h2>
-&lt;p>There are two methods of authentication that the cluster supports:&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="#passwordduo">Password+DUO&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#ssh-keys">SSH Keys&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;h3 id="passwordduo">Password+Duo&lt;/h3>
-&lt;p>The &lt;code>Password+DUO&lt;/code> combination method will only work if your UCR NetID matches your cluster username.
-If these two match then first check if you already have DUO installed and configured on a mobile device.
-If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling:
-&lt;a href="https://cnc.ucr.edu/mfa/enrollment.html">https://cnc.ucr.edu/mfa/enrollment.html&lt;/a>&lt;/p>
-&lt;p>Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
-If you have a new account then your password was emailed to you when your account was created.&lt;/p>
-&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh username@secure.hpcc.ucr.edu
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
-&lt;p>Assuming that you have already installed and configured DUO on a mobile device, then when attempting to login you will be first asked to provide your password, and then you will need to choose your DUO authentication option to validate your login attempt.
-Depending on how you chose to configure/enrolling your mobile device, you may see multiple options.&lt;/p>
-&lt;p>DUO uses either an option for DUO authentication via &lt;code>Push&lt;/code> which uses the mobile app, or via &lt;code>SMS&lt;/code> which sends a code as a text message to your phone.
-Choose whichever option works best for you.&lt;/p>
-&lt;p>After logging in successfully, you are expected to update your password with the &lt;code>passwd&lt;/code> command.&lt;/p>
-&lt;p>For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
-&lt;a href="https://cnc.ucr.edu/mfa/how.html">https://cnc.ucr.edu/mfa/how.html&lt;/a>&lt;/p>
-&lt;h3 id="ssh-keys">SSH Keys&lt;/h3>
-&lt;p>SSH keys can only be setup if you already have access to the cluster.
-This is becuase in order to get this working a file needs to be placed in your home directory on the cluster.&lt;/p>
-&lt;p>When using SSH key authentication, you will need to create a public and a pritate key.
-This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
-Only when your private key &amp;ldquo;fits&amp;rdquo; the public key, can you be granted access.&lt;/p>
-&lt;p>To create the key pair run the following command on your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>):&lt;/p>
-&lt;pre>&lt;code># Create SSH directory
-mkdir -p ~/.ssh
-# Create key pair (Private and Public)
-ssh-keygen -t rsa -f ~/.ssh/id_rsa
-&lt;/code>&lt;/pre>&lt;p>Once the command has completed, you will find two files in your &lt;code>~/.ssh&lt;/code> directory.&lt;/p>
-&lt;pre>&lt;code># List files in SSH directory
-ls ~/.ssh/
-id_rsa
-id_rsa.pub
-&lt;/code>&lt;/pre>&lt;p>The &lt;code>id_rsa&lt;/code> file is your private key and the &lt;code>id_rsa.pub&lt;/code> is your public key.
-You will need to copy your public key to the cluster, creating the &lt;code>authorized_keys&lt;/code> file.&lt;/p>
-&lt;p>From your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>) run the following:&lt;/p>
-&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
-&lt;/code>&lt;/pre>&lt;p>If the &lt;code>authorized_keys&lt;/code> file already exists, you can just append your new public key, like so:&lt;/p>
-&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey &amp;amp;&amp;amp; ssh username@cluster.hpcc.ucr.edu &amp;quot;cat tmpkey &amp;gt;&amp;gt; ~/.ssh/authorized_keys &amp;amp;&amp;amp; rm tmpkey&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh username@secure.hpcc.ucr.edu
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
-&lt;blockquote>
-&lt;p>Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager &amp;ldquo;MobaKeyGen&amp;rdquo; (from the &amp;ldquo;Tools&amp;rdquo; menu).&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="file-transfers">File Transfers&lt;/h2>
-&lt;p>We support &lt;code>FileZilla&lt;/code> as the recommended graphical file transfer application. If you are comfortable with the command line that is typically easier to use.
-However, there may be times when selecting multiple files from a graphical application is prefered.&lt;/p>
-&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site, just click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
-From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
-&lt;p>On the right pane fill in the information as follows:&lt;/p>
-&lt;pre>&lt;code>Protocol SFTP - SSH File Transfer Protocol
-Host secure.hpcc.ucr.edu
-Port 22
-&lt;/code>&lt;/pre>&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: Managing Jobs</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Managing Jobs</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</guid><description>
 &lt;h2 id="what-is-a-job">What is a Job?&lt;/h2>
 &lt;p>Submitting and managing jobs is at the heart of using the cluster. A &amp;lsquo;job&amp;rsquo; refers to the script, pipeline or experiment that you run on the nodes in the cluster.&lt;/p>
 &lt;h2 id="partitions">Partitions&lt;/h2>
@@ -832,7 +569,41 @@ mpirun maker &lt;span style="color:#8f5902;font-style:italic"># Provide appropri
 3. Graphical user interfaces
 4. Etc ...
 &lt;/code>&lt;/pre>
-&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p></description></item><item><title>Manuals: Package Management</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</guid><description>
+&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p></description></item><item><title>Manuals: Queue Policies</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
+&lt;h2 id="start-times">Start Times&lt;/h2>
+&lt;p>Start times are a great way to track your jobs:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">squeue -u &lt;span style="color:#000">$USER&lt;/span> --start
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Start times are rough estimates based on the current state of the queue.&lt;/p>
+&lt;h2 id="fair-share">Fair-Share&lt;/h2>
+&lt;p>Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
+Thus the estimated start times can be extended to allow everyone their fair share of the system.
+This prevents a few large groups from dominating the queuing system for long periods of time.&lt;/p>
+&lt;p>You can see with the &lt;code>sqmore&lt;/code> command what priority your job has (list is sorted from lowest to highest priority).
+You can also check to see how your group&amp;rsquo;s priority is compared to other groups on the cluster with the &amp;ldquo;sshare&amp;rdquo; command.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>It may also be useful to see your entire group&amp;rsquo;s fairshare score and who has used the most shares:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare -A &lt;span style="color:#000">$GROUP&lt;/span> --all
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Lastley, if you only want to see your own fairshare score:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare -A &lt;span style="color:#000">$GROUP&lt;/span> -u &lt;span style="color:#000">$USER&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The fairshare score is a number between 0 and 1. The best score being 1, and the worst being 0.
+The fairshare score approches zero the more resource you (or your group) consume.
+Your individual consumption of resources (usage) does affect your entire group&amp;rsquo;s fiarshare score.
+The affects of your running/completed jobs on your fairshare score are halved each day (half-life).
+Thus, after waiting several days without running any jobs, you should see an improvment in your fairshare score.&lt;/p>
+&lt;p>Here is a very good &lt;a href="https://www.rc.fas.harvard.edu/fairshare/">explaination of fairshare&lt;/a>.&lt;/p>
+&lt;h2 id="priority">Priority&lt;/h2>
+&lt;p>The fairshare score and jobs queue wait time is used to calculate your job&amp;rsquo;s priority.
+You can use the &lt;code>sprio&lt;/code> command to check the priority of your jobs:&lt;/p>
+&lt;pre>&lt;code>sprio -u $USER
+&lt;/code>&lt;/pre>&lt;p>Even if your group has a lower fairshare score, your job may still have a very high priority.
+This would be likely due to the job&amp;rsquo;s queue wait time, and it should start as soon as possible regardless of fairshare score.
+You can use the &lt;code>sqmore&lt;/code> command to see a list of all jobs sorted by priority.&lt;/p>
+&lt;h2 id="backfill">Backfill&lt;/h2>
+&lt;p>Some small jobs may start before yours, only if they can complete before yours starts and thus not negatively affecting your start time.&lt;/p>
+&lt;h2 id="priority-partition">Priority Partition&lt;/h2>
+&lt;p>Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
+This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p></description></item><item><title>Manuals: Package Management</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</guid><description>
 &lt;h2 id="python">Python&lt;/h2>
 &lt;p>The scope of this manual is a brief introduction on how to manage Python packages.&lt;/p>
 &lt;h3 id="python-versions">Python Versions&lt;/h3>
@@ -934,111 +705,282 @@ It is also possible for you to install additional R packages in your local envir
 &lt;span style="color:#000">install_github&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;duncantl/RGoogleDocs&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># replace name with the GitHub account/repo&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="local-packages">Local Packages&lt;/h4>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-R" data-lang="R">&lt;span style="color:#000">install.packages&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#000">repos&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">NULL&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#000">type&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;source&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># replace URL with your URL or local path to your .tar.gz file&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Parallel Evaluations in R</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</guid><description>
-&lt;h1 id="overview">Overview&lt;/h1>
-&lt;p>R provides a variety of packages for parallel computations. One of the most
-comprehensive parallel computing environments for R is &lt;a href="https://mllg.github.io/batchtools/articles/batchtools.html">&lt;code>batchtools&lt;/code>&lt;/a>
-(formerly &lt;code>BatchJobs&lt;/code>). It supports both multi-core and multi-node computations with and
-without schedulers. By making use of cluster template files, most schedulers
-and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).&lt;/p>
-&lt;h2 id="r-code-of-this-section">R code of this section&lt;/h2>
-&lt;p>To simplify the evaluation of the R code of this page, the corresponding text version
-is available for download from &lt;a href="https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R">here&lt;/a>.&lt;/p>
-&lt;h2 id="parallelization-with-batchtools">Parallelization with batchtools&lt;/h2>
-&lt;p>The following introduces the usage of &lt;code>batchtools&lt;/code> for a computer cluster using SLURM as scheduler (workload manager).&lt;/p>
-&lt;h2 id="set-up-working-directory-for-slurm">Set up working directory for SLURM&lt;/h2>
-&lt;p>First login to your cluster account, open R and execute the following lines. This will
-create a test directory (here &lt;code>mytestdir&lt;/code>), redirect R into this directory and then download
-the required files:&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Data Storage</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
+&lt;h2 id="dashboard">Dashboard&lt;/h2>
+&lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>.&lt;/p>
+&lt;h2 id="home">Home&lt;/h2>
+&lt;p>Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster. This is usually where you place the scripts and various things you are working on. This space is very limited. Please remember that the home storage space quota per user account is 20 GB.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/rhome/&lt;code>username&lt;/code>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>All Users&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>User&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="bigdata">Bigdata&lt;/h2>
+&lt;p>Bigdata is an area where large amounts of storage can be made available to users. A lab purchases bigdata space separately from access to the cluster. This space is then made available to the lab via a shared directory and individual directories for each user.&lt;/p>
+&lt;p>&lt;strong>Lab Shared Space&lt;/strong>
+This directory can be accessed by the lab as a whole.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/bigdata/&lt;code>labname&lt;/code>/shared&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>Labs that have purchased space.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>Lab&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Individual User Space&lt;/strong>
+This directory can be accessed by specific lab members.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/bigdata/&lt;code>labname&lt;/code>/&lt;code>username&lt;/code>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>Labs that have purchased space.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>Lab&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="non-persistent-space">Non-Persistent Space&lt;/h2>
+&lt;p>Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on the HPC cluster.&lt;/p>
+&lt;p>&lt;strong>Temporary Space&lt;/strong>
+This is a standard space available on all Linux systems. Please be aware that it is limited to the amount of free disk space on the node you are running on.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/tmp&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>All Users&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>SSD Backed Space&lt;/strong>
+This space is much faster than the persistwnt space (/rhome,/bigdata), but slower than using RAM based storage.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/scratch&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>All Users&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>RAM Space&lt;/strong>
+This type of space takes away from physical memory but allows extremely fast access to the files located on it. When submitting a job you will need to factor in the space your job is using in RAM as well. For example, if you have a dataset that is 1G in size and use this space, it will take at least 1G of RAM.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Path&lt;/th>
+&lt;th>/dev/shm&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>User Availability&lt;/td>
+&lt;td>All Users&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Node Availability&lt;/td>
+&lt;td>All Nodes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quota Responsibility&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="usage-and-quotas">Usage and Quotas&lt;/h2>
+&lt;p>To quickly check your usage and quota limits:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">check_quota home
+check_quota bigdata
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the usage of your current directory, run the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">du -sh .
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To calculate the sizes of each separate sub directory, run:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">du -shc *
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This may take some time to complete, please be patient.&lt;/p>
+&lt;p>For more information on your home directory, please see the &lt;a href="manuals_linux-basics_cmdline-basics.html#orientation">Linux Basics Orientation&lt;/a>.&lt;/p>
+&lt;h2 id="automatic-backups">Automatic Backups&lt;/h2>
+&lt;p>The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
+The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. It is not a data archiving system.&lt;/p>
+&lt;p>Home backups are created daily and kept for one week.
+Bigdata backups are created weekly and kept for one month.&lt;/p>
+&lt;p>Home and bigdata backups are located under the following respective directories:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">/rhome/.snapshots/
+/bigdata/.snapshots/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The individual snapshot directories have names with numerical values in epoch time format.
+The higher the value the more recent the snapshot.&lt;/p>
+&lt;p>To view the exact time of when each snapshot was taken execute the following commands:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mmlssnapshot home
+mmlssnapshot bigdata
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Sharing Data</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</guid><description>
+&lt;h2 id="permissions">Permissions&lt;/h2>
+&lt;p>It is useful to share data and results with other users on the cluster, and we encourage collaboration The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
+Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user &lt;code>username&lt;/code> (with read, write, and execute), owned by the group &lt;code>groupname&lt;/code> (with read and execute), and everyone else cannot access it.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ ls -l myFile
+-rwxr-x--- &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> username groupname 1.6K Nov &lt;span style="color:#0000cf;font-weight:bold">19&lt;/span> 12:32 myFile
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you wanted to share this file with someone outside the &lt;code>groupname&lt;/code> group, read permissions must be added to the file for &amp;lsquo;other&amp;rsquo;:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ chmod o+r myFile
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To learn more about ownership, permissions, and groups please visit &lt;a href="manuals_linux-basics_permissions">Linux Basics Permissions&lt;/a>.&lt;/p>
+&lt;h2 id="set-default-permissions">Set Default Permissions&lt;/h2>
+&lt;p>In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and you do not want to be constantly adjusting permissions The command responsible for this is called &amp;lsquo;umask&amp;rsquo;. You should first check what your default permissions currently are by running &amp;lsquo;umask -S&amp;rsquo;.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ &lt;span style="color:#204a87">umask&lt;/span> -S
+&lt;span style="color:#000">u&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rwx,g&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx,o&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To set your default permissions, simply run umask with the correct options. Please note, that this does not change permissions on any existing files, only new files created after you update the default permissions. For instance, if you wanted to set your default permissions to you having full control, your group being able to read and execute your files, and no one else to have access, you would run:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ &lt;span style="color:#204a87">umask&lt;/span> &lt;span style="color:#000">u&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rwx,g&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx,o&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is also important to note that these settings only affect your current session.
+If you log out and log back in, these settings will be reset.
+To make your changes permanent you need to add them to your &lt;code>.bashrc&lt;/code> file, which is a hidden file in your home directory (if you do not have a &lt;code>.bashrc&lt;/code> file, you will need to create an empty file called &lt;code>.bashrc&lt;/code> in your home directory).
+Adding umask to your &lt;code>.bashrc&lt;/code> file is as simple as adding your umask command (such as &lt;code>umask u=rwx,g=rx,o=r&lt;/code>) to the end of the file.
+Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running &lt;code>umask -S&lt;/code>.&lt;/p>
+&lt;p>To learn more about umask please visit &lt;a href="http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html">What is Umask and How To Setup Default umask Under Linux?&lt;/a>.&lt;/p>
+&lt;h2 id="copying-bigdata">Copying bigdata&lt;/h2>
+&lt;p>Rsync can:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl">&lt;code>slurm.tmpl&lt;/code>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R">&lt;code>.batchtools.conf.R&lt;/code>&lt;/a>&lt;/li>
+&lt;li>Copy (transfer) directories between different locations&lt;/li>
+&lt;li>Perform transfers over the network via SSH&lt;/li>
+&lt;li>Compare large data sets (&lt;code>-n, --dry-run&lt;/code> option)&lt;/li>
+&lt;li>Resume interrupted transfers&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">dir.create&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;mytestdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">setwd&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;mytestdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">download.file&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://goo.gl/tLMddb&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;slurm.tmpl&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">download.file&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://goo.gl/5HrYkE&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="load-package-and-define-some-custom-function">Load package and define some custom function&lt;/h2>
-&lt;p>This is the test function (here toy example) that will be run on the cluster for demonstration
-purposes. It subsets the &lt;code>iris&lt;/code> data frame by rows, and appends the host name and R version of each
-node where the function was executed. The R version to be used on each node can be
-specified in the &lt;code>slurm.tmpl&lt;/code> file (under &lt;code>module load&lt;/code>).&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">library&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;RenvModule&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">module&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;load&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;slurm&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Loads slurm among other modules&lt;/span>
-&lt;span style="color:#000">library&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">batchtools&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">myFct&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">function&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;span style="color:#000">result&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">cbind&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">iris[x&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#000">]&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;span style="color:#000">Node&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">system&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;hostname&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">intern&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">TRUE&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
-&lt;span style="color:#000">Rversion&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">paste&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">R.Version&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>&lt;span style="color:#000">[6&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">7&lt;/span>&lt;span style="color:#000">]&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">collapse&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
-&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="submit-jobs-from-r-to-cluster">Submit jobs from R to cluster&lt;/h2>
-&lt;p>The following creates a &lt;code>batchtools&lt;/code> registry, defines the number of jobs and resource requests, and then submits the jobs to the cluster
-via SLURM.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">reg&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">makeRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">file.dir&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">conf.file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">Njobs&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Define number of jobs (here 4)&lt;/span>
-&lt;span style="color:#000">ids&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">batchMap&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">fun&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">myFct&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">x&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">done&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">submitJobs&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">ids&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">resources&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">list&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">partition&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;short&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">walltime&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">60&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ntasks&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ncpus&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">memory&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1024&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
-&lt;span style="color:#000">waitForJobs&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Wait until jobs are completed&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="summarize-job-status">Summarize job status&lt;/h2>
-&lt;p>After the jobs are completed one instect their status as follows.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">getStatus&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Summarize job status&lt;/span>
-&lt;span style="color:#000">showLog&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs[1]&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#8f5902;font-style:italic"># killJobs(Njobs) # # Possible from within R or outside with scancel&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="accessassemble-results">Access/assemble results&lt;/h2>
-&lt;p>The results are stored as &lt;code>.rds&lt;/code> files in the registry directory (here &lt;code>myregdir&lt;/code>). One
-can access them manually via &lt;code>readRDS&lt;/code> or use various convenience utilities provided
-by the &lt;code>batchtools&lt;/code> package.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">readRDS&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir/results/1.rds&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># reads from rds file first result chunk&lt;/span>
-&lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">lapply&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">reduceResults&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">rbind&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Assemble result chunks in single data.frame&lt;/span>
-&lt;span style="color:#000">do.call&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;rbind&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">lapply&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="remove-registry-directory-from-file-system">Remove registry directory from file system&lt;/h2>
-&lt;p>By default existing registries will not be overwritten. If required one can exlicitly
-clean and delete them with the following functions.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">clearRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Clear registry in R session&lt;/span>
-&lt;span style="color:#000">removeRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">wait&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Delete registry directory&lt;/span>
-&lt;span style="color:#8f5902;font-style:italic"># unlink(&amp;#34;myregdir&amp;#34;, recursive=TRUE) # Same as previous line&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="load-registry-into-r">Load registry into R&lt;/h2>
-&lt;p>Loading a registry can be useful when accessing the results at a later state or
-after moving them to a local system.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">from_file&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">loadRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">conf.file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;span style="color:#000">reduceResults&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">rbind&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Queue Policies</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
-&lt;h2 id="start-times">Start Times&lt;/h2>
-&lt;p>Start times are a great way to track your jobs:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">squeue -u &lt;span style="color:#000">$USER&lt;/span> --start
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Start times are rough estimates based on the current state of the queue.&lt;/p>
-&lt;h2 id="fair-share">Fair-Share&lt;/h2>
-&lt;p>Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
-Thus the estimated start times can be extended to allow everyone their fair share of the system.
-This prevents a few large groups from dominating the queuing system for long periods of time.&lt;/p>
-&lt;p>You can see with the &lt;code>sqmore&lt;/code> command what priority your job has (list is sorted from lowest to highest priority).
-You can also check to see how your group&amp;rsquo;s priority is compared to other groups on the cluster with the &amp;ldquo;sshare&amp;rdquo; command.&lt;/p>
-&lt;p>For example:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>It may also be useful to see your entire group&amp;rsquo;s fairshare score and who has used the most shares:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare -A &lt;span style="color:#000">$GROUP&lt;/span> --all
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Lastley, if you only want to see your own fairshare score:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sshare -A &lt;span style="color:#000">$GROUP&lt;/span> -u &lt;span style="color:#000">$USER&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The fairshare score is a number between 0 and 1. The best score being 1, and the worst being 0.
-The fairshare score approches zero the more resource you (or your group) consume.
-Your individual consumption of resources (usage) does affect your entire group&amp;rsquo;s fiarshare score.
-The affects of your running/completed jobs on your fairshare score are halved each day (half-life).
-Thus, after waiting several days without running any jobs, you should see an improvment in your fairshare score.&lt;/p>
-&lt;p>Here is a very good &lt;a href="https://www.rc.fas.harvard.edu/fairshare/">explaination of fairshare&lt;/a>.&lt;/p>
-&lt;h2 id="priority">Priority&lt;/h2>
-&lt;p>The fairshare score and jobs queue wait time is used to calculate your job&amp;rsquo;s priority.
-You can use the &lt;code>sprio&lt;/code> command to check the priority of your jobs:&lt;/p>
-&lt;pre>&lt;code>sprio -u $USER
-&lt;/code>&lt;/pre>&lt;p>Even if your group has a lower fairshare score, your job may still have a very high priority.
-This would be likely due to the job&amp;rsquo;s queue wait time, and it should start as soon as possible regardless of fairshare score.
-You can use the &lt;code>sqmore&lt;/code> command to see a list of all jobs sorted by priority.&lt;/p>
-&lt;h2 id="backfill">Backfill&lt;/h2>
-&lt;p>Some small jobs may start before yours, only if they can complete before yours starts and thus not negatively affecting your start time.&lt;/p>
-&lt;h2 id="priority-partition">Priority Partition&lt;/h2>
-&lt;p>Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
-This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p></description></item><item><title>Manuals: Security</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
+&lt;p>Rsync Notes:&lt;/p>
+&lt;ul>
+&lt;li>Rsync can be used on Windows, but you must install &lt;a href="https://cygwin.com">Cygwin&lt;/a>. Most Mac and Linux systems already have rsync install by default.&lt;/li>
+&lt;li>Always put the / after both folder names, e.g: &lt;code>FOLDER_A/&lt;/code> Failing to do so will result in the nesting folders every time you try to resume. If you don&amp;rsquo;t put / you will get a second folder_B inside folder_B &lt;code>FOLDER_A/FOLDER_A/&lt;/code>&lt;/li>
+&lt;li>Rsync only copies by default.&lt;/li>
+&lt;li>Once the rsync command is done, run it again. The second run will be shorter and can be used as a double check. If there was no output from the second run then nothing changed.&lt;/li>
+&lt;li>To learn more try &lt;code>man rsync&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>If you are transfering to, or from, your laptop/workstation it is required that you run the rsync command locally from your laptop/workstation.&lt;/p>
+&lt;p>To transfer to the cluster:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress FOLDER_A/ cluster.hpcc.ucr.edu:FOLDER_A/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To transfer from the cluster:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress cluster.hpcc.ucr.edu:FOLDER_A/ FOLDER_A/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Rsync will use SSH and will ask you for your cluster password, the same way SSH or SCP does.&lt;/p>
+&lt;p>If your rsync transer was interrupted, rsync can continue where it left off. Simply run the same command again to resume.&lt;/p>
+&lt;h2 id="copying-large-folders-on-the-cluster-between-directories">Copying large folders on the cluster between Directories&lt;/h2>
+&lt;p>If you want to syncronize the contents from one directory to another, then use the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress PATH_A/FOLDER_A/ PATH_B/FOLDER_A/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Rsync does not move but only copies. Thus you would need to delete the original once you confirm that everything has been transfered.&lt;/p>
+&lt;h2 id="copying-large-folders-between-the-cluster-and-other-servers">Copying large folders between the cluster and other servers&lt;/h2>
+&lt;p>If you want to copy data from the cluster to your own server, or another remote system, use the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -ai FOLDER_A/ sever2.xyz.edu:FOLDER_A/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The sever2.xyz.edu machine must be a server that accepts Rsync connections via SSH.&lt;/p>
+&lt;h2 id="sharing-files-on-the-web">Sharing Files on the Web&lt;/h2>
+&lt;p>Simply create a symbolic link or move the files into your html directory when you want to share them.
+For exmaple, log into the HPC cluster and run the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Make sure you have an html directory&lt;/span>
+mkdir ~/.html
+&lt;span style="color:#8f5902;font-style:italic">#Make sure permissions are set correctly&lt;/span>
+chmod a+x ~/
+chmod a+rx ~/.html
+&lt;span style="color:#8f5902;font-style:italic"># Make a new web project directory&lt;/span>
+mkdir www-project
+chmod a+rx www-project
+&lt;span style="color:#8f5902;font-style:italic"># Create a default test file&lt;/span>
+&lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;&amp;#39;&lt;/span> &amp;gt; ~/www-project/index.html
+&lt;span style="color:#8f5902;font-style:italic"># Create shortcut/link for new web project in html directory &lt;/span>
+ln -s ~/www-project ~/.html/
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, test it out by pointing your web-browser to &lt;a href="https://cluster.hpcc.ucr.edu/~username/www-project/">https://cluster.hpcc.ucr.edu/~username/www-project/&lt;/a>
+Be sure to replace &lt;code>username&lt;/code> with your actual user name.&lt;/p>
+&lt;h2 id="password-protect-web-pages">Password Protect Web Pages&lt;/h2>
+&lt;p>Files in web directories can be password protected.
+First create a password file and then create a new user:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">touch ~/.html/.htpasswd
+htpasswd ~/.html/.htpasswd newwebuser
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will prompt you to enter a password for the new user &amp;lsquo;newwebuser&amp;rsquo;.
+Create a new directory, or go to an existing directory, that you want to password protect:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mkdir ~/.html/locked_dir
+&lt;span style="color:#204a87">cd&lt;/span> ~/.html/locked_dir
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>For the above commands you can choose any directory name you want.&lt;/p>
+&lt;p>Then place the following content within a file called &lt;code>.htaccess&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-apache" data-lang="apache">&lt;span style="color:#204a87">AuthName&lt;/span> &amp;#39;Please login&amp;#39;
+&lt;span style="color:#204a87">AuthType&lt;/span> Basic
+&lt;span style="color:#204a87">AuthUserFile&lt;/span> &lt;span style="color:#4e9a06">/rhome/username/.html/.htpasswd&lt;/span>
+&lt;span style="color:#204a87">require&lt;/span> &lt;span style="color:#204a87;font-weight:bold">user&lt;/span> newwebuser
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, test it out by pointing your web-browser to &lt;a href="http://cluster.hpcc.ucr.edu/~username/locked_dir">http://cluster.hpcc.ucr.edu/~username/locked_dir&lt;/a>
+Be sure to replace &lt;code>username&lt;/code> with your actual user name for the above code and URL.&lt;/p>
+&lt;h2 id="google-drive">Google Drive&lt;/h2>
+&lt;p>There are several tools used to transfer files from Google Drive to the cluster, however RClone may be the easiest to setup.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Create an &lt;code>SSH&lt;/code> tunnel to the cluster, (MS Windows users should use &lt;code>MobaXterm&lt;/code>):&lt;/p>
+&lt;pre>&lt;code>ssh -L 53682:localhost:53682 username@cluster.hpcc.ucr.edu
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Once you have logged into the cluster with the above command, then load &lt;code>rclone&lt;/code> via the module system and run it, like so:&lt;/p>
+&lt;pre>&lt;code>module load rclone
+rclone config
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>After that, follow this &lt;a href="https://rclone.org/drive/">RClone Walkthrough&lt;/a> to complete your setup.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Manuals: Security</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
 &lt;h2 id="protection-levels-and-classification">Protection Levels and Classification&lt;/h2>
 &lt;p>UCR protection levels, and data classifications are outlined by UCOP as a UC wide policy: &lt;a href="https://security.ucop.edu/policies/institutional-information-and-it-resource-classification.html">UCOP Institutional Information and IT Resource Classification&lt;/a>
 According to the above documentation, there are 4 levels of protection for 4 classifications of data:&lt;/p>
@@ -1193,108 +1135,307 @@ Also, be mindful of reamaining job time and make sure that you have unmounted th
 &lt;/code>&lt;/pre>&lt;p>The above command will overwrite the file with random data, and then remove (unlink) it.&lt;/p>
 &lt;p>If we want to be even more secure, we can pass over the file seven times to ensure that reconstruction is nearly impossible, then remove it:&lt;/p>
 &lt;pre>&lt;code>shred -v -n 6 -z -u somefile
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Sharing Data</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</guid><description>
-&lt;h2 id="permissions">Permissions&lt;/h2>
-&lt;p>It is useful to share data and results with other users on the cluster, and we encourage collaboration The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
-Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user &lt;code>username&lt;/code> (with read, write, and execute), owned by the group &lt;code>groupname&lt;/code> (with read and execute), and everyone else cannot access it.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ ls -l myFile
--rwxr-x--- &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> username groupname 1.6K Nov &lt;span style="color:#0000cf;font-weight:bold">19&lt;/span> 12:32 myFile
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you wanted to share this file with someone outside the &lt;code>groupname&lt;/code> group, read permissions must be added to the file for &amp;lsquo;other&amp;rsquo;:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ chmod o+r myFile
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To learn more about ownership, permissions, and groups please visit &lt;a href="manuals_linux-basics_permissions">Linux Basics Permissions&lt;/a>.&lt;/p>
-&lt;h2 id="set-default-permissions">Set Default Permissions&lt;/h2>
-&lt;p>In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and you do not want to be constantly adjusting permissions The command responsible for this is called &amp;lsquo;umask&amp;rsquo;. You should first check what your default permissions currently are by running &amp;lsquo;umask -S&amp;rsquo;.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ &lt;span style="color:#204a87">umask&lt;/span> -S
-&lt;span style="color:#000">u&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rwx,g&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx,o&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To set your default permissions, simply run umask with the correct options. Please note, that this does not change permissions on any existing files, only new files created after you update the default permissions. For instance, if you wanted to set your default permissions to you having full control, your group being able to read and execute your files, and no one else to have access, you would run:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">username@pigeon:~$ &lt;span style="color:#204a87">umask&lt;/span> &lt;span style="color:#000">u&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rwx,g&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>rx,o&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is also important to note that these settings only affect your current session.
-If you log out and log back in, these settings will be reset.
-To make your changes permanent you need to add them to your &lt;code>.bashrc&lt;/code> file, which is a hidden file in your home directory (if you do not have a &lt;code>.bashrc&lt;/code> file, you will need to create an empty file called &lt;code>.bashrc&lt;/code> in your home directory).
-Adding umask to your &lt;code>.bashrc&lt;/code> file is as simple as adding your umask command (such as &lt;code>umask u=rwx,g=rx,o=r&lt;/code>) to the end of the file.
-Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running &lt;code>umask -S&lt;/code>.&lt;/p>
-&lt;p>To learn more about umask please visit &lt;a href="http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html">What is Umask and How To Setup Default umask Under Linux?&lt;/a>.&lt;/p>
-&lt;h2 id="copying-bigdata">Copying bigdata&lt;/h2>
-&lt;p>Rsync can:&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Communicating</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
+&lt;h2 id="communicating-with-others">Communicating with others&lt;/h2>
+&lt;p>The cluster is a shared resource, and communicating with other users can help to schedule large computations.&lt;/p>
+&lt;p>&lt;strong>Looking-Up Specific Users&lt;/strong>&lt;/p>
+&lt;p>A convenient overview of all users and their lab affiliations can be retrieved with the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">user_details.sh
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can search for specific users by running:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#000">MATCH1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;username1&amp;#39;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Searches by real name, and username, and email address and PI name&lt;/span>
+&lt;span style="color:#000">MATCH2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;username2&amp;#39;&lt;/span>
+user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep -P &lt;span style="color:#4e9a06">&amp;#34;&lt;/span>&lt;span style="color:#000">$MATCH1&lt;/span>&lt;span style="color:#4e9a06">|&lt;/span>&lt;span style="color:#000">$MATCH2&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Listing Users with Active Jobs on the Cluster&lt;/strong>
+To get a list of usernames:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the list of real names:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $2,$3,$4}&amp;#39;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> -f &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> --noheader &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $1,$2}&amp;#39;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To get the list of emails:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>user_details.sh &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $4,$5}&amp;#39;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> -f &amp;lt;&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>squeue --format &lt;span style="color:#4e9a06">&amp;#39;%u&amp;#39;&lt;/span> --noheader &lt;span style="color:#000;font-weight:bold">|&lt;/span> sort &lt;span style="color:#000;font-weight:bold">|&lt;/span> uniq&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">|&lt;/span> awk &lt;span style="color:#4e9a06">&amp;#39;{print $2}&amp;#39;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
+&lt;h1 id="terminal-ides">Terminal IDEs&lt;/h1>
+&lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
+HPC cluster that are useful for a variety of computer languages.&lt;/p>
+&lt;h2 id="vimnvim-basics">Vim/Nvim Basics&lt;/h2>
+&lt;p>To work efficiently on remote systems like a computer cluster, it is essential
+to learn how to work in a pure command-line interface. GUI environments like
+RStudio and similar coding environments are not suitable for this. In addition,
+there is a lot of value of knowing how to work in an environment that is not
+restricted to a specific programming language. Therefore, for working on remote
+systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful
+for many programming languages. Combinded with the &lt;code>nvim-r&lt;/code> plugin they also
+provide a powerful command-line working environment for R. Users of Emacs may
+want to consider using &lt;a href="https://ess.r-project.org/">ESS&lt;/a> instead. The following
+provides a brief introduction to the Nvim-R-Tmux environment.&lt;/p>
+&lt;h3 id="vim-overview">Vim overview&lt;/h3>
+&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim)&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">nvim myfile.txt &lt;span style="color:#8f5902;font-style:italic"># for neovim (or &amp;#39;vim myfile.txt&amp;#39; for vim)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
 &lt;ul>
-&lt;li>Copy (transfer) directories between different locations&lt;/li>
-&lt;li>Perform transfers over the network via SSH&lt;/li>
-&lt;li>Compare large data sets (&lt;code>-n, --dry-run&lt;/code> option)&lt;/li>
-&lt;li>Resume interrupted transfers&lt;/li>
+&lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
+&lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
+&lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
-&lt;p>Rsync Notes:&lt;/p>
+&lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
+the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
+All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
+&lt;p>Important modifier keys to control vim/nvim&lt;/p>
 &lt;ul>
-&lt;li>Rsync can be used on Windows, but you must install &lt;a href="https://cygwin.com">Cygwin&lt;/a>. Most Mac and Linux systems already have rsync install by default.&lt;/li>
-&lt;li>Always put the / after both folder names, e.g: &lt;code>FOLDER_A/&lt;/code> Failing to do so will result in the nesting folders every time you try to resume. If you don&amp;rsquo;t put / you will get a second folder_B inside folder_B &lt;code>FOLDER_A/FOLDER_A/&lt;/code>&lt;/li>
-&lt;li>Rsync only copies by default.&lt;/li>
-&lt;li>Once the rsync command is done, run it again. The second run will be shorter and can be used as a double check. If there was no output from the second run then nothing changed.&lt;/li>
-&lt;li>To learn more try &lt;code>man rsync&lt;/code>&lt;/li>
+&lt;li>&lt;code>:w&lt;/code>: save changes to file. If you are in editing mode you have to hit &lt;code>Esc&lt;/code> first.&lt;/li>
+&lt;li>&lt;code>:q&lt;/code>: quit file that has not been changed&lt;/li>
+&lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
+&lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
 &lt;/ul>
-&lt;p>If you are transfering to, or from, your laptop/workstation it is required that you run the rsync command locally from your laptop/workstation.&lt;/p>
-&lt;p>To transfer to the cluster:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress FOLDER_A/ cluster.hpcc.ucr.edu:FOLDER_A/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To transfer from the cluster:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress cluster.hpcc.ucr.edu:FOLDER_A/ FOLDER_A/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Rsync will use SSH and will ask you for your cluster password, the same way SSH or SCP does.&lt;/p>
-&lt;p>If your rsync transer was interrupted, rsync can continue where it left off. Simply run the same command again to resume.&lt;/p>
-&lt;h2 id="copying-large-folders-on-the-cluster-between-directories">Copying large folders on the cluster between Directories&lt;/h2>
-&lt;p>If you want to syncronize the contents from one directory to another, then use the following:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -av --progress PATH_A/FOLDER_A/ PATH_B/FOLDER_A/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Rsync does not move but only copies. Thus you would need to delete the original once you confirm that everything has been transfered.&lt;/p>
-&lt;h2 id="copying-large-folders-between-the-cluster-and-other-servers">Copying large folders between the cluster and other servers&lt;/h2>
-&lt;p>If you want to copy data from the cluster to your own server, or another remote system, use the following:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">rsync -ai FOLDER_A/ sever2.xyz.edu:FOLDER_A/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The sever2.xyz.edu machine must be a server that accepts Rsync connections via SSH.&lt;/p>
-&lt;h2 id="sharing-files-on-the-web">Sharing Files on the Web&lt;/h2>
-&lt;p>Simply create a symbolic link or move the files into your html directory when you want to share them.
-For exmaple, log into the HPC cluster and run the following:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Make sure you have an html directory&lt;/span>
-mkdir ~/.html
-&lt;span style="color:#8f5902;font-style:italic">#Make sure permissions are set correctly&lt;/span>
-chmod a+x ~/
-chmod a+rx ~/.html
-&lt;span style="color:#8f5902;font-style:italic"># Make a new web project directory&lt;/span>
-mkdir www-project
-chmod a+rx www-project
-&lt;span style="color:#8f5902;font-style:italic"># Create a default test file&lt;/span>
-&lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;&amp;#39;&lt;/span> &amp;gt; ~/www-project/index.html
-&lt;span style="color:#8f5902;font-style:italic"># Create shortcut/link for new web project in html directory &lt;/span>
-ln -s ~/www-project ~/.html/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, test it out by pointing your web-browser to &lt;a href="https://cluster.hpcc.ucr.edu/~username/www-project/">https://cluster.hpcc.ucr.edu/~username/www-project/&lt;/a>
-Be sure to replace &lt;code>username&lt;/code> with your actual user name.&lt;/p>
-&lt;h2 id="password-protect-web-pages">Password Protect Web Pages&lt;/h2>
-&lt;p>Files in web directories can be password protected.
-First create a password file and then create a new user:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">touch ~/.html/.htpasswd
-htpasswd ~/.html/.htpasswd newwebuser
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will prompt you to enter a password for the new user &amp;lsquo;newwebuser&amp;rsquo;.
-Create a new directory, or go to an existing directory, that you want to password protect:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mkdir ~/.html/locked_dir
-&lt;span style="color:#204a87">cd&lt;/span> ~/.html/locked_dir
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>For the above commands you can choose any directory name you want.&lt;/p>
-&lt;p>Then place the following content within a file called &lt;code>.htaccess&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-apache" data-lang="apache">&lt;span style="color:#204a87">AuthName&lt;/span> &amp;#39;Please login&amp;#39;
-&lt;span style="color:#204a87">AuthType&lt;/span> Basic
-&lt;span style="color:#204a87">AuthUserFile&lt;/span> &lt;span style="color:#4e9a06">/rhome/username/.html/.htpasswd&lt;/span>
-&lt;span style="color:#204a87">require&lt;/span> &lt;span style="color:#204a87;font-weight:bold">user&lt;/span> newwebuser
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, test it out by pointing your web-browser to &lt;a href="http://cluster.hpcc.ucr.edu/~username/locked_dir">http://cluster.hpcc.ucr.edu/~username/locked_dir&lt;/a>
-Be sure to replace &lt;code>username&lt;/code> with your actual user name for the above code and URL.&lt;/p>
-&lt;h2 id="google-drive">Google Drive&lt;/h2>
-&lt;p>There are several tools used to transfer files from Google Drive to the cluster, however RClone may be the easiest to setup.&lt;/p>
+&lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vimdoc.sourceforge.net/">Official Vim Documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://hpcc.ucr.edu/manuals_linux-basics_vim.html">HPCC Linux Manual&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="for-r-nvim-r">For R: nvim-R&lt;/h2>
+&lt;h3 id="basics">Basics&lt;/h3>
+&lt;p>Tmux is a terminal multiplexer that allows to split terminal windows and to detach/reattach to
+existing terminal sessions. Combinded with the &lt;code>nvim-r&lt;/code> plugin it provides a powerful command-line working
+environment for R where users can send code from a script to the R console or command-line.
+Both tmux and the &lt;code>nvim-r&lt;/code> plugin need to be installed on a system. On HPCC Cluster both are configured
+in each user account. If this is not the case then follow the quick configuration instructions given in the following subsection.&lt;/p>
+&lt;center>&lt;img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" >&lt;/center>
+&lt;center>Nvim-R IDE for R&lt;/center>
+&lt;h3 id="quick-configuration-in-user-accounts">Quick configuration in user accounts&lt;/h3>
+&lt;p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the &lt;a href="https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899">detailed
+instructions&lt;/a> to install Nvim-R-Tmux from scratch on your own system.&lt;/p>
 &lt;ol>
-&lt;li>
-&lt;p>Create an &lt;code>SSH&lt;/code> tunnel to the cluster, (MS Windows users should use &lt;code>MobaXterm&lt;/code>):&lt;/p>
-&lt;pre>&lt;code>ssh -L 53682:localhost:53682 username@cluster.hpcc.ucr.edu
-&lt;/code>&lt;/pre>&lt;/li>
-&lt;li>
-&lt;p>Once you have logged into the cluster with the above command, then load &lt;code>rclone&lt;/code> via the module system and run it, like so:&lt;/p>
-&lt;pre>&lt;code>module load rclone
-rclone config
-&lt;/code>&lt;/pre>&lt;/li>
-&lt;li>
-&lt;p>After that, follow this &lt;a href="https://rclone.org/drive/">RClone Walkthrough&lt;/a> to complete your setup.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</guid><description>
+&lt;li>Log in to your user account on HPCC and execute &lt;code>install_nvimRtmux&lt;/code>. Alternatively, follow these step-by-step &lt;a href="https://cluster.hpcc.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/vim-r-plugin/README_nvimRtmux">install commands&lt;/a>.&lt;/li>
+&lt;li>To enable the nvim-R-tmux environment, log out and in again.&lt;/li>
+&lt;li>Follow usage instructions of next section.&lt;/li>
+&lt;/ol>
+&lt;h3 id="basic-usage-of-nvim-r-tmux">Basic usage of Nvim-R-Tmux&lt;/h3>
+&lt;p>The official and much more detailed user manual for &lt;code>Nvim-R&lt;/code> is available &lt;a href="https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt">here&lt;/a>.
+The following gives a short introduction into the basic usage of Nvim-R-Tmux:&lt;/p>
+&lt;p>&lt;strong>1. Start tmux session&lt;/strong> (optional)&lt;/p>
+&lt;p>Note, running Nvim from within a tmux session is optional. Skip this step if tmux functionality is not required (&lt;em>e.g.&lt;/em> reattaching to sessions on remote systems).&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">tmux &lt;span style="color:#8f5902;font-style:italic"># starts a new tmux session &lt;/span>
+tmux a &lt;span style="color:#8f5902;font-style:italic"># attaches to an existing session &lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>2. Open nvim-connected R session&lt;/strong>&lt;/p>
+&lt;p>Open a &lt;code>*.R&lt;/code> or &lt;code>*.Rmd&lt;/code> file with &lt;code>nvim&lt;/code> and intialize a connected R session with &lt;code>\rf&lt;/code>. This command can be remapped to other key combinations, e.g. uncommenting lines 10-12 in &lt;code>.config/nvim/init.vim&lt;/code> will remap it to the &lt;code>F2&lt;/code> key. Note, the resulting split window among Nvim and R behaves like a split viewport in &lt;code>nvim&lt;/code> or &lt;code>vim&lt;/code> meaning the usage of &lt;code>Ctrl-w w&lt;/code> followed by &lt;code>i&lt;/code> and &lt;code>Esc&lt;/code> is important for navigation.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">nvim myscript.R &lt;span style="color:#8f5902;font-style:italic"># or *.Rmd file&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3. Send R code from nvim to the R pane&lt;/strong>&lt;/p>
+&lt;p>Single lines of code can be sent from nvim to the R console by pressing the space bar. To send
+several lines at once, one can select them in nvim&amp;rsquo;s visual mode and then hit the space bar.
+Please note, the default command for sending code lines in the nvim-r-plugin is &lt;code>\l&lt;/code>. This key
+binding has been remapped in the provided &lt;code>.config/nvim/init.vim&lt;/code> file to the space bar. Most other key bindings (shortcuts) still start with the &lt;code>\&lt;/code> as LocalLeader, &lt;em>e.g.&lt;/em> &lt;code>\rh&lt;/code> opens the help for a function/object where the curser is located in nvim. More details on this are given below.&lt;/p>
+&lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
+&lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
+&lt;p>&lt;strong>Nvim commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>\rf&lt;/code>: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an &lt;code>R&lt;/code> directory under &lt;code>~/&lt;/code>. If so approve this action by pressing &lt;code>y&lt;/code>.&lt;/li>
+&lt;li>&lt;code>spacebar&lt;/code>: sends code from vim to R; here remapped in &lt;code>init.vim&lt;/code> from default &lt;code>\l&lt;/code>&lt;/li>
+&lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
+&lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
+&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
+&lt;li>&lt;code>Ctrl-w r&lt;/code>: swaps viewports&lt;/li>
+&lt;li>&lt;code>Ctrl-w =&lt;/code>: resizes splits to equal size&lt;/li>
+&lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
+&lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
+&lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
+&lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
+&lt;li>&lt;code>:h nvim-R&lt;/code>: opens nvim-R&amp;rsquo;s user manual; navigation works the same as for any Vim/Nvim help document&lt;/li>
+&lt;li>&lt;code>:Rhelp fct_name&lt;/code>: opens help for a function from nvim&amp;rsquo;s command mode with text completion support&lt;/li>
+&lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
+&lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a %&lt;/code>: splits pane vertically&lt;/li>
+&lt;li>&lt;code>Ctrl-a &amp;quot;&lt;/code>: splits pane horizontally&lt;/li>
+&lt;li>&lt;code>Ctrl-a o&lt;/code>: jumps cursor to next pane&lt;/li>
+&lt;li>&lt;code>Ctrl-a Ctrl-o&lt;/code>: swaps panes&lt;/li>
+&lt;li>&lt;code>Ctrl-a &amp;lt;space bar&amp;gt;&lt;/code>: rotates pane arrangement&lt;/li>
+&lt;li>&lt;code>Ctrl-a Alt &amp;lt;left or right&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
+&lt;li>&lt;code>Ctrl-a Esc &amp;lt;up or down&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Window-level comands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a n&lt;/code>: switches to next tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a Ctrl-a&lt;/code>: switches to previous tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a c&lt;/code>: creates a new tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a 1&lt;/code>: switches to specific tmux window selected by number&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Session-level comands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a d&lt;/code>: detaches from current session&lt;/li>
+&lt;li>&lt;code>Ctrl-a s&lt;/code>: switch between available tmux sesssions&lt;/li>
+&lt;li>&lt;code>$ tmux new -s &amp;lt;name&amp;gt;&lt;/code>: starts new session with a specific name&lt;/li>
+&lt;li>&lt;code>$ tmux ls&lt;/code>: lists available tmux session(s)&lt;/li>
+&lt;li>&lt;code>$ tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to specific tmux session&lt;/li>
+&lt;li>&lt;code>$ tmux attach&lt;/code>: reattaches to session&lt;/li>
+&lt;li>&lt;code>$ tmux kill-session -t &amp;lt;id&amp;gt;&lt;/code>: kills a specific tmux session&lt;/li>
+&lt;li>&lt;code>Ctrl-a : kill-session&lt;/code>: kills a session from tmux command mode that can be initiated with &lt;code>Ctrl-a :&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="for-bash-python-and-other-languages">For Bash, Python and other languages&lt;/h2>
+&lt;h3 id="basics-1">Basics&lt;/h3>
+&lt;p>For languages other than R one can use the
+&lt;a href="https://github.com/jalvesaq/vimcmdline">vimcmdline&lt;/a> plugin for nvim (or vim).
+Supported languages include Bash, Python, Golang, Haskell, JavaScript, Julia,
+Jupyter, Lisp, Macaulay2, Matlab, Prolog, Ruby, and Sage. The nvim terminal
+also colorizes the output, as in the screenshot below, where different colors
+are used for general output, positive and negative numbers, and the prompt
+line.&lt;/p>
+&lt;center>&lt;img title="vimcmdline" src="https://cloud.githubusercontent.com/assets/891655/7090493/5fba2426-df71-11e4-8eb8-f17668d9361a.png" >&lt;/center>
+&lt;center>vimcmdline&lt;/center>
+&lt;h3 id="install">Install&lt;/h3>
+&lt;p>To install it, one needs to copy from the &lt;code>vimcmdline&lt;/code> resository the directories
+&lt;code>ftplugin&lt;/code>, &lt;code>plugin&lt;/code> and &lt;code>syntax&lt;/code> and their files to &lt;code>~/.config/nvim/&lt;/code>. For
+user accounts of UCR’s HPCC, the above install script &lt;code>install_nvimRtmux&lt;/code> includes the
+install of &lt;code>vimcmdline&lt;/code> (since 09-Jun-18).&lt;/p>
+&lt;h3 id="usage">Usage&lt;/h3>
+&lt;p>The usage of &lt;code>vimcmdline&lt;/code> is very similar to &lt;code>nvim-R&lt;/code>. To start a connected terminal session, one
+opens with nvim a code file with the extension of a given language (&lt;em>e.g.&lt;/em> &lt;code>*.sh&lt;/code> for Bash or &lt;code>*.py&lt;/code> for Python),
+while the corresponding interactive interpreter session is initiated
+by pressing the key sequence &lt;code>\s&lt;/code> (corresponds to &lt;code>\rf&lt;/code> under &lt;code>nvim-R&lt;/code>). Subsequently, code lines can be sent
+with the space bar. More details are available &lt;a href="https://github.com/jalvesaq/vimcmdline">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Parallel Evaluations in R</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</guid><description>
+&lt;h1 id="overview">Overview&lt;/h1>
+&lt;p>R provides a variety of packages for parallel computations. One of the most
+comprehensive parallel computing environments for R is &lt;a href="https://mllg.github.io/batchtools/articles/batchtools.html">&lt;code>batchtools&lt;/code>&lt;/a>
+(formerly &lt;code>BatchJobs&lt;/code>). It supports both multi-core and multi-node computations with and
+without schedulers. By making use of cluster template files, most schedulers
+and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).&lt;/p>
+&lt;h2 id="r-code-of-this-section">R code of this section&lt;/h2>
+&lt;p>To simplify the evaluation of the R code of this page, the corresponding text version
+is available for download from &lt;a href="https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R">here&lt;/a>.&lt;/p>
+&lt;h2 id="parallelization-with-batchtools">Parallelization with batchtools&lt;/h2>
+&lt;p>The following introduces the usage of &lt;code>batchtools&lt;/code> for a computer cluster using SLURM as scheduler (workload manager).&lt;/p>
+&lt;h2 id="set-up-working-directory-for-slurm">Set up working directory for SLURM&lt;/h2>
+&lt;p>First login to your cluster account, open R and execute the following lines. This will
+create a test directory (here &lt;code>mytestdir&lt;/code>), redirect R into this directory and then download
+the required files:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl">&lt;code>slurm.tmpl&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R">&lt;code>.batchtools.conf.R&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">dir.create&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;mytestdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">setwd&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;mytestdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">download.file&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://goo.gl/tLMddb&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;slurm.tmpl&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">download.file&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;https://goo.gl/5HrYkE&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="load-package-and-define-some-custom-function">Load package and define some custom function&lt;/h2>
+&lt;p>This is the test function (here toy example) that will be run on the cluster for demonstration
+purposes. It subsets the &lt;code>iris&lt;/code> data frame by rows, and appends the host name and R version of each
+node where the function was executed. The R version to be used on each node can be
+specified in the &lt;code>slurm.tmpl&lt;/code> file (under &lt;code>module load&lt;/code>).&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">library&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;RenvModule&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">module&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;load&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;slurm&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Loads slurm among other modules&lt;/span>
+&lt;span style="color:#000">library&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">batchtools&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">myFct&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">function&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#000">result&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">cbind&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">iris[x&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>&lt;span style="color:#000">]&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;span style="color:#000">Node&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">system&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;hostname&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">intern&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">TRUE&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
+&lt;span style="color:#000">Rversion&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">paste&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">R.Version&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>&lt;span style="color:#000">[6&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">7&lt;/span>&lt;span style="color:#000">]&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">collapse&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="submit-jobs-from-r-to-cluster">Submit jobs from R to cluster&lt;/h2>
+&lt;p>The following creates a &lt;code>batchtools&lt;/code> registry, defines the number of jobs and resource requests, and then submits the jobs to the cluster
+via SLURM.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">reg&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">makeRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">file.dir&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">conf.file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">Njobs&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Define number of jobs (here 4)&lt;/span>
+&lt;span style="color:#000">ids&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">batchMap&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">fun&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">myFct&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">x&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">done&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">submitJobs&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">ids&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">resources&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">list&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">partition&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;short&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">walltime&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">60&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ntasks&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ncpus&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">memory&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1024&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000">waitForJobs&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Wait until jobs are completed&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="summarize-job-status">Summarize job status&lt;/h2>
+&lt;p>After the jobs are completed one instect their status as follows.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">getStatus&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Summarize job status&lt;/span>
+&lt;span style="color:#000">showLog&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs[1]&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic"># killJobs(Njobs) # # Possible from within R or outside with scancel&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="accessassemble-results">Access/assemble results&lt;/h2>
+&lt;p>The results are stored as &lt;code>.rds&lt;/code> files in the registry directory (here &lt;code>myregdir&lt;/code>). One
+can access them manually via &lt;code>readRDS&lt;/code> or use various convenience utilities provided
+by the &lt;code>batchtools&lt;/code> package.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">readRDS&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir/results/1.rds&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># reads from rds file first result chunk&lt;/span>
+&lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">lapply&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">reduceResults&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">rbind&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Assemble result chunks in single data.frame&lt;/span>
+&lt;span style="color:#000">do.call&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;rbind&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">lapply&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Njobs&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">loadResult&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="remove-registry-directory-from-file-system">Remove registry directory from file system&lt;/h2>
+&lt;p>By default existing registries will not be overwritten. If required one can exlicitly
+clean and delete them with the following functions.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">clearRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Clear registry in R session&lt;/span>
+&lt;span style="color:#000">removeRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">wait&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">reg&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Delete registry directory&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic"># unlink(&amp;#34;myregdir&amp;#34;, recursive=TRUE) # Same as previous line&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="load-registry-into-r">Load registry into R&lt;/h2>
+&lt;p>Loading a registry can be useful when accessing the results at a later state or
+after moving them to a local system.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">from_file&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">loadRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">conf.file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">reduceResults&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">rbind&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Login</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
+&lt;h2 id="login">Login&lt;/h2>
+&lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
+Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>
+&lt;p>Roll-Out Plan:&lt;/p>
+&lt;ol>
+&lt;li>Old (password) and new (secure) authentication methods are provided through &lt;code>cluster.hpcc.ucr.edu&lt;/code> and &lt;code>secure.hpcc.ucr.edu&lt;/code> respectively.&lt;/li>
+&lt;li>Users configure new authentication method.&lt;/li>
+&lt;li>Users log into the cluster using host &lt;code>secure.hpcc.ucr.edu&lt;/code>.&lt;/li>
+&lt;li>After the authentication switch over deadline (TBD), host &lt;code>cluster.hpcc.ucr.edu&lt;/code> switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.&lt;/li>
+&lt;/ol>
+&lt;h2 id="secure-authentication">Secure Authentication&lt;/h2>
+&lt;p>There are two methods of authentication that the cluster supports:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="#passwordduo">Password+DUO&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ssh-keys">SSH Keys&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h3 id="passwordduo">Password+Duo&lt;/h3>
+&lt;p>The &lt;code>Password+DUO&lt;/code> combination method will only work if your UCR NetID matches your cluster username.
+If these two match then first check if you already have DUO installed and configured on a mobile device.
+If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
+Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling:
+&lt;a href="https://cnc.ucr.edu/mfa/enrollment.html">https://cnc.ucr.edu/mfa/enrollment.html&lt;/a>&lt;/p>
+&lt;p>Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
+If you have a new account then your password was emailed to you when your account was created.&lt;/p>
+&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh username@secure.hpcc.ucr.edu
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
+&lt;p>Assuming that you have already installed and configured DUO on a mobile device, then when attempting to login you will be first asked to provide your password, and then you will need to choose your DUO authentication option to validate your login attempt.
+Depending on how you chose to configure/enrolling your mobile device, you may see multiple options.&lt;/p>
+&lt;p>DUO uses either an option for DUO authentication via &lt;code>Push&lt;/code> which uses the mobile app, or via &lt;code>SMS&lt;/code> which sends a code as a text message to your phone.
+Choose whichever option works best for you.&lt;/p>
+&lt;p>After logging in successfully, you are expected to update your password with the &lt;code>passwd&lt;/code> command.&lt;/p>
+&lt;p>For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
+&lt;a href="https://cnc.ucr.edu/mfa/how.html">https://cnc.ucr.edu/mfa/how.html&lt;/a>&lt;/p>
+&lt;h3 id="ssh-keys">SSH Keys&lt;/h3>
+&lt;p>SSH keys can only be setup if you already have access to the cluster.
+This is becuase in order to get this working a file needs to be placed in your home directory on the cluster.&lt;/p>
+&lt;p>When using SSH key authentication, you will need to create a public and a pritate key.
+This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
+Only when your private key &amp;ldquo;fits&amp;rdquo; the public key, can you be granted access.&lt;/p>
+&lt;p>To create the key pair run the following command on your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>):&lt;/p>
+&lt;pre>&lt;code># Create SSH directory
+mkdir -p ~/.ssh
+# Create key pair (Private and Public)
+ssh-keygen -t rsa -f ~/.ssh/id_rsa
+&lt;/code>&lt;/pre>&lt;p>Once the command has completed, you will find two files in your &lt;code>~/.ssh&lt;/code> directory.&lt;/p>
+&lt;pre>&lt;code># List files in SSH directory
+ls ~/.ssh/
+id_rsa
+id_rsa.pub
+&lt;/code>&lt;/pre>&lt;p>The &lt;code>id_rsa&lt;/code> file is your private key and the &lt;code>id_rsa.pub&lt;/code> is your public key.
+You will need to copy your public key to the cluster, creating the &lt;code>authorized_keys&lt;/code> file.&lt;/p>
+&lt;p>From your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>) run the following:&lt;/p>
+&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
+&lt;/code>&lt;/pre>&lt;p>If the &lt;code>authorized_keys&lt;/code> file already exists, you can just append your new public key, like so:&lt;/p>
+&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey &amp;amp;&amp;amp; ssh username@cluster.hpcc.ucr.edu &amp;quot;cat tmpkey &amp;gt;&amp;gt; ~/.ssh/authorized_keys &amp;amp;&amp;amp; rm tmpkey&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh username@secure.hpcc.ucr.edu
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager &amp;ldquo;MobaKeyGen&amp;rdquo; (from the &amp;ldquo;Tools&amp;rdquo; menu).&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="file-transfers">File Transfers&lt;/h2>
+&lt;p>We support &lt;code>FileZilla&lt;/code> as the recommended graphical file transfer application. If you are comfortable with the command line that is typically easier to use.
+However, there may be times when selecting multiple files from a graphical application is prefered.&lt;/p>
+&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site, just click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
+From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
+&lt;p>On the right pane fill in the information as follows:&lt;/p>
+&lt;pre>&lt;code>Protocol SFTP - SSH File Transfer Protocol
+Host secure.hpcc.ucr.edu
+Port 22
+&lt;/code>&lt;/pre>&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</guid><description>
 &lt;h2 id="ssh-keys-on-macos">SSH Keys on macOS&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH Keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -1582,148 +1723,7 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
-&lt;h1 id="terminal-ides">Terminal IDEs&lt;/h1>
-&lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
-HPC cluster that are useful for a variety of computer languages.&lt;/p>
-&lt;h2 id="vimnvim-basics">Vim/Nvim Basics&lt;/h2>
-&lt;p>To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI environments like
-RStudio and similar coding environments are not suitable for this. In addition,
-there is a lot of value of knowing how to work in an environment that is not
-restricted to a specific programming language. Therefore, for working on remote
-systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful
-for many programming languages. Combinded with the &lt;code>nvim-r&lt;/code> plugin they also
-provide a powerful command-line working environment for R. Users of Emacs may
-want to consider using &lt;a href="https://ess.r-project.org/">ESS&lt;/a> instead. The following
-provides a brief introduction to the Nvim-R-Tmux environment.&lt;/p>
-&lt;h3 id="vim-overview">Vim overview&lt;/h3>
-&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim)&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">nvim myfile.txt &lt;span style="color:#8f5902;font-style:italic"># for neovim (or &amp;#39;vim myfile.txt&amp;#39; for vim)&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
-&lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
-&lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
-&lt;/ul>
-&lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
-the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
-All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
-&lt;p>Important modifier keys to control vim/nvim&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>:w&lt;/code>: save changes to file. If you are in editing mode you have to hit &lt;code>Esc&lt;/code> first.&lt;/li>
-&lt;li>&lt;code>:q&lt;/code>: quit file that has not been changed&lt;/li>
-&lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
-&lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
-&lt;/ul>
-&lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://vimdoc.sourceforge.net/">Official Vim Documentation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://hpcc.ucr.edu/manuals_linux-basics_vim.html">HPCC Linux Manual&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="for-r-nvim-r">For R: nvim-R&lt;/h2>
-&lt;h3 id="basics">Basics&lt;/h3>
-&lt;p>Tmux is a terminal multiplexer that allows to split terminal windows and to detach/reattach to
-existing terminal sessions. Combinded with the &lt;code>nvim-r&lt;/code> plugin it provides a powerful command-line working
-environment for R where users can send code from a script to the R console or command-line.
-Both tmux and the &lt;code>nvim-r&lt;/code> plugin need to be installed on a system. On HPCC Cluster both are configured
-in each user account. If this is not the case then follow the quick configuration instructions given in the following subsection.&lt;/p>
-&lt;center>&lt;img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" >&lt;/center>
-&lt;center>Nvim-R IDE for R&lt;/center>
-&lt;h3 id="quick-configuration-in-user-accounts">Quick configuration in user accounts&lt;/h3>
-&lt;p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the &lt;a href="https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899">detailed
-instructions&lt;/a> to install Nvim-R-Tmux from scratch on your own system.&lt;/p>
-&lt;ol>
-&lt;li>Log in to your user account on HPCC and execute &lt;code>install_nvimRtmux&lt;/code>. Alternatively, follow these step-by-step &lt;a href="https://cluster.hpcc.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/vim-r-plugin/README_nvimRtmux">install commands&lt;/a>.&lt;/li>
-&lt;li>To enable the nvim-R-tmux environment, log out and in again.&lt;/li>
-&lt;li>Follow usage instructions of next section.&lt;/li>
-&lt;/ol>
-&lt;h3 id="basic-usage-of-nvim-r-tmux">Basic usage of Nvim-R-Tmux&lt;/h3>
-&lt;p>The official and much more detailed user manual for &lt;code>Nvim-R&lt;/code> is available &lt;a href="https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt">here&lt;/a>.
-The following gives a short introduction into the basic usage of Nvim-R-Tmux:&lt;/p>
-&lt;p>&lt;strong>1. Start tmux session&lt;/strong> (optional)&lt;/p>
-&lt;p>Note, running Nvim from within a tmux session is optional. Skip this step if tmux functionality is not required (&lt;em>e.g.&lt;/em> reattaching to sessions on remote systems).&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">tmux &lt;span style="color:#8f5902;font-style:italic"># starts a new tmux session &lt;/span>
-tmux a &lt;span style="color:#8f5902;font-style:italic"># attaches to an existing session &lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>2. Open nvim-connected R session&lt;/strong>&lt;/p>
-&lt;p>Open a &lt;code>*.R&lt;/code> or &lt;code>*.Rmd&lt;/code> file with &lt;code>nvim&lt;/code> and intialize a connected R session with &lt;code>\rf&lt;/code>. This command can be remapped to other key combinations, e.g. uncommenting lines 10-12 in &lt;code>.config/nvim/init.vim&lt;/code> will remap it to the &lt;code>F2&lt;/code> key. Note, the resulting split window among Nvim and R behaves like a split viewport in &lt;code>nvim&lt;/code> or &lt;code>vim&lt;/code> meaning the usage of &lt;code>Ctrl-w w&lt;/code> followed by &lt;code>i&lt;/code> and &lt;code>Esc&lt;/code> is important for navigation.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">nvim myscript.R &lt;span style="color:#8f5902;font-style:italic"># or *.Rmd file&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3. Send R code from nvim to the R pane&lt;/strong>&lt;/p>
-&lt;p>Single lines of code can be sent from nvim to the R console by pressing the space bar. To send
-several lines at once, one can select them in nvim&amp;rsquo;s visual mode and then hit the space bar.
-Please note, the default command for sending code lines in the nvim-r-plugin is &lt;code>\l&lt;/code>. This key
-binding has been remapped in the provided &lt;code>.config/nvim/init.vim&lt;/code> file to the space bar. Most other key bindings (shortcuts) still start with the &lt;code>\&lt;/code> as LocalLeader, &lt;em>e.g.&lt;/em> &lt;code>\rh&lt;/code> opens the help for a function/object where the curser is located in nvim. More details on this are given below.&lt;/p>
-&lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
-&lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
-&lt;p>&lt;strong>Nvim commands&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>\rf&lt;/code>: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an &lt;code>R&lt;/code> directory under &lt;code>~/&lt;/code>. If so approve this action by pressing &lt;code>y&lt;/code>.&lt;/li>
-&lt;li>&lt;code>spacebar&lt;/code>: sends code from vim to R; here remapped in &lt;code>init.vim&lt;/code> from default &lt;code>\l&lt;/code>&lt;/li>
-&lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
-&lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
-&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
-&lt;li>&lt;code>Ctrl-w r&lt;/code>: swaps viewports&lt;/li>
-&lt;li>&lt;code>Ctrl-w =&lt;/code>: resizes splits to equal size&lt;/li>
-&lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
-&lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
-&lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
-&lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
-&lt;li>&lt;code>:h nvim-R&lt;/code>: opens nvim-R&amp;rsquo;s user manual; navigation works the same as for any Vim/Nvim help document&lt;/li>
-&lt;li>&lt;code>:Rhelp fct_name&lt;/code>: opens help for a function from nvim&amp;rsquo;s command mode with text completion support&lt;/li>
-&lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
-&lt;/ul>
-&lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
-&lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>Ctrl-a %&lt;/code>: splits pane vertically&lt;/li>
-&lt;li>&lt;code>Ctrl-a &amp;quot;&lt;/code>: splits pane horizontally&lt;/li>
-&lt;li>&lt;code>Ctrl-a o&lt;/code>: jumps cursor to next pane&lt;/li>
-&lt;li>&lt;code>Ctrl-a Ctrl-o&lt;/code>: swaps panes&lt;/li>
-&lt;li>&lt;code>Ctrl-a &amp;lt;space bar&amp;gt;&lt;/code>: rotates pane arrangement&lt;/li>
-&lt;li>&lt;code>Ctrl-a Alt &amp;lt;left or right&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
-&lt;li>&lt;code>Ctrl-a Esc &amp;lt;up or down&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Window-level comands&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>Ctrl-a n&lt;/code>: switches to next tmux window&lt;/li>
-&lt;li>&lt;code>Ctrl-a Ctrl-a&lt;/code>: switches to previous tmux window&lt;/li>
-&lt;li>&lt;code>Ctrl-a c&lt;/code>: creates a new tmux window&lt;/li>
-&lt;li>&lt;code>Ctrl-a 1&lt;/code>: switches to specific tmux window selected by number&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Session-level comands&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>Ctrl-a d&lt;/code>: detaches from current session&lt;/li>
-&lt;li>&lt;code>Ctrl-a s&lt;/code>: switch between available tmux sesssions&lt;/li>
-&lt;li>&lt;code>$ tmux new -s &amp;lt;name&amp;gt;&lt;/code>: starts new session with a specific name&lt;/li>
-&lt;li>&lt;code>$ tmux ls&lt;/code>: lists available tmux session(s)&lt;/li>
-&lt;li>&lt;code>$ tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to specific tmux session&lt;/li>
-&lt;li>&lt;code>$ tmux attach&lt;/code>: reattaches to session&lt;/li>
-&lt;li>&lt;code>$ tmux kill-session -t &amp;lt;id&amp;gt;&lt;/code>: kills a specific tmux session&lt;/li>
-&lt;li>&lt;code>Ctrl-a : kill-session&lt;/code>: kills a session from tmux command mode that can be initiated with &lt;code>Ctrl-a :&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="for-bash-python-and-other-languages">For Bash, Python and other languages&lt;/h2>
-&lt;h3 id="basics-1">Basics&lt;/h3>
-&lt;p>For languages other than R one can use the
-&lt;a href="https://github.com/jalvesaq/vimcmdline">vimcmdline&lt;/a> plugin for nvim (or vim).
-Supported languages include Bash, Python, Golang, Haskell, JavaScript, Julia,
-Jupyter, Lisp, Macaulay2, Matlab, Prolog, Ruby, and Sage. The nvim terminal
-also colorizes the output, as in the screenshot below, where different colors
-are used for general output, positive and negative numbers, and the prompt
-line.&lt;/p>
-&lt;center>&lt;img title="vimcmdline" src="https://cloud.githubusercontent.com/assets/891655/7090493/5fba2426-df71-11e4-8eb8-f17668d9361a.png" >&lt;/center>
-&lt;center>vimcmdline&lt;/center>
-&lt;h3 id="install">Install&lt;/h3>
-&lt;p>To install it, one needs to copy from the &lt;code>vimcmdline&lt;/code> resository the directories
-&lt;code>ftplugin&lt;/code>, &lt;code>plugin&lt;/code> and &lt;code>syntax&lt;/code> and their files to &lt;code>~/.config/nvim/&lt;/code>. For
-user accounts of UCR’s HPCC, the above install script &lt;code>install_nvimRtmux&lt;/code> includes the
-install of &lt;code>vimcmdline&lt;/code> (since 09-Jun-18).&lt;/p>
-&lt;h3 id="usage">Usage&lt;/h3>
-&lt;p>The usage of &lt;code>vimcmdline&lt;/code> is very similar to &lt;code>nvim-R&lt;/code>. To start a connected terminal session, one
-opens with nvim a code file with the extension of a given language (&lt;em>e.g.&lt;/em> &lt;code>*.sh&lt;/code> for Bash or &lt;code>*.py&lt;/code> for Python),
-while the corresponding interactive interpreter session is initiated
-by pressing the key sequence &lt;code>\s&lt;/code> (corresponds to &lt;code>\rf&lt;/code> under &lt;code>nvim-R&lt;/code>). Subsequently, code lines can be sent
-with the space bar. More details are available &lt;a href="https://github.com/jalvesaq/vimcmdline">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Visualization</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: Visualization</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
 &lt;h2 id="gpu-workstation">GPU Workstation&lt;/h2>
 &lt;p>The High-Performance Computing Center at UCR has a GPU workstation specifically designed for rendering high resolution 3D graphics.&lt;/p>
 &lt;h3 id="hardware">Hardware&lt;/h3>
