@@ -1363,7 +1363,62 @@ clean and delete them with the following functions.&lt;/p>
 after moving them to a local system.&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-r" data-lang="r">&lt;span style="color:#000">from_file&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;-&lt;/span> &lt;span style="color:#000">loadRegistry&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;myregdir&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">conf.file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;.batchtools.conf.R&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
 &lt;span style="color:#000">reduceResults&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">rbind&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Login</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Visualization</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
+&lt;h2 id="compute-node">Compute Node&lt;/h2>
+&lt;p>We support running graphical programs on the cluster using &lt;code>VNC&lt;/code>. For more information refer to &lt;a href="../../manuals/hpc_cluster/jobs/#desktop-environments">Desktop Environments&lt;/a>.&lt;/p>
+&lt;h2 id="gpu-workstation">GPU Workstation&lt;/h2>
+&lt;p>If a remote compute node does not fit your needs then we also have a GPU workstation specifically designed for rendering high resolution 3D graphics.&lt;/p>
+&lt;h3 id="hardware">Hardware&lt;/h3>
+&lt;ul>
+&lt;li>Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz&lt;/li>
+&lt;li>DDR4 256GB @ 2400 MHz&lt;/li>
+&lt;li>NVIDIA Corporation GM204GL [Quadro M5000]&lt;/li>
+&lt;li>1TB RAID 1 HDD&lt;/li>
+&lt;/ul>
+&lt;h3 id="software">Software&lt;/h3>
+&lt;p>The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a>.&lt;/p>
+&lt;h3 id="access">Access&lt;/h3>
+&lt;p>The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
+Once you have access to the GPU workstation, login with your cluster credentials. If your username does not appear in the list, you may need to click &lt;code>Not listed?&lt;/code> at the bottom of the screen so that you are able to type in your username.&lt;/p>
+&lt;h4 id="usage">Usage&lt;/h4>
+&lt;p>There are 2 ways to use the GPU workstation:&lt;/p>
+&lt;ol>
+&lt;li>Local - Run processes directly on the GPU workstation hardware&lt;/li>
+&lt;li>Remote - Run processes remotely on the GPU cluster hardware&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Local&lt;/strong>&lt;/p>
+&lt;p>Local usage is very simple. Open a terminal and use the &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a> to load the desired software, then run your software from the terminal.
+For example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">module load amira
+Amira
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Remotely&lt;/strong>&lt;/p>
+&lt;p>Open a terminal and submit a job. This is to reserve the time on the remote GPU node. Then once your job has started connect to the remote GPU node via ssh and forward the graphics back to the GPU workstation.
+For example:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Submit a job for March 28th, 2018 at 9:30am for a duration of 24 hours, 4 cpus, 100GB memory:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sbatch --begin&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>2018-03-28T09:30:00 --time&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>24:00:00 -p gpu --gres&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>gpu:1 --mem&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>100g --cpus-per-task&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> --wrap&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;echo ${CUDA_VISIBLE_DEVICES} &amp;gt; ~/.CUDA_VISIBLE_DEVICES; sleep infinity&amp;#39;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Read about &lt;a href="manuals_linux-cluster_jobs.html#gpu-jobs">GPU jobs&lt;/a> for more information regarding the above.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Run the VirtualGL client in order to receive 3D graphics from the remove GPU node:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">vglclient &lt;span style="color:#000;font-weight:bold">&amp;amp;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Wait for the job to start, and then check where your job is running:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#000">GPU_NODE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">$(&lt;/span>squeue -h -p gpu -u &lt;span style="color:#000">$USER&lt;/span> -o &lt;span style="color:#4e9a06">&amp;#39;%N&amp;#39;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#000">$GPU_NODE&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>The above command should result in a GPU node name, which you then need to SSH directly into with the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh -XY &lt;span style="color:#000">$GPU_NODE&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Once you have SSH&amp;rsquo;ed into the remote GPU node, run setup the environment and run your software:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">NO_AT_BRIDGE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
+module load amira
+vglrun -display :&lt;span style="color:#204a87;font-weight:bold">$(&lt;/span>head -1 ~/.CUDA_VISIBLE_DEVICES&lt;span style="color:#204a87;font-weight:bold">)&lt;/span> Amira
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol></description></item><item><title>Manuals: Login</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
 &lt;h2 id="login">Login&lt;/h2>
 &lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>
@@ -1435,7 +1490,7 @@ From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
 &lt;pre>&lt;code>Protocol SFTP - SSH File Transfer Protocol
 Host secure.hpcc.ucr.edu
 Port 22
-&lt;/code>&lt;/pre>&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_macos/</guid><description>
+&lt;/code>&lt;/pre>&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
 &lt;h2 id="ssh-keys-on-macos">SSH Keys on macOS&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH Keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -1591,7 +1646,7 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys_winos/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
 &lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -1723,57 +1778,4 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Visualization</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
-&lt;h2 id="gpu-workstation">GPU Workstation&lt;/h2>
-&lt;p>The High-Performance Computing Center at UCR has a GPU workstation specifically designed for rendering high resolution 3D graphics.&lt;/p>
-&lt;h3 id="hardware">Hardware&lt;/h3>
-&lt;ul>
-&lt;li>Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz&lt;/li>
-&lt;li>DDR4 256GB @ 2400 MHz&lt;/li>
-&lt;li>NVIDIA Corporation GM204GL [Quadro M5000]&lt;/li>
-&lt;li>1TB RAID 1 HDD&lt;/li>
-&lt;/ul>
-&lt;h3 id="software">Software&lt;/h3>
-&lt;p>The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a>.&lt;/p>
-&lt;h3 id="access">Access&lt;/h3>
-&lt;p>The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
-Once you have access to the GPU workstation, login with your cluster credentials. If your username does not appear in the list, you may need to click &lt;code>Not listed?&lt;/code> at the bottom of the screen so that you are able to type in your username.&lt;/p>
-&lt;h4 id="usage">Usage&lt;/h4>
-&lt;p>There are 2 ways to use the GPU workstation:&lt;/p>
-&lt;ol>
-&lt;li>Local - Run processes directly on the GPU workstation hardware&lt;/li>
-&lt;li>Remote - Run processes remotely on the GPU cluster hardware&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>Local&lt;/strong>&lt;/p>
-&lt;p>Local usage is very simple. Open a terminal and use the &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a> to load the desired software, then run your software from the terminal.
-For example:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">module load amira
-Amira
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Remotely&lt;/strong>&lt;/p>
-&lt;p>Open a terminal and submit a job. This is to reserve the time on the remote GPU node. Then once your job has started connect to the remote GPU node via ssh and forward the graphics back to the GPU workstation.
-For example:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Submit a job for March 28th, 2018 at 9:30am for a duration of 24 hours, 4 cpus, 100GB memory:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sbatch --begin&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>2018-03-28T09:30:00 --time&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>24:00:00 -p gpu --gres&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>gpu:1 --mem&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>100g --cpus-per-task&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span> --wrap&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;echo ${CUDA_VISIBLE_DEVICES} &amp;gt; ~/.CUDA_VISIBLE_DEVICES; sleep infinity&amp;#39;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Read about &lt;a href="manuals_linux-cluster_jobs.html#gpu-jobs">GPU jobs&lt;/a> for more information regarding the above.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Run the VirtualGL client in order to receive 3D graphics from the remove GPU node:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">vglclient &lt;span style="color:#000;font-weight:bold">&amp;amp;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>Wait for the job to start, and then check where your job is running:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#000">GPU_NODE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">$(&lt;/span>squeue -h -p gpu -u &lt;span style="color:#000">$USER&lt;/span> -o &lt;span style="color:#4e9a06">&amp;#39;%N&amp;#39;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#000">$GPU_NODE&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>The above command should result in a GPU node name, which you then need to SSH directly into with the following:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh -XY &lt;span style="color:#000">$GPU_NODE&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>Once you have SSH&amp;rsquo;ed into the remote GPU node, run setup the environment and run your software:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">NO_AT_BRIDGE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
-module load amira
-vglrun -display :&lt;span style="color:#204a87;font-weight:bold">$(&lt;/span>head -1 ~/.CUDA_VISIBLE_DEVICES&lt;span style="color:#204a87;font-weight:bold">)&lt;/span> Amira
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ol></description></item></channel></rss>
