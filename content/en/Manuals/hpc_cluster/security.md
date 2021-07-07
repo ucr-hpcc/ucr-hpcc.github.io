@@ -1,6 +1,6 @@
 ---
 title: Security
-linkTitle: Security
+linkTitle: Data Security
 type: docs
 weight: 8
 ---

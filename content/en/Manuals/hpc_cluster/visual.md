@@ -1,12 +1,17 @@
 ---
-type: docs
-linkTitle: Visualization
 title: Visualization
-permalink: manuals_linux-cluster_visual.html
+linkTitle: Visualization
+type: docs
+weight: 13
 ---
 
+## Compute Node
+
+We support running graphical programs on the cluster using `VNC`. For more information refer to [Desktop Environments](/manuals/hpc_cluster/jobs/#desktop-environments).
+
 ## GPU Workstation
-The High-Performance Computing Center at UCR has a GPU workstation specifically designed for rendering high resolution 3D graphics.
+
+If a remote compute node does not fit your needs then we also have a GPU workstation specifically designed for rendering high resolution 3D graphics.
 
 ### Hardware
 * Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz
