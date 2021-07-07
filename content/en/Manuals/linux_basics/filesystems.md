@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: File Systems and Transfers
 title: File Systems and Transfers
-permalink: manuals_linux-basics_filesystems.html
+linkTitle: File Systems and Transfers
+type: docs
+weight: 3
 ---
 
 ## File Systems

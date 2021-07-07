@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Process Management
 title: Process Management
-permalink: manuals_linux-basics_processes.html
+linkTitle: Process Management
+type: docs
+weight: 11
 ---
 
 ## Process Management

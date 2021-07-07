@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Piping
 title: Piping
-permalink: manuals_linux-basics_pipes.html
+linkTitle: Piping
+type: docs
+weight: 8
 ---
 
 ## Piping

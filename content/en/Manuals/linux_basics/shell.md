@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Shell Bootcamp
 title: Shell Bootcamp
-permalink: manuals_linux-basics_shell.html
+linkTitle: Shell Bootcamp
+type: docs
+weight: 12
 ---
 
 

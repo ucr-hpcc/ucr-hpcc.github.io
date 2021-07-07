@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Finding Things
 title: Finding Things
-permalink: manuals_linux-basics_finding-things.html
+linkTitle: Finding Things
+type: docs
+weight: 5
 ---
 
 ## Find Files

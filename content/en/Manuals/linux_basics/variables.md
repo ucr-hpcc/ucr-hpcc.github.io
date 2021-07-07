@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Variables
 title: Variables
-permalink: manuals_linux-basics_variables.html
+linkTitle: Variables
+type: docs
+weight: 9
 ---
 
 ## Variables

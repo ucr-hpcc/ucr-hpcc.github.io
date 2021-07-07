@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Streams
 title: Streams
-permalink: manuals_linux-basics_streams.html
+linkTitle: Streams
+type: docs
+weight: 7
 ---
 
 ## Streams

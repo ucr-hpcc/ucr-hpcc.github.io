@@ -1,8 +1,8 @@
 ---
-linkTitle: Command Line Basics
 title: Command Line Basics
+linkTitle: Command Line Basics
 type: docs
-permalink: manuals_linux-basics_cmdline-basics.html
+weight: 2
 ---
 
 ## Basics

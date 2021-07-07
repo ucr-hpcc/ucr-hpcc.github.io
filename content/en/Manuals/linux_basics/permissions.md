@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Permissions and Ownership
 title: Permissions and Ownership
-permalink: manuals_linux-basics_permissions.html
+linkTitle: Permissions and Ownership
+type: docs
+weight: 4
 ---
 
 ## Overview

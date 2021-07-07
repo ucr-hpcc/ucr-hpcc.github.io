@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Access
 title: Access
-permalink: manuals_linux-basics_intro.html
+linkTitle: Access
+type: docs
+weight: 1
 ---
 
 ## How to Get Access?
