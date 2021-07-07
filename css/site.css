@@ -1,7 +1,14 @@
+/* HPCC Custom */
 /* Force element after header to be pushed down */
 div.row h3{
   width: 100%;
 }
+
+.nav-link{
+  display: inline-block !important;
+}
+
+/* HPCC Custom */
 
 .sps-site-bg-big {
   height: 45vh;
