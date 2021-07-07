@@ -210,12 +210,29 @@ enable = true
   [[menu.main]]
     parent = "About"
     name = "Hardware"
-    url = "/Hardware"
+    url = "/about/hardware/"
     weight = 1
   [[menu.main]]
     parent = "About"
     name = "Software"
-    url = "/Software"
+    url = "/about/software/"
+    weight = 2
+
+# Community
+[[menu.main]]
+  name = "Community"
+  url = "/Community"
+  weight = 10
+  pre = "<i class='fas fa-users btn-primary'></i>"
+  [[menu.main]]
+    parent = "Community"
+    name = "Small Events"
+    url = "/community/events_small/"
+    weight = 1
+  [[menu.main]]
+    parent = "Community"
+    name = "Related Events"
+    url = "/community/events_related/"
     weight = 2
 
 # Related
@@ -254,33 +271,16 @@ enable = true
   [[menu.main]]
     parent = "Manuals"
     name = "Linux Basics"
-    url = "/Linux Basics"
+    url = "/manuals/linux-basics/"
     weight = 1
   [[menu.main]]
     parent = "Manuals"
     name = "HPC Cluster"
-    url = "/HPC Cluster"
+    url = "/manuals/hpc-cluster/"
     weight = 2
   [[menu.main]]
     parent = "Manuals"
-    name = "HPCC Cloud/External"
-    url = "/HPCC Cloud/External"
+    name = "HPCC Cloud"
+    url = "/manuals/hpcc-cloud/"
     weight = 3
-
-# Community
-[[menu.main]]
-  name = "Community"
-  url = "/Community"
-  weight = 10
-  pre = "<i class='fas fa-users btn-primary'></i>"
-  [[menu.main]]
-    parent = "Community"
-    name = "Small Events"
-    url = "/community/events_small/"
-    weight = 1
-  [[menu.main]]
-    parent = "Community"
-    name = "Related Events"
-    url = "/community/events_related/"
-    weight = 2
 
