@@ -271,16 +271,16 @@ enable = true
   [[menu.main]]
     parent = "Manuals"
     name = "Linux Basics"
-    url = "/manuals/linux-basics/"
+    url = "/manuals/linux_basics/"
     weight = 1
   [[menu.main]]
     parent = "Manuals"
     name = "HPC Cluster"
-    url = "/manuals/hpc-cluster/"
+    url = "/manuals/hpc_cluster/"
     weight = 2
   [[menu.main]]
     parent = "Manuals"
     name = "HPCC Cloud"
-    url = "/manuals/hpcc-cloud/"
+    url = "/manuals/hpcc_cloud/"
     weight = 3
 
