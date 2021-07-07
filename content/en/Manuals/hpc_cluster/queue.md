@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Queue Policies
 title: Queue Policies
-permalink: manuals_linux-cluster_queue.html
+linkTitle: Queue Policies
+type: docs
+weight: 4
 ---
 
 ## Start Times

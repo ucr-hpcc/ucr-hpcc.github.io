@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Parallel Evaluations in R 
 title: Parallel Evaluations in R 
-permalink: manuals_linux-cluster_parallelR.html
+linkTitle: Parallel Evaluations in R 
+type: docs
+weight: 11
 ---
 
 # Overview

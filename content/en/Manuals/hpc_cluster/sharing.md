@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Sharing Data
 title: Sharing Data
-permalink: manuals_linux-cluster_sharing.html
+linkTitle: Sharing Data
+type: docs
+weight: 7
 ---
 
 ## Permissions

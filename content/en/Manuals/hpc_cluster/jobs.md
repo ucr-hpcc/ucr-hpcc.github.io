@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Managing Jobs
 title: Managing Jobs
-permalink: manuals_linux-cluster_jobs.html
+linkTitle: Managing Jobs
+type: docs
+weight: 3
 ---
 
 ## What is a Job?

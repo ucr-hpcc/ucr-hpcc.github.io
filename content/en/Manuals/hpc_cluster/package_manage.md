@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Package Management
 title: Package Management
-permalink: manuals_linux-cluster_package-manage.html
+linkTitle: Package Management
+type: docs
+weight: 5
 ---
 
 ## Python

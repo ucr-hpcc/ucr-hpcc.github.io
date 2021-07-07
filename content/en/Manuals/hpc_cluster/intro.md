@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Introduction
 title: Introduction
-permalink: manuals_linux-cluster_intro.html
+linkTitle: Introduction
+type: docs
+weight: 1
 ---
 
 ## Introduction

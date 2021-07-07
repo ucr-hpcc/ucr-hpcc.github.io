@@ -1,8 +1,8 @@
 ---
-type: docs
 linkTitle: Communicating
 title: Communicating
-permalink: manuals_linux-cluster_users.html
+type: docs
+weight: 9
 ---
 
 ## Communicating with others

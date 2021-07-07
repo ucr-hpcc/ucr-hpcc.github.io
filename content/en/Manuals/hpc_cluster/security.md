@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Security
 title: Security
-permalink: manuals_linux-cluster_security.html
+linkTitle: Security
+type: docs
+weight: 8
 ---
 
 ## Protection Levels and Classification

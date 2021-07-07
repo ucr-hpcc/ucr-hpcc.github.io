@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle:  Data Storage
 title: Data Storage
-permalink: manuals_linux-cluster_storage.html
+linkTitle:  Data Storage
+type: docs
+weight: 6
 ---
 
 ## Dashboard

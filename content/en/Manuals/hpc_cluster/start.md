@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle:  Getting Started
 title: Getting Started
-permalink: manuals_linux-cluster_start.html
+linkTitle:  Getting Started
+type: docs
+weight: 2
 ---
 
 ## Login from Mac, Linux, MobaXTerm
