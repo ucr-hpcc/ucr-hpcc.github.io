@@ -1,0 +1,289 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – SSH Keys</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><description>Recent content in SSH Keys on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
+&lt;h2 id="ssh-keys-on-macos">SSH Keys on macOS&lt;/h2>
+&lt;h3 id="what-are-ssh-keys">What are SSH Keys?&lt;/h3>
+&lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
+&lt;p>The private key remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.&lt;/p>
+&lt;p>A public key file is used to encrypt information, and is stored on your own system.
+The public key file is stored on the HPCC cluster and contains a list of authorized public keys.&lt;/p>
+&lt;h3 id="why-do-you-need-ssh-keys">Why do you need SSH Keys?&lt;/h3>
+&lt;p>HPCC supports two authentication methods; &lt;code>Password+DUO&lt;/code> and &lt;code>SSH Keys&lt;/code>.
+The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not have this then you will need to use &lt;code>SSH keys&lt;/code> in order to access the HPCC cluster.&lt;/p>
+&lt;h3 id="what-you-need">What you need&lt;/h3>
+&lt;h4 id="filezilla">Filezilla&lt;/h4>
+&lt;p>You will need to install &lt;code>Filezilla&lt;/code> in order to transfer the public SSH key to the HPCC cluster.&lt;/p>
+&lt;ol>
+&lt;li>Download the &lt;code>Filezilla Client&lt;/code> for Mac OS X &lt;a href="https://filezilla-project.org">here&lt;/a>.
+&lt;ul>
+&lt;li>Make sure your Mac OS X system is updated to the latest version.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Follow the install wizard to complete the install of &lt;code>Filezilla&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h4 id="sourcetree">Sourcetree&lt;/h4>
+&lt;p>You will need to install &lt;code>Sourcetree&lt;/code> in order to generate your &lt;code>SSH keys&lt;/code> (or use the command line method mentioned here: &lt;a href="some_other_page">Manage SSH Keys via Command Line&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>Download &lt;code>Sourcetree&lt;/code> from &lt;a href="https://www.sourcetreeapp.com">here&lt;/a>.&lt;/li>
+&lt;li>Click on &lt;code>Download for Mac OS X&lt;/code>.&lt;/li>
+&lt;li>Install &lt;code>Sourcetree&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-ssh-keys-sourcetree">Create SSH Keys (&lt;code>Sourcetree&lt;/code>)&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open the &lt;code>Sourcetree&lt;/code> application and under the top &lt;code>Sourcetree&lt;/code> menu click on the &lt;code>Preferences...&lt;/code> sub-menu item.&lt;/p>
+&lt;p>&lt;img src="../../../img/41.png" alt="fig0">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Navigate to &lt;code>Accounts&lt;/code> category and click on &lt;code>Add...&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/42.png" alt="fig0">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>Auth Type:&lt;/code> and change the drop down menu from &lt;code>OAuth&lt;/code> to &lt;code>Basic&lt;/code>. Make sure &lt;code>Protocol:&lt;/code> is set to &lt;code>SSH&lt;/code> in the drop down menu.&lt;/p>
+&lt;p>&lt;img src="../../../img/43.png" alt="fig0">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Enter &lt;code>id_rsa&lt;/code> in the &lt;code>Username&lt;/code> field.&lt;/p>
+&lt;p>&lt;img src="../../../img/44.png" alt="fig0">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;code>Generate Key&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/50.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Press &lt;code>Cancel&lt;/code> to exit out of the window.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="ssh-keys-location">SSH Keys Location&lt;/h3>
+&lt;p>By default, your key files are created in the path: &lt;code>/Users/macOSUsername/.ssh/&lt;/code>.&lt;/p>
+&lt;p>To verify that the keys were created, do the following:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open a new finder window. Click on your home directory on the left side pane.&lt;/p>
+&lt;p>&lt;img src="../../../img/23.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Press the 3-button combo &lt;code>Command&lt;/code>+&lt;code>Shift&lt;/code>+&lt;code>.&lt;/code> together (visualized below) to see hidden folders:&lt;/p>
+&lt;p>&lt;img src="../../../img/47b.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will now be able to see your &lt;code>.ssh&lt;/code> folder, open it by double-clicking.&lt;/p>
+&lt;p>&lt;img src="../../../img/48.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You should see your newly generated pair of &lt;code>SSH key&lt;/code> files in the folder.&lt;/p>
+&lt;p>&lt;img src="../../../img/51.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sourcetree adds the &lt;code>-Bitbucket&lt;/code> to the end of the &lt;code>SSH key&lt;/code> file names. Remove this by clicking on the file you want to rename and press the &lt;code>Enter&lt;/code> key which allows us to rename the file before the extension.&lt;/p>
+&lt;p>&lt;img src="../../../img/52.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>After you have removed the &lt;code>-Bitbucket&lt;/code> suffix from each of the &lt;code>SSH key&lt;/code> file names, your new &lt;code>SSH key&lt;/code> file names should be &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/53.png" alt="fig1">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="configure-ssh-keys">Configure SSH Keys&lt;/h3>
+&lt;h4 id="public-ssh-key">Public SSH Key&lt;/h4>
+&lt;p>Now that you have created your &lt;code>SSH keys&lt;/code>, and renamed them, you will need to placed the public key (&lt;code>id_rsa.pub&lt;/code>) on the cluster using the &lt;code>cluster.hpcc.ucr.edu&lt;/code> server.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Start the &lt;code>Filezilla&lt;/code> application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill in the &lt;code>Quickconnect&lt;/code> fields at the top of the application window:&lt;/p>
+&lt;ul>
+&lt;li>Enter your HPCC username in the &lt;code>Username&lt;/code> field.&lt;/li>
+&lt;li>Enter the HPCC servername &lt;code>cluster.hpcc.ucr.edu&lt;/code> for the &lt;code>Host&lt;/code> field.&lt;/li>
+&lt;li>Enter your password in the &lt;code>Password&lt;/code> field.&lt;/li>
+&lt;li>Enter &lt;code>22&lt;/code> in the &lt;code>Port&lt;/code> field.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../img/1e.png" alt="fig4">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>Quickconnect&lt;/code>&lt;/p>
+&lt;p>&lt;img src="../../../img/8e.png" alt="fig7">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If a pop up prompts you to save your password, select the &lt;code>Save passwords&lt;/code> option, then click the &lt;code>OK&lt;/code> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the next pop up prompts you, then check the box that states &lt;code>Always trust this host, add this key to the cache&lt;/code>, then click the &lt;code>OK&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/6be.png" alt="fig8">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now that you are connected to Filezilla transfer your public SSH key from your macOS system by dragging the file &lt;code>/Users/macOSUsername/.ssh/id_rsa.pub&lt;/code> and dropping it into the HPCC cluster direcotry &lt;code>/rhome/username/.ssh/&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/4e.png" alt="fig10">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
+&lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>secure.hpcc.ucr.edu&lt;/code> server.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open Filezilla &lt;code>Site Manager&lt;/code> button in the top bar of icons.&lt;/p>
+&lt;p>&lt;img src="../../../img/60.png" alt="fig3">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>New Site&lt;/code>, rename it (optional) and press enter.&lt;/p>
+&lt;p>&lt;img src="../../../img/54.png" alt="fig3">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Make sure the following fields are correctly filled before adding your &lt;code>SSH key&lt;/code> file:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Protocol&lt;/code>: should be set to &lt;code>SFTP - SSH File Transfer Protocol&lt;/code>&lt;/li>
+&lt;li>&lt;code>Host&lt;/code>: type in &lt;code>secure.hpcc.ucr.edu&lt;/code>&lt;/li>
+&lt;li>&lt;code>Port&lt;/code>: type &lt;code>22&lt;/code>&lt;/li>
+&lt;li>&lt;code>Logon Type&lt;/code>: set to &lt;code>Key file&lt;/code>&lt;/li>
+&lt;li>&lt;code>User&lt;/code>: type in your HPCC username&lt;/li>
+&lt;/ul>
+&lt;p>After these fields are finalized, click the &lt;code>Browse..&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/56.png" alt="fig4">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Navigate to the folder you saved your key file in (default location is &lt;code>/Users/macOSUsername/.ssh&lt;/code>) and open the private key file &lt;code>id_rsa&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/57.png" alt="fig4">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You should see the added keyfile in the &lt;code>Key file:&lt;/code> box, then click &lt;code>Connect&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/59.png" alt="fig5">&lt;/p>
+&lt;p>Subsequnt connections can be done from the &lt;code>Quickconnect&lt;/code> history by clicking on the down arrow to the right side of the &lt;code>Quickconnect&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/61.png" alt="fig5">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remember to select the &lt;code>secure.hpcc.ucr.edu&lt;/code> address.&lt;/p>
+&lt;p>&lt;img src="../../../img/62.png" alt="fig5">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
+&lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
+&lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
+&lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
+&lt;p>The private key remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.&lt;/p>
+&lt;p>A public key file is used to encrypt information, and is stored on your own system.
+The public key file is stored on the HPCC cluster and contains a list of authorized public keys.&lt;/p>
+&lt;h3 id="why-do-you-need-ssh-keys">Why do you need SSH keys?&lt;/h3>
+&lt;p>HPCC supports two authentication methods; &lt;code>Password+DUO&lt;/code> and &lt;code>SSH Keys&lt;/code>.
+The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not have this then you will need to use &lt;code>SSH keys&lt;/code> in order to access the HPCC cluster.&lt;/p>
+&lt;h3 id="what-you-need">What you need&lt;/h3>
+&lt;h4 id="filezilla">Filezilla&lt;/h4>
+&lt;p>You will need to install &lt;code>Filezilla&lt;/code> in order to transfer the public SSH key to the HPCC cluster.&lt;/p>
+&lt;ol>
+&lt;li>Download the &lt;code>Filezilla Client&lt;/code> for Windows &lt;a href="https://filezilla-project.org/download.php?show_all=1">here&lt;/a>.
+* Make sure your Windows system is updated to the latest version.&lt;/li>
+&lt;li>Follow the install wizard to complete the install of &lt;code>Filezilla&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h4 id="mobaxterm">MobaXterm&lt;/h4>
+&lt;p>You will need to install &lt;code>MobaXterm&lt;/code> in order to generate your &lt;code>SSH keys&lt;/code> and also to transfer the keys to the cluster.&lt;/p>
+&lt;ol>
+&lt;li>Download &lt;code>MobaXterm&lt;/code> from &lt;a href="https://mobaxterm.mobatek.net/download-home-edition.html">&lt;code>here&lt;/code>&lt;/a>.&lt;/li>
+&lt;li>Unzip&lt;/li>
+&lt;li>Double click portable version of exe and run the &lt;code>MobaXterm&lt;/code> application.&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-ssh-keys-mobaxterm">Create SSH Keys (&lt;code>MobaXterm&lt;/code>)&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Begin by clicking on the tools drop down on the upper menu bar&lt;/p>
+&lt;p>&lt;img src="../../../img/ssh1moba.png" alt="mobasshkey1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find and click on the MobaKeyGen (SSH key generator) option&lt;/p>
+&lt;p>&lt;img src="../../../img/ssh2moba.png" alt="mobasshkey2">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A window should appear to create a new SSH key. Click on generate to create a new SSH key pair. Follow the on menu instructions.&lt;/p>
+&lt;p>&lt;img src="../../../img/revisedkeygen.png" alt="revisedkeygen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once your key has been created, enter a password in the key passphrase field to password protect your key. Click on &lt;code>conversions&lt;/code> in the tool bar and click on &lt;code>Export OpenSSH Key&lt;/code>. Save this key as &lt;code>id_rsa&lt;/code> and put the file in an easy to access location.
+Click on &lt;code>Save private key&lt;/code> to save the private key with an extension of &lt;code>.ppk&lt;/code> to use with MobaXterm or FileZilla. Save the key as &lt;code>mobaxterm_privkey&lt;/code> and put the file in an easy to access location.&lt;/p>
+&lt;p>&lt;img src="../../../img/revisedkeygen2.png" alt="revisedkeygen2">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Highlight EVERYTHING in the box labeled &amp;ldquo;Public key for pasting into OpenSSH authorized_keys file&amp;rdquo; then right-click on it and choose Copy. Open &lt;code>Notepad&lt;/code> and paste the copied text. Save the file as &lt;code>id_rsa.pub&lt;/code> and put the file in an easy to access location.&lt;/p>
+&lt;p>&lt;img src="../../../img/revisedkeygen3.png" alt="revisedkeygen3">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="keys-location">Keys Location&lt;/h3>
+&lt;p>SSH keys should be saved under the location &lt;code>C:\Users\username\.ssh&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/sshkeyloc.png" alt="sshkeyloc">&lt;/p>
+&lt;h3 id="configure-ssh-keys">Configure SSH Keys&lt;/h3>
+&lt;h4 id="public-ssh-key">Public SSH Key&lt;/h4>
+&lt;p>Now that you have created your &lt;code>SSH keys&lt;/code>, and renamed them, you will need to placed the public key (&lt;code>id_rsa.pub&lt;/code>) on the cluster using the &lt;code>cluster.hpcc.ucr.edu&lt;/code>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Start the &lt;code>Filezilla&lt;/code> application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill in the &lt;code>Quickconnect&lt;/code> fields at the top of the application window:&lt;/p>
+&lt;ul>
+&lt;li>Enter your HPCC username in the &lt;code>Username&lt;/code> field.&lt;/li>
+&lt;li>Enter the HPCC servername &lt;code>cluster.hpcc.ucr.edu&lt;/code> for the &lt;code>Host&lt;/code> field.&lt;/li>
+&lt;li>Enter your password in the &lt;code>Password&lt;/code> field.&lt;/li>
+&lt;li>Enter &lt;code>22&lt;/code> in the &lt;code>Port&lt;/code> field.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../img/filezilla1.png" alt="filezilla1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>Quickconnect&lt;/code>&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla2.png" alt="filezilla2">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the next pop up prompts you, then check the box that states &lt;code>Always trust this host, add this key to the cache&lt;/code>, then click the &lt;code>OK&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla3.png" alt="filezilla3">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will need to create a &lt;code>.ssh&lt;/code> directory to hold your SSH keys. On the right hand side, right click and click on the &lt;code>Create directory option&lt;/code> under your home folder location.
+&lt;img src="../../../img/createsshdir.png" alt="createsshdir">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A window will appear to name the new directory. Name should be the following format: &lt;code>/rhome/username/.ssh&lt;/code>. After naming the new directory click on &lt;code>OK&lt;/code>.
+&lt;img src="../../../img/createsshdir2.png" alt="createsshdir">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Right click on the new &lt;code>.ssh&lt;/code> directory that has been created. Find and click on &lt;code>File permissions&lt;/code>.
+&lt;img src="../../../img/createsshdir3.png" alt="createsshdir">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A window with the directory permissions will appear. The &lt;code>.ssh&lt;/code> directory needs exact permissions in order for it to function properly. Follow the image below to apply the permissions.
+&lt;img src="../../../img/createsshdir4.png" alt="createsshdir">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file &lt;code>id_rsa.pub&lt;/code> and dropping it into the HPCC cluster direcotry &lt;code>/rhome/username/.ssh/&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla4.png" alt="filezilla4">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
+&lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>secure.hpcc.ucr.edu&lt;/code> server.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open Filezilla &lt;code>Site Manager&lt;/code> button in the top bar of icons.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla5.png" alt="filezilla5">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>New Site&lt;/code>, rename it (optional) and press enter.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla6.png" alt="filezilla6">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Make sure the following fields are correctly filled before adding your &lt;code>SSH key&lt;/code> file:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Protocol&lt;/code>: should be set to &lt;code>SFTP - SSH File Transfer Protocol&lt;/code>&lt;/li>
+&lt;li>&lt;code>Host&lt;/code>: type in &lt;code>secure.hpcc.ucr.edu&lt;/code>&lt;/li>
+&lt;li>&lt;code>Port&lt;/code>: type &lt;code>22&lt;/code>&lt;/li>
+&lt;li>&lt;code>Logon Type&lt;/code>: set to &lt;code>Key file&lt;/code>&lt;/li>
+&lt;li>&lt;code>User&lt;/code>: type in your HPCC username&lt;/li>
+&lt;/ul>
+&lt;p>After these fields are finalized, click the &lt;code>Browse..&lt;/code> button.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla7.png" alt="filezilla7">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Navigate to the folder you saved your private key file in and open the private key file &lt;code>mobaxterm_privkey.ppk&lt;/code>. You should see the added keyfile in the &lt;code>Key file:&lt;/code> box, then click &lt;code>Connect&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla9.png" alt="filezilla9">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Subsequnt connections can be done from the &lt;code>Quickconnect&lt;/code> history by clicking on the down arrow to the right side of the &lt;code>Quickconnect&lt;/code> button. Remember to select the &lt;code>secure.hpcc.ucr.edu&lt;/code> address.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla11.png" alt="filezilla11">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

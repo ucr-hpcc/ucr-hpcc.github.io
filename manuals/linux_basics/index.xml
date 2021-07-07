@@ -255,27 +255,7 @@ check_quota # Check quota for home and bigdata
 &lt;p>&lt;code>scp -r &amp;lt;your_username&amp;gt;@&amp;lt;host_name&amp;gt;:&amp;lt;path_to_directory&amp;gt; .&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>For more advanced methods of file transfers to the cluster refer to &lt;a href="manuals_linux-cluster_sharing">Cluster - Sharing Data&lt;/a>.&lt;/p></description></item><item><title>Manuals: Finding Things</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/finding_things/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/finding_things/</guid><description>
-&lt;h2 id="find-files">Find Files&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find ~ -name &lt;span style="color:#4e9a06">&amp;#34;*pattern*&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Searches for *pattern* in and below your home directory&lt;/span>
-find ~ -iname &lt;span style="color:#4e9a06">&amp;#34;*pattern*&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Same as above, but case insensitive&lt;/span>
-find ~ -type f -mtime -2 &lt;span style="color:#8f5902;font-style:italic"># Searches for files you have modified in the last two days&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Useful &lt;code>find&lt;/code> arguments:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>-user &amp;lt;userName&amp;gt;&lt;/code>&lt;/li>
-&lt;li>&lt;code>-group &amp;lt;groupName&amp;gt;&lt;/code>&lt;/li>
-&lt;li>&lt;code>-ctime &amp;lt;number of days ago changed&amp;gt;&lt;/code>&lt;/li>
-&lt;li>&lt;code>-exec &amp;lt;command to run on each file&amp;gt; {} \;&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="find-text">Find Text&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Provides lines in a file where &amp;#34;pattern&amp;#34; appears&lt;/span>
-grep -H &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># -H prints out file name in front of pattern&lt;/span>
-find ~ -name &lt;span style="color:#4e9a06">&amp;#34;*.txt&amp;#34;&lt;/span> -exec grep -H &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">{}&lt;/span> &lt;span style="color:#4e9a06">\;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Search lines where &amp;#34;pattern&amp;#34; appears in files with names that end with &amp;#34;.txt&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="find-applications">Find Applications&lt;/h2>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">which &amp;lt;APPLICATION_NAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Location of application&lt;/span>
-whereis &amp;lt;APPLICATION_NAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Searches for executables in set of directories&lt;/span>
-rpm -qa &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># List all RPM packages and filter based on &amp;#34;pattern&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
+&lt;p>For more advanced methods of file transfers to the cluster refer to &lt;a href="manuals_linux-cluster_sharing">Cluster - Sharing Data&lt;/a>.&lt;/p></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>In Linux (and Unix systems in general), access to files and directories is
 controlled by a system of owners, groups, and permission bits. Changing these
@@ -360,7 +340,134 @@ chmod +rx public_html/ or $ chmod &lt;span style="color:#0000cf;font-weight:bold
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chown &amp;lt;user&amp;gt; &amp;lt;file or dir&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># changes user ownership&lt;/span>
 chgrp &amp;lt;group&amp;gt; &amp;lt;file or dir&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># changes group ownership&lt;/span>
 chown &amp;lt;user&amp;gt;:&amp;lt;group&amp;gt; &amp;lt;file or dir&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># changes user &amp;amp; group ownership&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Piping</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/pipes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/pipes/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Finding Things</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/finding_things/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/finding_things/</guid><description>
+&lt;h2 id="find-files">Find Files&lt;/h2>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find ~ -name &lt;span style="color:#4e9a06">&amp;#34;*pattern*&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Searches for *pattern* in and below your home directory&lt;/span>
+find ~ -iname &lt;span style="color:#4e9a06">&amp;#34;*pattern*&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Same as above, but case insensitive&lt;/span>
+find ~ -type f -mtime -2 &lt;span style="color:#8f5902;font-style:italic"># Searches for files you have modified in the last two days&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Useful &lt;code>find&lt;/code> arguments:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>-user &amp;lt;userName&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>-group &amp;lt;groupName&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>-ctime &amp;lt;number of days ago changed&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>-exec &amp;lt;command to run on each file&amp;gt; {} \;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="find-text">Find Text&lt;/h2>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grep &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Provides lines in a file where &amp;#34;pattern&amp;#34; appears&lt;/span>
+grep -H &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># -H prints out file name in front of pattern&lt;/span>
+find ~ -name &lt;span style="color:#4e9a06">&amp;#34;*.txt&amp;#34;&lt;/span> -exec grep -H &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">{}&lt;/span> &lt;span style="color:#4e9a06">\;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># Search lines where &amp;#34;pattern&amp;#34; appears in files with names that end with &amp;#34;.txt&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="find-applications">Find Applications&lt;/h2>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">which &amp;lt;APPLICATION_NAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Location of application&lt;/span>
+whereis &amp;lt;APPLICATION_NAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Searches for executables in set of directories&lt;/span>
+rpm -qa &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep &lt;span style="color:#4e9a06">&amp;#34;pattern&amp;#34;&lt;/span> &lt;span style="color:#8f5902;font-style:italic"># List all RPM packages and filter based on &amp;#34;pattern&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Manuals: Text Editors</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/text/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/text/</guid><description>
+&lt;h2 id="text-viewing">Text Viewing&lt;/h2>
+&lt;p>Here are a few commands that are used to just display the text within a file:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">more &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Views text, use space bar to browse, &amp;#39;q&amp;#39; to quit&lt;/span>
+less &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Also views text, uses arrow keys to browse, &amp;#39;q&amp;#39; to quit&lt;/span>
+cat &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Concatenates files and prints content to screen&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="text-editors">Text Editors&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Nano&lt;/strong>
+&lt;ul>
+&lt;li>A simple terminal-based editor.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Neovim&lt;/strong>
+&lt;ul>
+&lt;li>Non-graphical (terminal-based) editor. Neovim is an improved version of vim.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Vim&lt;/strong> &lt;strong>Gvim&lt;/strong>
+&lt;ul>
+&lt;li>Non-graphical (&lt;code>vim&lt;/code>) or window-based editor (&lt;code>gvim&lt;/code>). Vim is the improved version of vi.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Emacs&lt;/strong>
+&lt;ul>
+&lt;li>Non-graphical or window-based editor.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Atom&lt;/strong>
+&lt;ul>
+&lt;li>Window-based editor that runs on your local machine.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="nano">Nano&lt;/h2>
+&lt;p>The &lt;code>nano&lt;/code> editor is the simplest to use and can be good for beginners:&lt;/p>
+&lt;pre>&lt;code>nano &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
+&lt;/code>&lt;/pre>&lt;p>Navigation in &lt;code>nano&lt;/code> uses the arrow keys, and all other commands are noted at the bottom of the screen.
+The &lt;code>CTRL&lt;/code> key is used in combination with other keys to execute commands in &lt;code>nano&lt;/code>.&lt;/p>
+&lt;p>For example, at the bottom of the &lt;code>nano&lt;/code> screen it is noted that &lt;code>^X&lt;/code> is used to exit.
+This means you will need to hold the &lt;code>CTRL&lt;/code> key and then press &lt;code>x&lt;/code> in order to quit.
+After that, just follow the on screen prompts at the bottom.&lt;/p>
+&lt;p>For more &lt;code>nano&lt;/code> commands, please visit &lt;a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Overview of nano shortcuts&lt;/a>.&lt;/p>
+&lt;h2 id="neovim--vim--gvim--vi">Neovim / Vim / GVim / VI&lt;/h2>
+&lt;p>All of these editors follow the same principals.&lt;/p>
+&lt;pre>&lt;code>nvim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
+vim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
+gvim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it (must have XForwarding or VNC)
+vi &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
+&lt;/code>&lt;/pre>&lt;p>For more information please visit &lt;a href="manuals_linux-basics_vim">Vim Manual&lt;/a>.&lt;/p>
+&lt;h2 id="emacs">Emacs&lt;/h2>
+&lt;p>Navigation in &lt;code>emacs&lt;/code> also uses the arrow keys. It is similar to &lt;code>nano&lt;/code>, in that, &lt;code>CTRL&lt;/code> is combined with other keys to execute commands.&lt;/p>
+&lt;p>For example, to open a file, simply run the command with a file name:&lt;/p>
+&lt;pre>&lt;code>emacs &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
+&lt;/code>&lt;/pre>&lt;p>Then, after you have made some changes, exit by holding the &lt;code>CTRL&lt;/code> key and then pressing &lt;code>c&lt;/code>, releasing and then holding the &lt;code>CTRL&lt;/code> key once more and pressing &lt;code>c&lt;/code> again.
+After that, just follow the on screen prompts at the bottom.&lt;/p>
+&lt;p>For more commands in &lt;code>emacs&lt;/code> please visit &lt;a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf">GNU Emacs Reference Card&lt;/a>&lt;/p>
+&lt;h2 id="atom">Atom&lt;/h2>
+&lt;h3 id="install">Install&lt;/h3>
+&lt;p>This editor should be installed on your local machine (ie. workstation, laptop).
+Please visit &lt;a href="https://atom.io/">Atom&lt;/a> for software download.&lt;/p>
+&lt;h3 id="remote-atom">Remote Atom&lt;/h3>
+&lt;p>After you have &lt;code>atom&lt;/code> installed, you need to install the &lt;code>Remote Atom&lt;/code> plugin.
+Click on &lt;code>edit&lt;/code>, then &lt;code>preferences&lt;/code>, then look for the &lt;code>install&lt;/code> item on the left side menu.
+You should then be able to type &lt;code>remote-atom&lt;/code> in the search field, find it and install it.
+After installation, &lt;code>atom&lt;/code> should restart.&lt;/p>
+&lt;h3 id="start-server">Start Server&lt;/h3>
+&lt;p>Once you have &lt;code>remote-atom&lt;/code> installed, click &lt;code>Packages&lt;/code> in the top menu, then &lt;code>Remote Atom&lt;/code>, and then click &lt;code>Start Server&lt;/code>.
+&lt;code>Atom&lt;/code> may need to be restarted in order for you to see these new menu items.&lt;/p>
+&lt;h3 id="cluster">Cluster&lt;/h3>
+&lt;p>SSH into cluster using a socket (replace &lt;code>&amp;lt;USERNAME&amp;gt;&lt;/code> with your real username on the cluster):&lt;/p>
+&lt;pre>&lt;code>ssh -R /rhome/&amp;lt;USERNAME&amp;gt;/.rmate.socket:localhost:52698 cluster.hpcc.ucr.edu
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>Note: Do not use a remote PORT, you must use a SOCKET FILE as shown above. There are security issues otherwise.&lt;/p>
+&lt;/blockquote>
+&lt;p>After you have logged into the cluster load &lt;code>rmate&lt;/code> (alias is optional):&lt;/p>
+&lt;pre>&lt;code>module load rmate
+alias ratom=rmate
+&lt;/code>&lt;/pre>&lt;p>You can add this into your &lt;code>~/.bashrc&lt;/code> for convenience.&lt;/p>
+&lt;p>Then you should be able to open a file on the cluster and have it appear on your local machine:&lt;/p>
+&lt;pre>&lt;code>rmate &amp;lt;FILENAME&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Once you have finished all your editing and close &lt;code>atom&lt;/code>, be sure to delete the socket file from the cluster:&lt;/p>
+&lt;pre>&lt;code>rm -f /rhome/&amp;lt;USERNAME&amp;gt;/.rmate.socket'
+&lt;/code>&lt;/pre>&lt;p>For more information regarding &lt;code>remote-atom&lt;/code>, please visit &lt;a href="https://atom.io/packages/remote-atom">Remote-Atom&lt;/a>.&lt;/p></description></item><item><title>Manuals: Streams</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
+&lt;h2 id="streams">Streams&lt;/h2>
+&lt;p>On the command line, or terminal, there are three very important lanes where information can be sent, we call these &lt;code>streams&lt;/code>.
+A single command can take information in from &lt;code>STDIN&lt;/code> and then send information out on both &lt;code>STDOUT&lt;/code> and &lt;code>STDERR&lt;/code> simultaneously.&lt;/p>
+&lt;h3 id="stdin">STDIN&lt;/h3>
+&lt;p>For example, we can send the contents of a file as a &lt;code>STDIN&lt;/code> steam to the &lt;code>wc&lt;/code> command in order to count the lines:&lt;/p>
+&lt;pre>&lt;code>wc -l &amp;lt; file.txt
+&lt;/code>&lt;/pre>&lt;h3 id="stdout">STDOUT&lt;/h3>
+&lt;p>The &lt;code>STDOUT&lt;/code> steam is probably the most often used, since this is how commands send information to the screen.
+However, if we do not want the information printed to the screen, we can send it into a file for later review:&lt;/p>
+&lt;pre>&lt;code>ls &amp;gt; output.txt # Overwrite contents in output file with `ls` results
+&lt;/code>&lt;/pre>&lt;p>You can also append to the same file, if more information is to be saved:&lt;/p>
+&lt;pre>&lt;code>ls &amp;gt;&amp;gt; output.txt # Append results from `ls` to the bottom of the file
+&lt;/code>&lt;/pre>&lt;h3 id="stderr">STDERR&lt;/h3>
+&lt;p>The error stream is very useful to separate error messages (or warnings) from real output (your results).
+Since there is no &lt;code>-e&lt;/code> flag for the &lt;code>ls&lt;/code> command this will generate an error. We can then store this error in a by redirecting the error stream with &lt;code>2&amp;gt;&lt;/code>.&lt;/p>
+&lt;pre>&lt;code>ls -e 2&amp;gt; errors.txt
+&lt;/code>&lt;/pre>&lt;h3 id="tips">Tips&lt;/h3>
+&lt;h4 id="combined-streams">Combined streams&lt;/h4>
+&lt;p>If you want to combined your &lt;code>STDOUT&lt;/code> with your &lt;code>STDERR&lt;/code> stream and store it into a file, you can do this with &lt;code>&amp;amp;&amp;gt;&lt;/code>, like so:&lt;/p>
+&lt;pre>&lt;code>command &amp;amp;&amp;gt; output_and_errors.txt
+&lt;/code>&lt;/pre>&lt;h4 id="trash-streams">Trash Streams&lt;/h4>
+&lt;p>If you want to ignore all information from &lt;code>STDOUT&lt;/code> and &lt;code>STDERR&lt;/code> you can send both of these streams to the trash (&lt;code>/dev/null&lt;/code>):&lt;/p>
+&lt;pre>&lt;code>command &amp;amp;&amp;gt; /dev/null
+&lt;/code>&lt;/pre>&lt;p>This can be useful when you are only interested in the resulting file that your command will create.&lt;/p></description></item><item><title>Manuals: Piping</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/pipes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/pipes/</guid><description>
 &lt;h2 id="piping">Piping&lt;/h2>
 &lt;p>One of the the most powerful things you can do in Linux is piping.
 This allows chaining of commands so that the output (&lt;code>STDOUT&lt;/code>) of one command is the input (&lt;code>STDIN&lt;/code>) for another.
@@ -372,7 +479,107 @@ Please note that not all commands support this, for example if your command is n
 For example, you can combined two CSV files and extract the first column, then filter for only unique values:&lt;/p>
 &lt;pre>&lt;code>cat filename1.csv filename2.csv | cut -f 1 | sort | uniq
 &lt;/code>&lt;/pre>&lt;p>For a few more simple examples, please visit here &lt;a href="https://www.guru99.com/linux-pipe-grep.html">Pipe, Grep and Sort Command in Linux/Unix with Examples&lt;/a>.
-Or you can try searching Google for even more complex examples, the possibilities are endless.&lt;/p></description></item><item><title>Manuals: Process Management</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/processes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/processes/</guid><description>
+Or you can try searching Google for even more complex examples, the possibilities are endless.&lt;/p></description></item><item><title>Manuals: Variables</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/variables/</guid><description>
+&lt;h2 id="variables">Variables&lt;/h2>
+&lt;p>The HPCC cluster uses bash as the default shell environment. Within this environment, variables can be set and reused.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>MYVAR=’Something’
+export MYVAR=’Something’
+echo $MYVAR
+&lt;/code>&lt;/pre>&lt;h3 id="default-variables">Default Variables&lt;/h3>
+&lt;p>Some softwares utilize this feature and require that specific environment variables be set.
+For example, every time you login, the following variables are set by default:&lt;/p>
+&lt;pre>&lt;code>echo $HOME #Contains your home path
+echo $USER #Contains your username
+echo $PATH #Contains paths of executables
+echo $LD_LIBRARY_PATH #Contains paths of library dependencies
+&lt;/code>&lt;/pre>&lt;h3 id="finding-variables">Finding Variables&lt;/h3>
+&lt;p>To see a list of all variables currently set in your shell, use the &lt;code>env&lt;/code> command.
+You can also &lt;code>grep&lt;/code> through this list to find variables, like so:&lt;/p>
+&lt;pre>&lt;code>env | grep -i home
+&lt;/code>&lt;/pre>&lt;p>Or if you are in a &lt;code>Slurm&lt;/code> job, you can find all related &lt;code>Slurm&lt;/code> variables:&lt;/p>
+&lt;pre>&lt;code>env | grep -i slurm
+&lt;/code>&lt;/pre>&lt;h3 id="setting-variables">Setting variables&lt;/h3>
+&lt;p>Try to choose unique names when setting variables.
+It is best to not overwrite a variable that is already set, unless on purpose.&lt;/p>
+&lt;p>To set a variable in your current shell, you can do so like this:&lt;/p>
+&lt;pre>&lt;code>MYVAR='Something Important'
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>Notice that there is no spaces around the &lt;code>=&lt;/code> sign.&lt;/p>
+&lt;/blockquote>
+&lt;p>If you would like to set a variable that is carried over to all other commands or sub-shells, then it must be &lt;code>exported&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>export MYVAR='Something Important'
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Scripting</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/scripting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/scripting/</guid><description>
+&lt;h2 id="scripting">Scripting&lt;/h2>
+&lt;p>Converting code into a script is useful, and almost necessary when running jobs on the cluster.&lt;/p>
+&lt;p>There are many benifits of doing this:&lt;/p>
+&lt;ul>
+&lt;li>Easy to run - blackbox&lt;/li>
+&lt;li>Easy to maintain - consolidated code&lt;/li>
+&lt;li>Easy to distribute - capsulated code&lt;/li>
+&lt;li>Easy to automate (crontab?) - does not require interaction&lt;/li>
+&lt;/ul>
+&lt;h3 id="breakdown">Breakdown&lt;/h3>
+&lt;p>There are four basic parts that are needed to convert your commands into a script:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First save all your commands into a file and call it &lt;code>myscript.sh&lt;/code>, you can do this with a &lt;a href="manuals_linux-basics_text">Text Editor&lt;/a> or &lt;a href="manuals_linux-basics_filesystems">Transferring&lt;/a> it from your computer.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add the &lt;code>#!&lt;/code> (SheBang) as the first line in file, this defines the interpreter. In this example, we are using &lt;code>bash&lt;/code> as the interpreter, which will run all subsequent lines in this file:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>#!/bin/bash
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Add the proper permissions to the script, allow user (or group) execution:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>chmod u+x myscript.sh
+&lt;/code>&lt;/pre>&lt;p>OR&lt;/p>
+&lt;pre>&lt;code>chmod g+x myscript.sh
+&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;li>You can pass arguments via command line into a script, this step is optional, but important to note.&lt;/li>
+&lt;/ol>
+&lt;p>For example if I want to call my script, like so:&lt;/p>
+&lt;pre>&lt;code>/where/my/script/lives/myscript.sh username number
+&lt;/code>&lt;/pre>&lt;p>Then inside my script I can capture the command line arguments into variables, like this:&lt;/p>
+&lt;pre>&lt;code>username=$1
+number=$2
+&lt;/code>&lt;/pre>&lt;ol start="5">
+&lt;li>Lastly adding the path to a script to the &lt;code>PATH&lt;/code> environment variable, allows us to call the script without a prefixed path:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>export PATH=/where/my/script/lives/:$PATH # Can be added to .bashrc for convenience
+&lt;/code>&lt;/pre>&lt;p>After we have exported &lt;code>PATH&lt;/code> with the new path of our script, we call it like so:&lt;/p>
+&lt;pre>&lt;code>myscript.sh username number
+&lt;/code>&lt;/pre>&lt;h3 id="walkthrough">Walkthrough&lt;/h3>
+&lt;p>My bash commands:&lt;/p>
+&lt;pre>&lt;code>sacct -n -p -u jhayes -S 2020-01-01 -l &amp;gt; myjobs.txt
+cut -d'|' -f4 myjobs.txt &amp;gt; partitions.txt
+wc -l partitions.txt &amp;gt; count.txt
+&lt;/code>&lt;/pre>&lt;p>Convert the above commands into a script named &lt;code>myscript.sh&lt;/code>, with the following contents:&lt;/p>
+&lt;pre>&lt;code>#!/bin/bash
+# Gather Slurm job information
+sacct -n -p -u jhayes -S 2020-01-01 -l &amp;gt; myjobs.txt
+# Filter on parittion column
+cut -d'|' -f4 myjobs.txt &amp;gt; partitions.txt
+# Count how many records per partition
+cat partitions.txt | sort | uniq -c &amp;gt; count.txt
+&lt;/code>&lt;/pre>&lt;p>Optional, we can alter the above commands by adding some pipes, as well as adding some variables to make this script count records for only a given partition:&lt;/p>
+&lt;pre>&lt;code>#!/bin/bash -l
+# Gather Slurm job information
+# filter on partition column
+# count how many records for given partition
+sacct -n -p -u $1 -S 2020-01-01 -l | cut -d'|' -f4 | grep $2 | wc -l &amp;gt; count.txt
+&lt;/code>&lt;/pre>&lt;p>Add correct permissions:&lt;/p>
+&lt;pre>&lt;code>chmod u+x myscript.sh
+&lt;/code>&lt;/pre>&lt;p>Add to my &lt;code>PATH&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>mkdir -p ~/bin
+mv myscript.sh ~/bin
+export PATH=~/bin:$PATH
+&lt;/code>&lt;/pre>&lt;p>Now run my new script:&lt;/p>
+&lt;pre>&lt;code>myscript.sh
+&lt;/code>&lt;/pre>&lt;p>Or, if we did the optional step of adding variables, we can do this:&lt;/p>
+&lt;pre>&lt;code>myscript.sh johndoe001 intel # Arguments are &amp;lt;USERNAME&amp;gt; and &amp;lt;PARTITION&amp;gt;
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Process Management</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/processes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/processes/</guid><description>
 &lt;h2 id="process-management">Process Management&lt;/h2>
 &lt;p>Basic Linux process management commands only apply to processes that are running on the current machine you are logged into.
 This means that you cannot use these commands to manage jobs.
@@ -724,141 +931,4 @@ neighbor &lt;span style="color:#8f5902;font-style:italic"># use default settings
 cp outtree intree
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>retree # displays tree and can use midpoint method for defining root of tree, my typical command sequence is: &amp;lsquo;N&amp;rsquo; (until you see PHYLIP) &amp;lsquo;Y&amp;rsquo; &amp;lsquo;M&amp;rsquo; &amp;lsquo;W&amp;rsquo; &amp;lsquo;R&amp;rsquo; &amp;lsquo;R&amp;rsquo; &amp;lsquo;X&amp;rsquo;&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">cp outtree tree.dnd
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>View your tree in TreeBrowse or open it in TreeView&lt;/p></description></item><item><title>Manuals: Streams</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
-&lt;h2 id="streams">Streams&lt;/h2>
-&lt;p>On the command line, or terminal, there are three very important lanes where information can be sent, we call these &lt;code>streams&lt;/code>.
-A single command can take information in from &lt;code>STDIN&lt;/code> and then send information out on both &lt;code>STDOUT&lt;/code> and &lt;code>STDERR&lt;/code> simultaneously.&lt;/p>
-&lt;h3 id="stdin">STDIN&lt;/h3>
-&lt;p>For example, we can send the contents of a file as a &lt;code>STDIN&lt;/code> steam to the &lt;code>wc&lt;/code> command in order to count the lines:&lt;/p>
-&lt;pre>&lt;code>wc -l &amp;lt; file.txt
-&lt;/code>&lt;/pre>&lt;h3 id="stdout">STDOUT&lt;/h3>
-&lt;p>The &lt;code>STDOUT&lt;/code> steam is probably the most often used, since this is how commands send information to the screen.
-However, if we do not want the information printed to the screen, we can send it into a file for later review:&lt;/p>
-&lt;pre>&lt;code>ls &amp;gt; output.txt # Overwrite contents in output file with `ls` results
-&lt;/code>&lt;/pre>&lt;p>You can also append to the same file, if more information is to be saved:&lt;/p>
-&lt;pre>&lt;code>ls &amp;gt;&amp;gt; output.txt # Append results from `ls` to the bottom of the file
-&lt;/code>&lt;/pre>&lt;h3 id="stderr">STDERR&lt;/h3>
-&lt;p>The error stream is very useful to separate error messages (or warnings) from real output (your results).
-Since there is no &lt;code>-e&lt;/code> flag for the &lt;code>ls&lt;/code> command this will generate an error. We can then store this error in a by redirecting the error stream with &lt;code>2&amp;gt;&lt;/code>.&lt;/p>
-&lt;pre>&lt;code>ls -e 2&amp;gt; errors.txt
-&lt;/code>&lt;/pre>&lt;h3 id="tips">Tips&lt;/h3>
-&lt;h4 id="combined-streams">Combined streams&lt;/h4>
-&lt;p>If you want to combined your &lt;code>STDOUT&lt;/code> with your &lt;code>STDERR&lt;/code> stream and store it into a file, you can do this with &lt;code>&amp;amp;&amp;gt;&lt;/code>, like so:&lt;/p>
-&lt;pre>&lt;code>command &amp;amp;&amp;gt; output_and_errors.txt
-&lt;/code>&lt;/pre>&lt;h4 id="trash-streams">Trash Streams&lt;/h4>
-&lt;p>If you want to ignore all information from &lt;code>STDOUT&lt;/code> and &lt;code>STDERR&lt;/code> you can send both of these streams to the trash (&lt;code>/dev/null&lt;/code>):&lt;/p>
-&lt;pre>&lt;code>command &amp;amp;&amp;gt; /dev/null
-&lt;/code>&lt;/pre>&lt;p>This can be useful when you are only interested in the resulting file that your command will create.&lt;/p></description></item><item><title>Manuals: Text Editors</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/text/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/text/</guid><description>
-&lt;h2 id="text-viewing">Text Viewing&lt;/h2>
-&lt;p>Here are a few commands that are used to just display the text within a file:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">more &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Views text, use space bar to browse, &amp;#39;q&amp;#39; to quit&lt;/span>
-less &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Also views text, uses arrow keys to browse, &amp;#39;q&amp;#39; to quit&lt;/span>
-cat &amp;lt;FILENAME&amp;gt; &lt;span style="color:#8f5902;font-style:italic"># Concatenates files and prints content to screen&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="text-editors">Text Editors&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Nano&lt;/strong>
-&lt;ul>
-&lt;li>A simple terminal-based editor.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Neovim&lt;/strong>
-&lt;ul>
-&lt;li>Non-graphical (terminal-based) editor. Neovim is an improved version of vim.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Vim&lt;/strong> &lt;strong>Gvim&lt;/strong>
-&lt;ul>
-&lt;li>Non-graphical (&lt;code>vim&lt;/code>) or window-based editor (&lt;code>gvim&lt;/code>). Vim is the improved version of vi.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Emacs&lt;/strong>
-&lt;ul>
-&lt;li>Non-graphical or window-based editor.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Atom&lt;/strong>
-&lt;ul>
-&lt;li>Window-based editor that runs on your local machine.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="nano">Nano&lt;/h2>
-&lt;p>The &lt;code>nano&lt;/code> editor is the simplest to use and can be good for beginners:&lt;/p>
-&lt;pre>&lt;code>nano &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
-&lt;/code>&lt;/pre>&lt;p>Navigation in &lt;code>nano&lt;/code> uses the arrow keys, and all other commands are noted at the bottom of the screen.
-The &lt;code>CTRL&lt;/code> key is used in combination with other keys to execute commands in &lt;code>nano&lt;/code>.&lt;/p>
-&lt;p>For example, at the bottom of the &lt;code>nano&lt;/code> screen it is noted that &lt;code>^X&lt;/code> is used to exit.
-This means you will need to hold the &lt;code>CTRL&lt;/code> key and then press &lt;code>x&lt;/code> in order to quit.
-After that, just follow the on screen prompts at the bottom.&lt;/p>
-&lt;p>For more &lt;code>nano&lt;/code> commands, please visit &lt;a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Overview of nano shortcuts&lt;/a>.&lt;/p>
-&lt;h2 id="neovim--vim--gvim--vi">Neovim / Vim / GVim / VI&lt;/h2>
-&lt;p>All of these editors follow the same principals.&lt;/p>
-&lt;pre>&lt;code>nvim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
-vim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
-gvim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it (must have XForwarding or VNC)
-vi &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
-&lt;/code>&lt;/pre>&lt;p>For more information please visit &lt;a href="manuals_linux-basics_vim">Vim Manual&lt;/a>.&lt;/p>
-&lt;h2 id="emacs">Emacs&lt;/h2>
-&lt;p>Navigation in &lt;code>emacs&lt;/code> also uses the arrow keys. It is similar to &lt;code>nano&lt;/code>, in that, &lt;code>CTRL&lt;/code> is combined with other keys to execute commands.&lt;/p>
-&lt;p>For example, to open a file, simply run the command with a file name:&lt;/p>
-&lt;pre>&lt;code>emacs &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
-&lt;/code>&lt;/pre>&lt;p>Then, after you have made some changes, exit by holding the &lt;code>CTRL&lt;/code> key and then pressing &lt;code>c&lt;/code>, releasing and then holding the &lt;code>CTRL&lt;/code> key once more and pressing &lt;code>c&lt;/code> again.
-After that, just follow the on screen prompts at the bottom.&lt;/p>
-&lt;p>For more commands in &lt;code>emacs&lt;/code> please visit &lt;a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf">GNU Emacs Reference Card&lt;/a>&lt;/p>
-&lt;h2 id="atom">Atom&lt;/h2>
-&lt;h3 id="install">Install&lt;/h3>
-&lt;p>This editor should be installed on your local machine (ie. workstation, laptop).
-Please visit &lt;a href="https://atom.io/">Atom&lt;/a> for software download.&lt;/p>
-&lt;h3 id="remote-atom">Remote Atom&lt;/h3>
-&lt;p>After you have &lt;code>atom&lt;/code> installed, you need to install the &lt;code>Remote Atom&lt;/code> plugin.
-Click on &lt;code>edit&lt;/code>, then &lt;code>preferences&lt;/code>, then look for the &lt;code>install&lt;/code> item on the left side menu.
-You should then be able to type &lt;code>remote-atom&lt;/code> in the search field, find it and install it.
-After installation, &lt;code>atom&lt;/code> should restart.&lt;/p>
-&lt;h3 id="start-server">Start Server&lt;/h3>
-&lt;p>Once you have &lt;code>remote-atom&lt;/code> installed, click &lt;code>Packages&lt;/code> in the top menu, then &lt;code>Remote Atom&lt;/code>, and then click &lt;code>Start Server&lt;/code>.
-&lt;code>Atom&lt;/code> may need to be restarted in order for you to see these new menu items.&lt;/p>
-&lt;h3 id="cluster">Cluster&lt;/h3>
-&lt;p>SSH into cluster using a socket (replace &lt;code>&amp;lt;USERNAME&amp;gt;&lt;/code> with your real username on the cluster):&lt;/p>
-&lt;pre>&lt;code>ssh -R /rhome/&amp;lt;USERNAME&amp;gt;/.rmate.socket:localhost:52698 cluster.hpcc.ucr.edu
-&lt;/code>&lt;/pre>&lt;blockquote>
-&lt;p>Note: Do not use a remote PORT, you must use a SOCKET FILE as shown above. There are security issues otherwise.&lt;/p>
-&lt;/blockquote>
-&lt;p>After you have logged into the cluster load &lt;code>rmate&lt;/code> (alias is optional):&lt;/p>
-&lt;pre>&lt;code>module load rmate
-alias ratom=rmate
-&lt;/code>&lt;/pre>&lt;p>You can add this into your &lt;code>~/.bashrc&lt;/code> for convenience.&lt;/p>
-&lt;p>Then you should be able to open a file on the cluster and have it appear on your local machine:&lt;/p>
-&lt;pre>&lt;code>rmate &amp;lt;FILENAME&amp;gt;
-&lt;/code>&lt;/pre>&lt;p>Once you have finished all your editing and close &lt;code>atom&lt;/code>, be sure to delete the socket file from the cluster:&lt;/p>
-&lt;pre>&lt;code>rm -f /rhome/&amp;lt;USERNAME&amp;gt;/.rmate.socket'
-&lt;/code>&lt;/pre>&lt;p>For more information regarding &lt;code>remote-atom&lt;/code>, please visit &lt;a href="https://atom.io/packages/remote-atom">Remote-Atom&lt;/a>.&lt;/p></description></item><item><title>Manuals: Variables</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/variables/</guid><description>
-&lt;h2 id="variables">Variables&lt;/h2>
-&lt;p>The HPCC cluster uses bash as the default shell environment. Within this environment, variables can be set and reused.&lt;/p>
-&lt;p>For example:&lt;/p>
-&lt;pre>&lt;code>MYVAR=’Something’
-export MYVAR=’Something’
-echo $MYVAR
-&lt;/code>&lt;/pre>&lt;h3 id="default-variables">Default Variables&lt;/h3>
-&lt;p>Some softwares utilize this feature and require that specific environment variables be set.
-For example, every time you login, the following variables are set by default:&lt;/p>
-&lt;pre>&lt;code>echo $HOME #Contains your home path
-echo $USER #Contains your username
-echo $PATH #Contains paths of executables
-echo $LD_LIBRARY_PATH #Contains paths of library dependencies
-&lt;/code>&lt;/pre>&lt;h3 id="finding-variables">Finding Variables&lt;/h3>
-&lt;p>To see a list of all variables currently set in your shell, use the &lt;code>env&lt;/code> command.
-You can also &lt;code>grep&lt;/code> through this list to find variables, like so:&lt;/p>
-&lt;pre>&lt;code>env | grep -i home
-&lt;/code>&lt;/pre>&lt;p>Or if you are in a &lt;code>Slurm&lt;/code> job, you can find all related &lt;code>Slurm&lt;/code> variables:&lt;/p>
-&lt;pre>&lt;code>env | grep -i slurm
-&lt;/code>&lt;/pre>&lt;h3 id="setting-variables">Setting variables&lt;/h3>
-&lt;p>Try to choose unique names when setting variables.
-It is best to not overwrite a variable that is already set, unless on purpose.&lt;/p>
-&lt;p>To set a variable in your current shell, you can do so like this:&lt;/p>
-&lt;pre>&lt;code>MYVAR='Something Important'
-&lt;/code>&lt;/pre>&lt;blockquote>
-&lt;p>Notice that there is no spaces around the &lt;code>=&lt;/code> sign.&lt;/p>
-&lt;/blockquote>
-&lt;p>If you would like to set a variable that is carried over to all other commands or sub-shells, then it must be &lt;code>exported&lt;/code>:&lt;/p>
-&lt;pre>&lt;code>export MYVAR='Something Important'
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>View your tree in TreeBrowse or open it in TreeView&lt;/p></description></item></channel></rss>
