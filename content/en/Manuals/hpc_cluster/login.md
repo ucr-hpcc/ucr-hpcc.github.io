@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Login
 title: Login
-permalink: manuals_linux-cluster_login.html
+linkTitle: Login
+type: docs
+toc_hide: true
 ---
 
 ## Login
