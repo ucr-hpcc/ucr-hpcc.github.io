@@ -1,6 +1,6 @@
 ---
-linkTitle: Faciliy
-title: Facility
+linkTitle: About
+title: About
 type: docs
 ---
 
