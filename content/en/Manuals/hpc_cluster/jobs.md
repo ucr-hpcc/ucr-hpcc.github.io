@@ -3,6 +3,9 @@ title: Managing Jobs
 linkTitle: Managing Jobs
 type: docs
 weight: 3
+aliases:
+    - /manuals_linux-cluster_jobs.html
+    - /manuals_linux-cluster_jobs
 ---
 
 ## What is a Job?

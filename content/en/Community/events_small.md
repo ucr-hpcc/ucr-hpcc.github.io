@@ -3,6 +3,9 @@ title: HPC and Big Data Processing Tutorials
 linkTitle: Events Small
 type: docs
 weight: 1
+aliases:
+    - /events_small.html
+    - /events_small
 ---
 
 | Date &amp; Time                           | Location                                 | Instructors                                                                                    | Title and Description                                                                                                                                                                                                                                                                                                                                                                                                                                   | Material                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
