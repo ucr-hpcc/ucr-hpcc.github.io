@@ -10,7 +10,7 @@ UCR protection levels, and data classifications are outlined by UCOP as a UC wid
 According to the above documentation, there are 4 levels of protection for 4 classifications of data:
 
 | Protection Level | Policy | Examples                                                                                                                               |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------|
 | P1 - Minimal     | IS-1   | Internet facing websites, press releases, anything intended for public use                                                             |
 | P2 - Low         | IS-2   | Unpublished research work, intellectual property NOT classified as P3 or P4                                                            |
 | P3 - Moderate    | IS-3   | Research information classified by an Institutional Review Board as P3 (ie. dbGaP from NIH)                                            |
