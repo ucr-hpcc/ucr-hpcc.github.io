@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Facility</title><link>https://dev.hpcc.ucr.edu/about/facility/</link><description>Recent content in Facility on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/facility/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Access</title><link>https://dev.hpcc.ucr.edu/about/facility/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/facility/access/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
-&lt;p>Note: HPCC&amp;rsquo;s latest Recharging Rates document is &lt;a href="../../facility/rates">here&lt;/a>.&lt;/p>
+&lt;p>Note: HPCC&amp;rsquo;s latest Recharging Rates document is &lt;a href="../../about/facility/rates">here&lt;/a>.&lt;/p>
 &lt;/div>
 &lt;h2 id="user-account-requests">User account requests&lt;/h2>
 &lt;ul>
@@ -8,7 +8,7 @@
 &lt;li>An FAU for the annual registration fee (see below) is required if a PI&amp;rsquo;s lab is not registered yet.&lt;/li>
 &lt;/ul>
 &lt;h2 id="recharging-rates">Recharging rates&lt;/h2>
-&lt;p>HPCC&amp;rsquo;s recharging rate structure is outlined below. A more formal summary is available &lt;a href="../../facility/rates">here&lt;/a>.&lt;/p>
+&lt;p>HPCC&amp;rsquo;s recharging rate structure is outlined below. A more formal summary is available &lt;a href="../../about/facility/rates">here&lt;/a>.&lt;/p>
 &lt;h2 id="lab-based-registration-fee">Lab-based Registration Fee&lt;/h2>
 &lt;p>An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources:&lt;/p>
