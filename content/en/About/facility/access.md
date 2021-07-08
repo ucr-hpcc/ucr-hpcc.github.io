@@ -9,7 +9,7 @@ aliases:
 ---
 
 {{% pageinfo %}}
-Note: HPCC's latest Recharging Rates document is [here](/facility/rates). 
+Note: HPCC's latest Recharging Rates document is [here](/about/facility/rates). 
 {{% /pageinfo %}}
 
 ## User account requests
@@ -19,7 +19,7 @@ Note: HPCC's latest Recharging Rates document is [here](/facility/rates).
 
 ## Recharging rates
 
-HPCC's recharging rate structure is outlined below. A more formal summary is available [here](/facility/rates). 
+HPCC's recharging rate structure is outlined below. A more formal summary is available [here](/about/facility/rates). 
 
 ## Lab-based Registration Fee
 
