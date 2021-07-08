@@ -3,6 +3,9 @@ title: Rates
 linkTitle: Rates
 type: docs
 weight: 6
+aliases:
+    - /docs.html
+    - /docs
 ---
 
 ## Facility description

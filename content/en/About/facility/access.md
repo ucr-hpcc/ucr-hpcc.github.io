@@ -3,11 +3,15 @@ title: Access
 linkTitle: Access
 type: docs
 weight: 1
-description: >
+aliases:
+    - /rates.html
+    - /rates
 ---
+
 {{% pageinfo %}}
-Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs.html). 
+Note: HPCC's latest Recharging Rates document is [here](/facility/rates). 
 {{% /pageinfo %}}
+
 ## User account requests
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include email address and full name of both user and PI.
@@ -15,7 +19,7 @@ Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs
 
 ## Recharging rates
 
-HPCC's recharging rate structure is outlined below. A more formal summary is available [here](http://hpcc.ucr.edu/docs.html). 
+HPCC's recharging rate structure is outlined below. A more formal summary is available [here](/facility/rates). 
 
 ## Lab-based Registration Fee
 
@@ -91,6 +95,4 @@ to complete this [External Usage Justification](https://bit.ly/32O1lC9).
 ## Facility description
 
    * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
-
-
 
