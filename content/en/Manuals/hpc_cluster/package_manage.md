@@ -3,6 +3,9 @@ title: Package Management
 linkTitle: Package Management
 type: docs
 weight: 5
+aliases:
+    - /manuals_linux-cluster_package-manage.html
+    - /manuals_linux-cluster_package-manage
 ---
 
 ## Python
