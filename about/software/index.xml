@@ -32,8 +32,9 @@
 is administered under a module system. To find out what software is
 installed, users want to consult the software listing
 &lt;a href="http://hpcc.ucr.edu/software_modules">here&lt;/a> or run from a user account the following command.&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">module avail
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More details on this is available on the HPCC manual pages &lt;a href="http://hpcc.ucr.edu/manuals_linux-cluster_start.html">here&lt;/a>.&lt;/p>
+&lt;pre>&lt;code class="language-bash">module avail
+&lt;/code>&lt;/pre>
+&lt;p>More details on this is available on the HPCC manual pages &lt;a href="http://hpcc.ucr.edu/manuals_linux-cluster_start.html">here&lt;/a>.&lt;/p>
 &lt;h2 id="software-install-requests">Software install requests&lt;/h2>
 &lt;p>Registered users can email software install requests to HPCC&amp;rsquo;s issue tracking system @ &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.&lt;/p></description></item><item><title>About: Software Modules</title><link>https://dev.hpcc.ucr.edu/about/software/software_modules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/software/software_modules/</guid><description>
 &lt;p>The following packages are available on the cluster as modules.&lt;/p>

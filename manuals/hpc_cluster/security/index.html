@@ -16,7 +16,7 @@ Related</a><div class=dropdown-menu aria-labelledby=navbarDropdownMenuLink><a cl
 <a class=dropdown-item href=http://genomics.ucr.edu style=padding-left:1rem;font-weight:calc(3/3*500)>Institute of Integrative Genome Biology</a></div></li><li class="nav-item mr-4 mb-2 mb-lg-0" style=position:relative><i class="fas fa-book btn-primary"></i><a class="nav-link dropdown-toggle" href=../../../manuals id=navbarDropdown role=button>
 Manuals</a><div class=dropdown-menu aria-labelledby=navbarDropdownMenuLink><a class=dropdown-item href=../../../manuals/linux_basics/ style=padding-left:1rem;font-weight:calc(3/3*500)>Linux Basics</a>
 <a class=dropdown-item href=../../../manuals/hpc_cluster/ style=padding-left:1rem;font-weight:calc(3/3*500)>HPC Cluster</a>
-<a class=dropdown-item href=../../../manuals/hpcc_cloud/ style=padding-left:1rem;font-weight:calc(3/3*500)>HPCC Cloud</a></div></li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=../../../offline-search-index.9de25f28d67e147a737c673c34a9944f.json data-offline-search-base-href=../../../ data-offline-search-max-results=10></div></nav></header><div class="container-fluid td-outer"><div class=td-main><div class="row flex-xl-nowrap"><div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"><div id=td-sidebar-menu class=td-sidebar__inner><form class="td-sidebar__search d-flex align-items-center d-lg-none"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=../../../offline-search-index.9de25f28d67e147a737c673c34a9944f.json data-offline-search-base-href=../../../ data-offline-search-max-results=10>
+<a class=dropdown-item href=../../../manuals/hpcc_cloud/ style=padding-left:1rem;font-weight:calc(3/3*500)>HPCC Cloud</a></div></li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=../../../offline-search-index.159d141b31e52449d0f570de7f593b57.json data-offline-search-base-href=../../../ data-offline-search-max-results=10></div></nav></header><div class="container-fluid td-outer"><div class=td-main><div class="row flex-xl-nowrap"><div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"><div id=td-sidebar-menu class=td-sidebar__inner><form class="td-sidebar__search d-flex align-items-center d-lg-none"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=../../../offline-search-index.159d141b31e52449d0f570de7f593b57.json data-offline-search-base-href=../../../ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation"></button></form><nav class="collapse td-sidebar-nav" id=td-section-nav><ul class="td-sidebar-nav__section pr-md-3"><li class=td-sidebar-nav__section-title><a href=../../../manuals/ class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Manuals</a></li><ul><li class="collapse show" id=manuals><ul class="td-sidebar-nav__section pr-md-3"><li class=td-sidebar-nav__section-title><a href=../../../manuals/linux_basics/ class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Linux Basics</a></li><ul><li class=collapse id=manualslinux_basics><a class="td-sidebar-link td-sidebar-link__page" id=m-manualslinux_basicsintro href=../../../manuals/linux_basics/intro/>Access</a>
 <a class="td-sidebar-link td-sidebar-link__page" id=m-manualslinux_basicscmdline_basics href=../../../manuals/linux_basics/cmdline_basics/>Command Line Basics</a>
 <a class="td-sidebar-link td-sidebar-link__page" id=m-manualslinux_basicsfilesystems href=../../../manuals/linux_basics/filesystems/>File Systems and Transfers</a>
@@ -50,97 +50,97 @@ Our cluster is IS-3 compliant, however there are several responsibilities that u
 After we have reviewed your needs, data classification and appropriate protection level, then it may be possible to proceed to use the HPCC.</span></p><p>Here are a few basic rules to keep in mind:</p><ul><li>Always be aware of access control methods (Unix permissions and ACLs), do not allow others to view the data (ie. chmod 400 filename)</li><li>Do not make unnecessary copies of the data</li><li>Do not transfer the data to insecure locations</li><li>Encrypt data when/where possible</li><li>Delete all data when it is no longer needed</li></ul><h2 id=access-controls>Access Controls</h2><p>When sharing files with others, it is imperative that proper permission are used.
 However, basic Unix permissions (user,group,other) may not be adequate.
 It is better to use ACLs in order to allow fine grained access to sensitive files.</p><h3 id=gpfs-acls>GPFS ACLs</h3><p>GPFS is used for most of our filesystems (/rhome and /bigdata) and it uses nfsv4 style ACLs.
-Users are able to explicitly allow many individuals, or groups, access to specific files or directories.</p><div class=highlight><pre style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#8f5902;font-style:italic># Get current permissions and store in acls file</span>
+Users are able to explicitly allow many individuals, or groups, access to specific files or directories.</p><pre><code class=language-bash># Get current permissions and store in acls file
 mmgetacl /path/to/file &gt; ~/acls.txt
 
-<span style=color:#8f5902;font-style:italic># Edit acls file containing permissions</span>
+# Edit acls file containing permissions
 vim ~/acls.txt
 
-<span style=color:#8f5902;font-style:italic># Apply new permissions to file</span>
+# Apply new permissions to file
 mmputacl -i ~/acls.txt /path/to/file
 
-<span style=color:#8f5902;font-style:italic># Delete acls file</span>
+# Delete acls file
 rm ~/acls.txt
-</code></pre></div><p>For more information regarding GPFS ACLs refer to the following: <a href=https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm>GPFS ACLs</a></p><h3 id=xfs-acls>XFS ACLs</h3><p>The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc), as well as /secure.
+</code></pre><p>For more information regarding GPFS ACLs refer to the following: <a href=https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm>GPFS ACLs</a></p><h3 id=xfs-acls>XFS ACLs</h3><p>The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc), as well as /secure.
 For more information on how to use ACLs under XFS, please refer to the following: <a href=https://vishmule.com/2015/06/11/access-control-list-acl-permissions-in-rhel7centos7/>CentOS 7 XFS</a></p><blockquote><p>Note: ACLs are not applicable to gocryptfs, which is a FUSE filesystem, not GPFS nor XFS.</p></blockquote><h2 id=encryption>Encryption</h2><p>Under the IS-3 policy, P3 data encryption is mandatory.
 It is best if you get into the habit of doing encryption in transit, as well as encryption at rest.
 This means, when you move the data (transit) or when the data is not in use (rest), it should be encrypted.</p><h3 id=in-transit>In Transit</h3><p>When transferring files make sure that files are encrypted in flight with one of the following transfer protocols:</p><ul><li>SCP</li><li>SFTP</li><li>RSYNC (via SSH)</li></ul><p>The destination for sensitive data on the cluster must also be encrypted at rest under one of the follow secure locations:</p><ul><li>/dev/shm/ - This location is in RAM, so it does not exist at rest (ensure proper ACLs)</li><li>/secure - This location is encrypted at rest with AES 256 key length (ensure proper ACLs)</li><li>/run/user/$EUID/unencrypted - This location is manually managed, and should be created for access to unencrypted files.</li></ul><p>It is also possible to encrypt your files with GPG (<a href=https://kb.iu.edu/d/awio>GPG Example</a>), before they are transferred.
-Thus, during transfer they will be GPG encrypted. However, decryption must occur in one of the secure locations mentioned above.</p><blockquote><p>Note: Never store passphrases/passwords/masterkeys in an unsecure location (ie. a plain text script under /rhome).</p></blockquote><h3 id=at-rest>At Rest</h3><p>There are 3 methods available on the cluster for encryption at rest:</p><ol><li>GPG encryption of files via the command line <a href=https://kb.iu.edu/d/awio>GPG Example</a>, however you must ensure proper ACLs and decryption must occur in a secure location.</li><li>The location &ldquo;/secure&rdquo; is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.</li><li>Create your own location with <a href=https://nuetzlich.net/gocryptfs/forward_mode_crypto/>gocryptfs</a>.</li></ol><h4 id=gocryptfsmgr>GocryptfsMgr</h4><p>You can use <code>gocryptfs</code> directly or use the <code>gocryptfsmgr</code>, which automates a few steps in order to simplify things.</p><p>Here are the basics when using <code>gocryptfsmgr</code>:</p><div class=highlight><pre style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#8f5902;font-style:italic># Create new encrypted data directory</span>
+Thus, during transfer they will be GPG encrypted. However, decryption must occur in one of the secure locations mentioned above.</p><blockquote><p>Note: Never store passphrases/passwords/masterkeys in an unsecure location (ie. a plain text script under /rhome).</p></blockquote><h3 id=at-rest>At Rest</h3><p>There are 3 methods available on the cluster for encryption at rest:</p><ol><li>GPG encryption of files via the command line <a href=https://kb.iu.edu/d/awio>GPG Example</a>, however you must ensure proper ACLs and decryption must occur in a secure location.</li><li>The location &ldquo;/secure&rdquo; is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.</li><li>Create your own location with <a href=https://nuetzlich.net/gocryptfs/forward_mode_crypto/>gocryptfs</a>.</li></ol><h4 id=gocryptfsmgr>GocryptfsMgr</h4><p>You can use <code>gocryptfs</code> directly or use the <code>gocryptfsmgr</code>, which automates a few steps in order to simplify things.</p><p>Here are the basics when using <code>gocryptfsmgr</code>:</p><pre><code class=language-bash># Create new encrypted data directory
 gocryptfsmgr create bigdata privatedata1
 
-<span style=color:#8f5902;font-style:italic># List all encrypted and unencrypted (access point) directories</span>
+# List all encrypted and unencrypted (access point) directories
 gocryptfsmgr list
 
-<span style=color:#8f5902;font-style:italic># Unencrypted privatedata1 (create access point)</span>
+# Unencrypted privatedata1 (create access point)
 gocryptfsmgr open bigdata privatedata1 rw
 
-<span style=color:#8f5902;font-style:italic># Transfer files (ie. SCP,SFTP,RSYNC)</span>
-scp user@remote-server:sensitive_file.txt <span style=color:#000>$UNENCRYPTED</span>/privatedata1/sensitive_file.txt
+# Transfer files (ie. SCP,SFTP,RSYNC)
+scp user@remote-server:sensitive_file.txt $UNENCRYPTED/privatedata1/sensitive_file.txt
 
-<span style=color:#8f5902;font-style:italic># Remove access point (re-encrypt) privatedata1</span>
+# Remove access point (re-encrypt) privatedata1
 gocryptfsmgr close privatedata1
 
-<span style=color:#8f5902;font-style:italic># Remove all access points (re-encrypt all)</span>
+# Remove all access points (re-encrypt all)
 gocryptfsmgr quit
-</code></pre></div><p>For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:</p><div class=highlight><pre style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#8f5902;font-style:italic># Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed</span>
-srun -p short --exclusive<span style=color:#ce5c00;font-weight:700>=</span>user --pty bash -l
+</code></pre><p>For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:</p><pre><code class=language-bash># Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed
+srun -p short --exclusive=user --pty bash -l
 
-<span style=color:#8f5902;font-style:italic># Unencrypted privatedata1 in read-only mode (create access point)</span>
+# Unencrypted privatedata1 in read-only mode (create access point)
 gocryptfsmgr open bigdata privatedata1 ro
 
-<span style=color:#8f5902;font-style:italic># Read file contents from privatedata1 (simulating work or analysis)</span>
-cat <span style=color:#000>$UNENCRYPTED</span>/privatedata1/sensitive_file.txt
+# Read file contents from privatedata1 (simulating work or analysis)
+cat $UNENCRYPTED/privatedata1/sensitive_file.txt
 
-<span style=color:#8f5902;font-style:italic># List all encrypted and unencrypted (access points) directories</span>
+# List all encrypted and unencrypted (access points) directories
 gocryptfsmgr list
 
-<span style=color:#8f5902;font-style:italic># Make sure we re-encrypt (close access point) for privatedata1</span>
+# Make sure we re-encrypt (close access point) for privatedata1
 gocryptfsmgr close privatedata1
 
-<span style=color:#8f5902;font-style:italic># Exit from interactive job</span>
-<span style=color:#204a87>exit</span>
-</code></pre></div><p>With the above methods you can create multiple encrypted directories and access points and move between them.</p><h4 id=gocryptfs>Gocryptfs</h4><p>When using the <code>gocryptfs</code> directly, you will need to know a bit more details on how it works.
-The <code>gocryptfs</code> module on the HPCC cluster uses these predefined variables:</p><ol><li><code>HOME_ENCRYPTED</code> = <code>/rhome/$USER/encrypted</code> - Very small encrypted space, not recommended to use</li><li><code>BIGDATA_ENCRYPTED</code> = <code>/rhome/$USER/bigdata/encrypted</code> - Best encrypted space for private data sets</li><li><code>SHARED_ENCRYPTED</code> = <code>/rhome/$USER/shared/encrypted</code> - Encrypted space when intending to share data sets with group</li><li><code>UNENCRYPTED</code> = <code>/run/user/$UID/unencrypted</code> - Access directory where encrypted data will be viewed as unencrypted</li></ol><p>Here is an example how to create an encrypted directory under the <code>BIGDATA_ENCRYPTED</code> location using <code>gocryptfs</code>:</p><div class=highlight><pre style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#8f5902;font-style:italic># Load gocyptfs software</span>
+# Exit from interactive job
+exit
+</code></pre><p>With the above methods you can create multiple encrypted directories and access points and move between them.</p><h4 id=gocryptfs>Gocryptfs</h4><p>When using the <code>gocryptfs</code> directly, you will need to know a bit more details on how it works.
+The <code>gocryptfs</code> module on the HPCC cluster uses these predefined variables:</p><ol><li><code>HOME_ENCRYPTED</code> = <code>/rhome/$USER/encrypted</code> - Very small encrypted space, not recommended to use</li><li><code>BIGDATA_ENCRYPTED</code> = <code>/rhome/$USER/bigdata/encrypted</code> - Best encrypted space for private data sets</li><li><code>SHARED_ENCRYPTED</code> = <code>/rhome/$USER/shared/encrypted</code> - Encrypted space when intending to share data sets with group</li><li><code>UNENCRYPTED</code> = <code>/run/user/$UID/unencrypted</code> - Access directory where encrypted data will be viewed as unencrypted</li></ol><p>Here is an example how to create an encrypted directory under the <code>BIGDATA_ENCRYPTED</code> location using <code>gocryptfs</code>:</p><pre><code class=language-bash># Load gocyptfs software
 module load gocryptfs
 
-<span style=color:#8f5902;font-style:italic># Create empty data directory</span>
-mkdir -p <span style=color:#000>$BIGDATA_ENCRYPTED</span>/privatedata1
+# Create empty data directory
+mkdir -p $BIGDATA_ENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Then intialize empty directory and encrypt it</span>
-gocryptfs -aessiv -init <span style=color:#000>$BIGDATA_ENCRYPTED</span>/privatedata1
+# Then intialize empty directory and encrypt it
+gocryptfs -aessiv -init $BIGDATA_ENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Create access point directory where encrypted files will be viewed as unencrypted</span>
-mkdir -p <span style=color:#000>$UNENCRYPTED</span>/privatedata1
+# Create access point directory where encrypted files will be viewed as unencrypted
+mkdir -p $UNENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># After that mount the encrypted directory on the access point and open a new shell within it</span>
-gocryptfssh <span style=color:#000>$BIGDATA_ENCRYPTED</span>/privatedata1
+# After that mount the encrypted directory on the access point and open a new shell within it
+gocryptfssh $BIGDATA_ENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Transfer files (ie. SCP,SFTP,RSYNC)</span>
-scp user@remote-server:sensitive_file.txt <span style=color:#000>$UNENCRYPTED</span>/sensitive_file.txt
+# Transfer files (ie. SCP,SFTP,RSYNC)
+scp user@remote-server:sensitive_file.txt $UNENCRYPTED/sensitive_file.txt
 
-<span style=color:#8f5902;font-style:italic># Exiting this shell will automatically unmount the unencrypted directory</span>
-<span style=color:#204a87>exit</span>
-</code></pre></div><p>For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:</p><div class=highlight><pre style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#8f5902;font-style:italic># Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed</span>
-srun -p short --exclusive<span style=color:#ce5c00;font-weight:700>=</span>user --pty bash -l
+# Exiting this shell will automatically unmount the unencrypted directory
+exit
+</code></pre><p>For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:</p><pre><code class=language-bash># Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed
+srun -p short --exclusive=user --pty bash -l
 
-<span style=color:#8f5902;font-style:italic># Load cyptfs software</span>
+# Load cyptfs software
 module load gocryptfs
 
-<span style=color:#8f5902;font-style:italic># Create unencrypted directory</span>
-mkdir -p <span style=color:#000>$UNENCRYPTED</span>/privatedata1
+# Create unencrypted directory
+mkdir -p $UNENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Mount encrypted filesystem as read-only and unmount idling for 1 hour</span>
-gocryptfs -ro -i 1h -sharedstorage <span style=color:#000>$BIGDATA_ENCRYPTED</span>/privatedata1 <span style=color:#000>$UNENCRYPTED</span>/privatedata1
+# Mount encrypted filesystem as read-only and unmount idling for 1 hour
+gocryptfs -ro -i 1h -sharedstorage $BIGDATA_ENCRYPTED/privatedata1 $UNENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Read file contents (simulating work or analysis)</span>
-cat <span style=color:#000>$UNENCRYPTED</span>/privatedata1/sensitive_file.txt
+# Read file contents (simulating work or analysis)
+cat $UNENCRYPTED/privatedata1/sensitive_file.txt
 
-<span style=color:#8f5902;font-style:italic># Manually close access point when analysis has completed</span>
-fusermount -u <span style=color:#000>$UNENCRYPTED</span>/privatedata1
+# Manually close access point when analysis has completed
+fusermount -u $UNENCRYPTED/privatedata1
 
-<span style=color:#8f5902;font-style:italic># Delete old empty access point</span>
-rmdir <span style=color:#000>$UNENCRYPTED</span>/privatedata1
-</code></pre></div><blockquote><p>WARNING: Avoid writing to the same file at the same time from different nodes. The encrypted file system cannot handle simultaneous writes and will corrupt the file. If simultaneous jobs are necessary then using write mode from a head node and read-only mode from compute nodes may be the best solution here.
+# Delete old empty access point
+rmdir $UNENCRYPTED/privatedata1
+</code></pre><blockquote><p>WARNING: Avoid writing to the same file at the same time from different nodes. The encrypted file system cannot handle simultaneous writes and will corrupt the file. If simultaneous jobs are necessary then using write mode from a head node and read-only mode from compute nodes may be the best solution here.
 Also, be mindful of reamaining job time and make sure that you have unmounted the unencrypted directories before your job ends.</p></blockquote><p>For another example on how to use gocrypfs on an HPC cluster: <a href=https://hpc.uni.lu/blog/2018/sensitive-data-encryption-using-gocryptfs/>Luxembourg HPC gocryptfs Example</a></p><h2 id=deletion>Deletion</h2><p>To ensure the complete removal of data, it is best to <code>shred</code> files instead of removing them with <code>rm</code>. The <code>shred</code> program will overwrite the contents of a file with randomized data such that recovery of this file will be very difficult, if not impossible.</p><p>Instead of using the common <code>rm</code> command to delete something, please use the <code>shred</code> command, like so:</p><pre><code>shred -u somefile
 </code></pre><p>The above command will overwrite the file with random data, and then remove (unlink) it.</p><p>If we want to be even more secure, we can pass over the file seven times to ensure that reconstruction is nearly impossible, then remove it:</p><pre><code>shred -v -n 6 -z -u somefile
 </code></pre><div class="text-muted mt-5 pt-3 border-top">Last modified July 8, 2021: <a href=../../../commit/2d2f172e2516746f062df38b0d5b62e9cc49bede>fixed table (2d2f172)</a></div></div></main></div></div><footer class="bg-dark py-5 row d-print-none"><div class="container-fluid mx-sm-5"><div class=row><div class="col-6 col-sm-4 text-xs-center order-sm-2"><ul class="list-inline mb-0"><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="Email Support" aria-label="Email Support"><a class=text-white target=_blank rel="noopener noreferrer" href=mailto:support@hpcc.ucr.edu><i class="fa fa-envelope"></i></a></li><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=Twitter aria-label=Twitter><a class=text-white target=_blank rel="noopener noreferrer" href=https://twitter.com/UCR_HPCC><i class="fab fa-twitter"></i></a></li><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="Stack Overflow" aria-label="Stack Overflow"><a class=text-white target=_blank rel="noopener noreferrer" href=https://ucr-hpcc.slack.com/><i class="fab fa-slack"></i></a></li></ul></div><div class="col-6 col-sm-4 text-right text-xs-center order-sm-3"><ul class="list-inline mb-0"><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title aria-label><a class=text-white target=_blank rel="noopener noreferrer" href><i></i></a></li><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title aria-label><a class=text-white target=_blank rel="noopener noreferrer" href><i></i></a></li><li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title aria-label><a class=text-white target=_blank rel="noopener noreferrer" href><i></i></a></li></ul></div><div class="col-12 col-sm-4 text-center py-2 order-sm-2"><small class=text-white>&copy; 2021 The Docsy Authors All Rights Reserved</small>
