@@ -4,6 +4,9 @@ linkTitle: Activity
 type: docs
 description: >
 weight: 3
+aliases:
+    - /snapshot.html
+    - /snapshot
 ---
 
 ## Summary report
