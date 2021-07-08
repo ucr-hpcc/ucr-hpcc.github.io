@@ -6,7 +6,8 @@ Which is automatically built using github actions, when the master branch receiv
 
 ## Highlighting
 
-For adding support for more languages you need to redownload the Prism JS library and CSS from [here](https://prismjs.com/download.html#themes=prism&languages=bash+python+r).
+For support of additional languages or features redownload the Prism JS library and CSS from [here](https://prismjs.com/download.html#themes=prism&languages=bash+python+r&plugins=line-numbers+toolbar+copy-to-clipboard).
+And then add them to the `/static` directory.
 
 ## Testing
 
