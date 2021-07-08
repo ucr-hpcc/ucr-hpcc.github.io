@@ -984,12 +984,37 @@ rclone config
 &lt;h2 id="protection-levels-and-classification">Protection Levels and Classification&lt;/h2>
 &lt;p>UCR protection levels, and data classifications are outlined by UCOP as a UC wide policy: &lt;a href="https://security.ucop.edu/policies/institutional-information-and-it-resource-classification.html">UCOP Institutional Information and IT Resource Classification&lt;/a>
 According to the above documentation, there are 4 levels of protection for 4 classifications of data:&lt;/p>
-&lt;p>| Protection Level | Policy | Examples |
-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|
-| P1 - Minimal | IS-1 | Internet facing websites, press releases, anything intended for public use |
-| P2 - Low | IS-2 | Unpublished research work, intellectual property NOT classified as P3 or P4 |
-| P3 - Moderate | IS-3 | Research information classified by an Institutional Review Board as P3 (ie. dbGaP from NIH) |
-| P4 - High | IS-4 | Protected Health Information (PHI/HIPAA), patient records, sensitive identifiable human subject research data, Social Security Numbers |&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Protection Level&lt;/th>
+&lt;th>Policy&lt;/th>
+&lt;th>Examples&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>P1 - Minimal&lt;/td>
+&lt;td>IS-1&lt;/td>
+&lt;td>Internet facing websites, press releases, anything intended for public use&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>P2 - Low&lt;/td>
+&lt;td>IS-2&lt;/td>
+&lt;td>Unpublished research work, intellectual property NOT classified as P3 or P4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>P3 - Moderate&lt;/td>
+&lt;td>IS-3&lt;/td>
+&lt;td>Research information classified by an Institutional Review Board as P3 (ie. dbGaP from NIH)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>P4 - High&lt;/td>
+&lt;td>IS-4&lt;/td>
+&lt;td>Protected Health Information (PHI/HIPAA), patient records, sensitive identifiable human subject research data, Social Security Numbers&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;p>The HPC cluster could be compliant with with other security polices (ie. NIH), however the policy must be reviewed by our security team.&lt;/p>
 &lt;p>At this time the HPC cluster is not a IS-4 (P4) compliant cluster. If you have needs for very sensitive data, it may be best to work with UCSD and their &lt;a href="https://sherlock.sdsc.edu/">Sherlock service&lt;/a>.
 Our cluster is IS-3 compliant, however there are several responsibilities that users will need to adhere to.&lt;/p>
