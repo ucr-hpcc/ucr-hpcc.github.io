@@ -4,6 +4,9 @@ linkTitle: Events Large
 type: docs
 weight: 2
 toc_hide: true
+aliases:
+    - /events_small.html
+    - /events_small
 ---
 
 ## HPC 

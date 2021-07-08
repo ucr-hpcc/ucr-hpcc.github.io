@@ -3,6 +3,9 @@ title: Text Editors
 linkTitle: Text Editors
 type: docs
 weight: 6
+aliases:
+    - /manuals_linux-basics_text.html
+    - /manuals_linux-basics_text
 ---
 
 ## Text Viewing

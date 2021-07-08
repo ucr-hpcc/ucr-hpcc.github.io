@@ -3,6 +3,9 @@ title: Scripting
 linkTitle: Scripting
 type: docs
 weight: 10
+aliases:
+    - /manuals_linux-basics_scripting.html
+    - /manuals_linux-basics_scripting
 ---
 
 ## Scripting

@@ -3,6 +3,9 @@ type: docs
 linkTitle: User alerts for HPCC's computing resources
 title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
+aliases:
+    - /alerts.html
+    - /alerts
 ---
 
 ## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>

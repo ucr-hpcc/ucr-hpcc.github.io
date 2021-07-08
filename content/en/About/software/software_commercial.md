@@ -3,6 +3,9 @@ type: docs
 linkTitle: Commercial Software
 title: Commercial Software
 permalink: software_commercial
+aliases:
+    - /software_commercial.html
+    - /software_commercial
 ---
 
 The following commercial software is available only for UCR accounts on the cluster.

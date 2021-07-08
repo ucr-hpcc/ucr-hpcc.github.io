@@ -3,6 +3,9 @@ title: Getting Started
 linkTitle:  Getting Started
 type: docs
 weight: 2
+aliases:
+    - /manuals_linux-cluster_start.html
+    - /manuals_linux-cluster_start
 ---
 
 ## Login from Mac, Linux, MobaXTerm

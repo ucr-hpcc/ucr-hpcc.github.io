@@ -3,6 +3,9 @@ title: Data Storage
 linkTitle:  Data Storage
 type: docs
 weight: 6
+aliases:
+    - /manuals_linux-cluster_storage.html
+    - /manuals_linux-cluster_storage
 ---
 
 ## Dashboard

@@ -3,6 +3,9 @@ title: Introduction
 linkTitle: Introduction
 type: docs
 weight: 1
+aliases:
+    - /index.html
+    - /index
 ---
 
 ## Introduction

@@ -3,6 +3,9 @@ type: docs
 linkTitle: Updates for HPCC Users
 title: Updates for HPCC Users
 Summary: information on changes to the HPCC.
+aliases:
+    - /changes.html
+    - /changes
 ---
 
 ## User-facing Changes Implemented on 23-Aug-2019 

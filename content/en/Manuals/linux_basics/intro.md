@@ -3,6 +3,9 @@ title: Access
 linkTitle: Access
 type: docs
 weight: 1
+aliases:
+    - /manuals_linux-basics_intro.html
+    - /manuals_linux-basics_intro
 ---
 
 ## How to Get Access?

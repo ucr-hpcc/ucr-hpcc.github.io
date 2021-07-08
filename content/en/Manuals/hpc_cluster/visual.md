@@ -3,6 +3,9 @@ title: Visualization
 linkTitle: Visualization
 type: docs
 weight: 13
+aliases:
+    - /manuals_linux-cluster_jobs.html
+    - /manuals_linux-cluster_jobs
 ---
 
 ## Compute Node

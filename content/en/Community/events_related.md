@@ -3,6 +3,9 @@ title: Related HPC and big data analysis events
 linkTitle: Events Related
 type: docs
 weight: 3
+aliases:
+    - /events_related.html
+    - /events_related
 ---
 
 ## UCR Library

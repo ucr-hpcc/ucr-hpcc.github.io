@@ -2,6 +2,9 @@
 type: docs
 linkTitle: Hardware Overview
 title: Hardware Overview
+aliases:
+    - /hardware_overview.html
+    - /hardware_overview
 ---
 
 

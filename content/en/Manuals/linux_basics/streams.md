@@ -3,6 +3,9 @@ title: Streams
 linkTitle: Streams
 type: docs
 weight: 7
+aliases:
+    - /manuals_linux-basics_streams.html
+    - /manuals_linux-basics_streams
 ---
 
 ## Streams

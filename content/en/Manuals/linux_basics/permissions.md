@@ -3,6 +3,9 @@ title: Permissions and Ownership
 linkTitle: Permissions and Ownership
 type: docs
 weight: 4
+aliases:
+    - /manuals_linux-basics_permissions.html
+    - /manuals_linux-basics_permissions
 ---
 
 ## Overview

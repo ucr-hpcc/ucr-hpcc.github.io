@@ -3,6 +3,9 @@ type: docs
 linkTitle: Software Modules
 title: Software Modules
 permalink: software_modules
+aliases:
+    - /software_modules.html
+    - /software_modules
 ---
 
 The following packages are available on the cluster as modules.

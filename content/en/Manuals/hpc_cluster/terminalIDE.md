@@ -3,6 +3,9 @@ title: Terminal-based Working Environments
 linkTitle: Terminal-based Working Environments 
 type: docs
 weight: 10
+aliases:
+    - /manuals_linux-cluster_terminalIDE.html
+    - /manuals_linux-cluster_terminalIDE
 ---
 
 # Terminal IDEs

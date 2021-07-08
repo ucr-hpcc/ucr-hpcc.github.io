@@ -3,6 +3,9 @@ type: docs
 linkTitle: Account Creation
 title: Account Creation
 permalink: manuals_hpcc-aws-cluster_create-acct.html
+aliases:
+    - /manuals_hpcc-aws-cluster_create-acct.html
+    - /manuals_hpcc-aws-cluster_create-acct
 ---
 
 ## Introduction

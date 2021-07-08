@@ -3,6 +3,9 @@ title: Piping
 linkTitle: Piping
 type: docs
 weight: 8
+aliases:
+    - /manuals_linux-basics_pipes.html
+    - /manuals_linux-basics_pipes
 ---
 
 ## Piping

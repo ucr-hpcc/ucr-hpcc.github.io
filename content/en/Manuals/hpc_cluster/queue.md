@@ -3,6 +3,9 @@ title: Queue Policies
 linkTitle: Queue Policies
 type: docs
 weight: 4
+aliases:
+    - /manuals_linux-cluster_queue.html
+    - /manuals_linux-cluster_queue
 ---
 
 ## Start Times

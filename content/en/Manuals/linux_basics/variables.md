@@ -3,6 +3,9 @@ title: Variables
 linkTitle: Variables
 type: docs
 weight: 9
+aliases:
+    - /manuals_linux-basics_variables.html
+    - /manuals_linux-basics_variables
 ---
 
 ## Variables

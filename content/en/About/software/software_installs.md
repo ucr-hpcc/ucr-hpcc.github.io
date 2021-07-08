@@ -3,6 +3,9 @@ type: docs
 linkTitle: Software Installs
 title: Software Installs
 permalink: software_installs
+aliases:
+    - /software_installs.html
+    - /software_installs
 ---
 
 ## What software is installed?

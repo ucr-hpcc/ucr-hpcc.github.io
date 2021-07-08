@@ -3,6 +3,9 @@ title: Finding Things
 linkTitle: Finding Things
 type: docs
 weight: 5
+aliases:
+    - /manuals_linux-basics_finding-things.html
+    - /manuals_linux-basics_finding-things
 ---
 
 ## Find Files

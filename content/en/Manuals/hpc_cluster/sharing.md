@@ -3,6 +3,9 @@ title: Sharing Data
 linkTitle: Sharing Data
 type: docs
 weight: 7
+aliases:
+    - /manuals_linux-cluster_sharing.html
+    - /manuals_linux-cluster_sharing
 ---
 
 ## Permissions

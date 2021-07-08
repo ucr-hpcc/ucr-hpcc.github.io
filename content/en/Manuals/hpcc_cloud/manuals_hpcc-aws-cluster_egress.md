@@ -3,6 +3,9 @@ type: docs
 linkTitle: Account Egress Waiver
 title: Account Egress Waiver
 permalink: manuals_hpcc-aws-cluster_egress.html
+aliases:
+    - /manuals_hpcc-aws-cluster_egress.html
+    - /manuals_hpcc-aws-cluster_egress
 ---
 
 ## Learn how to establish an Amazon Web Services (AWS) account under the UC Agreement.

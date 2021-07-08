@@ -2,6 +2,9 @@
 type: docs
 linkTitle: News and announcements
 title: News and announcements
+aliases:
+    - /news.html
+    - /news
 ---
 
 Note: for the most current information on exceptions on HPCC's cluster please

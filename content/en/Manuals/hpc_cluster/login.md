@@ -3,6 +3,9 @@ title: Login
 linkTitle: Login
 type: docs
 toc_hide: true
+aliases:
+    - /manuals_linux-basics_intro.html
+    - /manuals_linux-basics_intro
 ---
 
 ## Login

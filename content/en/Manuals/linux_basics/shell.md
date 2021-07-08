@@ -3,6 +3,9 @@ title: Shell Bootcamp
 linkTitle: Shell Bootcamp
 type: docs
 weight: 12
+aliases:
+    - /manuals_linux-basics_shell.html
+    - /manuals_linux-basics_shell
 ---
 
 

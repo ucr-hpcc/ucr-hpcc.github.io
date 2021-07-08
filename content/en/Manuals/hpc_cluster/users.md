@@ -3,6 +3,9 @@ linkTitle: Communicating
 title: Communicating
 type: docs
 weight: 9
+aliases:
+    - /manuals_linux-cluster_users.html
+    - /manuals_linux-cluster_users
 ---
 
 ## Communicating with others

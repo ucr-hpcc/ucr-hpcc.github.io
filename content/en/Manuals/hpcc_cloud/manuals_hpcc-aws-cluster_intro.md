@@ -3,6 +3,9 @@ type: docs
 linkTitle: Introduction
 title: Introduction
 permalink: manuals_hpcc-aws-cluster_intro.html
+aliases:
+    - /manuals_hpcc-aws-cluster_intro.html
+    - /manuals_hpcc-aws-cluster_intro
 ---
 
 ## Introduction

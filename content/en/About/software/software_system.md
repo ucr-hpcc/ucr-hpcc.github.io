@@ -3,6 +3,9 @@ type: docs
 linkTitle: System Software
 title: System Software
 permalink: software_system
+aliases:
+    - /software_system.html
+    - /software_system
 ---
 
 The following packages are provided as part of the CentOS 7 operating system. They can be used without loading any modules.

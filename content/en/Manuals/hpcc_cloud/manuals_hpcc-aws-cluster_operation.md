@@ -3,6 +3,9 @@ type: docs
 linkTitle: Cluster Operation
 title: Cluster Operation
 permalink: manuals_hpcc-aws-cluster_operation.html
+aliases:
+    - /manuals_hpcc-aws-cluster_operation.html
+    - /manuals_hpcc-aws-cluster_operation
 ---
 
 ## Login to HPCC

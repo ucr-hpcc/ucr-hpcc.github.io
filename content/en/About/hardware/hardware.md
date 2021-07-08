@@ -2,6 +2,9 @@
 type: docs
 linkTitle: Hardware Details
 title: Hardware Details
+aliases:
+    - /hardware.html
+    - /hardware
 ---
 
 ## Storage

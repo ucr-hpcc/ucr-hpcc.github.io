@@ -3,6 +3,9 @@ title: Command Line Basics
 linkTitle: Command Line Basics
 type: docs
 weight: 2
+aliases:
+    - /manuals_linux-basics_cmdline-basics.html
+    - /manuals_linux-basics_cmdline-basics
 ---
 
 ## Basics

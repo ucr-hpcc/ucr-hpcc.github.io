@@ -3,6 +3,9 @@ title: File Systems and Transfers
 linkTitle: File Systems and Transfers
 type: docs
 weight: 3
+aliases:
+    - /manuals_linux-basics_filesystems.html
+    - /manuals_linux-basics_filesystems
 ---
 
 ## File Systems

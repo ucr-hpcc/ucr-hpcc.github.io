@@ -3,6 +3,9 @@ title: Process Management
 linkTitle: Process Management
 type: docs
 weight: 11
+aliases:
+    - /manuals_linux-basics_processes.html
+    - /manuals_linux-basics_processes
 ---
 
 ## Process Management
