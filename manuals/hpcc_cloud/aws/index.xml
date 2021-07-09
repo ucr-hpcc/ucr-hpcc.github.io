@@ -1,4 +1,35 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – AWS</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/</link><description>Recent content in AWS on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Account Creation</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – AWS</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/</link><description>Recent content in AWS on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/intro/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Getting started using HPCC and Amazon Web Service (AWS) to quickly create an on-demand cluster private to you.&lt;/p>
+&lt;h2 id="hpcc-aws-cluster-benefits">HPCC AWS Cluster benefits.&lt;/h2>
+&lt;ul>
+&lt;li>Build a private cluster in 10 min.
+&lt;ul>
+&lt;li>Any number of nodes, auto scaling (up and down), limit 20 to start&lt;/li>
+&lt;li>Any type of compute nodes
+&lt;ul>
+&lt;li>High memory&lt;/li>
+&lt;li>High CPU single/multi node&lt;/li>
+&lt;li>GPUs&lt;/li>
+&lt;li>Choose HPCC default configuration&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For only as long as you need it - delete when done&lt;/li>
+&lt;li>Familiar interface and job scheduler&lt;/li>
+&lt;li>Easy ability to have the software you need installed by HPCC, if it’s not there already&lt;/li>
+&lt;li>Build as many of these clusters as you need (even at the same time)&lt;/li>
+&lt;li>Pay for only the time you use it - per/min billing&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>The manual menu on the left will walk you through the process while the simple steps are outlined below.&lt;/p>
+&lt;ol>
+&lt;li>Create a Master AWS Account (if you do not have one yet) and one or more AWS IAM account(s).&lt;/li>
+&lt;li>Associate your AWS Master account with Amazon as a UCR educational member to take advantage of a data egress waiver.&lt;/li>
+&lt;li>Set up your HPCC account to access and use your HPCC AWS Cluster.&lt;/li>
+&lt;li>Create your cluster and begin computing&lt;/li>
+&lt;/ol></description></item><item><title>Manuals: Account Creation</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The scope of this manual section is am an introduction on how to get started using the Amazon cloud AWS to quickly create an on-demand cluster private to you.&lt;/p>
 &lt;h2 id="login-to-your-mainmaster-aws-account">Login to your Main/Master AWS account&lt;/h2>
