@@ -1,4 +1,29 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://dev.hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Details</title><link>https://dev.hpcc.ucr.edu/about/hardware/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/hardware/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://dev.hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Overview</title><link>https://dev.hpcc.ucr.edu/about/hardware/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/overview/</guid><description>
+&lt;h2 id="computer-cluster">Computer cluster&lt;/h2>
+&lt;ul>
+&lt;li>Over 6,500 CPU cores (60% Intel, 40% AMD)&lt;/li>
+&lt;li>512-1024GB RAM per node&lt;/li>
+&lt;li>GPU (K80, P100): 67,000 cuda cores&lt;/li>
+&lt;li>IB network @ 56Gbs&lt;/li>
+&lt;li>Queueing system Slurm&lt;/li>
+&lt;/ul>
+&lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
+&lt;ul>
+&lt;li>2PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
+&lt;li>Home directories on dedicated system&lt;/li>
+&lt;/ul>
+&lt;h2 id="backup-system">Backup system&lt;/h2>
+&lt;ul>
+&lt;li>2PB GPFS storage&lt;/li>
+&lt;li>Geographically separated server room&lt;/li>
+&lt;/ul>
+&lt;h2 id="server-room">Server room&lt;/h2>
+&lt;ul>
+&lt;li>Genomics Building, Rm 1120A&lt;/li>
+&lt;li>Size 600 sqft&lt;/li>
+&lt;li>Raised floor cooling with redundant AC units&lt;/li>
+&lt;li>Backup power: UPS plus generator&lt;/li>
+&lt;/ul></description></item><item><title>About: Hardware Details</title><link>https://dev.hpcc.ucr.edu/about/hardware/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/details/</guid><description>
 &lt;h2 id="storage">Storage&lt;/h2>
 &lt;ul>
 &lt;li>Four enterprise class HPC storage systems&lt;/li>
@@ -78,29 +103,4 @@
 &lt;li>i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>About: Hardware Overview</title><link>https://dev.hpcc.ucr.edu/about/hardware/hardware_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/hardware_overview/</guid><description>
-&lt;h2 id="computer-cluster">Computer cluster&lt;/h2>
-&lt;ul>
-&lt;li>Over 6,500 CPU cores (60% Intel, 40% AMD)&lt;/li>
-&lt;li>512-1024GB RAM per node&lt;/li>
-&lt;li>GPU (K80, P100): 67,000 cuda cores&lt;/li>
-&lt;li>IB network @ 56Gbs&lt;/li>
-&lt;li>Queueing system Slurm&lt;/li>
-&lt;/ul>
-&lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
-&lt;ul>
-&lt;li>2PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
-&lt;li>Home directories on dedicated system&lt;/li>
-&lt;/ul>
-&lt;h2 id="backup-system">Backup system&lt;/h2>
-&lt;ul>
-&lt;li>2PB GPFS storage&lt;/li>
-&lt;li>Geographically separated server room&lt;/li>
-&lt;/ul>
-&lt;h2 id="server-room">Server room&lt;/h2>
-&lt;ul>
-&lt;li>Genomics Building, Rm 1120A&lt;/li>
-&lt;li>Size 600 sqft&lt;/li>
-&lt;li>Raised floor cooling with redundant AC units&lt;/li>
-&lt;li>Backup power: UPS plus generator&lt;/li>
 &lt;/ul></description></item></channel></rss>

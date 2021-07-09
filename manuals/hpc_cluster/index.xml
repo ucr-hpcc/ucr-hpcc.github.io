@@ -1621,7 +1621,7 @@ This is becuase in order to get this working a file needs to be placed in your h
 &lt;p>When using SSH key authentication, you will need to create a public and a pritate key.
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key &amp;ldquo;fits&amp;rdquo; the public key, can you be granted access.&lt;/p>
-&lt;p>To create the key pair run the following command on your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>):&lt;/p>
+&lt;p>To create the key pair run the following command on your computer (&lt;a href="../../manuals/linux_basics/intro/#mac">Terminal&lt;/a>/&lt;a href="../../manuals/linux_basics/intro/#windows">MobaXterm&lt;/a>):&lt;/p>
 &lt;pre>&lt;code># Create SSH directory
 mkdir -p ~/.ssh
 # Create key pair (Private and Public)
@@ -1635,7 +1635,7 @@ id_rsa.pub
 &lt;/code>&lt;/pre>
 &lt;p>The &lt;code>id_rsa&lt;/code> file is your private key and the &lt;code>id_rsa.pub&lt;/code> is your public key.
 You will need to copy your public key to the cluster, creating the &lt;code>authorized_keys&lt;/code> file.&lt;/p>
-&lt;p>From your computer (&lt;a href="manuals_linux-basics_intro#mac">Terminal&lt;/a>/&lt;a href="manuals_linux-basics_intro#windows">MobaXterm&lt;/a>) run the following:&lt;/p>
+&lt;p>From your computer (&lt;a href="../../manuals/linux_basics/intro/#mac">Terminal&lt;/a>/&lt;a href="../../manuals/linux_basics/intro/#windows">MobaXterm&lt;/a>) run the following:&lt;/p>
 &lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
 &lt;/code>&lt;/pre>
 &lt;p>If the &lt;code>authorized_keys&lt;/code> file already exists, you can just append your new public key, like so:&lt;/p>
