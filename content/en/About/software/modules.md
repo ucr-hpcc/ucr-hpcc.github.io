@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Software Modules
 title: Software Modules
-permalink: software_modules
+linkTitle: Modules
+type: docs
+weight: 2
 aliases:
     - /software_modules.html
     - /software_modules

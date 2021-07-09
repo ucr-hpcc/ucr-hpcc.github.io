@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: System Software
 title: System Software
-permalink: software_system
+linkTitle: System
+type: docs
+weight: 3
 aliases:
     - /software_system.html
     - /software_system

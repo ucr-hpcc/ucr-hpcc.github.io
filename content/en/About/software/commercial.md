@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Commercial Software
 title: Commercial Software
-permalink: software_commercial
+linkTitle: Commercial
+type: docs
+weight: 4
 aliases:
     - /software_commercial.html
     - /software_commercial

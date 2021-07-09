@@ -66,7 +66,7 @@ When using SSH key authentication, you will need to create a public and a pritat
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key "fits" the public key, can you be granted access.
 
-To create the key pair run the following command on your computer ([Terminal](manuals_linux-basics_intro#mac)/[MobaXterm](manuals_linux-basics_intro#windows)):
+To create the key pair run the following command on your computer ([Terminal](/manuals/linux_basics/intro/#mac)/[MobaXterm](/manuals/linux_basics/intro/#windows)):
 
 ```
 # Create SSH directory
@@ -88,7 +88,7 @@ ls ~/.ssh/
 The `id_rsa` file is your private key and the `id_rsa.pub` is your public key.
 You will need to copy your public key to the cluster, creating the `authorized_keys` file.
 
-From your computer ([Terminal](manuals_linux-basics_intro#mac)/[MobaXterm](manuals_linux-basics_intro#windows)) run the following:
+From your computer ([Terminal](/manuals/linux_basics/intro/#mac)/[MobaXterm](/manuals/linux_basics/intro/#windows)) run the following:
 
 ```
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys

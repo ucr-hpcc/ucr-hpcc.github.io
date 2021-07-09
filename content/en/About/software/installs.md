@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Software Installs
 title: Software Installs
-permalink: software_installs
+linkTitle: Installs
+type: docs
+weight: 1
 aliases:
     - /software_installs.html
     - /software_installs

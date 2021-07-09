@@ -1,7 +1,8 @@
 ---
 type: docs
-linkTitle: Hardware Details
+linkTitle: Details
 title: Hardware Details
+weight: 2
 aliases:
     - /hardware.html
     - /hardware
