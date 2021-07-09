@@ -354,16 +354,205 @@ enable = true
     name = "Linux Basics"
     url = "/manuals/linux_basics/"
     weight = 1
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Introduction"
+      url = "/Manuals/linux_basics/intro"
+      weight = 2
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Command Line Basics"
+      url = "/Manuals/linux_basics/cmdline_basics"
+      weight = 3
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "File Systems"
+      url = "/Manuals/linux_basics/filesystems"
+      weight = 4
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Finding Things"
+      url = "/Manuals/linux_basics/finding_things"
+      weight = 5
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Permissions"
+      url = "/Manuals/linux_basics/permissions"
+      weight = 6
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Pipes"
+      url = "/Manuals/linux_basics/pipes"
+      weight = 7
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Processes"
+      url = "/Manuals/linux_basics/Processes"
+      weight = 8
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Scripting"
+      url = "/Manuals/linux_basics/Scripting"
+      weight = 9
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Shell"
+      url = "/Manuals/linux_basics/Shell"
+      weight = 10
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Streams"
+      url = "/Manuals/linux_basics/Streams"
+      weight = 11
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Text"
+      url = "/Manuals/linux_basics/Text"
+      weight = 12
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Variables"
+      url = "/Manuals/linux_basics/Variables"
+      weight = 13
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Linux Basics"
+      name = "Vim"
+      url = "/Manuals/linux_basics/Vim"
+      weight = 14
+      [menu.main.params]
+        level = 2
   [[menu.main]]
     parent = "Manuals"
     name = "HPC Cluster"
-    url = "/manuals/hpc_cluster/"
+    url = "/Manuals/hpc_cluster/"
     weight = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Introduction"
+      url = "/Manuals/hpc_cluster/intro"
+      weight = 3 
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Jobs"
+      url = "/Manuals/hpc_cluster/jobs"
+      weight = 4
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Login"
+      url = "/Manuals/hpc_cluster/login"
+      weight = 5
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Package Management"
+      url = "/Manuals/hpc_cluster/package_manage"
+      weight = 6
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Parallel R"
+      url = "/Manuals/hpc_cluster/parallelR"
+      weight = 7
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Queue"
+      url = "/Manuals/hpc_cluster/Queue"
+      weight = 8
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Security"
+      url = "/Manuals/hpc_cluster/Security"
+      weight = 9
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Start"
+      url = "/Manuals/hpc_cluster/start"
+      weight = 10 
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Data Storage"
+      url = "/Manuals/hpc_cluster/Storage"
+      weight = 11
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Terminal/IDEs"
+      url = "/Manuals/hpc_cluster/terminalIDE"
+      weight = 12
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Users"
+      url = "/Manuals/hpc_cluster/users"
+      weight = 13
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "Visualization"
+      url = "/Manuals/hpc_cluster/visual"
+      weight = 14
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "HPC Cluster"
+      name = "SSH Key Login"
+      url = "/Manuals/hpc_cluster/sshkeys"
+      weight = 15
+      [menu.main.params]
+        level = 2
   [[menu.main]]
     parent = "Manuals"
     name = "HPCC Cloud"
     url = "/manuals/hpcc_cloud/"
     weight = 3
+    [[menu.main]]
+      parent = "HPC Cloud"
+      name = "Introduction"
+      url = "/Manuals/hpcc_cloud/aws/intro"
+      weight = 4
+      [menu.main.params]
+        level = 2
 
 # Links
 [[menu.main]]
