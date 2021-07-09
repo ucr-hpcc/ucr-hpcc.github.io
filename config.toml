@@ -347,7 +347,7 @@ enable = true
 [[menu.main]]
   name = "Manuals"
   url = "/Manuals"
-  weight = 1
+  weight = 4
   pre = "<i class='fas fa-book btn-primary'></i>"
   # HPC Linux Basics Sub-menu
   [[menu.main]]
@@ -551,8 +551,8 @@ enable = true
     weight = 30
     [[menu.main]]
       parent = "Manuals"
-      name = "Introduction"
-      url = "/Manuals/hpcc_cloud/aws/intro"
+      name = "AWS"
+      url = "/Manuals/hpcc_cloud/aws/"
       weight = 31
       [menu.main.params]
         level = 2
