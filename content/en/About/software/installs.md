@@ -13,7 +13,7 @@ aliases:
 There are hundreds of software tools installed on HPCC's systems. Most software
 is administered under a module system. To find out what software is
 installed, users want to consult the software listing 
-[here](http://hpcc.ucr.edu/software_modules) or run from a user account the following command.
+[here](/about/software/modules) or run from a user account the following command.
 
 ```bash
 module avail
