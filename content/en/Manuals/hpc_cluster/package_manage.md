@@ -21,7 +21,7 @@ We have several Conda software modules:
   2. miniconda3 - Basic Python 3 install
   3. anaconda2  - Full Python 2 install
   4. anaconda3  - Full Python 3 install
-For more information regarding our module system please refer to [Environment Modules](manuals_linux-cluster_start.html#modules).
+For more information regarding our module system please refer to [Environment Modules](/manuals/hpc_cluster/start/#modules).
 
 The miniconda modules are very basic installs, however users can choose to unload this basic install for a fuller one (anaconda), like so:
 
@@ -125,7 +125,7 @@ conda env remove --name myenv
 For more information regarding conda please visit [Conda Docs](https://conda.io/docs/user-guide/).
 
 ### Jupyter
-You can run jupyter as an interactive job using [tunneling](manuals_linux-cluster_jobs.html#web-browser-access), or you can use the web portal [Jupyter-Hub](https://jupyter.hpcc.ucr.edu).
+You can run jupyter as an interactive job using [tunneling](/hpc_cluster/jobs/#web-browser-access), or you can use the web portal [Jupyter-Hub](https://jupyter.hpcc.ucr.edu).
 
 #### Virtual Environment
 In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:

@@ -21,7 +21,7 @@ ssh -X username@cluster.hpcc.ucr.edu
 
 ## Login from Windows
 
-Please refer to the login instructions of our [Linux Basics manual](manuals_linux-basics_intro#windows).
+Please refer to the login instructions of our [Linux Basics manual](/manuals/linux_basics/intro/#windows).
 
 ## Change Password
 

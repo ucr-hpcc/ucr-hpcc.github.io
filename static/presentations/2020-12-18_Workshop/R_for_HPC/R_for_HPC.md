@@ -73,7 +73,7 @@ pre[class] {
 - R console and basic Rguis
 - [RStudio](https://rstudio.com/products/rstudio/features/<Paste>)
 - Jupyter Notebooks and JupyterHub
-- [Nvim-R-tmux](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html): Neovim-based IDE for R
+- [Nvim-R-tmux](/manuals/hpc_cluster/terminalide/#for-r-nvim-r): Neovim-based IDE for R
 - [Emacs Speaks Statistics (ESS)](http://ess.r-project.org/)
 - Many additional options: Rgedit, RKWard, Eclipse, Tinn-R, Notepad++, NppToR
 
@@ -101,7 +101,7 @@ Some useful RStudio shortcuts:
 
 ## Nvim-R-Tmux: Terminal-based R Environment {.flexbox .vcenter}
 
-URLs: [1. main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html), [3. custom installs](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) 
+URLs: [1. main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](/manuals/hpc_cluster/terminalide), [3. custom installs](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) 
 
 <center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif"></center>
 
@@ -124,7 +124,7 @@ Animated screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 ## Introduction to Nvim-R-Tmux
 
 - The following introduces Nvim-R combined with Tmux. 
-- Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
+- Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](/manuals/hpc_cluster/terminalide/#for-r-nvim-r).
 - Note: Nvim-R and Tmux are two independent tools that can be used independently or in combination, and both are useful for remote terminal work. 
 - For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trivial to combine them as needed. 
 
@@ -162,7 +162,7 @@ commands starting with `:` need to be typed in the command mode. All other comma
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
-* [HPCC Linux Manual](http://hpcc.ucr.edu/manuals_linux-basics_vim.html)
+* [HPCC Linux Manual](/manuals/linux_basics/vim/)
 
 ## Tmux for Managing Terminal Sessions
 
@@ -334,7 +334,7 @@ srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:
     - Most users have access to: `short`, `batch`, `intel` and `highmem` 
     - Students registered under the statistics department, only have access to: `statsdept`  
     - Users of labs owning computer nodes also can access: `<pi_name>lab` 
-- For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
+- For more details on argument settings for `srun`, see [here](/manuals/hpc_cluster/jobs/)
 
 Download `R_for_HPC_demo.R` file to you HPCC account as follows.  
 
@@ -451,7 +451,7 @@ sbatch script_name.sh
   the HPCC.
 - Similar instructions are provided in HPCC's manual section covering
   `batchtools`
-  [here](https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html)
+  [here](/manuals/hpc_cluster/parallelr/)
 - To simplify the evaluation of the R code on the following slides, the
   corresponding text version is available for download from
   [here](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R).

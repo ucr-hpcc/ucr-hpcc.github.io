@@ -23,7 +23,7 @@ If a remote compute node does not fit your needs then we also have a GPU worksta
 * 1TB RAID 1 HDD
 
 ### Software
-The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through [Environment Modules](manuals_linux-cluster_start.html#modules).
+The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through [Environment Modules](/about/software/modules/).
 
 ### Access
 The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
@@ -36,7 +36,7 @@ There are 2 ways to use the GPU workstation:
 
   **Local**
 
-Local usage is very simple. Open a terminal and use the [Environment Modules](manuals_linux-cluster_start.html#modules) to load the desired software, then run your software from the terminal.
+Local usage is very simple. Open a terminal and use the [Environment Modules](/manuals/hpc_cluster/start/#modules) to load the desired software, then run your software from the terminal.
   For example:
 
 ```bash
@@ -55,7 +55,7 @@ For example:
    sbatch --begin=2018-03-28T09:30:00 --time=24:00:00 -p gpu --gres=gpu:1 --mem=100g --cpus-per-task=4 --wrap='echo ${CUDA_VISIBLE_DEVICES} > ~/.CUDA_VISIBLE_DEVICES; sleep infinity'
    ```
 
-   Read about [GPU jobs](manuals_linux-cluster_jobs.html#gpu-jobs) for more information regarding the above.
+   Read about [GPU jobs](/manuals/hpc_cluster/jobs/#gpu-jobs) for more information regarding the above.
 
 2. Run the VirtualGL client in order to receive 3D graphics from the remove GPU node:
 

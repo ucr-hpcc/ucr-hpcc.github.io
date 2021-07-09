@@ -59,7 +59,7 @@ gvim <FILENAME>     # Open file if it exists, or create it (must have XForwardin
 vi <FILENAME>       # Open file if it exists, or create it
 ```
 
-For more information please visit [Vim Manual](manuals_linux-basics_vim).
+For more information please visit [Vim Manual](/manuals/linux_basics/vim/).
 
 ## Emacs
 

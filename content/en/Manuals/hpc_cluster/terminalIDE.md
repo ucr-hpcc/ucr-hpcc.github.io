@@ -55,7 +55,7 @@ Important modifier keys to control vim/nvim
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
-* [HPCC Linux Manual](http://hpcc.ucr.edu/manuals_linux-basics_vim.html)
+* [HPCC Linux Manual](/manuals/linux_basics/vim/)
 
 ## For R: nvim-R 
 

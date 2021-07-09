@@ -12,7 +12,7 @@ aliases:
 
 Basic Linux process management commands only apply to processes that are running on the current machine you are logged into.
 This means that you cannot use these commands to manage jobs.
-Jobs on the cluster are managed through `Slurm`, see [Cluster Jobs](manuals_linux-cluster_jobs) for more details.
+Jobs on the cluster are managed through `Slurm`, see [Cluster Jobs](/manuals/hpc_cluster/jobs/) for more details.
 However, these commands are still useful for pausing, backgrounding, killing processes on a login node directly.
 This commands could also be useful when running an interactive session on a compute node.
 

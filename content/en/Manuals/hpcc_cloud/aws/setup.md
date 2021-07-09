@@ -18,7 +18,7 @@ ssh -X username@cluster.hpcc.ucr.edu
 ```
 
 ### From Windows
-Please refer to the login instructions of our [Linux Basics manual](manuals_linux-basics_intro.html#windows).
+Please refer to the login instructions of our [Linux Basics manual](/manuals/linux_basics/intro/#windows).
 
 
 ## 2. Run hpcc_cloud configure
@@ -49,7 +49,7 @@ hpcc_cloud configure
 
 ## 3. Setup complete
 
-Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section [Link](manuals_hpcc-aws-cluster_operation.html))
+Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section [Link](/manuals/hpcc_cloud/aws/operation/))
 
 ## Setup Walk Through
 

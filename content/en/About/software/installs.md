@@ -19,7 +19,7 @@ installed, users want to consult the software listing
 module avail
 ```
 
-More details on this is available on the HPCC manual pages [here](http://hpcc.ucr.edu/manuals_linux-cluster_start.html).
+More details on this is available on the HPCC manual pages [here](/manuals/hpc_cluster/start).
 
 ## Software install requests
 

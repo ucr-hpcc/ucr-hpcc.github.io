@@ -93,7 +93,7 @@ du -shc *
 
 This may take some time to complete, please be patient.
 
-For more information on your home directory, please see the [Linux Basics Orientation](manuals_linux-basics_cmdline-basics.html#orientation).
+For more information on your home directory, please see the [Linux Basics Orientation](/manuals/linux_basics/cmdline_basics/).
 
 ## Automatic Backups
 

@@ -23,7 +23,7 @@ If you wanted to share this file with someone outside the `groupname` group, rea
 username@pigeon:~$ chmod o+r myFile
 ```
 
-To learn more about ownership, permissions, and groups please visit [Linux Basics Permissions](manuals_linux-basics_permissions).
+To learn more about ownership, permissions, and groups please visit [Linux Basics Permissions](/manuals/linux_basics/permissions/).
 
 ## Set Default Permissions
 

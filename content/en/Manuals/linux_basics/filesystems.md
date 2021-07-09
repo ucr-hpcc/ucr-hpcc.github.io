@@ -81,7 +81,7 @@ These two "bigdata" directories `/bigdata/groupname/username` and `/bigdata/grou
 `-- var
 ```
 
-For more information regarding these locations, and others, visit [HPCC Cluster: Data Storage](manuals_linux-cluster_storage).
+For more information regarding these locations, and others, visit [HPCC Cluster: Data Storage](/manuals/hpc_cluster/storage/).
 
 ### Case sensitive
 All paths and commands are case sensitive, an uppercase letter is not the same as a lowercase letter.
@@ -131,4 +131,4 @@ check_quota   # Check quota for home and bigdata
 
   `scp -r <your_username>@<host_name>:<path_to_directory> .`
 
-For more advanced methods of file transfers to the cluster refer to [Cluster - Sharing Data](manuals_linux-cluster_sharing).
+For more advanced methods of file transfers to the cluster refer to [Cluster - Sharing Data](/manuals/hpc_cluster/sharing/).

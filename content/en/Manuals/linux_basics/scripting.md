@@ -23,7 +23,7 @@ There are many benifits of doing this:
 
 There are four basic parts that are needed to convert your commands into a script:
 
-1. First save all your commands into a file and call it `myscript.sh`, you can do this with a [Text Editor](manuals_linux-basics_text) or [Transferring](manuals_linux-basics_filesystems) it from your computer.
+1. First save all your commands into a file and call it `myscript.sh`, you can do this with a [Text Editor](/manuals/linux_basics/text/) or [Transferring](/manuals/linux_basics/filesystems/) it from your computer.
 
 2. Add the `#!` (SheBang) as the first line in file, this defines the interpreter. In this example, we are using `bash` as the interpreter, which will run all subsequent lines in this file:
 
