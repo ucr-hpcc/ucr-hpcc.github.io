@@ -1,3 +1,4 @@
+# Settings for the HPCC site
 baseURL = "https://dev.hpcc.ucr.edu"
 relativeURLs = true
 title = "HPCC"
@@ -213,16 +214,23 @@ enable = true
     name = "Facility"
     url = "/about/facility/"
     weight = 1
+    [[menu.main]]
+      parent = "About"
+      name = "Rates"
+      url = "/about/facility/rates/"
+      weight = 2
+      [menu.main.params]
+        level = 2
   [[menu.main]]
     parent = "About"
     name = "Hardware"
     url = "/about/hardware/"
-    weight = 1
+    weight = 3
   [[menu.main]]
     parent = "About"
     name = "Software"
     url = "/about/software/"
-    weight = 2
+    weight = 4
 
 # News
 [[menu.main]]
