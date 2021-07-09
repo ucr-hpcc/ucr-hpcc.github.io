@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: User alerts for HPCC's computing resources
 title: User alerts for HPCC's computing resources
-Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
+linkTitle: Alerts
+type: docs
+weight: 2
 aliases:
     - /alerts.html
     - /alerts
@@ -134,7 +134,7 @@ websites, virtual environments/machines, storage systems, backup systems, and
 network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: completed.
-For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
+For user changes related to this maintenance please see [here](/changes).
 
 __01-Mar-2019: Routine Maintenance Shutdown__
 

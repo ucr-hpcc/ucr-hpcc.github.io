@@ -1,17 +1,15 @@
 ---
-type: docs
-linkTitle: News and announcements
 title: News and announcements
+linkTitle: Announcements
+type: docs
+weight: 1
 aliases:
     - /news.html
     - /news
 ---
 
 Note: for the most current information on exceptions on HPCC's cluster please
-consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
-[Twitter](https://twitter.com/UCR_HPCC) pages.
-
-## News
+consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
 ### Mar 2021
 * Viet Pham joins HPCC as HPC systems administrator. - Welcome Viet!
@@ -21,12 +19,12 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ### Mar/Apr 2020
 
-* For updates on HPCC's operation during the COVID-19 crisis please visit the [Alerts](http://hpcc.ucr.edu/alerts.html#hpcc-operation-during-covid-19-crisis) page of this site.
+* For updates on HPCC's operation during the COVID-19 crisis please visit the [Alerts](/news/alerts#hpcc-operation-during-covid-19-crisis) page of this site.
 
 ### Sep 2019
 
 * Travis Nasser joins HPCC as HPC systems administrator assistant. - Welcome Travis!
-* Major updates applied. - Check here for important [changes](https://hpcc.ucr.edu/changes).
+* Major updates applied. - Check here for important [changes](/changes).
 
 ### Aug 2019
 
@@ -76,8 +74,4 @@ Award of equipment grants from NSF and NIH
 
 * NIH-S10-2014 (1S10OD016290-01A1): $652,816
 * NSF-MRI-2014 (MRI-1429826): $783,537
-
-
-
-
 

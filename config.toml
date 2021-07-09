@@ -206,7 +206,7 @@ enable = true
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = 9
+  weight = 1
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
@@ -224,55 +224,45 @@ enable = true
     url = "/about/software/"
     weight = 2
 
-# Community
+# News
 [[menu.main]]
-  name = "Community"
-  url = "/Community"
-  weight = 10
-  pre = "<i class='fas fa-users btn-primary'></i>"
+  name = "News"
+  url = "/news"
+  weight = 2
+  pre = "<i class='fas fa-newspaper btn-primary'></i>"
   [[menu.main]]
-    parent = "Community"
-    name = "Small Events"
-    url = "/community/events_small/"
+    parent = "News"
+    name = "Announcements"
+    url = "/news/announce/"
     weight = 1
   [[menu.main]]
-    parent = "Community"
-    name = "Related Events"
-    url = "/community/events_related/"
+    parent = "News"
+    name = "Alerts"
+    url = "/news/alerts/"
     weight = 2
 
-# Related
+# Events
 [[menu.main]]
-  name = "Related"
-  url = "/related/"
-  pre = "<i class='fas fa-share-alt btn-primary'></i>"
-  weight = 11
+  name = "Events"
+  url = "/events"
+  weight = 3
+  pre = "<i class='fas fa-users btn-primary'></i>"
   [[menu.main]]
-    name = "RED-UCR"
-    url = "https://research.ucr.edu"
-    parent = "Related"
+    parent = "Events"
+    name = "Small Events"
+    url = "/events/small/"
     weight = 1
   [[menu.main]]
-    name = "Data Science Center"
-    url = "http://datascience.ucr.edu"
-    parent = "Related"
+    parent = "Events"
+    name = "Related Events"
+    url = "/events/related/"
     weight = 2
-  [[menu.main]]
-    name = "FIELDS Program"
-    url = "http://bigdata.ucr.edu"
-    parent = "Related"
-    weight = 3
-  [[menu.main]]
-    name = "Institute of Integrative Genome Biology"
-    url = "http://genomics.ucr.edu"
-    parent = "Related"
-    weight = 4
 
 # Manuals
 [[menu.main]]
   name = "Manuals"
   url = "/Manuals"
-  weight = 12
+  weight = 4
   pre = "<i class='fas fa-book btn-primary'></i>"
   [[menu.main]]
     parent = "Manuals"
@@ -289,4 +279,31 @@ enable = true
     name = "HPCC Cloud"
     url = "/manuals/hpcc_cloud/"
     weight = 3
+
+# Links
+[[menu.main]]
+  name = "Links"
+  url = "/links/"
+  pre = "<i class='fas fa-share-alt btn-primary'></i>"
+  weight = 5
+  [[menu.main]]
+    name = "RED-UCR"
+    url = "https://research.ucr.edu"
+    parent = "Links"
+    weight = 1
+  [[menu.main]]
+    name = "Data Science Center"
+    url = "http://datascience.ucr.edu"
+    parent = "Links"
+    weight = 2
+  [[menu.main]]
+    name = "FIELDS Program"
+    url = "http://bigdata.ucr.edu"
+    parent = "Links"
+    weight = 3
+  [[menu.main]]
+    name = "Institute of Integrative Genome Biology"
+    url = "http://genomics.ucr.edu"
+    parent = "Links"
+    weight = 4
 
