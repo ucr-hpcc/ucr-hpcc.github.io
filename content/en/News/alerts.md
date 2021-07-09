@@ -28,6 +28,14 @@ If users need to get in contact with us then please email your questions to [sup
 None currently observed.
 -->
 
+### 25-Jun-2021: Bigdata storage repaired
+
+* 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
+
+### 25-Jun-2021: Bigdata storage failed
+
+* 3:30 PM - Server running our bigdata storage crashed, and bigdata directory went down with it.
+
 ### 12-Jan-2020: AC unit repaired
 
 * 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.

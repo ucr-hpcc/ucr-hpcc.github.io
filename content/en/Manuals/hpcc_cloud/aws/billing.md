@@ -2,7 +2,7 @@
 title: Cost Control and Billing
 linkTitle: Cost Control and Billing
 type: docs
-weight: 5
+weight: 6
 aliases:
     - /manuals_hpcc-aws-cluster_billing.html
     - /manuals_hpcc-aws-cluster_billing

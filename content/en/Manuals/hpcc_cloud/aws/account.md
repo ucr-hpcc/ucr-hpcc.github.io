@@ -2,7 +2,7 @@
 title: Account Creation
 linkTitle: Account Creation
 type: docs
-weight: 1
+weight: 2
 aliases:
     - /manuals_hpcc-aws-cluster_create-acct.html
     - /manuals_hpcc-aws-cluster_create-acct

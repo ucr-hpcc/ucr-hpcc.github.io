@@ -2,7 +2,7 @@
 title: Cluster Operation
 linkTitle: Cluster Operation
 type: docs
-weight: 4
+weight: 5
 aliases:
     - /manuals_hpcc-aws-cluster_operation.html
     - /manuals_hpcc-aws-cluster_operation

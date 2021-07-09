@@ -46,11 +46,7 @@ All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this a
     * Resources: 32 cores, 64 GB memory
     * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs
-* Owl
-    * Resources: 16 cores, 64 GB memory
-    * Primary function: testing; running test sets of jobs
-    * Secondary function: submitting jobs to the queuing system
-* Globus
+* Parrot
     * Resources: 32 cores, 32 GB memory
     * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs

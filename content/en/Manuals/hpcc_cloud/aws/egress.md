@@ -2,7 +2,7 @@
 title: Account Egress Waiver
 linkTitle: Account Egress Waiver
 type: docs
-weight: 2
+weight: 3
 aliases:
     - /manuals_hpcc-aws-cluster_egress.html
     - /manuals_hpcc-aws-cluster_egress

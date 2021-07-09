@@ -2,7 +2,7 @@
 title: HPCC cfnCluster Setup 
 linkTitle: HPCC cfnCluster Setup 
 type: docs
-weight: 3
+weight: 4
 aliases:
     - /manuals_hpcc-aws-cluster_setup.html
     - /manuals_hpcc-aws-cluster_setup

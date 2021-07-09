@@ -155,15 +155,39 @@ IRkernel::installspec(name = 'ir44', displayname = 'R 4.0.1')
 This section is regarding how to manage R packages.
 
 ### Current R Version
-Currently the default version of R is 4.0.1 and is loaded automatically for you.
-This can be seen by running:
+
+> NOTE: Please be aware that this version of R is built with `GCC/8.3.0`, which means that previously compiled modules may be incompatible.
+
+Currently the default version of R is `R/4.1.0` and is `NOT` loaded automatically for you.
+
+You will have to do this manually on your own, like so:
 
 ```bash
-module list
+module load R/4.1.0_gcc-8.3.0
 ```
 
+Or, you can `rebase` by loading the `base/gcc/8.3.0` module, which will load the latest version of `R` and many other compatible modules:
+
+```bash
+module load base/gcc/8.3.0
+```
+
+If you wish to revert back to your previous modules, then you can simply unload the `base` module, like so:
+
+```
+module unload base
+```
+
+When a new release of R is available, you should reinstall any local R packages, however keep in mind of the following:
+
+  * Remove redundantly installed local R packages with the `RdupCheck` command.
+  * Newer version of R packages are not backward compatible, once installed they only work for that specific version of `R`.
+
 ### Older R Versions
-You can load older versions of R with the following:
+
+The older version of `R/4.0.1` is loaded by default.
+
+You can load other versions of R with the following:
 
 ```bash
 module unload R
@@ -171,10 +195,27 @@ module load R/3.4.2
 ```
 
 ### Installing R Packages
-The default version of R has many of the most popular R packages available already installed.
-It is also possible for you to install additional R packages in your local environments. 
+
+The default version of `R` has many of the most popular `R` packages already installed and available.
+It is also possible for you to install additional R packages in your local environment.
+
+Only install packages if they are not already available, this will minimize issues later.
+You can check the current version of `R` from the command line, like so:
+
+```bash
+Rscript -e "library('some-package-name')"
+```
+
+Or you can check from within `R`, like so:
+
+```R
+library('some-package-name')
+```
+
+If the package is not available, then proceed with installation.
 
 #### Bioconductor Packages
+
 To install from Bioconductor you can use the following method:
 
 ```R
@@ -187,13 +228,17 @@ For more information please visit [Bioconductor Install Page](https://www.biocon
 #### GitHub Packages
 
 ```R
+# Load devtools
 library(devtools)
-install_github("duncantl/RGoogleDocs") # replace name with the GitHub account/repo
+
+# Replace name with the GitHub account/repo
+install_github("duncantl/RGoogleDocs")
 ```
 
 #### Local Packages
 
 ```R
-install.packages("http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz",repos=NULL,type="source") # replace URL with your URL or local path to your .tar.gz file
+# Replace URL with your URL or local path to your .tar.gz file
+install.packages("http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz",repos=NULL,type="source")
 ```
 
