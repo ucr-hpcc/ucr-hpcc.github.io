@@ -160,7 +160,7 @@ Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals:
 &lt;pre>&lt;code class="language-bash">ssh -X username@cluster.hpcc.ucr.edu
 &lt;/code>&lt;/pre>
 &lt;h3 id="from-windows">From Windows&lt;/h3>
-&lt;p>Please refer to the login instructions of our &lt;a href="manuals_linux-basics_intro.html#windows">Linux Basics manual&lt;/a>.&lt;/p>
+&lt;p>Please refer to the login instructions of our &lt;a href="../../../manuals/linux_basics/intro/#windows">Linux Basics manual&lt;/a>.&lt;/p>
 &lt;h2 id="2-run-hpcc_cloud-configure">2. Run hpcc_cloud configure&lt;/h2>
 &lt;pre>&lt;code class="language-bash">hpcc_cloud configure
 &lt;/code>&lt;/pre>
@@ -212,7 +212,7 @@ Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals:
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="3-setup-complete">3. Setup complete&lt;/h2>
-&lt;p>Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section &lt;a href="manuals_hpcc-aws-cluster_operation.html">Link&lt;/a>)&lt;/p>
+&lt;p>Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section &lt;a href="../../../manuals/hpcc_cloud/aws/operation/">Link&lt;/a>)&lt;/p>
 &lt;h2 id="setup-walk-through">Setup Walk Through&lt;/h2>
 &lt;script id="asciicast-ewZjGbJkX0ZpE2sla5BoZ9aRq" src="https://asciinema.org/a/ewZjGbJkX0ZpE2sla5BoZ9aRq.js" async data-autoplay="false" data-size="small" data-speed="3">&lt;/script></description></item><item><title>Manuals: Cluster Operation</title><link>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpcc_cloud/aws/operation/</guid><description>
 &lt;h2 id="login-to-hpcc">Login to HPCC&lt;/h2>

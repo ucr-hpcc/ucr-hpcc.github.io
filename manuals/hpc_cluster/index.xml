@@ -91,7 +91,7 @@ Since all machines are mounting a centralized file system, users will always see
 &lt;pre>&lt;code class="language-bash">ssh -X username@cluster.hpcc.ucr.edu
 &lt;/code>&lt;/pre>
 &lt;h2 id="login-from-windows">Login from Windows&lt;/h2>
-&lt;p>Please refer to the login instructions of our &lt;a href="manuals_linux-basics_intro#windows">Linux Basics manual&lt;/a>.&lt;/p>
+&lt;p>Please refer to the login instructions of our &lt;a href="../../manuals/linux_basics/intro/#windows">Linux Basics manual&lt;/a>.&lt;/p>
 &lt;h2 id="change-password">Change Password&lt;/h2>
 &lt;ol>
 &lt;li>Login via SSH using the Terminal on Mac/Linux or MobaXTerm on Windows&lt;/li>
@@ -665,7 +665,7 @@ The miniconda2 module for Python is the default version. This will enable users 
 &lt;li>miniconda3 - Basic Python 3 install&lt;/li>
 &lt;li>anaconda2 - Full Python 2 install&lt;/li>
 &lt;li>anaconda3 - Full Python 3 install
-For more information regarding our module system please refer to &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a>.&lt;/li>
+For more information regarding our module system please refer to &lt;a href="../../manuals/hpc_cluster/start/#modules">Environment Modules&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>The miniconda modules are very basic installs, however users can choose to unload this basic install for a fuller one (anaconda), like so:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load miniconda2 #This is the default
@@ -729,7 +729,7 @@ conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
 &lt;h4 id="more-info">More Info&lt;/h4>
 &lt;p>For more information regarding conda please visit &lt;a href="https://conda.io/docs/user-guide/">Conda Docs&lt;/a>.&lt;/p>
 &lt;h3 id="jupyter">Jupyter&lt;/h3>
-&lt;p>You can run jupyter as an interactive job using &lt;a href="manuals_linux-cluster_jobs.html#web-browser-access">tunneling&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
+&lt;p>You can run jupyter as an interactive job using &lt;a href="../../hpc_cluster/jobs/#web-browser-access">tunneling&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
 &lt;h4 id="virtual-environment">Virtual Environment&lt;/h4>
 &lt;p>In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash"># Create a virtual environment, if you don't already have one
@@ -961,7 +961,7 @@ check_quota bigdata
 &lt;pre>&lt;code class="language-bash">du -shc *
 &lt;/code>&lt;/pre>
 &lt;p>This may take some time to complete, please be patient.&lt;/p>
-&lt;p>For more information on your home directory, please see the &lt;a href="manuals_linux-basics_cmdline-basics.html#orientation">Linux Basics Orientation&lt;/a>.&lt;/p>
+&lt;p>For more information on your home directory, please see the &lt;a href="../../manuals/linux_basics/cmdline_basics/">Linux Basics Orientation&lt;/a>.&lt;/p>
 &lt;h2 id="automatic-backups">Automatic Backups&lt;/h2>
 &lt;p>The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
 The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. It is not a data archiving system.&lt;/p>
@@ -986,7 +986,7 @@ Basic file permissions on Linux and other Unix like systems are composed of thre
 &lt;p>If you wanted to share this file with someone outside the &lt;code>groupname&lt;/code> group, read permissions must be added to the file for &amp;lsquo;other&amp;rsquo;:&lt;/p>
 &lt;pre>&lt;code class="language-bash">username@pigeon:~$ chmod o+r myFile
 &lt;/code>&lt;/pre>
-&lt;p>To learn more about ownership, permissions, and groups please visit &lt;a href="manuals_linux-basics_permissions">Linux Basics Permissions&lt;/a>.&lt;/p>
+&lt;p>To learn more about ownership, permissions, and groups please visit &lt;a href="../../manuals/linux_basics/permissions/">Linux Basics Permissions&lt;/a>.&lt;/p>
 &lt;h2 id="set-default-permissions">Set Default Permissions&lt;/h2>
 &lt;p>In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and you do not want to be constantly adjusting permissions The command responsible for this is called &amp;lsquo;umask&amp;rsquo;. You should first check what your default permissions currently are by running &amp;lsquo;umask -S&amp;rsquo;.&lt;/p>
 &lt;pre>&lt;code class="language-bash">username@pigeon:~$ umask -S
@@ -1337,7 +1337,7 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;ul>
 &lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://vimdoc.sourceforge.net/">Official Vim Documentation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://hpcc.ucr.edu/manuals_linux-basics_vim.html">HPCC Linux Manual&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../manuals/linux_basics/vim/">HPCC Linux Manual&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="for-r-nvim-r">For R: nvim-R&lt;/h2>
 &lt;h3 id="basics">Basics&lt;/h3>
@@ -1531,7 +1531,7 @@ reduceResults(rbind)
 &lt;li>1TB RAID 1 HDD&lt;/li>
 &lt;/ul>
 &lt;h3 id="software">Software&lt;/h3>
-&lt;p>The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a>.&lt;/p>
+&lt;p>The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through &lt;a href="../../about/software/modules/">Environment Modules&lt;/a>.&lt;/p>
 &lt;h3 id="access">Access&lt;/h3>
 &lt;p>The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
 Once you have access to the GPU workstation, login with your cluster credentials. If your username does not appear in the list, you may need to click &lt;code>Not listed?&lt;/code> at the bottom of the screen so that you are able to type in your username.&lt;/p>
@@ -1542,7 +1542,7 @@ Once you have access to the GPU workstation, login with your cluster credentials
 &lt;li>Remote - Run processes remotely on the GPU cluster hardware&lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>Local&lt;/strong>&lt;/p>
-&lt;p>Local usage is very simple. Open a terminal and use the &lt;a href="manuals_linux-cluster_start.html#modules">Environment Modules&lt;/a> to load the desired software, then run your software from the terminal.
+&lt;p>Local usage is very simple. Open a terminal and use the &lt;a href="../../manuals/hpc_cluster/start/#modules">Environment Modules&lt;/a> to load the desired software, then run your software from the terminal.
 For example:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load amira
 Amira
@@ -1555,7 +1555,7 @@ For example:&lt;/p>
 &lt;p>Submit a job for March 28th, 2018 at 9:30am for a duration of 24 hours, 4 cpus, 100GB memory:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch --begin=2018-03-28T09:30:00 --time=24:00:00 -p gpu --gres=gpu:1 --mem=100g --cpus-per-task=4 --wrap='echo ${CUDA_VISIBLE_DEVICES} &amp;gt; ~/.CUDA_VISIBLE_DEVICES; sleep infinity'
 &lt;/code>&lt;/pre>
-&lt;p>Read about &lt;a href="manuals_linux-cluster_jobs.html#gpu-jobs">GPU jobs&lt;/a> for more information regarding the above.&lt;/p>
+&lt;p>Read about &lt;a href="../../manuals/hpc_cluster/jobs/#gpu-jobs">GPU jobs&lt;/a> for more information regarding the above.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Run the VirtualGL client in order to receive 3D graphics from the remove GPU node:&lt;/p>

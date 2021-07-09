@@ -97,7 +97,7 @@ mmputacl -i ~/acls.txt /path/to/file
 rm ~/acls.txt
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_security.html#gpfs-acls](https://hpcc.ucr.edu/manuals_linux-cluster_security.html#gpfs-acls)
+[https://hpcc.ucr.edu/manuals/hpc_cluster/security/#gpfs-acls](/manuals/hpc_cluster/security/#gpfs-acls)
 <hr style='clear:both;'>
 
 ## Data Transfers: Filezilla

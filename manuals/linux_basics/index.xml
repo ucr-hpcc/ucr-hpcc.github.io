@@ -229,7 +229,7 @@ These two &amp;ldquo;bigdata&amp;rdquo; directories &lt;code>/bigdata/groupname/
 |-- usr
 `-- var
 &lt;/code>&lt;/pre>
-&lt;p>For more information regarding these locations, and others, visit &lt;a href="manuals_linux-cluster_storage">HPCC Cluster: Data Storage&lt;/a>.&lt;/p>
+&lt;p>For more information regarding these locations, and others, visit &lt;a href="../../manuals/hpc_cluster/storage/">HPCC Cluster: Data Storage&lt;/a>.&lt;/p>
 &lt;h3 id="case-sensitive">Case sensitive&lt;/h3>
 &lt;p>All paths and commands are case sensitive, an uppercase letter is not the same as a lowercase letter.&lt;/p>
 &lt;h3 id="path-types">Path Types&lt;/h3>
@@ -269,7 +269,7 @@ check_quota # Check quota for home and bigdata
 &lt;p>&lt;code>scp -r &amp;lt;your_username&amp;gt;@&amp;lt;host_name&amp;gt;:&amp;lt;path_to_directory&amp;gt; .&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>For more advanced methods of file transfers to the cluster refer to &lt;a href="manuals_linux-cluster_sharing">Cluster - Sharing Data&lt;/a>.&lt;/p></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
+&lt;p>For more advanced methods of file transfers to the cluster refer to &lt;a href="../../manuals/hpc_cluster/sharing/">Cluster - Sharing Data&lt;/a>.&lt;/p></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>In Linux (and Unix systems in general), access to files and directories is
 controlled by a system of owners, groups, and permission bits. Changing these
@@ -430,7 +430,7 @@ vim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
 gvim &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it (must have XForwarding or VNC)
 vi &amp;lt;FILENAME&amp;gt; # Open file if it exists, or create it
 &lt;/code>&lt;/pre>
-&lt;p>For more information please visit &lt;a href="manuals_linux-basics_vim">Vim Manual&lt;/a>.&lt;/p>
+&lt;p>For more information please visit &lt;a href="../../manuals/linux_basics/vim/">Vim Manual&lt;/a>.&lt;/p>
 &lt;h2 id="emacs">Emacs&lt;/h2>
 &lt;p>Navigation in &lt;code>emacs&lt;/code> also uses the arrow keys. It is similar to &lt;code>nano&lt;/code>, in that, &lt;code>CTRL&lt;/code> is combined with other keys to execute commands.&lt;/p>
 &lt;p>For example, to open a file, simply run the command with a file name:&lt;/p>
@@ -562,7 +562,7 @@ It is best to not overwrite a variable that is already set, unless on purpose.&l
 &lt;p>There are four basic parts that are needed to convert your commands into a script:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>First save all your commands into a file and call it &lt;code>myscript.sh&lt;/code>, you can do this with a &lt;a href="manuals_linux-basics_text">Text Editor&lt;/a> or &lt;a href="manuals_linux-basics_filesystems">Transferring&lt;/a> it from your computer.&lt;/p>
+&lt;p>First save all your commands into a file and call it &lt;code>myscript.sh&lt;/code>, you can do this with a &lt;a href="../../manuals/linux_basics/text/">Text Editor&lt;/a> or &lt;a href="../../manuals/linux_basics/filesystems/">Transferring&lt;/a> it from your computer.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add the &lt;code>#!&lt;/code> (SheBang) as the first line in file, this defines the interpreter. In this example, we are using &lt;code>bash&lt;/code> as the interpreter, which will run all subsequent lines in this file:&lt;/p>
@@ -635,7 +635,7 @@ export PATH=~/bin:$PATH
 &lt;h2 id="process-management">Process Management&lt;/h2>
 &lt;p>Basic Linux process management commands only apply to processes that are running on the current machine you are logged into.
 This means that you cannot use these commands to manage jobs.
-Jobs on the cluster are managed through &lt;code>Slurm&lt;/code>, see &lt;a href="manuals_linux-cluster_jobs">Cluster Jobs&lt;/a> for more details.
+Jobs on the cluster are managed through &lt;code>Slurm&lt;/code>, see &lt;a href="../../manuals/hpc_cluster/jobs/">Cluster Jobs&lt;/a> for more details.
 However, these commands are still useful for pausing, backgrounding, killing processes on a login node directly.
 This commands could also be useful when running an interactive session on a compute node.&lt;/p>
 &lt;h3 id="user-management">User Management&lt;/h3>

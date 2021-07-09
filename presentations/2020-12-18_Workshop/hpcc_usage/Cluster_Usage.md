@@ -140,7 +140,7 @@ check_quota home
 check_quota bigdata
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_storage](https://hpcc.ucr.edu/manuals_linux-cluster_storage)
+[/manuals/hpc_cluster/storage/](/manuals/hpc_cluster/storage/)
 
 <hr style='clear:both;'>
 
@@ -189,7 +189,7 @@ Remove software from current environment:
 module unload samtools
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_start#modules](https://hpcc.ucr.edu/manuals_linux-cluster_start#modules)
+[/manuals/hpc_cluster/start/#modules](/manuals/hpc_cluster/start/#modules)
 
 
 <hr style='clear:both;'>
@@ -236,7 +236,7 @@ R
 BiocManager::install('PKGNAME')
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1)
+[/manuals/hpc_cluster/package_manage/#r-1](/manuals/hpc_cluster/package_manage/#r-1)
 
 <hr style='clear:both;'>
 
@@ -244,7 +244,7 @@ BiocManager::install('PKGNAME')
 
   * <span style='font-weight:bold;color:green;'>Conda</span> - A software management system that allows you to install thousands of software packages and tools, including `R` and `Python` languages.
 
-  Full instructions regarding conda setup can be found [here](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html).
+  Full instructions regarding conda setup can be found [here](/manuals/hpc_cluster/package_manage).
   
 
   * <span style='font-weight:bold;color:red;'>Singularity</span> - A Linux container system (similar to Docker) which allows users to prepare a Linux environment from scratch.
@@ -418,7 +418,7 @@ __Intel Partition__
 * RAM - 1GB Default, 1TB Max
 * Time - 7 days Default, 30 Days Max
 
-<div style='clear:both'><a href='https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#partitions'>https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#partitions</a></div>
+<div style='clear:both'><a href='https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#partitions'>https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#partitions</a></div>
 
 <hr style='clear:both;'>
 
@@ -435,7 +435,7 @@ __Intel Partition__
   Upper limit of what can be requested.
 
 
-For more details regarding our partitions, please review our [Cluster Jobs: Partitions](https://hpcc.ucr.edu/manuals_linux-cluster_jobs#partitions) manual page.
+For more details regarding our partitions, please review our [Cluster Jobs: Partitions](/manuals/hpc_cluster/jobs/#partitions) manual page.
 
 <hr style='clear:both;'>
 
@@ -554,6 +554,6 @@ Check results:
 cat slurm-2909103.out
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#submitting-jobs](https://hpcc.ucr.edu/manuals_linux-cluster_jobs.html#submitting-jobs)
+[https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#submitting-jobs](/manuals/hpc_cluster/jobs/#submitting-jobs)
 
 <hr style='clear:both;'>
