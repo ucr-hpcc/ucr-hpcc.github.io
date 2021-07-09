@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Account Creation
 title: Account Creation
-permalink: manuals_hpcc-aws-cluster_create-acct.html
+linkTitle: Account Creation
+type: docs
+weight: 1
 aliases:
     - /manuals_hpcc-aws-cluster_create-acct.html
     - /manuals_hpcc-aws-cluster_create-acct

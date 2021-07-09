@@ -56,9 +56,9 @@ rm -rf /tmp/hugo_cache_${USER}
 
 # Update perms
 echo "Fixing file perms"
-find . -type f -exec chmod a+r {} \;
+find ./public/ -type f -exec chmod a+r {} \;
 echo "Fixing dir perms"
-find . -type d -exec chmod a+rx {} \;
+find ./public/ -type d -exec chmod a+rx {} \;
 
 # You can run a local server
 #hugo server --themesDir themes/docsy

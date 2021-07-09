@@ -1,8 +1,8 @@
 ---
-type: docs
-linkTitle: Account Egress Waiver
 title: Account Egress Waiver
-permalink: manuals_hpcc-aws-cluster_egress.html
+linkTitle: Account Egress Waiver
+type: docs
+weight: 2
 aliases:
     - /manuals_hpcc-aws-cluster_egress.html
     - /manuals_hpcc-aws-cluster_egress
