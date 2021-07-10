@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Software</title><link>https://dev.hpcc.ucr.edu/about/software/</link><description>Recent content in Software on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/software/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Software Installs</title><link>https://dev.hpcc.ucr.edu/about/software/installs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/software/installs/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Software</title><link>https://hpcc.ucr.edu/about/software/</link><description>Recent content in Software on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/software/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Software Installs</title><link>https://hpcc.ucr.edu/about/software/installs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/software/installs/</guid><description>
 &lt;h2 id="what-software-is-installed">What software is installed?&lt;/h2>
 &lt;p>There are hundreds of software tools installed on HPCC&amp;rsquo;s systems. Most software
 is administered under a module system. To find out what software is
@@ -8,7 +8,7 @@ installed, users want to consult the software listing
 &lt;/code>&lt;/pre>
 &lt;p>More details on this is available on the HPCC manual pages &lt;a href="../../manuals/hpc_cluster/start">here&lt;/a>.&lt;/p>
 &lt;h2 id="software-install-requests">Software install requests&lt;/h2>
-&lt;p>Registered users can email software install requests to HPCC&amp;rsquo;s issue tracking system @ &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.&lt;/p></description></item><item><title>About: Software Modules</title><link>https://dev.hpcc.ucr.edu/about/software/modules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/software/modules/</guid><description>
+&lt;p>Registered users can email software install requests to HPCC&amp;rsquo;s issue tracking system @ &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.&lt;/p></description></item><item><title>About: Software Modules</title><link>https://hpcc.ucr.edu/about/software/modules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/software/modules/</guid><description>
 &lt;p>The following packages are available on the cluster as modules.&lt;/p>
 &lt;p>To load the default version of a module, use:
 &lt;code>module load [package]&lt;/code>&lt;/p>
@@ -1565,7 +1565,7 @@ installed, users want to consult the software listing
 &lt;td>2.2(default)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>About: System Software</title><link>https://dev.hpcc.ucr.edu/about/software/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/software/system/</guid><description>
+&lt;/table></description></item><item><title>About: System Software</title><link>https://hpcc.ucr.edu/about/software/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/software/system/</guid><description>
 &lt;p>The following packages are provided as part of the CentOS 7 operating system. They can be used without loading any modules.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -8556,7 +8556,7 @@ installed, users want to consult the software listing
 &lt;td>0.13.62&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>About: Commercial Software</title><link>https://dev.hpcc.ucr.edu/about/software/commercial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/software/commercial/</guid><description>
+&lt;/table></description></item><item><title>About: Commercial Software</title><link>https://hpcc.ucr.edu/about/software/commercial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/software/commercial/</guid><description>
 &lt;p>The following commercial software is available only for UCR accounts on the cluster.&lt;/p>
 &lt;table>
 &lt;thead>

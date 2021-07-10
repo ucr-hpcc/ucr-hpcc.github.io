@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – SSH Keys</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><description>Recent content in SSH Keys on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: SSH Keys Apple macOS</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><description>Recent content in SSH Keys on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: SSH Keys Apple macOS</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
 &lt;h2 id="ssh-keys-on-macos">SSH Keys on macOS&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH Keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -154,7 +154,7 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
 &lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>

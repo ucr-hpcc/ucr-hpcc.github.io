@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPC Cluster</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/</link><description>Recent content in HPC Cluster on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/manuals/hpc_cluster/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/intro/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPC Cluster</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/</link><description>Recent content in HPC Cluster on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/intro/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This manual provides an introduction to the usage of the HPCC cluster.
 All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee &lt;a href="../../#rates">(see rates)&lt;/a>.
@@ -83,7 +83,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;li>i01-i40: each with 32 Intel Broadwell cores and 512 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
+&lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
 &lt;h2 id="login-from-mac-linux-mobaxterm">Login from Mac, Linux, MobaXTerm&lt;/h2>
 &lt;p>The initial login brings users into the cluster head node (i.e. pigeon, pelican, parrot). From there, users can submit jobs via &lt;code>srun&lt;/code>/&lt;code>sbatch&lt;/code> to the compute nodes to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.&lt;/p>
@@ -206,7 +206,7 @@ legacy_blast.pl blastall -p blastp -i proteins.fasta -d $NCBI_DB/nr -o blast.out
 &lt;p>Now you can start using the cluster.&lt;/p>
 &lt;p>The HPCC cluster uses the Slurm queuing system and thus the recommended way to run your jobs (scripts, pipelines, experiments, etc&amp;hellip;) is to submit them to this queuing system by using &lt;code>sbatch&lt;/code>.
 Please &lt;strong>DO NOT RUN ANY&lt;/strong> computationally intensive tasks on any head node (i.e. pigeon, pelican, parrot). If this policy is violated, your process will either run very slow or be killed.
-The head nodes (login nodes) are a shared resource and should be accessible by all users. Negatively impacting performance would affect all users on the system and will not be tolerated.&lt;/p></description></item><item><title>Manuals: Managing Jobs</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/jobs/</guid><description>
+The head nodes (login nodes) are a shared resource and should be accessible by all users. Negatively impacting performance would affect all users on the system and will not be tolerated.&lt;/p></description></item><item><title>Manuals: Managing Jobs</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/</guid><description>
 &lt;h2 id="what-is-a-job">What is a Job?&lt;/h2>
 &lt;p>Submitting and managing jobs is at the heart of using the cluster. A &amp;lsquo;job&amp;rsquo; refers to the script, pipeline or experiment that you run on the nodes in the cluster.&lt;/p>
 &lt;h2 id="partitions">Partitions&lt;/h2>
@@ -613,7 +613,7 @@ mpirun maker # Provide appropriate maker options here
 3. Graphical user interfaces
 4. Etc ...
 &lt;/code>&lt;/pre>
-&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p></description></item><item><title>Manuals: Queue Policies</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
+&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p></description></item><item><title>Manuals: Queue Policies</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
 &lt;h2 id="start-times">Start Times&lt;/h2>
 &lt;p>Start times are a great way to track your jobs:&lt;/p>
 &lt;pre>&lt;code class="language-bash">squeue -u $USER --start
@@ -652,7 +652,7 @@ You can use the &lt;code>sqmore&lt;/code> command to see a list of all jobs sort
 &lt;p>Some small jobs may start before yours, only if they can complete before yours starts and thus not negatively affecting your start time.&lt;/p>
 &lt;h2 id="priority-partition">Priority Partition&lt;/h2>
 &lt;p>Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
-This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p></description></item><item><title>Manuals: Package Management</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</guid><description>
+This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p></description></item><item><title>Manuals: Package Management</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</guid><description>
 &lt;h2 id="python">Python&lt;/h2>
 &lt;p>The scope of this manual is a brief introduction on how to manage Python packages.&lt;/p>
 &lt;h3 id="python-versions">Python Versions&lt;/h3>
@@ -798,7 +798,7 @@ install_github(&amp;quot;duncantl/RGoogleDocs&amp;quot;)
 &lt;h4 id="local-packages">Local Packages&lt;/h4>
 &lt;pre>&lt;code class="language-R"># Replace URL with your URL or local path to your .tar.gz file
 install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&amp;quot;,repos=NULL,type=&amp;quot;source&amp;quot;)
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Data Storage</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Data Storage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
 &lt;h2 id="dashboard">Dashboard&lt;/h2>
 &lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>.&lt;/p>
 &lt;h2 id="home">Home&lt;/h2>
@@ -976,7 +976,7 @@ The higher the value the more recent the snapshot.&lt;/p>
 &lt;p>To view the exact time of when each snapshot was taken execute the following commands:&lt;/p>
 &lt;pre>&lt;code class="language-bash">mmlssnapshot home
 mmlssnapshot bigdata
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Sharing Data</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sharing/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Sharing Data</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/</guid><description>
 &lt;h2 id="permissions">Permissions&lt;/h2>
 &lt;p>It is useful to share data and results with other users on the cluster, and we encourage collaboration The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
 Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user &lt;code>username&lt;/code> (with read, write, and execute), owned by the group &lt;code>groupname&lt;/code> (with read and execute), and everyone else cannot access it.&lt;/p>
@@ -1091,7 +1091,7 @@ rclone config
 &lt;li>
 &lt;p>After that, follow this &lt;a href="https://rclone.org/drive/">RClone Walkthrough&lt;/a> to complete your setup.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Security</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: Security</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
 &lt;h2 id="protection-levels-and-classification">Protection Levels and Classification&lt;/h2>
 &lt;p>UCR protection levels, and data classifications are outlined by UCOP as a UC wide policy: &lt;a href="https://security.ucop.edu/policies/institutional-information-and-it-resource-classification.html">UCOP Institutional Information and IT Resource Classification&lt;/a>
 According to the above documentation, there are 4 levels of protection for 4 classifications of data:&lt;/p>
@@ -1277,7 +1277,7 @@ Also, be mindful of reamaining job time and make sure that you have unmounted th
 &lt;p>The above command will overwrite the file with random data, and then remove (unlink) it.&lt;/p>
 &lt;p>If we want to be even more secure, we can pass over the file seven times to ensure that reconstruction is nearly impossible, then remove it:&lt;/p>
 &lt;pre>&lt;code>shred -v -n 6 -z -u somefile
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Communicating</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Communicating</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
 &lt;h2 id="communicating-with-others">Communicating with others&lt;/h2>
 &lt;p>The cluster is a shared resource, and communicating with other users can help to schedule large computations.&lt;/p>
 &lt;p>&lt;strong>Looking-Up Specific Users&lt;/strong>&lt;/p>
@@ -1298,7 +1298,7 @@ To get a list of usernames:&lt;/p>
 &lt;/code>&lt;/pre>
 &lt;p>To get the list of emails:&lt;/p>
 &lt;pre>&lt;code class="language-bash">grep &amp;lt;(user_details.sh | awk '{print $4,$5}') -f &amp;lt;(squeue --format '%u' --noheader | sort | uniq) | awk '{print $2}'
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
 &lt;h1 id="terminal-ides">Terminal IDEs&lt;/h1>
 &lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
 HPC cluster that are useful for a variety of computer languages.&lt;/p>
@@ -1442,7 +1442,7 @@ install of &lt;code>vimcmdline&lt;/code> (since 09-Jun-18).&lt;/p>
 opens with nvim a code file with the extension of a given language (&lt;em>e.g.&lt;/em> &lt;code>*.sh&lt;/code> for Bash or &lt;code>*.py&lt;/code> for Python),
 while the corresponding interactive interpreter session is initiated
 by pressing the key sequence &lt;code>\s&lt;/code> (corresponds to &lt;code>\rf&lt;/code> under &lt;code>nvim-R&lt;/code>). Subsequently, code lines can be sent
-with the space bar. More details are available &lt;a href="https://github.com/jalvesaq/vimcmdline">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Parallel Evaluations in R</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</guid><description>
+with the space bar. More details are available &lt;a href="https://github.com/jalvesaq/vimcmdline">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Parallel Evaluations in R</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/parallelr/</guid><description>
 &lt;h1 id="overview">Overview&lt;/h1>
 &lt;p>R provides a variety of packages for parallel computations. One of the most
 comprehensive parallel computing environments for R is &lt;a href="https://mllg.github.io/batchtools/articles/batchtools.html">&lt;code>batchtools&lt;/code>&lt;/a>
@@ -1518,7 +1518,7 @@ removeRegistry(wait=0, reg=reg) # Delete registry directory
 after moving them to a local system.&lt;/p>
 &lt;pre>&lt;code class="language-r">from_file &amp;lt;- loadRegistry(&amp;quot;myregdir&amp;quot;, conf.file=&amp;quot;.batchtools.conf.R&amp;quot;)
 reduceResults(rbind)
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: SSH Keys</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</guid><description/></item><item><title>Manuals: Visualization</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</guid><description/></item><item><title>Manuals: Visualization</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
 &lt;h2 id="compute-node">Compute Node&lt;/h2>
 &lt;p>We support running graphical programs on the cluster using &lt;code>VNC&lt;/code>. For more information refer to &lt;a href="../../manuals/hpc_cluster/jobs/#desktop-environments">Desktop Environments&lt;/a>.&lt;/p>
 &lt;h2 id="gpu-workstation">GPU Workstation&lt;/h2>
@@ -1579,7 +1579,7 @@ module load amira
 vglrun -display :$(head -1 ~/.CUDA_VISIBLE_DEVICES) Amira
 &lt;/code>&lt;/pre>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Login</title><link>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: Login</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
 &lt;h2 id="login">Login&lt;/h2>
 &lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>

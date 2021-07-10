@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://dev.hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Overview</title><link>https://dev.hpcc.ucr.edu/about/hardware/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/overview/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Overview</title><link>https://hpcc.ucr.edu/about/hardware/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/hardware/overview/</guid><description>
 &lt;h2 id="computer-cluster">Computer cluster&lt;/h2>
 &lt;ul>
 &lt;li>Over 6,500 CPU cores (60% Intel, 40% AMD)&lt;/li>
@@ -23,7 +23,7 @@
 &lt;li>Size 600 sqft&lt;/li>
 &lt;li>Raised floor cooling with redundant AC units&lt;/li>
 &lt;li>Backup power: UPS plus generator&lt;/li>
-&lt;/ul></description></item><item><title>About: Hardware Details</title><link>https://dev.hpcc.ucr.edu/about/hardware/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dev.hpcc.ucr.edu/about/hardware/details/</guid><description>
+&lt;/ul></description></item><item><title>About: Hardware Details</title><link>https://hpcc.ucr.edu/about/hardware/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/hardware/details/</guid><description>
 &lt;h2 id="storage">Storage&lt;/h2>
 &lt;ul>
 &lt;li>Four enterprise class HPC storage systems&lt;/li>
