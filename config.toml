@@ -357,7 +357,7 @@ enable = true
     weight = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Introduction"
+      name = "Access"
       url = "/Manuals/linux_basics/intro"
       weight = 3
       [menu.main.params]
@@ -371,79 +371,72 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "File Systems"
+      name = "File Systems and Transfers"
       url = "/Manuals/linux_basics/filesystems"
       weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Finding Things"
-      url = "/Manuals/linux_basics/finding_things"
+      name = "Permissions and Ownership"
+      url = "/Manuals/linux_basics/permissions"
       weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Permissions"
-      url = "/Manuals/linux_basics/permissions"
+      name = "Finding Things"
+      url = "/Manuals/linux_basics/finding_things"
       weight = 7
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Pipes"
-      url = "/Manuals/linux_basics/pipes"
+      name = "Text Editors"
+      url = "/Manuals/linux_basics/Text"
       weight = 8
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Processes"
-      url = "/Manuals/linux_basics/Processes"
-      weight = 9
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Scripting"
-      url = "/Manuals/linux_basics/Scripting"
-      weight = 10
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Shell"
-      url = "/Manuals/linux_basics/Shell"
-      weight = 11
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Streams"
       url = "/Manuals/linux_basics/Streams"
-      weight = 12
+      weight = 9
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Text"
-      url = "/Manuals/linux_basics/Text"
-      weight = 13
+      name = "Piping"
+      url = "/Manuals/linux_basics/pipes"
+      weight = 10
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Variables"
       url = "/Manuals/linux_basics/Variables"
-      weight = 14
+      weight = 11
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Vim"
-      url = "/Manuals/linux_basics/Vim"
-      weight = 15
+      name = "Scripting"
+      url = "/Manuals/linux_basics/Scripting"
+      weight = 12
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Processe Management"
+      url = "/Manuals/linux_basics/Processes"
+      weight = 13
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Shell Bootcamp"
+      url = "/Manuals/linux_basics/Shell"
+      weight = 14
       [menu.main.params]
         level = 2
   # HPC Cluster Sub-menu
@@ -456,90 +449,90 @@ enable = true
       parent = "Manuals"
       name = "Introduction"
       url = "/Manuals/hpc_cluster/intro"
-      weight = 17 
+      weight = 17
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Jobs"
+      name = "Getting Started"
+      url = "/Manuals/hpc_cluster/start"
+      weight = 18 
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Managing Jobs"
       url = "/Manuals/hpc_cluster/jobs"
-      weight = 18
+      weight = 19
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Login"
-      url = "/Manuals/hpc_cluster/login"
-      weight = 19
+      name = "Queue Policies"
+      url = "/Manuals/hpc_cluster/Queue"
+      weight = 20
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Package Management"
       url = "/Manuals/hpc_cluster/package_manage"
-      weight = 20
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Parallel R"
-      url = "/Manuals/hpc_cluster/parallelR"
       weight = 21
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Queue"
-      url = "/Manuals/hpc_cluster/Queue"
-      weight = 22
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Security"
-      url = "/Manuals/hpc_cluster/Security"
-      weight = 23
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Start"
-      url = "/Manuals/hpc_cluster/start"
-      weight = 24 
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Data Storage"
       url = "/Manuals/hpc_cluster/Storage"
+      weight = 22
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Sharing Data"
+      url = "/Manuals/hpc_cluster/sharing"
+      weight = 23
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Data Security"
+      url = "/Manuals/hpc_cluster/Security"
+      weight = 24
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Communicating"
+      url = "/Manuals/hpc_cluster/users"
       weight = 25
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Terminal/IDEs"
+      name = "Terminal-based Working Environments"
       url = "/Manuals/hpc_cluster/terminalIDE"
       weight = 26
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Users"
-      url = "/Manuals/hpc_cluster/users"
+      name = "Parallel Evaluations in R"
+      url = "/Manuals/hpc_cluster/parallelR"
       weight = 27
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "SSH Keys"
+      url = "/Manuals/hpc_cluster/sshkeys"
+      weight = 28
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Visualization"
       url = "/Manuals/hpc_cluster/visual"
-      weight = 28
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "SSH Key Login"
-      url = "/Manuals/hpc_cluster/sshkeys"
       weight = 29
       [menu.main.params]
         level = 2
