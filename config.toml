@@ -1,5 +1,5 @@
 # Settings for the HPCC site
-baseURL = "https://dev.hpcc.ucr.edu"
+baseURL = "https://hpcc.ucr.edu"
 relativeURLs = true
 title = "HPCC"
 
