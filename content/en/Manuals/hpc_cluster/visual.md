@@ -4,8 +4,8 @@ linkTitle: Visualization
 type: docs
 weight: 13
 aliases:
-    - /manuals_linux-cluster_jobs.html
-    - /manuals_linux-cluster_jobs
+    - /manuals_linux-cluster_visual.html
+    - /manuals_linux-cluster_visual
 ---
 
 ## Compute Node

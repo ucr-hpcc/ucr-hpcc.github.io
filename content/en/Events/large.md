@@ -5,8 +5,8 @@ type: docs
 weight: 2
 toc_hide: true
 aliases:
-    - /events_small.html
-    - /events_small
+    - /events_large.html
+    - /events_large
 ---
 
 ## HPC 
