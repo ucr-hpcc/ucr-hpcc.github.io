@@ -4,8 +4,8 @@ linkTitle: SSH Keys Apple macOS
 title: SSH Keys Apple macOS 
 permalink: manuals_linux-cluster_sshkeys_macos.html
 aliases:
-    - /manuals_linux-cluster_start.html
-    - /manuals_linux-cluster_start
+    - /manuals_linux-cluster_sshkeys_macos.html
+    - /manuals_linux-cluster_sshkeys_macos
 ---
 
 ## SSH Keys on macOS

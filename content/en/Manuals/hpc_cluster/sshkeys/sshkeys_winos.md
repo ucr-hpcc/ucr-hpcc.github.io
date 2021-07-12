@@ -4,8 +4,8 @@ linkTitle:  SSH Keys Microsoft Windows
 title: SSH Keys Microsoft Windows
 permalink: manuals_linux-cluster_sshkeys_winos.html
 aliases:
-    - /manuals_linux-cluster_start.html
-    - /manuals_linux-cluster_start
+    - /manuals_linux-cluster_sshkeys_winos.html
+    - /manuals_linux-cluster_sshkeys_winos
 ---
 
 ## SSH Keys on MS Windows
