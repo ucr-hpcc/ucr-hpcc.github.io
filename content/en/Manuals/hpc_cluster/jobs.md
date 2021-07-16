@@ -417,7 +417,7 @@ After launching the vncviewer, and providing your VNC password (not your cluster
 For more information regarding tunnels and VNC in MS Windows, please refer [More VNC Info](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/).
 
 ### Licenses
-The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
+The cluster currently supports [Commercial Software](/about/software/commercial/). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
 
 The `--licenses` flag is used to request a license for Intel compilers, for example:
 
