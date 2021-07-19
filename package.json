@@ -20,6 +20,6 @@
     "autoprefixer": "^9.8.6",
     "hugo-extended": "^0.85.0",
     "postcss": "^8.3.5",
-    "postcss-cli": "^7.1.2"
+    "postcss-cli": "^8.3.1"
   }
 }
