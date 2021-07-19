@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/google/docsy-example#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.3.1",
     "hugo-extended": "^0.85.0",
     "postcss": "^8.3.5",
     "postcss-cli": "^7.1.2"
