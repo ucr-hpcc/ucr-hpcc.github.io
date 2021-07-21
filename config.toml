@@ -334,7 +334,7 @@ enable = true
   pre = "<i class='fas fa-users btn-primary'></i>"
   [[menu.main]]
     parent = "Events"
-    name = "Small Events"
+    name = "Workshops"
     url = "/events/small/"
     weight = 1
   [[menu.main]]
