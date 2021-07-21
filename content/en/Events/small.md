@@ -1,6 +1,6 @@
 ---
 title: HPC and Big Data Processing Tutorials
-linkTitle: Events Small
+linkTitle: Workshops
 type: docs
 weight: 1
 aliases:
