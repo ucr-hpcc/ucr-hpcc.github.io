@@ -1,6 +1,6 @@
 ---
-title: "HPCC Cloud"
-linkTitle: "hpcc-cloud"
+title: "Cloud/External"
+linkTitle: "Cloud/External"
 type: docs
 weight: 3
 ---
