@@ -539,13 +539,13 @@ enable = true
   # HPC Cloud / AWS Sub-menu
   [[menu.main]]
     parent = "Manuals"
-    name = "HPCC Cloud"
-    url = "/manuals/hpcc_cloud/"
+    name = "Cloud/External"
+    url = "/manuals/ext_cloud/"
     weight = 30
     [[menu.main]]
       parent = "Manuals"
       name = "AWS"
-      url = "/Manuals/hpcc_cloud/aws/"
+      url = "/Manuals/ext_cloud/aws/"
       weight = 31
       [menu.main.params]
         level = 2
