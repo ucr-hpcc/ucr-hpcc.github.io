@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – AWS</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/</link><description>Recent content in AWS on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/intro/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – AWS</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/</link><description>Recent content in AWS on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/ext_cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/intro/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Getting started using HPCC and Amazon Web Service (AWS) to quickly create an on-demand cluster private to you.&lt;/p>
 &lt;h2 id="hpcc-aws-cluster-benefits">HPCC AWS Cluster benefits.&lt;/h2>
@@ -29,7 +29,7 @@
 &lt;li>Associate your AWS Master account with Amazon as a UCR educational member to take advantage of a data egress waiver.&lt;/li>
 &lt;li>Set up your HPCC account to access and use your HPCC AWS Cluster.&lt;/li>
 &lt;li>Create your cluster and begin computing&lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Account Creation</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/account/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: Account Creation</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/account/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The scope of this manual section is am an introduction on how to get started using the Amazon cloud AWS to quickly create an on-demand cluster private to you.&lt;/p>
 &lt;h2 id="login-to-your-mainmaster-aws-account">Login to your Main/Master AWS account&lt;/h2>
@@ -113,7 +113,7 @@
 &lt;/ul>
 &lt;p>You now have all the information needed for a user to create their own cluster.&lt;/p>
 &lt;p>Next step:
-Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals: Account Egress Waiver</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/egress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/egress/</guid><description>
+Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals: Account Egress Waiver</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/egress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/egress/</guid><description>
 &lt;h2 id="learn-how-to-establish-an-amazon-web-services-aws-account-under-the-uc-agreement">Learn how to establish an Amazon Web Services (AWS) account under the UC Agreement.&lt;/h2>
 &lt;p>A UC-wide agreement for Amazon Web Services (AWS) has been established. The agreement provides &lt;strong>Data Egress Fee waiver for up to 15% of total monthly AWS fees&lt;/strong>.&lt;/p>
 &lt;p>Please follow the instructions below to ensure that an AWS account for UCR business is covered under this agreement and in compliance with UC policy and the law.&lt;/p>
@@ -153,7 +153,7 @@ Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals:
 &lt;li>Your Name&lt;/li>
 &lt;/ul>
 &lt;h2 id="aws-account-activation">AWS Account Activation&lt;/h2>
-&lt;p>You will receive an email response from AWS confirming that your AWS account is now set up for invoicing under the UC AWS agreement, and providing final instructions to activate your account. Follow the instructions in the AWS activation email and your account will be active and ready for use.&lt;/p></description></item><item><title>Manuals: HPCC cfnCluster Setup</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/setup/</guid><description>
+&lt;p>You will receive an email response from AWS confirming that your AWS account is now set up for invoicing under the UC AWS agreement, and providing final instructions to activate your account. Follow the instructions in the AWS activation email and your account will be active and ready for use.&lt;/p></description></item><item><title>Manuals: HPCC cfnCluster Setup</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/setup/</guid><description>
 &lt;h2 id="hpcc-cfncluster-setup">HPCC cfnCluster Setup.&lt;/h2>
 &lt;p>This will show how to use your HPCC account to configure cfnCluster; allowing you to create and control your own clusters.&lt;/p>
 &lt;h2 id="1-login-to-the-hpcc-cluster">1. Login to the HPCC Cluster&lt;/h2>
@@ -214,7 +214,7 @@ Setup and create a new cluster.&lt;/p></description></item><item><title>Manuals:
 &lt;h2 id="3-setup-complete">3. Setup complete&lt;/h2>
 &lt;p>Now that your config file is setup correctly. You can begin to create and interact with your own cluster (described in the Cluster Control and Operation section &lt;a href="../../../manuals/hpcc_cloud/aws/operation/">Link&lt;/a>)&lt;/p>
 &lt;h2 id="setup-walk-through">Setup Walk Through&lt;/h2>
-&lt;script id="asciicast-ewZjGbJkX0ZpE2sla5BoZ9aRq" src="https://asciinema.org/a/ewZjGbJkX0ZpE2sla5BoZ9aRq.js" async data-autoplay="false" data-size="small" data-speed="3">&lt;/script></description></item><item><title>Manuals: Cluster Operation</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/operation/</guid><description>
+&lt;script id="asciicast-ewZjGbJkX0ZpE2sla5BoZ9aRq" src="https://asciinema.org/a/ewZjGbJkX0ZpE2sla5BoZ9aRq.js" async data-autoplay="false" data-size="small" data-speed="3">&lt;/script></description></item><item><title>Manuals: Cluster Operation</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/operation/</guid><description>
 &lt;h2 id="login-to-hpcc">Login to HPCC&lt;/h2>
 &lt;pre>&lt;code class="language-bash">ssh username@cluster.hpcc.ucr.edu
 &lt;/code>&lt;/pre>
@@ -293,7 +293,7 @@ Output:&amp;quot;GangliaPrivateURL&amp;quot;=&amp;quot;http://172.31.24.51/gangl
 &lt;pre>&lt;code class="language-bash">hpcc_cloud delete new-cluster
 &lt;/code>&lt;/pre>
 &lt;h2 id="start-sample-cluster-walk-through-sped-up">Start sample cluster walk through (sped up)&lt;/h2>
-&lt;script id="asciicast-lKXf3g9tVdJZiJVqoaDMVIvMY" src="https://asciinema.org/a/lKXf3g9tVdJZiJVqoaDMVIvMY.js" async data-autoplay="false" data-size="small" data-speed="5">&lt;/script></description></item><item><title>Manuals: Cost Control and Billing</title><link>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/billing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpcc_cloud/aws/billing/</guid><description>
+&lt;script id="asciicast-lKXf3g9tVdJZiJVqoaDMVIvMY" src="https://asciinema.org/a/lKXf3g9tVdJZiJVqoaDMVIvMY.js" async data-autoplay="false" data-size="small" data-speed="5">&lt;/script></description></item><item><title>Manuals: Cost Control and Billing</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/billing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/billing/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This page will talk about AWS costs and billing along with setting some controls for them.&lt;/p>
 &lt;h2 id="costs">Costs&lt;/h2>

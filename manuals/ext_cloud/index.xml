@@ -1,0 +1,171 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPCC Cloud</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/</link><description>Recent content in HPCC Cloud on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/ext_cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: AWS</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/aws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/aws/</guid><description/></item><item><title>Manuals: CyVerse</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/cyverse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/cyverse/</guid><description>
+&lt;p>&lt;a href="https://cyverse.org">CyVersae&lt;/a> is a &lt;a href="https://nsf.gov/">NFS&lt;/a> funded web platorm that has many pre defined apps.
+Mainly of the apps are for life sicence and can be very useful.&lt;/p>
+&lt;blockquote>
+&lt;p>NOTE: Not suitable for jobs that require more than 12 CPU cores (ie. MPI).&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="account">Account&lt;/h2>
+&lt;p>Go to &lt;a href="https://cyverse.org/">CyVerse&lt;/a> and click on &lt;code>Create Account&lt;/code>.&lt;/p>
+&lt;p>There are a few steps, just fill in the fields accordingly and complete the forms.&lt;/p>
+&lt;p>After you have completed the form and submitted it, CyVerse will send you an email.
+Within the email will contain a link to set your password.&lt;/p>
+&lt;h2 id="data-management">Data Management&lt;/h2>
+&lt;p>There are a few ways to upload/download data, for example you can browse your files from the &lt;a href="https://de.cyverse.org/data">Discovery Environment&lt;/a>.
+However here we will focus on the command line method, since that is directly supported on the HPC cluster.
+Please refer to &lt;a href="https://cyverse-data-store-quickstart.readthedocs-hosted.com/en/latest/">here&lt;/a> for additoinal methods.&lt;/p>
+&lt;p>First you will need to load the icommands tools:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load icommands/4.1.10
+&lt;/code>&lt;/pre>
+&lt;p>Then you will need to initialize the connection to CyVerse:&lt;/p>
+&lt;pre>&lt;code class="language-bash">iinit
+&lt;/code>&lt;/pre>
+&lt;p>When you run the above command it will ask a few questions about your connection:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>host name&lt;/th>
+&lt;th>port #&lt;/th>
+&lt;th>username&lt;/th>
+&lt;th>zone&lt;/th>
+&lt;th>password&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>data.cyverse.org&lt;/td>
+&lt;td>1247&lt;/td>
+&lt;td>CyVerse UserID&lt;/td>
+&lt;td>iplant&lt;/td>
+&lt;td>CyVerse Password&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Once the &lt;code>iinit&lt;/code> command has completed you are now able to list, push, get files and folders on CyVerse directlry from the HPCC.&lt;/p>
+&lt;h3 id="upload">Upload&lt;/h3>
+&lt;p>The basic format to push files to CyVerse is like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">iput FileName CyVersePath
+&lt;/code>&lt;/pre>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code class="language-bash">iput hg18.fasta .
+&lt;/code>&lt;/pre>
+&lt;p>Since you automatically start in your home directory from CyVerse, the &lt;code>.&lt;/code> will just place the fasta file directly within your home.&lt;/p>
+&lt;p>Once that command completes, you can double check that the the does exist on CyVerse, by listing the files, like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">ils
+&lt;/code>&lt;/pre>
+&lt;p>The &lt;code>ils&lt;/code> and &lt;code>iput&lt;/code> command will work with relative and absolute paths.&lt;/p>
+&lt;h3 id="download">Download&lt;/h3>
+&lt;p>The download method is identical to the upload method, just repalce &lt;code>iget&lt;/code> instead of &lt;code>iput&lt;/code>:&lt;/p>
+&lt;pre>&lt;code class="language-bash">iget hg18.fasta .
+&lt;/code>&lt;/pre>
+&lt;p>The above command will download the &lt;code>hg18.fasta&lt;/code> file to your current directory on the cluster.&lt;/p>
+&lt;h2 id="jobs">Jobs&lt;/h2>
+&lt;p>Jobs on CyVerse are deployed via apps that you launch through the GUI &lt;a href="https://de.cyverse.org/apps">here&lt;/a>.
+&lt;a href="https://www.youtube.com/watch?v=ZFKYH_Cm7So">Here&lt;/a> is s video explaining how to create a docker image on the CyVerse system as well as configure a custom app to use it.&lt;/p>
+&lt;p>Please contact &lt;a href="mailto:support@hpcc.ucr.edu">support&lt;/a> for help creating a custom app, or any other questions.&lt;/p></description></item><item><title>Manuals: PRP</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/prp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/prp/</guid><description>
+&lt;blockquote>
+&lt;p>CAVEATS:&lt;/p>
+&lt;p>A fair amount of resources must be manually calculated from the &lt;a href="https://nautilus.optiputer.net/resources">currently available&lt;/a>.&lt;/p>
+&lt;p>Also, it seems like a beta feature would repalce what I did here:&lt;/p>
+&lt;p>&lt;a href="https://kubernetes.io/blog/2021/04/19/introducing-indexed-jobs/">https://kubernetes.io/blog/2021/04/19/introducing-indexed-jobs/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>The &lt;code>PRP&lt;/code> (Pacific Research Platform) is a &lt;a href="https://nsf.gov/">NSF&lt;/a> funded Kubernetes infrastructure and therefore requires the use of a Kubernetes interface.
+The command line Kubernetes interface &lt;code>kubectl&lt;/code> is what is used from the HPC cluster.&lt;/p>
+&lt;h2 id="account">Account&lt;/h2>
+&lt;p>Follow the guides on the &lt;code>PRP&lt;/code> website posted &lt;a href="https://pacificresearchplatform.org/userdocs/start/toc-start/">here&lt;/a>.
+There is a link called &lt;code>Get access&lt;/code>, depending on your role, you can request a &lt;code>admin&lt;/code> account or a &lt;code>user&lt;/code> account.&lt;/p>
+&lt;h2 id="install">Install&lt;/h2>
+&lt;p>Once you have an account, and you have read all of the docs &lt;a href="https://pacificresearchplatform.org/userdocs/start/toc-start/">here&lt;/a>, you can proceed to install.
+Submitting jobs, checking states, getting logs as well as interactive sessions can all be done from the HPCC.&lt;/p>
+&lt;p>However, running these operations directly from your laptop/workstation can be faster.
+In order to run these actions locally you will need to install &lt;code>kubectl&lt;/code> on your local laptop/workstation.&lt;/p>
+&lt;p>You can install &lt;code>kubectl&lt;/code> via &lt;code>conda&lt;/code>, like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">conda create -n kube -c anaconda-platform kubectl
+&lt;/code>&lt;/pre>
+&lt;p>If you do not yet have &lt;code>conda&lt;/code> installed, follow these &lt;a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation">instructions&lt;/a>.&lt;/p>
+&lt;h2 id="config">Config&lt;/h2>
+&lt;p>For &lt;code>kubectl&lt;/code> to function, it requires your &lt;code>config&lt;/code> file provdied by &lt;code>PRP&lt;/code>.
+In order to get the &lt;code>PRP&lt;/code> Kubernetes &lt;code>config&lt;/code> file, do the following:&lt;/p>
+&lt;ol>
+&lt;li>Visit &lt;a href="https://nautilus.optiputer.net/">Nautilus Portal&lt;/a>&lt;/li>
+&lt;li>Click on &lt;code>Login&lt;/code> in upper right coner.&lt;/li>
+&lt;li>Login using CILogon credentials (A.K.A UCR &lt;code>netID&lt;/code>).&lt;/li>
+&lt;li>Once authenticated, click on the &lt;code>Get config&lt;/code> in the upper right conner.&lt;/li>
+&lt;li>This takes a while to dynamically generate, just wait and eventually your browser will present you a download prompt.&lt;/li>
+&lt;li>Place this file in your &lt;code>~/.kube&lt;/code> directory.&lt;/li>
+&lt;/ol>
+&lt;p>Next set the namespace, or else you will have to append the &lt;code>-n ucr-hpcc&lt;/code> flag to every Kubernetes command.
+You may be under the &lt;code>ucr-hpcc&lt;/code> namespace if you are testing, otherwise you should have your own namespace:&lt;/p>
+&lt;pre>&lt;code class="language-bash">kubectl config set-context nautilus --namespace=ucr-hpcc
+&lt;/code>&lt;/pre>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;p>Here is an example of an array style job on utilizing redis to track job numbers, and the dockerfile stored within the &lt;a href="https://gitlab.nrp-nautilus.io/ucr-hpcc/ucr-hpcc-queue">PRP GitLab repository&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First copy &lt;code>scripts/*&lt;/code> files from the repo to your code base. Make sure that your analysis workflow is started within the &lt;code>worker.py&lt;/code> script.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create &lt;code>redis&lt;/code> service and deployment&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-bash">kubectl create -f hpcc-redis.yml
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>Log into &lt;code>Redis&lt;/code> pod and manually add items&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-bash"># Get into pod
+kubectl exec -it redis-master -- /bin/bash
+# Add 10 items to list &amp;quot;job2&amp;quot;
+echo lpush job2 {1..10} | redis-cli -h redis --pipe
+# Print all items in &amp;quot;job2&amp;quot;
+redis-cli -h redis lrange job2 0 -1
+&lt;/code>&lt;/pre>
+&lt;ol start="4">
+&lt;li>Submit job&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-bash">kubectl create -f hpcc-job.yml
+&lt;/code>&lt;/pre>
+&lt;h2 id="egress">Egress&lt;/h2>
+&lt;p>The &lt;code>PRP&lt;/code> has &lt;code>fail2ban&lt;/code> blocking rapid SSH connections, so copying files within a loop would fail.
+It is best to try and copy all needed files with a single &lt;code>rsync&lt;/code> command, like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">nohup rsync -rvP --include='*/spades.log.gz' --include='*/scaffolds.fasta' --exclude='*/*' /output/ cluster.hpcc.ucr.edu:~/output &amp;amp;&amp;gt; rsync_spades.log
+&lt;/code>&lt;/pre>
+&lt;p>The above &lt;code>rsync&lt;/code> command looks into the sub-directories within &lt;code>/output&lt;/code> and will copy only the &lt;code>spades.log.gz&lt;/code> and &lt;code>scaffolds.fasta&lt;/code> files from each onto the HPCC cluster.&lt;/p>
+&lt;h2 id="trouble">Trouble&lt;/h2>
+&lt;p>From pod list, check log:&lt;/p>
+&lt;pre>&lt;code class="language-bash">kubectl logs hpcc-pod
+&lt;/code>&lt;/pre>
+&lt;p>Jobs and pods will expire after 1 week, however you can alter this with the following:&lt;/p>
+&lt;pre>&lt;code class="language-yml">ttlSecondsAfterFinished=604800
+&lt;/code>&lt;/pre>
+&lt;p>Check on the pod details:&lt;/p>
+&lt;pre>&lt;code class="language-bash">kubectl describe pod hpcc-pod
+&lt;/code>&lt;/pre>
+&lt;p>Delete job if you want to rerun, this will also delete associated pods:&lt;/p>
+&lt;pre>&lt;code class="language-bash">kubectl delete pods hpcc-pod
+&lt;/code>&lt;/pre>
+&lt;p>For updating your repo to the lastest HPCC changes, you can sync like so:&lt;/p>
+&lt;pre>&lt;code># Add upstream
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+# Get branchs
+git fetch upstream
+# Sync local files with master branch
+git pull upstream master
+&lt;/code>&lt;/pre>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;ul>
+&lt;li>Help - &lt;a href="https://element.nrp-nautilus.io">https://element.nrp-nautilus.io&lt;/a>&lt;/li>
+&lt;li>Resources - &lt;a href="https://nautilus.optiputer.net/resources">https://nautilus.optiputer.net/resources&lt;/a>&lt;/li>
+&lt;li>Monitoring - &lt;a href="https://grafana.nautilus.optiputer.net">https://grafana.nautilus.optiputer.net&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Manuals: XSEDE</title><link>https://hpcc.ucr.edu/manuals/ext_cloud/xsede/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/ext_cloud/xsede/</guid><description>
+&lt;p>If you require large amounts of resources (ie. 1000s of CPUs, or 100s of GPUs) then access to the computing resources at the &lt;a href="https://nsf.gov/">NSF&lt;/a> funded &lt;a href="https://www.xsede.org/">XSEDE&lt;/a> might be a good option.&lt;/p>
+&lt;h2 id="account">Account&lt;/h2>
+&lt;p>To create an account, visit the &lt;a href="https://portal.xsede.org/documentation-overview#portal">XSEDE Portal&lt;/a>.&lt;/p>
+&lt;h2 id="proposal">Proposal&lt;/h2>
+&lt;p>As stated previously, writting a propoasl and then getting it approved is required to gain access to XSEDE. Instructions on how to do this are outlined &lt;a href="https://portal.xsede.org/documentation-overview#allocations-webinar">here&lt;/a>.&lt;/p>
+&lt;h2 id="data-management">Data Management&lt;/h2>
+&lt;p>There are several methods used to transfer data to and from XSEDE resources, they are outlined &lt;a href="https://portal.xsede.org/documentation-overview#transferring">here&lt;/a>&lt;/p>
+&lt;h2 id="jobs">Jobs&lt;/h2>
+&lt;p>For submitting jobs, XSEDE also supports Slurm, which is similar to what we already use on the HPC cluster.&lt;/p>
+&lt;p>Example on how to submit Slurm style jobs are described &lt;a href="https://portal.xsede.org/documentation-overview#compenv-jobs">here&lt;/a>&lt;/p>
+&lt;h2 id="ucr-campus-champion">UCR Campus Champion&lt;/h2>
+&lt;p>You can contact &lt;a href="mailto:forsythc@ucr.edu">Charles Forsyth&lt;/a> for addtionall information regarding XSEDE and how to gain access.&lt;/p></description></item></channel></rss>
