@@ -27,5 +27,5 @@ Example on how to submit Slurm style jobs are described [here](https://portal.xs
 
 ## UCR Campus Champion
 
-You can contact [Charles Forsyth](mailto:forsythc@ucr.edu) for addtionall information regarding XSEDE and how to gain access.
+You can contact [Jordan Hayes](mailto:jordan.hayes@ucr.edu) for additional information regarding XSEDE and how to gain access.
 
