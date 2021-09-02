@@ -14385,27 +14385,30 @@ div.jp-OutputPrompt {
 <div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Conda-Installs">Conda Installs<a class="anchor-link" href="#Conda-Installs">&#182;</a></h1><p>Presented by: Jordan Hayes (HPCC)</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><ul>
-<li><p>Why Conda</p>
-<ul>
+<li>Why Conda<ul>
 <li>Software Challenges</li>
 <li>Solutions</li>
 </ul>
 </li>
-<li><p>Configure</p>
-<ul>
+<li>Configure<ul>
 <li>Virtual Environments</li>
 </ul>
 </li>
-<li><p>Install Examples</p>
-<ul>
+<li>Install Examples<ul>
 <li>Pandas</li>
-<li>FASTQC</li>
+<li>FastQC</li>
 <li>Tensorflow</li>
 </ul>
 </li>
 </ul>
-<hr style='clear:both;'>
+<hr/>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14416,7 +14419,7 @@ div.jp-OutputPrompt {
 <li>Sharable</li>
 <li>Easy to execute</li>
 </ul>
-<hr style='clear:both;'>
+<hr/>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14427,7 +14430,7 @@ div.jp-OutputPrompt {
 <li>Installs are modular and easy to share</li>
 <li>Easy to load/unload environments</li>
 </ul>
-<hr style='clear:both;'>
+<hr/>
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14442,17 +14445,20 @@ envs_dirs:
   - ~/bigdata/.conda/envs
 auto_activate_base: false</code></pre>
 <p><a href="https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#virtual-environments">https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#virtual-environments</a></p>
-<hr style='clear:both;'>
+<hr />
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Configure:-Virtual-Environment">Configure: Virtual Environment<a class="anchor-link" href="#Configure:-Virtual-Environment">&#182;</a></h2>
+<h2 id="Configure:-Virtual-Environment">Configure: Virtual Environment<a class="anchor-link" href="#Configure:-Virtual-Environment">&#182;</a></h2><p>First, lets request a compute node, since running on the head nodes would be slow:</p>
+
+<pre><code>srun -p short -c 2 --mem=10g --pty bash -l</code></pre>
+
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Create conda virtual environment for <code>pandasenv</code>, since pandas is a python pacakge, we will pre install <code>Python</code>:</p>
+<p>Create conda virtual environment for <code>pandasEnv</code>, since pandas is a python pacakge, we will pre install Python:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14461,7 +14467,7 @@ auto_activate_base: false</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span>conda create -n pandasenv <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6.4
+<div class=" highlight hl-bash"><pre><span></span>conda create -y -n pandasEnv <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6.4
 </pre></div>
 
      </div>
@@ -14472,7 +14478,7 @@ auto_activate_base: false</code></pre>
 </div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Activate <code>pandasenv</code> virtual environment:</p>
+<p>Activate pandasEnv virtual environment:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14481,7 +14487,7 @@ auto_activate_base: false</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span>conda activate pandasenv
+<div class=" highlight hl-bash"><pre><span></span>conda activate pandasEnv
 </pre></div>
 
      </div>
@@ -14489,19 +14495,22 @@ auto_activate_base: false</code></pre>
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr/>
+</div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Install-Examples:-Pandas">Install Examples: Pandas<a class="anchor-link" href="#Install-Examples:-Pandas">&#182;</a></h2><p>Now that we have a <code>virtual environment</code>, we can install packages within it.
-Visit anaconda website to search for a pagckage:</p>
+<h2 id="Install-Examples:-Pandas">Install Examples: Pandas<a class="anchor-link" href="#Install-Examples:-Pandas">&#182;</a></h2><p>Now that we have a virtual environment, we can install packages within it. Visit anaconda website to search for a pagckage:</p>
 <p><a href="https://anaconda.org/">https://anaconda.org/</a></p>
-<p>After you find the package, click on the name of the package to see install command.</p>
 
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Run install command:</p>
+<p>After you find the package, click on the name of the package to see install command.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14510,8 +14519,8 @@ Visit anaconda website to search for a pagckage:</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1">#conda install -n pandasenv -c anaconda pandas</span>
-conda install -c anaconda pandas
+<div class=" highlight hl-bash"><pre><span></span><span class="c1">#conda install -y -c anaconda pandas</span>
+conda install -y -n pandasEnv -c anaconda pandas
 </pre></div>
 
      </div>
@@ -14519,6 +14528,11 @@ conda install -c anaconda pandas
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr/>
+</div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14526,26 +14540,26 @@ conda install -c anaconda pandas
 <ol>
 <li>Create <code>fastqcEnv</code> virtual environment</li>
 <li>Activate <code>fastqcEnv</code> virtual environment</li>
-<li>Look up <code>fastqc</code> on <a href="https://anaconda.org">Anaconda</a></li>
+<li>Look up <code>fastqc</code> on Anaconda</li>
 <li>Install <code>fastqc</code> package</li>
 <li>Deactivate <code>fastqcEnv</code> virtual environment</li>
 </ol>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create virutal environment</span>
-conda create -n fastqcEnv
+conda create -y -n fastqcEnv
 
 <span class="c1"># Activate virutal environment</span>
 conda activate fastqcEnv
 
 <span class="c1"># Install fastqc</span>
-conda install -c bioconda fastqc
+conda install -y -c bioconda fastqc
 
 <span class="c1"># Deactivate virtual environment</span>
 conda deactivate
@@ -14556,14 +14570,19 @@ conda deactivate
 </div>
 </div>
 
-</div></section></section><section><section>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr/>
+</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Install-Examples:-Tensorflow">Install Examples: Tensorflow<a class="anchor-link" href="#Install-Examples:-Tensorflow">&#182;</a></h2><p>Same proceedure as before:</p>
 <ol>
 <li>Create <code>tensorflowEnv</code> virtual environment</li>
 <li>Activate <code>tensorflowEnv</code> virtual environment</li>
-<li>Look up <code>tensorflow</code> on <a href="https://anaconda.org">Anaconda</a></li>
+<li>Look up <code>tensorflow</code> on Anaconda</li>
 <li>Install <code>tensorflow</code> package</li>
 <li>Deactivate <code>tensorflowEnv</code> virtual environment</li>
 </ol>
@@ -14576,13 +14595,13 @@ conda deactivate
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create virtual environment</span>
-conda create -n tensorflowEnv
+conda create -y -n tensorflowEnv
 
 <span class="c1"># Activate virtual environment</span>
 conda activate tensorflow
 
 <span class="c1"># Install tensorflow</span>
-conda install -n tensorflowEnv -c conda-forge tensorflow
+conda install -y -n tensorflowEnv -c conda-forge tensorflow
 
 <span class="c1"># Deactivate virtual environment</span>
 conda deactivate
@@ -14593,10 +14612,15 @@ conda deactivate
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr/>
+</div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Install-Examples:-Script">Install Examples: Script<a class="anchor-link" href="#Install-Examples:-Script">&#182;</a></h2><p>After the install[s] has completed, you may want to use 1 (or more) conda virtual environment[s] within a job/script:</p>
+<h2 id="Install-Examples:-Script">Install Examples: Script<a class="anchor-link" href="#Install-Examples:-Script">&#182;</a></h2><p>After the installs have completed, you may want to use 1 (or more) conda virtual environments within a job/script:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14616,20 +14640,29 @@ conda deactivate
 <span class="c1"># Already loaded by default</span>
 module load miniconda2
 
+<span class="c1">#### pandasEnv ####</span>
 <span class="c1"># Activate virtual environment</span>
-conda activate fastqcEnv
-
-<span class="c1"># Do something</span>
-fastqc --help
-
+conda activate pandasEnv
+<span class="c1"># Show file path to where pandas is installed</span>
+python -c <span class="s1">&#39;import pandas; print(pandas.__file__)&#39;</span>
 <span class="c1"># Deactivate virtual environment</span>
 conda deactivate
 
-<span class="c1"># Activate another virtual environment</span>
-conda activate pandasEnv
+<span class="c1">#### fastqcEnv ####</span>
+<span class="c1"># Activate virtual environment</span>
+conda activate fastqcEnv
+<span class="c1"># Run help</span>
+fastqc --help
+<span class="c1"># Deactivate virtual environment</span>
+conda deactivate
 
-<span class="c1"># So something else</span>
-python -c <span class="s1">&#39;import panads; print(pandas.__file__)&#39;</span>
+<span class="c1">#### tensorflowEnv ####</span>
+<span class="c1"># Activate virtual environment</span>
+conda activate tensorflowEnv
+<span class="c1"># Add a scalar and a list</span>
+python -c <span class="s1">&#39;import tensorflow as tf; x = [1, 2, 3, 4, 5]; y = 1; print(tf.add(x, y))&#39;</span>
+<span class="c1"># Deactivate virtual environment</span>
+conda deactivate
 </pre></div>
 
      </div>
