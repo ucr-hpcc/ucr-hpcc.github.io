@@ -30,6 +30,8 @@ cat  <FILENAME>     # Concatenates files and prints content to screen
   * Non-graphical or window-based editor.
 * **Atom**
     * Window-based editor that runs on your local machine.
+* **Visual Studio Code**
+    * Graphical editor that runs on your local machine that supports different plugins.
 
 ## Nano
 
@@ -125,3 +127,12 @@ rm -f /rhome/<USERNAME>/.rmate.socket'
 ```
 
 For more information regarding `remote-atom`, please visit [Remote-Atom](https://atom.io/packages/remote-atom).
+
+## Visual Studio Code
+
+### Install
+This editor should be installed on your local machine (ie. workstation, laptop).
+Please visit [Visudal Studio Code](https://code.visualstudio.com/download) for software download.
+
+### Remote Editing
+To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this [guide](https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing)
