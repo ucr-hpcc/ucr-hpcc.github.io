@@ -509,34 +509,10 @@ These cores can be further away, since the need for physical CPUs and dedicated 
 Generally this is good for independent subprocesses, and MPI, however not so good for threading.&lt;/li>
 &lt;/ul>
 &lt;p>Here is a table to better explain when to use these Slurm options:&lt;/p>
-&lt;p>| | Single Threaded | Multi Threaded (OpenMP) | MPI only | MPI + Multi Threaded (hybrid) |&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Slurm Flag&lt;/th>
-&lt;th style="text-align:center">&lt;/th>
-&lt;th style="text-align:center">&lt;/th>
-&lt;th style="text-align:center">&lt;/th>
-&lt;th style="text-align:center">&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;code>--cpus-per-task&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>--ntasks&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;p>| Slurm Flag | Single Threaded | Multi Threaded (OpenMP) | MPI only | MPI + Multi Threaded (hybrid) | | | | |
+|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;:|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;:|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;:|:&amp;mdash;&amp;mdash;&amp;ndash;:|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;:|
+| &lt;code>--cpus-per-task&lt;/code> | | X | | X |
+| &lt;code>--ntasks&lt;/code> | | | X | X |&lt;/p>
 &lt;p>As you can see:&lt;/p>
 &lt;ol>
 &lt;li>A single threaded job would use neither Slurm option, since Slurm already assumes at least a single core.&lt;/li>
