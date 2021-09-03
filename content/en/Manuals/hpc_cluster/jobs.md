@@ -458,9 +458,8 @@ In Slurm you will need 2 different flags to request cores, which may seem simila
 
 Here is a table to better explain when to use these Slurm options:
 
-|                   | Single Threaded                   | Multi Threaded (OpenMP) | MPI only | MPI + Multi Threaded (hybrid) |
-| Slurm Flag        |                                   |                         |          |                               |
-| ----------------- |:---------------------------------:|:-----------------------:|:--------:|:-----------------------------:|
+| Slurm Flag        | Single Threaded                   | Multi Threaded (OpenMP) | MPI only | MPI + Multi Threaded (hybrid) |                                   |                         |          |                               |
+|:-----------------:|:---------------------------------:|:-----------------------:|:--------:|:-----------------------------:|
 | `--cpus-per-task` |                                   |                      X  |          |                             X |
 | `--ntasks`        |                                   |                         |        X |                             X |
 
