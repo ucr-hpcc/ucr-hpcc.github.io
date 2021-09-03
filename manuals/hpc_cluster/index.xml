@@ -512,27 +512,27 @@ Generally this is good for independent subprocesses, and MPI, however not so goo
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:center">Slurm Flag&lt;/th>
-&lt;th style="text-align:center">Single Threaded&lt;/th>
-&lt;th style="text-align:center">Multi Threaded (OpenMP)&lt;/th>
-&lt;th style="text-align:center">MPI only&lt;/th>
-&lt;th style="text-align:center">MPI + Multi Threaded (hybrid)&lt;/th>
+&lt;th>Slurm Flag&lt;/th>
+&lt;th>Single Threaded&lt;/th>
+&lt;th>Multi Threaded (OpenMP)&lt;/th>
+&lt;th>MPI only&lt;/th>
+&lt;th>MPI + Multi Threaded (hybrid)&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:center">&lt;code>--cpus-per-task&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
+&lt;td>&lt;code>--cpus-per-task&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>X&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>X&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">&lt;code>--ntasks&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
-&lt;td style="text-align:center">X&lt;/td>
+&lt;td>&lt;code>--ntasks&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>X&lt;/td>
+&lt;td>X&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
