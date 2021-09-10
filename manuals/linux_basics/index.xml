@@ -478,7 +478,7 @@ alias ratom=rmate
 &lt;h2 id="visual-studio-code">Visual Studio Code&lt;/h2>
 &lt;h3 id="install-1">Install&lt;/h3>
 &lt;p>This editor should be installed on your local machine (ie. workstation, laptop).
-Please visit &lt;a href="https://code.visualstudio.com/download">Visudal Studio Code&lt;/a> for software download.&lt;/p>
+Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio Code&lt;/a> for software download.&lt;/p>
 &lt;h3 id="remote-editing">Remote Editing&lt;/h3>
 &lt;p>To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this &lt;a href="https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing">guide&lt;/a>&lt;/p></description></item><item><title>Manuals: Streams</title><link>https://hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
 &lt;h2 id="streams">Streams&lt;/h2>
