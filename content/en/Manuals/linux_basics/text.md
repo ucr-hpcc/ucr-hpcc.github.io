@@ -132,7 +132,7 @@ For more information regarding `remote-atom`, please visit [Remote-Atom](https:/
 
 ### Install
 This editor should be installed on your local machine (ie. workstation, laptop).
-Please visit [Visudal Studio Code](https://code.visualstudio.com/download) for software download.
+Please visit [Visual Studio Code](https://code.visualstudio.com/download) for software download.
 
 ### Remote Editing
 To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this [guide](https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing)
