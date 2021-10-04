@@ -1450,7 +1450,7 @@ without schedulers. By making use of cluster template files, most schedulers
 and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).&lt;/p>
 &lt;h2 id="r-code-of-this-section">R code of this section&lt;/h2>
 &lt;p>To simplify the evaluation of the R code of this page, the corresponding text version
-is available for download from &lt;a href="https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R">here&lt;/a>.&lt;/p>
+is available for download from &lt;a href="https://hpcc.ucr.edu/_support_docs/tutorials/batchtools_test.R">here&lt;/a>.&lt;/p>
 &lt;h2 id="parallelization-with-batchtools">Parallelization with batchtools&lt;/h2>
 &lt;p>The following introduces the usage of &lt;code>batchtools&lt;/code> for a computer cluster using SLURM as scheduler (workload manager).&lt;/p>
 &lt;h2 id="set-up-working-directory-for-slurm">Set up working directory for SLURM&lt;/h2>
@@ -1458,8 +1458,8 @@ is available for download from &lt;a href="https://raw.githubusercontent.com/ucr
 create a test directory (here &lt;code>mytestdir&lt;/code>), redirect R into this directory and then download
 the required files:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl">&lt;code>slurm.tmpl&lt;/code>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R">&lt;code>.batchtools.conf.R&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hpcc.ucr.edu/_support_docs/tutorials/slurm.tmpl">&lt;code>slurm.tmpl&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hpcc.ucr.edu/_support_docs/tutorials/.batchtools.conf.R">&lt;code>.batchtools.conf.R&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;pre>&lt;code class="language-r">dir.create(&amp;quot;mytestdir&amp;quot;)
 setwd(&amp;quot;mytestdir&amp;quot;)
