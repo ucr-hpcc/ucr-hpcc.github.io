@@ -1,5 +1,5 @@
 ---
-linkTitle: Faciliy
+linkTitle: Facility
 title: Facility
 type: docs
 weight: 1
