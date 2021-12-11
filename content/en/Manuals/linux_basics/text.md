@@ -144,8 +144,8 @@ Two options exist to access the HPCC cluster via RStudio Server.
 * Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.
     
   * SSH into the cluster via ssh as outlined [here](https://hpcc.ucr.edu/manuals/linux_basics/intro/).
-  * Log in to a node interactively node, using _e.g._: `srun -p short --pty bash -l`
-  * If needed, load a specific R version from the module system, _e.g._: `module R/4.1.0_gcc-8.3.0`
+  * Log in to a node interactively node: `srun -p short --pty bash -l`
+  * If needed, load a specific R version from the module system: `module R/4.1.0_gcc-8.3.0`
   * Load the RStudio Server module: `module load rstudio-server`
   * Start RStudio Server: `start-rserver.sh`
   * Next follow the instructions printed to the screen.
