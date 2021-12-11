@@ -491,7 +491,7 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;p>Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
 &lt;ul>
 &lt;li>SSH into the cluster via ssh as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
-&lt;li>Log in to a node interactively node: &lt;code>srun -p short --pty bash -l&lt;/code>&lt;/li>
+&lt;li>Log in to a node interactively: &lt;code>srun -p short --pty bash -l&lt;/code>&lt;/li>
 &lt;li>If needed, load a specific R version from the module system: &lt;code>module R/4.1.0_gcc-8.3.0&lt;/code>&lt;/li>
 &lt;li>Load the RStudio Server module: &lt;code>module load rstudio-server&lt;/code>&lt;/li>
 &lt;li>Start RStudio Server: &lt;code>start-rserver.sh&lt;/code>&lt;/li>
