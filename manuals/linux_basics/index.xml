@@ -489,30 +489,27 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;/li>
 &lt;li>
 &lt;p>Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
-&lt;ul>
+&lt;ol>
 &lt;li>SSH into the cluster via ssh as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
-&lt;li>Log in to a node interactively, where the proper parameters for partition, RAM, wall time, number of CPU core limits, etc need to be chosen under the corresponding arguments:&lt;/li>
-&lt;/ul>
+&lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters for partition,
+RAM, wall time, number of CPU cores, etc need to be chosen under the corresponding arguments:&lt;/li>
+&lt;/ol>
 &lt;pre>&lt;code class="language-sh">srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
 &lt;/code>&lt;/pre>
-&lt;ul>
-&lt;li>If needed, load a specific R version from the module system:&lt;/li>
-&lt;/ul>
+&lt;ol start="3">
+&lt;li>Load specific versions of R and RStudio Server from module system:&lt;/li>
+&lt;/ol>
 &lt;pre>&lt;code class="language-sh">module load &amp;lt;R/version&amp;gt;` # e.g.: R/4.1.1_gcc-8.3.0
+module load &amp;lt;rstudio-server/version&amp;gt; # e.g.: rstudio-server/2021.09.1-372
 &lt;/code>&lt;/pre>
-&lt;ul>
-&lt;li>Load the RStudio Server module:&lt;/li>
-&lt;/ul>
-&lt;pre>&lt;code class="language-sh">module load &amp;lt;rstudio-server/version&amp;gt; # e.g.: rstudio-server/2021.09.1-372
-&lt;/code>&lt;/pre>
-&lt;ul>
+&lt;ol start="4">
 &lt;li>Start RStudio Server:&lt;/li>
-&lt;/ul>
+&lt;/ol>
 &lt;pre>&lt;code class="language-sh">start-rserver.sh
 &lt;/code>&lt;/pre>
-&lt;ul>
+&lt;ol start="5">
 &lt;li>Next follow the instructions printed to the screen. The given command-line calls in these instructions need be executed in a terminal of a user&amp;rsquo;s local system (not on the remote system).&lt;/li>
-&lt;/ul>
+&lt;/ol>
 &lt;/li>
 &lt;/ul></description></item><item><title>Manuals: Streams</title><link>https://hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
 &lt;h2 id="streams">Streams&lt;/h2>
