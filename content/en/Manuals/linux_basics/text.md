@@ -162,6 +162,7 @@ Alternatively, RStudio Server instances can be started via an SSH tunnel after l
   3. Load specific versions of R and RStudio Server from module system
 
    ```sh
+   module unload R
    module load <R/version> # e.g. provide under <...>: R/4.1.1_gcc-8.3.0
    module load <rstudio-server/version> # e.g. provide under <...> : rstudio-server/2021.09.1-372
    ```
