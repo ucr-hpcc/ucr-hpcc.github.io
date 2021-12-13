@@ -482,7 +482,7 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;h3 id="remote-editing">Remote Editing&lt;/h3>
 &lt;p>To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this &lt;a href="https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing">guide&lt;/a>&lt;/p>
 &lt;h2 id="rstudio-server">RStudio Server&lt;/h2>
-&lt;p>Two options exist to access the HPCC cluster via RStudio Server.&lt;/p>
+&lt;p>Two options, here A and B, exist to access the HPCC cluster via RStudio Server.&lt;/p>
 &lt;h4 id="a-web-instance">A. Web Instance&lt;/h4>
 &lt;p>R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: &lt;a href="https://rstudio.hpcc.ucr.edu">https://rstudio.hpcc.ucr.edu&lt;/a>. Next provide your HPCC login credentials.&lt;/p>
 &lt;h4 id="b-ssh-tunnel">B. SSH Tunnel&lt;/h4>
