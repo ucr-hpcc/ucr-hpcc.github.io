@@ -489,8 +489,8 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;p>B. Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
 &lt;ol>
 &lt;li>SSH into the cluster via ssh as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
-&lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters for partition,
-RAM, wall time, number of CPU cores, etc need to be chosen under the corresponding arguments:&lt;/li>
+&lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters need to be specified to
+set the proper partition, RAM, wall time limit, number of CPU cores, etc.&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-sh">srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
 &lt;/code>&lt;/pre>
