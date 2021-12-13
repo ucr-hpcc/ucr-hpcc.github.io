@@ -138,9 +138,9 @@ Please visit [Visual Studio Code](https://code.visualstudio.com/download) for so
 To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this [guide](https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing)
 
 ## RStudio Server
-Two options, here A and B, exist to access the HPCC cluster via RStudio Server. While option A is easier for less
-experienced users, it does not allow to choose a specific R version or more extensive computing resources. Experienced 
-users may prefer option B since it does not share these limitations.
+Two options (here A and B) exist to access the HPCC cluster via RStudio Server. While option A is easier for less
+experienced users, it does not allow to load a specific R version or access more extensive computing resources. 
+Thus, experienced users may prefer option B as it does not share these limitations.
 
 #### A. Web Instance
 R users can log in to their HPCC accounts via an RStudio Server instance. To do
