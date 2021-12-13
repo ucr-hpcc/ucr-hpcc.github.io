@@ -143,32 +143,28 @@ Two options exist to access the HPCC cluster via RStudio Server.
 * R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: https://rstudio.hpcc.ucr.edu. Next provide your HPCC login credentials.
 * Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.
     
-  * SSH into the cluster via ssh as outlined [here](https://hpcc.ucr.edu/manuals/linux_basics/intro/).
-  * Log in to a node interactively, where the proper parameters for partition, RAM, wall time, number of CPU core limits, etc need to be chosen under the corresponding arguments: 
+  1. SSH into the cluster via ssh as outlined [here](https://hpcc.ucr.edu/manuals/linux_basics/intro/).
+  2. Log in to a computer node interactively via `srun`, where the proper parameters for partition,
+     RAM, wall time, number of CPU cores, etc need to be chosen under the corresponding arguments: 
    
    ```sh
    srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
    ```
 
-  * If needed, load a specific R version from the module system:
+  3. Load specific versions of R and RStudio Server from module system:
 
    ```sh
    module load <R/version>` # e.g.: R/4.1.1_gcc-8.3.0
-   ```
-
-  * Load the RStudio Server module: 
-
-   ```sh
    module load <rstudio-server/version> # e.g.: rstudio-server/2021.09.1-372
    ```
 
-  * Start RStudio Server: 
+  4. Start RStudio Server: 
    
    ```sh
    start-rserver.sh
    ```
 
-  * Next follow the instructions printed to the screen. The given command-line calls in these instructions need be executed in a terminal of a user's local system (not on the remote system).
+  5. Next follow the instructions printed to the screen. The given command-line calls in these instructions need be executed in a terminal of a user's local system (not on the remote system).
 
 
 
