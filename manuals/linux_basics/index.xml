@@ -483,8 +483,10 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;p>To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this &lt;a href="https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing">guide&lt;/a>&lt;/p>
 &lt;h2 id="rstudio-server">RStudio Server&lt;/h2>
 &lt;p>Two options exist to access the HPCC cluster via RStudio Server.&lt;/p>
-&lt;p>A. R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: &lt;a href="https://rstudio.hpcc.ucr.edu">https://rstudio.hpcc.ucr.edu&lt;/a>. Next provide your HPCC login credentials.
-B. Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
+&lt;h3 id="a-web-instance">A. Web Instance&lt;/h3>
+&lt;p>R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: &lt;a href="https://rstudio.hpcc.ucr.edu">https://rstudio.hpcc.ucr.edu&lt;/a>. Next provide your HPCC login credentials.&lt;/p>
+&lt;h3 id="b-ssh-tunnel">B. SSH Tunnel&lt;/h3>
+&lt;p>B. Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
 &lt;ol>
 &lt;li>SSH into the cluster via ssh as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
 &lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters for partition,
@@ -495,8 +497,8 @@ RAM, wall time, number of CPU cores, etc need to be chosen under the correspondi
 &lt;ol start="3">
 &lt;li>Load specific versions of R and RStudio Server from module system:&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code class="language-sh">module load &amp;lt;R/version&amp;gt;` # e.g.: R/4.1.1_gcc-8.3.0
-module load &amp;lt;rstudio-server/version&amp;gt; # e.g.: rstudio-server/2021.09.1-372
+&lt;pre>&lt;code class="language-sh">module load &amp;lt;R/version&amp;gt; # e.g. provide under &amp;lt;...&amp;gt;: R/4.1.1_gcc-8.3.0
+module load &amp;lt;rstudio-server/version&amp;gt; # e.g. provide under &amp;lt;...&amp;gt; : rstudio-server/2021.09.1-372
 &lt;/code>&lt;/pre>
 &lt;ol start="4">
 &lt;li>Start RStudio Server:&lt;/li>
