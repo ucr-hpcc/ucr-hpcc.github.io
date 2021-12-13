@@ -144,7 +144,7 @@ Two options exist to access the HPCC cluster via RStudio Server.
 R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: https://rstudio.hpcc.ucr.edu. Next provide your HPCC login credentials.
 
 #### B. SSH Tunnel 
-Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.
+Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a computer node interactively. This involves the following steps.
     
   1. SSH into the cluster via ssh as outlined [here](https://hpcc.ucr.edu/manuals/linux_basics/intro/).
   2. Log in to a computer node interactively via `srun`, where the proper parameters need to be specified to 
