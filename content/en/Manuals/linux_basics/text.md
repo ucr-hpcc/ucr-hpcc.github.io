@@ -140,11 +140,11 @@ To setup Visual Studio Code to remotely edit files on the cluster, please go to 
 ## RStudio Server
 Two options exist to access the HPCC cluster via RStudio Server.
 
-### A. Web Instance
+#### A. Web Instance
 R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: https://rstudio.hpcc.ucr.edu. Next provide your HPCC login credentials.
 
-### B. SSH Tunnel 
-B. Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.
+#### B. SSH Tunnel 
+Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.
     
   1. SSH into the cluster via ssh as outlined [here](https://hpcc.ucr.edu/manuals/linux_basics/intro/).
   2. Log in to a computer node interactively via `srun`, where the proper parameters need to be specified to 
