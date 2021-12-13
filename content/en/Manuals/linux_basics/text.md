@@ -172,7 +172,9 @@ Alternatively, RStudio Server instances can be started via an SSH tunnel after l
    start-rserver.sh
    ```
 
-  5. Next follow the instructions printed to the screen. The command-line calls given in the instructions need be executed in a terminal of a user's local system (not on the remote system).
+  5. Next follow the instructions printed to the terminal. The command-lines given 
+  in these instructions need be executed in a terminal of a user's local system and not on the remote system where
+  `start-rserver.sh` was exectuted.
 
 
 
