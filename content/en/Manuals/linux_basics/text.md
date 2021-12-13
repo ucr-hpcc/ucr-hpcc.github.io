@@ -156,7 +156,7 @@ Alternatively, RStudio Server instances can be started via an SSH tunnel after l
   [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#submitting-jobs).
    
    ```sh
-   srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
+   srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l
    ```
 
   3. Load specific versions of R and RStudio Server from module system
@@ -172,7 +172,7 @@ Alternatively, RStudio Server instances can be started via an SSH tunnel after l
    start-rserver.sh
    ```
 
-  5. Next follow the instructions printed to the terminal. The command-lines given 
+  5. Next follow the instructions printed to the terminal after running . The command-lines given 
   in these instructions need be executed in a terminal of a user's local system and not on the remote system where
   `start-rserver.sh` was exectuted.
 
