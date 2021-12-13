@@ -502,7 +502,8 @@ These include partition name, RAM, number of CPU cores, wall time limit, etc. Ad
 &lt;ol start="3">
 &lt;li>Load specific versions of R and RStudio Server from module system&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code class="language-sh">module load &amp;lt;R/version&amp;gt; # e.g. provide under &amp;lt;...&amp;gt;: R/4.1.1_gcc-8.3.0
+&lt;pre>&lt;code class="language-sh">module unload R
+module load &amp;lt;R/version&amp;gt; # e.g. provide under &amp;lt;...&amp;gt;: R/4.1.1_gcc-8.3.0
 module load &amp;lt;rstudio-server/version&amp;gt; # e.g. provide under &amp;lt;...&amp;gt; : rstudio-server/2021.09.1-372
 &lt;/code>&lt;/pre>
 &lt;ol start="4">
