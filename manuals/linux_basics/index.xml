@@ -486,7 +486,7 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;h4 id="a-web-instance">A. Web Instance&lt;/h4>
 &lt;p>R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: &lt;a href="https://rstudio.hpcc.ucr.edu">https://rstudio.hpcc.ucr.edu&lt;/a>. Next provide your HPCC login credentials.&lt;/p>
 &lt;h4 id="b-ssh-tunnel">B. SSH Tunnel&lt;/h4>
-&lt;p>Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a node interactively. This involves the following steps.&lt;/p>
+&lt;p>Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a computer node interactively. This involves the following steps.&lt;/p>
 &lt;ol>
 &lt;li>SSH into the cluster via ssh as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
 &lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters need to be specified to
