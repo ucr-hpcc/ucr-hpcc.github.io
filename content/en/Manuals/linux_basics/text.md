@@ -138,10 +138,14 @@ Please visit [Visual Studio Code](https://code.visualstudio.com/download) for so
 To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this [guide](https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing)
 
 ## RStudio Server
-Two options, here A and B, exist to access the HPCC cluster via RStudio Server.
+Two options, here A and B, exist to access the HPCC cluster via RStudio Server. While option A is easier for less
+experienced users, it does not allow to choose a specific R version or more extensive computing resources. Experienced 
+users may prefer option B since it does not share these limitations.
 
 #### A. Web Instance
-R users can log in to their HPCC accounts via an RStudio Server instance. To do so, visit this URL: https://rstudio.hpcc.ucr.edu. Next provide your HPCC login credentials.
+R users can log in to their HPCC accounts via an RStudio Server instance. To do
+so, visit this URL: https://rstudio.hpcc.ucr.edu. Next provide your HPCC login
+credentials.
 
 #### B. SSH Tunnel 
 Alternatively, RStudio Server instances can be started via an SSH tunnel after loging into a computer node interactively. This involves the following steps.
@@ -155,14 +159,14 @@ Alternatively, RStudio Server instances can be started via an SSH tunnel after l
    srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
    ```
 
-  3. Load specific versions of R and RStudio Server from module system:
+  3. Load specific versions of R and RStudio Server from module system
 
    ```sh
    module load <R/version> # e.g. provide under <...>: R/4.1.1_gcc-8.3.0
    module load <rstudio-server/version> # e.g. provide under <...> : rstudio-server/2021.09.1-372
    ```
 
-  4. Start RStudio Server: 
+  4. Start RStudio Server 
    
    ```sh
    start-rserver.sh
