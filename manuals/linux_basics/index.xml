@@ -490,7 +490,8 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;ol>
 &lt;li>SSH into the cluster as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/li>
 &lt;li>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters need to be specified to
-set the proper partition, RAM, wall time limit, number of CPU cores, etc.&lt;/li>
+set the proper partition, RAM, wall time limit, number of CPU cores, etc. Additional details on using &lt;code>srun&lt;/code> are available
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#submitting-jobs">here&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-sh">srun --x11 --partition=short --mem=8gb --cpus-per-task 2 --ntasks 1 --time 2:00:00 --pty bash -l`
 &lt;/code>&lt;/pre>
