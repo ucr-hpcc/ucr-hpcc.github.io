@@ -512,7 +512,7 @@ module load &amp;lt;rstudio-server/version&amp;gt; # e.g. provide under &amp;lt;
 &lt;pre>&lt;code class="language-sh">start-rserver.sh
 &lt;/code>&lt;/pre>
 &lt;ol start="5">
-&lt;li>Next follow the instructions printed to the terminal after running . The command-lines given
+&lt;li>Next follow the instructions printed to the terminal after running &lt;code>start-rserver.sh&lt;/code>. The command-lines given
 in these instructions need be executed in a terminal of a user&amp;rsquo;s local system and not on the remote system where
 &lt;code>start-rserver.sh&lt;/code> was exectuted.&lt;/li>
 &lt;/ol></description></item><item><title>Manuals: Streams</title><link>https://hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
