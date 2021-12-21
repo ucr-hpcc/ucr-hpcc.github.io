@@ -501,7 +501,7 @@ This involves the following steps.&lt;/p>
 &lt;p>SSH into the cluster as outlined &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/intro/">here&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Log in to a computer node interactively via &lt;code>srun&lt;/code>, where the proper parameters need to be specified by the user.
+&lt;p>Log in to a compute node interactively via &lt;code>srun&lt;/code>, where the proper parameters need to be specified by the user.
 These include partition name, RAM, number of CPU cores, wall time limit, etc. Additional details on using &lt;code>srun&lt;/code> are available
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#submitting-jobs">here&lt;/a>.&lt;/p>
 &lt;/li>
