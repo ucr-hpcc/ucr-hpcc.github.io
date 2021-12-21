@@ -171,7 +171,7 @@ This involves the following steps.
    srun --partition=short --mem=8gb --cpus-per-task=2 --ntasks=1 --time=2:00:00 --pty bash -l
    ```
    
-  3. Load the latest versions of `R` and `RStudio Server` from module system:
+  3. Load the latest versions of `R` and `RStudio Server` using the module system:
 
    ```bash
    module unload R
