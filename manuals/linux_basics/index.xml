@@ -509,7 +509,7 @@ These include partition name, RAM, number of CPU cores, wall time limit, etc. Ad
 &lt;pre>&lt;code class="language-bash">srun --partition=short --mem=8gb --cpus-per-task=2 --ntasks=1 --time=2:00:00 --pty bash -l
 &lt;/code>&lt;/pre>
 &lt;ol start="3">
-&lt;li>Load the latest versions of &lt;code>R&lt;/code> and &lt;code>RStudio Server&lt;/code> from module system:&lt;/li>
+&lt;li>Load the latest versions of &lt;code>R&lt;/code> and &lt;code>RStudio Server&lt;/code> using the module system:&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-bash">module unload R
 module load R/4.1.1_gcc-8.3.0 # Or latest version
