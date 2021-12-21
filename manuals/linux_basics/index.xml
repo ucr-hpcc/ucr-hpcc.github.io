@@ -484,8 +484,8 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;h2 id="rstudio-server">RStudio Server&lt;/h2>
 &lt;p>Two options exist to access the &lt;code>RStudio Server&lt;/code> &lt;a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE&lt;/a>:&lt;/p>
 &lt;ol>
-&lt;li>Shared Web Instance&lt;/li>
-&lt;li>Compute Node Instance&lt;/li>
+&lt;li>&lt;a href="#1-shared-web-instance">Shared Web Instance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#2-compute-node-instance">Compute Node Instance&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;p>While the &lt;code>Shared Web Instance&lt;/code> is easier for less experienced users, it does not allow to load a specific R version nor access more extensive computing resources.
 Thus, experienced users may prefer the &lt;code>Compute Node Instance&lt;/code> as it does not share these limitations.&lt;/p>
@@ -494,7 +494,7 @@ Thus, experienced users may prefer the &lt;code>Compute Node Instance&lt;/code> 
 To do so, visit the &lt;a href="https://rstudio.hpcc.ucr.edu">HPCC RStudio Server&lt;/a>.
 Next provide your HPCC login credentials and click the &lt;code>Sign In&lt;/code> button.&lt;/p>
 &lt;h3 id="2-compute-node-instance">2. Compute Node Instance&lt;/h3>
-&lt;h4 id="interactive">Interactive&lt;/h4>
+&lt;h4 id="a-interactive">a. Interactive&lt;/h4>
 &lt;p>Alternatively, an RStudio Server instances can be started directly on a compute node and accessed via an SSH tunnel.
 This involves the following steps.&lt;/p>
 &lt;ol>
@@ -526,8 +526,8 @@ module load rstudio-server/2021.09.1-372 # Or latest version
 in these instructions need be executed in a terminal of a user&amp;rsquo;s local system, and not on the remote system where
 &lt;code>start-rserver.sh&lt;/code> was exectuted.&lt;/li>
 &lt;/ol>
-&lt;h4 id="non-interactive">Non-Interactive&lt;/h4>
-&lt;p>The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a compute node instance of &lt;code>RStudio Server&lt;/code>.
+&lt;h4 id="b-non-interactive">b. Non-Interactive&lt;/h4>
+&lt;p>The steps for launching an interactive job can be integrated into a script and submitted non-interactvely for a quicker deployment of a &lt;code>RStudio Server&lt;/code> instance on a compute node.
 Instructions outling how to do this are located &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Streams</title><link>https://hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
 &lt;h2 id="streams">Streams&lt;/h2>
 &lt;p>On the command line, or terminal, there are three very important lanes where information can be sent, we call these &lt;code>streams&lt;/code>.
