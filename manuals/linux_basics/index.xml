@@ -485,15 +485,15 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;p>Two options exist to access the &lt;code>RStudio Server&lt;/code> &lt;a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE&lt;/a>:&lt;/p>
 &lt;ol>
 &lt;li>Shared Web Instance&lt;/li>
-&lt;li>Private Compute Node&lt;/li>
+&lt;li>Compute Node Instance&lt;/li>
 &lt;/ol>
 &lt;p>While the &lt;code>Shared Web Instance&lt;/code> is easier for less experienced users, it does not allow to load a specific R version nor access more extensive computing resources.
-Thus, experienced users may prefer the &lt;code>Private Compute Node&lt;/code> as it does not share these limitations.&lt;/p>
+Thus, experienced users may prefer the &lt;code>Compute Node Instance&lt;/code> as it does not share these limitations.&lt;/p>
 &lt;h4 id="shared-web-instance">Shared Web Instance&lt;/h4>
 &lt;p>R users can log in to their HPCC accounts via an RStudio Server instance.
 To do so, visit the &lt;a href="https://rstudio.hpcc.ucr.edu">HPCC RStudio Server&lt;/a>.
 Next provide your HPCC login credentials and click the &lt;code>Sign In&lt;/code> button.&lt;/p>
-&lt;h4 id="private-compute-node">Private Compute Node&lt;/h4>
+&lt;h4 id="compute-node-instance">Compute Node Instance&lt;/h4>
 &lt;h3 id="interactive">Interactive&lt;/h3>
 &lt;p>Alternatively, an RStudio Server instances can be started directly on a compute node and accessed via an SSH tunnel.
 This involves the following steps.&lt;/p>
@@ -527,7 +527,7 @@ in these instructions need be executed in a terminal of a user&amp;rsquo;s local
 &lt;code>start-rserver.sh&lt;/code> was exectuted.&lt;/li>
 &lt;/ol>
 &lt;h3 id="non-interactive">Non-Interactive&lt;/h3>
-&lt;p>The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a private &lt;code>RStudio Server&lt;/code>.
+&lt;p>The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a compute node instance of &lt;code>RStudio Server&lt;/code>.
 Instructions outling how to do this are located &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Streams</title><link>https://hpcc.ucr.edu/manuals/linux_basics/streams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/streams/</guid><description>
 &lt;h2 id="streams">Streams&lt;/h2>
 &lt;p>On the command line, or terminal, there are three very important lanes where information can be sent, we call these &lt;code>streams&lt;/code>.
