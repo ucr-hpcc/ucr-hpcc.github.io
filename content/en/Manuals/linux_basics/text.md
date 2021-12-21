@@ -145,10 +145,10 @@ To setup Visual Studio Code to remotely edit files on the cluster, please go to 
 Two options exist to access the `RStudio Server` [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment):
 
   1. Shared Web Instance
-  2. Private Compute Node
+  2. Compute Node Instance
 
 While the `Shared Web Instance` is easier for less experienced users, it does not allow to load a specific R version nor access more extensive computing resources.
-Thus, experienced users may prefer the `Private Compute Node` as it does not share these limitations.
+Thus, experienced users may prefer the `Compute Node Instance` as it does not share these limitations.
 
 #### Shared Web Instance
 
@@ -156,7 +156,7 @@ R users can log in to their HPCC accounts via an RStudio Server instance.
 To do so, visit the [HPCC RStudio Server](https://rstudio.hpcc.ucr.edu).
 Next provide your HPCC login credentials and click the `Sign In` button.
 
-#### Private Compute Node
+#### Compute Node Instance
 
 ### Interactive
 
@@ -193,5 +193,5 @@ This involves the following steps.
 
 ### Non-Interactive
 
-The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a private `RStudio Server`.
+The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a compute node instance of `RStudio Server`.
 Instructions outling how to do this are located [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive).
