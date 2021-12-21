@@ -150,15 +150,15 @@ Two options exist to access the `RStudio Server` [IDE](https://en.wikipedia.org/
 While the `Shared Web Instance` is easier for less experienced users, it does not allow to load a specific R version nor access more extensive computing resources.
 Thus, experienced users may prefer the `Compute Node Instance` as it does not share these limitations.
 
-#### Shared Web Instance
+### 1. Shared Web Instance
 
 R users can log in to their HPCC accounts via an RStudio Server instance.
 To do so, visit the [HPCC RStudio Server](https://rstudio.hpcc.ucr.edu).
 Next provide your HPCC login credentials and click the `Sign In` button.
 
-#### Compute Node Instance
+### 2. Compute Node Instance
 
-### Interactive
+#### Interactive
 
 Alternatively, an RStudio Server instances can be started directly on a compute node and accessed via an SSH tunnel.
 This involves the following steps.
@@ -191,7 +191,7 @@ This involves the following steps.
   in these instructions need be executed in a terminal of a user's local system, and not on the remote system where
   `start-rserver.sh` was exectuted.
 
-### Non-Interactive
+#### Non-Interactive
 
 The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a compute node instance of `RStudio Server`.
 Instructions outling how to do this are located [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive).
