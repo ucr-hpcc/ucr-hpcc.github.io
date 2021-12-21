@@ -158,6 +158,8 @@ Next provide your HPCC login credentials and click the `Sign In` button.
 
 #### Private Compute Node
 
+### Interactive
+
 Alternatively, an RStudio Server instances can be started directly on a compute node and accessed via an SSH tunnel.
 This involves the following steps.
     
@@ -188,5 +190,8 @@ This involves the following steps.
   5. Next follow the instructions printed to the terminal after running `start-rserver.sh`. The command-lines given 
   in these instructions need be executed in a terminal of a user's local system, and not on the remote system where
   `start-rserver.sh` was exectuted.
-  
-Of course these steps can be integrated into a script and submitting non-interactvely for a quicker deployment of a private `RStudio Server`, instructions are outlined [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive).
+
+### Non-Interactive
+
+The steps for launching an interactive job can be integrated into a script and submitting non-interactvely for a quicker deployment of a private `RStudio Server`.
+Instructions outling how to do this are located [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive).
