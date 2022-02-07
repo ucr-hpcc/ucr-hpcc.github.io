@@ -7,9 +7,70 @@ aliases:
     - /changes
 ---
 
+## User-facing Changes Implemented on 11-Feb-2022
+
+The old `CentOS/RHEL 7` platform will be permanently retired on March 11th.
+This 30 day transition period should be used to log into the new `Rocky/RHEL 8` platform and test your workflow.
+The change from `RHEL 7` to `RHEL 8` will impact users in the following ways:
+
+### Operating System
+
+The biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
+[Rocky Linux](https://rockylinux.org/) is the community equivalent and identical to `RHEL` (similar to how `CentOS` was).
+
+<!--
+For the past 7 years we have been using a `R`ed `H`at `E`nterprise `L`inux (`RHEL`) derivative called `CentOS Linux` (not to be confused with `CentOS Stream`).
+Since `CentOS Linux` is [no longer supported](https://www.centos.org/news-and-events/1322-october-centos-dojo-videos/), 
+we made the decision to stay in the RHEL family and go with [Rocky Linux](https://rockylinux.org/).
+
+> Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux
+-->
+
+### Passwords
+
+Passwords will need to be reset from the old platform first with the `passwd` command, since we are moving to a newer encryption cypher.
+You must also configure DUO if using a password, alternatively create an SSH key pair.
+For more information refer to our manual page regarding [Login](https://hpcc.ucr.edu/manuals/hpc_cluster/login/).
+
+### Software
+
+Some software may not be installed, may not be installed as a module, or may be installed but under a different version.
+If you cannot find what you are looking for just send an installation request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
+
+Compatibility mode (`singularity`) can be used to run the older `CentOS 7` modules, however this may not work in all cases.
+Please refer to our [Singularity Examples](https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/) for more information.
+
+### Bash
+
+We officially support bash, even though other shells may work they have not been tested under the new `Rocky/RHEL 8` platform.
+
+When logging in under a bash shell, some errors/warning may be visible.
+The most common message being that a module cannot be loaded.
+Assuming the software is available, ensure a proper check is in place around loading modules within your `~/.bashrc` and/or `~/.bash_profile` files.
+
+For example:
+
+```
+if [[ "$(type -t module)" == "function" ]]; then
+    module load tmux
+    module load neovim
+fi
+```
+
+It may also help to keep `~/.bashrc` free of uneccessry bloat and only add customized changes to `~/.bash_profile`.
+Also keep in mind that when running jobs with just `/bin/bash` the `~/.bashrc` file is loaded.
+However adding the lower case `L` to a job's interpreter, as in `/bin/bash -l` this will load the `~/.bash_profile` file.
+This can be useful when you sometimes want a default job bash shell, and other times you may want customized job bash shell.
+
+### Slurm
+
+A newer version of Slurm is being used on the new `Rocky/RHEL 8` platform, however very little is different from the previous version.
+All previous job submission scripts and commands/flags should still be compatible.
+
 ## User-facing Changes Implemented on 23-Aug-2019 
 
 ### Domain Names
+
 The old domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
 name for the following services:
 + _ssh/scp/ftp/http_: `cluster.hpcc.ucr.edu` instead of `biocluster.ucr.edu` 
@@ -20,6 +81,7 @@ name for the following services:
 In addition, URLs containing `biocluster.ucr.edu` need to be updated to `cluster.hpcc.ucr.edu`.
 
 ### Password Reset
+
 After the upgrade on Aug 23, 2019, all HPCC users have been emailed a temporary
 password with instructions how to change it. This email was sent to the address
 we have on file for each user. In case you missed the corresponding email
@@ -27,6 +89,7 @@ notification and/or you are not able to log into the cluster, please email us
 at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to receive a new password.
 
 ### Updated OpenMPI
+
 If you have compiled or use software that was compiled with OpenMPI, then it will need to be recompiled.
 If you are running into any issues, please email us at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 
