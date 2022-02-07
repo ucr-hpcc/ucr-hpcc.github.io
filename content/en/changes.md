@@ -9,7 +9,7 @@ aliases:
 
 ## User-facing Changes Implemented on 11-Feb-2022
 
-The old `CentOS/RHEL 7` platform will be permanently retired on March 11th.
+The old `CentOS/RHEL 7` platform will be permanently retired on March 13th.
 This 30 day transition period should be used to log into the new `Rocky/RHEL 8` platform and test your workflow.
 The change from `RHEL 7` to `RHEL 8` will impact users in the following ways:
 
