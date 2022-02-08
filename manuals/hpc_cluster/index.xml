@@ -1657,4 +1657,48 @@ From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
 Host secure.hpcc.ucr.edu
 Port 22
 &lt;/code>&lt;/pre>
-&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item></channel></rss>
+&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: Singularity Jobs</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</guid><description>
+&lt;h2 id="what-is-singularity">What is Singularity&lt;/h2>
+&lt;p>In short, &lt;code>Singularity&lt;/code> is a program that will allow a user to run code or command, within a customized environment.
+We will refer to this customized environment as a &lt;code>container&lt;/code>.
+This type of container system is common, the more popular one being &lt;a href="https://www.docker.com/">Docker&lt;/a>.
+Since &lt;code>Docker&lt;/code> requires root access and HPC users are not typically granted these permissions, we use Singularity instead.
+&lt;code>Docker&lt;/code> containers can be used via &lt;code>Singularity&lt;/code>, with varying compatibility.&lt;/p>
+&lt;p>&lt;code>Singularity&lt;/code> is forking into 2 branches:
+* &lt;a href="https://sylabs.io/">Singularity-CE&lt;/a> - Community Edition from Sylabs.io
+* &lt;a href="https://apptainer.org/">Apptainer&lt;/a> - Original Sinularity open source project&lt;/p>
+&lt;p>We will be using &lt;code>Apptainer&lt;/code> when it is ready for production use.
+However, in the meantime, &lt;code>singularity-ce&lt;/code> is currently availble on the cluster.&lt;/p>
+&lt;h2 id="how-to-use-singularity">How to use Singularity&lt;/h2>
+&lt;p>&lt;code>Singularity&lt;/code> is easy to use.
+You can run &lt;code>singularity&lt;/code> in an interactive mode by calling a shell, or you can run &lt;code>singularity&lt;/code> in a non-interactive mode and just pass it a script.
+This 2 modes are very similar to job submission on the cluster; &lt;code>srun&lt;/code> is used for interactive, while &lt;code>sbatch&lt;/code> is used for non-interactive.&lt;/p>
+&lt;h3 id="interactive-singularity">Interactive Singularity&lt;/h3>
+&lt;p>When running singularity you need to provide the path to a &lt;code>singularity&lt;/code> image file.
+For example, this would be the most basic way to get a shell within your container:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity shell /path/to/singularity/image
+&lt;/code>&lt;/pre>
+&lt;p>Typically when we install &lt;code>singularity&lt;/code> enabled software, we will also create an environment variable which holds the location of the &lt;code>singularity&lt;/code> image file.
+For example, this would be how we would use the &lt;code>centos&lt;/code> module:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load centos
+singularity shell $CENTOS7_SING
+&lt;/code>&lt;/pre>
+&lt;p>There is a special shortcut for the &lt;code>centos&lt;/code> module that allows us to run the above more simply, as:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load centos
+centos.sh
+&lt;/code>&lt;/pre>
+&lt;h3 id="non-interactive-singularity">Non-Interactive Singularity&lt;/h3>
+&lt;p>When running singularity as non-interactive, the same basic rules apply, we need a path to our &lt;code>singularity&lt;/code> image file as well as a command.
+For example, here is the basic syntax:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity exec /path/to/singularity/image someCommand
+&lt;/code>&lt;/pre>
+&lt;p>Using &lt;code>centos&lt;/code> as an example, you can execute an abitraty command like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity exec $CENTOS7_SING cat /etc/redhat-release
+&lt;/code>&lt;/pre>
+&lt;p>Now using the &lt;code>centos&lt;/code> shortcut:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
+&lt;/code>&lt;/pre></description></item></channel></rss>
