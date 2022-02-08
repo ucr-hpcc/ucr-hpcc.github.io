@@ -1664,9 +1664,10 @@ We will refer to this customized environment as a &lt;code>container&lt;/code>.
 This type of container system is common, the more popular one being &lt;a href="https://www.docker.com/">Docker&lt;/a>.
 Since &lt;code>Docker&lt;/code> requires root access and HPC users are not typically granted these permissions, we use Singularity instead.
 &lt;code>Docker&lt;/code> containers can be used via &lt;code>Singularity&lt;/code>, with varying compatibility.&lt;/p>
-&lt;p>&lt;code>Singularity&lt;/code> is forking into 2 branches:
-* &lt;a href="https://sylabs.io/">Singularity-CE&lt;/a> - Community Edition from Sylabs.io
-* &lt;a href="https://apptainer.org/">Apptainer&lt;/a> - Original Sinularity open source project&lt;/p>
+&lt;p>&lt;code>Singularity&lt;/code> is forking into 2 branches:&lt;/p>
+&lt;pre>&lt;code>* [Singularity-CE](https://sylabs.io/) - Community Edition from Sylabs.io
+* [Apptainer](https://apptainer.org/) - Original Sinularity open source project
+&lt;/code>&lt;/pre>
 &lt;p>We will be using &lt;code>Apptainer&lt;/code> when it is ready for production use.
 However, in the meantime, &lt;code>singularity-ce&lt;/code> is currently availble on the cluster.&lt;/p>
 &lt;h2 id="how-to-use-singularity">How to use Singularity&lt;/h2>
@@ -1688,6 +1689,10 @@ singularity shell $CENTOS7_SING
 &lt;pre>&lt;code class="language-bash">module load centos
 centos.sh
 &lt;/code>&lt;/pre>
+&lt;p>Here is a another example that utilizes an interactive job:&lt;/p>
+&lt;pre>&lt;code>module load centos
+srun -p batch --mem=1g -c 4 --time=2:00:00 --pty centos.sh
+&lt;/code>&lt;/pre>
 &lt;h3 id="non-interactive-singularity">Non-Interactive Singularity&lt;/h3>
 &lt;p>When running singularity as non-interactive, the same basic rules apply, we need a path to our &lt;code>singularity&lt;/code> image file as well as a command.
 For example, here is the basic syntax:&lt;/p>
@@ -1699,6 +1704,14 @@ singularity exec /path/to/singularity/image someCommand
 singularity exec $CENTOS7_SING cat /etc/redhat-release
 &lt;/code>&lt;/pre>
 &lt;p>Now using the &lt;code>centos&lt;/code> shortcut:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module load singularity
+&lt;pre>&lt;code class="language-bash">module load centos
 centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;p>Here is a more complex example with modules:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load centos
+centos.sh &amp;quot;module load samtools; samtools --help&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;p>Here is an even more complex example within a job:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load centos
+sbatch -p batch --wrap=&amp;quot;centos.sh 'module load samtools; samtools --help'&amp;quot;
 &lt;/code>&lt;/pre></description></item></channel></rss>
