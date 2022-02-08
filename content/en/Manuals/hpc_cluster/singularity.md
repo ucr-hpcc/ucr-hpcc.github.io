@@ -14,8 +14,8 @@ Since `Docker` requires root access and HPC users are not typically granted thes
 
 `Singularity` is forking into 2 branches:
 
-    * [Singularity-CE](https://sylabs.io/) - Community Edition from Sylabs.io
-    * [Apptainer](https://apptainer.org/) - Original Sinularity open source project
+* [Singularity-CE](https://sylabs.io/) - Community Edition from Sylabs.io
+* [Apptainer](https://apptainer.org/) - Original Sinularity open source project
 
 We will be using `Apptainer` when it is ready for production use.
 However, in the meantime, `singularity-ce` is currently availble on the cluster.
