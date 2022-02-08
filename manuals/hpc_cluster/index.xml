@@ -1665,9 +1665,10 @@ This type of container system is common, the more popular one being &lt;a href="
 Since &lt;code>Docker&lt;/code> requires root access and HPC users are not typically granted these permissions, we use Singularity instead.
 &lt;code>Docker&lt;/code> containers can be used via &lt;code>Singularity&lt;/code>, with varying compatibility.&lt;/p>
 &lt;p>&lt;code>Singularity&lt;/code> is forking into 2 branches:&lt;/p>
-&lt;pre>&lt;code>* [Singularity-CE](https://sylabs.io/) - Community Edition from Sylabs.io
-* [Apptainer](https://apptainer.org/) - Original Sinularity open source project
-&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>&lt;a href="https://sylabs.io/">Singularity-CE&lt;/a> - Community Edition from Sylabs.io&lt;/li>
+&lt;li>&lt;a href="https://apptainer.org/">Apptainer&lt;/a> - Original Sinularity open source project&lt;/li>
+&lt;/ul>
 &lt;p>We will be using &lt;code>Apptainer&lt;/code> when it is ready for production use.
 However, in the meantime, &lt;code>singularity-ce&lt;/code> is currently availble on the cluster.&lt;/p>
 &lt;h2 id="how-to-use-singularity">How to use Singularity&lt;/h2>
