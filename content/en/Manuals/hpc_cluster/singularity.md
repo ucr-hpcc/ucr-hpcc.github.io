@@ -13,6 +13,7 @@ Since `Docker` requires root access and HPC users are not typically granted thes
 `Docker` containers can be used via `Singularity`, with varying compatibility.
 
 `Singularity` is forking into 2 branches:
+
     * [Singularity-CE](https://sylabs.io/) - Community Edition from Sylabs.io
     * [Apptainer](https://apptainer.org/) - Original Sinularity open source project
 
@@ -50,6 +51,13 @@ module load centos
 centos.sh
 ```
 
+Here is a another example that utilizes an interactive job:
+
+```
+module load centos
+srun -p batch --mem=1g -c 4 --time=2:00:00 --pty centos.sh
+```
+
 ### Non-Interactive Singularity
 
 When running singularity as non-interactive, the same basic rules apply, we need a path to our `singularity` image file as well as a command.
@@ -70,6 +78,20 @@ singularity exec $CENTOS7_SING cat /etc/redhat-release
 Now using the `centos` shortcut:
 
 ```bash
-module load singularity
+module load centos
 centos.sh "cat /etc/redhat-release"
+```
+
+Here is a more complex example with modules:
+
+```bash
+module load centos
+centos.sh "module load samtools; samtools --help"
+```
+
+Here is an even more complex example within a job:
+
+```bash
+module load centos
+sbatch -p batch --wrap="centos.sh 'module load samtools; samtools --help'"
 ```
