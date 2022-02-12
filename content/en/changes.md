@@ -11,7 +11,11 @@ aliases:
 
 The old `CentOS/RHEL 7` platform will be permanently retired on March 13th.
 This 30 day transition period should be used to log into the new `Rocky/RHEL 8` platform and test your workflow.
-The change from `RHEL 7` to `RHEL 8` will impact users in the following ways:
+
+Currently, the `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
+To check which platform you are on, you can run the `platform` command.
+
+The change from `RHEL 7` to `RHEL 8` will impact users in the following ways mentioned below.
 
 ### Operating System
 
@@ -50,7 +54,7 @@ Assuming the software is available, ensure a proper check is in place around loa
 
 For example:
 
-```
+```bash
 if [[ "$(type -t module)" == "function" ]]; then
     module load tmux
     module load neovim
@@ -66,6 +70,16 @@ This can be useful when you sometimes want a default job bash shell, and other t
 
 A newer version of Slurm is being used on the new `Rocky/RHEL 8` platform, however very little is different from the previous version.
 All previous job submission scripts and commands/flags should still be compatible.
+
+From the old `CentOS/RHEL 7` platform, during the transission period, any Slurm jobs scheduled to start after March 11th will never start.
+Please check your jobs and ensure that then run before this time frame.
+You can check your start times with the following command:
+
+```bash
+squeue --start -u $USER
+```
+
+Be sure to move to the newer `Rocky/RHEL 8` platform as soon as possible.
 
 ## User-facing Changes Implemented on 23-Aug-2019 
 
