@@ -9,10 +9,10 @@ aliases:
 
 ## User-facing Changes Implemented on 11-Feb-2022
 
-The old `CentOS/RHEL 7` platform will be permanently retired on March 13th.
+The old `CentOS/RHEL 7` platform will be permanently retired on the 17th of March.
 This 30 day transition period should be used to log into the new `Rocky/RHEL 8` platform and test your workflow.
 
-Currently, the `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
+Currently, `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
 To check which platform you are on, you can run the `platform` command.
 
 The change from `RHEL 7` to `RHEL 8` will impact users in the following ways mentioned below.
@@ -33,7 +33,7 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 ### Passwords
 
 Passwords will need to be reset from the old platform first with the `passwd` command, since we are moving to a newer encryption cypher.
-You must also configure DUO if using a password, alternatively create an SSH key pair.
+You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
 For more information refer to our manual page regarding [Login](https://hpcc.ucr.edu/manuals/hpc_cluster/login/).
 
 ### Software
@@ -50,7 +50,16 @@ We officially support bash, even though other shells may work they have not been
 
 When logging in under a bash shell, some errors/warning may be visible.
 The most common message being that a module cannot be loaded.
-Assuming the software is available, ensure a proper check is in place around loading modules within your `~/.bashrc` and/or `~/.bash_profile` files.
+
+Check if the module (ie. `vim`) is available with the following:
+
+```bash
+module avail vim
+```
+
+If there is no output, then the module is not currently available. Either remove the `module load vim` from your `~/.bashrc` and/or `~/.bash_profile` files, or request that it be installed.
+
+If the software is available, ensure a proper check is in place around loading modules within your `~/.bashrc` and/or `~/.bash_profile` files.
 
 For example:
 
@@ -71,8 +80,8 @@ This can be useful when you sometimes want a default job bash shell, and other t
 A newer version of Slurm is being used on the new `Rocky/RHEL 8` platform, however very little is different from the previous version.
 All previous job submission scripts and commands/flags should still be compatible.
 
-From the old `CentOS/RHEL 7` platform, during the transission period, any Slurm jobs scheduled to start after March 11th will never start.
-Please check your jobs and ensure that then run before this time frame.
+During the transition period From the old `CentOS/RHEL 7` platform any Slurm jobs scheduled to start after March 17th will never start.
+Please check your jobs and ensure that they run before this time frame.
 You can check your start times with the following command:
 
 ```bash
