@@ -1579,6 +1579,10 @@ vglrun -display :$(head -1 ~/.CUDA_VISIBLE_DEVICES) Amira
 &lt;/code>&lt;/pre>
 &lt;/li>
 &lt;/ol></description></item><item><title>Manuals: Login</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
+&lt;blockquote>
+&lt;p>IMPORTANT!!! All users passwords have expired on &lt;code>Feb 16th&lt;/code>. Users will be forced to update them upon next login.
+This will ensure that the latest encryption is being used, and thus compatible with the new platform.&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="login">Login&lt;/h2>
 &lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>
@@ -1587,7 +1591,7 @@ Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">
 &lt;li>Old (password) and new (secure) authentication methods are provided through &lt;code>cluster.hpcc.ucr.edu&lt;/code> and &lt;code>secure.hpcc.ucr.edu&lt;/code> respectively.&lt;/li>
 &lt;li>Users configure new authentication method.&lt;/li>
 &lt;li>Users log into the cluster using host &lt;code>secure.hpcc.ucr.edu&lt;/code>.&lt;/li>
-&lt;li>After the authentication switch over deadline (TBD), host &lt;code>cluster.hpcc.ucr.edu&lt;/code> switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.&lt;/li>
+&lt;li>After the authentication switch over deadline (&lt;code>March 17th&lt;/code>), host &lt;code>cluster.hpcc.ucr.edu&lt;/code> switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.&lt;/li>
 &lt;/ol>
 &lt;h2 id="secure-authentication">Secure Authentication&lt;/h2>
 &lt;p>There are two methods of authentication that the cluster supports:&lt;/p>
@@ -1596,11 +1600,11 @@ Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">
 &lt;li>&lt;a href="#ssh-keys">SSH Keys&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="passwordduo">Password+Duo&lt;/h3>
-&lt;p>The &lt;code>Password+DUO&lt;/code> combination method will only work if your UCR NetID matches your cluster username.
-If these two match then first check if you already have DUO installed and configured on a mobile device.
+&lt;p>The &lt;code>Password+DUO&lt;/code> combination method will only work if your UCR NetID matches your cluster username.&lt;/p>
+&lt;p>If your cluster user name does not match your UCR NetID, however you wish to change your cluster username so that it does, please send in a username change request to &lt;a href="mailto:support@hpcc.ucr.edu">support&lt;/a>.&lt;/p>
+&lt;p>After they match then first check if you already have DUO installed and configured on a mobile device.
 If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling:
-&lt;a href="https://cnc.ucr.edu/mfa/enrollment.html">https://cnc.ucr.edu/mfa/enrollment.html&lt;/a>&lt;/p>
+Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling &lt;a href="https://cnc.ucr.edu/mfa/enrollment.html">here&lt;/a>.&lt;/p>
 &lt;p>Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
 If you have a new account then your password was emailed to you when your account was created.&lt;/p>
 &lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
@@ -1611,7 +1615,9 @@ If you have a new account then your password was emailed to you when your accoun
 Depending on how you chose to configure/enrolling your mobile device, you may see multiple options.&lt;/p>
 &lt;p>DUO uses either an option for DUO authentication via &lt;code>Push&lt;/code> which uses the mobile app, or via &lt;code>SMS&lt;/code> which sends a code as a text message to your phone.
 Choose whichever option works best for you.&lt;/p>
-&lt;p>After logging in successfully, you are expected to update your password with the &lt;code>passwd&lt;/code> command.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: New users are expected to change their temporary password with the &lt;code>passwd&lt;/code> command upon successful login.&lt;/p>
+&lt;/blockquote>
 &lt;p>For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
 &lt;a href="https://cnc.ucr.edu/mfa/how.html">https://cnc.ucr.edu/mfa/how.html&lt;/a>&lt;/p>
 &lt;h3 id="ssh-keys">SSH Keys&lt;/h3>
