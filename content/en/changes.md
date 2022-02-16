@@ -48,7 +48,7 @@ Please refer to our [Singularity Examples](https://hpcc.ucr.edu/manuals/hpc_clus
 
 We officially support bash, even though other shells may work they have not been tested under the new `Rocky/RHEL 8` platform.
 
-When logging in under a bash shell, some errors/warning may be visible.
+When logging in under a bash shell, some errors/warnings may be visible.
 The most common message being that a module cannot be loaded.
 
 Check if the module (ie. `vim`) is available with the following:
@@ -70,10 +70,10 @@ if [[ "$(type -t module)" == "function" ]]; then
 fi
 ```
 
-It may also help to keep `~/.bashrc` free of uneccessry bloat and only add customized changes to `~/.bash_profile`.
+It may also help to keep `~/.bashrc` free of unnecessary bloat and only add customized changes to `~/.bash_profile`.
 Also keep in mind that when running jobs with just `/bin/bash` the `~/.bashrc` file is loaded.
-However adding the lower case `L` to a job's interpreter, as in `/bin/bash -l` this will load the `~/.bash_profile` file.
-This can be useful when you sometimes want a default job bash shell, and other times you may want customized job bash shell.
+However, adding the lower case `L` to a job's interpreter, as in `/bin/bash -l` this will load the `~/.bash_profile` file.
+This can be useful since it provides flexibility to initialize a default job shell or a customized job shell.
 
 ### Slurm
 

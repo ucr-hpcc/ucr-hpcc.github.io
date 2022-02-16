@@ -20,11 +20,18 @@ Since `Docker` requires root access and HPC users are not typically granted thes
 We will be using `Apptainer` when it is ready for production use.
 However, in the meantime, `singularity-ce` is currently availble on the cluster.
 
+## Limitations
+
+Currently we are not supporting Slurm jobs bening submitted from within a container.
+If you load the container `centos/7.9` and try to submit a job from within it will fail.
+Please contact support in order to work around this issue.
+
 ## How to use Singularity
 
 `Singularity` is easy to use.
 You can run `singularity` in an interactive mode by calling a shell, or you can run `singularity` in a non-interactive mode and just pass it a script.
 This 2 modes are very similar to job submission on the cluster; `srun` is used for interactive, while `sbatch` is used for non-interactive.
+
 
 ### Interactive Singularity
 
