@@ -1671,6 +1671,10 @@ Since &lt;code>Docker&lt;/code> requires root access and HPC users are not typic
 &lt;/ul>
 &lt;p>We will be using &lt;code>Apptainer&lt;/code> when it is ready for production use.
 However, in the meantime, &lt;code>singularity-ce&lt;/code> is currently availble on the cluster.&lt;/p>
+&lt;h2 id="limitations">Limitations&lt;/h2>
+&lt;p>Currently we are not supporting Slurm jobs bening submitted from within a container.
+If you load the container &lt;code>centos/7.9&lt;/code> and try to submit a job from within it will fail.
+Please contact support in order to work around this issue.&lt;/p>
 &lt;h2 id="how-to-use-singularity">How to use Singularity&lt;/h2>
 &lt;p>&lt;code>Singularity&lt;/code> is easy to use.
 You can run &lt;code>singularity&lt;/code> in an interactive mode by calling a shell, or you can run &lt;code>singularity&lt;/code> in a non-interactive mode and just pass it a script.
