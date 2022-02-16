@@ -38,8 +38,25 @@ For more information refer to our manual page regarding [Login](https://hpcc.ucr
 
 ### Software
 
-Some software may not be installed, may not be installed as a module, or may be installed but under a different version.
-If you cannot find what you are looking for just send an installation request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
+Previous software may be installed under a different version, or may no longer be installed as a module, or may not be installed at all.
+Run the following command to list currently available modules:
+
+```bash
+module avail
+```
+
+Or you can search for a specific software (ie. `vim`) like so:
+
+```bash
+module avail vim
+```
+
+```bash
+which vim
+```
+
+Since the new platform is built using `GCC 8.5`, then all previous compiled software must be re-compiled on the new platform.
+If you cannot find what you are looking for send an installation request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 
 Compatibility mode (`singularity`) can be used to run the older `CentOS 7` modules, however this may not work in all cases.
 Please refer to our [Singularity Examples](https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/) for more information.
