@@ -32,7 +32,7 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 
 ### Passwords
 
-Passwords will need to be reset from the old platform first with the `passwd` command, since we are moving to a newer encryption cypher.
+Passwords will be expired and users will need to reset their password upon next login.
 You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
 For more information refer to our manual page regarding [Login](https://hpcc.ucr.edu/manuals/hpc_cluster/login/).
 
