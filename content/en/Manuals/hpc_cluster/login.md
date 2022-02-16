@@ -8,6 +8,9 @@ aliases:
     - /manuals_linux-basics_intro
 ---
 
+> IMPORTANT!!! All users passwords have expired on `Feb 16th`. Users will be forced to update them upon next login.
+> This will ensure that the latest encryption is being used, and thus compatible with the new platform.
+
 ## Login
 
 We are moving all accounts to a more secure method of authentication for logging into the cluster.
@@ -18,7 +21,7 @@ Roll-Out Plan:
 1. Old (password) and new (secure) authentication methods are provided through `cluster.hpcc.ucr.edu` and `secure.hpcc.ucr.edu` respectively.
 2. Users configure new authentication method.
 3. Users log into the cluster using host `secure.hpcc.ucr.edu`.
-4. After the authentication switch over deadline (TBD), host `cluster.hpcc.ucr.edu` switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.
+4. After the authentication switch over deadline (`March 17th`), host `cluster.hpcc.ucr.edu` switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.
 
 ## Secure Authentication
 
@@ -30,10 +33,12 @@ There are two methods of authentication that the cluster supports:
 ### Password+Duo
 
 The `Password+DUO` combination method will only work if your UCR NetID matches your cluster username.
-If these two match then first check if you already have DUO installed and configured on a mobile device.
+
+If your cluster user name does not match your UCR NetID, however you wish to change your cluster username so that it does, please send in a username change request to [support](mailto:support@hpcc.ucr.edu).
+
+After they match then first check if you already have DUO installed and configured on a mobile device.
 If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling:
-[https://cnc.ucr.edu/mfa/enrollment.html](https://cnc.ucr.edu/mfa/enrollment.html)
+Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling [here](https://cnc.ucr.edu/mfa/enrollment.html).
 
 Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
 If you have a new account then your password was emailed to you when your account was created.
@@ -52,7 +57,7 @@ Depending on how you chose to configure/enrolling your mobile device, you may se
 DUO uses either an option for DUO authentication via `Push` which uses the mobile app, or via `SMS` which sends a code as a text message to your phone.
 Choose whichever option works best for you.
 
-After logging in successfully, you are expected to update your password with the `passwd` command.
+> Note: New users are expected to change their temporary password with the `passwd` command upon successful login.
 
 For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
 [https://cnc.ucr.edu/mfa/how.html](https://cnc.ucr.edu/mfa/how.html)
