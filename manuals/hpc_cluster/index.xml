@@ -1580,7 +1580,7 @@ vglrun -display :$(head -1 ~/.CUDA_VISIBLE_DEVICES) Amira
 &lt;/li>
 &lt;/ol></description></item><item><title>Manuals: Login</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
 &lt;blockquote>
-&lt;p>IMPORTANT!!! All users passwords have expired on &lt;code>Feb 16th&lt;/code>. Users will be forced to update them upon next login.
+&lt;p>IMPORTANT!!! All users passwords have expired on &lt;code>Feb 18th&lt;/code>. Users will be forced to update them upon next login.
 This will ensure that the latest encryption is being used, and thus compatible with the new platform.&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="login">Login&lt;/h2>
