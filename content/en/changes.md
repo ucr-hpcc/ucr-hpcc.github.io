@@ -1,6 +1,6 @@
 ---
-title: Updates for HPCC Users
-linkTitle: Updates for HPCC Users
+title: Changes for HPCC Users
+linkTitle: Changes for HPCC Users
 type: docs
 aliases:
     - /changes.html
