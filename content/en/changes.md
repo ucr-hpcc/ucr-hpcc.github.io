@@ -34,7 +34,7 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 
 Passwords will be expired and users will need to reset their password upon next login.
 You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
-For more information refer to our manual page regarding [Login](https://hpcc.ucr.edu/manuals/hpc_cluster/login/).
+For more information refer to our manual page regarding [Login](/manuals/hpc_cluster/login/).
 
 ### Software
 
@@ -59,7 +59,7 @@ Since the new platform is built using `GCC 8.5`, then all previous compiled soft
 If you cannot find what you are looking for send an installation request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 
 Compatibility mode (`singularity`) can be used to run the older `CentOS 7` modules, however this may not work in all cases.
-Please refer to our [Singularity Examples](https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/) for more information.
+Please refer to our [Singularity Examples](/manuals/hpc_cluster/singularity/) for more information.
 
 ### Bash
 
@@ -106,6 +106,12 @@ squeue --start -u $USER
 ```
 
 Be sure to move to the newer `Rocky/RHEL 8` platform as soon as possible.
+
+### Transfer Accounts
+
+If you are currently using a transfer account, it is very likely that you do not have a UCR NetID, 
+and this will only be able to access the cluster via SSH keys.
+Please refer to our [SSH keys](/manuals/hpc_cluster/sshkeys/) manual for detail instructions.
 
 ## User-facing Changes Implemented on 23-Aug-2019 
 
