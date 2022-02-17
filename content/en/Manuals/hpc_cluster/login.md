@@ -8,7 +8,7 @@ aliases:
     - /manuals_linux-basics_intro
 ---
 
-> IMPORTANT!!! All users passwords have expired on `Feb 16th`. Users will be forced to update them upon next login.
+> IMPORTANT!!! All users passwords have expired on `Feb 18th`. Users will be forced to update them upon next login.
 > This will ensure that the latest encryption is being used, and thus compatible with the new platform.
 
 ## Login
