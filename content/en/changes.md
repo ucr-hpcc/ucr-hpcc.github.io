@@ -1,6 +1,6 @@
 ---
-title: Changes for HPCC Users
-linkTitle: Changes for HPCC Users
+title: Important Changes for HPCC Users
+linkTitle: Important Changes for HPCC Users
 type: docs
 aliases:
     - /changes.html
@@ -9,13 +9,22 @@ aliases:
 
 ## User-facing Changes Implemented on 18-Feb-2022
 
-The old `CentOS/RHEL 7` platform will be permanently retired on the 17th of March.
-This 30 day transition period should be used to log into the new `Rocky/RHEL 8` platform and test your workflow.
+This is to inform users about several important system upgrades the HPC
+Center (HPCC) will be implementing in the next 30 days (starting February 18th
+2022). Importantly, these changes are relevant to all users including those who
+are accessing the HPCC systems via JupyterHub, RStudio Server, SSH or sFTP/SCP.
+Thus, please read the instructions below carefully. If anything is unclear or
+there are questions, please email support@hpcc.ucr.edu for help.
+
+The most important change will be the switch from the old `CentOS/RHEL 7` platform 
+to the new `Rocky/RHEL 8`. We anticipate to finalize this upgrade on March 17th, 2022.
+This gives users a 30-day transition period to log into the new `Rocky/RHEL 8` platform 
+and test whether the software and other resouces they are using for their research are properly working.
 
 Currently, `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
 To check which platform you are on, you can run the `platform` command.
 
-The change from `RHEL 7` to `RHEL 8` will impact users in the following ways mentioned below.
+The upgrade from `RHEL 7` to `RHEL 8` will result in the following user-facing changes.
 
 ### Operating System
 
