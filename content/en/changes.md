@@ -9,7 +9,7 @@ aliases:
 
 ## Rollout of Rocky and DUO from Feb 18 to Mar 17, 2022
 
-<center><a href="https://drive.google.com/file/d/12DzXEWPC5CssRJdeIOle1LBYU4DgNIVc/view?usp=sharing">Email notification</a> sent to users on 18-Feb-2022.</center>
+<center>Also see <a href="https://drive.google.com/file/d/12DzXEWPC5CssRJdeIOle1LBYU4DgNIVc/view?usp=sharing">email notification</a> sent to users on 18-Feb-2022.</center>
 <br></br>
 
 This is to inform users about several important system upgrades the HPCC will
