@@ -28,7 +28,7 @@ understand the deployment of Rocky 8 is a major upgrade that requires the
 systems administrators recompiling most software from the old system onto the
 new system.
 
-To avoid unnecessary extra downtimes, we are increasing with this upgrade our 
+To avoid unnecessary extra downtimes, we are also increasing with this upgrade our 
 security infrastructure by adopting UCR’s DUO multi factor authentication system.
 This is important to prevent intrusions and comply with UC-wide IT standards.
 
