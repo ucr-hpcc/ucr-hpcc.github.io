@@ -1604,7 +1604,7 @@ Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">
 &lt;p>If your cluster user name does not match your UCR NetID, however you wish to change your cluster username so that it does, please send in a username change request to &lt;a href="mailto:support@hpcc.ucr.edu">support&lt;/a>.&lt;/p>
 &lt;p>After they match then first check if you already have DUO installed and configured on a mobile device.
 If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling &lt;a href="https://cnc.ucr.edu/mfa/enrollment.html">here&lt;/a>.&lt;/p>
+Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling &lt;a href="https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount">here&lt;/a>.&lt;/p>
 &lt;p>Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
 If you have a new account then your password was emailed to you when your account was created.&lt;/p>
 &lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
