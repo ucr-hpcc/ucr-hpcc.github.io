@@ -7,7 +7,7 @@ aliases:
     - /changes
 ---
 
-## User-facing Changes Implemented on 18-Feb-2022
+## User-facing Changes Starting on 18-Feb-2022
 
 This is to inform users about several important system upgrades the HPC
 Center (HPCC) will be implementing in the next 30 days (starting February 18th
