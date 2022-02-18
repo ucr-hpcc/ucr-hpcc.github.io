@@ -7,29 +7,42 @@ aliases:
     - /changes
 ---
 
-## User-facing Changes Starting on 18-Feb-2022
+## Rollout of Rocky and DUO from Feb 18 to Mar 17, 2022
 
-This is to inform users about several important system upgrades the HPCC will 
-be implementing in the next 30 days (starting February 18th, 2022). Importantly, 
-these changes are relevant to all users including those who are accessing the 
-HPCC systems via JupyterHub, RStudio Server, SSH or sFTP/SCP.
+<center>Also see <a href="https://drive.google.com/file/d/12DzXEWPC5CssRJdeIOle1LBYU4DgNIVc/view?usp=sharing">email notification</a> sent to users on 18-Feb-2022.</center>
+<br></br>
+
+This is to inform users about several important system upgrades the HPCC will
+be implementing in the next 30 days (starting February 18th, 2022).
+Importantly, these changes are relevant to all users including those who are
+accessing the HPCC systems via JupyterHub, RStudio Server, SSH or sFTP/SCP.
 Thus, please read the instructions below carefully. If anything is unclear or
 there are questions, please email support@hpcc.ucr.edu for help.
 
-The most important change will be the switch from the old `CentOS/RHEL 7` platform 
-to the new `Rocky/RHEL 8`. We anticipate to finalize this upgrade on March 17th, 2022.
-This gives users a 30-day transition period to log into the new `Rocky/RHEL 8` platform 
-and test whether the software and other resouces they are using for their research are properly working.
+The most important change will be the switch from the old `CentOS/RHEL 7`
+platform to the new `Rocky/RHEL 8`. We anticipate to finalize this upgrade on
+March 17th, 2022.  This gives users a 30-day transition period to log into the
+new `Rocky/RHEL 8` platform and test whether the software and other resouces
+they are using for their research are properly working.  It is important to
+understand the deployment of Rocky 8 is a major upgrade that requires the
+systems administrators recompiling most software from the old system onto the
+new system.
+
+To avoid unnecessary extra downtimes, we are also increasing with this upgrade our 
+security infrastructure by adopting UCR’s DUO multi factor authentication system.
+This is important to prevent intrusions and comply with UC-wide IT standards.
+
+
+### Operating System
+
+The biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
+[Rocky Linux](https://rockylinux.org/) is the community equivalent and identical to `RHEL` (similar to how `CentOS` was).
 
 Currently, `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
 To check which platform you are on, you can run the `platform` command.
 
 The upgrade from `RHEL 7` to `RHEL 8` will result in the following user-facing changes.
 
-### Operating System
-
-The biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
-[Rocky Linux](https://rockylinux.org/) is the community equivalent and identical to `RHEL` (similar to how `CentOS` was).
 
 <!--
 For the past 7 years we have been using a `R`ed `H`at `E`nterprise `L`inux (`RHEL`) derivative called `CentOS Linux` (not to be confused with `CentOS Stream`).
