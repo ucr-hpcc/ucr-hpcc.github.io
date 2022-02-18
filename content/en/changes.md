@@ -7,7 +7,7 @@ aliases:
     - /changes
 ---
 
-## Rollout of Rocky OS and DUO: 18-Feb-2022 to 17-Mar-2022
+## Rollout of Rocky and DUO from Feb 18 to Mar 17, 2022
 
 <center><a href="https://drive.google.com/file/d/12DzXEWPC5CssRJdeIOle1LBYU4DgNIVc/view?usp=sharing">Email notification</a> sent to users on 18-Feb-2022.</center>
 
