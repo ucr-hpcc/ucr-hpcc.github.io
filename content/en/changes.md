@@ -9,10 +9,10 @@ aliases:
 
 ## User-facing Changes Starting on 18-Feb-2022
 
-This is to inform users about several important system upgrades the HPC
-Center (HPCC) will be implementing in the next 30 days (starting February 18th
-2022). Importantly, these changes are relevant to all users including those who
-are accessing the HPCC systems via JupyterHub, RStudio Server, SSH or sFTP/SCP.
+This is to inform users about several important system upgrades the HPCC will 
+be implementing in the next 30 days (starting February 18th, 2022). Importantly, 
+these changes are relevant to all users including those who are accessing the 
+HPCC systems via JupyterHub, RStudio Server, SSH or sFTP/SCP.
 Thus, please read the instructions below carefully. If anything is unclear or
 there are questions, please email support@hpcc.ucr.edu for help.
 
