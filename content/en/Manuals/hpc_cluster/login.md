@@ -38,7 +38,7 @@ If your cluster user name does not match your UCR NetID, however you wish to cha
 
 After they match then first check if you already have DUO installed and configured on a mobile device.
 If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling [here](https://cnc.ucr.edu/mfa/enrollment.html).
+Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling [here](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount).
 
 Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
 If you have a new account then your password was emailed to you when your account was created.
