@@ -60,7 +60,7 @@ the second time authorize the password reset (kerberos password). After this use
 When logging into the new `Rocky/RHEL 8` platform, users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
 If a user is new to DUO, the instructions from UCR's ITS are [here](https://bit.ly/3JFIKu9).
 Users accessing the cluster via SSH key pairs are strongly encouraged to also reset their password upon login by following the instructions [here](/manuals/hpc_cluster/start/#change-password).
-Addition information about login related to topics are provided on this [manual page](/manuals/hpc_cluster/login/).
+Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
 
 
 ### Transfer Accounts
