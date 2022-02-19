@@ -1705,8 +1705,9 @@ centos.sh
 srun -p batch --mem=1g -c 4 --time=2:00:00 --pty centos.sh
 &lt;/code>&lt;/pre>
 &lt;h3 id="non-interactive-singularity">Non-Interactive Singularity&lt;/h3>
-&lt;p>When running singularity as non-interactive, the same basic rules apply, we need a path to our &lt;code>singularity&lt;/code> image file as well as a command.
-For example, here is the basic syntax:&lt;/p>
+&lt;p>When running singularity as non-interactive, the same basic rules apply, we need a path to our &lt;code>singularity&lt;/code> image file as well as a command.&lt;/p>
+&lt;h4 id="basics">Basics&lt;/h4>
+&lt;p>For example, here is the basic syntax:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load singularity
 singularity exec /path/to/singularity/image someCommand
 &lt;/code>&lt;/pre>
@@ -1714,6 +1715,7 @@ singularity exec /path/to/singularity/image someCommand
 &lt;pre>&lt;code class="language-bash">module load singularity
 singularity exec $CENTOS7_SING cat /etc/redhat-release
 &lt;/code>&lt;/pre>
+&lt;h4 id="shortcuts">Shortcuts&lt;/h4>
 &lt;p>Now using the &lt;code>centos&lt;/code> shortcut:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
 centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
@@ -1722,7 +1724,16 @@ centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
 &lt;pre>&lt;code class="language-bash">module load centos
 centos.sh &amp;quot;module load samtools; samtools --help&amp;quot;
 &lt;/code>&lt;/pre>
-&lt;p>Here is an even more complex example within a job:&lt;/p>
+&lt;h4 id="jobs">Jobs&lt;/h4>
+&lt;p>Here is an example submitted as a job:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
 sbatch -p batch --wrap=&amp;quot;centos.sh 'module load samtools; samtools --help'&amp;quot;
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code>&lt;/pre>
+&lt;h4 id="variables">Variables&lt;/h4>
+&lt;p>Here is an example with passing environment variables:&lt;/p>
+&lt;pre>&lt;code class="language-bash">export SINGULARITYENV_SOMETHING='stuff'
+centos.sh 'echo $SOMETHING'
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Notice: Just add the &lt;code>SINGULARITYENV_&lt;/code> prefix to pass any varibales to the centos container.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
