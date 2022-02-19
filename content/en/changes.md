@@ -53,22 +53,22 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 
 ### Passwords
 
-Passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password upon next login.
-You need to provide your old password twice. The first time is to authenticate you as a cluster user (login password).
-The second time is to authenticate you in order to reset your password (kerberos password).
-Then you can provide a new password after that.
+User passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password during the next login.
+During this login, users need to provide their old password twice. The first time is to authentication as cluster user (login password), and
+the second time authorize the password reset (kerberos password). After this users will be prompted to provide their new password .
 
-When logging into the new `Rocky/RHEL 8` platform, you must also configure `DUO` if using a password, or alternatively create an SSH key pair.
-If you already use an SSH key to access the cluster, we encourage you to reset your password upon login as described [here](/manuals/hpc_cluster/start/#change-password).
-For more information refer to our manual page regarding [Login](/manuals/hpc_cluster/login/).
+When logging into the new `Rocky/RHEL 8` platform, users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
+If a user is new to DUO, the instructions from UCR's ITS are [here](https://bit.ly/3JFIKu9).
+Users accessing the cluster via SSH key pairs are strongly encourage to also reset their password upon login by following the instructions [here](/manuals/hpc_cluster/start/#change-password).
+Addition information about login related to topics are provided on this [manual page](/manuals/hpc_cluster/login/).
 
 
 ### Transfer Accounts
 
-Non-UC users who are accessing our systems exclusively for data transfers,
-_e.g._ via a full cluster or restricted data transfer accounts, are unlikely to
+Non-UC users who are accessing our systems exclusively for data transfers 
+(_e.g._ via a full cluster or restricted data transfer accounts) are unlikely to
 have a UCR NetID required for DUO. In these cases, users want to access the
-cluster via SSH keys.  This both convenient (no need to type a password
+cluster via SSH keys.  This is both convenient (no need to type a password
 anymore) and secure.  Please refer to our [SSH
 keys](/manuals/hpc_cluster/sshkeys/) manual for detail instructions for
 configuring your SSH key-based access. Importantly, there are any problems with
