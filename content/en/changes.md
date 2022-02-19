@@ -63,7 +63,7 @@ Users accessing the cluster via SSH key pairs are strongly encouraged to also re
 Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
 
 
-### Data Transfer Accounts
+### External User Accounts
 
 External users are unlikely to have a UCR NetID required for DUO. This includes
 users with HPCC cluster and restricted data transfer accounts. Those users 
