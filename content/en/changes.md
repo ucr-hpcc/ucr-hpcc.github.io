@@ -75,6 +75,10 @@ with performing the intial password reset (see above) and/or uploading the
 public component of your SSH key pair yourself, then please email
 support@hpcc.ucr.edu for help. 
 
+Note, the following instructions are only relevant for users who perform computations 
+on our cluster(s). Users who are using our systems exclusively for data transfers can 
+ignore them. 
+
 ### Software
 
 Previous software may be installed under a different version, or may no longer be installed as a module, or may not be installed at all.
