@@ -63,7 +63,7 @@ Users accessing the cluster via SSH key pairs are strongly encouraged to also re
 Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
 
 
-### Transfer Accounts
+### Data Transfer Accounts
 
 External users who are accessing our systems exclusively for data transfers 
 (_e.g._ via a full cluster or restricted data transfer account) are unlikely to
