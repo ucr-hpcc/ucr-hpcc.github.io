@@ -68,6 +68,9 @@ srun -p batch --mem=1g -c 4 --time=2:00:00 --pty centos.sh
 ### Non-Interactive Singularity
 
 When running singularity as non-interactive, the same basic rules apply, we need a path to our `singularity` image file as well as a command.
+
+#### Basics
+
 For example, here is the basic syntax:
 
 ```bash
@@ -81,6 +84,8 @@ Using `centos` as an example, you can execute an abitraty command like so:
 module load singularity
 singularity exec $CENTOS7_SING cat /etc/redhat-release
 ```
+
+#### Shortcuts
 
 Now using the `centos` shortcut:
 
@@ -96,9 +101,23 @@ module load centos
 centos.sh "module load samtools; samtools --help"
 ```
 
-Here is an even more complex example within a job:
+#### Jobs
+
+Here is an example submitted as a job:
 
 ```bash
 module load centos
 sbatch -p batch --wrap="centos.sh 'module load samtools; samtools --help'"
 ```
+
+#### Variables
+
+Here is an example with passing environment variables:
+
+```bash
+export SINGULARITYENV_SOMETHING='stuff'
+centos.sh 'echo $SOMETHING'
+```
+
+> Notice: Just add the `SINGULARITYENV_` prefix to pass any varibales to the centos container.
+

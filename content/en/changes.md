@@ -54,8 +54,13 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 
 ### Passwords
 
-Passwords will be expired and users will need to reset their password upon next login.
-You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
+Passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password upon next login.
+You need to provide your old password twice. The first time is to authenticate you as a cluster user (login password).
+The second time is to authenticate you in order to reset your password (kerberos password).
+Then you can provide a new password after that.
+
+When logging into the new `Rocky/RHEL 8` platform You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
+If you already use an SSH key to access the cluster, we encourage you to reset your password upon login as described [here](/manuals/hpc_cluster/start/#change-password).
 For more information refer to our manual page regarding [Login](/manuals/hpc_cluster/login/).
 
 ### Software
