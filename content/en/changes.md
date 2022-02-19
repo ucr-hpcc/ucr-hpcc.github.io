@@ -66,15 +66,14 @@ Addition information about login related to topics are provided on this [manual 
 ### Transfer Accounts
 
 Non-UC users who are accessing our systems exclusively for data transfers 
-(_e.g._ via a full cluster or restricted data transfer accounts) are unlikely to
+(_e.g._ via a full cluster or restricted data transfer account) are unlikely to
 have a UCR NetID required for DUO. In these cases, users want to access the
-cluster via SSH keys.  This is both convenient (no need to type a password
-anymore) and secure.  Please refer to our [SSH
-keys](/manuals/hpc_cluster/sshkeys/) manual for detail instructions for
-configuring your SSH key-based access. Importantly, there are any problems with
-performing the intial password reset (see above) yourself and/or uploading the
-public component of your SSH key pair yourself, then please email
-support@hpcc.ucr.edu for help. 
+cluster via SSH keys. This is both convenient (no need to type a password
+anymore) and secure. Please refer to our [SSH keys](/manuals/hpc_cluster/sshkeys/) 
+manual for detail instructions for configuring your SSH key-based access.
+Importantly, there are any problems with performing the intial password reset
+(see above) yourself and/or uploading the public component of your SSH key pair
+yourself, then please email support@hpcc.ucr.edu for help. 
 
 ### Software
 
