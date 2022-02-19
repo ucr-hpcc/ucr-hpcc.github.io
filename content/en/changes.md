@@ -65,7 +65,7 @@ Addition information about login related to topics are provided on this [manual 
 
 ### Transfer Accounts
 
-Non-UC users who are accessing our systems exclusively for data transfers 
+External users who are accessing our systems exclusively for data transfers 
 (_e.g._ via a full cluster or restricted data transfer account) are unlikely to
 have a UCR NetID required for DUO. In these cases, users want to access the
 cluster via SSH keys. This is both convenient (no need to type a password
