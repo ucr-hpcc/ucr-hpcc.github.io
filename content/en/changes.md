@@ -37,7 +37,6 @@ This is important to prevent intrusions and comply with UC-wide IT standards.
 
 As mentioned above, the biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
 [Rocky Linux](https://rockylinux.org/) is the community equivalent and identical to `RHEL` (similar to how `CentOS` was).
-
 Currently, `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
 To check which platform you are on, you can run the `platform` command.
 
@@ -66,13 +65,16 @@ For more information refer to our manual page regarding [Login](/manuals/hpc_clu
 
 ### Transfer Accounts
 
-If you are currently using a transfer account, it is very likely that you do
-not have a UCR NetID. Thus, you want to access the cluster via SSH
-keys. Please refer to our [SSH keys](/manuals/hpc_cluster/sshkeys/) manual for
-detail instructions. If there are any problems with resetting your password
-yourself, please request a new password by emailing support@hpcc.ucr.edu. In
-addition, if you are unable to upload your public SSH key component to the system then
-please ask support@hpcc.ucr.edu for help. 
+Non-UC users who are accessing our systems exclusively for data transfers,
+_e.g._ via a full cluster or restricted data transfer accounts, are unlikely to
+have a UCR NetID required for DUO. In these cases, users want to access the
+cluster via SSH keys.  This both convenient (no need to type a password
+anymore) and secure.  Please refer to our [SSH
+keys](/manuals/hpc_cluster/sshkeys/) manual for detail instructions for
+configuring your SSH key-based access. Importantly, there are any problems with
+performing the intial password reset (see above) yourself and/or uploading the
+public component of your SSH key pair yourself, then please email
+support@hpcc.ucr.edu for help. 
 
 ### Software
 
