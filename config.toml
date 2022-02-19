@@ -325,6 +325,11 @@ enable = true
     name = "Alerts"
     url = "/news/alerts/"
     weight = 2
+  [[menu.main]]
+    parent = "News"
+    name = "Changes"
+    url = "/changes/"
+    weight = 3
 
 # Events
 [[menu.main]]
