@@ -327,7 +327,7 @@ enable = true
     weight = 2
   [[menu.main]]
     parent = "News"
-    name = "Changes"
+    name = "Upgrades"
     url = "/changes/"
     weight = 3
 
