@@ -54,7 +54,7 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 ### Passwords
 
 User passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password during the next login.
-During this login, users need to provide their old password twice. The first time is to authentication as cluster user (login password), and
+During this login, users need to provide their old password twice. The first time is to authenticate as cluster user (login password), and
 the second time to authorize the password reset (kerberos password). After this users will be prompted to provide their new password .
 
 When logging into the new `Rocky/RHEL 8` platform, users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
