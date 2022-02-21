@@ -1626,6 +1626,8 @@ This is becuase in order to get this working a file needs to be placed in your h
 &lt;p>When using SSH key authentication, you will need to create a public and a pritate key.
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key &amp;ldquo;fits&amp;rdquo; the public key, can you be granted access.&lt;/p>
+&lt;p>Note, additional instructions for configuring SSH key access on Windows and Mac OS systems as much as possible
+with graphical user interface (GUI) options can be found &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/">here&lt;/a>.&lt;/p>
 &lt;p>To create the key pair run the following command on your computer (&lt;a href="../../manuals/linux_basics/intro/#mac">Terminal&lt;/a>/&lt;a href="../../manuals/linux_basics/intro/#windows">MobaXterm&lt;/a>):&lt;/p>
 &lt;pre>&lt;code># Create SSH directory
 mkdir -p ~/.ssh
