@@ -71,6 +71,9 @@ When using SSH key authentication, you will need to create a public and a pritat
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key "fits" the public key, can you be granted access.
 
+Note, additional instructions for configuring SSH key access on Windows and Mac OS systems as much as possible 
+with graphical user interface (GUI) options can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+
 To create the key pair run the following command on your computer ([Terminal](/manuals/linux_basics/intro/#mac)/[MobaXterm](/manuals/linux_basics/intro/#windows)):
 
 ```

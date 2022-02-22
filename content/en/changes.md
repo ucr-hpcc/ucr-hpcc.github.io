@@ -7,7 +7,7 @@ aliases:
     - /changes
 ---
 
-## Rollout of Rocky and DUO from Feb 18 to Mar 17, 2022
+## Rollout of Rocky and DUO: Feb 18 through Mar 17, 2022
 
 <center>Also see <a href="https://drive.google.com/file/d/12DzXEWPC5CssRJdeIOle1LBYU4DgNIVc/view?usp=sharing">email notification</a> sent to users on 18-Feb-2022.</center>
 <br></br>
@@ -28,16 +28,15 @@ understand the deployment of Rocky 8 is a major upgrade that requires the
 systems administrators recompiling most software from the old system onto the
 new system.
 
-To avoid unnecessary extra downtimes, we are also increasing with this upgrade our 
-security infrastructure by adopting UCR’s DUO multi factor authentication system.
+To avoid unnecessary extra downtimes, we are also elevating with this upgrade our 
+security standards by adopting UCR’s DUO multi factor authentication system.
 This is important to prevent intrusions and comply with UC-wide IT standards.
 
 
 ### Operating System
 
-The biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
+As mentioned above, the biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
 [Rocky Linux](https://rockylinux.org/) is the community equivalent and identical to `RHEL` (similar to how `CentOS` was).
-
 Currently, `pigeon` is the only head/login node that is linked to the new `Rocky/RHEL 8` platform.
 To check which platform you are on, you can run the `platform` command.
 
@@ -54,14 +53,31 @@ we made the decision to stay in the RHEL family and go with [Rocky Linux](https:
 
 ### Passwords
 
-Passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password upon next login.
-You need to provide your old password twice. The first time is to authenticate you as a cluster user (login password).
-The second time is to authenticate you in order to reset your password (kerberos password).
-Then you can provide a new password after that.
+User passwords will be expired on the current `CentOS/RHEL 7` platform and users will need to reset their password during the next login.
+During this login, users need to provide their old password twice. The first time is to authenticate as cluster user (login password), and
+the second time to authorize the password reset (kerberos password). After this users will be prompted to provide their new password .
 
-When logging into the new `Rocky/RHEL 8` platform You must also configure `DUO` if using a password, or alternatively create an SSH key pair.
-If you already use an SSH key to access the cluster, we encourage you to reset your password upon login as described [here](/manuals/hpc_cluster/start/#change-password).
-For more information refer to our manual page regarding [Login](/manuals/hpc_cluster/login/).
+When logging into the new `Rocky/RHEL 8` platform, users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
+If a user is new to DUO, the instructions from UCR's ITS are [here](https://bit.ly/3JFIKu9).
+Users accessing the cluster via SSH key pairs are strongly encouraged to also reset their password upon login by following the instructions [here](/manuals/hpc_cluster/start/#change-password).
+Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
+
+
+### External Users
+
+External users are unlikely to have a UCR NetID required for DUO. This includes
+users with HPCC cluster and restricted data transfer accounts. Those users 
+want to access the cluster via SSH keys. This is both convenient (no need to type a
+password anymore) and secure. Please refer to our [SSH
+keys](/manuals/hpc_cluster/sshkeys/) manual for detailed instructions of
+configuring SSH key-based access. Importantly, if there are any problems
+with performing the intial password reset (see above) and/or uploading the
+public component of your SSH key pair yourself, then please email
+support@hpcc.ucr.edu for help. 
+
+Note, the following instructions are only relevant for users who perform computations 
+on our cluster(s). Users who are using our systems exclusively for data transfers can 
+ignore them. 
 
 ### Software
 
@@ -134,11 +150,6 @@ squeue --start -u $USER
 
 Be sure to move to the newer `Rocky/RHEL 8` platform as soon as possible.
 
-### Transfer Accounts
-
-If you are currently using a transfer account, it is very likely that you do not have a UCR NetID, 
-and this will only be able to access the cluster via SSH keys.
-Please refer to our [SSH keys](/manuals/hpc_cluster/sshkeys/) manual for detail instructions.
 
 ## User-facing Changes Implemented on 23-Aug-2019 
 

@@ -11,6 +11,9 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### Feb/Mar 2022
+* Rollout of Rocky and DUO: Feb 18 through Mar 17, 2022. For details see [here](https://hpcc.ucr.edu/changes/).
+
 ### Mar 2021
 * Viet Pham joins HPCC as HPC systems administrator. - Welcome Viet!
 
