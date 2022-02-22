@@ -253,6 +253,9 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;p>Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file &lt;code>id_rsa.pub&lt;/code> and dropping it into the HPCC cluster direcotry &lt;code>/rhome/username/.ssh/&lt;/code>.&lt;/p>
 &lt;p>&lt;img src="../../../img/filezilla4.png" alt="filezilla4">&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>Once the file is transferred to the cluster, be sure to rename &lt;code>id_rsa.pub&lt;/code> to &lt;code>authorized_keys&lt;/code>.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
 &lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>secure.hpcc.ucr.edu&lt;/code> server.&lt;/p>
