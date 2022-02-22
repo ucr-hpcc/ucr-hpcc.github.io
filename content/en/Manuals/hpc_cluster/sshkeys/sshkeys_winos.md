@@ -115,6 +115,8 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
    ![filezilla4](/img/filezilla4.png)
 
+10. Once the file is transferred to the cluster, be sure to rename `id_rsa.pub` to `authorized_keys`.
+
 
 #### Private SSH Key
 
