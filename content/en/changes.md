@@ -57,7 +57,7 @@ User passwords will be expired on the current `CentOS/RHEL 7` platform and users
 During this login, users need to provide their old password twice. The first time is to authenticate as cluster user (login password), and
 the second time to authorize the password reset (kerberos password). After this users will be prompted to provide their new password .
 
-When logging into the new `Rocky/RHEL 8` platform, users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
+When logging into the new `Rocky/RHEL 8` platform as outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/), users also need to configure `DUO` if using a password, or alternatively create an SSH key pair.
 If a user is new to DUO, the instructions from UCR's ITS are [here](https://bit.ly/3JFIKu9).
 Users accessing the cluster via SSH key pairs are strongly encouraged to also reset their password upon login by following the instructions [here](/manuals/hpc_cluster/start/#change-password).
 Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
