@@ -114,6 +114,10 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;p>&lt;img src="../../../img/4e.png" alt="fig10">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>If the &lt;code>/rhome/username/.ssh/&lt;/code> directory does not exits, create it.&lt;/p>
+&lt;ol start="10">
+&lt;li>Once the &lt;code>id_rsa.pub&lt;/code> file is transferred to the cluster, be sure to rename it to &lt;code>authorized_keys&lt;/code>.&lt;/li>
+&lt;/ol>
 &lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
 &lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>secure.hpcc.ucr.edu&lt;/code> server.&lt;/p>
 &lt;ol>
