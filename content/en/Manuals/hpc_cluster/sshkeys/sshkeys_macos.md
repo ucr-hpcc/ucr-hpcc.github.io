@@ -128,6 +128,9 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
    ![fig10](/img/4e.png)
 
+  If the `/rhome/username/.ssh/` directory does not exits, create it.
+
+10. Once the `id_rsa.pub` file is transferred to the cluster, be sure to rename it to `authorized_keys`.
 
 #### Private SSH Key
 
