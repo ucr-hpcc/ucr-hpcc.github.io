@@ -32,7 +32,6 @@ To avoid unnecessary extra downtimes, we are also elevating with this upgrade ou
 security standards by adopting UCR’s DUO multi factor authentication system.
 This is important to prevent intrusions and comply with UC-wide IT standards.
 
-
 ### Operating System
 
 As mentioned above, the biggest change is that we are upgrading the OS from `CentOS/RHEL 7` to `Rocky/RHEL 8`.
@@ -41,7 +40,6 @@ Currently, `pigeon` is the only head/login node that is linked to the new `Rocky
 To check which platform you are on, you can run the `platform` command.
 
 The upgrade from `RHEL 7` to `RHEL 8` will result in the following user-facing changes.
-
 
 <!--
 For the past 7 years we have been using a `R`ed `H`at `E`nterprise `L`inux (`RHEL`) derivative called `CentOS Linux` (not to be confused with `CentOS Stream`).
@@ -62,7 +60,6 @@ If a user is new to DUO, the instructions from UCR's ITS are [here](https://bit.
 Users accessing the cluster via SSH key pairs are strongly encouraged to also reset their password upon login by following the instructions [here](/manuals/hpc_cluster/start/#change-password).
 Additional information about login related topics are provided on this [manual page](/manuals/hpc_cluster/login/).
 
-
 ### External Users
 
 External users are unlikely to have a UCR NetID required for DUO. This includes
@@ -81,7 +78,8 @@ ignore them.
 
 ### Software
 
-Previous software may be installed under a different version, or may no longer be installed as a module, or may not be installed at all.
+All software installation requests will be restricted to the new cluster.
+New software may be installed under a different version, or may no longer be installed as a module, or may not be installed at all.
 Run the following command to list currently available modules:
 
 ```bash
