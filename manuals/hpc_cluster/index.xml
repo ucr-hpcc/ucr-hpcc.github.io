@@ -313,7 +313,7 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;/code>&lt;/pre>
 &lt;p>If you do not specify a partition then the intel partition is used by default.&lt;/p>
 &lt;p>Here is a more complete example:&lt;/p>
-&lt;pre>&lt;code class="language-bash">srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
+&lt;pre>&lt;code class="language-bash">srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
 &lt;/code>&lt;/pre>
 &lt;p>The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.&lt;/p>
 &lt;h3 id="monitoring-jobs">Monitoring Jobs&lt;/h3>
