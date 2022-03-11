@@ -121,3 +121,23 @@ centos.sh 'echo $SOMETHING'
 
 > Notice: Just add the `SINGULARITYENV_` prefix to pass any varibales to the centos container.
 
+#### Enable GPUs
+
+First review how to submit a GPU job from [here](/manuals/hpc_cluster/jobs/#gpu-jobs).
+Then request an interactive GPU job, or embed one of the following within your submission script.
+
+In order to enable GPUs within your container you need to add the `--nv` option to the singularity command:
+
+```bash
+module load centos
+singularity exec -nv $CENTOS7_SING cat /etc/redhat-release
+```
+
+However, when using the `centos` shortcut it is easier to just set the following environment variable then run `centos.sh` as usual:
+
+```bash
+module load centos
+export SINGULARITY_NV=1
+centos.sh
+```
+
