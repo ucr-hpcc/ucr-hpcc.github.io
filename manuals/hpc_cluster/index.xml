@@ -1351,7 +1351,7 @@ in each user account. If this is not the case then follow the quick configuratio
 &lt;p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the &lt;a href="https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899">detailed
 instructions&lt;/a> to install Nvim-R-Tmux from scratch on your own system.&lt;/p>
 &lt;ol>
-&lt;li>Log in to your user account on HPCC and execute &lt;code>install_nvimRtmux&lt;/code>. Alternatively, follow these step-by-step &lt;a href="https://cluster.hpcc.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/vim-r-plugin/README_nvimRtmux">install commands&lt;/a>.&lt;/li>
+&lt;li>Log in to your user account on HPCC and execute &lt;code>Install_Nvim-R_Tmux&lt;/code> (old: &lt;code>install_nvimRtmux&lt;/code>). Alternatively, follow these step-by-step &lt;a href="https://github.com/tgirke/Install_Nvim-R_Tmux">install commands&lt;/a>.&lt;/li>
 &lt;li>To enable the nvim-R-tmux environment, log out and in again.&lt;/li>
 &lt;li>Follow usage instructions of next section.&lt;/li>
 &lt;/ol>
@@ -1434,7 +1434,7 @@ line.&lt;/p>
 &lt;h3 id="install">Install&lt;/h3>
 &lt;p>To install it, one needs to copy from the &lt;code>vimcmdline&lt;/code> resository the directories
 &lt;code>ftplugin&lt;/code>, &lt;code>plugin&lt;/code> and &lt;code>syntax&lt;/code> and their files to &lt;code>~/.config/nvim/&lt;/code>. For
-user accounts of UCR’s HPCC, the above install script &lt;code>install_nvimRtmux&lt;/code> includes the
+user accounts of UCR’s HPCC, the above install script &lt;code>Install_Nvim-R_Tmux&lt;/code> (old: &lt;code>install_nvimRtmux&lt;/code>) includes the
 install of &lt;code>vimcmdline&lt;/code> (since 09-Jun-18).&lt;/p>
 &lt;h3 id="usage">Usage&lt;/h3>
 &lt;p>The usage of &lt;code>vimcmdline&lt;/code> is very similar to &lt;code>nvim-R&lt;/code>. To start a connected terminal session, one
