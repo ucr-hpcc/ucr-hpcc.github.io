@@ -1348,7 +1348,7 @@ in each user account. If this is not the case then follow the quick configuratio
 &lt;center>&lt;img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" >&lt;/center>
 &lt;center>Nvim-R IDE for R&lt;/center>
 &lt;h3 id="quick-configuration-in-user-accounts">Quick configuration in user accounts&lt;/h3>
-&lt;p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the &lt;a href="https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899">detailed
+&lt;p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the &lt;a href="https://github.com/tgirke/Nvim-R_Tmux">detailed
 instructions&lt;/a> to install Nvim-R-Tmux from scratch on your own system.&lt;/p>
 &lt;ol>
 &lt;li>Log in to your user account on HPCC and execute &lt;code>Install_Nvim-R_Tmux&lt;/code> (old: &lt;code>install_nvimRtmux&lt;/code>). Alternatively, follow these step-by-step &lt;a href="https://github.com/tgirke/Nvim-R_Tmux">install commands&lt;/a>.&lt;/li>
