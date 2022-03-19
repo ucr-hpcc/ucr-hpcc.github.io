@@ -76,7 +76,7 @@ in each user account. If this is not the case then follow the quick configuratio
 Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
 instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) to install Nvim-R-Tmux from scratch on your own system.
 
-1. Log in to your user account on HPCC and execute `Install_Nvim-R_Tmux` (old: `install_nvimRtmux`). Alternatively, follow these step-by-step [install commands](https://github.com/tgirke/Install_Nvim-R_Tmux).
+1. Log in to your user account on HPCC and execute `Install_Nvim-R_Tmux` (old: `install_nvimRtmux`). Alternatively, follow these step-by-step [install commands](https://github.com/tgirke/Nvim-R_Tmux).
 2. To enable the nvim-R-tmux environment, log out and in again.
 3. Follow usage instructions of next section.
 
