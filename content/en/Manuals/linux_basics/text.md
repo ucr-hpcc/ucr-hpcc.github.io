@@ -177,8 +177,8 @@ This involves the following steps.
 
    ```bash
    module unload R
-   module load R/4.1.1_gcc-8.3.0 # Or latest version
-   module load rstudio-server/2021.09.1-372 # Or latest version
+   module load R/4.1.2 # Or latest version (previously it was R/4.1.1_gcc-8.3.0)
+   module load rstudio-server/2022.02.0-443 # Or latest version (previously it was rstudio-server/2021.09.1-372)
    ```
 
   4. Start RStudio Server:
