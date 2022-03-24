@@ -314,10 +314,9 @@ https://localhost:8888
 
 #### Examples
 
-A perfect example of this method is used for Jupyter Lab/Notebook.
-For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/jupyter). 
+1. A perfect example of this method is used for Jupyter Lab/Notebook. For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/jupyter). 
 
-RStudio Server instances can also be started directly on a compute node and accessed via an SSH tunnel. For details see [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
+2. RStudio Server instances can also be started directly on a compute node and accessed via an SSH tunnel. For details see [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 
 ### Desktop Environments
 
