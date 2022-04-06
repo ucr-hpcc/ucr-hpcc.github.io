@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – HPC Cluster</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/</link><description>Recent content in HPC Cluster on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Introduction</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/intro/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This manual provides an introduction to the usage of the HPCC cluster.
-All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee &lt;a href="../../#rates">(see rates)&lt;/a>.
+All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee &lt;a href="../../about/facility/rates">(see rates)&lt;/a>.
 To request an account, please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
 The latest hardware/facility description for grant applications is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
@@ -1584,94 +1584,7 @@ module load amira
 vglrun -display :$(head -1 ~/.CUDA_VISIBLE_DEVICES) Amira
 &lt;/code>&lt;/pre>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Login</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/login/</guid><description>
-&lt;blockquote>
-&lt;p>IMPORTANT!!! All users passwords have expired on &lt;code>Feb 18th&lt;/code>. Users will be forced to update them upon next login.
-This will ensure that the latest encryption is being used, and thus compatible with the new platform.&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="login">Login&lt;/h2>
-&lt;p>We are moving all accounts to a more secure method of authentication for logging into the cluster.
-Passwords alone will no longer be allowed, but rather &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a>.&lt;/p>
-&lt;p>Roll-Out Plan:&lt;/p>
-&lt;ol>
-&lt;li>Old (password) and new (secure) authentication methods are provided through &lt;code>cluster.hpcc.ucr.edu&lt;/code> and &lt;code>secure.hpcc.ucr.edu&lt;/code> respectively.&lt;/li>
-&lt;li>Users configure new authentication method.&lt;/li>
-&lt;li>Users log into the cluster using host &lt;code>secure.hpcc.ucr.edu&lt;/code>.&lt;/li>
-&lt;li>After the authentication switch over deadline (&lt;code>March 17th&lt;/code>), host &lt;code>cluster.hpcc.ucr.edu&lt;/code> switches over to new (secure) authentication methods. The old (password) authentication method is completely deprecated.&lt;/li>
-&lt;/ol>
-&lt;h2 id="secure-authentication">Secure Authentication&lt;/h2>
-&lt;p>There are two methods of authentication that the cluster supports:&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="#passwordduo">Password+DUO&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#ssh-keys">SSH Keys&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;h3 id="passwordduo">Password+Duo&lt;/h3>
-&lt;p>The &lt;code>Password+DUO&lt;/code> combination method will only work if your UCR NetID matches your cluster username.&lt;/p>
-&lt;p>If your cluster user name does not match your UCR NetID, however you wish to change your cluster username so that it does, please send in a username change request to &lt;a href="mailto:support@hpcc.ucr.edu">support&lt;/a>.&lt;/p>
-&lt;p>After they match then first check if you already have DUO installed and configured on a mobile device.
-If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling &lt;a href="https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount">here&lt;/a>.&lt;/p>
-&lt;p>Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
-If you have a new account then your password was emailed to you when your account was created.&lt;/p>
-&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
-&lt;pre>&lt;code class="language-bash">ssh username@secure.hpcc.ucr.edu
-&lt;/code>&lt;/pre>
-&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
-&lt;p>Assuming that you have already installed and configured DUO on a mobile device, then when attempting to login you will be first asked to provide your password, and then you will need to choose your DUO authentication option to validate your login attempt.
-Depending on how you chose to configure/enrolling your mobile device, you may see multiple options.&lt;/p>
-&lt;p>DUO uses either an option for DUO authentication via &lt;code>Push&lt;/code> which uses the mobile app, or via &lt;code>SMS&lt;/code> which sends a code as a text message to your phone.
-Choose whichever option works best for you.&lt;/p>
-&lt;blockquote>
-&lt;p>Note: New users are expected to change their temporary password with the &lt;code>passwd&lt;/code> command upon successful login.&lt;/p>
-&lt;/blockquote>
-&lt;p>For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
-&lt;a href="https://cnc.ucr.edu/mfa/how.html">https://cnc.ucr.edu/mfa/how.html&lt;/a>&lt;/p>
-&lt;h3 id="ssh-keys">SSH Keys&lt;/h3>
-&lt;p>SSH keys can only be setup if you already have access to the cluster.
-This is becuase in order to get this working a file needs to be placed in your home directory on the cluster.&lt;/p>
-&lt;p>When using SSH key authentication, you will need to create a public and a pritate key.
-This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
-Only when your private key &amp;ldquo;fits&amp;rdquo; the public key, can you be granted access.&lt;/p>
-&lt;p>Note, additional instructions for configuring SSH key access on Windows and Mac OS systems as much as possible
-with graphical user interface (GUI) options can be found &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/">here&lt;/a>.&lt;/p>
-&lt;p>To create the key pair run the following command on your computer (&lt;a href="../../manuals/linux_basics/intro/#mac">Terminal&lt;/a>/&lt;a href="../../manuals/linux_basics/intro/#windows">MobaXterm&lt;/a>):&lt;/p>
-&lt;pre>&lt;code># Create SSH directory
-mkdir -p ~/.ssh
-# Create key pair (Private and Public)
-ssh-keygen -t rsa -f ~/.ssh/id_rsa
-&lt;/code>&lt;/pre>
-&lt;p>Once the command has completed, you will find two files in your &lt;code>~/.ssh&lt;/code> directory.&lt;/p>
-&lt;pre>&lt;code># List files in SSH directory
-ls ~/.ssh/
-id_rsa
-id_rsa.pub
-&lt;/code>&lt;/pre>
-&lt;p>The &lt;code>id_rsa&lt;/code> file is your private key and the &lt;code>id_rsa.pub&lt;/code> is your public key.
-You will need to copy your public key to the cluster, creating the &lt;code>authorized_keys&lt;/code> file.&lt;/p>
-&lt;p>From your computer (&lt;a href="../../manuals/linux_basics/intro/#mac">Terminal&lt;/a>/&lt;a href="../../manuals/linux_basics/intro/#windows">MobaXterm&lt;/a>) run the following:&lt;/p>
-&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
-&lt;/code>&lt;/pre>
-&lt;p>If the &lt;code>authorized_keys&lt;/code> file already exists, you can just append your new public key, like so:&lt;/p>
-&lt;pre>&lt;code>scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey &amp;amp;&amp;amp; ssh username@cluster.hpcc.ucr.edu &amp;quot;cat tmpkey &amp;gt;&amp;gt; ~/.ssh/authorized_keys &amp;amp;&amp;amp; rm tmpkey&amp;quot;
-&lt;/code>&lt;/pre>
-&lt;p>In order to test this try to log into the cluster through the &lt;code>secure&lt;/code> server:&lt;/p>
-&lt;pre>&lt;code class="language-bash">ssh username@secure.hpcc.ucr.edu
-&lt;/code>&lt;/pre>
-&lt;p>Remember to replace &lt;code>username&lt;/code> with your real cluster username, which should also match your UCR NetID.&lt;/p>
-&lt;blockquote>
-&lt;p>Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager &amp;ldquo;MobaKeyGen&amp;rdquo; (from the &amp;ldquo;Tools&amp;rdquo; menu).&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="file-transfers">File Transfers&lt;/h2>
-&lt;p>We support &lt;code>FileZilla&lt;/code> as the recommended graphical file transfer application. If you are comfortable with the command line that is typically easier to use.
-However, there may be times when selecting multiple files from a graphical application is prefered.&lt;/p>
-&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site, just click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
-From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
-&lt;p>On the right pane fill in the information as follows:&lt;/p>
-&lt;pre>&lt;code>Protocol SFTP - SSH File Transfer Protocol
-Host secure.hpcc.ucr.edu
-Port 22
-&lt;/code>&lt;/pre>
-&lt;p>The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p></description></item><item><title>Manuals: Singularity Jobs</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: Singularity Jobs</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/singularity/</guid><description>
 &lt;h2 id="what-is-singularity">What is Singularity&lt;/h2>
 &lt;p>In short, &lt;code>Singularity&lt;/code> is a program that will allow a user to run code or command, within a customized environment.
 We will refer to this customized environment as a &lt;code>container&lt;/code>.
