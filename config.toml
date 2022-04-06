@@ -357,6 +357,12 @@ enable = true
   # HPC Linux Basics Sub-menu
   [[menu.main]]
     parent = "Manuals"
+    name = "Login"
+    url = "/manuals/login/"
+    weight = 1
+  # HPC Linux Basics Sub-menu
+  [[menu.main]]
+    parent = "Manuals"
     name = "Linux Basics"
     url = "/manuals/linux_basics/"
     weight = 2
