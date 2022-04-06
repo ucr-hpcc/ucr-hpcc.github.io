@@ -6,6 +6,9 @@ weight: 1
 aliases:
     - /rates.html
     - /rates
+    - /manuals_linux-basics_intro.html
+    - /manuals_linux-basics_intro
+    - /manuals/linux_basics/intro
 ---
 
 {{% pageinfo %}}
@@ -16,6 +19,8 @@ Note: HPCC's latest Recharging Rates document is [here](/about/facility/rates).
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include email address and full name of both user and PI.
 * An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
+
+After account information has been recieved, next vist how to [login](/manuals/login).
 
 ## Recharging rates
 
