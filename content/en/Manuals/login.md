@@ -49,7 +49,7 @@ This is analogous to how a key and a lock are used in the real world, one unique
 Only when your private key "fits" the public key, can you be granted access.
 
 We will be showing you how to do this in your computers [terminal](#terminal).
-Alteranate instructions using a graphical user interface (GUI) can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+Alternatively, instructions using a graphical user interface (GUI) can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 To create the key pair run the following command on your computer ([terminal](#terminal)):
 
