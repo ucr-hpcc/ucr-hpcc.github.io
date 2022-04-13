@@ -105,23 +105,34 @@ All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [Jupyter
 
 ## File Transfers
 
-First configure your [authentication method](#authentication).
+> First, you must configure your [authentication method](#authentication).
+> Also note that you CANNOT use the "Quickconnect" button from the main window to connect.
 
-We support `FileZilla` as the recommended graphical file transfer application.
-Command line methods are available (ie. `scp`, `rsync`, and `sftp`) however, there may be times when selecting multiple files from a graphical application is prefered.
-
-When using `FileZilla` you must create a new site, just click `File -> Site Manager`.
+When using `FileZilla` you must create a new site to connect, click `File -> Site Manager`.
 From the new window click `New Site`.
 
-On the right pane fill in the information as follows:
+On the right pane of the `General` tab fill in the information as follows:
 
 ```
-Protocol    SFTP - SSH File Transfer Protocol
-Host        cluster.hpcc.ucr.edu
-Port        22
+Protocol: SFTP
+Host: cluster.hpcc.ucr.edu
+Logon Type: Interactive
+User: YOUR_CLUSTER_USER_NAME
 ```
 
+Remeber to fill in `YOUR_CLUSTER_USER_NAME` with your actual cluster username.
 The `Logon Type` can be either `Interactive` or `Key File`, this depends on if you have setup [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) respectively.
+
+If you choose a `Password+DUO` authentication, then you should also configure the max connections.
+Navigate to the `Transfer Settings` tab and set the following:
+
+```
+    Limit Number of simultaneous connections: checked
+    Maximum number of connections: 1
+```
+
+After all of the above has been completed, then you can click "OK" to save the new site.
+Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the "connect" button from your new site window.
 
 ## Terminal
 
