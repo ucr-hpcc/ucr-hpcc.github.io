@@ -14,15 +14,15 @@ aliases:
 
 SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
 
-The private key remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.
+The private key (ie. `id_rsa`) remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.
 
-A public key file is used to encrypt information, and is stored on your own system.
-The public key file is stored on the HPCC cluster and contains a list of authorized public keys.
+A public key (ie. `id_rsa.pub`) is used to encrypt information, and is stored on the cluster.
+The authorized keys file that is stored on the HPCC cluster (ie. `~/.ssh/authorized_keys`) contains one or more public keys (ie. `id_rsa.pub`).
 
 ### Why do you need SSH Keys?
 
 HPCC supports two authentication methods; `Password+DUO` and `SSH Keys`.
-The `Password+DUO` method requires a UCR NetID, if you do not have this then you will need to use `SSH keys` in order to access the HPCC cluster.
+The `Password+DUO` method requires a UCR NetID, if you do not have one then you will need to use `SSH keys` in order to access the HPCC cluster.
 
 ### What you need
 
@@ -36,34 +36,34 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 #### Sourcetree
 
-You will need to install `Sourcetree` in order to generate your `SSH keys` (or use the command line method mentioned here: [Manage SSH Keys via Command Line](some_other_page).
+You will need to install `Sourcetree` in order to generate your `SSH keys` (or use the command line method mentioned [here](/manuals/login/#ssh-keys).
 
-1. Download `Sourcetree` from [here](https://www.sourcetreeapp.com).
-2. Click on `Download for Mac OS X`.
-3. Install `Sourcetree`.
+1. Download `Sourcetree` from [here](https://www.sourcetreeapp.com)
+2. Click on `Download for Mac OS X`
+3. Install `Sourcetree`
 
 ### Create SSH Keys (`Sourcetree`)
 
 1. Open the `Sourcetree` application and under the top `Sourcetree` menu click on the `Preferences...` sub-menu item.
 
-   ![fig0](/img/41.png)
+   ![fig0](/img/sshkeys_macos/41.png)
    
 2. Navigate to `Accounts` category and click on `Add...`.
 
-   ![fig0](/img/42.png)
+   ![fig0](/img/sshkeys_macos/42.png)
 
 3. Click on `Auth Type:` and change the drop down menu from `OAuth` to `Basic`. Make sure `Protocol:` is set to `SSH` in the drop down menu.
 
-   ![fig0](/img/43.png)
+   ![fig0](/img/sshkeys_macos/43.png)
 
 4. Enter `id_rsa` in the `Username` field.
 
-   ![fig0](/img/44.png)  
+   ![fig0](/img/sshkeys_macos/44.png)  
  
  
 5. Click the `Generate Key` button.
    
-   ![fig1](/img/50.png)  
+   ![fig1](/img/sshkeys_macos/50.png)  
  
 6. Press `Cancel` to exit out of the window.
 
@@ -75,58 +75,84 @@ To verify that the keys were created, do the following:
 
 1. Open a new finder window. Click on your home directory on the left side pane.
    
-   ![fig1](/img/23.png)
+   ![fig1](/img/sshkeys_macos/23.png)
 
 2. Press the 3-button combo `Command`+`Shift`+`.` together (visualized below) to see hidden folders:
    
-   ![fig1](/img/47b.png)
+   ![fig1](/img/sshkeys_macos/47b.png)
  
 3. You will now be able to see your `.ssh` folder, open it by double-clicking.
    
-   ![fig1](/img/48.png)
+   ![fig1](/img/sshkeys_macos/48.png)
 
 4. You should see your newly generated pair of `SSH key` files in the folder. 
 
-   ![fig1](/img/51.png)
+   ![fig1](/img/sshkeys_macos/51.png)
 
 5. Sourcetree adds the `-Bitbucket` to the end of the `SSH key` file names. Remove this by clicking on the file you want to rename and press the `Enter` key which allows us to rename the file before the extension.
 
-   ![fig1](/img/52.png)
+   ![fig1](/img/sshkeys_macos/52.png)
 
 6. After you have removed the `-Bitbucket` suffix from each of the `SSH key` file names, your new `SSH key` file names should be `id_rsa` and `id_rsa.pub`.
 
-   ![fig1](/img/53.png)
+   ![fig1](/img/sshkeys_macos/53.png)
 
 ### Configure SSH Keys
 
 #### Public SSH Key
 
-Now that you have created your `SSH keys`, and renamed them, you will need to placed the public key (`id_rsa.pub`) on the cluster using the `cluster.hpcc.ucr.edu` server.
+Now that you have created your `SSH keys`, and renamed them, you will need to place your public key (`id_rsa.pub`) on the cluster.
+
+If you do not have a UCR NetID, or prefer not to use `Password+DUO` authentication, then email your public key (`id_rsa.pub`) to [support](mailto:support@hpcc.ucr.edu) and skip to [Private SSH Key]('#private-ssh-key').
+If you already have configured [Password+DUO](/manuals/login/#passwordduo) authentication, then proceed with the following:
 
 1. Start the `Filezilla` application.
 
-2. Fill in the `Quickconnect` fields at the top of the application window:
+2. Open `Site Manager` window by clicking the upper left most button in the top bar of icons.
+   
+   ![fig60](/img/sshkeys_macos/60.png)
 
-   * Enter your HPCC username in the `Username` field.
-   * Enter the HPCC servername `cluster.hpcc.ucr.edu` for the `Host` field.
-   * Enter your password in the `Password` field.
-   * Enter `22` in the `Port` field.
+2. Click on `New Site`, which will unlock the fields to the right.
 
-   ![fig4](/img/1e.png)
+   ![fig54](/img/sshkeys_macos/54.png)
 
-6. Click on `Quickconnect`
+3. From the newly unlocked fields in the `General` tab, fill in the following:
 
-   ![fig7](/img/8e.png)
+   * `Protocol`: `SFTP - SSH File Transfer Protocol`
+   * `Host`: `cluster.hpcc.ucr.edu`
+   * `Logon Type`: `Interactive`
+   * `User`: Your HPCC Username
 
-7. If a pop up prompts you to save your password, select the `Save passwords` option, then click the `OK` button.
+   ![new_site_general](/img/sshkeys_macos/new_site_general.png)
 
-8. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
+4. When using `Password+DUO` authentication, you must also set the maximum number of connections.
+   Navigate to the `Transfer Settings` tab and set the following:
 
-   ![fig8](/img/6be.png)
+   * `Limit Number of simultaneous connections`: checked
+   * `Maximum number of connections`: 1
 
-9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system by dragging the file `/Users/macOSUsername/.ssh/id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
+   Then click on `Connect`.
+ 
+   ![new_site_transfer](/img/sshkeys_macos/new_site_transfer.png)
 
-   ![fig10](/img/4e.png)
+
+5. If a pop up prompts you to save your password, select the `Save passwords` option, then click the `OK` button.
+
+6. Then enter in your password for the cluster, and click `OK`.
+
+   ![fig](/img/sshkeys_macos/connect_password.png)
+
+7. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
+
+   ![fig8](/img/sshkeys_macos/6be.png)
+
+8. You should now see the `DUO` authentication dialog, ensure your `User` is correct then enter the number for the preferred option from the list presented, then click `OK`.
+
+   ![fig8](/img/sshkeys_macos/connect_duo.png)
+
+9. Now that you are connected with Filezilla, transfer your public SSH key from your MacOS system by dragging the file `/Users/macOSUsername/.ssh/id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
+
+   ![fig10](/img/sshkeys_macos/4e.png)
 
   If the `/rhome/username/.ssh/` directory does not exits, create it.
 
@@ -136,41 +162,43 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
 Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `secure.hpcc.ucr.edu` server.
 
-1. Open Filezilla `Site Manager` button in the top bar of icons.
+1. Start the `Filezilla` application
 
-   ![fig3](/img/60.png)
+2. Open `Site Manager` window by clicking the button in the top bar of icons.
+
+   ![fig3](/img/sshkeys_macos/60.png)
 
 2. Click on `New Site`, rename it (optional) and press enter.
 
-   ![fig3](/img/54.png)
+   ![fig3](/img/sshkeys_macos/54.png)
 
-3. Make sure the following fields are correctly filled before adding your `SSH key` file:
+3. Fill in the following fields from the `General` tab:
 
-   * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
-   * `Host`: type in `secure.hpcc.ucr.edu`
-   * `Port`: type `22`
-   * `Logon Type`: set to `Key file`
-   * `User`: type in your HPCC username
+   * `Protocol`: `SFTP - SSH File Transfer Protocol`
+   * `Host`: `cluster.hpcc.ucr.edu`
+   * `Logon Type`: `Key file`
+   * `User`: Your HPCC username
+   * `Key file`: `/Users/macOSUsername/.ssh/id_rsa`
 
-   After these fields are finalized, click the `Browse..` button.
+   Be sure to select the previously created private key (`/Users/macOSUsername/.ssh/id_rsa`) for the `Key file` field using the `Browse...` button.
 
-   ![fig4](/img/56.png)
+   ![fig4](/img/sshkeys_macos/56.png)
 
 4. Navigate to the folder you saved your key file in (default location is `/Users/macOSUsername/.ssh`) and open the private key file `id_rsa`.
 
-   ![fig4](/img/57.png)
+   ![fig4](/img/sshkeys_macos/57.png)
    
 5. You should see the added keyfile in the `Key file:` box, then click `Connect`.
 
-   ![fig5](/img/59.png)
+   ![fig5](/img/sshkeys_macos/59.png)
 
    Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button.
 
-   ![fig5](/img/61.png)
+   ![fig5](/img/sshkeys_macos/61.png)
 
 9. Remember to select the `secure.hpcc.ucr.edu` address.
 
-   ![fig5](/img/62.png)
+   ![fig5](/img/sshkeys_macos/62.png)
 
 10. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
 
