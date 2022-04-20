@@ -41,8 +41,8 @@ If you have a new account then your password was emailed to you when your accoun
 ### SSH Keys
 
 SSH keys can only be setup if you already have access to the cluster.
-This is becuase in order to get this working a file needs to be placed in your home directory on the cluster.
-If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding.
+This is becuase in order to get this working a file (public key) needs to be placed in your home directory on the cluster.
+If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding. If you never intend to have a UCR NetID, then you may create your keys according to the below instructions, however you will need to contact support in order to copy your resulting public key to the cluster.
 
 When using SSH key authentication, you will need to create a public and a pritate key.
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
@@ -74,7 +74,7 @@ ls ~/.ssh/
 The `id_rsa` file is your private key (do not share this) and the `id_rsa.pub` is your public key.
 You will need to copy your public key to the cluster, creating the `authorized_keys` file.
 
-If you are not able to confiugre [Password+DUO](#passwordduo) then contact [support](mailto:support@hpcc.ucr.edu) and provide your public key (`id_rsa.pub`).
+If you are not able to configure [Password+DUO](#passwordduo) then contact [support](mailto:support@hpcc.ucr.edu) and provide your public key (`id_rsa.pub`).
 
 If you already have configured [Password+DUO](#passwordduo), then run the follwing from your computer [terminal](#terminal):
 
