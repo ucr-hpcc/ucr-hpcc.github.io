@@ -21,388 +21,384 @@ To view this list at the command line, use:
 
 | Package Name | Versions |
 | --- | --- |
-| 454 | 2.9(default) |
-| ABYSS | 1.5.2 1.9.0 2.0.2(default) |
-| ALLMAPS | 0.5.5(default) |
-| ASTRAL | 4.10.12(default) 4.10.7 4.7.12 4.7.8 |
-| AlignGraph | 2015-06-01(default) |
-| BBMap | 35.49(default) |
-| BMGE | 1.12(default) |
-| Beagle | 4.0(default) |
-| Bio++ | 2.2.0(default) |
-| CGAL | 0.9.6(default) |
-| DISCOVAR | 52488(default) |
-| DISCOVARdenovo | 52488(default) |
-| EIG | 6.1.4(default) |
-| EVM | 1.1.1 r2012-06-25(default) |
-| ExaML | 3.0.11 3.0.15 3.0.17(default) |
-| FALCON | 0.2.1 3a8a9cc(default) |
-| GAEMR | 1.0.1(default) |
-| GAG | 1.0 1.1 live(default) |
-| GAL | 0.2.2(default) |
-| GARM | 0.7.5(default) |
-| GraphMap | 0.3.1(default) |
-| HAMR | 1.2(default) |
-| HMMSeg | 2007-07-26(default) |
-| I-TASSER | 4.4(default) |
-| ITSx | 1.0.11(default) |
-| JAGS | 4.2.0(default) |
-| KronaTools | 2.7(default) |
-| LDhat | 2.2a(default) |
-| LINKS | 1.8.4(default) |
-| MOSAIK | 1.0.1388 2.2.26(default) |
-| MP-EST | 1.5(default) |
-| MaSuRCA | 3.1.3 3.2.1 3.2.1_12082016(default) |
-| NxTrim | v0.4.1-53c2193(default) |
-| OMA | 0.99.z.3(default) |
-| OWLTools | 2015-10-02(default) |
-| PASA | 2.0.2(default) |
-| PBSuite | 15.8.24(default) |
-| PRIAM | aug-2010(default) |
-| PartitionFinder | 2.0.0-pre10 2.0.0-pre13(default) |
-| PeakAnalyzer | 1.4(default) |
-| PeakAnnotator | 1.4(default) |
-| PeakSplitter | 1.0(default) |
-| QUAST | 3.2 4.0 4.4(default) |
-| R | 2.15.3 3.0.2 3.1.3 3.2.0 3.2.1-dev 3.2.2 3.2.3-dev 3.3.0(default) 3.3.0-dev |
-| RAxML | 8.1.20 8.2.3 8.2.4 8.2.8(default) |
-| RDPTools | 2.0.2(default) |
-| RECON | 1.08(default) |
-| REDUCE_suite | 2.0(default) |
-| RepeatMasker | 1.0.8 4-0-5(default) 4-0-6 |
-| RepeatModeler | 1.0.8(default) |
-| RepeatScout | 1.0.5(default) |
-| SCUBAT | 2013-03-21(default) |
-| SNAP | 2013-11-29(default) |
-| SOAPdenovo2 | r240(default) |
-| SPAdes | 3.6.1 3.6.2 3.7.1 3.8.0 3.9.0(default) |
-| STAR | 2.5.0a(default) |
-| SeqPrep | 1.2(default) |
-| ShortStack | 3.4(default) |
-| TARGeT | 2.00 2.10(default) |
-| VAAST | 2.1.6(default) |
-| admixture | 1.3.0(default) |
-| allpathslg | 52488 |
-| amber | 14(default) |
-| amira | 6.0.1(default) |
-| amos | 3.1.0(default) |
-| anaconda2 | 4.1.1(default) |
-| antismash | 2.1.1(default) 3.0.4 |
-| arachne | 46233(default) |
-| aragorn | 1.2.36(default) |
-| arpackpp | 88085d9(default) |
-| aspera | 3.3.3 3.6.0(default) |
-| augustus | 2.7 3.0.3 3.1(default) 3.2.2 |
-| autodock_vina | 1.1.2(default) |
-| automake | 1.15(default) 1.4 |
-| bam2fastq | 1.1.0(default) |
-| bamtools | 2.4.0(default) |
-| bayenv | 20160108(default) |
-| bayesass | 3.0.4(default) |
-| bcftools | 1.2 1.3.1(default) |
-| bcl2fastq | 2.17(default) |
-| beagle | 3.3.2 4.1(default) |
-| beagle-lib | 2.1 2.1.2(default) |
-| beast | 1.8.1 1.8.2 2.1.2 2.2.1(default) 2.3.1 |
-| bedops | 2.4.14(default) |
-| bedtools | 2.24.0 2.25.0(default) 2.26.0 2.26.0_20bda10 |
-| bfast | 0.7.0a(default) |
-| bgc | 1.03(default) |
-| bismark | 0.14.3(default) |
-| blasr | 5.2(default) 81d8eef |
-| blat | 35(default) |
-| blobtools | 0.9.17 0.9.19.4(default) 0.9.9 |
-| boost | 1.44.0 1.59.0 1365(default) |
-| bowtie | 1.1.1(default) |
-| bowtie2 | 2.2.5 2.2.9(default) |
-| braker | 1(default) |
-| breakdancer | 1.3.6(default) |
-| busco | 1.1 1.2(default) 2.0 |
-| bwa | 0.7.12(default) |
-| cabal | 1.22.4.0(default) |
-| cafe | 3.1(default) |
-| caffe | 2014(default) |
-| canu | 1.3(default) ce77820 |
-| cap3 | 2015.4.24.amd(default) 2015.4.24.intel |
-| capnproto | 0.5.3(default) |
-| cd-hit | 3.1.1 4.6.4(default) |
-| cdbfasta | 06272015(default) |
-| cegma | 2.5(default) |
-| censor | 4.2(default) |
-| chlorop | 1.1(default) |
-| circos | 0.69(default) |
-| clumpp | 1.1.2(default) |
-| cndsrc | 2013-01-11(default) |
-| cnv-seq | 2014-08-12(default) |
-| cnvnator | 0.3.2(default) |
-| coevol | 1.4b(default) |
-| coils | 2.2(default) |
-| cuda | 7.0(default) |
-| cufflinks | 2.2.1 b55bb21(default) |
-| db-diamond | 20161103(default) |
-| db-kaiju | 20170113-e |
-| db-ncbi | 20140623 20150112 20160708(default) |
-| db-panther | 10.0(default) |
-| db-pfam | 2013-03-14(default) 2015-07-27 27.0 28.0 |
-| db-priam | mar15(default) |
-| db-trinotate | r20150720(default) |
-| db-uniprot | 2014_12 2015_01 2015_02 2015_03 2015_04 2015_05 2016_11(default) |
-| deconseq | 0.4.3(default) |
-| deepnano | abdb35f(default) |
-| detonate | 1.9(default) |
-| diamond | 0.7.10 0.8.17 0.8.23(default) |
-| disopred | 3.16(default) |
-| distruct | 1.1(default) |
-| diyabc | 2.1.0(default) |
-| ea-utils | 1.1.2-537(default) |
-| eigen | 3.2.10(default) |
-| emboss | 6.6.0(default) |
-| emmax | 07032010(default) |
-| esom | 1.1 |
-| espresso | 5.3.0(default) |
-| etetoolkit | 20160331 20160926(default) |
-| exonerate | 2.2.0(default) 2.4.0 |
-| express | 1.5.1(default) |
-| fasta | 36.3.7a(default) |
-| fastq-join | db84274(default) |
-| fastq-tools | 0.7(default) |
-| fastq_screen | 0.5.2(default) |
-| fastqc | 0.11.3(default) |
-| faststructure | 1.0_e47212f(default) |
-| fasttree | 2.1.8(default) |
-| fastx_toolkit | 0.0.13(default) |
-| fermikit | r178(default) |
-| fftw | 3.3.5(default) |
-| figtree | 3.1.4(default) |
-| flash | 1.2.11(default) |
-| flux-simulator | 1.2.2(default) |
-| fraggenescan | 1.30(default) |
-| freebayes | 9.9.2(default) |
-| freec | 9.5(default) |
-| fsa | 1.15.9(default) |
-| funannotate | 0.4.0 0.5.1 0.5.3 0.5.4(default) git-live |
-| g-phocs | 1.2.3(default) |
-| gadgetviewer | 1.0.6(default) |
-| gapcloser | 1.12-r6(default) |
-| gapfiller | 1.10(default) |
-| garli | 2.1 |
-| gatk | 3.3-0 3.3.0 3.4-0 3.4-46 3.4.0 3.4.46 3.5 3.6(default) |
-| gatk-queue | 3.3-0 3.4-46 3.6(default) |
-| gblocks | 0.91b(default) |
-| geneid | 1.4.4(default) |
-| genemarkESET | 4.32(default) |
-| genemarkHMM | 2.3e 4.21 4.32(default) |
-| genemark_suite | 2.5p(default) |
-| genewise | 2.4.1(default) |
-| genomemapper | 0.4.4(default) |
-| genometools | 1.5.6(default) |
-| ggobi | 2.1.11(default) |
-| git | 2.8.0(default) |
-| git-lfs | 0.5.4 1.0.2 1.1.1 1.4.1(default) |
-| glimmer | 2.13 3.02(default) |
-| glimmerhmm | 3.0.2 3.0.4(default) |
-| gmap | 2014.12.28 2015.09.10 2015.12.31(default) |
-| gnuplot | 5.0.1(default) |
-| gottcha | v20150825(default) |
-| graphlan | 7659c52(default) |
-| gromacs | 5.1.1(default) 5.1.4 5.1.4-cuda |
-| gurobi | 6.5.1(default) |
-| harvest-tools | 1.2(default) |
-| hdf-java | 3.2.1(default) |
-| hisat2 | 2.0.1 2.0.5(default) |
-| hmmer | 1.8.5 2 2.3.2 3 3.0 3.1b2(default) |
-| homer | 4.8(default) |
-| htslib | 1.2.1 1.3 1.3.1(default) |
-| hub | 2.2.0-44-gb0f092a(default) |
-| humann | 0.99(default) |
-| hydra | 3.1.4(default) |
-| icommands | iPlant(default) |
-| idba | 1.1.3(default) |
-| iigb_utilities | 1(default) |
-| ima2p | 2015-10-19(default) |
-| impute2 | 2.3.2(default) |
-| infernal | 1.1.1(default) |
-| instruct | 20160119(default) |
-| intel | 10.1(default) |
-| interproscan | 5.11-51.0 5.13-52.0 5.14-53.0 5.15-54.0 5.20-59.0(default) |
-| iprscan | 5.11-51.0 5.13-52.0 5.14-53.0 5.15-54.0 5.20-59.0(default) |
-| itpp | 4.3.1(default) |
-| japsa | v1.6-10a(default) |
-| java | 6 6u43 7 7u40(default) 8 8u25 |
-| jellyfish | 1.1.11 2.2.0(default) |
-| kaiju | 1.4.4(default) f81d2ca |
-| kalign | 2.04(default) |
-| kallisto | 0.42.4(default) |
-| kent | 318(default) |
-| lammps | 16Feb16(default) |
-| last | 737 755(default) |
-| lefse | 2a63b32(default) |
-| less-highlight | 1.0(default) |
-| libpll | 1.0.11(default) |
-| libsequence | 1.8.5(default) |
-| libsvm | 3.20(default) |
-| linkimpute | 1.1.1(default) |
-| lp_solve | 5.5(default) |
-| mafft | 7.221 7.222 7.271(default) |
-| magic-blast | 1.0.0(default) |
-| main/R | 3.2.3-dev |
-| maker | 2.28 2.31.8 |
-| mapsembler2 | 2.2.4(default) |
-| mash | 1.1.1(default) |
-| masurca | 2.3.2(default) |
-| maui | 3.3.1(default) |
-| maxbin | 2.2.1(default) |
-| mcl | 14-137(default) |
-| mcscan | 4cfe0f5(default) |
-| megahit | 1.0.6 1.1.1(default) |
-| meme | 4.10.1(default) |
-| metabat | 0.32.4 |
-| microbiometil | r20110519(default) |
-| migrate-n | 3.6.11 4.2.8(default) |
-| mira | 4.0.2(default) |
-| miranda | 3.3a(default) |
-| mirdeep | 2.0.0.8(default) |
-| mitoprot | 1.101(default) |
-| mothur | 1.36.1(default) |
-| mpiblast | 1.6.0(default) |
-| mpich | 3.1.4(default) |
-| mrbayes | 3.2.6(default) |
-| msABC | 20120315(default) |
-| msbayes | 20140305(default) |
-| multigems | 1.0(default) |
-| mummer | 3.23(default) |
-| muscle | 3.8.425(default) |
-| mutt | 1.5.23(default) |
-| namd | 2.10(default) 2.10_cuda 2.10_gpu |
-| nanopolish | v0.5.0-45-g6406f78(default) |
-| ncbi-blast | 2.2.25+ 2.2.26 2.2.26+ 2.2.29+ 2.2.30+(default) 2.2.31+ 2.3.0+ 2.4.0+ 2.5.0+ |
-| ncbi-rmblast | 2.2.28(default) |
-| ncbi_tools | 1.9(default) |
-| nseg | 6-21-1998(default) |
-| oases | 0.2.09(default) |
-| octave | 4.0.0(default) |
-| openbabel | 2.3.2(default) |
-| opencv | 3.1.0(default) |
-| openmpi | 2.0.1-slurm-16.05.4(default) |
-| openmx | 3.8(default) |
-| orthomcl | 2.0.9(default) |
-| pagan | 0.56(default) |
-| paml | 4.8a 4.9(default) |
-| pantherscore | 1.03(default) |
-| parallel | 20151222(default) |
-| pbs-drmaa | 1.0.18(default) |
-| pbwa | 1.21009(default) |
-| pbzip2 | 1.1.12(default) |
-| pdsh | 2.29(default) |
-| peakseq | 1.31(default) |
-| pear | 0.9.10(default) |
-| pecnv | 0.1.8(default) |
-| perl | 5.16.3 5.20.2(default) 5.22.0 5.24.0 |
-| phase | 2.1.1(default) |
-| phobius | 1.01(default) |
-| phonopy | 1.10.0(default) |
-| phred-phrap-consed | 0.990329(default) |
-| phylip | 3.696(default) |
-| phylobayes | 3.3f 4.1c(default) mpi-1.5a mpi-1.7a mpi-1.7b |
-| phyml | 3.1(default) |
-| picard | 1.130 2.6.0(default) |
-| pilon | 1.20(default) |
-| pindel | 0.2.5a7(default) |
-| pipits | 1.4.0(default) |
-| pita | 6(default) |
-| plink | 1.07 1.90b3.38(default) 1.90b3v |
-| poreminion | 0.4.4(default) |
-| primer3 | 2.3.6(default) |
-| prinseq | 0.20.4(default) |
-| prodigal | 2.6.2(default) |
-| prokka | 1.11(default) |
-| proteinortho | 5.15(default) |
-| provean | 1.1.5(default) |
-| python | 2.7.12 2.7.5(default) 3.4.3 3.6.0 |
-| qiime | 1.9.1(default) |
-| qualimap | 2.1.3(default) |
-| rascaf | 1.0.2(default) |
-| ratt | 20160928 |
-| rclone | 1.33(default) |
-| repet | 2.5(default) |
-| ribotaper | 1.3.1(default) |
-| rna-seqc | 1.1.8(default) |
-| rnammer | 1.2(default) |
-| root | 6.06.06(default) |
-| rsem | 1.2.21(default) |
-| rstudio | 0.99.451(default) |
-| ruby | 2.3.0(default) |
-| sailfish | 0.8.0(default) |
-| salmon | 0.5.1(default) |
-| sambamba | 0.5.9(default) |
-| samtools | 0.1.19 1.2 1.3(default) |
-| sas | 9.4(default) |
-| scythe | 0.981(default) |
-| selestim | 1.1.4 |
-| seqmonk | 0.34.1 |
-| seqtk | 281537b(default) |
-| sequin | 15.10(default) |
-| sga | 0.10.14(default) |
-| shapeit | 2.12(default) |
-| shoremap | 3.0(default) |
-| sickle | 1.33(default) |
-| signalp | 3.0 4.1c(default) |
-| sim4 | 2012-10-10(default) |
-| slurm | 16.05.4(default) |
-| smalt | 0.7.6(default) |
-| smis | 2015-01-08(default) |
-| snap | 0.15.4(default) |
-| snoscan | 0.9b(default) |
-| snpEff | 4.1G 4.1K(default) |
-| soap2 | 2.20(default) |
-| soapsv | 20120824 |
-| sortmerna | 2.0(default) |
-| spectra | git-5138871(default) |
-| speedseq | a95704a(default) |
-| sprkkr | 6.3.2(default) |
-| sratoolkit | 2.5.0 2.8.1(default) |
-| sspace-standard | 3.0(default) |
-| stacks | 1.19 1.32(default) 1.40 |
-| stampy | 1.0.2(default) |
-| stringtie | 1.2.4(default) |
-| structure | 2.3.4(default) |
-| subread | 1.4.6(default) |
-| surface-evolver | 2.70(default) |
-| tRNAscan | 1.23 1.3.1(default) |
-| tabix | 0.2.6(default) |
-| targetp | 1.1(default) |
-| tbl2asn | 24.3 24.9(default) |
-| tcoffee | 10.00.r1613(default) |
-| tedna | 1.2.2(default) |
-| tmhmm | 2.0c(default) |
-| tmux | 2.2(default) |
-| tophat | 2.0.14 2.1.1(default) |
-| torque | 4.2.7 5.1.0(default) |
-| transdecoder | 2.0.1 3.0.0(default) |
-| treebest | 1.9.2(default) |
-| trf | 4.04 4.07b(default) |
-| trim_galore | 0.4.1 0.4.2(default) |
-| trimal | 1.4.1(default) |
-| trimmomatic | 0.33(default) |
-| trinity-rnaseq | 2.0.1 2.0.6 2.1.1 2.2.0 2.3.2(default) d9565c6 r2013-02-25 |
-| trinotate | 2.0.2 3.0.1(default) |
-| ufits | 0.5.5 0.5.6 0.6.1 0.7.0 0.7.4(default) |
-| usearch | 8 8.0.1623_32bit 8.1.1861_32bit 9 9.0.2132_i86linux32 9.1.13_i86linux32(default) |
-| validator | 936077c(default) |
-| varscan | 2.3.9(default) |
-| vcflib | 20160719(default) 2ba1c50b5d |
-| vcftools | 0.1.13(default) |
-| velvet | 1.2.10(default) |
-| velvetoptimiser | 2.2.5(default) |
-| viennarna | 2.1.9(default) |
-| vim | 7.4 7.4.1952(default) |
-| vsearch | 1.10.2 1.11.1 2.3.2(default) |
-| weblogo | 2.8.2(default) |
-| wgs-assembler | 8.3rc1 8.3rc2(default) |
-| wgsim | 0.3.1-r13(default) |
-| wien2k | 14.2(default) |
-| wiggletools | 8088a17(default) |
-| wu-blast | 2006-04-19(default) |
-| xband | 6.3(default) |
-| yeppp | 1.0.0(default) |
-| zorro | 2.2(default) |
+|AAFTF|0.3.0|
+|abyss|2.3.4|
+|alphafold|2.1.2|
+|amptk|1.5|
+|anaconda|2021.11-py39_0|
+|angsd|0.937|
+|ant|1.10.12|
+|antismash|5.1.2|
+|antismash|6.0.0|
+|arcs|1.2.3|
+|aspera|3.6.0|
+|ASTRAL-Pro|1.1.3|
+|ASTRAL|4.7.8|
+|ASTRAL|4.7.12|
+|ASTRAL|4.10.7|
+|ASTRAL|4.10.12|
+|ASTRAL|5.5.6|
+|ASTRAL|5.6.1|
+|ASTRAL|5.6.3|
+|ASTRAL|5.7.1|
+|ASTRAL|5.14.3|
+|ASTRAL|5.15.4|
+|augustus|3.3.3|
+|augustus|3.4.0|
+|autometa|1.0.3|
+|autometa|2.0.2|
+|bamtools|2.5.2|
+|bat|0.18.3|
+|BBMap|38.95|
+|bcftools|1.15|
+|bcl2fastq|2.20.0.422|
+|beagle-lib|3.1.2|
+|beast|1.10.4|
+|beast|2.6.6|
+|bedops|2.4.40|
+|bedtools|2.29.1|
+|bioperl|1.7|
+|bioperl|1.7.8|
+|blobtools|1.1.1|
+|blobtools2|3.1.0|
+|boost|1.78.0|
+|bowtie|1.3.1|
+|bowtie2|2.4.5|
+|busco|5.3.0|
+|busco|5.3.2|
+|bwa|0.7.17|
+|canu|2.2|
+|cap3|2005.06.07.amd64|
+|cap3|2005.06.07.intel|
+|cap3|2015-02-10|
+|cblaster|1.3.12|
+|cd-hit|4.8.1|
+|centos|7.9|
+|cgal|0.9.6|
+|clinker|1.3.12|
+|clipkit|1.3.0|
+|CodingQuarry|2.0|
+|cp2k|7.1_oneapi-2022.1.2.146|
+|cuda|10.2|
+|cuda|11.4|
+|cufflinks|2.2.1|
+|cutadapt|3.7|
+|db-cazy|3.0|
+|db-cazy|4.0|
+|db-cazy|5.0|
+|db-cazy|9.0(default)|
+|db-checkv|0.6|
+|db-diamond|20161103|
+|db-diamond|20190125|
+|db-diamond|20210403(default)|
+|db-kaiju|20170113-e|
+|db-merops|110|
+|db-merops|120(default)|
+|db-merops|2017-02-02|
+|db-ncbi|20140623|
+|db-ncbi|20150112|
+|db-ncbi|20160708|
+|db-ncbi|20170707|
+|db-ncbi|20171212|
+|db-ncbi|20190121|
+|db-ncbi|20190709|
+|db-ncbi|20190805(default)|
+|db-ncbi|20220131|
+|db-ncbi|v5.20190517|
+|db-panther|10.0(default)|
+|db-panther|13.1|
+|db-pfam|27.0|
+|db-pfam|28.0|
+|db-pfam|30.0|
+|db-pfam|31.0|
+|db-pfam|32.0|
+|db-pfam|33.0|
+|db-pfam|33.1|
+|db-pfam|34.0|
+|db-pfam|35.0(default)|
+|db-pfam|2013-03-14|
+|db-pfam|2015-07-27|
+|db-pfam|2016-09-15|
+|db-pfam|2017-06-11|
+|db-pfam|2018-10-18|
+|db-pfam|2020-03-19|
+|db-pfam|2020-05-05|
+|db-pfam|2021-03-19|
+|db-pfam|2021-11-25|
+|db-priam|mar15(default)|
+|db-rfam|11.0|
+|db-rfam|14.5|
+|db-rfam|14.7|
+|db-swissprot|2021_01|
+|db-trinotate|r20150720(default)|
+|db-uniprot|2014_12|
+|db-uniprot|2015_01|
+|db-uniprot|2015_02|
+|db-uniprot|2015_03|
+|db-uniprot|2015_04|
+|db-uniprot|2015_05|
+|db-uniprot|2016_11|
+|db-uniprot|2018_03(default)|
+|deeptools|3.5.1|
+|diamond|2.0.13|
+|diamond|2.0.14|
+|du-dust|0.7.5|
+|eggnog-mapper|2.1.7|
+|elpa|2020.11.001_oneapi-2022.1.2.146|
+|emboss|6.6.0|
+|espresso|7.0_oneapi-2022.1.2.146|
+|ete3|3.1.2|
+|exonerate|2.2.0|
+|exonerate|2.4.0|
+|extra|1|
+|fasta|36.3.8h|
+|fastani|1.33|
+|fastme|2.1.6.3|
+|fastqc|0.11.9|
+|fasttree|2.1.11|
+|fastx_toolkit|0.0.13|
+|ffmpeg|5.0|
+|fftw|2.1.5|
+|Flye|2.9|
+|freefem|4.10|
+|funannotate|1.8|
+|fzf|0.28.0|
+|gadget2|2.0.7|
+|gadgetviewer|1.1.2|
+|gap|4.11.1|
+|gatk|3|
+|gatk|3.3-0|
+|gatk|3.3.0|
+|gatk|3.4-0|
+|gatk|3.4-46|
+|gatk|3.4.0|
+|gatk|3.4.46|
+|gatk|3.5|
+|gatk|3.6|
+|gatk|3.7|
+|gatk|3.8|
+|gatk|4|
+|gatk|4.0.1.2|
+|gatk|4.0.4.0|
+|gatk|4.0.8.1|
+|gatk|4.0.12.0|
+|gatk|4.1.1.0|
+|gatk|4.1.4.1|
+|gatk|4.1.8.1|
+|gatk|4.2.0.0|
+|gatk|4.2.5.0|
+|gaussian|16|
+|gaussian|16_AVX2|
+|gaussian|16_SSE4|
+|gcc|9.2.1|
+|genemarkESET|4.69_lic|
+|genometools|1.6.2|
+|gmap|2021-12-17|
+|gocryptfs|2.2.1|
+|golang|1.17.6|
+|gtdbtk|2.0.0|
+|hdf5|1.12.1|
+|hdf5|1.12.1_oneapi-2022.1.2.146|
+|hic-pro|3.1.0|
+|hisat2|2.1.0|
+|hisat2|2.2.0|
+|hisat2|2.2.1|
+|hmmer|1.8.5|
+|hmmer|2|
+|hmmer|2.3.2|
+|hmmer|3|
+|hmmer|3.3.2|
+|hmmer|3.3.2-mpi|
+|hpcc_user_utils|current|
+|htslib|1.14|
+|htslib|1.15|
+|hub|2.14.2|
+|igv|2.12.3|
+|infernal|1.1.4|
+|interproscan|5.54-87.0|
+|iprscan|5.54-87.0|
+|IQ-TREE|1.6.12|
+|IQ-TREE|2.1.1|
+|IQ-TREE|2.1.1_mpi|
+|IQ-TREE|2.1.3|
+|IQ-TREE|2.2.0|
+|iqtree|1.6.12|
+|iqtree|2.1.1|
+|iqtree|2.1.1_mpi|
+|iqtree|2.1.3|
+|iqtree|2.2.0|
+|jags|4.3.0|
+|java|17.0.2|
+|jbrowse|1.16.8|
+|jbrowse2|1.6.7|
+|jellyfish|2.3.0|
+|jemalloc|5.2.1|
+|julia|1.7.2|
+|jupyterlab|3.3.1|
+|kallisto|0.46.1|
+|kallisto|0.48.0|
+|kent-tools|427|
+|libdeflate|1.10|
+|LINKS|1.8.4|
+|longranger|2.2.2|
+|macs2|2.2.6|
+|macs2|2.2.7|
+|macs3|3.0.0a7|
+|mafft|7.490|
+|mathematica|12.3.1|
+|matlab|R2021b|
+|mcl|14-137|
+|medaka|1.6|
+|medaka|1.6-gpu|
+|meme|5.4.1|
+|miniconda3|py39_4.10.3|
+|miniconda3|py39_4.12.0|
+|minimap2|2.24|
+|MMseqs2|13-45111|
+|mmseqs2|13-45111|
+|mosdepth|0.3.3|
+|mothur|1.47.0|
+|mpich|4.0.1|
+|mpich|4.0.1_gcc-9.2.1|
+|mummer|3.23|
+|mummer|4.0.0|
+|muscle|3.8.31|
+|muscle|5.1|
+|mutt|2.1.5|
+|ncbi-asn_tools|2022-04-25|
+|ncbi-blast|2.2.22+|
+|ncbi-blast|2.2.25+|
+|ncbi-blast|2.2.26|
+|ncbi-blast|2.2.26+|
+|ncbi-blast|2.2.29+|
+|ncbi-blast|2.2.30+|
+|ncbi-blast|2.2.31+|
+|ncbi-blast|2.3.0+|
+|ncbi-blast|2.4.0+|
+|ncbi-blast|2.5.0+|
+|ncbi-blast|2.6.0+|
+|ncbi-blast|2.7.1+|
+|ncbi-blast|2.8.0+|
+|ncbi-blast|2.8.1+|
+|ncbi-blast|2.9.0+|
+|ncbi-blast|2.11.0+|
+|ncbi-blast|2.12.0+|
+|ncbi-blast|2.13.0+|
+|ncbi-ngs-tools|2.11.2|
+|ncbi-rmblast|2.11.0|
+|ncbi_datasets|13.4.0|
+|ncbi_edirect|16.8.20220329|
+|NECAT|0.0.1|
+|neovim|0.6.0|
+|netcdf-c|4.8.1_oneapi-2022.1.2.146|
+|netcdf-fortran|4.5.4_onaapi-2022.1.2.146|
+|NextDenovo|2.5.0|
+|NextPolish|1.4.0|
+|oneapi|2022.1.2.146|
+|openbabel|3.1.1|
+|openmpi|4.1.2|
+|openmpi|4.1.2-slurm-19.05.0|
+|openmpi|4.1.2_slurm-21.08.5|
+|orthofinder|2.5.4|
+|pandoc|2.17.1.1|
+|parallel-fastq-dump|0.6.7|
+|parallel|20220122|
+|PASA|2.5.2|
+|pbzip2|1.1.13|
+|phred-phrap-consed|0.990329|
+|phykit|1.11|
+|picard|2.26.11|
+|pilon|1.24|
+|plink|1.90b6.25|
+|pmix|3.1.3rc2|
+|polypolish|0.5.0|
+|primer3|2.6.1|
+|prodigal|2.6.3|
+|prymetime|0.2|
+|pyvcf|0.6.8|
+|qiime2|2022.2|
+|quast|5.1.0rc1|
+|quickmerge|0.3|
+|R|4.1.2(default)|
+|R|4.1.3|
+|ragtag|2.1.0|
+|raxml-ng|1.1.0|
+|raxml-ng|1.1.0-mpi|
+|RAxML|8.2.12|
+|raxml|8.2.12|
+|RAxML_NG|1.1.0|
+|RAxML_NG|1.1.0-mpi|
+|rclone|1.58.0|
+|REDUCE_suite|2.2|
+|reduce_suite|2.2|
+|RepeatMasker|4-1-2|
+|RepeatModeler|2.0.3|
+|rmate|1.5.10|
+|rstudio-server|2022.02.0-443|
+|ruby|2.7.5|
+|ruby|3.1.1|
+|salmon|1.7.0|
+|samtools|1.14|
+|seqtk|1.3|
+|shovill|1.1.0|
+|signalp|3.0|
+|signalp|4.1c|
+|signalp|5.0b|
+|signalp|6.0g|
+|singularity-ce|3.9.3|
+|singularity|3.9.3|
+|slurm|19.05.0|
+|slurm|21.08.5|
+|snpEff|4.1G|
+|snpEff|4.1K|
+|snpEff|4.3m|
+|snpEff|4.3P|
+|snpEff|4.3r|
+|snpEff|4.3t|
+|snpEff|5.0e|
+|snpEff|5.1|
+|spades|3.15.4|
+|sparsehash|2.0.4|
+|sratoolkit|3.0.0|
+|stacks|2.60|
+|star|2.7.10a|
+|stringtie|2.2.1|
+|subread|2.0.3|
+|tbb|2020.3|
+|tbb|2021.5.0|
+|texlive|20210325|
+|texlive|20220403|
+|tmhmm|2.0c|
+|tmux|3.3|
+|tophat|2.1.1|
+|transdecoder|5.5.0|
+|trf|4.09|
+|trim_galore|0.6.7|
+|trimal|1.4.1|
+|trimmomatic|0.39|
+|trinity-rnaseq|2.13.2|
+|trinity-rnaseq|2.13.2_sing|
+|trnascan-se|2.0.9|
+|unimap|0.1|
+|usearch|8|
+|usearch|8.0.1623_32bit|
+|usearch|8.1.1861_32bit|
+|usearch|9|
+|usearch|9.0.2132_i86linux32|
+|usearch|9.1.13_i86linux32|
+|usearch|9.2.64_i86linux32|
+|usearch|10|
+|usearch|10.0.240_i86linux32|
+|usearch|11|
+|usearch|11.0.667_i86linux32|
+|valgrind|3.18.1|
+|vasp|5.4.1_oneapi-2022.1.2.146|
+|vcftools|0.1.16-18|
+|viennarna|2.4.17|
+|viennarna|2.5.0|
+|vsearch|2.21.1|
+|wannier90|3.1.0_oneapi-2022.1.2.146|
+|workspace|scratch|
+|xpdf|4.03|
+|yq|4.23.1|
+|zoem|21-341|
