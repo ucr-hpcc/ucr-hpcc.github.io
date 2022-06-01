@@ -881,7 +881,11 @@ This directory can be accessed by specific lab members.&lt;/p>
 &lt;/tbody>
 &lt;/table>
 &lt;h2 id="non-persistent-space">Non-Persistent Space&lt;/h2>
-&lt;p>Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on the HPC cluster.&lt;/p>
+&lt;p>Frequently, there is a need for faster temporary storage. For example activities like the following would fall under this category:
+1. Output a significant amount of intermediate data during a job
+2. Access a dataset from a faster medium than bigdata or the home directories
+3. Write out lock files&lt;/p>
+&lt;p>These types of activities are well suited to the use of fast non-persistent spaces. Below are the filesystems available on the HPC cluster that would best suited for these actions.&lt;/p>
 &lt;p>&lt;strong>Temporary Space&lt;/strong>
 This is a standard space available on all Linux systems. Please be aware that it is limited to the amount of free disk space on the node you are running on.&lt;/p>
 &lt;table>
@@ -907,7 +911,7 @@ This is a standard space available on all Linux systems. Please be aware that it
 &lt;/tbody>
 &lt;/table>
 &lt;p>&lt;strong>SSD Backed Space&lt;/strong>
-This space is much faster than the persistwnt space (/rhome,/bigdata), but slower than using RAM based storage.&lt;/p>
+This space is much faster than the persistent space (/rhome,/bigdata), but slower than using RAM based storage.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
