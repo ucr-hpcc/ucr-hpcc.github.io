@@ -40,8 +40,8 @@ sessionInfo()
 ##############################
 dir.create("mytestdir")
 setwd("mytestdir")
-download.file("https://bit.ly/3gZJBsy", "slurm.tmpl")
-download.file("https://bit.ly/3nvSNHA", ".batchtools.conf.R")
+download.file("https://bit.ly/3Oh9dRO", "slurm.tmpl")
+download.file("https://bit.ly/3KPBwou", ".batchtools.conf.R")
 
 ## Load packages and modules
 library('RenvModule')

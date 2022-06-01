@@ -18,7 +18,7 @@ and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).
 ## R code of this section
 
 To simplify the evaluation of the R code of this page, the corresponding text version 
-is available for download from [here](https://hpcc.ucr.edu/_support_docs/tutorials/batchtools_test.R).
+is available for download from [here](https://bit.ly/3m5QmMU).
 
 ## Parallelization with batchtools 
 
@@ -29,14 +29,14 @@ First login to your cluster account, open R and execute the following lines. Thi
 create a test directory (here `mytestdir`), redirect R into this directory and then download
 the required files: 
 
-+ [`slurm.tmpl`](https://hpcc.ucr.edu/_support_docs/tutorials/slurm.tmpl)
-+ [`.batchtools.conf.R`](https://hpcc.ucr.edu/_support_docs/tutorials/.batchtools.conf.R)
++ [`slurm.tmpl`](https://bit.ly/3Oh9dRO)
++ [`.batchtools.conf.R`](https://bit.ly/3KPBwou)
 
 ```r
 dir.create("mytestdir")
 setwd("mytestdir")
-download.file("https://goo.gl/tLMddb", "slurm.tmpl")
-download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
+download.file("https://bit.ly/3Oh9dRO", "slurm.tmpl")
+download.file("https://bit.ly/3KPBwou", ".batchtools.conf.R")
 ```
 
 ## Load package and define some custom function
