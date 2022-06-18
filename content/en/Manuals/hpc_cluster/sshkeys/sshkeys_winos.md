@@ -47,7 +47,8 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 #### Command-line-based SSH key creation
 
 Creating SSH keys in MobaXterm from the command-line is straightforward and almost identical to creating SSH keys under 
-Linux (see [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). First, open in MobaXterm the terminal app and the execute the following commands. 
+Linux (see [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). First, open in MobaXterm the terminal app and then execute 
+the following commands. 
 
 ```sh
 mkdir -p ~/.ssh # Create SSH directory
@@ -55,8 +56,9 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 ```  
 
 Second, check the content of the newly created `.ssh` directory with `ls -al .ssh/`. It should contain files for the private and public keys that are named `id_rsa` and `id_rsa.pub`, respectively. The public key is the one that needs to be uploaded 
-to a the remote system one wishes to connect to (_e.g._ HPCC or GitHub). Since some systems require the private key to have
-a `.ppk` extension in its name, it is recommended to add it with the following command. Note, this private key file should not be shared. 
+to a the remote system one wishes to connect to (_e.g._ HPCC or GitHub). Since some systems require the private key created
+by MobaXterm (Putty) to have a `.ppk` extension, it is recommended to add this extension with the following command. Note, 
+this private key file should not be shared. 
 
 ```sh
 mv .ssh/id_rsa .ssh/id_rsa.ppk
