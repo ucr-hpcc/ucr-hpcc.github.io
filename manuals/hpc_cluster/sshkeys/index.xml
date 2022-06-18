@@ -193,6 +193,9 @@ Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&
 &lt;h2 id="ssh-keys-on-linux">SSH Keys on Linux&lt;/h2>
 &lt;p>How to create SSH keys on LInux OSs or the command-line in general is described on the general login page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
 &lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
+&lt;p>The following provides instructions for both command-line-based and GUI-based SSH key creations. Users need to choose which option it more suitable for them.
+Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires copy and paste of a few lines
+of code.&lt;/p>
 &lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
 &lt;p>The private key remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.&lt;/p>
