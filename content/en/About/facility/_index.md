@@ -7,8 +7,14 @@ weight: 1
 
 ## Mission
 
-Our facility's mission is to provide high performance compute resources to all disciplines.
-Another goal is to facilitate the use of cloud computing at commercial service and facilitate use of supercomputers such as those at UCSD and LBNL.
+The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
+infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
+includes access to the shared HPC resources and services. The main advantage of a shared
+research computing environment is access to a much larger HPC infrastructure (with thousands
+of CPUs/GPUs and many PBs of directly attached storage) than what smaller clusters of
+individual research groups could afford, while also providing a long-term sustainability plan and
+professional systems administrative support. 
+
 
 ## Facility description
 
