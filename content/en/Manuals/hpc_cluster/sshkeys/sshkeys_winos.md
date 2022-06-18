@@ -10,6 +10,10 @@ aliases:
 
 ## SSH Keys on MS Windows
 
+The following provides instructions for both command-line-based and GUI-based SSH key creations. Users need to choose which option it more suitable for them.
+Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires copy and paste of a few lines 
+of code.
+
 ### What are SSH keys?
 
 SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
