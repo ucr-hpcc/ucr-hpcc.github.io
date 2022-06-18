@@ -38,8 +38,8 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 #### FileZilla
 
-If you choose to upload you SSH key to the HPCC cluster with GUI app, you will need to install `FileZilla` or a similar sFTP/SCP client.
-Note, FileZilla is not required if you use the command-line approach below.
+If you choose to upload you SSH key to the HPCC cluster with a [GUI app](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation), you will need to install `FileZilla` or a similar sFTP/SCP client.
+Note, FileZilla is not required if you use the [command-line approach](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation) below.
 
 1. Download the `FileZilla Client` for Windows [here](https://filezilla-project.org/download.php?show_all=1).
         * Make sure your Windows system is updated to the latest version.
