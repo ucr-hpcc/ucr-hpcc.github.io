@@ -219,12 +219,13 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;h3 id="create-ssh-keys-mobaxterm">Create SSH Keys (&lt;code>MobaXterm&lt;/code>)&lt;/h3>
 &lt;h4 id="command-line-based-ssh-key-creation">Command-line-based SSH key creation&lt;/h4>
 &lt;p>Creating SSH keys in MobaXterm from the command-line is straightforward and almost identical to creating SSH keys under
-Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). First, open in MobaXterm the terminal app and then execute
-the following commands.&lt;/p>
+Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to do this in a graphical user interface
+want to follow the instructions in the next section &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
+&lt;p>To create the SSH key pair from the command-line, open in MobaXterm the terminal app and then execute the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # Create SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
-&lt;p>Second, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private
+&lt;p>Next, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private
 and public keys that are named &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs to be uploaded
 to the remote system one wishes to connect to (&lt;em>e.g.&lt;/em> HPCC or GitHub). Since some systems require the private key, created
 by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code> extension, it is recommended to add this extension with the following command. Note,
