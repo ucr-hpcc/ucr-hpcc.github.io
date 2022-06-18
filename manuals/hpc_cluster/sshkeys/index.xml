@@ -215,13 +215,15 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;h3 id="create-ssh-keys-mobaxterm">Create SSH Keys (&lt;code>MobaXterm&lt;/code>)&lt;/h3>
 &lt;h4 id="command-line-based-ssh-key-creation">Command-line-based SSH key creation&lt;/h4>
 &lt;p>Creating SSH keys in MobaXterm from the command-line is straightforward and almost identical to creating SSH keys under
-Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). First, open in MobaXterm the terminal app and the execute the following commands.&lt;/p>
+Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). First, open in MobaXterm the terminal app and then execute
+the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # Create SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
 &lt;p>Second, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs to be uploaded
-to a the remote system one wishes to connect to (&lt;em>e.g.&lt;/em> HPCC or GitHub). Since some systems require the private key to have
-a &lt;code>.ppk&lt;/code> extension in its name, it is recommended to add it with the following command. Note, this private key file should not be shared.&lt;/p>
+to a the remote system one wishes to connect to (&lt;em>e.g.&lt;/em> HPCC or GitHub). Since some systems require the private key created
+by MobaXterm (Putty) to have a &lt;code>.ppk&lt;/code> extension, it is recommended to add this extension with the following command. Note,
+this private key file should not be shared.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mv .ssh/id_rsa .ssh/id_rsa.ppk
 &lt;/code>&lt;/pre>
 &lt;h4 id="gui-based-ssh-key-creation">GUI-based SSH key creation&lt;/h4>
