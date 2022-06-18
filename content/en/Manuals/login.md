@@ -52,7 +52,7 @@ The following shows to do this from the command-line in a [terminal](#terminal) 
 works almost exactly the same way on all three major OSs including Linux, Mac OS X and Windows using MobaXterm. 
 Alternatively, instructions using a graphical user interface (GUI) can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
-To create the key pair, run the following command in your computer's ([terminal](#terminal)):
+To create the key pair, run the following command in your computer's [terminal](#terminal):
 
 ```
 # Create SSH directory
