@@ -47,8 +47,13 @@ Note, FileZilla is not required if you use the [command-line approach](https://h
 
 ### Create SSH Keys (`MobaXterm`)
 
-The following provides instructions for both (A) command-line-based and (B) GUI-based SSH key creations. Users need to choose which option it more suitable for them.
-Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires to copy and paste of a few lines 
+The following provides instructions for both [(A)
+command-line-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation)
+and [(B)
+GUI-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation)
+SSH key creations. Users need to choose which option it more suitable for them.
+Usually, the command-line based approach is much quicker even for users without
+command-line experience since it only requires to copy and paste of a few lines 
 of code.
 
 
@@ -56,10 +61,7 @@ of code.
 
 Creating SSH keys in MobaXterm from the command-line is straightforward and
 almost identical to creating SSH keys under Linux (see
-[here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). Users who prefer to perform
-this task in a graphical user interface want to follow the instructions in the next
-section
-[here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation).
+[here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). 
 
 To create the SSH key pair from the command-line, open in MobaXterm the
 [terminal app](https://mobaxterm.mobatek.net/demo.html) and then execute 
