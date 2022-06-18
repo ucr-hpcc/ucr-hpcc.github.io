@@ -51,7 +51,7 @@ The following provides instructions for both [(A)
 command-line-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation)
 and [(B)
 GUI-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation)
-SSH key creations. Users need to choose which option it more suitable for them.
+SSH key creation. Users need to choose which option it more suitable for them.
 Usually, the command-line based approach is much quicker even for users without
 command-line experience since it only requires to copy and paste of a few lines 
 of code.
@@ -82,9 +82,9 @@ The public key is the one that needs to be uploaded to the remote system one
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
 located under this location of your home directory: `~/.ssh/authorized_keys`. 
 The upload can be performed with an sFTP/SCP GUI app like the one built into
-MobaXterm or FileZilla (see GUI section). The following shows how to upload the private SSH key
+MobaXterm or FileZilla (see GUI section below). The following shows how to upload the private SSH key
 from the command-line in MobaXterm to the HPCC cluster using the `scp` command.
-Here it is important that users replace `<username>` with their own username
+In these commands it is important that users replace `<username>` with their own username
 on the HPCC cluster. Importantly, only one of the two following commands should be used. The
 first one should be used if an `authorized_keys` file doesn't exist yet, _e.g._ when a user 
 configures SSH key accees on the HPCC system for the first time. The second one should
