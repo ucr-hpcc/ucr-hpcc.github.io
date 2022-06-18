@@ -266,7 +266,7 @@ should be used to append a new public SSH key to an already existing
 &lt;/code>&lt;/pre>
 &lt;/li>
 &lt;li>
-&lt;p>Append SSH key to already existing &lt;code>authorized_keys&lt;/code>&lt;/p>
+&lt;p>Append SSH key to already existing &lt;code>authorized_keys&lt;/code> file&lt;/p>
 &lt;pre>&lt;code class="language-sh">scp .ssh/id_rsa.pub &amp;lt;username&amp;gt;@cluster.hpcc.ucr.edu:tmpkey &amp;amp;&amp;amp; ssh username@cluster.hpcc.ucr.edu &amp;quot;cat tmpkey &amp;gt;&amp;gt; ~/.ssh/authorized_keys &amp;amp;&amp;amp; rm tmpkey&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;/li>
