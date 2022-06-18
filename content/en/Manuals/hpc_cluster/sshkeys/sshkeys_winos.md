@@ -62,7 +62,7 @@ Next, check the content of the newly created `.ssh` directory with `ls -al
 `id_rsa` and `id_rsa.pub`, respectively. The public key is the one that needs
 to be uploaded to the remote system one wishes to connect to. On the HPCC
 cluster it needs to be saved in a file located under this location of your home
-directory `~/.ssh/authorized_keys`. Since some systems require the private key,
+directory: `~/.ssh/authorized_keys`. Since some systems require the private key,
 created by MobaXterm (Putty), to have a `.ppk` extension, it is recommended to
 add this extension with the following command. Note, this private key file
 should not be shared. 
