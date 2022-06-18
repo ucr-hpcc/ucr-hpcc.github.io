@@ -62,8 +62,10 @@ of code.
 Creating SSH keys in MobaXterm from the command-line is straightforward and
 almost identical to creating SSH keys under macOS and Linux (see
 [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). To create the SSH key
-pair from the command-line, open the MobaXterm the [terminal](https://mobaxterm.mobatek.net/demo.html) 
-and then execute the following commands. 
+pair from the command-line, open the MobaXterm the
+[terminal](https://mobaxterm.mobatek.net/demo.html) and then execute the
+following commands. This can be done by a simple copy and paste rather than typing, 
+and then pressing the enter key.
 
 ```sh
 mkdir -p ~/.ssh # creates SSH directory
