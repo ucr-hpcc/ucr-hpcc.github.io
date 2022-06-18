@@ -229,7 +229,7 @@ almost identical to creating SSH keys under Linux (see
 &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to perform
 this task in a graphical user interface want to follow the instructions in the next
 section
-&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
 &lt;p>To create the SSH key pair from the command-line, open in MobaXterm the
 terminal app and then execute the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
@@ -265,7 +265,7 @@ be used to append a new public SSH key to an already existing &lt;code>authorize
 &lt;/li>
 &lt;/ol>
 &lt;p>Note, prior to setting up SSH key access both of the above scp commands
-requires functional password/DUO credentials. Users who do not have password/DUO
+require functional password/DUO credentials. Users who do not have password/DUO
 access (&lt;em>e.g.&lt;/em> non-UCR users) will need to email their public SSH key to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> so that the
 systems admin can add their public SSH key to &lt;code>~/.ssh/authorized_keys&lt;/code> of the corresponding
 user account.&lt;/p>
