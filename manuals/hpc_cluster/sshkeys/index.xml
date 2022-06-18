@@ -231,7 +231,8 @@ this task in a graphical user interface want to follow the instructions in the n
 section
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
 &lt;p>To create the SSH key pair from the command-line, open in MobaXterm the
-terminal app and then execute the following commands.&lt;/p>
+&lt;a href="https://mobaxterm.mobatek.net/demo.html">terminal app&lt;/a> and then execute
+the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk # adds ppk extension to private key
