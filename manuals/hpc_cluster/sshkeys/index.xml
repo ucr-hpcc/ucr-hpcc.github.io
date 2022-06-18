@@ -220,16 +220,18 @@ Note, FileZilla is not required if you use the &lt;a href="https://hpcc.ucr.edu/
 &lt;li>Follow the install wizard to complete the install of &lt;code>Filezilla&lt;/code>.&lt;/li>
 &lt;/ol>
 &lt;h3 id="create-ssh-keys-mobaxterm">Create SSH Keys (&lt;code>MobaXterm&lt;/code>)&lt;/h3>
-&lt;p>The following provides instructions for both (A) command-line-based and (B) GUI-based SSH key creations. Users need to choose which option it more suitable for them.
-Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires to copy and paste of a few lines
+&lt;p>The following provides instructions for both &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation">(A)
+command-line-based&lt;/a>
+and &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">(B)
+GUI-based&lt;/a>
+SSH key creations. Users need to choose which option it more suitable for them.
+Usually, the command-line based approach is much quicker even for users without
+command-line experience since it only requires to copy and paste of a few lines
 of code.&lt;/p>
 &lt;h4 id="a-command-line-based-ssh-key-creation">(A) Command-line-based SSH key creation&lt;/h4>
 &lt;p>Creating SSH keys in MobaXterm from the command-line is straightforward and
 almost identical to creating SSH keys under Linux (see
-&lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to perform
-this task in a graphical user interface want to follow the instructions in the next
-section
-&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
+&lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>).&lt;/p>
 &lt;p>To create the SSH key pair from the command-line, open in MobaXterm the
 &lt;a href="https://mobaxterm.mobatek.net/demo.html">terminal app&lt;/a> and then execute
 the following commands.&lt;/p>
