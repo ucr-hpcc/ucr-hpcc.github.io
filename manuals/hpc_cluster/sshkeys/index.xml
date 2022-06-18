@@ -222,7 +222,7 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to do this in a graphical user interface
 want to follow the instructions in the next section &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
 &lt;p>To create the SSH key pair from the command-line, open in MobaXterm the terminal app and then execute the following commands.&lt;/p>
-&lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # Create SSH directory
+&lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
 &lt;p>Next, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named
@@ -233,7 +233,7 @@ directory: &lt;code>~/.ssh/authorized_keys&lt;/code>. Since some systems require
 created by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code> extension, it is recommended to
 add this extension with the following command. Note, this private key file
 should not be shared.&lt;/p>
-&lt;pre>&lt;code class="language-sh">mv .ssh/id_rsa .ssh/id_rsa.ppk
+&lt;pre>&lt;code class="language-sh">mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk
 &lt;/code>&lt;/pre>
 &lt;h4 id="gui-based-ssh-key-creation">GUI-based SSH key creation&lt;/h4>
 &lt;ol>
