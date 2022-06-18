@@ -10,10 +10,6 @@ aliases:
 
 ## SSH Keys on MS Windows
 
-The following provides instructions for both command-line-based and GUI-based SSH key creations. Users need to choose which option it more suitable for them.
-Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires copy and paste of a few lines 
-of code.
-
 ### What are SSH keys?
 
 SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
@@ -51,7 +47,12 @@ Note, FileZilla is not required if you use the command-line approach below.
 
 ### Create SSH Keys (`MobaXterm`)
 
-#### Command-line-based SSH key creation
+The following provides instructions for both (A) command-line-based and (B) GUI-based SSH key creations. Users need to choose which option it more suitable for them.
+Usually, the command-line based approach is much quicker even for users without command-line experience since it only requires to copy and paste of a few lines 
+of code.
+
+
+#### (A) Command-line-based SSH key creation
 
 Creating SSH keys in MobaXterm from the command-line is straightforward and
 almost identical to creating SSH keys under Linux (see
@@ -106,7 +107,7 @@ systems admin can add their public SSH key to `~/.ssh/authorized_keys` of the co
 user account.
 
 
-#### GUI-based SSH key creation
+#### (B) GUI-based SSH key creation
 
 1. Begin by clicking on the tools drop down on the upper menu bar
    
