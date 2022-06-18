@@ -62,7 +62,8 @@ section
 [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation).
 
 To create the SSH key pair from the command-line, open in MobaXterm the
-terminal app and then execute the following commands. 
+[terminal app](https://mobaxterm.mobatek.net/demo.html) and then execute 
+the following commands. 
 
 ```sh
 mkdir -p ~/.ssh # creates SSH directory
