@@ -87,7 +87,7 @@ upload the private SSH key from the command-line in MobaXterm to the HPCC
 cluster using the `scp` command. Copying the key from MobaXterm into the
 clipboard (_e.g._ in `less`) and then pasting it into the corresponding file
 opened on the remote system with a code editor like `vim` is another but more
-error-prone option. In the following `scp` commands it is important that users
+advanced option. In the following `scp` commands it is important that users
 replace `<username>` with their own username on the HPCC cluster. Importantly,
 only one of the following two commands should be used. The first one should be
 used if an `authorized_keys` file doesn't exist yet, _e.g._ when a user
