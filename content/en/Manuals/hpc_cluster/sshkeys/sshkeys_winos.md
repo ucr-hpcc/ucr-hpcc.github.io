@@ -53,7 +53,7 @@ want to follow the instructions in the next section [here](https://hpcc.ucr.edu/
 To create the SSH key pair from the command-line, open in MobaXterm the terminal app and then execute the following commands. 
 
 ```sh
-mkdir -p ~/.ssh # Create SSH directory
+mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 ```  
 
@@ -68,7 +68,7 @@ add this extension with the following command. Note, this private key file
 should not be shared. 
 
 ```sh
-mv .ssh/id_rsa .ssh/id_rsa.ppk
+mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk
 ``` 
 
 
