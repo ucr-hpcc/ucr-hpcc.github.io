@@ -55,9 +55,10 @@ mkdir -p ~/.ssh # Create SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 ```  
 
-Second, check the content of the newly created `.ssh` directory with `ls -al .ssh/`. It should contain files for the private and public keys that are named `id_rsa` and `id_rsa.pub`, respectively. The public key is the one that needs to be uploaded 
-to a the remote system one wishes to connect to (_e.g._ HPCC or GitHub). Since some systems require the private key created
-by MobaXterm (Putty) to have a `.ppk` extension, it is recommended to add this extension with the following command. Note, 
+Second, check the content of the newly created `.ssh` directory with `ls -al .ssh/`. It should contain files for the private 
+and public keys that are named `id_rsa` and `id_rsa.pub`, respectively. The public key is the one that needs to be uploaded 
+to the remote system one wishes to connect to (_e.g._ HPCC or GitHub). Since some systems require the private key, created
+by MobaXterm (Putty), to have a `.ppk` extension, it is recommended to add this extension with the following command. Note, 
 this private key file should not be shared. 
 
 ```sh
