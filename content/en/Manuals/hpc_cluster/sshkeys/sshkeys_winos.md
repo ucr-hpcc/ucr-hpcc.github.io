@@ -101,7 +101,7 @@ should be used to append a new public SSH key to an already existing
     scp .ssh/id_rsa.pub <username>@cluster.hpcc.ucr.edu:.ssh/authorized_keys
     ```
 
-2. Append SSH key to already existing `authorized_keys`
+2. Append SSH key to already existing `authorized_keys` file
 
     ```sh
     scp .ssh/id_rsa.pub <username>@cluster.hpcc.ucr.edu:tmpkey && ssh username@cluster.hpcc.ucr.edu "cat tmpkey >> ~/.ssh/authorized_keys && rm tmpkey"
