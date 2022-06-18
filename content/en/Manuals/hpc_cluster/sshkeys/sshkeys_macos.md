@@ -26,7 +26,7 @@ The `Password+DUO` method requires a UCR NetID, if you do not have one then you 
 
 ### Creating SSH Keys from the Command-line
 
-By far the easiest way to create SSH keys on Mac OS X systems is from the command-line following the instructions 
+By far the easiest way to create SSH keys on macOS systems is from the command-line following the instructions 
 [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys). Users who prefer to do this in a graphical user interface 
 can follow the instructions below. 
 

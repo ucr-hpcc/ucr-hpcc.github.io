@@ -60,7 +60,7 @@ of code.
 #### (A) Command-line-based SSH key creation
 
 Creating SSH keys in MobaXterm from the command-line is straightforward and
-almost identical to creating SSH keys under Linux (see
+almost identical to creating SSH keys under macOS and Linux (see
 [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys)). To create the SSH key
 pair from the command-line, open the MobaXterm the [terminal](https://mobaxterm.mobatek.net/demo.html) 
 and then execute the following commands. 
