@@ -202,13 +202,6 @@ The public key file is stored on the HPCC cluster and contains a list of authori
 &lt;p>HPCC supports two authentication methods; &lt;code>Password+DUO&lt;/code> and &lt;code>SSH Keys&lt;/code>.
 The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not have this then you will need to use &lt;code>SSH keys&lt;/code> in order to access the HPCC cluster.&lt;/p>
 &lt;h3 id="what-you-need">What you need&lt;/h3>
-&lt;h4 id="filezilla">Filezilla&lt;/h4>
-&lt;p>You will need to install &lt;code>Filezilla&lt;/code> in order to transfer the public SSH key to the HPCC cluster.&lt;/p>
-&lt;ol>
-&lt;li>Download the &lt;code>Filezilla Client&lt;/code> for Windows &lt;a href="https://filezilla-project.org/download.php?show_all=1">here&lt;/a>.
-* Make sure your Windows system is updated to the latest version.&lt;/li>
-&lt;li>Follow the install wizard to complete the install of &lt;code>Filezilla&lt;/code>.&lt;/li>
-&lt;/ol>
 &lt;h4 id="mobaxterm">MobaXterm&lt;/h4>
 &lt;p>You will need to install &lt;code>MobaXterm&lt;/code> in order to generate your &lt;code>SSH keys&lt;/code> and also to transfer the keys to the cluster.&lt;/p>
 &lt;ol>
@@ -216,25 +209,60 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;li>Unzip&lt;/li>
 &lt;li>Double click portable version of exe and run the &lt;code>MobaXterm&lt;/code> application.&lt;/li>
 &lt;/ol>
+&lt;h4 id="filezilla">FileZilla&lt;/h4>
+&lt;p>If you choose to upload you SSH key to the HPCC cluster with GUI app, you will need to install &lt;code>FileZilla&lt;/code> or a similar sFTP/SCP client.
+Note, FileZilla is not required if you use the command-line approach below.&lt;/p>
+&lt;ol>
+&lt;li>Download the &lt;code>FileZilla Client&lt;/code> for Windows &lt;a href="https://filezilla-project.org/download.php?show_all=1">here&lt;/a>.
+* Make sure your Windows system is updated to the latest version.&lt;/li>
+&lt;li>Follow the install wizard to complete the install of &lt;code>Filezilla&lt;/code>.&lt;/li>
+&lt;/ol>
 &lt;h3 id="create-ssh-keys-mobaxterm">Create SSH Keys (&lt;code>MobaXterm&lt;/code>)&lt;/h3>
 &lt;h4 id="command-line-based-ssh-key-creation">Command-line-based SSH key creation&lt;/h4>
-&lt;p>Creating SSH keys in MobaXterm from the command-line is straightforward and almost identical to creating SSH keys under
-Linux (see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to do this in a graphical user interface
-want to follow the instructions in the next section &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
-&lt;p>To create the SSH key pair from the command-line, open in MobaXterm the terminal app and then execute the following commands.&lt;/p>
+&lt;p>Creating SSH keys in MobaXterm from the command-line is straightforward and
+almost identical to creating SSH keys under Linux (see
+&lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>). Users who prefer to do
+this in a graphical user interface want to follow the instructions in the next
+section
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#gui-based-ssh-key-creation">here&lt;/a>.&lt;/p>
+&lt;p>To create the SSH key pair from the command-line, open in MobaXterm the
+terminal app and then execute the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
+mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk # adds ppk extension to private key
 &lt;/code>&lt;/pre>
 &lt;p>Next, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named
-&lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs
-to be uploaded to the remote system one wishes to connect to. On the HPCC
-cluster it needs to be saved in a file located under this location of your home
-directory: &lt;code>~/.ssh/authorized_keys&lt;/code>. Since some systems require the private key,
-created by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code> extension, it is recommended to
-add this extension with the following command. Note, this private key file
-should not be shared.&lt;/p>
-&lt;pre>&lt;code class="language-sh">mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk
+&lt;code>id_rsa&lt;/code> (or &lt;code>id_rsa.ppk&lt;/code>) and &lt;code>id_rsa.pub&lt;/code>, respectively. Since some systems
+require the private key, created by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code>
+extension, it is recommended to add this extension. This is done in the last
+code line above. Note, this private key file should not be shared.&lt;/p>
+&lt;p>The public key is the one that needs to be uploaded to the remote system one
+wishes to connect to. On the HPCC cluster it needs to be saved in a file
+located under this location of your home directory: &lt;code>~/.ssh/authorized_keys&lt;/code>.
+The upload can be performed with a sFTP/SCP GUI app like the one built into
+MobaXterm or FileZilla. The following shows how to upload the private SSH key
+from the command-line in MobaXterm to the HPCC cluster using the &lt;code>scp&lt;/code> command.
+Here it is important that users replace the &lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own username
+on the HPCC cluster. Importantly, only one of the two following commands should be used. The
+first one should be used if an &lt;code>authorized_keys&lt;/code> doesn&amp;rsquo;t exist yet, &lt;em>e.g.&lt;/em> when user
+configures SSH key accees on the HPCC system for the first time. The second one should
+be used to append a new public SSH key to an already existing &lt;code>authorized_keys&lt;/code> file.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Create new &lt;code>authorized_keys&lt;/code> file&lt;/p>
+&lt;pre>&lt;code class="language-sh">scp .ssh/id_rsa.pub &amp;lt;username&amp;gt;@cluster.hpcc.ucr.edu:.ssh/authorized_keys
 &lt;/code>&lt;/pre>
+&lt;/li>
+&lt;li>
+&lt;p>Append SSH key to already existing &lt;code>authorized_keys&lt;/code> file on HPCC account`&lt;/p>
+&lt;pre>&lt;code class="language-sh">scp .ssh/id_rsa.pub &amp;lt;username&amp;gt;@cluster.hpcc.ucr.edu:tmpkey &amp;amp;&amp;amp; ssh username@cluster.hpcc.ucr.edu &amp;quot;cat tmpkey &amp;gt;&amp;gt; ~/.ssh/authorized_keys &amp;amp;&amp;amp; rm tmpkey&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ol>
+&lt;p>Note, prior to setting up SSH key access in both cases the above scp command
+requires functional password/DUO credentials. Users who don&amp;rsquo;t have password/DUO
+access will need to email their public SSH key to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> so that the
+systems admin can add your public SSH key to &lt;code>~/.ssh/authorized_keys&lt;/code> in your account.&lt;/p>
 &lt;h4 id="gui-based-ssh-key-creation">GUI-based SSH key creation&lt;/h4>
 &lt;ol>
 &lt;li>
