@@ -224,7 +224,7 @@ Note, FileZilla is not required if you use the &lt;a href="https://hpcc.ucr.edu/
 command-line-based&lt;/a>
 and &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">(B)
 GUI-based&lt;/a>
-SSH key creations. Users need to choose which option it more suitable for them.
+SSH key creation. Users need to choose which option it more suitable for them.
 Usually, the command-line based approach is much quicker even for users without
 command-line experience since it only requires to copy and paste of a few lines
 of code.&lt;/p>
@@ -247,9 +247,9 @@ code line above. Note, this private key file should not be shared.&lt;/p>
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
 located under this location of your home directory: &lt;code>~/.ssh/authorized_keys&lt;/code>.
 The upload can be performed with an sFTP/SCP GUI app like the one built into
-MobaXterm or FileZilla (see GUI section). The following shows how to upload the private SSH key
+MobaXterm or FileZilla (see GUI section below). The following shows how to upload the private SSH key
 from the command-line in MobaXterm to the HPCC cluster using the &lt;code>scp&lt;/code> command.
-Here it is important that users replace &lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own username
+In these commands it is important that users replace &lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own username
 on the HPCC cluster. Importantly, only one of the two following commands should be used. The
 first one should be used if an &lt;code>authorized_keys&lt;/code> file doesn&amp;rsquo;t exist yet, &lt;em>e.g.&lt;/em> when a user
 configures SSH key accees on the HPCC system for the first time. The second one should
