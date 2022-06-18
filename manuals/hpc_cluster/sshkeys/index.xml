@@ -248,7 +248,7 @@ located under this location of your home directory: &lt;code>~/.ssh/authorized_k
 The upload can be performed with an sFTP/SCP GUI app like the one built into
 MobaXterm or FileZilla (see GUI section). The following shows how to upload the private SSH key
 from the command-line in MobaXterm to the HPCC cluster using the &lt;code>scp&lt;/code> command.
-Here it is important that users replace &lt;username> with their own username
+Here it is important that users replace &lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own username
 on the HPCC cluster. Importantly, only one of the two following commands should be used. The
 first one should be used if an &lt;code>authorized_keys&lt;/code> file doesn&amp;rsquo;t exist yet, &lt;em>e.g.&lt;/em> when a user
 configures SSH key accees on the HPCC system for the first time. The second one should
