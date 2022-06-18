@@ -229,7 +229,7 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs
 to be uploaded to the remote system one wishes to connect to. On the HPCC
 cluster it needs to be saved in a file located under this location of your home
-directory &lt;code>~/.ssh/authorized_keys&lt;/code>. Since some systems require the private key,
+directory: &lt;code>~/.ssh/authorized_keys&lt;/code>. Since some systems require the private key,
 created by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code> extension, it is recommended to
 add this extension with the following command. Note, this private key file
 should not be shared.&lt;/p>
