@@ -85,7 +85,7 @@ The upload can be performed with an sFTP/SCP GUI app like the one built into
 MobaXterm or FileZilla (see GUI section below). The following shows how to upload the private SSH key
 from the command-line in MobaXterm to the HPCC cluster using the `scp` command.
 In these commands it is important that users replace `<username>` with their own username
-on the HPCC cluster. Importantly, only one of the two following commands should be used. The
+on the HPCC cluster. Importantly, only one of the following two commands should be used. The
 first one should be used if an `authorized_keys` file doesn't exist yet, _e.g._ when a user 
 configures SSH key accees on the HPCC system for the first time. The second one should
 be used to append a new public SSH key to an already existing `authorized_keys` file.
@@ -105,7 +105,7 @@ Note, prior to setting up SSH key access both of the above scp commands
 require functional password/DUO credentials. Users who do not have password/DUO
 access (_e.g._ non-UCR users) will need to email their public SSH key to support@hpcc.ucr.edu so that the
 systems admin can add their public SSH key to `~/.ssh/authorized_keys` of the corresponding
-user account.
+user account. 
 
 
 #### (B) GUI-based SSH key creation
