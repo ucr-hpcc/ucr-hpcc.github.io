@@ -224,9 +224,10 @@ the following commands.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # Create SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
-&lt;p>Second, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs to be uploaded
-to a the remote system one wishes to connect to (&lt;em>e.g.&lt;/em> HPCC or GitHub). Since some systems require the private key created
-by MobaXterm (Putty) to have a &lt;code>.ppk&lt;/code> extension, it is recommended to add this extension with the following command. Note,
+&lt;p>Second, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private
+and public keys that are named &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. The public key is the one that needs to be uploaded
+to the remote system one wishes to connect to (&lt;em>e.g.&lt;/em> HPCC or GitHub). Since some systems require the private key, created
+by MobaXterm (Putty), to have a &lt;code>.ppk&lt;/code> extension, it is recommended to add this extension with the following command. Note,
 this private key file should not be shared.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mv .ssh/id_rsa .ssh/id_rsa.ppk
 &lt;/code>&lt;/pre>
