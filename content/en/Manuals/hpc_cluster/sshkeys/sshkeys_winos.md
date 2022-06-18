@@ -82,18 +82,17 @@ The public key is the one that needs to be uploaded to the remote system one
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
 located under this location of your home directory: `~/.ssh/authorized_keys`.
 The upload can be performed with an sFTP/SCP GUI app like the one built into
-MobaXterm or FileZilla (see GUI section below). The following shows how to
-upload the private SSH key from the command-line in MobaXterm to the HPCC
-cluster using the `scp` command. Copying the key from MobaXterm into the
-clipboard (_e.g._ in `less`) and then pasting it into the corresponding file
-opened on the remote system with a code editor like `vim` is another but more
-advanced option. In the following `scp` commands it is important that users
-replace `<username>` with their own username on the HPCC cluster. Importantly,
-only one of the following two commands should be used. The first one should be
-used if an `authorized_keys` file doesn't exist yet, _e.g._ when a user
-configures SSH key accees on the HPCC system for the first time. The second one
-should be used to append a new public SSH key to an already existing
-`authorized_keys` file.
+MobaXterm or FileZilla (see GUI section below). Copying the key from MobaXterm
+into the clipboard (_e.g._ in `less`) and then pasting it into the
+corresponding file opened on the remote system with a code editor like `vim` is
+another but more advanced option. The following shows how to upload the private
+SSH key from the command-line in MobaXterm to the HPCC cluster using the `scp`
+command. In the following `scp` commands it is important that users replace
+`<username>` with their own username on the HPCC cluster. Importantly, only one
+of the following two commands should be used. The first one should be used if
+an `authorized_keys` file doesn't exist yet, _e.g._ when a user configures SSH
+key accees on the HPCC system for the first time. The second one should be used
+to append a new public SSH key to an already existing `authorized_keys` file.
 
 1. Create new `authorized_keys` file
     
