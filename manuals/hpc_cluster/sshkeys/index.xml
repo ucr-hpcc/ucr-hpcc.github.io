@@ -8,7 +8,11 @@ The authorized keys file that is stored on the HPCC cluster (ie. &lt;code>~/.ssh
 &lt;h3 id="why-do-you-need-ssh-keys">Why do you need SSH Keys?&lt;/h3>
 &lt;p>HPCC supports two authentication methods; &lt;code>Password+DUO&lt;/code> and &lt;code>SSH Keys&lt;/code>.
 The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not have one then you will need to use &lt;code>SSH keys&lt;/code> in order to access the HPCC cluster.&lt;/p>
-&lt;h3 id="what-you-need">What you need&lt;/h3>
+&lt;h3 id="creating-ssh-keys-from-the-command-line">Creating SSH Keys from the Command-line&lt;/h3>
+&lt;p>By far the easiest way to create SSH keys on Mac OS X systems is from the command-line following the instructions
+&lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>. Users who prefer to do this in a graphical user interface
+can follow the instructions below.&lt;/p>
+&lt;h3 id="gui-based-ssh-key-creation">GUI-based SSH Key Creation&lt;/h3>
 &lt;h4 id="filezilla">Filezilla&lt;/h4>
 &lt;p>You will need to install &lt;code>Filezilla&lt;/code> in order to transfer the public SSH key to the HPCC cluster.&lt;/p>
 &lt;ol>
