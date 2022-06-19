@@ -254,12 +254,12 @@ into the clipboard (&lt;em>e.g.&lt;/em> in &lt;code>less&lt;/code>) and then pas
 corresponding file opened on the remote system with a code editor like &lt;code>vim&lt;/code> is
 another but more advanced option. The following shows how to upload the private
 SSH key from the command-line in MobaXterm to the HPCC cluster using the &lt;code>scp&lt;/code>
-command. In the following &lt;code>scp&lt;/code> commands it is important that users replace
-&lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own username on the HPCC cluster. Importantly, only one
-of the following two commands should be used. The first one should be used if
-an &lt;code>authorized_keys&lt;/code> file doesn&amp;rsquo;t exist yet, &lt;em>e.g.&lt;/em> when a user configures SSH
-key accees on the HPCC system for the first time. The second one should be used
-to append a new public SSH key to an already existing &lt;code>authorized_keys&lt;/code> file.&lt;/p>
+command, where it is important that users replace &lt;code>&amp;lt;username&amp;gt;&lt;/code> with their own
+username on the HPCC cluster. Importantly, only one of the following two
+commands should be used. The first one should be used if an &lt;code>authorized_keys&lt;/code>
+file does not exist yet, &lt;em>e.g.&lt;/em> when a user configures SSH key accees on the
+HPCC system for the first time. The second one should be used to append a new
+public SSH key to an already existing &lt;code>authorized_keys&lt;/code> file.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Create new &lt;code>authorized_keys&lt;/code> file&lt;/p>
