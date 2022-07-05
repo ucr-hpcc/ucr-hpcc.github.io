@@ -70,15 +70,18 @@ and then pressing the enter key.
 ```sh
 mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
-# mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk # adds ppk extension to private key
 ```  
 
 Next, check the content of the newly created `.ssh` directory with `ls -al
 .ssh/`. It should contain files for the private and public keys that are named
-`id_rsa` (or `id_rsa.ppk`) and `id_rsa.pub`, respectively. Since some ssh clients,
- _e.g._ MobaXterm and Putty, require the private key to have a `.ppk`
-extension, it is recommended to add this extension. This is done in the last
-(commented) code line above. Note, this private key file should not be shared. 
+`id_rsa` and `id_rsa.pub`, respectively. Importantly, this private key file should not be shared. 
+
+The .ppk file extension indicates that the private key is in 
+
+Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
+keys, then the private key is stored in PuTTY's proprietary format, which is
+indicated by a `.ppk` extension. A key of this format is required when using
+PuTTY as SSH client, and it cannot be used with other SSH client tools. 
 
 The public key is the one that needs to be uploaded to the remote system one
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
