@@ -238,13 +238,14 @@ following commands. This can be done by a simple copy and paste rather than typi
 and then pressing the enter key.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
-# mv ~/.ssh/id_rsa ~/.ssh/id_rsa.ppk # adds ppk extension to private key
 &lt;/code>&lt;/pre>
 &lt;p>Next, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named
-&lt;code>id_rsa&lt;/code> (or &lt;code>id_rsa.ppk&lt;/code>) and &lt;code>id_rsa.pub&lt;/code>, respectively. Since some ssh clients,
-&lt;em>e.g.&lt;/em> MobaXterm and Putty, require the private key to have a &lt;code>.ppk&lt;/code>
-extension, it is recommended to add this extension. This is done in the last
-(commented) code line above. Note, this private key file should not be shared.&lt;/p>
+&lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. Importantly, this private key file should not be shared.&lt;/p>
+&lt;p>The .ppk file extension indicates that the private key is in&lt;/p>
+&lt;p>Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
+keys, then the private key is stored in PuTTY&amp;rsquo;s proprietary format, which is
+indicated by a &lt;code>.ppk&lt;/code> extension. A key of this format is required when using
+PuTTY as SSH client, and it cannot be used with other SSH client tools.&lt;/p>
 &lt;p>The public key is the one that needs to be uploaded to the remote system one
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
 located under this location of your home directory: &lt;code>~/.ssh/authorized_keys&lt;/code>.
