@@ -51,7 +51,7 @@ The following provides instructions for both [(A)
 command-line-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation)
 and [(B)
 GUI-based](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation)
-SSH key creation. Users need to choose which option it more suitable for them.
+SSH key creation. Users need to choose which option is more suitable for them.
 Usually, the command-line based approach is much quicker even for users without
 command-line experience since it only requires to copy and paste a few lines 
 of code.
@@ -65,7 +65,9 @@ almost identical to creating SSH keys under macOS and Linux (see
 pair from the command-line, open the MobaXterm 
 [terminal](https://mobaxterm.mobatek.net/demo.html) and then execute the
 following commands. This can be done by a simple copy and paste rather than typing, 
-and then pressing the enter key.
+and then pressing the enter key. Users who wish to use WinSCP instead of FileZilla
+as sFTP client need to follow the key generation instructions of this software as 
+outlined [here](https://www.youtube.com/watch?v=EBrtRBI0-k0).
 
 ```sh
 mkdir -p ~/.ssh # creates SSH directory
@@ -79,8 +81,8 @@ Next, check the content of the newly created `.ssh` directory with `ls -al
 The .ppk file extension indicates that the private key is in 
 
 Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
-keys, then the private key is stored in PuTTY's proprietary format, which is
-indicated by a `.ppk` extension. A key of this format is required when using
+keys, then the private key is stored in PuTTY's proprietary key format, which is
+indicated by a `.ppk` file extension. A key of this format is required when using
 PuTTY as SSH client, and it cannot be used with other SSH client tools. 
 
 The public key is the one that needs to be uploaded to the remote system one
