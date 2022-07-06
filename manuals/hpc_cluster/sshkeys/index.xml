@@ -224,7 +224,7 @@ Note, FileZilla is not required if you use the &lt;a href="https://hpcc.ucr.edu/
 command-line-based&lt;/a>
 and &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">(B)
 GUI-based&lt;/a>
-SSH key creation. Users need to choose which option it more suitable for them.
+SSH key creation. Users need to choose which option is more suitable for them.
 Usually, the command-line based approach is much quicker even for users without
 command-line experience since it only requires to copy and paste a few lines
 of code.&lt;/p>
@@ -235,7 +235,9 @@ almost identical to creating SSH keys under macOS and Linux (see
 pair from the command-line, open the MobaXterm
 &lt;a href="https://mobaxterm.mobatek.net/demo.html">terminal&lt;/a> and then execute the
 following commands. This can be done by a simple copy and paste rather than typing,
-and then pressing the enter key.&lt;/p>
+and then pressing the enter key. Users who wish to use WinSCP instead of FileZilla
+as sFTP client need to follow the key generation instructions of this software as
+outlined &lt;a href="https://www.youtube.com/watch?v=EBrtRBI0-k0">here&lt;/a>.&lt;/p>
 &lt;pre>&lt;code class="language-sh">mkdir -p ~/.ssh # creates SSH directory
 ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
@@ -243,8 +245,8 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. Importantly, this private key file should not be shared.&lt;/p>
 &lt;p>The .ppk file extension indicates that the private key is in&lt;/p>
 &lt;p>Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
-keys, then the private key is stored in PuTTY&amp;rsquo;s proprietary format, which is
-indicated by a &lt;code>.ppk&lt;/code> extension. A key of this format is required when using
+keys, then the private key is stored in PuTTY&amp;rsquo;s proprietary key format, which is
+indicated by a &lt;code>.ppk&lt;/code> file extension. A key of this format is required when using
 PuTTY as SSH client, and it cannot be used with other SSH client tools.&lt;/p>
 &lt;p>The public key is the one that needs to be uploaded to the remote system one
 wishes to connect to. On the HPCC cluster it needs to be saved in a file
