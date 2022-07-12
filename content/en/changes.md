@@ -67,10 +67,10 @@ users with HPCC cluster and restricted data transfer accounts. Those users
 want to access the cluster via SSH keys. This is both convenient (no need to type a
 password anymore) and secure. Please refer to our [SSH
 keys](/manuals/hpc_cluster/sshkeys/) manual for detailed instructions of
-configuring SSH key-based access. Importantly, if there are any problems
-with performing the intial password reset (see above) and/or uploading the
-public component of your SSH key pair yourself, then please email
-support@hpcc.ucr.edu for help. 
+configuring SSH key-based access. After creating an ssh key pair, users will need to
+email their public SSH key to support@hpcc.ucr.edu so that the systems admin
+can add their public SSH key to `~/.ssh/authorized_keys` of the corresponding
+user account.
 
 Note, the following instructions are only relevant for users who perform computations 
 on our cluster(s). Users who are using our systems exclusively for data transfers can 
