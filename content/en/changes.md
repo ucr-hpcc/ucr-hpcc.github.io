@@ -69,8 +69,7 @@ password anymore) and secure. Please refer to our [SSH
 keys](/manuals/hpc_cluster/sshkeys/) manual for detailed instructions of
 configuring SSH key-based access. After creating an ssh key pair, users will need to
 email their public SSH key to support@hpcc.ucr.edu so that the systems admin
-can add their public SSH key to `~/.ssh/authorized_keys` of the corresponding
-user account.
+can add their public SSH key to the corresponding user account.
 
 Note, the following instructions are only relevant for users who perform computations 
 on our cluster(s). Users who are using our systems exclusively for data transfers can 
