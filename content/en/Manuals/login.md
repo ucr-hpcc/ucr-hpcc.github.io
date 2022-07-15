@@ -23,6 +23,9 @@ However, `File Transfers` and `Terminal` (SSH) access do require either [Passwor
 
 We are moving all accounts to a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed via `SSH`, instead [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) will be required.
+Since `Password+DUO` authentication requires a UCR NetID, this access method is only available to
+UCR users. External users need use the SSH key method instead. To enable it, the public key needs to 
+be emailed to support (see below for details).
 
 ### Password+Duo
 
@@ -42,7 +45,9 @@ If you have a new account then your password was emailed to you when your accoun
 
 SSH keys can only be setup if you already have access to the cluster.
 This is becuase in order to get this working a file (public key) needs to be placed in your home directory on the cluster.
-If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding. If you never intend to have a UCR NetID, then you may create your keys according to the below instructions, however you will need to contact support in order to copy your resulting public key to the cluster.
+If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding. If you 
+never intend to have a UCR NetID, then you may create your keys according to the below instructions. However, you will 
+need to contact support in order to copy your resulting public key to the cluster.
 
 When using SSH key authentication, you will need to create a public and a pritate key.
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
