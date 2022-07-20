@@ -191,7 +191,7 @@ Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&
 &lt;/li>
 &lt;/ol></description></item><item><title>Manuals: SSH Keys Linux</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</guid><description>
 &lt;h2 id="ssh-keys-on-linux">SSH Keys on Linux&lt;/h2>
-&lt;p>aaldfkjasdlfHow to create SSH keys on LInux OSs or the command-line in general is described on the general login page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
+&lt;p>How to create SSH keys on LInux OSs or the command-line in general is described on the general login page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
 &lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
