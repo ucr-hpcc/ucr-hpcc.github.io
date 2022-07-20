@@ -10,6 +10,6 @@ aliases:
 
 ## SSH Keys on Linux
 
-aaldfkjasdlfHow to create SSH keys on LInux OSs or the command-line in general is described on the general login page [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys).
+How to create SSH keys on LInux OSs or the command-line in general is described on the general login page [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys).
 
 
