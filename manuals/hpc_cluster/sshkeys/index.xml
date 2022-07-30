@@ -243,7 +243,7 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa # creates key pair (private and public)
 &lt;/code>&lt;/pre>
 &lt;p>Next, check the content of the newly created &lt;code>.ssh&lt;/code> directory with &lt;code>ls -al .ssh/&lt;/code>. It should contain files for the private and public keys that are named
 &lt;code>id_rsa&lt;/code> and &lt;code>id_rsa.pub&lt;/code>, respectively. Importantly, this private key file should not be shared.&lt;/p>
-&lt;p>The .ppk file extension indicates that the private key is in&lt;/p>
+&lt;p>The .ppk file extension indicates that the private key is in PuTTY&amp;rsquo;s proprietary format.&lt;/p>
 &lt;p>Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
 keys, then the private key is stored in PuTTY&amp;rsquo;s proprietary key format, which is
 indicated by a &lt;code>.ppk&lt;/code> file extension. A key of this format is required when using
