@@ -78,8 +78,6 @@ Next, check the content of the newly created `.ssh` directory with `ls -al
 .ssh/`. It should contain files for the private and public keys that are named
 `id_rsa` and `id_rsa.pub`, respectively. Importantly, this private key file should not be shared. 
 
-The .ppk file extension indicates that the private key is in PuTTY's proprietary format. 
-
 Note, when using PuTTY (and WinSCP) instead of MobaXterm for generating SSH
 keys, then the private key is stored in PuTTY's proprietary key format, which is
 indicated by a `.ppk` file extension. A key of this format is required when using
