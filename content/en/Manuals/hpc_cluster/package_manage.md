@@ -88,6 +88,13 @@ conda deactivate
 ```
 
 ##### Installing packages
+
+Before installing your packages, make sure you are on a computer node. This ensures your downloads to be done quickly and with less chance of running out of memory. This can be done using the following command:
+
+```bash
+srun -p short -c 4 --mem=10g --pty bash -l          # Adjust the resource request as needed
+```
+
 Here is a simple example for installing packages under your Python virtual environment via conda:
 
 ```bash
