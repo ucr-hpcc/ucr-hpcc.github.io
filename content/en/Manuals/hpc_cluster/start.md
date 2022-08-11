@@ -78,6 +78,11 @@ To load a module, run:
 module load <software name>[/<version>]
 ```
 
+For example, to load R version 4.1.2, run:
+```bash
+module load R/4.1.2
+```
+
 To load the default version of the tophat module, run:
 
 ```bash
