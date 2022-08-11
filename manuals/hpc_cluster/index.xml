@@ -141,6 +141,9 @@ module-info
 &lt;p>To load a module, run:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load &amp;lt;software name&amp;gt;[/&amp;lt;version&amp;gt;]
 &lt;/code>&lt;/pre>
+&lt;p>For example, to load R version 4.1.2, run:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load R/4.1.2
+&lt;/code>&lt;/pre>
 &lt;p>To load the default version of the tophat module, run:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load tophat
 &lt;/code>&lt;/pre>
