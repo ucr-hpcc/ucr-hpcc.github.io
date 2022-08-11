@@ -713,6 +713,9 @@ conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
 &lt;pre>&lt;code class="language-bash">conda deactivate
 &lt;/code>&lt;/pre>
 &lt;h5 id="installing-packages">Installing packages&lt;/h5>
+&lt;p>Before installing your packages, make sure you are on a computer node. This ensures your downloads to be done quickly and with less chance of running out of memory. This can be done using the following command:&lt;/p>
+&lt;pre>&lt;code class="language-bash">srun -p short -c 4 --mem=10g --pty bash -l # Adjust the resource request as needed
+&lt;/code>&lt;/pre>
 &lt;p>Here is a simple example for installing packages under your Python virtual environment via conda:&lt;/p>
 &lt;pre>&lt;code class="language-bash">conda install -n NameForNewEnv PackageName
 &lt;/code>&lt;/pre>
