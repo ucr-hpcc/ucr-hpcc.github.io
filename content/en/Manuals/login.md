@@ -31,7 +31,7 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-The following provides details related to terminal options, X11 support and additional documentation.
+The following provides additional login details related to terminal options, X11 support and documentation.
 
 + Various terminal applications are available for all major operating systems. Examples include:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
