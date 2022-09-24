@@ -25,7 +25,7 @@ ssh -X <user>@cluster.hpcc.ucr.edu
     + User name: ...
     + Password: ...
 
-+ Note, Duo will be bypassed if ssh key based login is enabled. Importantly, external users do not have access to UCR's Duo system. Thus, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
++ Note, Duo will be bypassed if ssh key based login is enabled. As external users do not have access to UCR's Duo system, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 + Various terminal applications are available for all major operating systems, such as:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
