@@ -10,32 +10,28 @@ aliases:
 
 ## Log into HPCC Cluster via a Terminal
 
-+ Login command on macOS or Linux 
++ Login command from a terminal application where you want to provide your user name under `<user>`
 
 ```sh
-ssh -X user@cluster.hpcc.ucr.edu
+ssh -X <user>@cluster.hpcc.ucr.edu
 ```
-  
-+ Type your password 
-+ Follow the Duo multifactor authenication instructions printed to the screen. Duo will be bypassed if ssh key based login is enabled. 
-Since external users do not have access to UCR's Duo system, they can only log in via the ssh key method. How to enable ssh keys is described
-[here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
-
-
-
-+ Windows: provide same information in a terminal application like
-  [MobaXterm](http://mobaxterm.mobatek.net/)
-  ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is
-  outdated and not recommended anymore).
-  [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage
-  introduction for MobaXterm.
+    + Type your password 
+    + Follow the Duo multifactor authenication instructions printed to the screen.
     
++ If the login is performed via a GUI application then one can provide the information of the above ssh commad as follows.
     + Host name: `cluster.hpcc.ucr.edu`
     + User name: ...
     + Password: ...
 
-+ macOS users can use the built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). For remote X11 graphics display support, XQuartz needs to be intalled from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
++ Note, Duo will be bypassed if ssh key based login is enabled. Importantly, external users do not have access to UCR's Duo system. Thus, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
++ Various terminal applications are available for the major operating systems:
+    + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
+    + Windows: provide same information in a terminal application like [MobaXterm](http://mobaxterm.mobatek.net/) ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is outdated and not recommended anymore). [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage introduction for MobaXterm.
+    + Linux: a wide range of Terminal applications is available for Linux. 
+
++ For remote X11 graphics display support, XQuartz needs to be running in the background on macOS system, which can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
+    
 + Additional login information can be found on the corresponding HPCC manuals:
 
     + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#secure-authentication) 
