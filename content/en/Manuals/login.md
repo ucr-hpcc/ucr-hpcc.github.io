@@ -8,16 +8,16 @@ aliases:
     - /manuals/hpc_cluster/login
 ---
 
-## Log into HPCC Cluster via a Terminal
+## Log in to HPCC Cluster via a Terminal
 
-+ Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name including and the `<>` characters removed. Next press enter to execute the command.
+1. Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name, but the `<>` characters removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <user>@cluster.hpcc.ucr.edu
 ```
 
-+ Type your password 
-+ Follow the Duo multifactor authenication instructions printed to the screen.
+2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
+3. Follow the Duo multifactor authenication instructions printed to the screen.
     
 + If the login is performed via a GUI application such a MobaXterm (see below), then one can provide the same login information given under the above ssh commad in dedicated fields as follows:
 
