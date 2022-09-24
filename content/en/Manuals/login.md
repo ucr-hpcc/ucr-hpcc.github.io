@@ -11,8 +11,8 @@ aliases:
 ## Log in to HPCC Cluster via a Terminal
 
 Terminal-based login is by far the most flexible and powerful method of using
-HPCC's resources or most other HPC clusters. Web-based alternatives via Jupyter
-Hub and RStudion Server are introduced [here]().  
+HPCC's resources as well as most other HPC clusters. Web-based alternatives via Jupyter
+Hub and RStudion Server are also available and introduced [here]().  
 
 1. Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name, but the `<>` characters removed. Next press enter to execute the command.
 
@@ -31,15 +31,15 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-+ Various terminal applications are available for all major operating systems, such as:
+Various terminal applications are available for all major operating systems. Examples include:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
     + Windows: provide same information in a terminal application like [MobaXterm](http://mobaxterm.mobatek.net/) ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is outdated and not recommended anymore). [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage introduction for MobaXterm.
     + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
     + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
 
-+ For remote X11 graphics display support, XQuartz needs to be running in the background on macOS system, which can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
+On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     
-+ Additional login information can be found on the corresponding HPCC manuals:
+Additional login information can be found on the following HPCC manuals:
 
     + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#secure-authentication) 
     + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
