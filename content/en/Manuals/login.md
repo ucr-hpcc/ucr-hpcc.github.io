@@ -17,7 +17,11 @@ ssh -X user@cluster.hpcc.ucr.edu
 ```
   
 + Type your password 
-+ Follow the Duo multifactor authenication instructions printed to the screen
++ Follow the Duo multifactor authenication instructions printed to the screen. Duo will be bypassed if ssh key based login is enabled. 
+Since external users do not have access to UCR's Duo system, they can only log in via the ssh key method. How to enable ssh keys is described
+[here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+
+
 
 + Windows: provide same information in a terminal application like
   [MobaXterm](http://mobaxterm.mobatek.net/)
@@ -34,9 +38,8 @@ ssh -X user@cluster.hpcc.ucr.edu
 
 + Additional login information can be found on the corresponding HPCC manuals:
 
-    + Login page: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/)
-    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
     + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#secure-authentication) 
+    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
     + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
 
 ## Resouce Types
