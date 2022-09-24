@@ -10,6 +10,10 @@ aliases:
 
 ## Log in to HPCC Cluster via a Terminal
 
+Terminal-based login is by far the most flexible and powerful method of using
+HPCC's resources or most other HPC clusters. Web-based alternatives via Jupyter
+Hub and RStudion Server are introduced [here]().  
+
 1. Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name, but the `<>` characters removed. Next press enter to execute the command.
 
 ```sh
