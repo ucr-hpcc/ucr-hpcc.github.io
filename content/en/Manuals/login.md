@@ -10,18 +10,18 @@ aliases:
 
 ## Log in to HPCC Cluster via a Terminal
 
-Terminal-based login is by far the most feature-rich method of using
+Terminal-based login is the preferred by far the most feature-rich method for accessing 
 HPCC's resources as well as most other HPC clusters. Web-based alternatives via Jupyter
-Hub and RStudion Server are also available and introduced [here]().  
+Hub and RStudio Server are introduced [here]().  
 
-1. Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name, but the `<>` characters removed. Next press enter to execute the command.
+1. Type the following login command from a terminal application (see below), where string `<user>` needs to be replaced by a user's account name. The `<...>` characters need to be removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <user>@cluster.hpcc.ucr.edu
 ```
 
 2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
-3. Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. 
+3. Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than using Duo, especially for heavy users.
     
 + If the login is performed via a GUI application such a MobaXterm (see below),
 then one can provide the same login information given under the above ssh
