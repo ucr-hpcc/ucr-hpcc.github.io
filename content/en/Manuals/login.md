@@ -8,6 +8,36 @@ aliases:
     - /manuals/hpc_cluster/login
 ---
 
+## Log into HPCC Cluster via a Terminal
+
++ Login command on OS X or Linux 
+
+```sh
+ssh -XY user@cluster.hpcc.ucr.edu
+```
+  
++ Next type your password and follow the Duo multifactor authenication printed to the screen
+
++ Windows: provide same information in a terminal application like
+  [MobaXterm](http://mobaxterm.mobatek.net/)
+  ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is
+  outdated and not recommended anymore).
+  [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage
+  introduction for MobaXterm.
+    
+    + Host name: `cluster.hpcc.ucr.edu`
+    + User name: ...
+    + Password: ...
+
++ macOS can use the built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). For remote X11 graphics display support, XQuartz needs to be intalled from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
+
++ Additional login information can be found on the corresponding HPCC manuals:
+
+    + Login page: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/)
+    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
+    + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#secure-authentication) 
+    + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
+
 ## Resouce Types
 
 There are several ways to access the cluster, depending on what resources you want to use:
