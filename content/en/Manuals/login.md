@@ -10,13 +10,14 @@ aliases:
 
 ## Log into HPCC Cluster via a Terminal
 
-+ Login command on OS X or Linux 
++ Login command on macOS or Linux 
 
 ```sh
-ssh -XY user@cluster.hpcc.ucr.edu
+ssh -X user@cluster.hpcc.ucr.edu
 ```
   
-+ Next type your password and follow the Duo multifactor authenication printed to the screen
++ Type your password 
++ Follow the Duo multifactor authenication instructions printed to the screen
 
 + Windows: provide same information in a terminal application like
   [MobaXterm](http://mobaxterm.mobatek.net/)
@@ -29,7 +30,7 @@ ssh -XY user@cluster.hpcc.ucr.edu
     + User name: ...
     + Password: ...
 
-+ macOS can use the built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). For remote X11 graphics display support, XQuartz needs to be intalled from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
++ macOS users can use the built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). For remote X11 graphics display support, XQuartz needs to be intalled from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
 
 + Additional login information can be found on the corresponding HPCC manuals:
 
