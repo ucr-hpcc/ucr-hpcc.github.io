@@ -17,15 +17,13 @@ ssh -X <user>@cluster.hpcc.ucr.edu
 ```
 
 2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
-3. Follow the Duo multifactor authenication instructions printed to the screen.
+3. UCR users can use the Duo multifactor authenication method, where one want to follow the instructions printed to the screen. Note, Duo will be bypassed if ssh key based login is enabled. As external users do not have access to UCR's Duo system, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
     
 + If the login is performed via a GUI application such a MobaXterm (see below), then one can provide the same login information given under the above ssh commad in dedicated fields as follows:
 
     + Host name: `cluster.hpcc.ucr.edu`
     + User name: ...
     + Password: ...
-
-+ Note, Duo will be bypassed if ssh key based login is enabled. As external users do not have access to UCR's Duo system, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 + Various terminal applications are available for all major operating systems, such as:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
