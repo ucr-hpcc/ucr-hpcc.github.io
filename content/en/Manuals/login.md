@@ -10,13 +10,14 @@ aliases:
 
 ## Log into HPCC Cluster via a Terminal
 
-+ Login command from a terminal application where you want to provide your user name under `<user>`
++ Type the following login command from a terminal application, where `<user>` needs to be replaced by a user's account name including and the `<>` characters removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <user>@cluster.hpcc.ucr.edu
 ```
-    + Type your password 
-    + Follow the Duo multifactor authenication instructions printed to the screen.
+
++ Type your password 
++ Follow the Duo multifactor authenication instructions printed to the screen.
     
 + If the login is performed via a GUI application such a MobaXterm (see below), then one can provide the same login information given under the above ssh commad in dedicated fields as follows:
 
