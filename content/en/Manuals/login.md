@@ -18,17 +18,19 @@ ssh -X <user>@cluster.hpcc.ucr.edu
     + Type your password 
     + Follow the Duo multifactor authenication instructions printed to the screen.
     
-+ If the login is performed via a GUI application then one can provide the information of the above ssh commad as follows.
++ If the login is performed via a GUI application such a MobaXterm (see below), then one can provide the same login information given under the above ssh commad in dedicated fields as follows:
+
     + Host name: `cluster.hpcc.ucr.edu`
     + User name: ...
     + Password: ...
 
 + Note, Duo will be bypassed if ssh key based login is enabled. Importantly, external users do not have access to UCR's Duo system. Thus, they can only log in via the ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
-+ Various terminal applications are available for the major operating systems:
++ Various terminal applications are available for all major operating systems, such as:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
     + Windows: provide same information in a terminal application like [MobaXterm](http://mobaxterm.mobatek.net/) ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is outdated and not recommended anymore). [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage introduction for MobaXterm.
-    + Linux: a wide range of Terminal applications is available for Linux. 
+    + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
+    + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
 
 + For remote X11 graphics display support, XQuartz needs to be running in the background on macOS system, which can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     
