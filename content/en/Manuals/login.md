@@ -31,7 +31,7 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-The following provides additional login information.
+The following provides details related to terminal options, X11 support and additional documentation.
 
 + Various terminal applications are available for all major operating systems. Examples include:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
@@ -39,7 +39,7 @@ The following provides additional login information.
     + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
     + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
 
-+ On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
++ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     
 + Additional login information can be found on the following HPCC manuals:
 
