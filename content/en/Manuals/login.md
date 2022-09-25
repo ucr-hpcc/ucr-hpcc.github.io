@@ -77,24 +77,26 @@ Note, the install of XQuartz can be skipped if remote graphics support is not ne
 In early 2022 the HPCC adopted a more secure authentication method for logging
 into its clusters. Passwords alone will no longer be allowed for `SSH` or file
 tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
-Keys](#ssh-keys) will be required. Since `Password+DUO` authentication requires
-a UCR NetID, this access method is only available to UCR users for `ssh` and
-file transfer protocols (_e.g._ sFTP or SCP). External users need use the SSH
-key method. To enable ssh key access, the public key needs to be emailed to
+Keys](#ssh-keys) will be required. Because `Password+DUO` authentication requires
+a UCR NetID, this access method is only available to UCR users for both `ssh` and
+file transfer protocols (_e.g._ sFTP or SCP). Thus, external users need use the 
+alternative ssh key method. To enable ssh key access, the public key needs to be emailed to
 [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) (see below for details).
 One exception are web-based services where password-based access doesn't require
-Duo multifactor authenication.
+Duo multifactor authenication or ssh keys.
 
 ### Password+Duo
 
-Instructions for using UCR's Duo Multifactor Authenication system are available
+Users familiar with UCR's Duo system can log in to HPCC's clusters by following the
+on screen instructions during the ssh login (see above). For new users, instructions 
+for UCR's Duo Multifactor Authenication system are available
 in this [PDF](https://its.ucr.edu/sites/default/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
 and on UCR's [MyAccount](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount)
 page. Importantly, the login via the `Password+DUO` method will only work if a
 user's NetID matches the username of the corresponding HPCC account. If
 this is not the case then the HPCC username can be changed to a user's NetID.
-This change can be initiated by emailing [support](mailto:support@hpcc.ucr.edu).
-External users will not have access to UCR's Duo system, and thus have to use
+This change can be initiated by emailing [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
+As mentioned above, external users will not have access to UCR's Duo system, and thus have to use
 the alternative ssh key access method to log in to HPCC's resources.
 
 ### SSH Keys
@@ -104,30 +106,32 @@ This is becuase in order to get this working a file (public key) needs to be pla
 If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding. If you 
 never intend to have a UCR NetID, then you may create your keys according to the below instructions. However, you will 
 need to contact support in order to copy your resulting public key to the cluster.
-
 When using SSH key authentication, you will need to create a public and a pritate key.
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key "fits" the public key, can you be granted access.
-
 The following shows to do this from the command-line in a [terminal](#terminal) application. This command-line approach 
 works almost exactly the same way on all three major OSs including Linux, Mac OS X and Windows using MobaXterm. 
 Alternatively, instructions using a graphical user interface (GUI) can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
-To create the key pair, run the following command in your computer's [terminal](#terminal):
+To create the key pair, run the following commands in your computer's [terminal](#terminal):
 
-```
-# Create SSH directory
+__1.__ Create SSH directory
+
+```sh
 mkdir -p ~/.ssh
+```
+__2.__ Create key pair (private and public
 
-# Create key pair (Private and Public)
+```sh
 ssh-keygen -t rsa -f ~/.ssh/id_rsa
 ```
 
-Follow the prompts and complete the processes.
-Once the command has completed, you will find two files in your `~/.ssh` directory.
+Follow the prompts and complete the processes. Once the command has completed, one will find two files in the `~/.ssh` directory of 
+a user account.
 
-```
-# List files in SSH directory
+__3.__ Inspect `~/.ssh`  directory
+
+```sh 
 ls ~/.ssh/
   id_rsa
   id_rsa.pub
