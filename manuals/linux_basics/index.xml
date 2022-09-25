@@ -212,6 +212,33 @@ check_quota # Check quota for home and bigdata
 &lt;p>Note: &lt;code>CTRL+c&lt;/code> will cancel a running command&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="file-transfers">File Transfers&lt;/h2>
+&lt;blockquote>
+&lt;p>First, you must configure your &lt;a href="#authentication">authentication method&lt;/a>.
+Also note that you CANNOT use the &amp;ldquo;Quickconnect&amp;rdquo; button from the main window to connect.&lt;/p>
+&lt;/blockquote>
+&lt;p>For file transfers and data sharing, both command-line and GUI applications can
+be used. For beginners we recommend the FileZilla GUI application
+(download/install from here) since it is available for most OSs. A basic user
+manual for FileZilla is here and a video tutorial is here. Alternative
+user-friendly SCP/SFTP GUI applications include Cyberduck and WinSCP for Mac
+and Windows OSs, respectively.&lt;/p>
+&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site to connect, click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
+From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
+&lt;p>On the right pane of the &lt;code>General&lt;/code> tab fill in the information as follows:&lt;/p>
+&lt;pre>&lt;code>Protocol: SFTP
+Host: cluster.hpcc.ucr.edu
+Logon Type: Interactive
+User: YOUR_CLUSTER_USER_NAME
+&lt;/code>&lt;/pre>
+&lt;p>Remeber to fill in &lt;code>YOUR_CLUSTER_USER_NAME&lt;/code> with your actual cluster username.
+The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p>
+&lt;p>If you choose a &lt;code>Password+DUO&lt;/code> authentication, then you should also configure the max connections.
+Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&lt;/p>
+&lt;pre>&lt;code> Limit Number of simultaneous connections: checked
+Maximum number of connections: 1
+&lt;/code>&lt;/pre>
+&lt;p>After all of the above has been completed, then you can click &amp;ldquo;OK&amp;rdquo; to save the new site.
+Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the &amp;ldquo;connect&amp;rdquo; button from your new site window.&lt;/p>
 &lt;p>If you would rather use a graphical interface, instead of the command line, try FileZilla &lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> for file exchanges.&lt;/p>
 &lt;ul>
 &lt;li>
