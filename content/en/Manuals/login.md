@@ -20,11 +20,11 @@ is both secure and convenient to use.
 
 The following instructions include:
 
-1. SSH login via a Terminal
-2. Web-based login
+1. SSH Login via Terminal
+2. Web-based Access
 3. Data Sharing
 
-## A. Log in via `SSH` from Terminal
+## A. `SSH` Login from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are also provided 
