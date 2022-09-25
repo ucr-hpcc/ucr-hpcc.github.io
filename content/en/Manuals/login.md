@@ -18,6 +18,12 @@ authenication system is only available to UCR users. Thus, external users have
 to use the alternative [SSH Key](#ssh-keys) based authentication method, which
 is both secure and convenient to use. 
 
+The following instructions include:
+
+1. SSH login via a Terminal
+2. Web-based login
+3. Data Sharing
+
 ## A. Log in via `SSH` from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
