@@ -21,7 +21,7 @@ with the standard `ssh` protocol, users want to use the following three steps:
 ssh -X <username>@cluster.hpcc.ucr.edu
 ```
 
-Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
+    Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
 2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
 3. Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
@@ -34,11 +34,11 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-The following provides additional login details related to terminal options, X11 support and documentation.
+The following provides additional login details.
 
 + Various terminal applications are available for all major operating systems. Examples include:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
-    + Windows: provide same information in a terminal application like [MobaXterm](http://mobaxterm.mobatek.net/) ([Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is outdated and not recommended anymore). [Here](https://mobaxterm.mobatek.net/demo.html) is an annimated usage introduction for MobaXterm.
+    + Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) is are annimated usage introductions for MobaXterm.
     + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
     + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
 
