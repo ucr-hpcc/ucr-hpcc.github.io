@@ -48,7 +48,7 @@ The following provides additional details.
 
 + X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     
-+ Additional login information can be found on the following HPCC manuals:
++ Additional login information can be found on the following sections:
 
     + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/login/#passwordduo) 
     + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
