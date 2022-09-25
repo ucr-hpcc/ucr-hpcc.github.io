@@ -8,7 +8,7 @@ aliases:
     - /manuals/hpc_cluster/login
 ---
 
-## Log in wih `SSH` in Terminal
+## Log in with `SSH` from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are provided and introduced [here](). To access the HPCC cluster with the standard
