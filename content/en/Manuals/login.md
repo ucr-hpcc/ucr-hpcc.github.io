@@ -29,13 +29,13 @@ setting up ssh key based access.
 
 __1.__ Type the following `ssh` login command from a terminal application, where `<username>` needs to be replaced by the actual account name of a user. The `<>` characters indicate a placeholder and need to be removed. Next, press enter to execute the `ssh` command.
 
-```sh
+```bash
 ssh -X <username>@cluster.hpcc.ucr.edu
 ```
 
 The `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
-__2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the both the password and Duo steps will be skipped automatically during the log in process.
+__2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, both the password and Duo steps will be skipped automatically during the log in process.
 
 __3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](#ssh-keys). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
     
@@ -108,13 +108,13 @@ on the HPCC cluster. Ssh key based access works analogous to how a key and a loc
 one uniquely fits into the other. Access can only be established if the private key on a user's system "fits" the 
 public key on the remote system.
 
-The following shows to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
+The following show how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
 public key to the remote system. The latter upload will only work if a user can access the remote system, 
 _e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
 ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
-key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+public key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 This includes GUI based based options. However, we highly recommend to use the command-line options which are
-much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows sytems. 
+much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows systems. 
 
 #### (A) SSH Key Creation
 
@@ -123,12 +123,12 @@ operating systems, including Windows, macOS, Linux and ChromeOS.
 
 __1.__ Create SSH directory
 
-```sh
+```bash
 mkdir -p ~/.ssh
 ```
 __2.__ Create key pair (private and public
 
-```sh
+```bash
 ssh-keygen -t rsa -f ~/.ssh/id_rsa
 ```
 
@@ -137,7 +137,7 @@ a user account.
 
 __3.__ Inspect `~/.ssh`  directory
 
-```sh 
+```bash 
 ls ~/.ssh/
   id_rsa
   id_rsa.pub
@@ -157,7 +157,7 @@ __1.__ Upload of first public ssh key
 
 If the `authorized_keys` doesn't exist yet, the following `scp` command can be run from a user's system.
 
-```sh
+```bash
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
 ```
 
@@ -165,7 +165,7 @@ __2.__ Upload of subsequent public ssh keys
 
 If the `authorized_keys` file already exists, one can append the new public key as follows.
 
-```sh
+```bash
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey && ssh username@cluster.hpcc.ucr.edu "cat tmpkey >> ~/.ssh/authorized_keys && rm tmpkey"
 ```
 
@@ -174,7 +174,7 @@ __3.__ Check ssh key based access
 To test whether ssh key based access is functional, then the following log in should work without asking for a password. However,
 it may ask for a passphrase if the ssh key pair was created this way. 
 
-```sh
+```bash
 ssh <username>@cluster.hpcc.ucr.edu
 ```
 
