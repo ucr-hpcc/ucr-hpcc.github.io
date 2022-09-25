@@ -180,7 +180,7 @@ ssh <username>@cluster.hpcc.ucr.edu
 
 #### (c) Additional Details on SSH Keys
 
-See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
+See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 
 ## B. Web-based Access 

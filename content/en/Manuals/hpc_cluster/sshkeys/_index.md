@@ -5,3 +5,5 @@ type: docs
 weight: 12
 ---
 
+> The below links to detailed instructions. A shorter but more comprehensive summary for all three OSs is available [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys). 
+
