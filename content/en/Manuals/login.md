@@ -35,8 +35,14 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-__Importantly__, after the first login into a new account or a password reset, users need 
-to change their password with the `passwd` command and following the on-screen instructions.
+__Importantly__, after the first login into a new account or a password reset,
+users need to change their password with the `passwd` command and then follow
+the on-screen instructions. This includes to enter the current password once
+and then enter the new password twice. The minimum requirements for the new
+password are: total length at least 8 characters and at 3 of the following
+requirments: lowercase character; uppercase character; number; and punctuation
+character.
+
 
 The following provides additional details.
 
@@ -230,20 +236,4 @@ Choose whichever option works best for you.
 
 >IMPORTANT!!! New users are expected to change their temporary password with the `passwd` command upon successful login.
 
-#### Change Password
-
-1. Log-in to the cluster via SSH
-2. Once you have logged in, type the following command:
-   `passwd`
-3. Enter your current password (the random characters that you were given as your initial password)
-4. Enter your new password (you will be asked to type it twice for verification)
-
-#### Minimum password requirements
-
-* Total length at least 8 characters long
-* Must have at least 3 of the following:
-  * Lowercase character
-  * Uppercase character
-  * Number
-  * Punctuation character
 
