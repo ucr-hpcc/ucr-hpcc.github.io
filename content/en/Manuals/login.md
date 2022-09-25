@@ -15,7 +15,7 @@ HPCC's resources as well as most other HPC clusters. Web-based alternatives via 
 Hub and RStudio Server are also provided and introduced [here](). To access the HPCC cluster 
 with the standard `ssh` protocol, users want to use the following three steps: 
 
-1. Type the following login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
+1. Type the `ssh` login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <username>@cluster.hpcc.ucr.edu
