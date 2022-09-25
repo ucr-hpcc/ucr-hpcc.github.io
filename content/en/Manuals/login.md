@@ -18,7 +18,7 @@ authenication system is only available to UCR users. Thus, external users have
 to use the alternative [SSH Key](#ssh-keys) based authentication method, which
 is both secure and convenient to use. 
 
-The login instructions of this page are structured as follows:
+The login instructions of this page are organized in three sections:
 
 A. [SSH Login via Terminal](#a-ssh-login-from-terminal)
 B. [Web-based Access](#b-web-based-access)
