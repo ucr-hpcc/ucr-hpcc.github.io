@@ -18,9 +18,10 @@ Note: HPCC's latest Recharging Rates document is [here](/about/facility/rates).
 ## User account requests
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include email address and full name of both user and PI.
-* An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
+* An FAU for the annual subscription fee (see below) is required if a PI's lab is not registered yet.
+* After being subscribed, PIs can request additional user account by emailing [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) the full name, NetID and email address for each new user. Those users need to work in the same group.
 
-After account information has been recieved, next vist how to [login](/manuals/login).
+After the account information has been received, follow the login instructions [here](/manuals/login).
 
 ## Recharging rates
 
