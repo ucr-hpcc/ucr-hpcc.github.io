@@ -1016,6 +1016,41 @@ To make your changes permanent you need to add them to your &lt;code>.bashrc&lt;
 Adding umask to your &lt;code>.bashrc&lt;/code> file is as simple as adding your umask command (such as &lt;code>umask u=rwx,g=rx,o=r&lt;/code>) to the end of the file.
 Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running &lt;code>umask -S&lt;/code>.&lt;/p>
 &lt;p>To learn more about umask please visit &lt;a href="http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html">What is Umask and How To Setup Default umask Under Linux?&lt;/a>.&lt;/p>
+&lt;h2 id="file-transfers">File Transfers&lt;/h2>
+&lt;p>For file transfers and data sharing, both command-line and GUI applications can
+be used. For beginners we recommend the FileZilla GUI application
+(download/install from here) since it is available for most OSs. A basic user
+manual for FileZilla is here and a video tutorial is here. Alternative
+user-friendly SCP/SFTP GUI applications include Cyberduck and WinSCP for Mac
+and Windows OSs, respectively.&lt;/p>
+&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site to connect, click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
+From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
+&lt;p>On the right pane of the &lt;code>General&lt;/code> tab fill in the information as follows:&lt;/p>
+&lt;pre>&lt;code>Protocol: SFTP
+Host: cluster.hpcc.ucr.edu
+Logon Type: Interactive
+User: YOUR_CLUSTER_USER_NAME
+&lt;/code>&lt;/pre>
+&lt;p>Remeber to fill in &lt;code>YOUR_CLUSTER_USER_NAME&lt;/code> with your actual cluster username.
+The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p>
+&lt;p>If you choose a &lt;code>Password+DUO&lt;/code> authentication, then you should also configure the max connections.
+Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&lt;/p>
+&lt;pre>&lt;code> Limit Number of simultaneous connections: checked
+Maximum number of connections: 1
+&lt;/code>&lt;/pre>
+&lt;p>After all of the above has been completed, then you can click &amp;ldquo;OK&amp;rdquo; to save the new site.
+Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the &amp;ldquo;connect&amp;rdquo; button from your new site window.&lt;/p>
+&lt;p>If you would rather use a graphical interface, instead of the command line, try FileZilla &lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> for file exchanges.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To copy files To the server run the following on your workstation or laptop:&lt;/p>
+&lt;p>&lt;code>scp -r &amp;lt;path_to_directory&amp;gt; &amp;lt;your_username&amp;gt;@&amp;lt;host_name&amp;gt;:&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To copy files From the server run the following on your workstation or laptop:&lt;/p>
+&lt;p>&lt;code>scp -r &amp;lt;your_username&amp;gt;@&amp;lt;host_name&amp;gt;:&amp;lt;path_to_directory&amp;gt; .&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="copying-bigdata">Copying bigdata&lt;/h2>
 &lt;p>Rsync can:&lt;/p>
 &lt;ul>
