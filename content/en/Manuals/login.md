@@ -13,13 +13,15 @@ aliases:
 Terminal-based login is the preferred and by far the most feature-rich method for accessing 
 HPCC's resources as well as most other HPC clusters. Web-based alternatives via Jupyter
 Hub and RStudio Server are also provided and introduced [here](). Follow the following three steps to 
-access the cluster with the standard ssh protocol from a terminal application: 
+access the cluster with the standard `ssh` protocol from a terminal application: 
 
-1. Type the following login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<...>` characters need to be removed. Next press enter to execute the command.
+1. Type the following login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <username>@cluster.hpcc.ucr.edu
 ```
+
+Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
 2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
 3. Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
