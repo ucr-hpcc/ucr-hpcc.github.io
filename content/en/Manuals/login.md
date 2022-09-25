@@ -8,6 +8,16 @@ aliases:
     - /manuals/hpc_cluster/login
 ---
 
+## Requirements
+
+An user account is required to access HPCC's research computing
+infrastructure. How to obtain an account is described
+[here](https://hpcc.ucr.edu/about/facility/access/). Most users will have an
+_HPCC Cluster_ account that provides access to most resources of the HPCC.
+`Data Transfer` accounts are also available. Since the introduction of UCR's Duo multifactor
+authenication system, external users can only use the ssh key access method. For
+details see [here](https://hpcc.ucr.edu/manuals/login/#ssh-keys).
+
 ## Log in with `SSH` from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
@@ -63,10 +73,12 @@ The following provides additional details.
 
 ## Additional Authentication Details
 
-In early 2022 the HPCC adopted a more secure method of authentication for logging into the cluster.
-Passwords alone will no longer be allowed via `SSH`, instead [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) will be required.
-Since `Password+DUO` authentication requires a UCR NetID, this access method is only available to
-UCR users. External users need use the SSH key method. To enable ssh key access, the public key needs to 
+In early 2022 the HPCC adopted a more secure method of authentication for
+logging into the cluster. Passwords alone will no longer be allowed via `SSH`
+or file tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
+Keys](#ssh-keys) will be required. Since `Password+DUO` authentication requires
+a UCR NetID, this access method is only available to UCR users. External users
+need use the SSH key method. To enable ssh key access, the public key needs to
 be emailed to support (see below for details).
 
 ### Password+Duo
