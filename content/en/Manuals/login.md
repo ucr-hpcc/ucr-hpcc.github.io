@@ -50,10 +50,9 @@ commad in the corresponding fields of the login window as follows:
 __Importantly__, after the first login into a new account or a password reset,
 users need to change their password with the `passwd` command and then follow
 the on-screen instructions. This requires to enter the current password once
-and then enter the new password twice. The minimum requirements for the new
-password are: total length at least 8 characters and at least 3 of the following
-requirments need to be included: lowercase character; uppercase character; number; 
-and punctuation character.
+and then enter the new password twice. New passwords need to be at least 8 characters 
+long and meet at least 3 of the following requirments: lowercase character, 
+uppercase character, number, and punctuation character.
 
 
 ### Terminal Options
