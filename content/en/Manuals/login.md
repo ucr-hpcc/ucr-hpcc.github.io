@@ -18,7 +18,7 @@ authenication system is only available to UCR users. Thus, external users have
 to use the alternative [SSH Key](#ssh-keys) based authentication method, which
 is both secure and convenient to use. 
 
-## Log in via `SSH` from Terminal
+## A. Log in via `SSH` from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are also provided 
@@ -115,7 +115,7 @@ public key for them. Additional details on ssh key generation and uploads are pr
 This includes GUI based based options. However, we highly recommend to use the command-line options which are
 much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows systems. 
 
-#### (A) SSH Key Creation
+#### (a) SSH Key Creation
 
 An ssh key pair can be created with the following commands in a [terminal](#terminal) application of all major
 operating systems, including Windows, macOS, Linux and ChromeOS.
@@ -142,7 +142,7 @@ ls ~/.ssh/
   id_rsa.pub
 ```
 
-#### (B) SSH Key Upload
+#### (b) SSH Key Upload
 
 The `id_rsa` and `id_rsa.pub` files are the private and public keys,
 respectively. The private key should never be shared with anyone. This means it
@@ -177,7 +177,7 @@ it may ask for a passphrase if the ssh key pair was created this way.
 ssh <username>@cluster.hpcc.ucr.edu
 ```
 
-#### (C) Additional Details on SSH Keys
+#### (c) Additional Details on SSH Keys
 
 See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
 
@@ -192,11 +192,11 @@ There are several ways to access the cluster, depending on what resources you wa
 Our various `Web Services` do not require DUO authentication, only your cluster username and password.
 However, `File Transfers` and `Terminal` (SSH) access do require either [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys).
 
-## Web Services
+## B. Web-based Access 
 
 All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)) simply use the `Username+Password` authentication method, `DUO` authentication is not currently required.
 
-## File Transfers
+## C. File Transfer
 
 > First, you must configure your [authentication method](#authentication).
 > Also note that you CANNOT use the "Quickconnect" button from the main window to connect.
