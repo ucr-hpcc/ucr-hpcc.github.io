@@ -191,7 +191,7 @@ See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 ## B. Web-based Access 
 
-Web-based HPCC cluster access is provided via [RStudio Server](https://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)). 
+Web-based HPCC cluster access is provided via [RStudio Server](https://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu). 
 Users with an HPCC cluster account can access them with the same login credential used for ssh access. The `Username+Password` 
 authentication method with Duo is currently not required for these services. For load balancing RStudio Server has two instances:
 [RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
