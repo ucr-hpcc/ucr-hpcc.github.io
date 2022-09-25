@@ -228,47 +228,4 @@ Navigate to the `Transfer Settings` tab and set the following:
 After all of the above has been completed, then you can click "OK" to save the new site.
 Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the "connect" button from your new site window.
 
-## Terminal
-
-The `terminal` is a tool to gain access to the command line.
-You will need to use your `terminal` to run the `ssh` command in order to gain access to the cluster.
-
-The `ssh` command (client) is used to directly connect to the cluster (server).
-This is similar to using an internet browser (client) to connect to a website (server).
-There are many `SSH` clients that would be sufficient, however we officially support the command line versions below.
-
-### MS Windows
-
-If you are using a MS Windows computer, then use `MobaXTerm`:
-
-1. Download and install MobaXTerm [Download MobaXTerm](https://mobaxterm.mobatek.net/download-home-edition.html)
-2. Run `MobaXTerm` application
-3. Click on "Start local terminal" in the center of the window
-
-### MacOS
-
-If you are using a MacOS computer, then use the built in `terminal` or `iterm2`:
-
-1. Download and install [XQuartz](https://www.xquartz.org/) *optional* (graphics support)
-2. Download and install [iterm2](https://www.iterm2.com/downloads.html) *optional*
-3. Run `terminal` or `iterm2` application
-
-### Linux
-
-If you are using a GNU/Linux computer, then it is very likely that you have a terminal built in and already know how to open it.
-If not, then try to search the internet for instructions, if that fails email [support](mailto:support@hpcc.ucr.edu).
-
-### First Login
-
-Once you have a `terminal` open type `ssh username@cluster.hpcc.ucr.edu` and hit enter.
-Make sure you replace the `username` above with your real cluster username.
-
-Assuming that you have already installed and configured DUO on a mobile device, then when attempting to login you will be first asked to provide your password, and then you will need to choose your DUO authentication option to validate your login attempt.
-Depending on how you chose to configure/enrolling your mobile device, you may see multiple options.
-
-DUO uses either an option for DUO authentication via `Push` which uses the mobile app, or via `SMS` which sends a code as a text message to your phone.
-Choose whichever option works best for you.
-
->IMPORTANT!!! New users are expected to change their temporary password with the `passwd` command upon successful login.
-
 
