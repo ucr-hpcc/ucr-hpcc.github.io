@@ -51,11 +51,13 @@ To learn more about umask please visit [What is Umask and How To Setup Default u
 ## File Transfers
 
 For file transfers and data sharing, both command-line and GUI applications can
-be used. For beginners we recommend the FileZilla GUI application
-(download/install from here) since it is available for most OSs. A basic user
-manual for FileZilla is here and a video tutorial is here. Alternative
-user-friendly SCP/SFTP GUI applications include Cyberduck and WinSCP for Mac
+be used. For beginners we recommend the [FileZilla](https://filezilla-project.org/) GUI application
+(download/install from [here](https://filezilla-project.org/)) since it is available for most OSs. A basic user
+manual for FileZilla is [here](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)) and a video tutorial is [here](https://www.youtube.com/watch?v=O3DudpEMPiY). 
+Alternative user-friendly SCP/SFTP GUI applications include [Cyberduck](https://cyberduck.io/) and [WinSCP](https://winscp.net/eng/download.php) for Mac
 and Windows OSs, respectively. 
+
+### FileZilla Usage
 
 When using `FileZilla` you must create a new site to connect, click `File -> Site Manager`.
 From the new window click `New Site`.
@@ -83,7 +85,9 @@ Navigate to the `Transfer Settings` tab and set the following:
 After all of the above has been completed, then you can click "OK" to save the new site.
 Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the "connect" button from your new site window.
 
-  If you would rather use a graphical interface, instead of the command line, try FileZilla [FileZilla](https://filezilla-project.org/) for file exchanges.
+## Command-line SCP
+
+Advantages of this method include: batch up/downloads and ease of automation. A detailed manual is available [here](https://linux.die.net/man/1/scp).
 
 * To copy files To the server run the following on your workstation or laptop:
 
@@ -92,6 +96,7 @@ Then from the main window you can click the arrow next to the site lists, or jus
 * To copy files From the server run the following on your workstation or laptop:
 
   `scp -r <your_username>@<host_name>:<path_to_directory> .`
+
 
 ## Copying bigdata
 

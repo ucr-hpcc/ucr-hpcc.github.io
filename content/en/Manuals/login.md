@@ -192,10 +192,9 @@ All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [Jupyter
 
 ## C. Data Sharing
 
-Several protocols are supported for file transfers and data sharing.
-Instructions for these operations are available in the 
-[File Transfer](https://hpcc.ucr.edu/manuals/linux_basics/filesystems/#file-transfers) 
-section of the HPCC website. 
+Users who want to use HPCC's infrastructure mainly for file transfers and data sharing want to 
+follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
+
 
 
 

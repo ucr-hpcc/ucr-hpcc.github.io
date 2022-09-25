@@ -122,4 +122,4 @@ check_quota   # Check quota for home and bigdata
 
 ## File Transfers
 
-This section has been moved to the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/) page.
+This section has moved to the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/) page.
