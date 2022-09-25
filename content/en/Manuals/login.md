@@ -118,8 +118,8 @@ public key to the remote system. The latter upload will only work if a user can 
 _e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
 ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
 public key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
-This includes GUI based based options. However, we highly recommend to use the command-line options which are
-much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows systems. 
+This includes GUI based based options. However, we highly recommend to use the command-line option on all OSs which are
+much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows. 
 
 #### (a) SSH Key Creation
 
