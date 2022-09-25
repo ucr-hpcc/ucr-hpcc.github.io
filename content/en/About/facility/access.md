@@ -21,7 +21,7 @@ Note: HPCC's latest Recharging Rates document is [here](/about/facility/rates).
 * An FAU for the annual subscription fee (see below) is required if a PI's lab is not registered yet.
 * Subscribed labs can request additional user account by emailing [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) the same user information as above. 
 
-After the account information has been received, follow the login instructions [here](/manuals/login).
+After the user account information has been received, follow the login instructions [here](/manuals/login).
 
 ## Recharging rates
 
