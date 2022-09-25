@@ -14,7 +14,7 @@ Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are provided and introduced [here](). To access the HPCC cluster with the standard
 `ssh` protocol, users want to follow these steps: 
 
-__1.__ Type the `ssh` login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
+__1.__ Type the following `ssh` login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
 
 ```sh
 ssh -X <username>@cluster.hpcc.ucr.edu
@@ -50,20 +50,10 @@ The following provides additional login details.
     + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
     + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
 
-## Resouce Types
 
-There are several ways to access the cluster, depending on what resources you want to use:
+## Authentication Details
 
-   * [Web Services](#web-services) - Basic programming and testing
-   * [File Transfers](#file-transfers) - Uploading/Downloading files
-   * [Terminal](#terminal) - Running full analysis via jobs and much more ...
-
-Our various `Web Services` do not require DUO authentication, only your cluster username and password.
-However, `File Transfers` and `Terminal` (SSH) access do require either [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys).
-
-## Authentication
-
-We are moving all accounts to a more secure method of authentication for logging into the cluster.
+In early 2022 we adopted a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed via `SSH`, instead [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) will be required.
 Since `Password+DUO` authentication requires a UCR NetID, this access method is only available to
 UCR users. External users need use the SSH key method instead. To enable it, the public key needs to 
@@ -146,6 +136,17 @@ Remember to replace `username` with your real cluster username.
 When logging in this time it should no longer ask for your `password` nor `DUO` authentication, however it may ask for a passphrase depending on how you created your key.
 
 > Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager "MobaKeyGen" (from the "Tools" menu).
+
+## Resouce Types
+
+There are several ways to access the cluster, depending on what resources you want to use:
+
+   * [Web Services](#web-services) - Basic programming and testing
+   * [File Transfers](#file-transfers) - Uploading/Downloading files
+   * [Terminal](#terminal) - Running full analysis via jobs and much more ...
+
+Our various `Web Services` do not require DUO authentication, only your cluster username and password.
+However, `File Transfers` and `Terminal` (SSH) access do require either [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys).
 
 ## Web Services
 
