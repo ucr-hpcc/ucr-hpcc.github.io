@@ -201,7 +201,7 @@ provided via a custom compute node instance using `srun`. This option is describ
 
 ## C. Data Sharing Access
 
-Users using HPCC's infrastructure mainly for file transfers and data sharing want to 
+Users accessing HPCC's infrastructure mainly for file transfers and data sharing want to 
 follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
 
 
