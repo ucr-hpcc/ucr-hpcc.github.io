@@ -37,7 +37,7 @@ The `-X` argument enables X11 support, which is required for opening GUI applica
 
 __2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the both the password and Duo steps will be skipped automatically during the log in process.
 
-__3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
+__3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](#ssh-keys). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
     
 + If the login is performed via a GUI application, which is an option in MobaXterm),
 then one can provide the same login information given under the above `ssh`
@@ -67,7 +67,7 @@ Various ssh terminal applications are available for all major operating systems.
 
 ### Remote Graphics Support
 
-+ X11 support is included in the terminal applications of most OSs. This includes MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
+X11 support is included in the terminal applications of most OSs. This includes MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
 in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)). 
 Note, the install of XQuartz can be skipped if remote graphics support is not needed.
     
@@ -88,7 +88,7 @@ Duo multifactor authenication or ssh keys.
 ### Password+Duo
 
 Users familiar with UCR's Duo system can log in to HPCC's clusters by following the
-on screen instructions during the ssh login (see above). For new users, instructions 
+on screen instructions during the [ssh login](#log-in-via-ssh-from-terminal). For new users, instructions 
 for UCR's Duo Multifactor Authenication system are available
 in this [PDF](https://its.ucr.edu/sites/default/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
 and on UCR's [MyAccount](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount)
@@ -97,7 +97,7 @@ user's NetID matches the username of the corresponding HPCC account. If
 this is not the case then the HPCC username can be changed to a user's NetID.
 This change can be initiated by emailing [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 As mentioned above, external users will not have access to UCR's Duo system, and thus have to use
-the alternative ssh key access method to log in to HPCC's resources.
+the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources.
 
 ### SSH Keys
 
