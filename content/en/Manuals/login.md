@@ -11,12 +11,12 @@ aliases:
 ## Requirements
 
 A user account is required to access HPCC's research computing infrastructure.
-How to obtain an account is described
+How to obtain a user account is described
 [here](https://hpcc.ucr.edu/about/facility/access/). For external users it is
 important to know that the [Password+DUO](#passwordduo) multifactor
-authenication system descibed below is only available to UCR users. Thus,
-external users have to use the alternative [SSH Key](#ssh-keys) based
-authentication method, which is both secure and convenient to use. 
+authenication system is only available to UCR users. Thus, they have to use the
+alternative [SSH Key](#ssh-keys) based authentication method, which is both
+secure and convenient to use. 
 
 ## Log in with `SSH` from Terminal
 
