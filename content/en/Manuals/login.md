@@ -20,9 +20,9 @@ is both secure and convenient to use.
 
 The login instructions of this page are structured as follows:
 
-1. [SSH Login via Terminal](#a-ssh-login-from-terminal)
-2. [Web-based Access](#b-web-based-access)
-3. [Data Sharing Access](#c-data-sharing-access)
+A. [SSH Login via Terminal](#a-ssh-login-from-terminal)
+B. [Web-based Access](#b-web-based-access)
+C. [Data Sharing Access](#c-data-sharing-access)
 
 ## A. `SSH` Login from Terminal
 
