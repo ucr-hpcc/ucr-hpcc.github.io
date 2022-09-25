@@ -22,7 +22,7 @@ The following login instructions cover:
 
 1. [SSH Login via Terminal](#a-ssh-login-from-terminal)
 2. [Web-based Access](#b-web-based-access)
-3. [Data Sharing Access](#c-data-sharing)
+3. [Data Sharing Access](#c-data-sharing-access)
 
 ## A. `SSH` Login from Terminal
 
