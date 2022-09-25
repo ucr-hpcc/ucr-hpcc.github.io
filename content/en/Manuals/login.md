@@ -20,7 +20,7 @@ __1.__ Type the `ssh` login command from a terminal application (see below), whe
 ssh -X <username>@cluster.hpcc.ucr.edu
 ```
 
-    Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
+Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
 __2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the password step will be skipped.
 

@@ -377,82 +377,82 @@ enable = true
     parent = "Manuals"
     name = "Linux Basics"
     url = "/manuals/linux_basics/"
-    weight = 2
+    weight = 4
     [[menu.main]]
       parent = "Manuals"
       name = "Command Line Basics"
       url = "/Manuals/linux_basics/cmdline_basics"
-      weight = 4
+      weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "File Systems and Transfers"
       url = "/Manuals/linux_basics/filesystems"
-      weight = 5
+      weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Permissions and Ownership"
       url = "/Manuals/linux_basics/permissions"
-      weight = 6
+      weight = 7
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Finding Things"
       url = "/Manuals/linux_basics/finding_things"
-      weight = 7
+      weight = 8
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Text Editors"
       url = "/Manuals/linux_basics/Text"
-      weight = 8
+      weight = 9
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Streams"
       url = "/Manuals/linux_basics/Streams"
-      weight = 9
+      weight = 10
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Piping"
       url = "/Manuals/linux_basics/pipes"
-      weight = 10
+      weight = 11
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Variables"
       url = "/Manuals/linux_basics/Variables"
-      weight = 11
+      weight = 12
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Scripting"
       url = "/Manuals/linux_basics/Scripting"
-      weight = 12
+      weight = 13
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Processe Management"
       url = "/Manuals/linux_basics/Processes"
-      weight = 13
+      weight = 14
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Shell Bootcamp"
       url = "/Manuals/linux_basics/Shell"
-      weight = 14
+      weight = 15
       [menu.main.params]
         level = 2
   # HPC Cluster Sub-menu
@@ -460,7 +460,7 @@ enable = true
     parent = "Manuals"
     name = "HPC Cluster"
     url = "/Manuals/hpc_cluster/"
-    weight = 16
+    weight = 17
     [[menu.main]]
       parent = "Manuals"
       name = "Introduction"
