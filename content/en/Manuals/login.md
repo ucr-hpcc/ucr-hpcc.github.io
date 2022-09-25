@@ -101,19 +101,25 @@ the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources
 
 ### SSH Keys
 
-SSH keys can only be setup if you already have access to the cluster.
-This is becuase in order to get this working a file (public key) needs to be placed in your home directory on the cluster.
-If you have, or will have a UCR NetID, then be sure to configure [Password+DUO](#passwordduo) before proceeding. If you 
-never intend to have a UCR NetID, then you may create your keys according to the below instructions. However, you will 
-need to contact support in order to copy your resulting public key to the cluster.
-When using SSH key authentication, you will need to create a public and a pritate key.
-This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
-Only when your private key "fits" the public key, can you be granted access.
-The following shows to do this from the command-line in a [terminal](#terminal) application. This command-line approach 
-works almost exactly the same way on all three major OSs including Linux, Mac OS X and Windows using MobaXterm. 
-Alternatively, instructions using a graphical user interface (GUI) can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+Ssh keys are an access credential used by the Secure Shell (SSH) access protocol. For this a key pair is
+created comprised of a private key and a public key. The private key remains on a user's system and should 
+not be shared. The public key will be uploaded to the remote system, here `~/.ssh` directory of a user's account
+on the HPCC cluster. Ssh key based access works analogous to how a key and a lock are used in the real world, where 
+one uniquely fits into the other. Access can only be established if the private key on a user's system "fits" the 
+public key on the remote system.
 
-To create the key pair, run the following commands in your computer's [terminal](#terminal):
+The following shows to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
+public key to the remote system. The latter upload will only work if a user can access the remote system, 
+_e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
+ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
+key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+This includes GUI based based options. However, we highly recommend to use the command-line options which are
+much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows sytems. 
+
+#### (A) SSH Key Creation
+
+An ssh key pair can be created with the following commands in a [terminal](#terminal) application of all major
+operating systems, including Windows, macOS, Linux and ChromeOS.
 
 __1.__ Create SSH directory
 
@@ -137,33 +143,40 @@ ls ~/.ssh/
   id_rsa.pub
 ```
 
-The `id_rsa` file is your private key (do not share this) and the `id_rsa.pub` is your public key.
-You will need to copy your public key to the cluster, creating the `authorized_keys` file.
+#### (B) SSH Key Upload
 
-If you are not able to configure [Password+DUO](#passwordduo) then contact [support](mailto:support@hpcc.ucr.edu) and provide your public key (`id_rsa.pub`).
+The `id_rsa` and `id_rsa.pub` files are the private and public keys,
+respectively. The private key should never be shared with anyone. This means it
+should not be emailed or uploaded to a remote system. Only the public key will
+be uploaded to the remote system, here HPCC user account. The public key will
+be stored in a file called `authorized_keys` under a directory called `~/.ssh`.
+If not present they need to be created. Note, `~/` refers to the higest (root)
+level of a user account. 
 
-If you already have configured [Password+DUO](#passwordduo), then run the follwing from your computer [terminal](#terminal):
+__1.__ Upload of first public ssh key
 
-```
+If the `authorized_keys` doesn't exist yet, the following `scp` command can be run from a user's system.
+
+```sh
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
 ```
 
-If the `authorized_keys` file already exists, you can just append your new public key, like so:
+__2.__ Upload of subsequent public ssh keys
 
-```
+If the `authorized_keys` file already exists, one can append the new public key as follows.
+
+```sh
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey && ssh username@cluster.hpcc.ucr.edu "cat tmpkey >> ~/.ssh/authorized_keys && rm tmpkey"
 ```
 
-In order to test this try to log into the cluster again:
+__3.__ Check ssh key based access
 
-```bash
-ssh username@cluster.hpcc.ucr.edu
+To test whether ssh key based access is functional, then the following log in should work without asking for a password. However,
+it may ask for a passphrase if the ssh key pair was created this way. 
+
+```sh
+ssh <username>@cluster.hpcc.ucr.edu
 ```
-
-Remember to replace `username` with your real cluster username.
-When logging in this time it should no longer ask for your `password` nor `DUO` authentication, however it may ask for a passphrase depending on how you created your key.
-
-> Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager "MobaKeyGen" (from the "Tools" menu).
 
 ## Resouce Types
 
