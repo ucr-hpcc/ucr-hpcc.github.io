@@ -8,7 +8,7 @@ aliases:
     - /manuals/hpc_cluster/login
 ---
 
-## Log in to HPCC Cluster via a Terminal
+## Log in wih `SSH` in Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are provided and introduced [here](). To access the HPCC cluster with the standard
@@ -40,7 +40,7 @@ The following provides additional login details.
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
     + Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) is are annimated usage introductions for MobaXterm.
     + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
-    + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
+    + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one can use the default terminal that is similar to those on Linux systems. 
 
 + X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     

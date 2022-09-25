@@ -362,7 +362,7 @@ enable = true
     weight = 1
     [[menu.main]]
       parent = "Manuals"
-      name = "Get Account"
+      name = "How to Get Account?"
       url = "/about/facility/access/"
       weight = 2
       [menu.main.params]
