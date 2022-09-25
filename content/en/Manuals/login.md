@@ -147,14 +147,15 @@ ls ~/.ssh/
 The `id_rsa` and `id_rsa.pub` files are the private and public keys,
 respectively. The private key should never be shared with anyone. This means it
 should not be emailed or uploaded to a remote system. Only the public key will
-be uploaded to the remote system, here HPCC user account. The public key will
+be uploaded to the remote system, here HPCC user account. Specifically, the public key will
 be stored in a file called `authorized_keys` under a directory called `~/.ssh`.
-If not present they need to be created. Note, `~/` refers to the higest (root)
+If not present yet both need to be created. Note, `~/` refers to the higest (root)
 level of a user account. 
 
 __1.__ Upload of first public ssh key
 
-If the `authorized_keys` doesn't exist yet, the following `scp` command can be run from a user's system.
+If the `authorized_keys` doesn't exist yet, the following `scp` command can be run from a user's system. 
+This command will create the `~/.ssh/authorized_keys` file and populate it with the public key.
 
 ```bash
 scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
