@@ -35,7 +35,7 @@ ssh -X <username>@cluster.hpcc.ucr.edu
 
 Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
-__2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the password step will be skipped.
+__2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the both the password and Duo steps will be skipped automatically during the log in process.
 
 __3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
     
