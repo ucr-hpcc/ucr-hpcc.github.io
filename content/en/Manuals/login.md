@@ -10,10 +10,11 @@ aliases:
 
 ## Log in to HPCC Cluster via a Terminal
 
-Terminal-based login is the preferred and by far the most feature-rich method for accessing 
-HPCC's resources as well as most other HPC clusters. Web-based alternatives via Jupyter
-Hub and RStudio Server are also provided and introduced [here](). To access the HPCC cluster 
-with the standard `ssh` protocol, users want to use the following three steps: 
+Terminal-based login is the preferred and by far the most feature-rich method
+for accessing HPCC's resources as well as most public supercomputing centers or
+commercial cloud systems. Web-based alternatives via Jupyter Hub and RStudio
+Server are also provided and introduced [here](). To access the HPCC cluster
+with the standard `ssh` protocol, users want to follow these steps: 
 
 1. Type the `ssh` login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
 
@@ -42,7 +43,7 @@ The following provides additional login details.
     + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
     + ChromeOS: after enabling Linux apps on Chromebooks or Chromeboxes one use the default terminal that is similar to those on Linux systems. 
 
-+ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
++ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
     
 + Additional login information can be found on the following HPCC manuals:
 
