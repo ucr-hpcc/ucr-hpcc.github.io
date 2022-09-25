@@ -190,10 +190,10 @@ However, `File Transfers` and `Terminal` (SSH) access do require either [Passwor
 
 All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)) simply use the `Username+Password` authentication method, `DUO` authentication is not currently required.
 
-## C. File Transfer
+## C. Data Sharing
 
 Several protocols are supported for file transfers and data sharing.
-Instructions for data transfer operations are available in the 
+Instructions for these operations are available in the 
 [File Transfer](https://hpcc.ucr.edu/manuals/linux_basics/filesystems/#file-transfers) 
 section of the HPCC website. 
 
