@@ -39,9 +39,9 @@ __Importantly__, after the first login into a new account or a password reset,
 users need to change their password with the `passwd` command and then follow
 the on-screen instructions. This includes to enter the current password once
 and then enter the new password twice. The minimum requirements for the new
-password are: total length at least 8 characters and at 3 of the following
-requirments: lowercase character; uppercase character; number; and punctuation
-character.
+password are: total length at least 8 characters and at least 3 of the following
+requirments need to be met: lowercase character; uppercase character; number; 
+and punctuation character.
 
 
 The following provides additional details.
