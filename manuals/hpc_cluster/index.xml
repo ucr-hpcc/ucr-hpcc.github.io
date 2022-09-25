@@ -1018,11 +1018,12 @@ Then simply log out and back in for the changes to take affect. You can double c
 &lt;p>To learn more about umask please visit &lt;a href="http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html">What is Umask and How To Setup Default umask Under Linux?&lt;/a>.&lt;/p>
 &lt;h2 id="file-transfers">File Transfers&lt;/h2>
 &lt;p>For file transfers and data sharing, both command-line and GUI applications can
-be used. For beginners we recommend the FileZilla GUI application
-(download/install from here) since it is available for most OSs. A basic user
-manual for FileZilla is here and a video tutorial is here. Alternative
-user-friendly SCP/SFTP GUI applications include Cyberduck and WinSCP for Mac
+be used. For beginners we recommend the &lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> GUI application
+(download/install from &lt;a href="https://filezilla-project.org/">here&lt;/a>) since it is available for most OSs. A basic user
+manual for FileZilla is &lt;a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)">here&lt;/a> and a video tutorial is &lt;a href="https://www.youtube.com/watch?v=O3DudpEMPiY">here&lt;/a>.
+Alternative user-friendly SCP/SFTP GUI applications include &lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and &lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac
 and Windows OSs, respectively.&lt;/p>
+&lt;h3 id="filezilla-usage">FileZilla Usage&lt;/h3>
 &lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site to connect, click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
 From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
 &lt;p>On the right pane of the &lt;code>General&lt;/code> tab fill in the information as follows:&lt;/p>
@@ -1040,7 +1041,8 @@ Maximum number of connections: 1
 &lt;/code>&lt;/pre>
 &lt;p>After all of the above has been completed, then you can click &amp;ldquo;OK&amp;rdquo; to save the new site.
 Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the &amp;ldquo;connect&amp;rdquo; button from your new site window.&lt;/p>
-&lt;p>If you would rather use a graphical interface, instead of the command line, try FileZilla &lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> for file exchanges.&lt;/p>
+&lt;h2 id="command-line-scp">Command-line SCP&lt;/h2>
+&lt;p>Advantages of this method include: batch up/downloads and ease of automation. A detailed manual is available &lt;a href="https://linux.die.net/man/1/scp">here&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>To copy files To the server run the following on your workstation or laptop:&lt;/p>

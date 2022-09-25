@@ -212,7 +212,7 @@ check_quota # Check quota for home and bigdata
 &lt;p>Note: &lt;code>CTRL+c&lt;/code> will cancel a running command&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="file-transfers">File Transfers&lt;/h2>
-&lt;p>This section has been moved to the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/">Data Sharing&lt;/a> page.&lt;/p></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
+&lt;p>This section has moved to the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/">Data Sharing&lt;/a> page.&lt;/p></description></item><item><title>Manuals: Permissions and Ownership</title><link>https://hpcc.ucr.edu/manuals/linux_basics/permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/linux_basics/permissions/</guid><description>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>In Linux (and Unix systems in general), access to files and directories is
 controlled by a system of owners, groups, and permission bits. Changing these
