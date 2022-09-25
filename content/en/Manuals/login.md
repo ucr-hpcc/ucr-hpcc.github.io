@@ -54,10 +54,10 @@ The following provides additional details.
 
 ## Authentication Details
 
-In early 2022 we adopted a more secure method of authentication for logging into the cluster.
+In early 2022 the HPCC adopted a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed via `SSH`, instead [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) will be required.
 Since `Password+DUO` authentication requires a UCR NetID, this access method is only available to
-UCR users. External users need use the SSH key method instead. To enable it, the public key needs to 
+UCR users. External users need use the SSH key method. To enable ssh key access, the public key needs to 
 be emailed to support (see below for details).
 
 ### Password+Duo
