@@ -185,10 +185,13 @@ See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 ## B. Web-based Access 
 
-Our various `Web Services` do not require DUO authentication, only your cluster username and password.
-However, `File Transfers` and `Terminal` (SSH) access do require either [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys).
+Web-based HPCC cluster access is provided via [RStudio Server](https://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)). 
+Users with an HPCC cluster account can access them with the same login credential used for ssh access. The `Username+Password` 
+authentication method with Duo is currently not required for these services. For load balancing RStudio Server has two instances:
+[RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
+is slow or not available, users want to choose the alternative option. A much more efficient method for using RStudio Server is
+provided via a custom compute node instance using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 
-All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)) simply use the `Username+Password` authentication method, `DUO` authentication is not currently required.
 
 ## C. Data Sharing
 
