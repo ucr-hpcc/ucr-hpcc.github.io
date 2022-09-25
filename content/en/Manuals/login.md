@@ -20,9 +20,9 @@ is both secure and convenient to use.
 
 The following instructions include:
 
-1. SSH Login via Terminal
-2. Web-based Access
-3. Data Sharing
+1. [SSH Login via Terminal](#a-ssh-login-from-terminal)
+2. [Web-based Access](#b-web-based-access)
+3. [Data Sharing Access](#c-data-sharing)
 
 ## A. `SSH` Login from Terminal
 
@@ -199,9 +199,9 @@ is slow or not available, users want to choose the alternative option. A much mo
 provided via a custom compute node instance using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 
 
-## C. Data Sharing
+## C. Data Sharing Access
 
-Users who want to use HPCC's infrastructure mainly for file transfers and data sharing want to 
+Users using HPCC's infrastructure mainly for file transfers and data sharing want to 
 follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
 
 
