@@ -181,18 +181,11 @@ ssh <username>@cluster.hpcc.ucr.edu
 
 See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
 
-## Resouce Types
 
-There are several ways to access the cluster, depending on what resources you want to use:
-
-   * [Web Services](#web-services) - Basic programming and testing
-   * [File Transfers](#file-transfers) - Uploading/Downloading files
-   * [Terminal](#terminal) - Running full analysis via jobs and much more ...
+## B. Web-based Access 
 
 Our various `Web Services` do not require DUO authentication, only your cluster username and password.
 However, `File Transfers` and `Terminal` (SSH) access do require either [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys).
-
-## B. Web-based Access 
 
 All web services (ie. [RStudio Server](http://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu)) simply use the `Username+Password` authentication method, `DUO` authentication is not currently required.
 
