@@ -12,13 +12,13 @@ aliases:
 
 Terminal-based login is the preferred and by far the most feature-rich method for accessing 
 HPCC's resources as well as most other HPC clusters. Web-based alternatives via Jupyter
-Hub and RStudio Server are introduced [here](). Follow the following three steps to 
+Hub and RStudio Server are also provided and introduced [here](). Follow the following three steps to 
 access the cluster with the standard ssh protocol from a terminal application: 
 
-1. Type the following login command from a terminal application (see below), where string `<user>` needs to be replaced by a user's account name. The `<...>` characters need to be removed. Next press enter to execute the command.
+1. Type the following login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<...>` characters need to be removed. Next press enter to execute the command.
 
 ```sh
-ssh -X <user>@cluster.hpcc.ucr.edu
+ssh -X <username>@cluster.hpcc.ucr.edu
 ```
 
 2. Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen.
