@@ -360,19 +360,29 @@ enable = true
     name = "Login"
     url = "/manuals/login/"
     weight = 1
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Access"
+      url = "/Manuals/linux_basics/intro"
+      weight = 2
+    [[menu.main]]
+      parent = "Manuals"
+      name = "Login"
+      url = "/manuals/login/"
+      weight = 3
+      [menu.main.params]
+        level = 2
+  [[menu.main]]
+    parent = "Manuals"
+    name = "Login"
+    url = "/manuals/login/"
+    weight = 1
   # HPC Linux Basics Sub-menu
   [[menu.main]]
     parent = "Manuals"
     name = "Linux Basics"
     url = "/manuals/linux_basics/"
     weight = 2
-    [[menu.main]]
-      parent = "Manuals"
-      name = "Access"
-      url = "/Manuals/linux_basics/intro"
-      weight = 3
-      [menu.main.params]
-        level = 2
     [[menu.main]]
       parent = "Manuals"
       name = "Command Line Basics"
