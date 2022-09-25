@@ -35,7 +35,7 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
-The following provides additional login details.
+The following provides additional details.
 
 + Various terminal applications are available for all major operating systems. Examples include:
     + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
@@ -47,9 +47,9 @@ The following provides additional login details.
     
 + Additional login information can be found on the following HPCC manuals:
 
-    + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/login/#secure-authentication) 
-    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
+    + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/login/#passwordduo) 
     + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
+    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
 
 
 ## Authentication Details
