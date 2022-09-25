@@ -105,7 +105,7 @@ Ssh keys are an access credential used by the Secure Shell (SSH) access protocol
 created comprised of a private key and a public key. The private key remains on a user's system and should 
 not be shared. The public key will be uploaded to the remote system, here `~/.ssh` directory of a user's account
 on the HPCC cluster. Ssh key based access works analogous to how a key and a lock are used in the real world, where 
-one uniquely fits into the other. Access can only be established if the private key on a user's system "fits" the 
+one uniquely fits into the other. Access can only be established if the private key on a user's system _fits_ the 
 public key on the remote system.
 
 The following show how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
@@ -177,6 +177,10 @@ it may ask for a passphrase if the ssh key pair was created this way.
 ```bash
 ssh <username>@cluster.hpcc.ucr.edu
 ```
+
+#### (C) Additional Details on SSH Keys
+
+See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
 
 ## Resouce Types
 
