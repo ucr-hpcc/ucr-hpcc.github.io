@@ -22,7 +22,7 @@ is both secure and convenient to use.
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are also provided 
-and introduced [below](). To access the HPCC cluster with the standard
+and introduced [below](#b-web-based-access). To access the HPCC cluster with the standard
 `ssh` protocol, users want to follow steps 1-3. Only step 1 is required after 
 setting up ssh key based access.
 
@@ -78,7 +78,7 @@ into its clusters. Passwords alone will no longer be allowed for `SSH` or file
 tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
 Keys](#ssh-keys) will be required. Because `Password+DUO` authentication requires
 a UCR NetID, this access method is only available to UCR users for both `ssh` and
-file transfer protocols (_e.g._ sFTP or SCP). Thus, external users need use the 
+file transfer protocols (_e.g._ sFTP or SCP). Thus, external users need to use the 
 alternative ssh key method. To enable ssh key access, the public key needs to be emailed to
 [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) (see below for details).
 One exception are web-based services where password-based access doesn't require
@@ -100,14 +100,14 @@ the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources
 
 ### SSH Keys
 
-Ssh keys are an access credential used by the Secure Shell (SSH) access protocol. For this a key pair is
+Ssh keys are an access credential used by the Secure Shell (SSH) protocol. For this a key pair is
 created comprised of a private key and a public key. The private key remains on a user's system and should 
 not be shared. The public key will be uploaded to the remote system, here `~/.ssh` directory of a user's account
 on the HPCC cluster. Ssh key based access works analogous to how a key and a lock are used in the real world, where 
 one uniquely fits into the other. Access can only be established if the private key on a user's system _fits_ the 
 public key on the remote system.
 
-The following show how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
+The following introduces how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
 public key to the remote system. The latter upload will only work if a user can access the remote system, 
 _e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
 ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
@@ -125,7 +125,7 @@ __1.__ Create SSH directory
 ```bash
 mkdir -p ~/.ssh
 ```
-__2.__ Create key pair (private and public
+__2.__ Create key pair (private and public)
 
 ```bash
 ssh-keygen -t rsa -f ~/.ssh/id_rsa
