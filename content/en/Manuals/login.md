@@ -35,6 +35,9 @@ commad in the corresponding fields of a login window as follows:
     + User name: ...
     + Password: ...
 
+__Importantly__, after the first login into a new account or a password reset, users need 
+to change their password with the `passwd` command and following the on-screen instructions.
+
 The following provides additional details.
 
 + Various terminal applications are available for all major operating systems. Examples include:
