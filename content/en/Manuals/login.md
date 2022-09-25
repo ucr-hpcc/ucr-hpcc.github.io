@@ -12,12 +12,11 @@ aliases:
 
 A user account is required to access HPCC's research computing infrastructure.
 How to obtain an account is described
-[here](https://hpcc.ucr.edu/about/facility/access/). Most users will have an
-_HPCC Cluster_ account that provides access to all/most resources of the HPCC.
-`Data Transfer` accounts are also available. Since the introduction of UCR's
-Duo multifactor authenication system, external users have to use the ssh key
-based access method, which is both secure and convient. For details see
-[here](https://hpcc.ucr.edu/manuals/login/#ssh-keys).
+[here](https://hpcc.ucr.edu/about/facility/access/). For external users it is
+important to know that the [Password+DUO](#passwordduo) multifactor
+authenication system descibed below is only available to UCR users. Thus,
+external users have to use the alternative [SSH Key](#ssh-keys) based
+authentication method, which is both secure and convenient to use. 
 
 ## Log in with `SSH` from Terminal
 
