@@ -362,8 +362,8 @@ enable = true
     weight = 1
     [[menu.main]]
       parent = "Manuals"
-      name = "Access"
-      url = "/Manuals/linux_basics/intro"
+      name = "Gain Access"
+      url = "/about/facility/access/"
       weight = 2
     [[menu.main]]
       parent = "Manuals"
