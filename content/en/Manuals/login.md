@@ -27,7 +27,7 @@ and introduced [below](). To access the HPCC cluster with the standard
 setting up ssh key based access.
 
 
-__1.__ Type the following `ssh` login command from a terminal application (see below), where the string `<user>` needs to be replaced by a user's account name. The `<>` characters indicate a placeholder and need to be removed. Next press enter to execute the command.
+__1.__ Type the following `ssh` login command from a terminal application, where the `<username>` needs to be replaced by the actual account name of a user. The `<>` characters indicate a placeholder and need to be removed. Next, press enter to execute the `ssh` command.
 
 ```sh
 ssh -X <username>@cluster.hpcc.ucr.edu
@@ -39,9 +39,9 @@ __2.__ Type your password and hit enter. Note, when typing the password the curs
 
 __3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
     
-+ If the login is performed via a GUI application (one option in MobaXterm),
-then one can provide the same login information given under the above ssh
-commad in the corresponding fields of a login window as follows:
++ If the login is performed via a GUI application, which is an option in MobaXterm),
+then one can provide the same login information given under the above `ssh`
+commad in the corresponding fields of the login window as follows:
 
     + Host name: `cluster.hpcc.ucr.edu`
     + User name: ...
@@ -56,22 +56,21 @@ requirments need to be included: lowercase character; uppercase character; numbe
 and punctuation character.
 
 
-The following provides additional details.
+### Terminal Options
 
-+ Various ssh terminal applications are available for all major operating systems. Examples include:
-    + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
-    + Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) is are annimated usage introductions for MobaXterm.
-    + Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
-    + ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems. 
+Various ssh terminal applications are available for all major operating systems. Examples include:
 
-+ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows. On macOS systems, users need to run XQuartz in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)).   
++ macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
++ Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) is are annimated usage introductions for MobaXterm.
++ Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
++ ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems. 
+
+### Remote Graphics Support
+
++ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
+in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)). 
+Note, the install of XQuartz can be skipped if remote graphics support is not needed.
     
-+ Additional login information can be found on the following sections:
-
-    + Duo Multifactor Authenication: [here](https://hpcc.ucr.edu/manuals/login/#passwordduo) 
-    + UCR Duo Manual: [here](https://its.ucr.edu/sites/g/files/rcwecm321/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
-    + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
-
 
 ## Additional Authentication Details
 
