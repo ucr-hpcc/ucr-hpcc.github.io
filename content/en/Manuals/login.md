@@ -18,7 +18,7 @@ authenication system is only available to UCR users. Thus, external users have
 to use the alternative [SSH Key](#ssh-keys) based authentication method, which
 is both secure and convenient to use. 
 
-## Log in with `SSH` from Terminal
+## Log in via `SSH` from Terminal
 
 Terminal-based login is the most feature-rich method for accessing HPC
 resources. Web-based alternatives via Jupyter Hub and RStudio Server are also provided 
@@ -27,13 +27,13 @@ and introduced [below](). To access the HPCC cluster with the standard
 setting up ssh key based access.
 
 
-__1.__ Type the following `ssh` login command from a terminal application, where the `<username>` needs to be replaced by the actual account name of a user. The `<>` characters indicate a placeholder and need to be removed. Next, press enter to execute the `ssh` command.
+__1.__ Type the following `ssh` login command from a terminal application, where `<username>` needs to be replaced by the actual account name of a user. The `<>` characters indicate a placeholder and need to be removed. Next, press enter to execute the `ssh` command.
 
 ```sh
 ssh -X <username>@cluster.hpcc.ucr.edu
 ```
 
-Note, the `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
+The `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
 
 __2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, the both the password and Duo steps will be skipped automatically during the log in process.
 
@@ -60,41 +60,42 @@ and punctuation character.
 
 Various ssh terminal applications are available for all major operating systems. Examples include:
 
-+ macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/). 
-+ Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) is are annimated usage introductions for MobaXterm.
-+ Linux: a wide range of Terminal applications is available for Linux. Usually, the default versions available on most Linux distributions will be sufficient. 
++ macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/) 
++ Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal options for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) are annimated usage introductions for MobaXterm.
++ Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distributions will be sufficient. 
 + ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems. 
 
 ### Remote Graphics Support
 
-+ X11 support is included in the terminal applications of most OSs, including MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
++ X11 support is included in the terminal applications of most OSs. This includes MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
 in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)). 
 Note, the install of XQuartz can be skipped if remote graphics support is not needed.
     
 
 ## Additional Authentication Details
 
-In early 2022 the HPCC adopted a more secure method of authentication for
-logging into the cluster. Passwords alone will no longer be allowed via `SSH`
-or file tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
+In early 2022 the HPCC adopted a more secure authentication method for logging
+into its clusters. Passwords alone will no longer be allowed for `SSH` or file
+tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
 Keys](#ssh-keys) will be required. Since `Password+DUO` authentication requires
-a UCR NetID, this access method is only available to UCR users. External users
-need use the SSH key method. To enable ssh key access, the public key needs to
-be emailed to support (see below for details).
+a UCR NetID, this access method is only available to UCR users for `ssh` and
+file transfer protocols (_e.g._ sFTP or SCP). External users need use the SSH
+key method. To enable ssh key access, the public key needs to be emailed to
+[support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) (see below for details).
+One exception are web-based services where password-based access doesn't require
+Duo multifactor authenication.
 
 ### Password+Duo
 
-The `Password+DUO` combination method will only work if your UCR NetID matches your cluster username.
-
-If your cluster user name does not match your UCR NetID, however you wish to change your cluster username so that it does, please send in a username change request to [support](mailto:support@hpcc.ucr.edu).
-
-After they match then first check if you already have DUO installed and configured on a mobile device.
-If you already have used DUO with other UCR campus multi-factor enabled sites or utilites, great!
-If you wish to modify your DUO configuration, you may do so [here](https://myaccount.ucr.edu/)
-Otherwise, if you have not yet installed, nor configured DUO on a mobile device, then you will need to do so by enrolling [here](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount).
-
-Once you have DUO installed and configured on your mobile device, then retrieve your password for the cluster.
-If you have a new account then your password was emailed to you when your account was created.
+Instructions for using UCR's Duo Multifactor Authenication system are available
+in this [PDF](https://its.ucr.edu/sites/default/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
+and on UCR's [MyAccount](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount)
+page. Importantly, the login via the `Password+DUO` method will only work if a
+user's NetID matches the username of the corresponding HPCC account. If
+this is not the case then the HPCC username can be changed to a user's NetID.
+This change can be initiated by emailing [support](mailto:support@hpcc.ucr.edu).
+External users will not have access to UCR's Duo system, and thus have to use
+the alternative ssh key access method to log in to HPCC's resources.
 
 ### SSH Keys
 
