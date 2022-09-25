@@ -55,7 +55,7 @@ The following provides additional details.
     + SSH Keys: [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/)
 
 
-## Authentication Details
+## Additional Authentication Details
 
 In early 2022 the HPCC adopted a more secure method of authentication for logging into the cluster.
 Passwords alone will no longer be allowed via `SSH`, instead [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) will be required.
