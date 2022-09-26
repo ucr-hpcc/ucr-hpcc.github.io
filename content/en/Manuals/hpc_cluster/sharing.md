@@ -69,6 +69,8 @@ and Windows OSs, respectively.
 
 ### FileZilla Usage
 
+#### Password+DUO Access
+
 When using `FileZilla` a new site can be created by selecting `File` __->__ `Site Manager`.
 In the subsequent window, `New Site` should be selected. Next the following information should be provided 
 in the right pane of the `General` tab.
@@ -94,14 +96,14 @@ By clicking "OK" the new site will be saved. Subsequently, one can select the ne
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the "connect" 
 button from the new site window.
 
+#### SSH Key Based Access
+
 For ssh key based access, users want to make the selections shown in the Figure below. For this
 access method it is important to choose the `Site Manager` option as FileZilla's Quick Access method
 will not work here. 
 
 <center><img title="FileZilla_ssh_key" src="https://girke.bioinformatics.ucr.edu/GEN242/tutorials/linux/images/FileZilla_ssh_key.png" width="600"><img/></center>
 <center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-<br></br>
 
 ## Command-line SCP
 
