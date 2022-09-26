@@ -1028,11 +1028,16 @@ Then simply log out and back in for the changes to take affect. You can double c
 &lt;p>To learn more about umask please visit &lt;a href="http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html">What is Umask and How To Setup Default umask Under Linux?&lt;/a>.&lt;/p>
 &lt;h2 id="file-transfers">File Transfers&lt;/h2>
 &lt;p>For file transfers and data sharing, both command-line and GUI applications can
-be used. For beginners we recommend the &lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> GUI application
-(download/install from &lt;a href="https://filezilla-project.org/">here&lt;/a>) since it is available for most OSs. A basic user
-manual for FileZilla is &lt;a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)">here&lt;/a> and a video tutorial is &lt;a href="https://www.youtube.com/watch?v=O3DudpEMPiY">here&lt;/a>.
-Alternative user-friendly SCP/SFTP GUI applications include &lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and &lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac
-and Windows OSs, respectively.&lt;/p>
+be used. For beginners we recommend the
+&lt;a href="https://filezilla-project.org/">FileZilla&lt;/a> GUI application (download/install
+from &lt;a href="https://filezilla-project.org/">here&lt;/a>) since it is available for most OSs
+including macOS, Windows, Linux and ChromeOS. A basic user manual for FileZilla
+is &lt;a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)">here&lt;/a>
+and a video tutorial is &lt;a href="https://www.youtube.com/watch?v=O3DudpEMPiY">here&lt;/a>.
+Alternative user-friendly SCP/SFTP GUI applications include
+&lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and
+&lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac and Windows OSs,
+respectively.&lt;/p>
 &lt;h3 id="filezilla-usage">FileZilla Usage&lt;/h3>
 &lt;p>FileZilla supports both &lt;a href="https://hpcc.ucr.edu/manuals/login/#passwordduo">Password+DUO&lt;/a>
 and &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">SSH Key&lt;/a> based authentication methods.
