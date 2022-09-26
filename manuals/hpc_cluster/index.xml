@@ -1042,7 +1042,7 @@ Host: cluster.hpcc.ucr.edu
 Logon Type: Interactive
 User: &amp;lt;username&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;p>Under &lt;code>&amp;lt;username&amp;gt;&lt;/code> the actual username of an HPCC should be provided. The &lt;code>Logon Type&lt;/code> can be
+&lt;p>Under &lt;code>&amp;lt;username&amp;gt;&lt;/code> the actual username of an HPCC account should be provided. The &lt;code>Logon Type&lt;/code> can be
 &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code> for &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> authentication,
 respectively. When choosing &lt;code>Password+DUO&lt;/code> authentication, the max connections should be configured.
 To do so, navigate to the &lt;code>Transfer Settings&lt;/code> tab and make the following settings.&lt;/p>
