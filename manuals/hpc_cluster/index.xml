@@ -1034,6 +1034,7 @@ manual for FileZilla is &lt;a href="https://wiki.filezilla-project.org/FileZilla
 Alternative user-friendly SCP/SFTP GUI applications include &lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and &lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac
 and Windows OSs, respectively.&lt;/p>
 &lt;h3 id="filezilla-usage">FileZilla Usage&lt;/h3>
+&lt;h4 id="passwordduo-access">Password+DUO Access&lt;/h4>
 &lt;p>When using &lt;code>FileZilla&lt;/code> a new site can be created by selecting &lt;code>File&lt;/code> &lt;strong>-&amp;gt;&lt;/strong> &lt;code>Site Manager&lt;/code>.
 In the subsequent window, &lt;code>New Site&lt;/code> should be selected. Next the following information should be provided
 in the right pane of the &lt;code>General&lt;/code> tab.&lt;/p>
@@ -1052,12 +1053,12 @@ Maximum number of connections: 1
 &lt;p>By clicking &amp;ldquo;OK&amp;rdquo; the new site will be saved. Subsequently, one can select the new site from the main window by
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the &amp;ldquo;connect&amp;rdquo;
 button from the new site window.&lt;/p>
+&lt;h4 id="ssh-key-based-access">SSH Key Based Access&lt;/h4>
 &lt;p>For ssh key based access, users want to make the selections shown in the Figure below. For this
 access method it is important to choose the &lt;code>Site Manager&lt;/code> option as FileZilla&amp;rsquo;s Quick Access method
 will not work here.&lt;/p>
 &lt;center>&lt;img title="FileZilla_ssh_key" src="https://girke.bioinformatics.ucr.edu/GEN242/tutorials/linux/images/FileZilla_ssh_key.png" width="600">&lt;img/>&lt;/center>
 &lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
-&lt;p>&lt;br>&lt;/br>&lt;/p>
 &lt;h2 id="command-line-scp">Command-line SCP&lt;/h2>
 &lt;p>Advantages of this method include: batch up/downloads and ease of automation. A detailed manual is available &lt;a href="https://linux.die.net/man/1/scp">here&lt;/a>.&lt;/p>
 &lt;ul>
