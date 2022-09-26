@@ -55,7 +55,7 @@ commad in the corresponding fields of the login window as follows:
 + User name: ...
 + Password: ...
 
-__Importantly__, after the first login into a new account or a password reset,
+__Importantly__, after the first login into a new account (or a password reset),
 users need to change their password with the `passwd` command and then follow
 the on-screen instructions. This requires to enter the current password once
 and the new password twice. New passwords need to be at least 8 characters 
