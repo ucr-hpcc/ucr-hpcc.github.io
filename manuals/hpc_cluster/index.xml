@@ -993,8 +993,18 @@ The higher the value the more recent the snapshot.&lt;/p>
 mmlssnapshot bigdata
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Sharing Data</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/</guid><description>
 &lt;h2 id="permissions">Permissions&lt;/h2>
-&lt;p>It is useful to share data and results with other users on the cluster, and we encourage collaboration The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
-Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user &lt;code>username&lt;/code> (with read, write, and execute), owned by the group &lt;code>groupname&lt;/code> (with read and execute), and everyone else cannot access it.&lt;/p>
+&lt;p>It is useful to share data and results with other users on the cluster, and we
+encourage collaboration. The easiest way to share a file is to place it in a
+location that both users can access. Then the second user can simply copy it to
+a location of their choice. However, this requires that the file permissions
+permit the second user to read the file. Basic file permissions on Linux and
+other Unix like systems are composed of three groups: owner, group, and other.
+Each one of these represents the permissions for different groups of people:
+the user who owns the file, all the group members of the group owner, and
+everyone else, respectively Each group has 3 permissions: read, write, and
+execute, represented as r,w, and x. For example the following file is owned by
+the user &lt;code>username&lt;/code> (with read, write, and execute), owned by the group
+&lt;code>groupname&lt;/code> (with read and execute), and everyone else cannot access it.&lt;/p>
 &lt;pre>&lt;code class="language-bash">username@pigeon:~$ ls -l myFile
 -rwxr-x--- 1 username groupname 1.6K Nov 19 12:32 myFile
 &lt;/code>&lt;/pre>
@@ -1024,23 +1034,31 @@ manual for FileZilla is &lt;a href="https://wiki.filezilla-project.org/FileZilla
 Alternative user-friendly SCP/SFTP GUI applications include &lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and &lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac
 and Windows OSs, respectively.&lt;/p>
 &lt;h3 id="filezilla-usage">FileZilla Usage&lt;/h3>
-&lt;p>When using &lt;code>FileZilla&lt;/code> you must create a new site to connect, click &lt;code>File -&amp;gt; Site Manager&lt;/code>.
-From the new window click &lt;code>New Site&lt;/code>.&lt;/p>
-&lt;p>On the right pane of the &lt;code>General&lt;/code> tab fill in the information as follows:&lt;/p>
+&lt;p>When using &lt;code>FileZilla&lt;/code> a new site can be created to connect. For this select &lt;code>File&lt;/code> &lt;strong>-&amp;gt;&lt;/strong> &lt;code>Site Manager&lt;/code>.
+On the new window select &lt;code>New Site&lt;/code>.&lt;/p>
+&lt;p>On the right pane of the &lt;code>General&lt;/code> tab, the following information should be provided:&lt;/p>
 &lt;pre>&lt;code>Protocol: SFTP
 Host: cluster.hpcc.ucr.edu
 Logon Type: Interactive
-User: YOUR_CLUSTER_USER_NAME
+User: &amp;lt;username&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;p>Remeber to fill in &lt;code>YOUR_CLUSTER_USER_NAME&lt;/code> with your actual cluster username.
-The &lt;code>Logon Type&lt;/code> can be either &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code>, this depends on if you have setup &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> respectively.&lt;/p>
-&lt;p>If you choose a &lt;code>Password+DUO&lt;/code> authentication, then you should also configure the max connections.
-Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&lt;/p>
+&lt;p>The username of an HPCC account should be provided under &lt;code>&amp;lt;username&amp;gt;&lt;/code>.
+The &lt;code>Logon Type&lt;/code> can be &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code> for &lt;a href="#passwordduo">Password+DUO&lt;/a>
+or &lt;a href="#ssh-keys">SSH Keys&lt;/a> authentication, respectively. When using &lt;code>Password+DUO&lt;/code> authentication,
+the max connections should be configured. To do so, navigate to the &lt;code>Transfer Settings&lt;/code> tab and make the
+following settings.&lt;/p>
 &lt;pre>&lt;code> Limit Number of simultaneous connections: checked
 Maximum number of connections: 1
 &lt;/code>&lt;/pre>
-&lt;p>After all of the above has been completed, then you can click &amp;ldquo;OK&amp;rdquo; to save the new site.
-Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the &amp;ldquo;connect&amp;rdquo; button from your new site window.&lt;/p>
+&lt;p>To save the new site, click &amp;ldquo;OK&amp;rdquo;. Subsequently, one can select the new site from the main window by
+clicking the arrow next to the site list, or just reopen the Site Manager and clicking the &amp;ldquo;connect&amp;rdquo;
+button from your new site window.&lt;/p>
+&lt;p>For ssh key based access, users want to make the selections shown in the Figure below. For this
+access method it is important to choose the &lt;code>Site Manager&lt;/code> option as FileZilla&amp;rsquo;s Quick Access method
+will not work here.&lt;/p>
+&lt;center>&lt;img title="FileZilla_ssh_key" src="../images/FileZilla_ssh_key.png" width="600">&lt;img/>&lt;/center>
+&lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
+&lt;p>&lt;br>&lt;/br>&lt;/p>
 &lt;h2 id="command-line-scp">Command-line SCP&lt;/h2>
 &lt;p>Advantages of this method include: batch up/downloads and ease of automation. A detailed manual is available &lt;a href="https://linux.die.net/man/1/scp">here&lt;/a>.&lt;/p>
 &lt;ul>
