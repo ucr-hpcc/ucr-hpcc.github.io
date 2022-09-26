@@ -9,8 +9,18 @@ aliases:
 ---
 
 ## Permissions
-It is useful to share data and results with other users on the cluster, and we encourage collaboration  The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
-Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user `username` (with read, write, and execute), owned by the group `groupname` (with read and execute), and everyone else cannot access it.
+It is useful to share data and results with other users on the cluster, and we
+encourage collaboration. The easiest way to share a file is to place it in a
+location that both users can access. Then the second user can simply copy it to
+a location of their choice. However, this requires that the file permissions
+permit the second user to read the file. Basic file permissions on Linux and
+other Unix like systems are composed of three groups: owner, group, and other.
+Each one of these represents the permissions for different groups of people:
+the user who owns the file, all the group members of the group owner, and
+everyone else, respectively  Each group has 3 permissions: read, write, and
+execute, represented as r,w, and x. For example the following file is owned by
+the user `username` (with read, write, and execute), owned by the group
+`groupname` (with read and execute), and everyone else cannot access it.
 
 ```bash
 username@pigeon:~$ ls -l myFile
@@ -59,31 +69,41 @@ and Windows OSs, respectively.
 
 ### FileZilla Usage
 
-When using `FileZilla` you must create a new site to connect, click `File -> Site Manager`.
-From the new window click `New Site`.
+When using `FileZilla` a new site can be created to connect. For this select `File` __->__ `Site Manager`.
+On the new window select `New Site`.
 
-On the right pane of the `General` tab fill in the information as follows:
+On the right pane of the `General` tab, the following information should be provided:
 
 ```
 Protocol: SFTP
 Host: cluster.hpcc.ucr.edu
 Logon Type: Interactive
-User: YOUR_CLUSTER_USER_NAME
+User: <username>
 ```
 
-Remeber to fill in `YOUR_CLUSTER_USER_NAME` with your actual cluster username.
-The `Logon Type` can be either `Interactive` or `Key File`, this depends on if you have setup [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) respectively.
-
-If you choose a `Password+DUO` authentication, then you should also configure the max connections.
-Navigate to the `Transfer Settings` tab and set the following:
+The username of an HPCC account should be provided under `<username>`.
+The `Logon Type` can be `Interactive` or `Key File` for [Password+DUO](#passwordduo) 
+or [SSH Keys](#ssh-keys) authentication, respectively. When using `Password+DUO` authentication, 
+the max connections should be configured. To do so, navigate to the `Transfer Settings` tab and make the
+following settings.
 
 ```
     Limit Number of simultaneous connections: checked
     Maximum number of connections: 1
 ```
 
-After all of the above has been completed, then you can click "OK" to save the new site.
-Then from the main window you can click the arrow next to the site lists, or just reopen the Site Manager and click the "connect" button from your new site window.
+To save the new site, click "OK". Subsequently, one can select the new site from the main window by
+clicking the arrow next to the site list, or just reopen the Site Manager and clicking the "connect" 
+button from your new site window.
+
+For ssh key based access, users want to make the selections shown in the Figure below. For this
+access method it is important to choose the `Site Manager` option as FileZilla's Quick Access method
+will not work here. 
+
+<center><img title="FileZilla_ssh_key" src="../images/FileZilla_ssh_key.png" width="600"><img/></center>
+<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
+
+<br></br>
 
 ## Command-line SCP
 
