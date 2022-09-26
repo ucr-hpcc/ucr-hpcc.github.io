@@ -45,13 +45,13 @@ __2.__ Type your password and hit enter. Note, when typing the password the curs
 
 __3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](#ssh-keys). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
     
-+ If the login is performed via a GUI application, which is an option in MobaXterm),
+If the login is performed via a GUI application, which is an option in MobaXterm),
 then one can provide the same login information given under the above `ssh`
 commad in the corresponding fields of the login window as follows:
 
-    + Host name: `cluster.hpcc.ucr.edu`
-    + User name: ...
-    + Password: ...
++ Host name: `cluster.hpcc.ucr.edu`
++ User name: ...
++ Password: ...
 
 __Importantly__, after the first login into a new account or a password reset,
 users need to change their password with the `passwd` command and then follow
