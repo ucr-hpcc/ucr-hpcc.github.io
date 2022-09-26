@@ -1057,9 +1057,10 @@ Maximum number of connections: 1
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the &amp;ldquo;connect&amp;rdquo;
 button from the new site window.&lt;/p>
 &lt;h4 id="authentication-with-ssh-key">Authentication with SSH Key&lt;/h4>
-&lt;p>For ssh key based access, users want to make the selections shown in the Figure below. For this
-access method it is important to choose the &lt;code>Site Manager&lt;/code> option as FileZilla&amp;rsquo;s Quick Access method
-will not work here.&lt;/p>
+&lt;p>For &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">ssh key&lt;/a> based access, users
+want to make the selections shown in the Figure below. For this access method
+it is important to choose the &lt;code>Site Manager&lt;/code> option as FileZilla&amp;rsquo;s Quick Access
+method will not work here.&lt;/p>
 &lt;center>&lt;img title="FileZilla_ssh_key" src="https://girke.bioinformatics.ucr.edu/GEN242/tutorials/linux/images/FileZilla_ssh_key.png" width="600">&lt;img/>&lt;/center>
 &lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
 &lt;h2 id="command-line-scp">Command-line SCP&lt;/h2>
