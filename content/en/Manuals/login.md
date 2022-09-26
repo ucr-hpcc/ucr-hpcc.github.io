@@ -74,7 +74,7 @@ Various ssh terminal applications are available for all major operating systems.
 
 X11 support is included in the terminal applications of most OSs. This includes MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
 in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)). 
-Note, the install of XQuartz can be skipped if remote graphics support is not needed.
+Note, XQuartz is optional if remote graphics support is not needed.
     
 
 ## Additional Authentication Details
