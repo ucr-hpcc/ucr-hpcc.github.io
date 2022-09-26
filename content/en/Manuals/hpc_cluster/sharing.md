@@ -61,11 +61,16 @@ To learn more about umask please visit [What is Umask and How To Setup Default u
 ## File Transfers
 
 For file transfers and data sharing, both command-line and GUI applications can
-be used. For beginners we recommend the [FileZilla](https://filezilla-project.org/) GUI application
-(download/install from [here](https://filezilla-project.org/)) since it is available for most OSs. A basic user
-manual for FileZilla is [here](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)) and a video tutorial is [here](https://www.youtube.com/watch?v=O3DudpEMPiY). 
-Alternative user-friendly SCP/SFTP GUI applications include [Cyberduck](https://cyberduck.io/) and [WinSCP](https://winscp.net/eng/download.php) for Mac
-and Windows OSs, respectively. 
+be used. For beginners we recommend the
+[FileZilla](https://filezilla-project.org/) GUI application (download/install
+from [here](https://filezilla-project.org/)) since it is available for most OSs
+including macOS, Windows, Linux and ChromeOS. A basic user manual for FileZilla
+is [here](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+and a video tutorial is [here](https://www.youtube.com/watch?v=O3DudpEMPiY).
+Alternative user-friendly SCP/SFTP GUI applications include
+[Cyberduck](https://cyberduck.io/) and
+[WinSCP](https://winscp.net/eng/download.php) for Mac and Windows OSs,
+respectively. 
 
 ### FileZilla Usage
 
