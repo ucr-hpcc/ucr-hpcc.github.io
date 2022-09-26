@@ -80,7 +80,7 @@ Logon Type: Interactive
 User: <username>
 ```
 
-Under `<username>` the actual username of an HPCC should be provided. The `Logon Type` can be 
+Under `<username>` the actual username of an HPCC account should be provided. The `Logon Type` can be 
 `Interactive` or `Key File` for [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) authentication, 
 respectively. When choosing `Password+DUO` authentication, the max connections should be configured. 
 To do so, navigate to the `Transfer Settings` tab and make the following settings.
