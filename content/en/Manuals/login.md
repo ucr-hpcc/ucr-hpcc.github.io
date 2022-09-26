@@ -87,7 +87,7 @@ tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
 Keys](#ssh-keys) will be required. Because `Password+DUO` authentication
 requires a UCR NetID, this access method is only available to UCR users for
 both `ssh` and file transfer protocols (_e.g._ sFTP or SCP). Thus, external
-users need to use the alternative ssh key method. To enable ssh key access,
+users need to use the alternative [ssh key](#ssh-keys) method. To enable ssh key access,
 external users need to email their public key to
 [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) (see below for details).
 
