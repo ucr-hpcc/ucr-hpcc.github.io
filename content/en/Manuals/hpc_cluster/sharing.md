@@ -69,7 +69,11 @@ and Windows OSs, respectively.
 
 ### FileZilla Usage
 
-#### Password+DUO Access
+FileZilla supports both [Password+DUO](https://hpcc.ucr.edu/manuals/login/#passwordduo) 
+and [SSH Key](https://hpcc.ucr.edu/manuals/login/#ssh-keys) based authentication methods. 
+Both options are described below.
+
+#### Authentication with Password+DUO 
 
 When using `FileZilla` a new site can be created by selecting `File` __->__ `Site Manager`.
 In the subsequent window, `New Site` should be selected. Next the following information should be provided 
@@ -96,7 +100,7 @@ By clicking "OK" the new site will be saved. Subsequently, one can select the ne
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the "connect" 
 button from the new site window.
 
-#### SSH Key Based Access
+#### Authentication with SSH Key 
 
 For ssh key based access, users want to make the selections shown in the Figure below. For this
 access method it is important to choose the `Site Manager` option as FileZilla's Quick Access method
