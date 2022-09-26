@@ -105,11 +105,11 @@ the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources
 
 ### SSH Keys
 
-Ssh keys are an access credential used by the Secure Shell (SSH) protocol. For this a key pair is
+SSH keys are an access credential used by the Secure Shell (SSH) protocol. For this a key pair is
 created comprised of a private key and a public key. The private key remains on a user's system and should 
 not be shared. The public key will be uploaded to the remote system, here `~/.ssh` directory of a user's account
-on the HPCC cluster. Ssh key based access works analogous to how a key and a lock are used in the real world, where 
-one uniquely fits into the other. Access can only be established if the private key on a user's system _fits_ the 
+on the HPCC cluster. SSH key based access works analogous to how a key and a lock are used in the real world, where 
+one uniquely fits into the other. Access can only be established if the private key on a user's system fits the 
 public key on the remote system.
 
 The following introduces how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
@@ -176,7 +176,7 @@ scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey && ssh username@cluster
 
 __3.__ Check ssh key based access
 
-To test whether ssh key based access is functional, then the following log in should work without asking for a password. However,
+To test whether ssh key based access is functional, the following log in should work without asking for a password. However,
 it may ask for a passphrase if the ssh key pair was created this way. 
 
 ```bash
