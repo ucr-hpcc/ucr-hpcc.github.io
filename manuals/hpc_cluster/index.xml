@@ -1061,6 +1061,8 @@ will not work here.&lt;/p>
 &lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
 &lt;center>&lt;img title="FileZilla_ssh_key" src="FileZilla_ssh_key.png" width="600">&lt;img/>&lt;/center>
 &lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
+&lt;center>&lt;img title="FileZilla_ssh_key" src="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/content/en/Manuals/hpc_cluster/images/FileZilla_ssh_key.png" width="600">&lt;img/>&lt;/center>
+&lt;center>FileZilla settings with an SSH key. For generating SSH keys see &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/center>
 &lt;center>&lt;img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" >&lt;/center>
 &lt;p>&lt;br>&lt;/br>&lt;/p>
 &lt;h2 id="command-line-scp">Command-line SCP&lt;/h2>
