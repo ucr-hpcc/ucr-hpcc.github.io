@@ -69,10 +69,9 @@ and Windows OSs, respectively.
 
 ### FileZilla Usage
 
-When using `FileZilla` a new site can be created to connect. For this select `File` __->__ `Site Manager`.
-On the new window select `New Site`.
-
-On the right pane of the `General` tab, the following information should be provided:
+When using `FileZilla` a new site can be created by selecting `File` __->__ `Site Manager`.
+In the subsequent window, `New Site` should be selected. Next the following information should be provided 
+in the right pane of the `General` tab.
 
 ```
 Protocol: SFTP
@@ -81,20 +80,19 @@ Logon Type: Interactive
 User: <username>
 ```
 
-The username of an HPCC account should be provided under `<username>`.
-The `Logon Type` can be `Interactive` or `Key File` for [Password+DUO](#passwordduo) 
-or [SSH Keys](#ssh-keys) authentication, respectively. When using `Password+DUO` authentication, 
-the max connections should be configured. To do so, navigate to the `Transfer Settings` tab and make the
-following settings.
+Under `<username>` the actual username of an HPCC should be provided. The `Logon Type` can be 
+`Interactive` or `Key File` for [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) authentication, 
+respectively. When choosing `Password+DUO` authentication, the max connections should be configured. 
+To do so, navigate to the `Transfer Settings` tab and make the following settings.
 
 ```
     Limit Number of simultaneous connections: checked
     Maximum number of connections: 1
 ```
 
-To save the new site, click "OK". Subsequently, one can select the new site from the main window by
+By clicking "OK" the new site will be saved. Subsequently, one can select the new site from the main window by
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the "connect" 
-button from your new site window.
+button from the new site window.
 
 For ssh key based access, users want to make the selections shown in the Figure below. For this
 access method it is important to choose the `Site Manager` option as FileZilla's Quick Access method
