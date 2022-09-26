@@ -1034,25 +1034,24 @@ manual for FileZilla is &lt;a href="https://wiki.filezilla-project.org/FileZilla
 Alternative user-friendly SCP/SFTP GUI applications include &lt;a href="https://cyberduck.io/">Cyberduck&lt;/a> and &lt;a href="https://winscp.net/eng/download.php">WinSCP&lt;/a> for Mac
 and Windows OSs, respectively.&lt;/p>
 &lt;h3 id="filezilla-usage">FileZilla Usage&lt;/h3>
-&lt;p>When using &lt;code>FileZilla&lt;/code> a new site can be created to connect. For this select &lt;code>File&lt;/code> &lt;strong>-&amp;gt;&lt;/strong> &lt;code>Site Manager&lt;/code>.
-On the new window select &lt;code>New Site&lt;/code>.&lt;/p>
-&lt;p>On the right pane of the &lt;code>General&lt;/code> tab, the following information should be provided:&lt;/p>
+&lt;p>When using &lt;code>FileZilla&lt;/code> a new site can be created by selecting &lt;code>File&lt;/code> &lt;strong>-&amp;gt;&lt;/strong> &lt;code>Site Manager&lt;/code>.
+In the subsequent window, &lt;code>New Site&lt;/code> should be selected. Next the following information should be provided
+in the right pane of the &lt;code>General&lt;/code> tab.&lt;/p>
 &lt;pre>&lt;code>Protocol: SFTP
 Host: cluster.hpcc.ucr.edu
 Logon Type: Interactive
 User: &amp;lt;username&amp;gt;
 &lt;/code>&lt;/pre>
-&lt;p>The username of an HPCC account should be provided under &lt;code>&amp;lt;username&amp;gt;&lt;/code>.
-The &lt;code>Logon Type&lt;/code> can be &lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code> for &lt;a href="#passwordduo">Password+DUO&lt;/a>
-or &lt;a href="#ssh-keys">SSH Keys&lt;/a> authentication, respectively. When using &lt;code>Password+DUO&lt;/code> authentication,
-the max connections should be configured. To do so, navigate to the &lt;code>Transfer Settings&lt;/code> tab and make the
-following settings.&lt;/p>
+&lt;p>Under &lt;code>&amp;lt;username&amp;gt;&lt;/code> the actual username of an HPCC should be provided. The &lt;code>Logon Type&lt;/code> can be
+&lt;code>Interactive&lt;/code> or &lt;code>Key File&lt;/code> for &lt;a href="#passwordduo">Password+DUO&lt;/a> or &lt;a href="#ssh-keys">SSH Keys&lt;/a> authentication,
+respectively. When choosing &lt;code>Password+DUO&lt;/code> authentication, the max connections should be configured.
+To do so, navigate to the &lt;code>Transfer Settings&lt;/code> tab and make the following settings.&lt;/p>
 &lt;pre>&lt;code> Limit Number of simultaneous connections: checked
 Maximum number of connections: 1
 &lt;/code>&lt;/pre>
-&lt;p>To save the new site, click &amp;ldquo;OK&amp;rdquo;. Subsequently, one can select the new site from the main window by
+&lt;p>By clicking &amp;ldquo;OK&amp;rdquo; the new site will be saved. Subsequently, one can select the new site from the main window by
 clicking the arrow next to the site list, or just reopen the Site Manager and clicking the &amp;ldquo;connect&amp;rdquo;
-button from your new site window.&lt;/p>
+button from the new site window.&lt;/p>
 &lt;p>For ssh key based access, users want to make the selections shown in the Figure below. For this
 access method it is important to choose the &lt;code>Site Manager&lt;/code> option as FileZilla&amp;rsquo;s Quick Access method
 will not work here.&lt;/p>
