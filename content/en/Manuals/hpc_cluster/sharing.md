@@ -107,6 +107,9 @@ will not work here.
 <center><img title="FileZilla_ssh_key" src="FileZilla_ssh_key.png" width="600"><img/></center>
 <center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
 
+<center><img title="FileZilla_ssh_key" src="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/content/en/Manuals/hpc_cluster/images/FileZilla_ssh_key.png" width="600"><img/></center>
+<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
+
 <center><img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
 
 <br></br>
