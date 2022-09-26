@@ -12,11 +12,13 @@ aliases:
 
 A user account is required to access HPCC's research computing infrastructure.
 How to obtain a user account is described
-[here](https://hpcc.ucr.edu/about/facility/access/). For external users it is
-important to know that the below [Password+DUO](#passwordduo) multifactor
-authenication system is only available to UCR users. Thus, external users have
-to use the alternative [SSH Key](#ssh-keys) based authentication method, which
-is both secure and convenient to use. 
+[here](https://hpcc.ucr.edu/about/facility/access/). A new user's login
+credentials (usersname and password) are emailed to the address provided in the
+corresponding account request. For external users it is important to know that
+the below [Password+DUO](#passwordduo) multifactor authenication system is only
+available to UCR users. Thus, external users have to use the alternative [SSH
+Key](#ssh-keys) based authentication method, which is both secure and
+convenient to use. 
 
 The login instructions of this page are organized in three sections:
 
@@ -194,15 +196,16 @@ Web-based HPCC cluster access is provided via [RStudio Server](https://rstudio.h
 Users with an HPCC cluster account can access them with the same login credential used for [ssh access](#a-ssh-login-from-terminal). The `Username+Password` 
 authentication method with Duo is currently not required for these services. For load balancing RStudio Server has two instances:
 [RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
-is slow or not available, users want to choose the alternative instance. A much more efficient method for using RStudio Server is
-provided via a custom compute node instance using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
+is slow or not available, users want to choose the alternative instance. A much more efficient method for using RStudio Server are 
+custom compute node instances using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 
 
 ## C. Data Sharing Access
 
 Users accessing HPCC's infrastructure mainly for file transfers and data sharing want to 
 follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
-
+Note, users with data sharing accounts have to provide their public [SSH Key](#ssh-keys) when accesing the system for the first time 
+by following the instructions in the [SSH Key](#ssh-keys) section above. 
 
 
 
