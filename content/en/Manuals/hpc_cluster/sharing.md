@@ -98,24 +98,8 @@ For ssh key based access, users want to make the selections shown in the Figure 
 access method it is important to choose the `Site Manager` option as FileZilla's Quick Access method
 will not work here. 
 
-<center><img title="FileZilla_ssh_key" src="../images/FileZilla_ssh_key.png" width="600"><img/></center>
-<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-<center><img title="FileZilla_ssh_key" src="./images/FileZilla_ssh_key.png" width="600"><img/></center>
-<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-<center><img title="FileZilla_ssh_key" src="FileZilla_ssh_key.png" width="600"><img/></center>
-<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-<center><img title="FileZilla_ssh_key" src="https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/content/en/Manuals/hpc_cluster/images/FileZilla_ssh_key.png" width="600"><img/></center>
-<center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-![FileZilla_ssh_key](/hpc_cluster/images/FileZilla_ssh_key.png)
-
 <center><img title="FileZilla_ssh_key" src="https://girke.bioinformatics.ucr.edu/GEN242/tutorials/linux/images/FileZilla_ssh_key.png" width="600"><img/></center>
 <center>FileZilla settings with an SSH key. For generating SSH keys see <a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here</a>.</center>
-
-<center><img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
 
 <br></br>
 
