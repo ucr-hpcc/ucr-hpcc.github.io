@@ -211,7 +211,7 @@ enable = true
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
-    name = "Facility"
+    name = "About"
     url = "/about/facility/"
     weight = 2
     [[menu.main]]

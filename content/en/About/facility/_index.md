@@ -1,6 +1,6 @@
 ---
-linkTitle: Facility
-title: Facility
+linkTitle: About
+title: About
 type: docs
 weight: 1
 ---
