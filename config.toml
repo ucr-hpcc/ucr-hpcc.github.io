@@ -211,46 +211,46 @@ enable = true
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
-    name = "Overview"
+    name = "Introduction"
     url = "/about/facility/"
     weight = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = " Access " # Keep whitespace to display item, bug?
       url = "/about/facility/access/"
       weight = 3
       [menu.main.params]
         level = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = "Activity"
       url = "/about/facility/activity/"
       weight = 4
       [menu.main.params]
         level = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = "Rates"
       url = "/about/facility/rates/"
       weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = "Slides"
       url = "/about/facility/slides/"
       weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = "People"
       url = "/about/facility/people/"
       weight = 7
       [menu.main.params]
         level = 2
     [[menu.main]]
-      parent = "Overview"
+      parent = "Introduction"
       name = "Acknowledgement"
       url = "/about/facility/acknowledgement/"
       weight = 8
