@@ -1,6 +1,6 @@
 ---
-linkTitle: About
-title: About
+title: "About"
+linkTitle: "About"
 type: docs
 ---
 
