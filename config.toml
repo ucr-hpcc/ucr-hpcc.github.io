@@ -223,36 +223,36 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Acknowledgement"
-      url = "/about/facility/acknowledgement/"
-      weight = 4
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "About"
       name = "Activity"
       url = "/about/facility/activity/"
-      weight = 5
+      weight = 4
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Rates"
       url = "/about/facility/rates/"
-      weight = 6
+      weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Slides"
       url = "/about/facility/slides/"
-      weight = 7
+      weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "People"
       url = "/about/facility/people/"
+      weight = 7
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "About"
+      name = "Acknowledgement"
+      url = "/about/facility/acknowledgement/"
       weight = 8
       [menu.main.params]
         level = 2
