@@ -206,18 +206,18 @@ enable = true
 # About
 [[menu.main]]
   name = "About"
-  url = "/about"
+  url = "/about/"
   weight = 1
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
     name = "Overview"
-    url = "/about/facility/"
+    url = "/about/overview/"
     weight = 2
     [[menu.main]]
       parent = "About"
       name = " Access " # Keep whitespace to display item, bug?
-      url = "/about/facility/access/"
+      url = "/about/overview/access/"
       weight = 3
       [menu.main.params]
         level = 2
