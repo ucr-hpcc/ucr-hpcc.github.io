@@ -11,6 +11,9 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### Aug 2022
+* This month we were awarded an MRI equipment grant ([#2215705]()https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. 
+
 ### Feb/Mar 2022
 * Rollout of Rocky and DUO: Feb 18 through Mar 17, 2022. For details see [here](https://hpcc.ucr.edu/changes/).
 
