@@ -85,7 +85,29 @@ to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justificatio
 &lt;h2 id="facility-description">Facility description&lt;/h2>
 &lt;ul>
 &lt;li>The latest hardware/facility description (&lt;em>e.g.&lt;/em> for grant applications) is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/li>
-&lt;/ul></description></item><item><title>About: People</title><link>https://hpcc.ucr.edu/about/facility/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/facility/people/</guid><description>
+&lt;/ul></description></item><item><title>About: Overview</title><link>https://hpcc.ucr.edu/about/facility/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/facility/overview/</guid><description>
+&lt;h2 id="mission">Mission&lt;/h2>
+&lt;p>The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
+infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
+includes access to the shared HPC resources and services.&lt;/p>
+&lt;h2 id="facility-description">Facility description&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://goo.gl/43eOwQ">Facility description&lt;/a> (&lt;em>e.g.&lt;/em> for grant applications)&lt;/li>
+&lt;/ul>
+&lt;h2 id="office-location-and-mailing-address">Office location and mailing address&lt;/h2>
+&lt;p>1208/1207 Genomics Building (&lt;a href="https://goo.gl/OVKyxv">Google Map&lt;/a>)
+3401 Watkins Drive
+University of California
+Riverside, CA 92521&lt;/p>
+&lt;h2 id="server-rooms">Server rooms&lt;/h2>
+&lt;h3 id="genomics">Genomics&lt;/h3>
+&lt;p>Genomics Building, Rm 1120A&lt;/p>
+&lt;h3 id="colo-server-room">CoLo server room&lt;/h3>
+&lt;p>School of Medicine CoLo&lt;/p>
+&lt;h2 id="mailing-address-delivery-room">Mailing address (delivery room)&lt;/h2>
+&lt;p>3401 Watkins Drive
+1202 Genomics
+Riverside, CA 92521&lt;/p></description></item><item><title>About: People</title><link>https://hpcc.ucr.edu/about/facility/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/facility/people/</guid><description>
 &lt;h2 id="facility">Facility&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="http://girke.bioinformatics.ucr.edu">Thomas Girke&lt;/a>, Director of HPC Center&lt;/li>
