@@ -216,7 +216,7 @@ enable = true
     weight = 1
     [[menu.main]]
       parent = "About"
-      name = "Introduction"
+      name = " Introduction "
       url = "/about/overview/overview/"
       weight = 3
       [menu.main.params]
