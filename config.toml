@@ -211,7 +211,7 @@ enable = true
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
-    name = " Overview "
+    name = " Overview " # Keep whitespace to display item, bug?
     url = "/about/overview/"
     weight = 1
     [[menu.main]]
@@ -223,7 +223,7 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Access" # Keep whitespace to display item, bug?
+      name = "Access" 
       url = "/about/overview/access/"
       weight = 4
       [menu.main.params]
@@ -364,7 +364,7 @@ enable = true
   # HPC Linux Basics Sub-menu
   [[menu.main]]
     parent = "Manuals"
-    name = "Access"
+    name = " Access " # Keep whitespace to display item, bug?
     url = "/Manuals/login"
     weight = 1
     [[menu.main]]
