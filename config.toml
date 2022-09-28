@@ -230,7 +230,7 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Activity"
+      name = "Activity Report"
       url = "/about/overview/activity/"
       weight = 4
       [menu.main.params]
