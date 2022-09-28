@@ -209,11 +209,11 @@ enable = true
   url = "/about/"
   weight = 1
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
-  [[menu.main]]
-    parent = "About"
-    name = "Overview"
-    url = "/about/overview/"
-    weight = 2
+[[menu.main]]
+  parent = "About"
+  name = "Overview"
+  url = "/about/overview/"
+  weight = 2
     [[menu.main]]
       parent = "About"
       name = " Access " # Keep whitespace to display item, bug?
