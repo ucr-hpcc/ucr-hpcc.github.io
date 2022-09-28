@@ -213,99 +213,99 @@ enable = true
   parent = "About"
   name = "Overview"
   url = "/about/overview/"
-  weight = 2
+  weight = 1
     [[menu.main]]
       parent = "About"
-      name = " Access " # Keep whitespace to display item, bug?
+      name = "Access" # Keep whitespace to display item, bug?
       url = "/about/overview/access/"
-      weight = 3
+      weight = 2
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Activity test"
+      name = "Activity zzz"
       url = "/about/overview/activity/"
-      weight = 4
+      weight = 3
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Rates"
       url = "/about/overview/rates/"
-      weight = 5
+      weight = 4
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Slides"
       url = "/about/overview/slides/"
-      weight = 6
+      weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "People"
       url = "/about/overview/people/"
-      weight = 7
+      weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Acknowledgement"
       url = "/about/overview/acknowledgement/"
-      weight = 8
+      weight = 7
       [menu.main.params]
         level = 2
   [[menu.main]]
     parent = "About"
     name = "Hardware"
     url = "/about/hardware/"
-    weight = 9
+    weight = 8
     [[menu.main]]
       parent = "About"
       name = "Overview"
       url = "/about/hardware/overview"
-      weight = 10
+      weight = 9
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Details"
       url = "/about/hardware/details"
-      weight = 11
+      weight = 10
       [menu.main.params]
         level = 2
   [[menu.main]]
     parent = "About"
     name = "Software"
     url = "/about/software/"
-    weight = 12
+    weight = 11
     [[menu.main]]
       parent = "About"
       name = "Installs"
       url = "/about/software/installs/"
-      weight = 13
+      weight = 12
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Modules"
       url = "/about/software/modules/"
-      weight = 14
+      weight = 13
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "System"
       url = "/about/software/system/"
-      weight = 15
+      weight = 14
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Commercial"
       url = "/about/software/commercial"
-      weight = 16
+      weight = 15
       [menu.main.params]
         level = 2
 
