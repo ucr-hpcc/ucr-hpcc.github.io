@@ -9,7 +9,7 @@ aliases:
     - /manuals_linux-basics_intro.html
     - /manuals_linux-basics_intro
     - /manuals/linux_basics/intro
-    - /about/facility
+    - /about/facility/access
 ---
 
 {{% pageinfo %}}
