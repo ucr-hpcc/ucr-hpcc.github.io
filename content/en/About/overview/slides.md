@@ -1,7 +1,7 @@
 ---
 type: docs
-linkTitle: Overview slides for HPCC
-title: Overview slides for HPCC
+linkTitle: Overview slides
+title: Overview slides
 weight: 6
 ---
 
