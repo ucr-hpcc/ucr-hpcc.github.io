@@ -13,7 +13,7 @@ includes access to the shared HPC resources and services.
 
 ## Facility description
 
-   * [Facility description](https://goo.gl/43eOwQ) (_e.g._ for grant applications)
+[Facility description](https://goo.gl/43eOwQ) for grant applications.
 
 
 ## Office location and mailing address
@@ -27,7 +27,7 @@ Riverside, CA 92521
 
 ### Genomics
 
-Genomics Building, Rm 1120A
+HPCC's main server room is in the Genomics Building, Rm 1120A.
 
 ### CoLo server room
 
