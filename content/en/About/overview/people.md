@@ -18,12 +18,11 @@ weight: 7
 The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3p1VK).
 
 * UCR faculty members with hands-on experience in HPC
-    * Stefano Lonardi (CS)
+    * Jason E Stajich (Microbiology & Plant Pathology)
     * Wenxiu Ma (Statistics)
+    * Stefano Lonardi (CS)
     * Laura Sales (Physics)
     * Leonard Mueller (Chemistry)
-    * David Kisailus (Chemical and Environmental Engineering)
-    * Jason E Stajich (IIGB)
 
 * HPC expert staff members from UCR
     * Keith Richards-Dinger (Earth Sciences)
