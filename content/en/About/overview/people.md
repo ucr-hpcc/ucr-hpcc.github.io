@@ -10,8 +10,7 @@ weight: 7
 
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), Sr. HPC Systems Administrator
-* [Viet Pham](mailto:vpham013@ucr.edu), HPC System Administrator
-* [Melody Asghari](mailto:masgh003@ucr.edu), HPC Systems Administrator, Assistant
+* [Tomin Kappiarumalayil](mailto:tkapp001@ucr.edu), HPC Systems Administrator, Assistant
 
 ## Advisory Board (executive committee)
 

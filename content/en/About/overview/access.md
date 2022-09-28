@@ -12,10 +12,6 @@ aliases:
     - /about/facility/access
 ---
 
-{{% pageinfo %}}
-Note: HPCC's latest Recharging Rates document is [here](/about/facility/rates). 
-{{% /pageinfo %}}
-
 ## User account requests
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include full name, NetID and email address of both user and PI. Users need to be members of the PI's group.
