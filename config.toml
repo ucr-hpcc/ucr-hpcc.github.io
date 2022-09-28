@@ -230,7 +230,7 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Activity test"
+      name = "Activity test2"
       url = "/about/overview/activity/"
       weight = 5
       [menu.main.params]
