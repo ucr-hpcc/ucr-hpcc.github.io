@@ -224,35 +224,35 @@ enable = true
     [[menu.main]]
       parent = "About"
       name = "Activity test"
-      url = "/about/facility/activity/"
+      url = "/about/overview/activity/"
       weight = 4
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Rates"
-      url = "/about/facility/rates/"
+      url = "/about/overview/rates/"
       weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Slides"
-      url = "/about/facility/slides/"
+      url = "/about/overview/slides/"
       weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "People"
-      url = "/about/facility/people/"
+      url = "/about/overview/people/"
       weight = 7
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Acknowledgement"
-      url = "/about/facility/acknowledgement/"
+      url = "/about/overview/acknowledgement/"
       weight = 8
       [menu.main.params]
         level = 2
