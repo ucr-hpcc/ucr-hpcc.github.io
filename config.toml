@@ -218,49 +218,49 @@ enable = true
       parent = "About"
       name = " Introduction "
       url = "/about/overview/overview/"
-      weight = 3
+      weight = 2
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Access" 
       url = "/about/overview/access/"
-      weight = 4
+      weight = 3
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Activity test2"
+      name = "Activity"
       url = "/about/overview/activity/"
-      weight = 5
+      weight = 4
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Rates"
       url = "/about/overview/rates/"
-      weight = 6
+      weight = 5
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Slides"
       url = "/about/overview/slides/"
-      weight = 7
+      weight = 6
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "People"
       url = "/about/overview/people/"
-      weight = 8
+      weight = 7
       [menu.main.params]
         level = 2
     [[menu.main]]
       parent = "About"
       name = "Acknowledgement"
       url = "/about/overview/acknowledgement/"
-      weight = 9
+      weight = 8
       [menu.main.params]
         level = 2
   [[menu.main]]

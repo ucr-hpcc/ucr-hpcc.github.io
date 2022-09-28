@@ -3,7 +3,7 @@ title: Activity Report
 linkTitle: Activity
 type: docs
 description: >
-weight: 3
+weight: 4
 aliases:
     - /snapshot.html
     - /snapshot

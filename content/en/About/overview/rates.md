@@ -2,7 +2,7 @@
 title: Rates
 linkTitle: Rates
 type: docs
-weight: 6
+weight: 5
 aliases:
     - /docs.html
     - /docs

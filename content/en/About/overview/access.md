@@ -2,7 +2,7 @@
 title: Access
 linkTitle: Access
 type: docs
-weight: 1
+weight: 3
 aliases:
     - /rates.html
     - /rates

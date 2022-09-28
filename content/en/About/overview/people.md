@@ -2,7 +2,7 @@
 linkTitle: People
 title: People
 type: docs
-weight: 2
+weight: 7
 ---
 
 
