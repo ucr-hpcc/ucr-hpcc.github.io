@@ -1,13 +1,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Overview</title><link>https://hpcc.ucr.edu/about/overview/</link><description>Recent content in Overview on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Welcome to the HPC Center (HPCC)</title><link>https://hpcc.ucr.edu/about/overview/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/introduction/</guid><description>
 &lt;p>&lt;img align="right" title="hpclogo" src="../../img/background_small.jpg">&lt;img/>&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
+&lt;div class="pageinfo pageinfo-primary">
 &lt;p>The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
 includes access to the shared HPC resources and services.&lt;/p>
+&lt;/div>
 &lt;h2 id="how-to-find-relevant-information-quickly">How to find relevant information quickly?&lt;/h2>
 &lt;h3 id="menubar-usage-and-searching">Menubar usage and searching&lt;/h3>
-&lt;p>The navigation menus on the top provide links ot the main content categories.
-The navigation bars to the left and right link the corresponding subpages and
+&lt;p>The navigation menus on the top provide link to the main content categories.
+The navigation bars to the left and right link to the corresponding subpages and
 the table of content of each page, respectively. A search function is available in
 the top right corner to find specific pages via keyword searches.&lt;/p>
 &lt;h3 id="how-to-gain-access">How to gain access?&lt;/h3>
