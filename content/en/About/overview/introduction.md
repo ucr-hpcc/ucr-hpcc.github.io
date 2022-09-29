@@ -11,11 +11,12 @@ weight: 2
 
 ## Overview
 
-{{% pageinfo %}}
+{{% alert title="Overview" %}}
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
-includes access to the shared HPC resources and services. 
-{{% /pageinfo %}}
+includes access to shared HPC resources and services. 
+d another language.
+{{% /alert %}}
 
 ## How to find relevant information quickly?
 
