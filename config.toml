@@ -500,8 +500,8 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Custom Software"
-      url = "/Manuals/hpc_cluster/customsoftware"
+      name = "Selected Software"
+      url = "/Manuals/hpc_cluster/selected_software"
       weight = 23
       [menu.main.params]
         level = 2

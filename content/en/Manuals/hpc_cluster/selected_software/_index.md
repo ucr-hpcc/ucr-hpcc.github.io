@@ -1,6 +1,6 @@
 ---
-title: "Custom Software Usage"
-linkTitle: "Custom Software"
+title: "Selected Research Software Usage"
+linkTitle: "Selected Software"
 type: docs
 weight: 6
 ---
