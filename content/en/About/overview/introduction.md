@@ -24,7 +24,7 @@ This year we were awarded an MRI equipment grant (#2215705) by NSF for the acqui
 #### Navigation and Search 
 
 + __Top menu__ located in bar on top of each page provides links to the main content categories 
-+ __Section menu__ to the left links to subpages 
++ __Section menu__ to the left links to subpages of each main category 
 + __Table of content__ links to sections within each page
 
 #### How to gain access?
