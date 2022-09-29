@@ -809,14 +809,10 @@ install_github(&amp;quot;duncantl/RGoogleDocs&amp;quot;)
 &lt;h4 id="local-packages">Local Packages&lt;/h4>
 &lt;pre>&lt;code class="language-R"># Replace URL with your URL or local path to your .tar.gz file
 install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&amp;quot;,repos=NULL,type=&amp;quot;source&amp;quot;)
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Custom Software</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/custom_software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/custom_software/</guid><description>
-&lt;h2 id="custom-software">Custom Software&lt;/h2>
-&lt;p>The below links to software tools requiring more complex usage instructions.&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/alphafold/">AlphaFold2&lt;/a>&lt;/li>
-&lt;li>&amp;hellip;&lt;/li>
-&lt;li>&amp;hellip;&lt;/li>
-&lt;/ul></description></item><item><title>Manuals: Data Storage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Custom Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</guid><description>
+&lt;blockquote>
+&lt;p>The below links to usage manuals of selected research software requiring more complex usage instructions.&lt;/p>
+&lt;/blockquote></description></item><item><title>Manuals: Data Storage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
 &lt;h2 id="dashboard">Dashboard&lt;/h2>
 &lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>.&lt;/p>
 &lt;h2 id="home">Home&lt;/h2>
@@ -1604,10 +1600,7 @@ removeRegistry(wait=0, reg=reg) # Delete registry directory
 after moving them to a local system.&lt;/p>
 &lt;pre>&lt;code class="language-r">from_file &amp;lt;- loadRegistry(&amp;quot;myregdir&amp;quot;, conf.file=&amp;quot;.batchtools.conf.R&amp;quot;)
 reduceResults(rbind)
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Custom Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</guid><description>
-&lt;blockquote>
-&lt;p>The below links to usage manuals of selecte research software.&lt;/p>
-&lt;/blockquote></description></item><item><title>Manuals: SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</guid><description>
 &lt;blockquote>
 &lt;p>The below links to detailed instructions. A shorter but more comprehensive summary for all three OSs is available &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/p>
 &lt;/blockquote></description></item><item><title>Manuals: Visualization</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
