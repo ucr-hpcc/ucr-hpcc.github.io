@@ -1602,7 +1602,7 @@ after moving them to a local system.&lt;/p>
 reduceResults(rbind)
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</guid><description>
 &lt;blockquote>
-&lt;p>The below links to detailed instructions. A shorter but more comprehensive summary for all three OSs is available &lt;a href="https://hpcc.ucr.edu/manuals/login/#ssh-keys">here&lt;/a>.&lt;/p>
+&lt;p>The below links to detailed instructions. A shorter but more comprehensive summary for all major OSs is available &lt;a href="https://hpcc.ucr.edu/manuals/access/login/#ssh-keys">here&lt;/a>.&lt;/p>
 &lt;/blockquote></description></item><item><title>Manuals: Visualization</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/visual/</guid><description>
 &lt;h2 id="compute-node">Compute Node&lt;/h2>
 &lt;p>We support running graphical programs on the cluster using &lt;code>VNC&lt;/code>. For more information refer to &lt;a href="../../manuals/hpc_cluster/jobs/#desktop-environments">Desktop Environments&lt;/a>.&lt;/p>
