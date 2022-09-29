@@ -9,7 +9,7 @@ aliases:
 
 ## Custom Software 
 
-Links to usage instructions for custom software are provided below.
+The below links to software tools requiring more complex usage instructions.
 
 + [AlphaFold2](https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/alphafold/)
 + ...
