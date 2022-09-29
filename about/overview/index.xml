@@ -15,26 +15,14 @@ The navigation bars to the left and right link to the corresponding subpages and
 the table of content of each page, respectively. A search function is available in
 the top right corner to find specific pages via keyword searches.&lt;/p>
 &lt;h3 id="how-to-gain-access">How to gain access?&lt;/h3>
-&lt;p>How to obtain user accounts for HPCC&amp;rsquo;s hardware and software infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.
-The &lt;a href="https://hpcc.ucr.edu/manuals/access/login/">login page&lt;/a> describes how to log in to the systems.&lt;/p>
+&lt;p>How to obtain user accounts for HPCC&amp;rsquo;s infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.
+How to log in to the systems is outlined &lt;a href="https://hpcc.ucr.edu/manuals/access/login/">here&lt;/a> describes how to log in to the systems.&lt;/p>
 &lt;h3 id="infrastructure">Infrastructure&lt;/h3>
-&lt;p>The architecture of the HPC clusters and parallel storage system hardware is described &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/p>
+&lt;p>The current inventory and architecture of HPCC&amp;rsquo;s clusters and parallel storage systems is outlined &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/p>
 &lt;h3 id="facility-description">Facility description&lt;/h3>
-&lt;p>A facility description document for grant applications is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
-&lt;h2 id="office-location-and-mailing-address">Office location and mailing address&lt;/h2>
-&lt;p>1208/1207 Genomics Building (&lt;a href="https://goo.gl/OVKyxv">Google Map&lt;/a>)
-3401 Watkins Drive
-University of California
-Riverside, CA 92521&lt;/p>
-&lt;h2 id="server-rooms">Server rooms&lt;/h2>
-&lt;h3 id="genomics">Genomics&lt;/h3>
-&lt;p>HPCC&amp;rsquo;s main server room is in the Genomics Building, Rm 1120A.&lt;/p>
-&lt;h3 id="colo-server-room">CoLo server room&lt;/h3>
-&lt;p>School of Medicine CoLo&lt;/p>
-&lt;h2 id="mailing-address-delivery-room">Mailing address (delivery room)&lt;/h2>
-&lt;p>3401 Watkins Drive
-1202 Genomics
-Riverside, CA 92521&lt;/p></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
+&lt;p>A facility description document for grant applications and related purposes is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
+&lt;h3 id="contacts">Contacts&lt;/h3>
+&lt;p>Information about the HPCC staff, helpdesk and adivsory boards is provided &lt;a href="https://hpcc.ucr.edu/about/overview/people/">here&lt;/a>.&lt;/p></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
 &lt;h2 id="user-account-requests">User account requests&lt;/h2>
 &lt;ul>
 &lt;li>Email user account request to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Please include full name, NetID and email address of both user and PI. Users need to be members of the PI&amp;rsquo;s group.&lt;/li>
@@ -186,7 +174,21 @@ to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justificatio
 &lt;li>One of each to be added here.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>About: Acknowledgement of Facility</title><link>https://hpcc.ucr.edu/about/overview/acknowledgement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/acknowledgement/</guid><description>
+&lt;/ul>
+&lt;h2 id="office-location-and-mailing-address">Office location and mailing address&lt;/h2>
+&lt;p>1208/1207 Genomics Building (&lt;a href="https://goo.gl/OVKyxv">Google Map&lt;/a>)
+3401 Watkins Drive
+University of California
+Riverside, CA 92521&lt;/p>
+&lt;h2 id="server-rooms">Server rooms&lt;/h2>
+&lt;h3 id="genomics">Genomics&lt;/h3>
+&lt;p>HPCC&amp;rsquo;s main server room is in the Genomics Building, Rm 1120A.&lt;/p>
+&lt;h3 id="colo-server-room">CoLo server room&lt;/h3>
+&lt;p>School of Medicine CoLo&lt;/p>
+&lt;h2 id="mailing-address-delivery-room">Mailing address (delivery room)&lt;/h2>
+&lt;p>3401 Watkins Drive
+1202 Genomics
+Riverside, CA 92521&lt;/p></description></item><item><title>About: Acknowledgement of Facility</title><link>https://hpcc.ucr.edu/about/overview/acknowledgement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/acknowledgement/</guid><description>
 &lt;h2 id="acknowledgement-in-publications">Acknowledgement in Publications&lt;/h2>
 &lt;p>We appreciate that you have chosen our facility to support your research and
 would like to remind you to add the following statement to acknowledge the
