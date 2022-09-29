@@ -1385,7 +1385,7 @@ To get a list of usernames:&lt;/p>
 &lt;p>To get the list of emails:&lt;/p>
 &lt;pre>&lt;code class="language-bash">grep &amp;lt;(user_details.sh | awk '{print $4,$5}') -f &amp;lt;(squeue --format '%u' --noheader | sort | uniq) | awk '{print $2}'
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
-&lt;h1 id="terminal-ides">Terminal IDEs&lt;/h1>
+&lt;h2 id="terminal-ides">Terminal IDEs&lt;/h2>
 &lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
 HPC cluster that are useful for a variety of computer languages.&lt;/p>
 &lt;h2 id="vimnvim-basics">Vim/Nvim Basics&lt;/h2>
