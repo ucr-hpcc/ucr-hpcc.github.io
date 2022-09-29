@@ -217,7 +217,7 @@ enable = true
     [[menu.main]]
       parent = "About"
       name = " Introduction "
-      url = "/about/overview/overview/"
+      url = "/about/overview/introduction/"
       weight = 2
       [menu.main.params]
         level = 2
