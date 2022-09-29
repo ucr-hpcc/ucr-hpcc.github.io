@@ -244,8 +244,8 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "People"
-      url = "/about/overview/people/"
+      name = "Contact"
+      url = "/about/overview/contact/"
       weight = 7
       [menu.main.params]
         level = 2
