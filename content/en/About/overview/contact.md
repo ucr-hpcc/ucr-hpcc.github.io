@@ -8,9 +8,6 @@ weight: 7
 ---
 
 
-## Contacts
-
-
 ## Staff
 
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
