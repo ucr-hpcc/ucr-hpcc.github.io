@@ -811,7 +811,7 @@ install_github(&amp;quot;duncantl/RGoogleDocs&amp;quot;)
 install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&amp;quot;,repos=NULL,type=&amp;quot;source&amp;quot;)
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Custom Software</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/custom_software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/custom_software/</guid><description>
 &lt;h2 id="custom-software">Custom Software&lt;/h2>
-&lt;p>Links to usage instructions for custom software are provided below.&lt;/p>
+&lt;p>The below links to software tools requiring more complex usage instructions.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/alphafold/">AlphaFold2&lt;/a>&lt;/li>
 &lt;li>&amp;hellip;&lt;/li>
