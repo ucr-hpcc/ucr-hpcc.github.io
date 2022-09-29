@@ -44,6 +44,10 @@ The current inventory and architecture of HPCC's clusters and parallel storage s
 
 A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
 
+#### Help 
+
+For questions or requesting user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
+
 #### Contacts
 
 Information about helpdesk, HPCC management and contact information is [here](https://hpcc.ucr.edu/about/overview/people/).

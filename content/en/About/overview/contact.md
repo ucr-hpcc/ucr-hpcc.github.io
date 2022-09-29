@@ -10,6 +10,7 @@ weight: 7
 
 ## Contacts
 
+
 ## Staff
 
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
@@ -51,5 +52,14 @@ HPCC's main server room is in the Genomics Building, Rm 1120A.
 ### CoLo server room
 
 School of Medicine CoLo
+
+## Help 
+
+For questions or requesting new user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
+
+## Help 
+
+For questions or requesting new user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
+
 
 
