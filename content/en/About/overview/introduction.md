@@ -28,15 +28,18 @@ the top right corner to find specific pages via keyword searches.
 
 ### How to gain access?
 
-...
+How to obtain user accounts for HPCC's hardware and software infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
+The [login page](https://hpcc.ucr.edu/manuals/access/login/) describes how to log in to the systems.
 
 ### Infrastructure 
 
-...
+The architecture of the HPC clusters and parallel storage system hardware is described [here](https://hpcc.ucr.edu/about/hardware/overview/).
 
 ### Facility description 
 
 A facility description document for grant applications is available [here](https://goo.gl/43eOwQ).
+
+
 
 
 ## Office location and mailing address
