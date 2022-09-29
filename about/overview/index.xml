@@ -3,8 +3,11 @@
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
-includes access to shared HPC resources and services.
-d another language.&lt;/p>
+includes access to shared HPC resources and services.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">News&lt;/h4>
+This year we were awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see &lt;a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&amp;HistoricalAwards=false">here&lt;/a>.&lt;/li>
+&lt;/div>
 &lt;h3 id="how-to-find-relevant-information-quickly">How to find relevant information quickly?&lt;/h3>
 &lt;h4 id="navigation-and-search">Navigation and Search&lt;/h4>
 &lt;ul>
@@ -16,11 +19,11 @@ d another language.&lt;/p>
 &lt;p>How to obtain user accounts for HPCC&amp;rsquo;s infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.
 How to log in to the systems is outlined &lt;a href="https://hpcc.ucr.edu/manuals/access/login/">here&lt;/a>.&lt;/p>
 &lt;h4 id="infrastructure">Infrastructure&lt;/h4>
-&lt;p>The current inventory and architecture of HPCC&amp;rsquo;s clusters and parallel storage systems is outlined &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/p>
+&lt;p>The current inventory and architecture of HPCC&amp;rsquo;s clusters and parallel storage systems is &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/p>
 &lt;h4 id="facility-description">Facility description&lt;/h4>
-&lt;p>A facility description document for grant applications and related purposes is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
+&lt;p>A facility description document for grant applications and related purposes can be downloaded &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
 &lt;h4 id="contacts">Contacts&lt;/h4>
-&lt;p>Information about the HPCC staff, helpdesk and adivsory boards is provided &lt;a href="https://hpcc.ucr.edu/about/overview/people/">here&lt;/a>.&lt;/p></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
+&lt;p>Information about helpdesk, HPCC management and contact information is available &lt;a href="https://hpcc.ucr.edu/about/overview/people/">here&lt;/a>.&lt;/p></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
 &lt;h2 id="user-account-requests">User account requests&lt;/h2>
 &lt;ul>
 &lt;li>Email user account request to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Please include full name, NetID and email address of both user and PI. Users need to be members of the PI&amp;rsquo;s group.&lt;/li>
