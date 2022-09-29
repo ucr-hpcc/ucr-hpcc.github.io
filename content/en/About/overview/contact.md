@@ -8,7 +8,9 @@ weight: 7
 ---
 
 
-## Facility
+## Contacts
+
+## Staff
 
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), Sr. HPC Systems Administrator
@@ -50,10 +52,4 @@ HPCC's main server room is in the Genomics Building, Rm 1120A.
 
 School of Medicine CoLo
 
-
-## Mailing address (delivery room)
-
-3401 Watkins Drive
-1202 Genomics
-Riverside, CA 92521
 
