@@ -32,6 +32,10 @@ This year we were awarded an MRI equipment grant (#2215705) by NSF for the acqui
 How to obtain user accounts for HPCC's infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
 How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/).
 
+#### Usage instructions
+
+How to use the infrastructure is explained under manuals [here](https://hpcc.ucr.edu/manuals/).
+
 #### Infrastructure 
 
 The current inventory and architecture of HPCC's clusters and parallel storage systems is [here](https://hpcc.ucr.edu/about/hardware/overview/).
@@ -42,5 +46,5 @@ A facility description document for grant applications and related purposes can 
 
 #### Contacts
 
-Information about helpdesk, HPCC management and contact information is available [here](https://hpcc.ucr.edu/about/overview/people/).
+Information about helpdesk, HPCC management and contact information is [here](https://hpcc.ucr.edu/about/overview/people/).
 
