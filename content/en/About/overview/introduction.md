@@ -1,9 +1,9 @@
 ---
-title: "Introduction"
+title: "Welcome to HPCC"
 linkTitle: "Introduction"
 type: docs
 aliases:
-    - /about/overview/
+    - /about/overview/overview/
 weight: 2
 ---
 
