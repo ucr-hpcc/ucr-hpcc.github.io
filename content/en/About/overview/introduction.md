@@ -11,26 +11,22 @@ weight: 2
 
 ## Overview
 
-{{% alert title="Overview" %}}
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
 includes access to shared HPC resources and services. 
 d another language.
-{{% /alert %}}
 
 ## How to find relevant information quickly?
 
-### Menubar usage and searching
-
-The navigation menus on the top provide link to the main content categories.
-The navigation bars to the left and right link to the corresponding subpages and
-the table of content of each page, respectively. A search function is available in 
-the top right corner to find specific pages via keyword searches.
++ Navigation and Search 
+  + __Top menu__ located on top provides links to the main content categories. 
+  + __Section menu__ to the left links to subpages 
+  + __Table of content__ links to sections within a page
 
 ### How to gain access?
 
 How to obtain user accounts for HPCC's infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
-How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/) describes how to log in to the systems.
+How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/).
 
 ### Infrastructure 
 
