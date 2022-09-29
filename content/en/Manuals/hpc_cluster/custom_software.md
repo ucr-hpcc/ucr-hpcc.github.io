@@ -11,7 +11,7 @@ aliases:
 
 Links to usage instructions for custom software are provided below.
 
-+ AlphaFold2
++ [AlphaFold2](https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/alphafold/)
 + ...
 + ...
 
