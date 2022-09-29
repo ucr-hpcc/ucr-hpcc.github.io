@@ -16,7 +16,7 @@ infrastructure and training accessible to all UCR researchers and affiliates at 
 includes access to shared HPC resources and services. 
 
 {{% alert title="News" %}}
-This year we were awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false">here</a>.</li>
+This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false">here</a>.</li>
 {{% /alert %}}
 
 ### How to find relevant information quickly?
