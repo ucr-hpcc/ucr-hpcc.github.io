@@ -17,7 +17,7 @@ includes access to the shared HPC resources and services.
 
 ## Facility description
 
-[Facility description](https://goo.gl/43eOwQ) for grant applications.
+A facility description document for grant applications is available [here](https://goo.gl/43eOwQ).
 
 
 ## Office location and mailing address
