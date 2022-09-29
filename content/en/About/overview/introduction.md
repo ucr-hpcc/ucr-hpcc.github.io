@@ -2,6 +2,8 @@
 title: "Introduction"
 linkTitle: "Introduction"
 type: docs
+aliases:
+    - /about/overview/
 weight: 2
 ---
 
