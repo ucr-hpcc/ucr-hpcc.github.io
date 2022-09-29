@@ -2,6 +2,7 @@
 type: docs
 linkTitle: SSH Keys Linux 
 title: SSH Keys Linux  
+weight: 4
 permalink: manuals_linux-cluster_sshkeys_linux.html
 aliases:
     - /manuals_linux-cluster_sshkeys_linux.html

@@ -2,6 +2,7 @@
 type: docs
 linkTitle:  SSH Keys Microsoft Windows
 title: SSH Keys Microsoft Windows
+weight: 3
 permalink: manuals_linux-cluster_sshkeys_winos.html
 aliases:
     - /manuals_linux-cluster_sshkeys_winos.html

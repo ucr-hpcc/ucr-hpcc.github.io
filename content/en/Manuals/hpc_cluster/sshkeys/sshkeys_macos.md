@@ -2,6 +2,7 @@
 type: docs
 linkTitle: SSH Keys Apple macOS 
 title: SSH Keys Apple macOS 
+weight: 2
 permalink: manuals_linux-cluster_sshkeys_macos.html
 aliases:
     - /manuals_linux-cluster_sshkeys_macos.html
