@@ -1,11 +1,13 @@
 ---
-title: "Welcome to the High-Performance Computing Center (HPCC)"
+title: "Welcome to the HPC Center (HPCC)"
 linkTitle: "Introduction"
 type: docs
 aliases:
     - /about/overview/overview/
 weight: 2
 ---
+
+<img align="right" title="hpclogo" src="/img/background_small.jpg"><img/>
 
 ## Mission
 
