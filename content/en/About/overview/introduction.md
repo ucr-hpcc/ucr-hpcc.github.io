@@ -11,16 +11,18 @@ weight: 2
 
 ## Overview
 
+{{% pageinfo %}}
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
 includes access to the shared HPC resources and services. 
+{{% /pageinfo %}}
 
 ## How to find relevant information quickly?
 
 ### Menubar usage and searching
 
-The navigation menus on the top provide links ot the main content categories.
-The navigation bars to the left and right link the corresponding subpages and
+The navigation menus on the top provide link to the main content categories.
+The navigation bars to the left and right link to the corresponding subpages and
 the table of content of each page, respectively. A search function is available in 
 the top right corner to find specific pages via keyword searches.
 
