@@ -54,9 +54,5 @@ School of Medicine CoLo
 
 For questions or requesting new user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
 
-## Help 
-
-For questions or requesting new user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
-
 
 
