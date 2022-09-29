@@ -501,7 +501,7 @@ enable = true
     [[menu.main]]
       parent = "Manuals"
       name = "Custom Software"
-      url = "/Manuals/hpc_cluster/custom_software"
+      url = "/Manuals/hpc_cluster/customsoftware"
       weight = 23
       [menu.main.params]
         level = 2

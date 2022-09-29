@@ -8,7 +8,8 @@ aliases:
     - /manuals_linux-cluster_terminalIDE
 ---
 
-# Terminal IDEs
+
+## Terminal IDEs
 This page introduces several terminal-based working environments available on UCR's
 HPC cluster that are useful for a variety of computer languages.
 
