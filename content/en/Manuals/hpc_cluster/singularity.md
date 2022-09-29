@@ -2,6 +2,7 @@
 title: Singularity Jobs
 linkTitle: Singularity Jobs
 type: docs
+weight: 15
 ---
 
 ## What is Singularity

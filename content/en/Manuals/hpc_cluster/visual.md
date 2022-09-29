@@ -2,7 +2,7 @@
 title: Visualization
 linkTitle: Visualization
 type: docs
-weight: 13
+weight: 14
 aliases:
     - /manuals_linux-cluster_visual.html
     - /manuals_linux-cluster_visual

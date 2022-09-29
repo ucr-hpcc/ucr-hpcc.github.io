@@ -2,7 +2,7 @@
 title: Security
 linkTitle: Data Security
 type: docs
-weight: 8
+weight: 9
 aliases:
     - /manuals_linux-cluster_security.html
     - /manuals_linux-cluster_security
