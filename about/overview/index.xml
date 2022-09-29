@@ -13,7 +13,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 &lt;ul>
 &lt;li>&lt;strong>Top menu&lt;/strong> located in bar on top of each page provides links to the main content categories&lt;/li>
 &lt;li>&lt;strong>Section menu&lt;/strong> to the left links to subpages of each main category&lt;/li>
-&lt;li>&lt;strong>Table of content&lt;/strong> links to sections within each page&lt;/li>
+&lt;li>&lt;strong>Table of content&lt;/strong> to the right links to sections within each page&lt;/li>
 &lt;/ul>
 &lt;h4 id="how-to-gain-access">How to gain access?&lt;/h4>
 &lt;p>The creation of user accounts for HPCC&amp;rsquo;s infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.
@@ -142,8 +142,7 @@ affiliation with UC Riverside, such as a research collaboration with UCR
 researchers. Both the corresponding UCR PI and external collaborator need to
 maintain an HPCC subscription. External accounts are subject to an annual
 review and approval process. To be approved, the external and internal PIs have
-to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justification&lt;/a>.&lt;/p></description></item><item><title>About: Overview slides</title><link>https://hpcc.ucr.edu/about/overview/slides/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/slides/</guid><description>
-&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQIuy-2Z50zj3wr5dNjyes5tnUjGP84vUBn2vFxM5y5qb_kCOpWfjKu_G-F9a-46JniTsgVWWmQn_9m/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe></description></item><item><title>About: People</title><link>https://hpcc.ucr.edu/about/overview/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/people/</guid><description>
+to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justification&lt;/a>.&lt;/p></description></item><item><title>About: People</title><link>https://hpcc.ucr.edu/about/overview/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/people/</guid><description>
 &lt;h2 id="facility">Facility&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="http://girke.bioinformatics.ucr.edu">Thomas Girke&lt;/a>, Director of HPC Center&lt;/li>
@@ -208,4 +207,11 @@ publications or presentations that used our facilty.&lt;/p>
 &lt;li>&lt;a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705">NSF MRI-2215705&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1429826">NSF MRI-1429826&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://federalreporter.nih.gov/Projects/Details/?projectId=624283&amp;amp;ItemNum=881394&amp;amp;totalItems=892504&amp;amp;searchId=b850241613a74a58962c0bd1a1edd5d4&amp;amp;searchMode=Smart&amp;amp;page=8814&amp;amp;pageSize=100&amp;amp;sortField=Ic&amp;amp;sortOrder=asc&amp;amp;filters=&amp;amp;navigation=True">NIH 1S10OD016290-01A1&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>About:</title><link>https://hpcc.ucr.edu/about/overview/slides_backup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/slides_backup/</guid><description>
+&lt;p>#&amp;mdash;
+#type: docs
+#linkTitle: Overview slides
+#title: Overview slides
+#weight: 6
+#&amp;mdash;&lt;/p>
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQIuy-2Z50zj3wr5dNjyes5tnUjGP84vUBn2vFxM5y5qb_kCOpWfjKu_G-F9a-46JniTsgVWWmQn_9m/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe></description></item></channel></rss>

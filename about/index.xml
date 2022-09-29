@@ -1,1 +1,8 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – About</title><link>https://hpcc.ucr.edu/about/</link><description>Recent content in About on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – About</title><link>https://hpcc.ucr.edu/about/</link><description>Recent content in About on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/index.xml" rel="self" type="application/rss+xml"/><item><title>About:</title><link>https://hpcc.ucr.edu/about/overview/slides_backup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/slides_backup/</guid><description>
+&lt;p>#&amp;mdash;
+#type: docs
+#linkTitle: Overview slides
+#title: Overview slides
+#weight: 6
+#&amp;mdash;&lt;/p>
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQIuy-2Z50zj3wr5dNjyes5tnUjGP84vUBn2vFxM5y5qb_kCOpWfjKu_G-F9a-46JniTsgVWWmQn_9m/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe></description></item></channel></rss>
