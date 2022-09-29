@@ -24,6 +24,8 @@ How to log in to the systems is outlined &lt;a href="https://hpcc.ucr.edu/manual
 &lt;p>The current inventory and architecture of HPCC&amp;rsquo;s clusters and parallel storage systems is described &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/p>
 &lt;h4 id="facility-description">Facility description&lt;/h4>
 &lt;p>A facility description document for grant applications and related purposes can be downloaded &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/p>
+&lt;h4 id="help">Help&lt;/h4>
+&lt;p>For questions or requesting user accounts please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.&lt;/p>
 &lt;h4 id="contacts">Contacts&lt;/h4>
 &lt;p>Information about helpdesk, HPCC management and contact information is &lt;a href="https://hpcc.ucr.edu/about/overview/people/">here&lt;/a>.&lt;/p></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
 &lt;h2 id="user-account-requests">User account requests&lt;/h2>
@@ -187,7 +189,11 @@ Riverside, CA 92521&lt;/p>
 &lt;h3 id="genomics">Genomics&lt;/h3>
 &lt;p>HPCC&amp;rsquo;s main server room is in the Genomics Building, Rm 1120A.&lt;/p>
 &lt;h3 id="colo-server-room">CoLo server room&lt;/h3>
-&lt;p>School of Medicine CoLo&lt;/p></description></item><item><title>About: Acknowledgement of Facility</title><link>https://hpcc.ucr.edu/about/overview/acknowledgement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/acknowledgement/</guid><description>
+&lt;p>School of Medicine CoLo&lt;/p>
+&lt;h2 id="help">Help&lt;/h2>
+&lt;p>For questions or requesting new user accounts please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.&lt;/p>
+&lt;h2 id="help-1">Help&lt;/h2>
+&lt;p>For questions or requesting new user accounts please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.&lt;/p></description></item><item><title>About: Acknowledgement of Facility</title><link>https://hpcc.ucr.edu/about/overview/acknowledgement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/acknowledgement/</guid><description>
 &lt;h2 id="acknowledgement-in-publications">Acknowledgement in Publications&lt;/h2>
 &lt;p>We appreciate that you have chosen our facility to support your research and
 would like to remind you to add the following statement to acknowledge the
