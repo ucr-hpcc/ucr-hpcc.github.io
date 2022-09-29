@@ -27,7 +27,7 @@ step 1 is required after setting up ssh key based access.&lt;/p>
 &lt;p>The &lt;code>-X&lt;/code> argument enables X11 support, which is required for opening GUI applications on remote systems.&lt;/p>
 &lt;p>&lt;strong>2.&lt;/strong> Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, both the password and Duo steps will be skipped automatically during the log in process.&lt;/p>
 &lt;p>&lt;strong>3.&lt;/strong> Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR&amp;rsquo;s Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described &lt;a href="#ssh-keys">here&lt;/a>. Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently.&lt;/p>
-&lt;p>If the login is performed via a GUI application, which is an option in MobaXterm),
+&lt;p>If the login is performed via a GUI application, which is an option in MobaXterm,
 then one can provide the same login information given under the above &lt;code>ssh&lt;/code>
 commad in the corresponding fields of the login window as follows:&lt;/p>
 &lt;ul>
