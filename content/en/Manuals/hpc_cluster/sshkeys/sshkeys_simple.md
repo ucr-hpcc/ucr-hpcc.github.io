@@ -9,7 +9,7 @@ aliases:
     - /manuals_linux-cluster_sshkeys_simple
 ---
 
-## SSH Key Ba
+## SSH Key Basics
 
 This [basic introduction](https://hpcc.ucr.edu/manuals/access/login/#ssh-keys) into SSH keys might be sufficient for most users on 
 all major OSs.
