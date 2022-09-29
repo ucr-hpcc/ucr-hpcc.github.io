@@ -1,4 +1,7 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><description>Recent content in SSH Keys on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: SSH Keys Apple macOS</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – SSH Keys</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/</link><description>Recent content in SSH Keys on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: SSH Keys Summary</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_simple/</guid><description>
+&lt;h2 id="ssh-key-ba">SSH Key Ba&lt;/h2>
+&lt;p>This &lt;a href="https://hpcc.ucr.edu/manuals/access/login/#ssh-keys">basic introduction&lt;/a> into SSH keys might be sufficient for most users on
+all three major OSs.&lt;/p></description></item><item><title>Manuals: SSH Keys Apple macOS</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_macos/</guid><description>
 &lt;h2 id="ssh-keys-on-macos">SSH Keys on macOS&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH Keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -189,9 +192,7 @@ Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: SSH Keys Linux</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</guid><description>
-&lt;h2 id="ssh-keys-on-linux">SSH Keys on Linux&lt;/h2>
-&lt;p>How to create SSH keys on LInux OSs or the command-line in general is described on the general login page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
+&lt;/ol></description></item><item><title>Manuals: SSH Keys Microsoft Windows</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/</guid><description>
 &lt;h2 id="ssh-keys-on-ms-windows">SSH Keys on MS Windows&lt;/h2>
 &lt;h3 id="what-are-ssh-keys">What are SSH keys?&lt;/h3>
 &lt;p>SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.&lt;/p>
@@ -389,4 +390,6 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;li>
 &lt;p>Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist &lt;a href="some_other_page">Filezilla Usage&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol></description></item><item><title>Manuals: SSH Keys Linux</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_linux/</guid><description>
+&lt;h2 id="ssh-keys-on-linux">SSH Keys on Linux&lt;/h2>
+&lt;p>How to create SSH keys on LInux OSs or the command-line in general is described on the general login page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/login/#ssh-keys">here&lt;/a>.&lt;/p></description></item></channel></rss>
