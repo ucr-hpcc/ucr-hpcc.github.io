@@ -14,7 +14,10 @@ weight: 2
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
 includes access to shared HPC resources and services. 
-d another language.
+
+{{% alert title="News" %}}
+This year we were awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false">here</a>.</li>
+{{% /alert %}}
 
 ### How to find relevant information quickly?
 
@@ -31,13 +34,13 @@ How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/acc
 
 #### Infrastructure 
 
-The current inventory and architecture of HPCC's clusters and parallel storage systems is outlined [here](https://hpcc.ucr.edu/about/hardware/overview/).
+The current inventory and architecture of HPCC's clusters and parallel storage systems is [here](https://hpcc.ucr.edu/about/hardware/overview/).
 
 #### Facility description 
 
-A facility description document for grant applications and related purposes is available [here](https://goo.gl/43eOwQ).
+A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
 
 #### Contacts
 
-Information about the HPCC staff, helpdesk and adivsory boards is provided [here](https://hpcc.ucr.edu/about/overview/people/).
+Information about helpdesk, HPCC management and contact information is available [here](https://hpcc.ucr.edu/about/overview/people/).
 
