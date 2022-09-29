@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Overview</title><link>https://hpcc.ucr.edu/about/overview/</link><description>Recent content in Overview on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Welcome to HPCC</title><link>https://hpcc.ucr.edu/about/overview/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/introduction/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Overview</title><link>https://hpcc.ucr.edu/about/overview/</link><description>Recent content in Overview on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Welcome to the High-Performance Computing Center (HPCC)</title><link>https://hpcc.ucr.edu/about/overview/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/introduction/</guid><description>
 &lt;h2 id="mission">Mission&lt;/h2>
 &lt;p>The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
@@ -175,12 +175,13 @@ to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justificatio
 &lt;p>We appreciate that you have chosen our facility to support your research and
 would like to remind you to add the following statement to acknowledge the
 High-Performance Computing Center in your publications and presentations.&lt;/p>
-&lt;p>Computations were performed using the computer clusters and data storage
+&lt;hr>
+&lt;h2 id="nih-1s10od016290-01a1">&lt;strong>NOTE&lt;/strong>
+Computations were performed using the computer clusters and data storage
 resources of the HPCC, which were funded by grants from NSF (MRI-2215705, MRI-1429826) and
-NIH (1S10OD016290-01A1).&lt;/p>
-&lt;p>Your success is important to us and we would appreciate the URLs to any
-publications or presentations for which the data was acquired using our
-facilty.&lt;/p>
+NIH (1S10OD016290-01A1).&lt;/h2>
+&lt;p>Your success is important to us and we would appreciate the citations or URLs to any
+publications or presentations that used our facilty.&lt;/p>
 &lt;h2 id="grants">Grants&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705">NSF MRI-2215705&lt;/a>&lt;/li>
