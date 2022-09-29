@@ -211,12 +211,12 @@ enable = true
   pre = "<i class='fas fa-info-circle btn-primary'></i>"
   [[menu.main]]
     parent = "About"
-    name = " Introduction " # Keep whitespace to display item, bug?
+    name = " Overview " # Keep whitespace to display item, bug?
     url = "/about/overview/"
     weight = 1
     [[menu.main]]
       parent = "About"
-      name = " Introduction "
+      name = " Overview "
       url = "/about/overview/introduction/"
       weight = 2
       [menu.main.params]
