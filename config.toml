@@ -244,13 +244,6 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
-      name = "Slides"
-      url = "/about/overview/slides/"
-      weight = 6
-      [menu.main.params]
-        level = 2
-    [[menu.main]]
-      parent = "About"
       name = "People"
       url = "/about/overview/people/"
       weight = 7

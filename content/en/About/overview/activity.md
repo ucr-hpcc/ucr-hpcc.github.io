@@ -1,6 +1,6 @@
 ---
 title: Activity Report
-linkTitle: Activity
+linkTitle: Activity Report
 type: docs
 description: >
 weight: 4

@@ -25,7 +25,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 + __Top menu__ located in bar on top of each page provides links to the main content categories 
 + __Section menu__ to the left links to subpages of each main category 
-+ __Table of content__ links to sections within each page
++ __Table of content__ to the right links to sections within each page
 
 #### How to gain access?
 
@@ -47,4 +47,6 @@ A facility description document for grant applications and related purposes can 
 #### Contacts
 
 Information about helpdesk, HPCC management and contact information is [here](https://hpcc.ucr.edu/about/overview/people/).
+
+
 
