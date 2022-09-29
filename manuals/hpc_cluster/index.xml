@@ -809,7 +809,7 @@ install_github(&amp;quot;duncantl/RGoogleDocs&amp;quot;)
 &lt;h4 id="local-packages">Local Packages&lt;/h4>
 &lt;pre>&lt;code class="language-R"># Replace URL with your URL or local path to your .tar.gz file
 install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&amp;quot;,repos=NULL,type=&amp;quot;source&amp;quot;)
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Custom Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/customsoftware/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: Selected Research Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/</guid><description>
 &lt;blockquote>
 &lt;p>The below links to usage manuals of selected research software requiring more complex usage instructions.&lt;/p>
 &lt;/blockquote></description></item><item><title>Manuals: Data Storage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
