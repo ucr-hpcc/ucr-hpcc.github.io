@@ -216,7 +216,7 @@ enable = true
     weight = 1
     [[menu.main]]
       parent = "About"
-      name = " Introduction "
+      name = " Introduction " # Keep whitespace to display item, bug?
       url = "/about/overview/introduction/"
       weight = 2
       [menu.main.params]

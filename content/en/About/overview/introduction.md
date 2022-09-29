@@ -1,5 +1,5 @@
 ---
-title: "Welcome to HPCC"
+title: "Welcome to the High-Performance Computing Center (HPCC)"
 linkTitle: "Introduction"
 type: docs
 aliases:

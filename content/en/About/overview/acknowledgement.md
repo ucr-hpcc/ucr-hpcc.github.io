@@ -12,13 +12,14 @@ We appreciate that you have chosen our facility to support your research and
 would like to remind you to add the following statement to acknowledge the
 High-Performance Computing Center in your publications and presentations.
 
+{{% notice tip %}}
 Computations were performed using the computer clusters and data storage
 resources of the HPCC, which were funded by grants from NSF (MRI-2215705, MRI-1429826) and
 NIH (1S10OD016290-01A1).
+{{% /notice %}}
 
-Your success is important to us and we would appreciate the URLs to any
-publications or presentations for which the data was acquired using our
-facilty.
+Your success is important to us and we would appreciate the citations or URLs to any
+publications or presentations that used our facilty.
 
 ## Grants
 
