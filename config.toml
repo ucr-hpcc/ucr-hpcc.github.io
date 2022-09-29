@@ -535,7 +535,7 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "Manuals"
-      name = "Terminal-based Working Environments"
+      name = "Terminal IDEs"
       url = "/Manuals/hpc_cluster/terminalIDE"
       weight = 28
       [menu.main.params]

@@ -1,6 +1,6 @@
 ---
 title: Terminal-based Working Environments 
-linkTitle: Terminal-based Working Environments 
+linkTitle: Terminal IDEs 
 type: docs
 weight: 10
 aliases:
