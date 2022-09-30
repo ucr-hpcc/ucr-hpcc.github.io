@@ -47,7 +47,7 @@ For questions or requesting user accounts please email [support@hpcc.ucr.edu](ma
 
 #### Contacts
 
-Information about helpdesk, HPCC management and contact information is [here](https://hpcc.ucr.edu/about/overview/people/).
+Helpdesk, management and contact information is [here](https://hpcc.ucr.edu/about/overview/people/).
 
 
 
