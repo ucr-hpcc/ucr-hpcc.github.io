@@ -105,7 +105,7 @@ PI-based membership is not practical, &lt;em>e.g.&lt;/em> provide cluster access
 students in classes. Under this model a department purchases computer nodes
 that will be administered similarly as described above under the &lt;em>Ownership
 model&lt;/em>. Due to the large number of expected users from departments, the
-CPU quota per user is lower compared to the PI-based model.&lt;/p>
+CPU quota per user is usually lower compared to the PI-based model.&lt;/p>
 &lt;h2 id="external-user-accounts">External user accounts&lt;/h2>
 &lt;p>Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
