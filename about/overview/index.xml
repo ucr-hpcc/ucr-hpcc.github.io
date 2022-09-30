@@ -19,10 +19,14 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 &lt;li>&lt;strong>Table of content&lt;/strong> to the right links to sections within each page&lt;/li>
 &lt;/ul>
 &lt;h4 id="gain-access">Gain access&lt;/h4>
-&lt;p>The creation of user accounts for HPCC&amp;rsquo;s infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.
-How to log in to the systems is outlined &lt;a href="https://hpcc.ucr.edu/manuals/access/login/">here&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>User account creation for accessing HPCC&amp;rsquo;s infrastructure is described &lt;a href="https://hpcc.ucr.edu/about/overview/access/">here&lt;/a>.&lt;/li>
+&lt;li>How to log in to the systems is outlined &lt;a href="https://hpcc.ucr.edu/manuals/access/login/">here&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;h4 id="hpc-usage">HPC usage&lt;/h4>
-&lt;p>Detailed usage instructions for HPCC&amp;rsquo;s infrastructure are available under the manual section &lt;a href="https://hpcc.ucr.edu/manuals/">here&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>Usage instructions for HPCC&amp;rsquo;s infrastructure are available under the manual section &lt;a href="https://hpcc.ucr.edu/manuals/">here&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;h4 id="infrastructure-description">Infrastructure description&lt;/h4>
 &lt;ul>
 &lt;li>The current inventory and architecture of HPCC&amp;rsquo;s clusters and parallel storage systems is described &lt;a href="https://hpcc.ucr.edu/about/hardware/overview/">here&lt;/a>.&lt;/li>
