@@ -44,7 +44,7 @@ Detailed usage instructions for HPCC's infrastructure are available under the ma
 + The current inventory and architecture of HPCC's clusters and parallel storage systems is described [here](https://hpcc.ucr.edu/about/hardware/overview/).
 + A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
 
-#### Contacts and Help 
+#### Contacts and help 
 
 + For questions or requesting user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
 + Management and contact information is available on the same [page](https://hpcc.ucr.edu/about/overview/people/).
