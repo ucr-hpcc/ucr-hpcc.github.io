@@ -24,7 +24,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 ### Quick start
 
-#### How to navigate and search this Site
+#### Navigating and searching this site
 
 + __Top menu__ located in bar on top of each page provides links to the main content categories 
 + __Section menu__ to the left links to subpages of each main category 
