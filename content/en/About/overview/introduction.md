@@ -12,10 +12,9 @@ weight: 2
 ## Overview
 
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
-infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
-includes access to shared HPC resources and services. Currently, the HPCC has over 
-150 active research gropus with more than 800 users. Its resources are also heavily used 
-for instructing undergraduate and graduate classes in a wide range of computational, 
+infrastructure and training accessible to all UCR researchers and affiliates at low cost. 
+Currently, it supports over 150 active research gropus with more than 800 users. Its resources 
+are also used for instructing undergraduate and graduate classes in a wide range of computational, 
 statistical, life science and engineering disciplines.  
 
 {{% alert title="News" %}}
