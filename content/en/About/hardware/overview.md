@@ -19,13 +19,13 @@ aliases:
 
 ## Parallel data storage system
 
-* 2PB GPFS storage (scales to >50PB)
+* 3PB GPFS storage (scales to >50PB)
 * Home directories on dedicated system
 
 
 ## Backup system
 
-* 2PB GPFS storage
+* 3PB GPFS storage
 * Geographically separated server room
 
 ## Server room
