@@ -33,6 +33,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 #### Gain access
 
 + User account creation for accessing HPCC's infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
++ The latest recharging rates can be found [here](https://hpcc.ucr.edu/about/facility/rates).
 + How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/).
 
 #### HPC usage 

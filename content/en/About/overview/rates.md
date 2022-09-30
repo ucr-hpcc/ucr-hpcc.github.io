@@ -6,6 +6,7 @@ weight: 5
 aliases:
     - /docs.html
     - /docs
+    - /about/facility/rates
 ---
 
 ## Facility description
