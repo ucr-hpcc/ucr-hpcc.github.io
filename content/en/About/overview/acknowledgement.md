@@ -18,7 +18,7 @@ resources of the HPCC, which were funded by grants from NSF (MRI-2215705, MRI-14
 NIH (1S10OD016290-01A1).
 {{% /pageinfo %}}
 
-Your success is important to us and we would appreciate the citations or URLs to any
+Your success is important to us and we would appreciate if you could share with us the references or URLs to any
 publications or presentations that used our facilty.
 
 ## Grants
