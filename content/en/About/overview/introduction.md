@@ -13,8 +13,10 @@ weight: 2
 
 The High-Performance Computing Center (HPCC) provides state-of-the-art research computing
 infrastructure and training accessible to all UCR researchers and affiliates at low cost. This
-includes access to shared HPC resources and services. Currently, the HPCC is used by over 
-150 research groups with more than 800 users.  
+includes access to shared HPC resources and services. Currently, the HPCC serves over 
+150 research gropus with more than 800 users. Its resources are also heavily used for 
+instructing undergraduate and graduate classes in a wide range of computational, 
+statistical, life science and engineering disciplines.  
 
 {{% alert title="News" %}}
 This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false">here</a>.</li>
