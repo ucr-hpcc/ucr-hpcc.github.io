@@ -37,7 +37,7 @@ How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/acc
 
 #### HPC usage 
 
-Detailed usage instructions for HPCC's infrastructure are available under manuals [here](https://hpcc.ucr.edu/manuals/).
+Detailed usage instructions for HPCC's infrastructure are available under the manual section [here](https://hpcc.ucr.edu/manuals/).
 
 #### Infrastructure description 
 
