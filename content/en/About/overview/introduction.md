@@ -19,30 +19,27 @@ includes access to shared HPC resources and services.
 This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false">here</a>.</li>
 {{% /alert %}}
 
-### How to find relevant information quickly?
+### Quick start
 
-#### Navigating and Searching this Site
+#### How to navigate and search this Site
 
 + __Top menu__ located in bar on top of each page provides links to the main content categories 
 + __Section menu__ to the left links to subpages of each main category 
 + __Table of content__ to the right links to sections within each page
 
-#### How to gain access?
+#### Gain access
 
 The creation of user accounts for HPCC's infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
 How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/).
 
-#### Usage instructions
+#### HPC usage 
 
 Detailed usage instructions for HPCC's infrastructure are available under manuals [here](https://hpcc.ucr.edu/manuals/).
 
-#### Infrastructure 
+#### Infrastructure description 
 
-The current inventory and architecture of HPCC's clusters and parallel storage systems is described [here](https://hpcc.ucr.edu/about/hardware/overview/).
-
-#### Facility description 
-
-A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
++ The current inventory and architecture of HPCC's clusters and parallel storage systems is described [here](https://hpcc.ucr.edu/about/hardware/overview/).
++ A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
 
 #### Help 
 
