@@ -39,7 +39,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 #### HPC usage 
 
 + Usage instructions for HPCC's infrastructure are available under the manual section [here](https://hpcc.ucr.edu/manuals/). 
-+ To efficiently navigate the Manuals pages, use the <p style="color:"#2E86C1";">Manuals dropdown</p> in the menu bar on the top of this site.
++ To efficiently navigate the Manuals pages, use the <p style="color:#2E86C1;">Manuals dropdown</p> in the menu bar on the top of this site.
 
 #### Infrastructure description 
 
