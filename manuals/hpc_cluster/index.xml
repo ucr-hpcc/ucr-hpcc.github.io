@@ -8,7 +8,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;h3 id="storage">Storage&lt;/h3>
 &lt;ul>
 &lt;li>Four enterprise class HPC storage systems&lt;/li>
-&lt;li>Approximately 2 PB (2048 TB) of network storage&lt;/li>
+&lt;li>Approximately 6 PB of total network storage (3,072 TB production and 3,072 TB backup)&lt;/li>
 &lt;li>GPFS (NFS and SAMBA via GPFS)&lt;/li>
 &lt;li>Automatic snapshots and archival backups&lt;/li>
 &lt;/ul>

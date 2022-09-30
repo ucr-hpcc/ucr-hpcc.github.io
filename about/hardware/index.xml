@@ -9,12 +9,12 @@
 &lt;/ul>
 &lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
 &lt;ul>
-&lt;li>2PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
+&lt;li>3PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
 &lt;li>Home directories on dedicated system&lt;/li>
 &lt;/ul>
 &lt;h2 id="backup-system">Backup system&lt;/h2>
 &lt;ul>
-&lt;li>2PB GPFS storage&lt;/li>
+&lt;li>3PB GPFS storage&lt;/li>
 &lt;li>Geographically separated server room&lt;/li>
 &lt;/ul>
 &lt;h2 id="server-room">Server room&lt;/h2>
