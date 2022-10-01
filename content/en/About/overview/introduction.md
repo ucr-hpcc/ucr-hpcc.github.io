@@ -40,7 +40,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 + Usage instructions for HPCC's infrastructure are available under the manual section [here](https://hpcc.ucr.edu/manuals/). 
 + To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
-+ Training events are listed [here](https://hpcc.ucr.edu/events/small/).
++ The schedule for training events and monthly coffee hours is [here](https://hpcc.ucr.edu/events/small/).
 
 #### Infrastructure description 
 
