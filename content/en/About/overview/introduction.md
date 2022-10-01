@@ -24,7 +24,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 ### Quick start
 
-The following lists the most commonly visted pages of the HPCC site. They can also be access via navigation system outlined below.
+The following lists the most commonly visted pages of the HPCC site. They can also be access via the navigation system outlined below.
 
 #### Navigating and searching this site
 
@@ -40,8 +40,9 @@ The following lists the most commonly visted pages of the HPCC site. They can al
 
 #### HPC usage 
 
-+ [Usage instructions](https://hpcc.ucr.edu/manuals/) are provided in manual section. To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
-+ [Schedule for training events and monthly coffee](https://hpcc.ucr.edu/events/events/).
++ [Usage instructions](https://hpcc.ucr.edu/manuals/) are provided in the manual section. 
++ To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
++ [Schedule for training events and monthly coffee](https://hpcc.ucr.edu/events/events/)
 
 #### Infrastructure description 
 
@@ -50,7 +51,7 @@ The following lists the most commonly visted pages of the HPCC site. They can al
 
 #### Help and contacts
 
-+ For questions or requesting user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
++ For questions or requesting user accounts, please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 + For discussions with other users, please consider joining the [ucr-hpcc](https://ucr-hpcc.slack.com/) workspace on Slack.
 + [Contact information](https://hpcc.ucr.edu/about/overview/people/)
 
