@@ -12,7 +12,7 @@ statistical, life science and engineering disciplines.&lt;/p>
 This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. For details see &lt;a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&amp;HistoricalAwards=false">here&lt;/a>.&lt;/li>
 &lt;/div>
 &lt;h3 id="quick-start">Quick start&lt;/h3>
-&lt;p>The following lists the most commonly visted pages of the HPCC site. They can also be access via navigation system outlined below.&lt;/p>
+&lt;p>The following lists the most commonly visted pages of the HPCC site. They can also be access via the navigation system outlined below.&lt;/p>
 &lt;h4 id="navigating-and-searching-this-site">Navigating and searching this site&lt;/h4>
 &lt;ul>
 &lt;li>&lt;strong>Top menu&lt;/strong> located in bar on top of each page provides links to the main content categories&lt;/li>
@@ -27,8 +27,9 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 &lt;/ul>
 &lt;h4 id="hpc-usage">HPC usage&lt;/h4>
 &lt;ul>
-&lt;li>&lt;a href="https://hpcc.ucr.edu/manuals/">Usage instructions&lt;/a> are provided in manual section. To efficiently navigate the Manuals pages, use the &lt;a href="https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png">Manual dropdown&lt;/a> in the menu bar on the top of this site.&lt;/li>
-&lt;li>&lt;a href="https://hpcc.ucr.edu/events/events/">Schedule for training events and monthly coffee&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://hpcc.ucr.edu/manuals/">Usage instructions&lt;/a> are provided in the manual section.&lt;/li>
+&lt;li>To efficiently navigate the Manuals pages, use the &lt;a href="https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png">Manual dropdown&lt;/a> in the menu bar on the top of this site.&lt;/li>
+&lt;li>&lt;a href="https://hpcc.ucr.edu/events/events/">Schedule for training events and monthly coffee&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h4 id="infrastructure-description">Infrastructure description&lt;/h4>
 &lt;ul>
@@ -37,7 +38,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 &lt;/ul>
 &lt;h4 id="help-and-contacts">Help and contacts&lt;/h4>
 &lt;ul>
-&lt;li>For questions or requesting user accounts please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.&lt;/li>
+&lt;li>For questions or requesting user accounts, please email &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.&lt;/li>
 &lt;li>For discussions with other users, please consider joining the &lt;a href="https://ucr-hpcc.slack.com/">ucr-hpcc&lt;/a> workspace on Slack.&lt;/li>
 &lt;li>&lt;a href="https://hpcc.ucr.edu/about/overview/people/">Contact information&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>About: Access</title><link>https://hpcc.ucr.edu/about/overview/access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/overview/access/</guid><description>
