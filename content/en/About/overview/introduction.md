@@ -51,7 +51,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 + For questions or requesting user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 + For discussions with other users, please consider joining the [ucr-hpcc](https://ucr-hpcc.slack.com/) workspace on Slack.
-+ Management and contact information is available [here](https://hpcc.ucr.edu/about/overview/people/).
++ Contact information is available [here](https://hpcc.ucr.edu/about/overview/people/).
 
 
 
