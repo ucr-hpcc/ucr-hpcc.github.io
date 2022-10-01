@@ -70,7 +70,7 @@ Various ssh terminal applications are available for all major operating systems.
 
 + macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/) 
 + Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal option for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) are annimated usage introductions for MobaXterm.
-+ Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distributions will be sufficient. 
++ Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distribution will be sufficient. 
 + ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems. 
 
 ### Remote Graphics Support
