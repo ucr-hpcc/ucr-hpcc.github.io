@@ -46,7 +46,7 @@ uppercase character, number, and punctuation character.&lt;/p>
 &lt;ul>
 &lt;li>macOS: built-in macOS &lt;a href="https://support.apple.com/guide/terminal/welcome/mac">Terminal&lt;/a> or &lt;a href="https://iterm2.com/">iTerm2&lt;/a>&lt;/li>
 &lt;li>Windows: &lt;a href="http://mobaxterm.mobatek.net/">MobaXterm&lt;/a> is a very feature rich terminal option for Windows users. &lt;a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty&lt;/a> is an alternative, but outdated and not recommended anymore. &lt;a href="https://mobaxterm.mobatek.net/demo.html">Here&lt;/a> are annimated usage introductions for MobaXterm.&lt;/li>
-&lt;li>Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distributions will be sufficient.&lt;/li>
+&lt;li>Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distribution will be sufficient.&lt;/li>
 &lt;li>ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems.&lt;/li>
 &lt;/ul>
 &lt;h3 id="remote-graphics-support">Remote Graphics Support&lt;/h3>
