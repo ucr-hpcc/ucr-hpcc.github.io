@@ -24,6 +24,8 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 ### Quick start
 
+The following lists the most commonly visted pages of the HPCC site. They can also be access via navigation system outlined below.
+
 #### Navigating and searching this site
 
 + __Top menu__ located in bar on top of each page provides links to the main content categories 
@@ -32,26 +34,25 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 
 #### Gain access
 
-+ User account creation for accessing HPCC's infrastructure is described [here](https://hpcc.ucr.edu/about/overview/access/).
-+ The latest recharging rates can be found [here](https://hpcc.ucr.edu/about/overview/rates/).
-+ How to log in to the systems is outlined [here](https://hpcc.ucr.edu/manuals/access/login/).
++ [User account creation](https://hpcc.ucr.edu/about/overview/access/) for accessing HPCC's infrastructure 
++ [Latest recharging rates](https://hpcc.ucr.edu/about/overview/rates/) 
++ [Log in instructions](https://hpcc.ucr.edu/manuals/access/login/)
 
 #### HPC usage 
 
-+ Usage instructions for HPCC's infrastructure are available under the manual section [here](https://hpcc.ucr.edu/manuals/). 
-+ To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
-+ The schedule for training events and monthly coffee hours is [here](https://hpcc.ucr.edu/events/events/).
++ [Usage instructions](https://hpcc.ucr.edu/manuals/) are provided in manual section. To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
++ [Schedule for training events and monthly coffee](https://hpcc.ucr.edu/events/events/).
 
 #### Infrastructure description 
 
-+ The current inventory and architecture of HPCC's clusters and parallel storage systems is described [here](https://hpcc.ucr.edu/about/hardware/overview/).
-+ A facility description document for grant applications and related purposes can be downloaded [here](https://goo.gl/43eOwQ).
++ [Infrastructure description](https://hpcc.ucr.edu/about/hardware/overview/) of HPCC's clusters and parallel storage systems.
++ [Facility description document](https://goo.gl/43eOwQ) for grant applications and related purposes 
 
-#### Contacts and help 
+#### Help and contacts
 
 + For questions or requesting user accounts please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 + For discussions with other users, please consider joining the [ucr-hpcc](https://ucr-hpcc.slack.com/) workspace on Slack.
-+ Contact information is available [here](https://hpcc.ucr.edu/about/overview/people/).
++ [Contact information](https://hpcc.ucr.edu/about/overview/people/)
 
 
 
