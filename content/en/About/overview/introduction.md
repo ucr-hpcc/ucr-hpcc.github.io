@@ -42,7 +42,7 @@ The following lists the most commonly visted pages of the HPCC site. They can al
 
 + [Usage instructions](https://hpcc.ucr.edu/manuals/) are provided in the manual section. 
 + To efficiently navigate the Manuals pages, use the [Manual dropdown](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/static/img/Manual_Navigation.png) in the menu bar on the top of this site.
-+ [Schedule for training events and monthly coffee](https://hpcc.ucr.edu/events/events/)
++ [Event schedule](https://hpcc.ucr.edu/events/events/) for workshops and monthly user meetings 
 
 #### Infrastructure description 
 
