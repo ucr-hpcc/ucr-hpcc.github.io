@@ -6,7 +6,7 @@ weight: 1
 aliases:
     - /events_small.html
     - /events_small
-    - /events
+    - /events/small
 ---
 
 ## Event schedule
