@@ -41,9 +41,9 @@ the on-screen instructions. This requires to enter the current password once
 and the new password twice. New passwords need to be at least 8 characters
 long and meet at least 3 of the following requirments: lowercase character,
 uppercase character, number, and punctuation character.&lt;/p>
-&lt;p>&lt;strong>What to do if password/Duo is not working?&lt;/strong> If this happens then most often the login is blocked because a password was typed too many times incorrectly or
+&lt;p>&lt;strong>What to do if password/Duo is not working?&lt;/strong> If this happens then most often the login is blocked because a password was typed too many times incorrectly, or
 not changed after the first login (see above). To correct this, please request a password reset by emailing &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>.
-Remember, password/Duo based access is only possible if a user&amp;rsquo;s UCR NetID matches the corresponding HPCC account name. If this is not the case then
+Remember, password/Duo based access is only possible if a user&amp;rsquo;s UCR NetID matches the corresponding HPCC username. If this is not the case then
 UCR users can request to change their HPCC user account name to their NetID or use the &lt;a href="#ssh-keys">ssh key&lt;/a> based access method.&lt;/p>
 &lt;h3 id="terminal-options">Terminal Options&lt;/h3>
 &lt;p>Various ssh terminal applications are available for all major operating systems. Examples include:&lt;/p>
