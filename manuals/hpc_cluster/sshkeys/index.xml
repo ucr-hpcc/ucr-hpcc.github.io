@@ -281,7 +281,8 @@ access (&lt;em>e.g.&lt;/em> non-UCR users) will need to email their public SSH k
 systems admin can add their public SSH key to &lt;code>~/.ssh/authorized_keys&lt;/code> of the corresponding
 user account.&lt;/p>
 &lt;h4 id="b-gui-based-ssh-key-creation">(B) GUI-based SSH key creation&lt;/h4>
-&lt;p>&lt;font color="red"> Please use the followin GUI-based instructions for generating SSH keys on your own risk. The above command-line approach is much easier and reliable.&lt;/font>&lt;/p>
+&lt;p>&lt;font color="red"> Please use the following GUI-based instructions for generating SSH keys at your own risk. The above command-line approach is preferred since it is
+much easier and reliable.&lt;/font>&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Begin by clicking on the tools drop down on the upper menu bar&lt;/p>
