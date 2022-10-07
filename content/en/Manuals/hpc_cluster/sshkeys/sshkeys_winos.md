@@ -120,7 +120,8 @@ user account.
 
 #### (B) GUI-based SSH key creation
 
-<font color="red"> Please use the followin GUI-based instructions for generating SSH keys on your own risk. The above command-line approach is much easier and reliable.</font>
+<font color="red"> Please use the following GUI-based instructions for generating SSH keys at your own risk. The above command-line approach is preferred since it is 
+much easier and reliable.</font>
 
 1. Begin by clicking on the tools drop down on the upper menu bar
    
