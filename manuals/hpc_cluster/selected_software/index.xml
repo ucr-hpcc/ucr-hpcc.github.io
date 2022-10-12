@@ -1,3 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Selected Research Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/</link><description>Recent content in Selected Research Software Usage on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: AlphaFold Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/</guid><description>
 &lt;h2 id="alphafold2">AlphaFold2&lt;/h2>
-&lt;p>text text text&lt;/p></description></item></channel></rss>
+&lt;p>Description of AlphaFold2&lt;/p>
+&lt;h3 id="loading-the-module">Loading the module&lt;/h3>
+&lt;p>You can load AlphaFold2 using the following commands:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load alphafold/
+singularity shell $ALPHAFOLD_SING
+&lt;/code>&lt;/pre>
+&lt;p>You can also run AlphaFold2 with a gpu. If you wish to use a GPU, &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#gpu-jobs">log into a gpu node&lt;/a> and then use the following commands:&lt;/p>
+&lt;pre>&lt;code>module load alphafold/
+singularity shell --nv $ALPHAFOLD_SING
+&lt;/code>&lt;/pre>
+&lt;h3 id="using-alphafold-databases">Using Alphafold Databases&lt;/h3>
+&lt;p>When running the alphafold command, you will be asked for certain databases. These databases can be found under the path $DATABASE_DIR/alphafold.&lt;/p></description></item></channel></rss>
