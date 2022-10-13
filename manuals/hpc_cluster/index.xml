@@ -740,7 +740,7 @@ conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
 &lt;h4 id="more-info">More Info&lt;/h4>
 &lt;p>For more information regarding conda please visit &lt;a href="https://conda.io/docs/user-guide/">Conda Docs&lt;/a>.&lt;/p>
 &lt;h3 id="jupyter">Jupyter&lt;/h3>
-&lt;p>You can run jupyter as an interactive job using &lt;a href="../../hpc_cluster/jobs/#web-browser-access">tunneling&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
+&lt;p>You can run jupyter as an interactive job using &lt;a href="../../hpc_cluster/package_manage/#jupyter">tunneling&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
 &lt;h4 id="virtual-environment">Virtual Environment&lt;/h4>
 &lt;p>In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash"># Create a virtual environment, if you don't already have one
