@@ -139,7 +139,8 @@ Users with an HPCC cluster account can access them with the same login credentia
 authentication method with Duo is currently not required for these services. For load balancing RStudio Server has two instances:
 &lt;a href="https://rstudio.hpcc.ucr.edu">RStudio Server 1&lt;/a> and &lt;a href="http://rstudio2.hpcc.ucr.edu">RStudio Server 2&lt;/a>. If one of these services
 is slow or not available, users want to choose the alternative instance. A much more efficient method for using RStudio Server are
-custom compute node instances using &lt;code>srun&lt;/code>. This option is described &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance">here&lt;/a>.&lt;/p>
+custom compute node instances using &lt;code>srun&lt;/code>. This option is described &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance">here&lt;/a>.
+Related options for Jupyter are outlined &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#jupyter">here&lt;/a>.&lt;/p>
 &lt;h2 id="c-data-sharing-access">C. Data Sharing Access&lt;/h2>
 &lt;p>Users accessing HPCC&amp;rsquo;s infrastructure mainly for file transfers and data sharing want to
 follow the corresponding instructions on the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers">Data Sharing&lt;/a> page.
