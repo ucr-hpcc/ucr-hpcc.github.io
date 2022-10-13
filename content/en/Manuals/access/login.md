@@ -203,7 +203,7 @@ authentication method with Duo is currently not required for these services. For
 [RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
 is slow or not available, users want to choose the alternative instance. A much more efficient method for using RStudio Server are 
 custom compute node instances using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
-
+Related options for Jupyter are outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#jupyter).
 
 ## C. Data Sharing Access
 
