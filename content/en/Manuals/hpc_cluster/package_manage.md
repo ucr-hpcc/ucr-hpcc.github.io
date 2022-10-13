@@ -132,7 +132,7 @@ conda env remove --name myenv
 For more information regarding conda please visit [Conda Docs](https://conda.io/docs/user-guide/).
 
 ### Jupyter
-You can run jupyter as an interactive job using [tunneling](/hpc_cluster/jobs/#web-browser-access), or you can use the web portal [Jupyter-Hub](https://jupyter.hpcc.ucr.edu).
+You can run jupyter as an interactive job using [tunneling](/manuals/hpc_cluster/jobs/#web-browser-access), or you can use the web portal [Jupyter-Hub](https://jupyter.hpcc.ucr.edu).
 
 #### Virtual Environment
 In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:
