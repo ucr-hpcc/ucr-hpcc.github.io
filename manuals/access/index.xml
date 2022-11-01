@@ -3,7 +3,7 @@
 &lt;p>A user account is required to access HPCC&amp;rsquo;s research computing infrastructure.
 How to obtain a user account is described
 &lt;a href="https://hpcc.ucr.edu/about/facility/access/">here&lt;/a>. A new user&amp;rsquo;s login
-credentials (usersname and password) are emailed to the address provided in the
+credentials (username and password) are emailed to the address provided in the
 corresponding account request. For external users it is important to know that
 the below &lt;a href="#passwordduo">Password+DUO&lt;/a> multifactor authenication system is only
 available to UCR users. Thus, external users have to use the alternative &lt;a href="#ssh-keys">SSH
