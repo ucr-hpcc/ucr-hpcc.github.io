@@ -21,7 +21,7 @@ None currently observed.
   into some problems they had to replace the router. Aroung 4:00 AM in the
   morning (Nov 2nd) they were able to establish network access to the Genomics
   Building again. Unfortunately, during that that time cluster was not
-  accessible (_e.g._ via ssh). Processes running on the cluster were not be
+  accessible (_e.g._ via ssh). Processes running on the cluster were not 
   affected.
 
 ### 25-Jun-2021: Bigdata storage repaired
