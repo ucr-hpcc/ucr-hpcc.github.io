@@ -31,7 +31,8 @@ None currently observed.
 ### 1-Nov-2022: Network router repair
 
 * 9:00 PM - ITS is repairing a router in the Genomics Building. Unfortunately, the cluster will not be 
-accessible until the work is completed. According to the networking staff the repair should be completed soon.
+accessible (_e.g._ via ssh) until the work is completed. According to the networking staff the repair should be completed soon. 
+Processes running on the cluster should not be affected.
 
 ### 25-Jun-2021: Bigdata storage repaired
 
