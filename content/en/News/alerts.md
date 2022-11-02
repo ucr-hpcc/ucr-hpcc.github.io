@@ -28,6 +28,10 @@ If users need to get in contact with us then please email your questions to [sup
 None currently observed.
 -->
 
+### 1-Nov-2022: Network router maintenance
+
+* 8:00 PM - ITS is performing maintenance of a router in the Genomics Building. Unfortunately, this maintenance is taking longer than expected and cluster cannot be acceess until the work is completed. 
+
 ### 25-Jun-2021: Bigdata storage repaired
 
 * 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
