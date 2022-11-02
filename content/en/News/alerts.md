@@ -28,10 +28,10 @@ If users need to get in contact with us then please email your questions to [sup
 None currently observed.
 -->
 
-### 1-Nov-2022: Network router maintenance
+### 1-Nov-2022: Network router repair
 
-* 8:00 PM - ITS is performing maintenance of a router in the Genomics Building. Unfortunately, this maintenance is taking longer than expected and the cluster will not be 
-accessible until the work is completed which should be soon according the networking staff.
+* 8:00 PM - ITS is repairing a router in the Genomics Building. Unfortunately, the cluster will not be 
+accessible until the work is completed. According to the networking staff the repair should be completed soon.
 
 ### 25-Jun-2021: Bigdata storage repaired
 
