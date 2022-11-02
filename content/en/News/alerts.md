@@ -19,7 +19,7 @@ None currently observed.
 
 * 9:00 PM - ITS had to repair a router in the Genomics Building. Around 4:00 AM 
   in the morning (Nov 2nd) network access to the Genomics Building became available 
-  again. During that time window the cluster was not accessible (_e.g._ via ssh). 
+  again. During the affected time window the cluster was not accessible (_e.g._ via ssh). 
   Processes running on the cluster were not affected.
 
 ### 25-Jun-2021: Bigdata storage repaired
