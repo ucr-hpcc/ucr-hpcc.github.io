@@ -129,7 +129,7 @@ If you do not specify a partition then the intel partition is used by default.
 Here is a more complete example:
 
 ```bash
-srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
+srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --x11 --pty bash -l
 ```
 
 The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.
