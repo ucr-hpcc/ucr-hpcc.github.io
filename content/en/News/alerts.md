@@ -14,6 +14,9 @@ aliases:
 <!-- 
 None currently observed.
 -->
+### 22-Dec-2022: Network outage
+
+* 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
 
 ### 1-Nov-2022: Network router repair
 
