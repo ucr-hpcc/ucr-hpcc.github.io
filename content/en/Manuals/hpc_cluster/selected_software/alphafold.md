@@ -17,7 +17,7 @@ module load alphafold/
 singularity shell $ALPHAFOLD_SING
 ```
 You can also run AlphaFold2 with a gpu. If you wish to use a GPU, [log into a P100 gpu node](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#gpu-jobs) and then use the following commands:
-```
+```bash
 module load alphafold/
 singularity shell --nv $ALPHAFOLD_SING
 ```
