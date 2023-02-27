@@ -456,7 +456,7 @@ These include partition name, RAM, number of CPU cores, wall time limit, etc. Ad
 &lt;li>Load the latest versions of &lt;code>R&lt;/code> and &lt;code>RStudio Server&lt;/code> using the module system:&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-bash">module unload R
-module load R/4.1.2 # Or latest version (previously it was R/4.1.1_gcc-8.3.0)
+module load R/4.2.0 # Or latest version (previously it was R/4.1.2)
 module load rstudio-server/2022.02.0-443 # Or latest version (previously it was rstudio-server/2021.09.1-372)
 &lt;/code>&lt;/pre>
 &lt;ol start="4">
