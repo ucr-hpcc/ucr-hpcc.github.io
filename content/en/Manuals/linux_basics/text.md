@@ -177,7 +177,7 @@ This involves the following steps.
 
    ```bash
    module unload R
-   module load R/4.2.0 # Or latest version (previously it was R/4.1.2)
+   module load R/4.2.2 # Or latest version (previously it was R/4.1.2)
    module load rstudio-server/2022.02.0-443 # Or latest version (previously it was rstudio-server/2021.09.1-372)
    ```
 
