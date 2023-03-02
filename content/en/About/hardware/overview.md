@@ -13,7 +13,7 @@ aliases:
 
 * Over 6,500 CPU cores (60% Intel, 40% AMD)
 * 512-1024GB RAM per node
-* GPU (K80, P100): 67,000 cuda cores
+* GPU: 6x K80, 2x P100, 8x A100 
 * IB network @ 56Gbs
 * Queueing system Slurm
 

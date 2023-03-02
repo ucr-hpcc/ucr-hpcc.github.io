@@ -52,5 +52,6 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory
     * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (~20000 CUDA cores) and 512 GB memory
     * gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (~5200 CUDA cores) and 256 GB memory
+    * gpu06: with 128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB) and 1,024 GB memory
 * Intel
     * i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory
