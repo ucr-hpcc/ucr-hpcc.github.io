@@ -11,8 +11,9 @@ weight: 7
 ## Facility 
 
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
-* [Jordan Hayes](mailto:zzz@zzz.edu), Sr. HPC Systems Administrator
+* [Austin Leong](mailto:aleon008@ucr.edu), Sr. HPC Systems Administrator
 * [Tomin Kappiarumalayil](mailto:tkapp001@ucr.edu), HPC Systems Administrator, Assistant
+* [Emerson Jacobson](mailto:ejaco020@ucr.edu), HPC Systems Administrator, Assistant
 
 ## Advisory Board (executive committee)
 
@@ -21,8 +22,9 @@ The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3
 * UCR faculty members with hands-on experience in HPC
     * Jason E Stajich (Microbiology & Plant Pathology)
     * Wenxiu Ma (Statistics)
-    * Stefano Lonardi (CS)
+    * Stefano Lonardi (CSE)
     * Laura Sales (Physics)
+    * Ahmed Eldawy (CSE)
     * Leonard Mueller (Chemistry)
 
 * HPC expert staff members from UCR
