@@ -25,6 +25,7 @@ The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3
     * Stefano Lonardi (CSE)
     * Laura Sales (Physics)
     * Ahmed Eldawy (CSE)
+    * Xinping Cui (Statistics)
     * Leonard Mueller (Chemistry)
 
 * HPC expert staff members from UCR
