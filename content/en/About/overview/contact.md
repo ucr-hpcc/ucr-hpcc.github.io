@@ -23,6 +23,8 @@ The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3
     * Jason E Stajich (Microbiology & Plant Pathology)
     * Wenxiu Ma (Statistics)
     * Stefano Lonardi (CSE)
+    * Mark Alber (Mathematics)
+    * Adam Godzik (Biomedical Sciences)
     * Laura Sales (Physics)
     * Ahmed Eldawy (CSE)
     * Xinping Cui (Statistics)
