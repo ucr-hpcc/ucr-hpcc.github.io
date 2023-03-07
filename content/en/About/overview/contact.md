@@ -19,7 +19,7 @@ weight: 7
 
 The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3p1VK).
 
-* UCR faculty members with hands-on experience in HPC
+* Faculty members
     * Jason E Stajich (Microbiology & Plant Pathology)
     * Wenxiu Ma (Statistics)
     * Stefano Lonardi (CSE)
