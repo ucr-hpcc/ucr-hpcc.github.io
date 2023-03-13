@@ -1,6 +1,6 @@
 ---
-title: "VSCode"
-linkTitle: "VSCode Usage on HPCC"
+linkTitle: "VSCode"
+title: "VSCode Usage on HPCC"
 type: docs
 weight: 1
 ---
