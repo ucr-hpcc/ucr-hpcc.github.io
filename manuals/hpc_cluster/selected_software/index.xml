@@ -48,4 +48,37 @@ singularity shell --nv $ALPHAFOLD_SING
 --output_dir=&amp;lt;path to output directory&amp;gt;
 &lt;/code>&lt;/pre>
 &lt;p>Remember to fill in your fasta path and output dir if you wish to use these templates.&lt;/p>
-&lt;p>Additionally, these are not the only two methods of running AlphaFold, and different modes might require different sets of arguments to be passed to &lt;code>alphafold.py&lt;/code>. For more details regarding what parameters are available, as well as more examples, please refer to the &lt;a href="https://github.com/deepmind/alphafold">Alphafold Github Repo&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>Additionally, these are not the only two methods of running AlphaFold, and different modes might require different sets of arguments to be passed to &lt;code>alphafold.py&lt;/code>. For more details regarding what parameters are available, as well as more examples, please refer to the &lt;a href="https://github.com/deepmind/alphafold">Alphafold Github Repo&lt;/a>.&lt;/p></description></item><item><title>Manuals: VSCode</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/change-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/change-me/</guid><description>
+&lt;h2 id="using-vscode-on-the-cluster">Using VSCode on the Cluster&lt;/h2>
+&lt;p>VSCode is a code editor that can run locally on your computer, or while connected to the cluster.&lt;/p>
+&lt;p>When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.&lt;/p>
+&lt;p>Instead, we can use a feature of VSCode: tunnels.&lt;/p>
+&lt;h2 id="setting-up-vscode-tunnels">Setting up VSCode Tunnels&lt;/h2>
+&lt;p>Using a tunnel allows us to work on a compute node, rather than on a head node. This allows us to use more resources than we would normally be allowed to on a head node.&lt;/p>
+&lt;h3 id="installing-the-remote-tunnels-extension">Installing the Remote Tunnels extension&lt;/h3>
+&lt;p>On your local machine, install the &amp;ldquo;Remote - Tunnels&amp;rdquo; extension.&lt;/p>
+&lt;p>&lt;img src="../../../img/vscode-ext-install.png" alt="vscodeinstall">&lt;/p>
+&lt;h3 id="starting-vscode-tunnel-on-the-cluster">Starting VSCode Tunnel on the Cluster&lt;/h3>
+&lt;p>Create an interactive session using srun&lt;/p>
+&lt;pre>&lt;code class="language-sh">srun -p batch -t 5:00:00 --pty -c 4 --mem=4g bash -l # Customize as needed
+&lt;/code>&lt;/pre>
+&lt;p>Load the VSCode module and start the tunnel&lt;/p>
+&lt;pre>&lt;code class="language-sh">module load vscode
+code tunnel
+&lt;/code>&lt;/pre>
+&lt;p>The program will provide you with a code and ask you to verify on GitHub.com. Follow the steps for authorization.
+Once you get to the &amp;ldquo;Congratulations, you&amp;rsquo;re all set!&amp;rdquo; page, the terminal will update with a new line asking you to open another link.
+At this point you have 2 ways to access: via a web browser, or using the extension that we previously installed. Make sure that you keep
+the server running in the background, as it is what allows the connection to occur.&lt;/p>
+&lt;h3 id="using-a-web-browser">Using A Web Browser&lt;/h3>
+&lt;p>After authorizing VSCode, you can use the link given to access your session. The URL should be similar to &lt;code>https://vscode.dev/tunnel/...&lt;/code>.
+The environment is very similar to the desktop program, though some features might be missing.&lt;/p>
+&lt;h3 id="using-the-vscode-extension">Using the VSCode Extension&lt;/h3>
+&lt;p>After install the &amp;ldquo;Remote - Tunnels&amp;rdquo; extension on your local machine, connect to the Tunnel session that was previously created using the green &amp;ldquo;&amp;gt;&amp;lt;&amp;rdquo;
+icon in the bottom left of VSCode. Select the &amp;ldquo;Connect to Tunnel&amp;hellip;&amp;rdquo; option, then select the tunnel we created earlier.&lt;/p>
+&lt;p>&lt;img src="../../../img/vscode-tunnel1.png" alt="vscodeinstall">&lt;/p>
+&lt;p>&lt;img src="../../../img/vscode-tunnel2.png" alt="vscodeinstall">&lt;/p>
+&lt;p>After VSCode connects, you should be able to open Files and Folders on the cluster as if it were your local machine.&lt;/p>
+&lt;h3 id="cleaning-up">Cleaning Up&lt;/h3>
+&lt;p>Once you have finished, make sure to close VSCode (locally or using your web browser). Then stop the Tunnel from running on the cluster using &lt;code>Ctrl+C&lt;/code>.
+Once the program had been stopped, you can exit out of the interactive srun session and close your terminal.&lt;/p></description></item></channel></rss>
