@@ -209,7 +209,7 @@ ln -s ~/www-project ~/.html/
 ```
 
 Now, test it out by pointing your web-browser to https://cluster.hpcc.ucr.edu/~username/www-project/
-Be sure to replace `username` with your actual user name.
+Be sure to replace `username` with your actual user name. **The forward slash at the end is important.**
 
 ## Password Protect Web Pages
 
