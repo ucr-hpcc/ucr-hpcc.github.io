@@ -1135,7 +1135,7 @@ echo '&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;' &amp;gt; ~/www-project/index.
 ln -s ~/www-project ~/.html/
 &lt;/code>&lt;/pre>
 &lt;p>Now, test it out by pointing your web-browser to &lt;a href="https://cluster.hpcc.ucr.edu/~username/www-project/">https://cluster.hpcc.ucr.edu/~username/www-project/&lt;/a>
-Be sure to replace &lt;code>username&lt;/code> with your actual user name.&lt;/p>
+Be sure to replace &lt;code>username&lt;/code> with your actual user name. &lt;strong>The forward slash at the end is important.&lt;/strong>&lt;/p>
 &lt;h2 id="password-protect-web-pages">Password Protect Web Pages&lt;/h2>
 &lt;p>Files in web directories can be password protected.
 First create a password file and then create a new user:&lt;/p>
