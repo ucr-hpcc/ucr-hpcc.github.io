@@ -1403,17 +1403,17 @@ interactive programming environments, such as command-line UIs and R. Since the 
 environments are managed independently, one can install and use them in parallel on the
 same system without interfering with each other. The usage of Neovim is almost
 identical to Vim.&lt;/p>
-&lt;h4 id="open-file-nvim">Open file Nvim&lt;/h4>
+&lt;p>&lt;strong>Open file with Nvim&lt;/strong>&lt;/p>
 &lt;pre>&lt;code class="language-sh">nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 &lt;/code>&lt;/pre>
-&lt;h4 id="modes">Modes&lt;/h4>
+&lt;p>&lt;strong>Three main modes&lt;/strong>&lt;/p>
 &lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
 &lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
 &lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
-&lt;h4 id="important-modifier-keys-to-control-vimnvim">Important modifier keys to control vim/nvim&lt;/h4>
+&lt;p>&lt;strong>Important modifier keys to control vim/nvim&lt;/strong>&lt;/p>
 &lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
 the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
 All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
@@ -1423,14 +1423,14 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
 &lt;/ul>
-&lt;h4 id="mouse-support">Mouse support&lt;/h4>
+&lt;p>&lt;strong>Mouse support&lt;/strong>&lt;/p>
 &lt;p>When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:set mouse=n&lt;/code> # Enables mouse support, also try a option&lt;/li>
 &lt;li>&lt;code>:set mouse-=n&lt;/code> # Disables mouse support&lt;/li>
 &lt;/ul>
 &lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
-&lt;h4 id="moving-round">Moving round&lt;/h4>
+&lt;p>&lt;strong>Moving round&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
@@ -1438,7 +1438,7 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
-&lt;h4 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h4>
+&lt;p>&lt;strong>Important keybindings for nvim&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
 &lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
@@ -1451,7 +1451,7 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
 &lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
-&lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
+&lt;p>&lt;strong>Useful resources for learning vim/nvim&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://vimdoc.sourceforge.net/">Official Vim Documentation&lt;/a>&lt;/li>
