@@ -1394,10 +1394,10 @@ provide only partial solutions. The following focuses on using Nvim and Tmux.&lt
 &lt;h3 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h3>
 &lt;p>Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable.
 It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are:&lt;/p>
-&lt;ol>
+&lt;ul>
 &lt;li>Work in a terminal session cannot get lost due to internet disruptions or even when switching computers.&lt;/li>
-&lt;li>Detach and re-attach to a terminal session, allows to work from multiple computers at the same terminal session.&lt;/li>
-&lt;/ol>
+&lt;li>It power charges most termials with additional functionalities.&lt;/li>
+&lt;/ul>
 &lt;p>An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux.&lt;/p>
 &lt;h4 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h4>
 &lt;ul>
