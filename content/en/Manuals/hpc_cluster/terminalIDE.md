@@ -28,12 +28,22 @@ Emacs can be used as an alternative to Nvim.
 
 ### Vim overview
 
-The following opens a file (here `myfile`) with nvim (or vim). If nvim is not found then
-it might need to be loaded with `module load neovim` first.
+The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
+found then it might need to be loaded with `module load neovim` first. The main
+advantages of Neovim compared to Vim are its better performance and its
+built-in terminal emulator facilitating the communication among Neovim and
+interactive programming environments, such as command-line UIs and R. Since the Vim and Neovim
+environments are managed independently, one can install and use them in parallel on the
+same system without interfering with each other. The usage of Neovim is almost
+identical to Vim.
+
+#### Open file Nvim 
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
+
+#### Modes
 
 Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
 
@@ -41,7 +51,7 @@ Once you are in Nvim, there are three main modes: normal, insert and command mod
 * `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
-Important modifier keys to control vim/nvim
+#### Important modifier keys to control vim/nvim
 
 Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
 the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
@@ -52,16 +62,16 @@ All other commands are typed in the normal mode after pushing the `Esc` key.
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
 
-Mouse support 
+#### Mouse support 
 
-When enabled one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
+When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
 
 * `:set mouse=n`  # Enables mouse support, also try a option
 * `:set mouse-=n` # Disables mouse support
 
 To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
 
-Moving round
+#### Moving round
 
 * `arrow_keys`: Move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
@@ -69,14 +79,8 @@ Moving round
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
-### Important keybindings for nvim
+#### Important keybindings for nvim
 
-The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.
-
-__Nvim commands__
-
-* `\rf`: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an `R` directory under `~/`. If so approve this action by pressing `y`. 
-* `spacebar`: sends code from vim to R; here remapped in `init.vim` from default `\l`
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
 * `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
 * `Ctrl-w w`: jumps cursor to R viewport and back; toggle between insert (`i`) and command (`Esc`) mode is required for navigation and controlling the environment.
@@ -86,8 +90,6 @@ __Nvim commands__
 * `:vertical resize <+5 or -5>`: resizes width by specified value
 * `Ctrl-w H` or `Ctrl-w K`: toggles between horizontal/vertical splits
 * `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
-* `:h nvim-R`: opens nvim-R's user manual; navigation works the same as for any Vim/Nvim help document
-* `:Rhelp fct_name`: opens help for a function from nvim's command mode with text completion support
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
 ### Useful resources for learning vim/nvim
