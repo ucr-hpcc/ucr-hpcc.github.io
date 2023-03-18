@@ -23,10 +23,8 @@ to learn how to work in a pure command-line interface. GUI-based coding
 environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
 Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
 [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-provide only partial solutions. In addition, there is a lot of value of knowing
-how to work in an environment that is not restricted to a specific programming
-language. The following focuses on using Nvim and Tmux. Emacs can be used as an
-alternative to Nvim.
+provide only partial solutions. The following focuses on using Nvim and Tmux.
+Emacs can be used as an alternative to Nvim.
 
 ### Vim overview
 
@@ -43,16 +41,33 @@ Once you are in Nvim, there are three main modes: normal, insert and command mod
 * `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
+Important modifier keys to control vim/nvim
+
 Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
 the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
 All other commands are typed in the normal mode after pushing the `Esc` key. 
-
-Important modifier keys to control vim/nvim
 
 * `:w`: save changes to file. If you are in editing mode you have to hit `Esc` first.
 * `:q`: quit file that has not been changed
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
+
+Mouse support 
+
+When enabled one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
+
+* `:set mouse=n`  # Enables mouse support, also try a option
+* `:set mouse-=n` # Disables mouse support
+
+To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
+
+Moving round
+
+* `arrow_keys`: Move cursor in the text 
+* `Fn Up/Down`: faster scrolling via paging.
+* `G` or `gg`: jump to end of document and back to beginning. 
+* `w` or `b`: move forward and backward by word
+* `)` or `(`: move forward and backward by sentence
 
 ### Important keybindings for nvim
 
