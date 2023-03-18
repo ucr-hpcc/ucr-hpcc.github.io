@@ -20,6 +20,9 @@ Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
 [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
 provide only partial solutions. The following focuses on using Nvim and Tmux.
 
+<center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"></center>
+<center>Tmux: Window Split into Several Panes</center>
+
 
 ## Tmux: virtual terminal multiplexer 
 
