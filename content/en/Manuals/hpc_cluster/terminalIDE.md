@@ -73,9 +73,9 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 
 #### Moving round
 
-* `arrow_keys`: Move cursor in the text 
+* `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
-* `G` or `gg`: jump to end of document and back to beginning. 
+* `G` or `gg`: jump to end of document and back to beginning 
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
