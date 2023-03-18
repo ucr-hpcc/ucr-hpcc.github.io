@@ -1383,11 +1383,14 @@ To get a list of usernames:&lt;/p>
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
 &lt;h2 id="terminal-ides">Terminal IDEs&lt;/h2>
 &lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
-HPC cluster that are useful for a variety of computer languages.&lt;/p>
+HPC cluster that are useful when working remotely and support a variety of computer languages.
+If a more graphical environment is preferred, this introduction how to use &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
+on the cluster might be of interest.&lt;/p>
 &lt;h2 id="vimnvim-basics">Vim/Nvim Basics&lt;/h2>
 &lt;p>To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI environments like
-RStudio and similar coding environments are not suitable for this. In addition,
+to learn how to work in a pure command-line interface. GUI-based coding environments
+like &lt;a href="https://jupyter.hpcc.ucr.edu/">JupyterHub&lt;/a>, &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server">RStudio Server&lt;/a> and &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a> are not a complete
+replacement for this need. In addition,
 there is a lot of value of knowing how to work in an environment that is not
 restricted to a specific programming language. Therefore, for working on remote
 systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful
