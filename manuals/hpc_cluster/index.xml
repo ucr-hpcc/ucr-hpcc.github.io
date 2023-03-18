@@ -1438,11 +1438,11 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
-&lt;h4 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h4>
+&lt;h4 id="important-keybindings">Important keybindings&lt;/h4>
 &lt;ul>
 &lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
 &lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
-&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
+&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to other viewport and back&lt;/li>
 &lt;li>&lt;code>Ctrl-w r&lt;/code>: swaps viewports&lt;/li>
 &lt;li>&lt;code>Ctrl-w =&lt;/code>: resizes splits to equal size&lt;/li>
 &lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
