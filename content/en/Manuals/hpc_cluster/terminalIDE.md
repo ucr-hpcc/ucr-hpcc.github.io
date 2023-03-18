@@ -15,11 +15,21 @@ HPC cluster that are useful when working remotely.
 If a more graphical environment is preferred, please visit this [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
 tutorial.
 
-### Tmux 
+### Tmux: virtual terminal multiplexer 
 
-Tmux is a virtual terminal multiplexer that provides functionality for re-attachable terminal sessions. 
-A major advantages of this functionality is that work in a terminal session cannot get lost due to 
-internet disruptions or even when switching computers.
+Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable. 
+It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are: 
+
+1. Work in a terminal session cannot get lost due to internet disruptions or even when switching computers. 
+2. Detach and re-attach to a terminal session, allows to work from multiple computers at the same terminal session.
+
+An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux. 
+
+#### Important considerations for virtual tmux sessions 
+
+* Both tmux and screen sessions run on the system, where they were initialized. 
+* To reattach to a specific session on a remote system like the HPCC cluster, one needs to first login to the same node (here headnode) and then re-attach to the corresponding tmux session. 
+* It is important not to run tmux (or screen) sessions on computer nodes since they are persistent. Instead run sessions on a headnode, and then login to a computer node from tmux via `srun` or just submit jobs from tmux session using `sbatch`.
 
 #### Start Tmux
 
