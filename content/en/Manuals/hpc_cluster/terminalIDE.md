@@ -120,6 +120,9 @@ easily install and use them in parallel on the same system without interfering w
 each other. The usage of Neovim is almost identical to Vim. Emacs is a powerful alternative 
 that can be used as an alternative to Nvim. 
 
+<center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif"></center>
+<center>Neovim Example with Autocompletion</center>
+
 ### Nvim introduction
 
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
@@ -175,6 +178,7 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
+
 ### Important keybindings
 
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
@@ -194,6 +198,11 @@ For example, search and replace with regular expression support
 
 * `/` or `?`: search in text forward and backward
 * `:%s/search_pattern/replace_pattern/cg`: replacement syntax 
+
+### Useful set command
+
+* `set number` or `set nonumber`: toggle for turning line nubers on/off
+* `set syntax=bash`: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with `set syntax=off`
 
 ### Visual mode
 
