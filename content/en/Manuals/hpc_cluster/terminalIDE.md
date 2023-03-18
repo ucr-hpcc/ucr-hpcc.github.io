@@ -13,7 +13,13 @@ aliases:
 This page introduces several terminal-based working environments available on UCR's
 HPC cluster that are useful when working remotely. 
 If a more graphical environment is preferred, please visit this [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-tutorial.
+tutorial. To work efficiently on remote systems like a computer cluster, it is essential
+to learn how to work in a pure command-line interface. GUI-based coding
+environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
+Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
+[VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
+provide only partial solutions. The following focuses on using Nvim and Tmux.
+
 
 ### Tmux: virtual terminal multiplexer 
 
@@ -94,19 +100,15 @@ __Session-level commands__
 
 ### Vim/Nvim overview
 
-To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI-based coding
-environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
-Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
-[VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-provide only partial solutions. The following focuses on using Nvim and Tmux.
-Emacs can be used as an alternative to Nvim. The main
-advantages of Neovim compared to Vim are its better performance and its
-built-in terminal emulator facilitating the communication among Neovim and
-interactive programming environments, such as command-line UIs and R. Since the Vim and Neovim
-environments are managed independently, one can install and use them in parallel on the
-same system without interfering with each other. The usage of Neovim is almost
-identical to Vim.
+Vim is a widely used, extremely powerful and versatile code/text editor that is
+usually available on most Linux and Unix systems by default. The newer version is called
+Neovim (nvim). The main advantages of Neovim compared to Vim are its better
+performance and its built-in terminal emulator facilitating the communication
+among Neovim and interactive programming environments, such as command-lines
+and R. Since the Vim and Neovim environments are managed independently, one can
+easily install and use them in parallel on the same system without interfering with
+each other. The usage of Neovim is almost identical to Vim. Emacs is a powerful alternative 
+that can be used as an alternative to Nvim. 
 
 ### Nvim introduction
 
