@@ -26,8 +26,8 @@ provide only partial solutions. The following focuses on using Nvim and Tmux.
 Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable. 
 It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are: 
 
-1. Work in a terminal session cannot get lost due to internet disruptions or even when switching computers. 
-2. Detach and re-attach to a terminal session, allows to work from multiple computers at the same terminal session.
+* Work in a terminal session cannot get lost due to internet disruptions or even when switching computers. 
+* It power charges most termials with additional functionalities.
 
 An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux. 
 
