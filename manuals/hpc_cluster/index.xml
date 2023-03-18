@@ -1395,17 +1395,25 @@ Server&lt;/a> and
 provide only partial solutions. The following focuses on using Nvim and Tmux.
 Emacs can be used as an alternative to Nvim.&lt;/p>
 &lt;h3 id="vim-overview">Vim overview&lt;/h3>
-&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not found then
-it might need to be loaded with &lt;code>module load neovim&lt;/code> first.&lt;/p>
+&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not
+found then it might need to be loaded with &lt;code>module load neovim&lt;/code> first. The main
+advantages of Neovim compared to Vim are its better performance and its
+built-in terminal emulator facilitating the communication among Neovim and
+interactive programming environments, such as command-line UIs and R. Since the Vim and Neovim
+environments are managed independently, one can install and use them in parallel on the
+same system without interfering with each other. The usage of Neovim is almost
+identical to Vim.&lt;/p>
+&lt;h4 id="open-file-nvim">Open file Nvim&lt;/h4>
 &lt;pre>&lt;code class="language-sh">nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 &lt;/code>&lt;/pre>
+&lt;h4 id="modes">Modes&lt;/h4>
 &lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
 &lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
 &lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
-&lt;p>Important modifier keys to control vim/nvim&lt;/p>
+&lt;h4 id="important-modifier-keys-to-control-vimnvim">Important modifier keys to control vim/nvim&lt;/h4>
 &lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
 the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
 All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
@@ -1415,14 +1423,14 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
 &lt;/ul>
-&lt;p>Mouse support&lt;/p>
-&lt;p>When enabled one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
+&lt;h4 id="mouse-support">Mouse support&lt;/h4>
+&lt;p>When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:set mouse=n&lt;/code> # Enables mouse support, also try a option&lt;/li>
 &lt;li>&lt;code>:set mouse-=n&lt;/code> # Disables mouse support&lt;/li>
 &lt;/ul>
 &lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
-&lt;p>Moving round&lt;/p>
+&lt;h4 id="moving-round">Moving round&lt;/h4>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: Move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
@@ -1430,12 +1438,8 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
-&lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
-&lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
-&lt;p>&lt;strong>Nvim commands&lt;/strong>&lt;/p>
+&lt;h4 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h4>
 &lt;ul>
-&lt;li>&lt;code>\rf&lt;/code>: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an &lt;code>R&lt;/code> directory under &lt;code>~/&lt;/code>. If so approve this action by pressing &lt;code>y&lt;/code>.&lt;/li>
-&lt;li>&lt;code>spacebar&lt;/code>: sends code from vim to R; here remapped in &lt;code>init.vim&lt;/code> from default &lt;code>\l&lt;/code>&lt;/li>
 &lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
 &lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
 &lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
@@ -1445,8 +1449,6 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
 &lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
 &lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
-&lt;li>&lt;code>:h nvim-R&lt;/code>: opens nvim-R&amp;rsquo;s user manual; navigation works the same as for any Vim/Nvim help document&lt;/li>
-&lt;li>&lt;code>:Rhelp fct_name&lt;/code>: opens help for a function from nvim&amp;rsquo;s command mode with text completion support&lt;/li>
 &lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
 &lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
