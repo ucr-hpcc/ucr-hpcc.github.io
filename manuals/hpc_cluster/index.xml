@@ -1386,10 +1386,20 @@ To get a list of usernames:&lt;/p>
 HPC cluster that are useful when working remotely.
 If a more graphical environment is preferred, please visit this &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
 tutorial.&lt;/p>
-&lt;h3 id="tmux">Tmux&lt;/h3>
-&lt;p>Tmux is a virtual terminal multiplexer that provides functionality for re-attachable terminal sessions.
-A major advantages of this functionality is that work in a terminal session cannot get lost due to
-internet disruptions or even when switching computers.&lt;/p>
+&lt;h3 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h3>
+&lt;p>Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable.
+It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are:&lt;/p>
+&lt;ol>
+&lt;li>Work in a terminal session cannot get lost due to internet disruptions or even when switching computers.&lt;/li>
+&lt;li>Detach and re-attach to a terminal session, allows to work from multiple computers at the same terminal session.&lt;/li>
+&lt;/ol>
+&lt;p>An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux.&lt;/p>
+&lt;h4 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h4>
+&lt;ul>
+&lt;li>Both tmux and screen sessions run on the system, where they were initialized.&lt;/li>
+&lt;li>To reattach to a specific session on a remote system like the HPCC cluster, one needs to first login to the same node (here headnode) and then re-attach to the corresponding tmux session.&lt;/li>
+&lt;li>It is important not to run tmux (or screen) sessions on computer nodes since they are persistent. Instead run sessions on a headnode, and then login to a computer node from tmux via &lt;code>srun&lt;/code> or just submit jobs from tmux session using &lt;code>sbatch&lt;/code>.&lt;/li>
+&lt;/ul>
 &lt;h4 id="start-tmux">Start Tmux&lt;/h4>
 &lt;ul>
 &lt;li>&lt;code>module load tmux&lt;/code>: only if not in your .bashrc of HPCC cluster account&lt;/li>
