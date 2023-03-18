@@ -1477,6 +1477,8 @@ and R. Since the Vim and Neovim environments are managed independently, one can
 easily install and use them in parallel on the same system without interfering with
 each other. The usage of Neovim is almost identical to Vim. Emacs is a powerful alternative
 that can be used as an alternative to Nvim.&lt;/p>
+&lt;center>&lt;img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif">&lt;/center>
+&lt;center>Neovim Example with Autocompletion&lt;/center>
 &lt;h3 id="nvim-introduction">Nvim introduction&lt;/h3>
 &lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not
 found then it might need to be loaded with &lt;code>module load neovim&lt;/code> first. A custom
@@ -1541,6 +1543,11 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;ul>
 &lt;li>&lt;code>/&lt;/code> or &lt;code>?&lt;/code>: search in text forward and backward&lt;/li>
 &lt;li>&lt;code>:%s/search_pattern/replace_pattern/cg&lt;/code>: replacement syntax&lt;/li>
+&lt;/ul>
+&lt;h3 id="useful-set-command">Useful set command&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>set number&lt;/code> or &lt;code>set nonumber&lt;/code>: toggle for turning line nubers on/off&lt;/li>
+&lt;li>&lt;code>set syntax=bash&lt;/code>: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with &lt;code>set syntax=off&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h3 id="visual-mode">Visual mode&lt;/h3>
 &lt;ul>
