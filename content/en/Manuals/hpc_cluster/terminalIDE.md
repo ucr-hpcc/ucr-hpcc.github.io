@@ -107,10 +107,15 @@ For example, search and replace with regular expression support
 
 #### Copy and delete lines
 
-* `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with p as above.
+* `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with `p` as above.
 * `dd`: deletes line where cursor is or those that are selected via visual mode.
 
-#### Splitting windows and opening multiple files
+#### File browser built into vim: `NERDtree`
+
+NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration 
+with `Install_Nvim-R_Tmux`. To use NERDtree, open a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree.
+The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
+
 
 #### Useful resources for learning vim/nvim
 
