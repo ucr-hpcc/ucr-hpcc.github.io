@@ -21,7 +21,7 @@ Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
 provide only partial solutions. The following focuses on using Nvim and Tmux.
 
 
-### Tmux: virtual terminal multiplexer 
+## Tmux: virtual terminal multiplexer 
 
 Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable. 
 It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are: 
@@ -41,13 +41,13 @@ requried for following examples) and will make changes to a user’s `.bashrc`
 and `.tmux.conf` files. These changes can be undone by following instructions
 printed to screen during install.
 
-#### Important considerations for virtual tmux sessions 
+### Important considerations for virtual tmux sessions 
 
 * Both tmux and screen sessions run on the system, where they were initialized. 
 * To reattach to a specific session on a remote system like the HPCC cluster, one needs to first login to the same node (here headnode) and then re-attach to the corresponding tmux session. 
 * It is important not to run tmux (or screen) sessions on computer nodes since they are persistent. Instead run sessions on a headnode, and then login to a computer node from tmux via `srun` or just submit jobs from tmux session using `sbatch`.
 
-#### Start Tmux
+### Start Tmux
 
 * `module load tmux`: only if not in your .bashrc of  HPCC cluster account
 * `tmux`: starts a new tmux session
@@ -55,7 +55,7 @@ printed to screen during install.
 * `tmux attach -t <id>`: attaches to a specific session 
 * `tmux ls`: lists existing tmux sessions 
 
-#### Prefix 
+### Prefix 
 
 The prefix for controlling tmux depends on a user's settings.
 
@@ -69,7 +69,7 @@ unbind C-b
 set -g prefix C-a 
 ```
 
-#### Mouse Support
+### Mouse Support
 
 Mouse support for tmux can be enabled with following command.
 
@@ -77,7 +77,7 @@ Mouse support for tmux can be enabled with following command.
 
 To turn mouse support on by default, include in `~/.tmux.conf` this line: `set -g mouse on`
 
-#### Important keybindings for tmux 
+### Important keybindings for tmux 
 
 __Pane-level commands__
 
@@ -108,7 +108,7 @@ __Session-level commands__
 * `Ctrl-a : kill-session`: kills a session from tmux command mode that can be initiated with Ctrl-a :
 
 
-### Vim/Nvim overview
+## Vim/Nvim overview
 
 Vim is a widely used, extremely powerful and versatile code/text editor that is
 usually available on most Linux and Unix systems by default. The newer version is called
@@ -133,13 +133,13 @@ is optional (not requried for following examples) and will make changes to a
 user's `.bashrc` and `.tmux.conf` files. These changes can be undone by
 following instructions printed to screen during install.  
 
-#### Open file with Nvim 
+### Open file with Nvim 
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
 
-#### Three main modes
+### Three main modes
 
 Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
 
@@ -147,7 +147,7 @@ Once you are in Nvim, there are three main modes: normal, insert and command mod
 * `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
-#### Important modifier keys to control vim/nvim
+### Important modifier keys to control vim/nvim
 
 Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
 the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
@@ -158,7 +158,7 @@ All other commands are typed in the normal mode after pushing the `Esc` key.
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
 
-#### Mouse support
+### Mouse support
 
 When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
 
@@ -167,7 +167,7 @@ When enabled, one can position the cursor anywhere with the mouse as well as res
 
 To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
 
-#### Moving round
+### Moving round
 
 * `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
@@ -175,7 +175,7 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
-#### Important keybindings
+### Important keybindings
 
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
 * `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
@@ -188,31 +188,30 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
-#### Powerful features of command mode
+### Powerful features of command mode
 
 For example, search and replace with regular expression support
 
 * `/` or `?`: search in text forward and backward
 * `:%s/search_pattern/replace_pattern/cg`: replacement syntax 
 
-#### Visual mode
+### Visual mode
 
 * Initialized from normal mode with `v`, `V` or `Ctrl + v`. 
 * Delete and copy selected text with `d` and `y`, respectively. For paste use `p` from normal mode. The copied (yanked) text is stored in a separate vim clipboard. 
 
-#### Copy and delete lines
+### Copy and delete lines
 
 * `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with `p` as above.
 * `dd`: deletes line where cursor is or those that are selected via visual mode.
 
-#### File browser built into vim: `NERDtree`
+### File browser built into vim: `NERDtree`
 
 NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration 
 with `Install_Nvim-R_Tmux`. To use NERDtree, open a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree.
 The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
 
-
-#### Useful resources for learning vim/nvim
+### Useful resources for learning vim/nvim
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
