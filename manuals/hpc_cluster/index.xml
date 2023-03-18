@@ -1432,9 +1432,9 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
 &lt;h4 id="moving-round">Moving round&lt;/h4>
 &lt;ul>
-&lt;li>&lt;code>arrow_keys&lt;/code>: Move cursor in the text&lt;/li>
+&lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
-&lt;li>&lt;code>G&lt;/code> or &lt;code>gg&lt;/code>: jump to end of document and back to beginning.&lt;/li>
+&lt;li>&lt;code>G&lt;/code> or &lt;code>gg&lt;/code>: jump to end of document and back to beginning&lt;/li>
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
