@@ -1391,7 +1391,7 @@ environments like &lt;a href="https://jupyter.hpcc.ucr.edu/">JupyterHub&lt;/a>, 
 Server&lt;/a> and
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
 provide only partial solutions. The following focuses on using Nvim and Tmux.&lt;/p>
-&lt;h3 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h3>
+&lt;h2 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h2>
 &lt;p>Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable.
 It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are:&lt;/p>
 &lt;ul>
@@ -1408,13 +1408,13 @@ log out and in again. Note, installing the custom environment is optional (not
 requried for following examples) and will make changes to a user’s &lt;code>.bashrc&lt;/code>
 and &lt;code>.tmux.conf&lt;/code> files. These changes can be undone by following instructions
 printed to screen during install.&lt;/p>
-&lt;h4 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h4>
+&lt;h3 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h3>
 &lt;ul>
 &lt;li>Both tmux and screen sessions run on the system, where they were initialized.&lt;/li>
 &lt;li>To reattach to a specific session on a remote system like the HPCC cluster, one needs to first login to the same node (here headnode) and then re-attach to the corresponding tmux session.&lt;/li>
 &lt;li>It is important not to run tmux (or screen) sessions on computer nodes since they are persistent. Instead run sessions on a headnode, and then login to a computer node from tmux via &lt;code>srun&lt;/code> or just submit jobs from tmux session using &lt;code>sbatch&lt;/code>.&lt;/li>
 &lt;/ul>
-&lt;h4 id="start-tmux">Start Tmux&lt;/h4>
+&lt;h3 id="start-tmux">Start Tmux&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>module load tmux&lt;/code>: only if not in your .bashrc of HPCC cluster account&lt;/li>
 &lt;li>&lt;code>tmux&lt;/code>: starts a new tmux session&lt;/li>
@@ -1422,7 +1422,7 @@ printed to screen during install.&lt;/p>
 &lt;li>&lt;code>tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to a specific session&lt;/li>
 &lt;li>&lt;code>tmux ls&lt;/code>: lists existing tmux sessions&lt;/li>
 &lt;/ul>
-&lt;h4 id="prefix">Prefix&lt;/h4>
+&lt;h3 id="prefix">Prefix&lt;/h3>
 &lt;p>The prefix for controlling tmux depends on a user&amp;rsquo;s settings.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-b&lt;/code>: default is hard to type&lt;/li>
@@ -1432,13 +1432,13 @@ printed to screen during install.&lt;/p>
 &lt;pre>&lt;code class="language-sh">unbind C-b
 set -g prefix C-a
 &lt;/code>&lt;/pre>
-&lt;h4 id="mouse-support">Mouse Support&lt;/h4>
+&lt;h3 id="mouse-support">Mouse Support&lt;/h3>
 &lt;p>Mouse support for tmux can be enabled with following command.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-a : set -g mouse on&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>To turn mouse support on by default, include in &lt;code>~/.tmux.conf&lt;/code> this line: &lt;code>set -g mouse on&lt;/code>&lt;/p>
-&lt;h4 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h4>
+&lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
 &lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-a %&lt;/code>: splits pane vertically&lt;/li>
@@ -1467,7 +1467,7 @@ set -g prefix C-a
 &lt;li>&lt;code>$ tmux kill-session -t &amp;lt;id&amp;gt;&lt;/code>: kills a specific tmux session&lt;/li>
 &lt;li>&lt;code>Ctrl-a : kill-session&lt;/code>: kills a session from tmux command mode that can be initiated with Ctrl-a :&lt;/li>
 &lt;/ul>
-&lt;h3 id="vimnvim-overview">Vim/Nvim overview&lt;/h3>
+&lt;h2 id="vimnvim-overview">Vim/Nvim overview&lt;/h2>
 &lt;p>Vim is a widely used, extremely powerful and versatile code/text editor that is
 usually available on most Linux and Unix systems by default. The newer version is called
 Neovim (nvim). The main advantages of Neovim compared to Vim are its better
@@ -1488,17 +1488,17 @@ it one needs to log out and in again. Note, installing the custom environment
 is optional (not requried for following examples) and will make changes to a
 user&amp;rsquo;s &lt;code>.bashrc&lt;/code> and &lt;code>.tmux.conf&lt;/code> files. These changes can be undone by
 following instructions printed to screen during install.&lt;/p>
-&lt;h4 id="open-file-with-nvim">Open file with Nvim&lt;/h4>
+&lt;h3 id="open-file-with-nvim">Open file with Nvim&lt;/h3>
 &lt;pre>&lt;code class="language-sh">nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 &lt;/code>&lt;/pre>
-&lt;h4 id="three-main-modes">Three main modes&lt;/h4>
+&lt;h3 id="three-main-modes">Three main modes&lt;/h3>
 &lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
 &lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
 &lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
-&lt;h4 id="important-modifier-keys-to-control-vimnvim">Important modifier keys to control vim/nvim&lt;/h4>
+&lt;h3 id="important-modifier-keys-to-control-vimnvim">Important modifier keys to control vim/nvim&lt;/h3>
 &lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
 the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
 All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
@@ -1508,14 +1508,14 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
 &lt;/ul>
-&lt;h4 id="mouse-support-1">Mouse support&lt;/h4>
+&lt;h3 id="mouse-support-1">Mouse support&lt;/h3>
 &lt;p>When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:set mouse=n&lt;/code> # Enables mouse support, also try a option&lt;/li>
 &lt;li>&lt;code>:set mouse-=n&lt;/code> # Disables mouse support&lt;/li>
 &lt;/ul>
 &lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
-&lt;h4 id="moving-round">Moving round&lt;/h4>
+&lt;h3 id="moving-round">Moving round&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
@@ -1523,7 +1523,7 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
-&lt;h4 id="important-keybindings">Important keybindings&lt;/h4>
+&lt;h3 id="important-keybindings">Important keybindings&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
 &lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
@@ -1536,27 +1536,27 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
 &lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
-&lt;h4 id="powerful-features-of-command-mode">Powerful features of command mode&lt;/h4>
+&lt;h3 id="powerful-features-of-command-mode">Powerful features of command mode&lt;/h3>
 &lt;p>For example, search and replace with regular expression support&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>/&lt;/code> or &lt;code>?&lt;/code>: search in text forward and backward&lt;/li>
 &lt;li>&lt;code>:%s/search_pattern/replace_pattern/cg&lt;/code>: replacement syntax&lt;/li>
 &lt;/ul>
-&lt;h4 id="visual-mode">Visual mode&lt;/h4>
+&lt;h3 id="visual-mode">Visual mode&lt;/h3>
 &lt;ul>
 &lt;li>Initialized from normal mode with &lt;code>v&lt;/code>, &lt;code>V&lt;/code> or &lt;code>Ctrl + v&lt;/code>.&lt;/li>
 &lt;li>Delete and copy selected text with &lt;code>d&lt;/code> and &lt;code>y&lt;/code>, respectively. For paste use &lt;code>p&lt;/code> from normal mode. The copied (yanked) text is stored in a separate vim clipboard.&lt;/li>
 &lt;/ul>
-&lt;h4 id="copy-and-delete-lines">Copy and delete lines&lt;/h4>
+&lt;h3 id="copy-and-delete-lines">Copy and delete lines&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>yy&lt;/code>: copies line where cursor is or those that are selected via visual mode. Paste works with &lt;code>p&lt;/code> as above.&lt;/li>
 &lt;li>&lt;code>dd&lt;/code>: deletes line where cursor is or those that are selected via visual mode.&lt;/li>
 &lt;/ul>
-&lt;h4 id="file-browser-built-into-vim-nerdtree">File browser built into vim: &lt;code>NERDtree&lt;/code>&lt;/h4>
+&lt;h3 id="file-browser-built-into-vim-nerdtree">File browser built into vim: &lt;code>NERDtree&lt;/code>&lt;/h3>
 &lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration
 with &lt;code>Install_Nvim-R_Tmux&lt;/code>. To use NERDtree, open a file with vim/nvim and then type in normal mode &lt;code>zz&lt;/code>. The same command closes NERDtree.
 The basic NERDtree usage is explained &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage">here&lt;/a>.&lt;/p>
-&lt;h4 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h4>
+&lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://vimdoc.sourceforge.net/">Official Vim Documentation&lt;/a>&lt;/li>
