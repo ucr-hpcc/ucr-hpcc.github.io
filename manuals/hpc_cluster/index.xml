@@ -1399,6 +1399,15 @@ It is an incredible userful tool for terminal-based work on remote systems. Majo
 &lt;li>It power charges most termials with additional functionalities.&lt;/li>
 &lt;/ul>
 &lt;p>An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux.&lt;/p>
+&lt;p>A custom tmux (and nvim) environment with extensions can be installed by HPCC
+users by executing &lt;code>Install_Nvim-R_Tmux&lt;/code> in their home account. The same script
+also installs several useful Nvim plugins (see &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction">below&lt;/a>). Alternatively, the
+install script can be downloaded from &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#2-installation">here&lt;/a>.
+After installing it one needs to
+log out and in again. Note, installing the custom environment is optional (not
+requried for following examples) and will make changes to a user’s &lt;code>.bashrc&lt;/code>
+and &lt;code>.tmux.conf&lt;/code> files. These changes can be undone by following instructions
+printed to screen during install.&lt;/p>
 &lt;h4 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h4>
 &lt;ul>
 &lt;li>Both tmux and screen sessions run on the system, where they were initialized.&lt;/li>
