@@ -37,13 +37,13 @@ environments are managed independently, one can install and use them in parallel
 same system without interfering with each other. The usage of Neovim is almost
 identical to Vim.
 
-#### Open file Nvim 
+__Open file with Nvim__ 
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
 
-#### Modes
+__Three main modes__
 
 Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
 
@@ -51,7 +51,7 @@ Once you are in Nvim, there are three main modes: normal, insert and command mod
 * `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
-#### Important modifier keys to control vim/nvim
+__Important modifier keys to control vim/nvim__
 
 Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
 the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
@@ -62,7 +62,7 @@ All other commands are typed in the normal mode after pushing the `Esc` key.
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
 
-#### Mouse support 
+__Mouse support__ 
 
 When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
 
@@ -71,7 +71,7 @@ When enabled, one can position the cursor anywhere with the mouse as well as res
 
 To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
 
-#### Moving round
+__Moving round__
 
 * `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
@@ -79,7 +79,7 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
-#### Important keybindings for nvim
+__Important keybindings for nvim__
 
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
 * `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
@@ -92,7 +92,7 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
-### Useful resources for learning vim/nvim
+__Useful resources for learning vim/nvim__
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
