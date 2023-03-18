@@ -11,28 +11,27 @@ aliases:
 
 ## Terminal IDEs
 This page introduces several terminal-based working environments available on UCR's
-HPC cluster that are useful when working remotely and support a variety of computer languages.
-If a more graphical environment is preferred, this introduction how to use [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-on the cluster might be of interest.
+HPC cluster that are useful when working remotely. 
+If a more graphical environment is preferred, please visit this [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
+tutorial.
 
 
 ## Vim/Nvim Basics
 
 To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI-based coding environments 
-like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/) are not a complete 
-replacement for this need. In addition,
-there is a lot of value of knowing how to work in an environment that is not
-restricted to a specific programming language. Therefore, for working on remote 
-systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful 
-for many programming languages. Combinded with the `nvim-r` plugin they also 
-provide a powerful command-line working environment for R. Users of Emacs may 
-want to consider using [ESS](https://ess.r-project.org/) instead. The following 
-provides a brief introduction to the Nvim-R-Tmux environment. 
+to learn how to work in a pure command-line interface. GUI-based coding
+environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
+Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
+[VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
+provide only partial solutions. In addition, there is a lot of value of knowing
+how to work in an environment that is not restricted to a specific programming
+language. The following focuses on using Nvim and Tmux. Emacs can be used as an
+alternative to Nvim.
 
 ### Vim overview
 
-The following opens a file (here `myfile`) with nvim (or vim)
+The following opens a file (here `myfile`) with nvim (or vim). If nvim is not found then
+it might need to be loaded with `module load neovim` first.
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
@@ -54,6 +53,27 @@ Important modifier keys to control vim/nvim
 * `:q`: quit file that has not been changed
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
+
+### Important keybindings for nvim
+
+The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.
+
+__Nvim commands__
+
+* `\rf`: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an `R` directory under `~/`. If so approve this action by pressing `y`. 
+* `spacebar`: sends code from vim to R; here remapped in `init.vim` from default `\l`
+* `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
+* `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
+* `Ctrl-w w`: jumps cursor to R viewport and back; toggle between insert (`i`) and command (`Esc`) mode is required for navigation and controlling the environment.
+* `Ctrl-w r`: swaps viewports
+* `Ctrl-w =`: resizes splits to equal size
+* `:resize <+5 or -5>`: resizes height by specified value
+* `:vertical resize <+5 or -5>`: resizes width by specified value
+* `Ctrl-w H` or `Ctrl-w K`: toggles between horizontal/vertical splits
+* `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
+* `:h nvim-R`: opens nvim-R's user manual; navigation works the same as for any Vim/Nvim help document
+* `:Rhelp fct_name`: opens help for a function from nvim's command mode with text completion support
+* `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
 ### Useful resources for learning vim/nvim
 
@@ -113,26 +133,6 @@ several lines at once, one can select them in nvim's visual mode and then hit th
 Please note, the default command for sending code lines in the nvim-r-plugin is `\l`. This key 
 binding has been remapped in the provided `.config/nvim/init.vim` file to the space bar. Most other key bindings (shortcuts) still start with the `\` as LocalLeader, _e.g._ `\rh` opens the help for a function/object where the curser is located in nvim. More details on this are given below.
 
-### Important keybindings for nvim
-
-The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.
-
-__Nvim commands__
-
-* `\rf`: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an `R` directory under `~/`. If so approve this action by pressing `y`. 
-* `spacebar`: sends code from vim to R; here remapped in `init.vim` from default `\l`
-* `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
-* `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
-* `Ctrl-w w`: jumps cursor to R viewport and back; toggle between insert (`i`) and command (`Esc`) mode is required for navigation and controlling the environment.
-* `Ctrl-w r`: swaps viewports
-* `Ctrl-w =`: resizes splits to equal size
-* `:resize <+5 or -5>`: resizes height by specified value
-* `:vertical resize <+5 or -5>`: resizes width by specified value
-* `Ctrl-w H` or `Ctrl-w K`: toggles between horizontal/vertical splits
-* `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
-* `:h nvim-R`: opens nvim-R's user manual; navigation works the same as for any Vim/Nvim help document
-* `:Rhelp fct_name`: opens help for a function from nvim's command mode with text completion support
-* `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
 ### Important keybindings for tmux
 
