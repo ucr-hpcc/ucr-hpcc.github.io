@@ -1383,23 +1383,22 @@ To get a list of usernames:&lt;/p>
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
 &lt;h2 id="terminal-ides">Terminal IDEs&lt;/h2>
 &lt;p>This page introduces several terminal-based working environments available on UCR&amp;rsquo;s
-HPC cluster that are useful when working remotely and support a variety of computer languages.
-If a more graphical environment is preferred, this introduction how to use &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
-on the cluster might be of interest.&lt;/p>
+HPC cluster that are useful when working remotely.
+If a more graphical environment is preferred, please visit this &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
+tutorial.&lt;/p>
 &lt;h2 id="vimnvim-basics">Vim/Nvim Basics&lt;/h2>
 &lt;p>To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI-based coding environments
-like &lt;a href="https://jupyter.hpcc.ucr.edu/">JupyterHub&lt;/a>, &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server">RStudio Server&lt;/a> and &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a> are not a complete
-replacement for this need. In addition,
-there is a lot of value of knowing how to work in an environment that is not
-restricted to a specific programming language. Therefore, for working on remote
-systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful
-for many programming languages. Combinded with the &lt;code>nvim-r&lt;/code> plugin they also
-provide a powerful command-line working environment for R. Users of Emacs may
-want to consider using &lt;a href="https://ess.r-project.org/">ESS&lt;/a> instead. The following
-provides a brief introduction to the Nvim-R-Tmux environment.&lt;/p>
+to learn how to work in a pure command-line interface. GUI-based coding
+environments like &lt;a href="https://jupyter.hpcc.ucr.edu/">JupyterHub&lt;/a>, &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server">RStudio
+Server&lt;/a> and
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
+provide only partial solutions. In addition, there is a lot of value of knowing
+how to work in an environment that is not restricted to a specific programming
+language. The following focuses on using Nvim and Tmux. Emacs can be used as an
+alternative to Nvim.&lt;/p>
 &lt;h3 id="vim-overview">Vim overview&lt;/h3>
-&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim)&lt;/p>
+&lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not found then
+it might need to be loaded with &lt;code>module load neovim&lt;/code> first.&lt;/p>
 &lt;pre>&lt;code class="language-sh">nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 &lt;/code>&lt;/pre>
 &lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
@@ -1417,6 +1416,25 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:q&lt;/code>: quit file that has not been changed&lt;/li>
 &lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
+&lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
+&lt;p>&lt;strong>Nvim commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>\rf&lt;/code>: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an &lt;code>R&lt;/code> directory under &lt;code>~/&lt;/code>. If so approve this action by pressing &lt;code>y&lt;/code>.&lt;/li>
+&lt;li>&lt;code>spacebar&lt;/code>: sends code from vim to R; here remapped in &lt;code>init.vim&lt;/code> from default &lt;code>\l&lt;/code>&lt;/li>
+&lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
+&lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
+&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
+&lt;li>&lt;code>Ctrl-w r&lt;/code>: swaps viewports&lt;/li>
+&lt;li>&lt;code>Ctrl-w =&lt;/code>: resizes splits to equal size&lt;/li>
+&lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
+&lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
+&lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
+&lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
+&lt;li>&lt;code>:h nvim-R&lt;/code>: opens nvim-R&amp;rsquo;s user manual; navigation works the same as for any Vim/Nvim help document&lt;/li>
+&lt;li>&lt;code>:Rhelp fct_name&lt;/code>: opens help for a function from nvim&amp;rsquo;s command mode with text completion support&lt;/li>
+&lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
 &lt;h3 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h3>
 &lt;ul>
@@ -1458,25 +1476,6 @@ tmux a # attaches to an existing session
 several lines at once, one can select them in nvim&amp;rsquo;s visual mode and then hit the space bar.
 Please note, the default command for sending code lines in the nvim-r-plugin is &lt;code>\l&lt;/code>. This key
 binding has been remapped in the provided &lt;code>.config/nvim/init.vim&lt;/code> file to the space bar. Most other key bindings (shortcuts) still start with the &lt;code>\&lt;/code> as LocalLeader, &lt;em>e.g.&lt;/em> &lt;code>\rh&lt;/code> opens the help for a function/object where the curser is located in nvim. More details on this are given below.&lt;/p>
-&lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
-&lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
-&lt;p>&lt;strong>Nvim commands&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>\rf&lt;/code>: opens vim-connected R session. If you do this the first time in your user account, you might be asked to create an &lt;code>R&lt;/code> directory under &lt;code>~/&lt;/code>. If so approve this action by pressing &lt;code>y&lt;/code>.&lt;/li>
-&lt;li>&lt;code>spacebar&lt;/code>: sends code from vim to R; here remapped in &lt;code>init.vim&lt;/code> from default &lt;code>\l&lt;/code>&lt;/li>
-&lt;li>&lt;code>:split&lt;/code> or &lt;code>:vsplit&lt;/code>: splits viewport (similar to pane split in tmux)&lt;/li>
-&lt;li>&lt;code>gz&lt;/code>: maximizes size of viewport in normal mode (similar to Tmux&amp;rsquo;s &lt;code>Ctrl-a z&lt;/code> zoom utility)&lt;/li>
-&lt;li>&lt;code>Ctrl-w w&lt;/code>: jumps cursor to R viewport and back; toggle between insert (&lt;code>i&lt;/code>) and command (&lt;code>Esc&lt;/code>) mode is required for navigation and controlling the environment.&lt;/li>
-&lt;li>&lt;code>Ctrl-w r&lt;/code>: swaps viewports&lt;/li>
-&lt;li>&lt;code>Ctrl-w =&lt;/code>: resizes splits to equal size&lt;/li>
-&lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
-&lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
-&lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
-&lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
-&lt;li>&lt;code>:h nvim-R&lt;/code>: opens nvim-R&amp;rsquo;s user manual; navigation works the same as for any Vim/Nvim help document&lt;/li>
-&lt;li>&lt;code>:Rhelp fct_name&lt;/code>: opens help for a function from nvim&amp;rsquo;s command mode with text completion support&lt;/li>
-&lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
-&lt;/ul>
 &lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
 &lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
 &lt;ul>
