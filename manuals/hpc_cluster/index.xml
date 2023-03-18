@@ -1392,10 +1392,8 @@ to learn how to work in a pure command-line interface. GUI-based coding
 environments like &lt;a href="https://jupyter.hpcc.ucr.edu/">JupyterHub&lt;/a>, &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server">RStudio
 Server&lt;/a> and
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
-provide only partial solutions. In addition, there is a lot of value of knowing
-how to work in an environment that is not restricted to a specific programming
-language. The following focuses on using Nvim and Tmux. Emacs can be used as an
-alternative to Nvim.&lt;/p>
+provide only partial solutions. The following focuses on using Nvim and Tmux.
+Emacs can be used as an alternative to Nvim.&lt;/p>
 &lt;h3 id="vim-overview">Vim overview&lt;/h3>
 &lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not found then
 it might need to be loaded with &lt;code>module load neovim&lt;/code> first.&lt;/p>
@@ -1407,15 +1405,30 @@ it might need to be loaded with &lt;code>module load neovim&lt;/code> first.&lt;
 &lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
 &lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
+&lt;p>Important modifier keys to control vim/nvim&lt;/p>
 &lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
 the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
 All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
-&lt;p>Important modifier keys to control vim/nvim&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:w&lt;/code>: save changes to file. If you are in editing mode you have to hit &lt;code>Esc&lt;/code> first.&lt;/li>
 &lt;li>&lt;code>:q&lt;/code>: quit file that has not been changed&lt;/li>
 &lt;li>&lt;code>:wq&lt;/code>: save and quit file&lt;/li>
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
+&lt;/ul>
+&lt;p>Mouse support&lt;/p>
+&lt;p>When enabled one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>:set mouse=n&lt;/code> # Enables mouse support, also try a option&lt;/li>
+&lt;li>&lt;code>:set mouse-=n&lt;/code> # Disables mouse support&lt;/li>
+&lt;/ul>
+&lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
+&lt;p>Moving round&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>arrow_keys&lt;/code>: Move cursor in the text&lt;/li>
+&lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
+&lt;li>&lt;code>G&lt;/code> or &lt;code>gg&lt;/code>: jump to end of document and back to beginning.&lt;/li>
+&lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
+&lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
 &lt;/ul>
 &lt;h3 id="important-keybindings-for-nvim">Important keybindings for nvim&lt;/h3>
 &lt;p>The main advantages of Neovim compared to Vim are its better performance and its built-in terminal emulator facilitating the communication among Neovim and interactive programming environments such as R. Since the Vim and Neovim environments are managed independently, one can run them in parallel on the same system without interfering with each other. The usage of Neovim is almost identical to Vim.&lt;/p>
