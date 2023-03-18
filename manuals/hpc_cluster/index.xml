@@ -1390,7 +1390,7 @@ tutorial.&lt;/p>
 &lt;p>Tmux is a virtual terminal multiplexer that provides functionality for re-attachable terminal sessions.
 A major advantages of this functionality is that work in a terminal session cannot get lost due to
 internet disruptions or even when switching computers.&lt;/p>
-&lt;h3 id="start-tmux">Start Tmux&lt;/h3>
+&lt;h4 id="start-tmux">Start Tmux&lt;/h4>
 &lt;ul>
 &lt;li>&lt;code>module load tmux&lt;/code>: only if not in your .bashrc of HPCC cluster account&lt;/li>
 &lt;li>&lt;code>tmux&lt;/code>: starts a new tmux session&lt;/li>
@@ -1398,22 +1398,51 @@ internet disruptions or even when switching computers.&lt;/p>
 &lt;li>&lt;code>tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to a specific session&lt;/li>
 &lt;li>&lt;code>tmux ls&lt;/code>: lists existing tmux sessions&lt;/li>
 &lt;/ul>
-&lt;h3 id="prefix">Prefix&lt;/h3>
-&lt;p>The prefix for controlling Tmux&lt;/p>
+&lt;h4 id="prefix">Prefix&lt;/h4>
+&lt;p>The prefix for controlling tmux depends on a user&amp;rsquo;s settings.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-b&lt;/code>: default is hard to type&lt;/li>
 &lt;li>&lt;code>Ctrl-a&lt;/code>: more commonly used, also on HPCC&lt;/li>
 &lt;/ul>
-&lt;p>The prefix can be changed by placing following lines into &lt;code>~/.tmux.conf&lt;/code>.&lt;/p>
+&lt;p>The prefix can be changed by placing the following lines into &lt;code>~/.tmux.conf&lt;/code>.&lt;/p>
 &lt;pre>&lt;code class="language-sh">unbind C-b
 set -g prefix C-a
 &lt;/code>&lt;/pre>
-&lt;h3 id="mouse-support">Mouse Support&lt;/h3>
+&lt;h4 id="mouse-support">Mouse Support&lt;/h4>
 &lt;p>Mouse support for tmux can be enabled with following command.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-a : set -g mouse on&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>To turn mouse support on by default, include in &lt;code>~/.tmux.conf&lt;/code> this line: &lt;code>set -g mouse on&lt;/code>&lt;/p>
+&lt;h4 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h4>
+&lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a %&lt;/code>: splits pane vertically&lt;/li>
+&lt;li>&lt;code>Ctrl-a “&lt;/code>: splits pane horizontally&lt;/li>
+&lt;li>&lt;code>Ctrl-a o&lt;/code> or &lt;code>Ctrl-a &amp;lt;arrow keys&amp;gt;&lt;/code>: jumps cursor to next pane&lt;/li>
+&lt;li>&lt;code>Ctrl-a Ctrl-o&lt;/code>: swaps panes&lt;/li>
+&lt;li>&lt;code>Ctrl-a &amp;lt;space bar&amp;gt;&lt;/code>: rotates pane arrangement&lt;/li>
+&lt;li>&lt;code>Ctrl-a Alt &amp;lt;left or right&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
+&lt;li>&lt;code>Ctrl-a Esc &amp;lt;up or down&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Window-level commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a n&lt;/code>: switches to next tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a Ctrl-a&lt;/code>: switches to previous tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a c&lt;/code>: creates a new tmux window&lt;/li>
+&lt;li>&lt;code>Ctrl-a 1&lt;/code>: switches to specific tmux window selected by number&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Session-level commands&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Ctrl-a d&lt;/code>: detaches from current session&lt;/li>
+&lt;li>&lt;code>Ctrl-a s&lt;/code>: switch between available tmux sessions&lt;/li>
+&lt;li>&lt;code>$ tmux new -s &amp;lt;name&amp;gt;&lt;/code>: starts new session with a specific name&lt;/li>
+&lt;li>&lt;code>$ tmux ls&lt;/code>: lists available tmux session(s)&lt;/li>
+&lt;li>&lt;code>$ tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to specific tmux session&lt;/li>
+&lt;li>&lt;code>$ tmux attach&lt;/code>: reattaches to session&lt;/li>
+&lt;li>&lt;code>$ tmux kill-session -t &amp;lt;id&amp;gt;&lt;/code>: kills a specific tmux session&lt;/li>
+&lt;li>&lt;code>Ctrl-a : kill-session&lt;/code>: kills a session from tmux command mode that can be initiated with Ctrl-a :&lt;/li>
+&lt;/ul>
 &lt;h3 id="vimnvim-overview">Vim/Nvim overview&lt;/h3>
 &lt;p>To work efficiently on remote systems like a computer cluster, it is essential
 to learn how to work in a pure command-line interface. GUI-based coding
@@ -1547,7 +1576,7 @@ tmux a # attaches to an existing session
 several lines at once, one can select them in nvim&amp;rsquo;s visual mode and then hit the space bar.
 Please note, the default command for sending code lines in the nvim-r-plugin is &lt;code>\l&lt;/code>. This key
 binding has been remapped in the provided &lt;code>.config/nvim/init.vim&lt;/code> file to the space bar. Most other key bindings (shortcuts) still start with the &lt;code>\&lt;/code> as LocalLeader, &lt;em>e.g.&lt;/em> &lt;code>\rh&lt;/code> opens the help for a function/object where the curser is located in nvim. More details on this are given below.&lt;/p>
-&lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
+&lt;h3 id="important-keybindings-for-tmux-1">Important keybindings for tmux&lt;/h3>
 &lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-a %&lt;/code>: splits pane vertically&lt;/li>
