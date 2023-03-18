@@ -15,8 +15,45 @@ HPC cluster that are useful when working remotely.
 If a more graphical environment is preferred, please visit this [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
 tutorial.
 
+### Tmux 
 
-## Vim/Nvim overview
+Tmux is a virtual terminal multiplexer that provides functionality for re-attachable terminal sessions. 
+A major advantages of this functionality is that work in a terminal session cannot get lost due to 
+internet disruptions or even when switching computers.
+
+### Start Tmux
+
+* `module load tmux`: only if not in your .bashrc of  HPCC cluster account
+* `tmux`: starts a new tmux session
+* `tmux a`: attaches to an existing session
+* `tmux attach -t <id>`: attaches to a specific session 
+* `tmux ls`: lists existing tmux sessions 
+
+### Prefix 
+
+The prefix for controlling Tmux 
+
+* `Ctrl-b`: default is hard to type 
+* `Ctrl-a`: more commonly used, also on HPCC
+
+The prefix can be changed by placing following lines into `~/.tmux.conf`.
+
+```sh
+unbind C-b
+set -g prefix C-a 
+```
+
+### Mouse Support
+
+Mouse support for tmux can be enabled with following command.
+
+* `Ctrl-a : set -g mouse on`  
+
+To turn mouse support on by default, include in `~/.tmux.conf` this line: `set -g mouse on`
+
+
+
+### Vim/Nvim overview
 
 To work efficiently on remote systems like a computer cluster, it is essential
 to learn how to work in a pure command-line interface. GUI-based coding
@@ -32,8 +69,6 @@ environments are managed independently, one can install and use them in parallel
 same system without interfering with each other. The usage of Neovim is almost
 identical to Vim.
 
-https://github.com/tgirke/Nvim-R_Tmux#2-installation
-
 ### Nvim introduction
 
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
@@ -42,9 +77,10 @@ nvim/tmux environment with extensions can be installed by HPCC users by
 executing `Install_Nvim-R_Tmux` in their home account. Alternatively, the
 install script can be downloaded from
 [here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
-it one needs to log out and in again. Note, the install script is optional and
-will make changes to a user's `.bashrc` and `.tmux.conf` files. These changes
-can be undone by following instructions printed to screen during install.  
+it one needs to log out and in again. Note, installing the custom environment
+is optional (not requried for following examples) and will make changes to a
+user's `.bashrc` and `.tmux.conf` files. These changes can be undone by
+following instructions printed to screen during install.  
 
 #### Open file with Nvim 
 
@@ -131,7 +167,7 @@ The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tm
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
 * [HPCC Linux Manual](/manuals/linux_basics/vim/)
 
-## For R: nvim-R 
+## Nvim for R users with `nvim-R` plugin 
 
 ### Basics
 
