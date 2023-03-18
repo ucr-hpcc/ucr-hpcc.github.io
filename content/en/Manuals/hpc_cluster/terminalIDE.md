@@ -32,11 +32,19 @@ environments are managed independently, one can install and use them in parallel
 same system without interfering with each other. The usage of Neovim is almost
 identical to Vim.
 
+https://github.com/tgirke/Nvim-R_Tmux#2-installation
 
 ### Nvim introduction
 
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
-found then it might need to be loaded with `module load neovim` first. 
+found then it might need to be loaded with `module load neovim` first. A custom
+nvim/tmux environment with extensions can be installed by HPCC users by
+executing `Install_Nvim-R_Tmux` in their home account. Alternatively, the
+install script can be downloaded from
+[here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
+it one needs to log out and in again. Note, the install script is optional and
+will make changes to a user's `.bashrc` and `.tmux.conf` files. These changes
+can be undone by following instructions printed to screen during install.  
 
 #### Open file with Nvim 
 
