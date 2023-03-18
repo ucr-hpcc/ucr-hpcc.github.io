@@ -21,7 +21,7 @@ Tmux is a virtual terminal multiplexer that provides functionality for re-attach
 A major advantages of this functionality is that work in a terminal session cannot get lost due to 
 internet disruptions or even when switching computers.
 
-### Start Tmux
+#### Start Tmux
 
 * `module load tmux`: only if not in your .bashrc of  HPCC cluster account
 * `tmux`: starts a new tmux session
@@ -29,21 +29,21 @@ internet disruptions or even when switching computers.
 * `tmux attach -t <id>`: attaches to a specific session 
 * `tmux ls`: lists existing tmux sessions 
 
-### Prefix 
+#### Prefix 
 
-The prefix for controlling Tmux 
+The prefix for controlling tmux depends on a user's settings.
 
 * `Ctrl-b`: default is hard to type 
 * `Ctrl-a`: more commonly used, also on HPCC
 
-The prefix can be changed by placing following lines into `~/.tmux.conf`.
+The prefix can be changed by placing the following lines into `~/.tmux.conf`.
 
 ```sh
 unbind C-b
 set -g prefix C-a 
 ```
 
-### Mouse Support
+#### Mouse Support
 
 Mouse support for tmux can be enabled with following command.
 
@@ -51,6 +51,35 @@ Mouse support for tmux can be enabled with following command.
 
 To turn mouse support on by default, include in `~/.tmux.conf` this line: `set -g mouse on`
 
+#### Important keybindings for tmux 
+
+__Pane-level commands__
+
+* `Ctrl-a %`: splits pane vertically
+* `Ctrl-a “`: splits pane horizontally
+* `Ctrl-a o`  or `Ctrl-a <arrow keys>`: jumps cursor to next pane
+* `Ctrl-a Ctrl-o`: swaps panes
+* `Ctrl-a <space bar>`: rotates pane arrangement
+* `Ctrl-a Alt <left or right>`: resizes to left or right
+* `Ctrl-a Esc <up or down>`: resizes to left or right	
+
+__Window-level commands__
+
+* `Ctrl-a n`: switches to next tmux window
+* `Ctrl-a Ctrl-a`: switches to previous tmux window
+* `Ctrl-a c`: creates a new tmux window
+* `Ctrl-a 1`: switches to specific tmux window selected by number
+
+__Session-level commands__
+
+* `Ctrl-a d`: detaches from current session
+* `Ctrl-a s`: switch between available tmux sessions
+* `$ tmux new -s <name>`: starts new session with a specific name
+* `$ tmux ls`: lists available tmux session(s)
+* `$ tmux attach -t <id>`: attaches to specific tmux session
+* `$ tmux attach`: reattaches to session
+* `$ tmux kill-session -t <id>`: kills a specific tmux session
+* `Ctrl-a : kill-session`: kills a session from tmux command mode that can be initiated with Ctrl-a :
 
 
 ### Vim/Nvim overview
