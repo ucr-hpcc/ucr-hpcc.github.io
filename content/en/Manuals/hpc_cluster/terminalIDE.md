@@ -211,6 +211,9 @@ NERDtree provides file browser functionality for Vim. To enable it, the NERDtree
 with `Install_Nvim-R_Tmux`. To use NERDtree, open a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree.
 The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
 
+<center><img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" ></center>
+<center>NERDtree in action</center>
+
 ### Useful resources for learning vim/nvim
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
