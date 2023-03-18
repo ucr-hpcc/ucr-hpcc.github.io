@@ -80,11 +80,11 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
-#### Important keybindings for nvim
+#### Important keybindings
 
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
 * `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
-* `Ctrl-w w`: jumps cursor to R viewport and back; toggle between insert (`i`) and command (`Esc`) mode is required for navigation and controlling the environment.
+* `Ctrl-w w`: jumps cursor to other viewport and back
 * `Ctrl-w r`: swaps viewports
 * `Ctrl-w =`: resizes splits to equal size
 * `:resize <+5 or -5>`: resizes height by specified value
