@@ -1464,10 +1464,13 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;/ul>
 &lt;h4 id="copy-and-delete-lines">Copy and delete lines&lt;/h4>
 &lt;ul>
-&lt;li>&lt;code>yy&lt;/code>: copies line where cursor is or those that are selected via visual mode. Paste works with p as above.&lt;/li>
+&lt;li>&lt;code>yy&lt;/code>: copies line where cursor is or those that are selected via visual mode. Paste works with &lt;code>p&lt;/code> as above.&lt;/li>
 &lt;li>&lt;code>dd&lt;/code>: deletes line where cursor is or those that are selected via visual mode.&lt;/li>
 &lt;/ul>
-&lt;h4 id="splitting-windows-and-opening-multiple-files">Splitting windows and opening multiple files&lt;/h4>
+&lt;h4 id="file-browser-built-into-vim-nerdtree">File browser built into vim: &lt;code>NERDtree&lt;/code>&lt;/h4>
+&lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration
+with &lt;code>Install_Nvim-R_Tmux&lt;/code>. To use NERDtree, open a file with vim/nvim and then type in normal mode &lt;code>zz&lt;/code>. The same command closes NERDtree.
+The basic NERDtree usage is explained &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage">here&lt;/a>.&lt;/p>
 &lt;h4 id="useful-resources-for-learning-vimnvim">Useful resources for learning vim/nvim&lt;/h4>
 &lt;ul>
 &lt;li>&lt;a href="http://www.openvim.com">Interactive Vim Tutorial&lt;/a>&lt;/li>
