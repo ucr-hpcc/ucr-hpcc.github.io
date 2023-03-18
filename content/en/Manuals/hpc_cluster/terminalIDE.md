@@ -16,7 +16,7 @@ If a more graphical environment is preferred, please visit this [VSCode](https:/
 tutorial.
 
 
-## Vim/Nvim Basics
+## Vim/Nvim overview
 
 To work efficiently on remote systems like a computer cluster, it is essential
 to learn how to work in a pure command-line interface. GUI-based coding
@@ -24,12 +24,7 @@ environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
 Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
 [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
 provide only partial solutions. The following focuses on using Nvim and Tmux.
-Emacs can be used as an alternative to Nvim.
-
-### Vim overview
-
-The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
-found then it might need to be loaded with `module load neovim` first. The main
+Emacs can be used as an alternative to Nvim. The main
 advantages of Neovim compared to Vim are its better performance and its
 built-in terminal emulator facilitating the communication among Neovim and
 interactive programming environments, such as command-line UIs and R. Since the Vim and Neovim
@@ -37,13 +32,19 @@ environments are managed independently, one can install and use them in parallel
 same system without interfering with each other. The usage of Neovim is almost
 identical to Vim.
 
-__Open file with Nvim__ 
+
+### Nvim introduction
+
+The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
+found then it might need to be loaded with `module load neovim` first. 
+
+#### Open file with Nvim 
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
 
-__Three main modes__
+#### Three main modes
 
 Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
 
@@ -51,7 +52,7 @@ Once you are in Nvim, there are three main modes: normal, insert and command mod
 * `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
-__Important modifier keys to control vim/nvim__
+#### Important modifier keys to control vim/nvim
 
 Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
 the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
@@ -62,7 +63,7 @@ All other commands are typed in the normal mode after pushing the `Esc` key.
 * `:wq`: save and quit file
 * `:!q`: quit file without saving any changes
 
-__Mouse support__ 
+#### Mouse support
 
 When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
 
@@ -71,7 +72,7 @@ When enabled, one can position the cursor anywhere with the mouse as well as res
 
 To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
 
-__Moving round__
+#### Moving round
 
 * `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
@@ -79,7 +80,7 @@ __Moving round__
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
 
-__Important keybindings for nvim__
+#### Important keybindings for nvim
 
 * `:split` or `:vsplit`: splits viewport (similar to pane split in tmux)
 * `gz`: maximizes size of viewport in normal mode (similar to Tmux's `Ctrl-a z` zoom utility) 
@@ -92,7 +93,26 @@ __Important keybindings for nvim__
 * `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
-__Useful resources for learning vim/nvim__
+#### Powerful features of command mode
+
+For example, search and replace with regular expression support
+
+* `/` or `?`: search in text forward and backward
+* `:%s/search_pattern/replace_pattern/cg`: replacement syntax 
+
+#### Visual mode
+
+* Initialized from normal mode with `v`, `V` or `Ctrl + v`. 
+* Delete and copy selected text with `d` and `y`, respectively. For paste use `p` from normal mode. The copied (yanked) text is stored in a separate vim clipboard. 
+
+#### Copy and delete lines
+
+* `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with p as above.
+* `dd`: deletes line where cursor is or those that are selected via visual mode.
+
+#### Splitting windows and opening multiple files
+
+#### Useful resources for learning vim/nvim
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
