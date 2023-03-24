@@ -89,6 +89,11 @@ To turn mouse support on by default, include on a separate line of `~/.tmux.conf
 
 ### Important keybindings for tmux 
 
+Tmux sessions are organized in panes, windows and sessions themselves, where a
+window can have a single or several panes, and a session a single or several
+windows. The following commands for controlling tmux are organized by pane-,
+window- and session-level commands. 
+
 __Pane-level commands__
 
 * `Ctrl-a %`: splits pane vertically
@@ -103,7 +108,7 @@ __Window-level commands__
 
 * `Ctrl-a n`: switches to next tmux window
 * `Ctrl-a Ctrl-a`: switches to previous tmux window
-* `Ctrl-a c`: creates a new tmux window
+* `Ctrl-a c`: creates a new tmux window; any tmux window can be closed by typing `exit` on the command prompt
 * `Ctrl-a 1`: switches to specific tmux window selected by number
 
 __Session-level commands__
@@ -120,12 +125,12 @@ __Session-level commands__
 
 ## Vim/Nvim overview
 
-Vim is a widely used, extremely powerful and versatile code/text editor that is
+Vim is a widely used, extremely powerful and versatile text editor for coding that is
 usually available on most Linux and Unix systems by default. The newer version is called
 Neovim (nvim). The main advantages of Neovim compared to Vim are its better
 performance and its built-in terminal emulator facilitating the communication
 among Neovim and interactive programming environments, such as command-lines
-and R. Since the Vim and Neovim environments are managed independently, one can
+and R. Since Vim and Neovim are managed independently, one can
 easily install and use them in parallel on the same system without interfering with
 each other. The usage of Neovim is almost identical to Vim. Emacs is a powerful alternative 
 that can be used as an alternative to Nvim. 
@@ -138,13 +143,8 @@ that can be used as an alternative to Nvim.
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
 found then it might need to be loaded with `module load neovim` first. A custom
 nvim/tmux environment with extensions can be installed by HPCC users by
-executing `Install_Nvim-R_Tmux` in their home account. Alternatively, the
-install script can be downloaded from
-[here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
-it one needs to log out and in again. Note, installing the custom environment
-is optional (not requried for following examples) and will make changes to a
-user's `.bashrc` and `.tmux.conf` files. These changes can be undone by
-following instructions printed to screen during install.  
+executing `Install_Nvim-R_Tmux` in their home account. For additional details 
+about the install script, see the corresponding tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). 
 
 ### Open file with Nvim 
 
