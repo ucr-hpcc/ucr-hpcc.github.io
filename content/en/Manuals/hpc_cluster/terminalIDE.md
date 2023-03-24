@@ -10,36 +10,39 @@ aliases:
 
 
 ## Terminal IDEs
-This page introduces several terminal-based working environments available on UCR's
-HPC cluster that are useful when working remotely. 
-If a more graphical environment is preferred, please visit this [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-tutorial. To work efficiently on remote systems like a computer cluster, it is essential
-to learn how to work in a pure command-line interface. GUI-based coding
-environments like [JupyterHub](https://jupyter.hpcc.ucr.edu/), [RStudio
-Server](https://hpcc.ucr.edu/manuals/linux_basics/text/#rstudio-server) and
-[VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
-provide only partial solutions. The following focuses on using Nvim and Tmux.
-
+This page introduces tmux and Neovim as terminal-based working environment.
+They can be used independently or in combination, and provide many useful
+functionalities for making work on remote systems more efficient, such as work
+HPC clusters or cloud services. Users who prefer a more graphical
+environment, [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
+might be a good alternative. 
 
 ## Tmux: virtual terminal multiplexer 
 
-Tmux is a virtual terminal multiplexer that provides functionality for persistent terminal sessions that are re-attachable. 
-It is an incredible userful tool for terminal-based work on remote systems. Major advantages of tmux are: 
+Tmux is a virtual terminal multiplexer that provides functionality for
+persistent terminal sessions that are re-attachable. It is an incredible
+userful tool for terminal-based work on remote systems. Major advantages of
+tmux are: 
 
 * Work in a terminal session cannot get lost due to internet disruptions or even when switching computers. 
-* It power charges most termials with additional functionalities.
+* It power charges most terminals with additional functionalities.
 
 An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux. 
 
-A custom tmux (and nvim) environment with extensions can be installed by HPCC
-users by executing `Install_Nvim-R_Tmux` in their home account. The same script
-also installs several useful Nvim plugins (see [below](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction)). Alternatively, the
-install script can be downloaded from [here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). 
-After installing it one needs to
-log out and in again. Note, installing the custom environment is optional (not
-requried for following examples) and will make changes to a user’s `.bashrc`
-and `.tmux.conf` files. These changes can be undone by following instructions
-printed to screen during install.
+Tmux can be downloaded and installed
+[here](https://github.com/tmux/tmux/wiki/Installing). A custom tmux (and nvim)
+environment with extensions can be installed by HPCC users by executing
+`Install_Nvim-R_Tmux` in their home account. The same script also installs
+several useful Nvim plugins (see
+[below](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction)).
+Alternatively, the same install script can be downloaded from
+[here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
+the provided tmux environment in a HPCC user account one needs to log out and
+in again. Note, installing the custom environment is optional and not required
+for any of the following examples. Users also need to be aware that install
+script will make changes to a user’s `.bashrc` and `.tmux.conf` files. If this
+is not desirable, these changes can be undone by following the instructions
+printed to screen during the install.
 
 <center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"></center>
 <center>Tmux: Window Split into Several Panes</center>
