@@ -54,30 +54,30 @@ following the instructions printed to screen during the install.
 ### Important considerations for virtual tmux sessions 
 
 * Both tmux and screen sessions run on the system, where they were initialized. 
-* To reattach to a specific session on a remote system like the HPCC cluster, one needs to first login to the same node (here headnode) and then re-attach to the corresponding tmux session. 
-* It is important not to run tmux (or screen) sessions on computer nodes since they are persistent. Instead run sessions on a headnode, and then login to a computer node from tmux via `srun` or just submit jobs from tmux session using `sbatch`.
+* To reattach to a specific session on a remote system, like the HPCC cluster, one needs to first log in to the same node (here headnode) and then re-attach to the corresponding tmux session. 
+* It is important not to run tmux (or screen) sessions on computer nodes since tmux sessions are persistent. Instead tmux sessions should be run on a headnode. From an open tmux session one can then log in to a computer node via `srun`, or just submit jobs from tmux session with `sbatch`.
 
 ### Start Tmux
 
-* `module load tmux`: only if not in your .bashrc of  HPCC cluster account
+* `module load tmux`: only required on a system that uses environment modules, and the load command is not specified in a user's .bashrc file 
 * `tmux`: starts a new tmux session
-* `tmux a`: attaches to an existing session
-* `tmux attach -t <id>`: attaches to a specific session 
+* `tmux a`: attaches to an existing session, or a default session of a system, _e.g._ specified under `~/.tmux.conf`
+* `tmux attach -t <id>`: attaches to a running session selected under `<id>` 
 * `tmux ls`: lists existing tmux sessions 
 
 ### Prefix 
 
-The prefix for controlling tmux depends on a user's settings.
+The prefix for controlling tmux depends on a user's settings specified under `~/.tmux.conf`.
 
-* `Ctrl-b`: default is hard to type 
+* `Ctrl-b`: default is hard to type, and thus often not preferred
 * `Ctrl-a`: more commonly used, also on HPCC
 
 The prefix can be changed by placing the following lines into `~/.tmux.conf`.
 
-```sh
-unbind C-b
-set -g prefix C-a 
-```
+   ```sh
+   unbind C-b
+   set -g prefix C-a 
+   ```
 
 ### Mouse Support
 
