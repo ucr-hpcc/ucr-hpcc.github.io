@@ -33,8 +33,8 @@ It has similar functionalities as tmux.
 
 Tmux can be downloaded and installed from
 [here](https://github.com/tmux/tmux/wiki/Installing). A custom tmux (and nvim)
-environment with extensions can be installed by HPCC users by executing a
-single command (here `Install_Nvim-R_Tmux`) in their home account. The same
+environment with extensions can be installed by HPCC users with a
+single command (here `Install_Nvim-R_Tmux`). The same
 script also installs several useful Nvim plugins (see
 [below](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction)).
 Alternatively, the install script can also be downloaded from
