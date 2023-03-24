@@ -55,11 +55,11 @@ following the instructions printed to the screen during the install.
 
 * Both tmux and screen sessions run on the system, where they were initialized. 
 * To reattach to a specific session on a remote system, like the HPCC cluster, one needs to first log in to the same node (here headnode) and then re-attach to the corresponding tmux session. 
-* It is important not to run tmux (or screen) sessions on computer nodes since tmux sessions are persistent. Instead tmux sessions should be run on a headnode. From an open tmux session one can then log in to a computer node via `srun`, or just submit jobs from tmux session with `sbatch`.
+* It is important not to run tmux (or screen) sessions on computer nodes since tmux sessions are persistent. Instead tmux sessions should be run on a headnode. From an open tmux session one can then log in to a computer node via `srun`, or just submit jobs from a tmux session with `sbatch`.
 
 ### Start Tmux
 
-* `module load tmux`: only required on a system that uses environment modules, and the load command is not specified in a user's .bashrc file 
+* `module load tmux`: only required on systems that use environment modules, and the tmux load command is not specified in a user's .bashrc file 
 * `tmux`: starts a new tmux session
 * `tmux a`: attaches to an existing session, or a default session of a system, _e.g._ specified under `~/.tmux.conf`
 * `tmux attach -t <id>`: attaches to a running session selected under `<id>` 
@@ -67,7 +67,7 @@ following the instructions printed to the screen during the install.
 
 ### Prefix 
 
-The prefix for controlling tmux depends on a user's settings specified under `~/.tmux.conf`.
+The prefix for controlling tmux depends on a user's settings in their `~/.tmux.conf` file.
 
 * `Ctrl-b`: default is hard to type, and thus often not preferred
 * `Ctrl-a`: more commonly used, also on HPCC
@@ -81,11 +81,11 @@ The prefix can be changed by placing the following lines into `~/.tmux.conf`.
 
 ### Mouse Support
 
-Mouse support for tmux can be enabled with following command.
+Mouse support in tmux can be enabled with the following command.
 
 * `Ctrl-a : set -g mouse on`  
 
-To turn mouse support on by default, include in `~/.tmux.conf` this line: `set -g mouse on`
+To turn mouse support on by default, include on a separate line of `~/.tmux.conf` this command: `set -g mouse on`
 
 ### Important keybindings for tmux 
 
