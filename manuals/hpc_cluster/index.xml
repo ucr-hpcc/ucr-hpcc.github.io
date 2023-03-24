@@ -1420,18 +1420,18 @@ following the instructions printed to the screen during the install.&lt;/p>
 &lt;ul>
 &lt;li>Both tmux and screen sessions run on the system, where they were initialized.&lt;/li>
 &lt;li>To reattach to a specific session on a remote system, like the HPCC cluster, one needs to first log in to the same node (here headnode) and then re-attach to the corresponding tmux session.&lt;/li>
-&lt;li>It is important not to run tmux (or screen) sessions on computer nodes since tmux sessions are persistent. Instead tmux sessions should be run on a headnode. From an open tmux session one can then log in to a computer node via &lt;code>srun&lt;/code>, or just submit jobs from tmux session with &lt;code>sbatch&lt;/code>.&lt;/li>
+&lt;li>It is important not to run tmux (or screen) sessions on computer nodes since tmux sessions are persistent. Instead tmux sessions should be run on a headnode. From an open tmux session one can then log in to a computer node via &lt;code>srun&lt;/code>, or just submit jobs from a tmux session with &lt;code>sbatch&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="start-tmux">Start Tmux&lt;/h3>
 &lt;ul>
-&lt;li>&lt;code>module load tmux&lt;/code>: only required on a system that uses environment modules, and the load command is not specified in a user&amp;rsquo;s .bashrc file&lt;/li>
+&lt;li>&lt;code>module load tmux&lt;/code>: only required on systems that use environment modules, and the tmux load command is not specified in a user&amp;rsquo;s .bashrc file&lt;/li>
 &lt;li>&lt;code>tmux&lt;/code>: starts a new tmux session&lt;/li>
 &lt;li>&lt;code>tmux a&lt;/code>: attaches to an existing session, or a default session of a system, &lt;em>e.g.&lt;/em> specified under &lt;code>~/.tmux.conf&lt;/code>&lt;/li>
 &lt;li>&lt;code>tmux attach -t &amp;lt;id&amp;gt;&lt;/code>: attaches to a running session selected under &lt;code>&amp;lt;id&amp;gt;&lt;/code>&lt;/li>
 &lt;li>&lt;code>tmux ls&lt;/code>: lists existing tmux sessions&lt;/li>
 &lt;/ul>
 &lt;h3 id="prefix">Prefix&lt;/h3>
-&lt;p>The prefix for controlling tmux depends on a user&amp;rsquo;s settings specified under &lt;code>~/.tmux.conf&lt;/code>.&lt;/p>
+&lt;p>The prefix for controlling tmux depends on a user&amp;rsquo;s settings in their &lt;code>~/.tmux.conf&lt;/code> file.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-b&lt;/code>: default is hard to type, and thus often not preferred&lt;/li>
 &lt;li>&lt;code>Ctrl-a&lt;/code>: more commonly used, also on HPCC&lt;/li>
@@ -1441,11 +1441,11 @@ following the instructions printed to the screen during the install.&lt;/p>
 set -g prefix C-a
 &lt;/code>&lt;/pre>
 &lt;h3 id="mouse-support">Mouse Support&lt;/h3>
-&lt;p>Mouse support for tmux can be enabled with following command.&lt;/p>
+&lt;p>Mouse support in tmux can be enabled with the following command.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Ctrl-a : set -g mouse on&lt;/code>&lt;/li>
 &lt;/ul>
-&lt;p>To turn mouse support on by default, include in &lt;code>~/.tmux.conf&lt;/code> this line: &lt;code>set -g mouse on&lt;/code>&lt;/p>
+&lt;p>To turn mouse support on by default, include on a separate line of &lt;code>~/.tmux.conf&lt;/code> this command: &lt;code>set -g mouse on&lt;/code>&lt;/p>
 &lt;h3 id="important-keybindings-for-tmux">Important keybindings for tmux&lt;/h3>
 &lt;p>&lt;strong>Pane-level commands&lt;/strong>&lt;/p>
 &lt;ul>
