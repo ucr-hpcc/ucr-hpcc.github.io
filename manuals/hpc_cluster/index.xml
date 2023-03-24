@@ -1382,36 +1382,38 @@ To get a list of usernames:&lt;/p>
 &lt;pre>&lt;code class="language-bash">grep &amp;lt;(user_details.sh | awk '{print $4,$5}') -f &amp;lt;(squeue --format '%u' --noheader | sort | uniq) | awk '{print $2}'
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
 &lt;h2 id="terminal-ides">Terminal IDEs&lt;/h2>
-&lt;p>This page introduces tmux and Neovim as terminal-based working environment.
-They can be used independently or in combination, and provide many useful
-functionalities for making work on remote systems more efficient, such as work
-HPC clusters or cloud services. Users who prefer a more graphical
-environment, &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
+&lt;p>This page introduces tmux and Neovim as terminal-based working environments for
+working efficiently on remote systems like HPC clusters or cloud systems. They can
+be used independently or in combination, and provide many useful
+functionalities for working in local or remote terminal environments.
+Users who prefer a more graphical environment,
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
 might be a good alternative.&lt;/p>
 &lt;h2 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h2>
-&lt;p>Tmux is a virtual terminal multiplexer that provides functionality for
-persistent terminal sessions that are re-attachable. It is an incredible
-userful tool for terminal-based work on remote systems. Major advantages of
-tmux are:&lt;/p>
+&lt;p>Tmux is a virtual terminal multiplexer providing persistent terminal sessions
+that are de- and re-attachable. It is an incredible useful tool for terminal-based
+work on remote systems. Major advantages of tmux are:&lt;/p>
 &lt;ul>
-&lt;li>Work in a terminal session cannot get lost due to internet disruptions or even when switching computers.&lt;/li>
-&lt;li>It power charges most terminals with additional functionalities.&lt;/li>
+&lt;li>Work in a terminal session cannot get lost when a terminal session is disconnected
+or disrupted due to internet problems.&lt;/li>
+&lt;li>Its many useful functionalities &amp;lsquo;&lt;em>power charge&lt;/em>&amp;rsquo; terminal application on both local and remote systems.&lt;/li>
 &lt;/ul>
-&lt;p>An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux.&lt;/p>
-&lt;p>Tmux can be downloaded and installed
+&lt;p>Screen is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here).
+It has similar functionalities as tmux.&lt;/p>
+&lt;p>Tmux can be downloaded and installed from
 &lt;a href="https://github.com/tmux/tmux/wiki/Installing">here&lt;/a>. A custom tmux (and nvim)
-environment with extensions can be installed by HPCC users by executing
-&lt;code>Install_Nvim-R_Tmux&lt;/code> in their home account. The same script also installs
-several useful Nvim plugins (see
+environment with extensions can be installed by HPCC users by executing a
+single command (here &lt;code>Install_Nvim-R_Tmux&lt;/code>) in their home account. The same
+script also installs several useful Nvim plugins (see
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction">below&lt;/a>).
-Alternatively, the same install script can be downloaded from
+Alternatively, the install script can also be downloaded from
 &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#2-installation">here&lt;/a>. After installing
-the provided tmux environment in a HPCC user account one needs to log out and
-in again. Note, installing the custom environment is optional and not required
-for any of the following examples. Users also need to be aware that install
-script will make changes to a user’s &lt;code>.bashrc&lt;/code> and &lt;code>.tmux.conf&lt;/code> files. If this
-is not desirable, these changes can be undone by following the instructions
-printed to screen during the install.&lt;/p>
+the provided tmux environment in a user account, one needs to log out and in
+again to activate the environment. Note, installing the custom environment is
+optional and not required for any of the following examples. Users also need to
+be aware that the install script will make changes to their .bashrc&lt;code> and&lt;/code>.tmux.conf` files. If this is not desirable, then one can install the
+components stepwise, or run the install and undo any configuration changes by
+following the instructions printed to screen during the install.&lt;/p>
 &lt;center>&lt;img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif">&lt;/center>
 &lt;center>Tmux: Window Split into Several Panes&lt;/center>
 &lt;h3 id="important-considerations-for-virtual-tmux-sessions">Important considerations for virtual tmux sessions&lt;/h3>
