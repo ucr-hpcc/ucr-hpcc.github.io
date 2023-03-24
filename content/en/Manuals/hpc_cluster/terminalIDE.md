@@ -37,15 +37,15 @@ environment with extensions can be installed by HPCC users with a
 single command (here `Install_Nvim-R_Tmux`). The same
 script also installs several useful Nvim plugins (see
 [below](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction)).
-Alternatively, the install script can also be downloaded from
+Alternatively, the install script can be downloaded from
 [here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
 the provided tmux environment in a user account, one needs to log out and in
 again to activate the environment. Note, installing the custom environment is
 optional and not required for any of the following examples. Users also need to
 be aware that the install script will make changes to their .bashrc` and
 `.tmux.conf` files. If this is not desirable, then one can install the
-components stepwise, or run the install and undo any configuration changes by
-following the instructions printed to screen during the install.
+components stepwise, or run the install, and then undo any configuration changes by
+following the instructions printed to the screen during the install.
 
 <center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"></center>
 <center>Tmux: Window Split into Several Panes</center>
