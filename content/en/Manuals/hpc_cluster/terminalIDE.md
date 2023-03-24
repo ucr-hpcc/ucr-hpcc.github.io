@@ -10,39 +10,42 @@ aliases:
 
 
 ## Terminal IDEs
-This page introduces tmux and Neovim as terminal-based working environment.
-They can be used independently or in combination, and provide many useful
-functionalities for making work on remote systems more efficient, such as work
-HPC clusters or cloud services. Users who prefer a more graphical
-environment, [VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
+This page introduces tmux and Neovim as terminal-based working environments for
+working efficiently on remote systems like HPC clusters or cloud systems. They can
+be used independently or in combination, and provide many useful
+functionalities for working in local or remote terminal environments. 
+Users who prefer a more graphical environment,
+[VSCode](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/)
 might be a good alternative. 
 
 ## Tmux: virtual terminal multiplexer 
 
-Tmux is a virtual terminal multiplexer that provides functionality for
-persistent terminal sessions that are re-attachable. It is an incredible
-userful tool for terminal-based work on remote systems. Major advantages of
-tmux are: 
+Tmux is a virtual terminal multiplexer providing persistent terminal sessions
+that are de- and re-attachable. It is an incredible useful tool for terminal-based
+work on remote systems. Major advantages of tmux are: 
 
-* Work in a terminal session cannot get lost due to internet disruptions or even when switching computers. 
-* It power charges most terminals with additional functionalities.
+* Work in a terminal session cannot get lost when a terminal session is disconnected 
+  or disrupted due to internet problems. 
+* Its many useful functionalities '_power charge_' terminal application on both local and remote systems.
 
-An alternative virtual terminal muliplexer is screen (not covered here). It has similar functionalities as tmux. 
+Screen is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here). 
+It has similar functionalities as tmux. 
 
-Tmux can be downloaded and installed
+Tmux can be downloaded and installed from
 [here](https://github.com/tmux/tmux/wiki/Installing). A custom tmux (and nvim)
-environment with extensions can be installed by HPCC users by executing
-`Install_Nvim-R_Tmux` in their home account. The same script also installs
-several useful Nvim plugins (see
+environment with extensions can be installed by HPCC users by executing a
+single command (here `Install_Nvim-R_Tmux`) in their home account. The same
+script also installs several useful Nvim plugins (see
 [below](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction)).
-Alternatively, the same install script can be downloaded from
+Alternatively, the install script can also be downloaded from
 [here](https://github.com/tgirke/Nvim-R_Tmux#2-installation). After installing
-the provided tmux environment in a HPCC user account one needs to log out and
-in again. Note, installing the custom environment is optional and not required
-for any of the following examples. Users also need to be aware that install
-script will make changes to a user’s `.bashrc` and `.tmux.conf` files. If this
-is not desirable, these changes can be undone by following the instructions
-printed to screen during the install.
+the provided tmux environment in a user account, one needs to log out and in
+again to activate the environment. Note, installing the custom environment is
+optional and not required for any of the following examples. Users also need to
+be aware that the install script will make changes to their .bashrc` and
+`.tmux.conf` files. If this is not desirable, then one can install the
+components stepwise, or run the install and undo any configuration changes by
+following the instructions printed to screen during the install.
 
 <center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"></center>
 <center>Tmux: Window Split into Several Panes</center>
