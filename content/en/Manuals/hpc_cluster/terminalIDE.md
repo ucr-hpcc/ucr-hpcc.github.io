@@ -74,10 +74,10 @@ The prefix for controlling tmux depends on a user's settings in their `~/.tmux.c
 
 The prefix can be changed by placing the following lines into `~/.tmux.conf`.
 
-   ```sh
-   unbind C-b
-   set -g prefix C-a 
-   ```
+```sh
+unbind C-b
+set -g prefix C-a 
+```
 
 ### Mouse Support
 
@@ -125,15 +125,16 @@ __Session-level commands__
 
 ## Vim/Nvim overview
 
-Vim is a widely used, extremely powerful and versatile text editor for coding that is
-usually available on most Linux and Unix systems by default. The newer version is called
-Neovim (nvim). The main advantages of Neovim compared to Vim are its better
-performance and its built-in terminal emulator facilitating the communication
-among Neovim and interactive programming environments, such as command-lines
-and R. Since Vim and Neovim are managed independently, one can
-easily install and use them in parallel on the same system without interfering with
-each other. The usage of Neovim is almost identical to Vim. Emacs is a powerful alternative 
-that can be used as an alternative to Nvim. 
+Vim is a widely used, extremely powerful and versatile text editor for coding
+that is usually available on most Linux, Unix and macOS systems by default, and
+also can be installed on Windows. The newer version is called Neovim or Nvim.
+The main advantages of Nvim compared to Vim are its better performance and its
+built-in terminal emulator facilitating the communication among Nvim and
+interactive programming environments, such as command-lines, octave, R, etc.
+Since Vim and Nvim are managed independently, one can easily install and use
+them in parallel on the same system without interfering with each other. The
+usage of Nvim is almost identical to Vim. Emacs is a powerful alternative that
+can be used as an alternative to Nvim. 
 
 <center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif"></center>
 <center>Neovim Example with Autocompletion</center>
@@ -141,16 +142,19 @@ that can be used as an alternative to Nvim.
 ### Nvim introduction
 
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
-found then it might need to be loaded with `module load neovim` first. A custom
-nvim/tmux environment with extensions can be installed by HPCC users by
-executing `Install_Nvim-R_Tmux` in their home account. For additional details 
-about the install script, see the corresponding tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). 
+found then one might need to load it with `module load neovim` first. A custom
+nvim/tmux environment with extensions can be installed by HPCC users with the 
+`Install_Nvim-R_Tmux` command. For details 
+about this install script, see the corresponding tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). 
 
 ### Open file with Nvim 
 
 ```sh
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
+
+Tip: to always load Nvim with the standard `vim` command, one can add `alias vim=nvim` to `~/.bashrc`.
+ 
 
 ### Three main modes
 
