@@ -1529,7 +1529,7 @@ All other commands are typed in the normal mode after pressing the &lt;code>Esc&
 &lt;/ul>
 &lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>. The corresponding config file
 for the older Vim version is &lt;code>~/.vimrc&lt;/code>.&lt;/p>
-&lt;h3 id="moving-round">Moving round&lt;/h3>
+&lt;h3 id="moving-around">Moving around&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
@@ -1587,7 +1587,7 @@ Help&lt;/a> page.&lt;/p>
 &lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in the account configuration
 with &lt;code>Install_Nvim-R_Tmux&lt;/code> mentioned &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>. To use NERDtree, open
 a file with vim/nvim and then type in normal mode &lt;code>zz&lt;/code>. The same command closes NERDtree. Note the default for opening NERDtree is &lt;code>:NERDtree&lt;/code> which has been
-remapped to &lt;code>zz&lt;/code> for quicker access.
+remapped here to &lt;code>zz&lt;/code> for quicker access.
 The basic NERDtree usage is explained &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage">here&lt;/a>.&lt;/p>
 &lt;center>&lt;img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" >&lt;/center>
 &lt;center>NERDtree in action&lt;/center>
