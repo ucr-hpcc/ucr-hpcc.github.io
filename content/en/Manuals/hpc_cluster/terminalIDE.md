@@ -187,7 +187,7 @@ When enabled, one can position the cursor anywhere with the mouse as well as res
 To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`. The corresponding config file
 for the older Vim version is `~/.vimrc`.
 
-### Moving round
+### Moving around
 
 * `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
@@ -250,7 +250,7 @@ Help](https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/) page.
 NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in the account configuration 
 with `Install_Nvim-R_Tmux` mentioned [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). To use NERDtree, open 
 a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree. Note the default for opening NERDtree is `:NERDtree` which has been 
-remapped to `zz` for quicker access. 
+remapped here to `zz` for quicker access. 
 The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
 
 <center><img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" ></center>
