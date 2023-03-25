@@ -1496,8 +1496,9 @@ can be used as an alternative to Nvim.&lt;/p>
 &lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not
 found then one might need to load it with &lt;code>module load neovim&lt;/code> first. A custom
 nvim/tmux environment with extensions can be installed by HPCC users with the
-&lt;code>Install_Nvim-R_Tmux&lt;/code> command. For details
-about this install script, see the corresponding tmux section &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>.&lt;/p>
+&lt;code>Install_Nvim-R_Tmux&lt;/code> command. For details about this install script, see the
+corresponding tmux section
+&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>.&lt;/p>
 &lt;h3 id="open-file-with-nvim">Open file with Nvim&lt;/h3>
 &lt;pre>&lt;code class="language-sh">nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 &lt;/code>&lt;/pre>
