@@ -143,9 +143,10 @@ can be used as an alternative to Nvim.
 
 The following opens a file (here `myfile`) with nvim (or vim). If nvim is not
 found then one might need to load it with `module load neovim` first. A custom
-nvim/tmux environment with extensions can be installed by HPCC users with the 
-`Install_Nvim-R_Tmux` command. For details 
-about this install script, see the corresponding tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). 
+nvim/tmux environment with extensions can be installed by HPCC users with the
+`Install_Nvim-R_Tmux` command. For details about this install script, see the
+corresponding tmux section
+[above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). 
 
 ### Open file with Nvim 
 
