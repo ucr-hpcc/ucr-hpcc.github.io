@@ -211,7 +211,7 @@ for the older Vim version is `~/.vimrc`.
 
 ### Powerful features of command mode
 
-For example, search and replace with regular expression support
+For example, search and replace with regular expression support. A detailed overview for using regular expressions in vim is [here](https://learnbyexample.gitbooks.io/vim-reference/content/Regular_Expressions.html).
 
 * `/` or `?`: search in text forward and backward
 * `:%s/search_pattern/replace_pattern/cg`: replacement syntax 
@@ -248,8 +248,10 @@ Help](https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/) page.
 
 ### File browser built into vim: `NERDtree`
 
-NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration 
-with `Install_Nvim-R_Tmux`. To use NERDtree, open a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree.
+NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in the account configuration 
+with `Install_Nvim-R_Tmux` mentioned [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). To use NERDtree, open 
+a file with vim/nvim and then type in normal mode `zz`. The same command closes NERDtree. Note the default for opening NERDtree is `:NERDtree` which has been 
+remapped to `zz` for quicker access. 
 The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
 
 <center><img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" ></center>
@@ -265,11 +267,12 @@ The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tm
 
 ### Basics
 
-Tmux is a terminal multiplexer that allows to split terminal windows and to detach/reattach to
-existing terminal sessions. Combinded with the `nvim-r` plugin it provides a powerful command-line working 
-environment for R where users can send code from a script to the R console or command-line.
-Both tmux and the `nvim-r` plugin need to be installed on a system. On HPCC Cluster both are configured
-in each user account. If this is not the case then follow the quick configuration instructions given in the following subsection.
+The `Nvim-R` plugin provides a powerful command-line working environment for R
+where users can send code from an R/Rmd script opened in Nvim to the R console.
+Essentially, this provides an RStudio like working environment within a terminal,
+which is often more flexible when working on remote systems than a GUI solution. 
+It also can be combined with tmux to support 'persistent' R sessions that can be de- and
+re-attached (see tmux session above). 
 
 <center><img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
 <center>Nvim-R IDE for R</center>
@@ -277,10 +280,10 @@ in each user account. If this is not the case then follow the quick configuratio
 
 ### Quick configuration in user accounts
 
-Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
-instructions](https://github.com/tgirke/Nvim-R_Tmux) to install Nvim-R-Tmux from scratch on your own system.
+The following steps 1-3 can be skipped if Nvim, Tmux and nvimR are already configured on a user's system or account. One can also follow the [detailed
+instructions](https://github.com/tgirke/Nvim-R_Tmux) for installing `Nvim-R-Tmux` from scratch.
 
-1. Log in to your user account on HPCC and execute `Install_Nvim-R_Tmux` (old: `install_nvimRtmux`). Alternatively, follow these step-by-step [install commands](https://github.com/tgirke/Nvim-R_Tmux).
+1. Log in to your user account on HPCC and execute `Install_Nvim-R_Tmux` (old: `install_nvimRtmux`). Additional details on this install are given in the tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer). Alternatively, one can use the step-by-step install [here](https://github.com/tgirke/Nvim-R_Tmux).
 2. To enable the nvim-R-tmux environment, log out and in again.
 3. Follow usage instructions of next section.
 
@@ -291,7 +294,7 @@ The following gives a short introduction into the basic usage of Nvim-R-Tmux:
 
 __1. Start tmux session__ (optional)
 
-Note, running Nvim from within a tmux session is optional. Skip this step if tmux functionality is not required (_e.g._ reattaching to sessions on remote systems).
+Note, running Nvim from within a tmux session is optional. Skip this step if tmux functionality is not required (_e.g._ re-attaching to sessions on remote systems).
 
 ```sh
 tmux # starts a new tmux session 
@@ -300,7 +303,7 @@ tmux a # attaches to an existing session
 
 __2. Open nvim-connected R session__ 
 
-Open a `*.R` or `*.Rmd` file with `nvim` and intialize a connected R session with `\rf`. This command can be remapped to other key combinations, e.g. uncommenting lines 10-12 in `.config/nvim/init.vim` will remap it to the `F2` key. Note, the resulting split window among Nvim and R behaves like a split viewport in `nvim` or `vim` meaning the usage of `Ctrl-w w` followed by `i` and `Esc` is important for navigation.
+Open a `*.R` or `*.Rmd` file with `nvim` and intialize a connected R session with `\rf`. This command can be remapped to other key combinations, e.g. uncommenting lines 10-12 in `.config/nvim/init.vim` will remap it to the `F2` key. Note, the resulting split window between Nvim and R behaves like a split viewport in `nvim` meaning the usage of `Ctrl-w w` followed by `i` and `Esc` is important for navigation (for details see vim usage above).
 
 ```sh
 nvim myscript.R # or *.Rmd file
@@ -308,43 +311,21 @@ nvim myscript.R # or *.Rmd file
 
 __3. Send R code from nvim to the R pane__
 
-Single lines of code can be sent from nvim to the R console by pressing the space bar. To send 
-several lines at once, one can select them in nvim's visual mode and then hit the space bar. 
-Please note, the default command for sending code lines in the nvim-r-plugin is `\l`. This key 
-binding has been remapped in the provided `.config/nvim/init.vim` file to the space bar. Most other key bindings (shortcuts) still start with the `\` as LocalLeader, _e.g._ `\rh` opens the help for a function/object where the curser is located in nvim. More details on this are given below.
+Single lines of code can be sent from nvim to the R console by pressing the
+space bar. To send several lines at once, one can select them in nvim's visual
+mode and then press the space bar. Please note, the default command for sending
+code lines in the nvim-r-plugin is `\l`. This key binding has been remapped in
+the provided `.config/nvim/init.vim` file to the space bar. Most other key
+bindings (shortcuts) still start with the `\` as LocalLeader, _e.g._ `\rh`
+opens the help for a function/object where the curser is located in nvim. More
+details on this are given below.
 
 
 ### Important keybindings for tmux
 
-__Pane-level commands__
+See corresponding tmux section [above](https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#important-keybindings-for-tmux).
 
-* `Ctrl-a %`: splits pane vertically
-* `Ctrl-a "`: splits pane horizontally
-* `Ctrl-a o`: jumps cursor to next pane
-* `Ctrl-a Ctrl-o`: swaps panes
-* `Ctrl-a <space bar>`: rotates pane arrangement
-* `Ctrl-a Alt <left or right>`: resizes to left or right
-* `Ctrl-a Esc <up or down>`: resizes to left or right
-
-__Window-level comands__
-
-* `Ctrl-a n`: switches to next tmux window 
-* `Ctrl-a Ctrl-a`: switches to previous tmux window
-* `Ctrl-a c`: creates a new tmux window 
-* `Ctrl-a 1`: switches to specific tmux window selected by number
-
-__Session-level comands__
-
-* `Ctrl-a d`: detaches from current session
-* `Ctrl-a s`: switch between available tmux sesssions
-* `$ tmux new -s <name>`: starts new session with a specific name
-* `$ tmux ls`: lists available tmux session(s)
-* `$ tmux attach -t <id>`: attaches to specific tmux session  
-* `$ tmux attach`: reattaches to session 
-* `$ tmux kill-session -t <id>`: kills a specific tmux session
-* `Ctrl-a : kill-session`: kills a session from tmux command mode that can be initiated with `Ctrl-a :`
-
-## For Bash, Python and other languages
+## `Nvim-R`-like solutions for Bash, Python and other languages
 
 ### Basics
 
