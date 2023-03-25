@@ -10,7 +10,7 @@ aliases:
 
 
 ## Terminal IDEs
-This page introduces tmux and Neovim as terminal-based working environments for
+This page introduces [tmux](https://github.com/tmux/tmux/wiki) and [Neovim](https://neovim.io/) as terminal-based working environments for
 working efficiently on remote systems like HPC clusters or cloud systems. They can
 be used independently or in combination, and provide many useful
 functionalities for working in local or remote terminal environments. 
@@ -20,14 +20,14 @@ might be a good alternative.
 
 ## Tmux: virtual terminal multiplexer 
 
-Tmux is a virtual terminal multiplexer providing persistent terminal sessions
+[Tmux](https://github.com/tmux/tmux/wiki) is a virtual terminal multiplexer providing persistent terminal sessions
 that are de- and re-attachable. It is an incredible useful tool for terminal-based
 work on remote systems. Major advantages of tmux are: 
 
 * Work on remote system cannot get lost due to disconnects. One can always re-attach to a session from the same or different computers. 
 * Many useful functionalities '_power charge_' terminals.
 
-Screen is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here). 
+[Screen](https://www.gnu.org/software/screen/) is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here). 
 It has similar functionalities as tmux. 
 
 Tmux can be downloaded and installed from
