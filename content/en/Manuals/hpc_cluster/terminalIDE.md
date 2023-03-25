@@ -236,7 +236,7 @@ For a more complete listing type `:set all` or consult the vim help with `:help`
 ### Help
 
 Vim has a comprehensive built-in help system. To access and navigate it, here
-are some important commands. For a more comprehensive overview, visit this
+are some important commands. For a more detailed overview, visit this
 [Built-in Vim
 Help](https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/) page. 
 
