@@ -1460,6 +1460,7 @@ window- and session-level commands.&lt;/p>
 &lt;li>&lt;code>Ctrl-a &amp;lt;space bar&amp;gt;&lt;/code>: rotates pane arrangement&lt;/li>
 &lt;li>&lt;code>Ctrl-a Alt &amp;lt;left or right&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
 &lt;li>&lt;code>Ctrl-a Esc &amp;lt;up or down&amp;gt;&lt;/code>: resizes to left or right&lt;/li>
+&lt;li>&lt;code>Ctrl-a z&lt;/code>: zoom into split pane (full window view); press again to zoom out&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Window-level commands&lt;/strong>&lt;/p>
 &lt;ul>
@@ -1504,16 +1505,17 @@ corresponding tmux section
 &lt;/code>&lt;/pre>
 &lt;p>Tip: to always load Nvim with the standard &lt;code>vim&lt;/code> command, one can add &lt;code>alias vim=nvim&lt;/code> to &lt;code>~/.bashrc&lt;/code>.&lt;/p>
 &lt;h3 id="three-main-modes">Three main modes&lt;/h3>
-&lt;p>Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:&lt;/p>
+&lt;p>Within Vim/Nvim, there are three main modes: normal, insert and command mode. The most important commands
+for navigating between the three modes are:&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key brings you from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
-&lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key brings you from the insert mode back to the normal mode.&lt;/li>
+&lt;li>&lt;code>i&lt;/code>: The &lt;code>i&lt;/code> key switches from the normal mode to the insert mode. The latter is used for typing.&lt;/li>
+&lt;li>&lt;code>Esc&lt;/code>: The &lt;code>Esc&lt;/code> key switches from the insert mode back to the normal mode.&lt;/li>
 &lt;li>&lt;code>:&lt;/code>: The &lt;code>:&lt;/code> key starts the command mode at the bottom of the screen.&lt;/li>
 &lt;/ul>
-&lt;h3 id="important-modifier-keys-to-control-vimnvim">Important modifier keys to control vim/nvim&lt;/h3>
-&lt;p>Use the arrow keys to move your cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
-the text quicker. In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
-All other commands are typed in the normal mode after pushing the &lt;code>Esc&lt;/code> key.&lt;/p>
+&lt;h3 id="most-important-modifier-keys">Most important modifier keys&lt;/h3>
+&lt;p>The arrow keys can be used to move the cursor in the text. Using &lt;code>Fn Up/Down key&lt;/code> allows to page through
+the text quicker (more on this below). In the following command overview, all commands starting with &lt;code>:&lt;/code> need to be typed in the command mode.
+All other commands are typed in the normal mode after pressing the &lt;code>Esc&lt;/code> key.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>:w&lt;/code>: save changes to file. If you are in editing mode you have to hit &lt;code>Esc&lt;/code> first.&lt;/li>
 &lt;li>&lt;code>:q&lt;/code>: quit file that has not been changed&lt;/li>
@@ -1521,12 +1523,13 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:!q&lt;/code>: quit file without saving any changes&lt;/li>
 &lt;/ul>
 &lt;h3 id="mouse-support-1">Mouse support&lt;/h3>
-&lt;p>When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.&lt;/p>
+&lt;p>When enabled, one can position the cursor anywhere with the mouse as well as resize Nvim split windows, and switch the scope from one window split to another.&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>:set mouse=n&lt;/code> # Enables mouse support, also try a option&lt;/li>
-&lt;li>&lt;code>:set mouse-=n&lt;/code> # Disables mouse support&lt;/li>
+&lt;li>&lt;code>:set mouse=n&lt;/code> # enables mouse support, also try the &lt;code>a&lt;/code> option&lt;/li>
+&lt;li>&lt;code>:set mouse-=n&lt;/code> # disables mouse support&lt;/li>
 &lt;/ul>
-&lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>.&lt;/p>
+&lt;p>To enable mouse support by default, add &lt;code>set mouse=n&lt;/code> to Nvim’s config file located in a user’s home under &lt;code>~/.config/nvim/init.vim&lt;/code>. The corresponding config file
+for the older Vim version is &lt;code>~/.vimrc&lt;/code>.&lt;/p>
 &lt;h3 id="moving-round">Moving round&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
@@ -1545,7 +1548,6 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
 &lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
 &lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
-&lt;li>&lt;code>Ctrl-spacebar&lt;/code>: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in &lt;code>init.vim&lt;/code> from difficult to type default &lt;code>Ctrl-x Ctrl-o&lt;/code>.&lt;/li>
 &lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
 &lt;h3 id="powerful-features-of-command-mode">Powerful features of command mode&lt;/h3>
@@ -1554,10 +1556,12 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;li>&lt;code>/&lt;/code> or &lt;code>?&lt;/code>: search in text forward and backward&lt;/li>
 &lt;li>&lt;code>:%s/search_pattern/replace_pattern/cg&lt;/code>: replacement syntax&lt;/li>
 &lt;/ul>
-&lt;h3 id="useful-set-command">Useful set command&lt;/h3>
+&lt;h3 id="set-command">Set command&lt;/h3>
+&lt;p>The &lt;code>set&lt;/code> command typed in the command mode provides access to a large number of additional functions. Only a small number of examples is given here.
+For a more complete listing type &lt;code>:set all&lt;/code> or consult the vim help with &lt;code>:help&lt;/code>.&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>set number&lt;/code> or &lt;code>set nonumber&lt;/code>: toggle for turning line nubers on/off&lt;/li>
-&lt;li>&lt;code>set syntax=bash&lt;/code>: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with &lt;code>set syntax=off&lt;/code>&lt;/li>
+&lt;li>&lt;code>:set number&lt;/code> or &lt;code>:set nonumber&lt;/code>: toggle for turning line nubers on/off&lt;/li>
+&lt;li>&lt;code>:set syntax=bash&lt;/code>: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with &lt;code>set syntax=off&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h3 id="visual-mode">Visual mode&lt;/h3>
 &lt;ul>
@@ -1568,6 +1572,17 @@ All other commands are typed in the normal mode after pushing the &lt;code>Esc&l
 &lt;ul>
 &lt;li>&lt;code>yy&lt;/code>: copies line where cursor is or those that are selected via visual mode. Paste works with &lt;code>p&lt;/code> as above.&lt;/li>
 &lt;li>&lt;code>dd&lt;/code>: deletes line where cursor is or those that are selected via visual mode.&lt;/li>
+&lt;/ul>
+&lt;h3 id="help">Help&lt;/h3>
+&lt;p>Vim has a comprehensive built-in help system. To access and navigate it, here
+are some important commands. For a more comprehensive overview, visit this
+&lt;a href="https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/">Built-in Vim
+Help&lt;/a> page.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>:help&lt;/code>: opens vim help system (&lt;code>:q&lt;/code> closes it)&lt;/li>
+&lt;li>&lt;code>Ctrl-]&lt;/code> or &lt;code>Ctrl-[&lt;/code>: use in help to jump to tagged topic&lt;/li>
+&lt;li>&lt;code>:help helphelp&lt;/code>: opens help as a file&lt;/li>
+&lt;li>&lt;code>:help quickhelp&lt;/code> or &lt;code>:help index&lt;/code>: short help overview&lt;/li>
 &lt;/ul>
 &lt;h3 id="file-browser-built-into-vim-nerdtree">File browser built into vim: &lt;code>NERDtree&lt;/code>&lt;/h3>
 &lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in account configuration
