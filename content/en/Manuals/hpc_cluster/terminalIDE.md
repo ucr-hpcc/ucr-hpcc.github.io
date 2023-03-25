@@ -102,7 +102,8 @@ __Pane-level commands__
 * `Ctrl-a Ctrl-o`: swaps panes
 * `Ctrl-a <space bar>`: rotates pane arrangement
 * `Ctrl-a Alt <left or right>`: resizes to left or right
-* `Ctrl-a Esc <up or down>`: resizes to left or right	
+* `Ctrl-a Esc <up or down>`: resizes to left or right
+* `Ctrl-a z`: zoom into split pane (full window view); press again to zoom out
 
 __Window-level commands__
 
@@ -159,17 +160,18 @@ Tip: to always load Nvim with the standard `vim` command, one can add `alias vim
 
 ### Three main modes
 
-Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
+Within Vim/Nvim, there are three main modes: normal, insert and command mode. The most important commands 
+for navigating between the three modes are:
 
-* `i`: The `i` key brings you from the normal mode to the insert mode. The latter is used for typing. 
-* `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
+* `i`: The `i` key switches from the normal mode to the insert mode. The latter is used for typing. 
+* `Esc`: The `Esc` key switches from the insert mode back to the normal mode.
 * `:`: The `:` key starts the command mode at the bottom of the screen.
 
-### Important modifier keys to control vim/nvim
+### Most important modifier keys
 
-Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
-the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
-All other commands are typed in the normal mode after pushing the `Esc` key. 
+The arrow keys can be used to move the cursor in the text. Using `Fn Up/Down key` allows to page through
+the text quicker (more on this below). In the following command overview, all commands starting with `:` need to be typed in the command mode. 
+All other commands are typed in the normal mode after pressing the `Esc` key. 
 
 * `:w`: save changes to file. If you are in editing mode you have to hit `Esc` first.
 * `:q`: quit file that has not been changed
@@ -178,12 +180,13 @@ All other commands are typed in the normal mode after pushing the `Esc` key.
 
 ### Mouse support
 
-When enabled, one can position the cursor anywhere with the mouse as well as resize split windows, and switch the scope from one window split to another.
+When enabled, one can position the cursor anywhere with the mouse as well as resize Nvim split windows, and switch the scope from one window split to another.
 
-* `:set mouse=n`  # Enables mouse support, also try a option
-* `:set mouse-=n` # Disables mouse support
+* `:set mouse=n`  # enables mouse support, also try the `a` option
+* `:set mouse-=n` # disables mouse support
 
-To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`.
+To enable mouse support by default, add `set mouse=n` to Nvim’s config file located in a user’s home under `~/.config/nvim/init.vim`. The corresponding config file
+for the older Vim version is `~/.vimrc`.
 
 ### Moving round
 
@@ -204,7 +207,6 @@ To enable mouse support by default, add `set mouse=n` to Nvim’s config file lo
 * `:resize <+5 or -5>`: resizes height by specified value
 * `:vertical resize <+5 or -5>`: resizes width by specified value
 * `Ctrl-w H` or `Ctrl-w K`: toggles between horizontal/vertical splits
-* `Ctrl-spacebar`: omni completion for R objects/functions when nvim is in insert mode. Note, this has been remapped in `init.vim` from difficult to type default `Ctrl-x Ctrl-o`. 
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
 ### Powerful features of command mode
@@ -214,10 +216,13 @@ For example, search and replace with regular expression support
 * `/` or `?`: search in text forward and backward
 * `:%s/search_pattern/replace_pattern/cg`: replacement syntax 
 
-### Useful set command
+### Set command
 
-* `set number` or `set nonumber`: toggle for turning line nubers on/off
-* `set syntax=bash`: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with `set syntax=off`
+The `set` command typed in the command mode provides access to a large number of additional functions. Only a small number of examples is given here. 
+For a more complete listing type `:set all` or consult the vim help with `:help`.
+
+* `:set number` or `:set nonumber`: toggle for turning line nubers on/off
+* `:set syntax=bash`: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with `set syntax=off`
 
 ### Visual mode
 
@@ -228,6 +233,18 @@ For example, search and replace with regular expression support
 
 * `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with `p` as above.
 * `dd`: deletes line where cursor is or those that are selected via visual mode.
+
+### Help
+
+Vim has a comprehensive built-in help system. To access and navigate it, here
+are some important commands. For a more comprehensive overview, visit this
+[Built-in Vim
+Help](https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/) page. 
+
+* `:help`: opens vim help system (`:q` closes it)
+* `Ctrl-]` or `Ctrl-[`: use in help to jump to tagged topic 
+* `:help helphelp`: opens help as a file
+* `:help quickhelp` or `:help index`: short help overview
 
 ### File browser built into vim: `NERDtree`
 
