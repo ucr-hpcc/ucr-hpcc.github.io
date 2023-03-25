@@ -1574,7 +1574,7 @@ For a more complete listing type &lt;code>:set all&lt;/code> or consult the vim 
 &lt;/ul>
 &lt;h3 id="help">Help&lt;/h3>
 &lt;p>Vim has a comprehensive built-in help system. To access and navigate it, here
-are some important commands. For a more comprehensive overview, visit this
+are some important commands. For a more detailed overview, visit this
 &lt;a href="https://www.seanh.cc/2020/08/02/how-to-use-vim's-built-in-help/">Built-in Vim
 Help&lt;/a> page.&lt;/p>
 &lt;ul>
