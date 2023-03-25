@@ -1394,9 +1394,8 @@ might be a good alternative.&lt;/p>
 that are de- and re-attachable. It is an incredible useful tool for terminal-based
 work on remote systems. Major advantages of tmux are:&lt;/p>
 &lt;ul>
-&lt;li>Work in a terminal session cannot get lost when a terminal session is disconnected
-or disrupted due to internet problems.&lt;/li>
-&lt;li>Its many useful functionalities &amp;lsquo;&lt;em>power charge&lt;/em>&amp;rsquo; terminal application on both local and remote systems.&lt;/li>
+&lt;li>Work on remote system cannot get lost due to disconnects. One can always re-attach to a session from the same or different computers.&lt;/li>
+&lt;li>Many useful functionalities &amp;lsquo;&lt;em>power charge&lt;/em>&amp;rsquo; terminals.&lt;/li>
 &lt;/ul>
 &lt;p>Screen is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here).
 It has similar functionalities as tmux.&lt;/p>
