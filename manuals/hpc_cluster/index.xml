@@ -1382,7 +1382,7 @@ To get a list of usernames:&lt;/p>
 &lt;pre>&lt;code class="language-bash">grep &amp;lt;(user_details.sh | awk '{print $4,$5}') -f &amp;lt;(squeue --format '%u' --noheader | sort | uniq) | awk '{print $2}'
 &lt;/code>&lt;/pre></description></item><item><title>Manuals: Terminal-based Working Environments</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/</guid><description>
 &lt;h2 id="terminal-ides">Terminal IDEs&lt;/h2>
-&lt;p>This page introduces tmux and Neovim as terminal-based working environments for
+&lt;p>This page introduces &lt;a href="https://github.com/tmux/tmux/wiki">tmux&lt;/a> and &lt;a href="https://neovim.io/">Neovim&lt;/a> as terminal-based working environments for
 working efficiently on remote systems like HPC clusters or cloud systems. They can
 be used independently or in combination, and provide many useful
 functionalities for working in local or remote terminal environments.
@@ -1390,14 +1390,14 @@ Users who prefer a more graphical environment,
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode&lt;/a>
 might be a good alternative.&lt;/p>
 &lt;h2 id="tmux-virtual-terminal-multiplexer">Tmux: virtual terminal multiplexer&lt;/h2>
-&lt;p>Tmux is a virtual terminal multiplexer providing persistent terminal sessions
+&lt;p>&lt;a href="https://github.com/tmux/tmux/wiki">Tmux&lt;/a> is a virtual terminal multiplexer providing persistent terminal sessions
 that are de- and re-attachable. It is an incredible useful tool for terminal-based
 work on remote systems. Major advantages of tmux are:&lt;/p>
 &lt;ul>
 &lt;li>Work on remote system cannot get lost due to disconnects. One can always re-attach to a session from the same or different computers.&lt;/li>
 &lt;li>Many useful functionalities &amp;lsquo;&lt;em>power charge&lt;/em>&amp;rsquo; terminals.&lt;/li>
 &lt;/ul>
-&lt;p>Screen is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here).
+&lt;p>&lt;a href="https://www.gnu.org/software/screen/">Screen&lt;/a> is a related virtual terminal multiplexer tool that can be used as an alternative (not covered here).
 It has similar functionalities as tmux.&lt;/p>
 &lt;p>Tmux can be downloaded and installed from
 &lt;a href="https://github.com/tmux/tmux/wiki/Installing">here&lt;/a>. A custom tmux (and nvim)
