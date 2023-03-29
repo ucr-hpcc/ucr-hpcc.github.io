@@ -46,7 +46,7 @@ be aware that the install script will make changes to their .bashrc` and
 components stepwise, or run the install, and then undo any configuration changes by
 following the instructions printed to the screen during the install.
 
-<center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"></center>
+<center><img title="tmux" src="https://assets-global.website-files.com/607f4f6df411bd9e447dc7d8/607f4f6df411bd02d27dcb8b_tmux-vim-style-nav-with-fzf.gif"  width="600"></center>
 <center>Tmux: Window Split into Several Panes</center>
 
 
@@ -136,7 +136,7 @@ them in parallel on the same system without interfering with each other. The
 usage of Nvim is almost identical to Vim. Emacs is a powerful alternative that
 can be used as an alternative to Nvim. 
 
-<center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif"></center>
+<center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif width="600""></center>
 <center>Neovim Example with Autocompletion</center>
 
 ### Nvim introduction
@@ -240,7 +240,7 @@ enable indentation lines in nvim, one can use the
 [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 plugin. Installation and configuration instructions for this plugin are [here](https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides). 
 
-<center><img title="indent_blankline" src="https://camo.githubusercontent.com/795d0b92e1853b23f440265abcb75a8bad4d29bd9b8d1ed040885e00731d28b3/68747470733a2f2f692e696d6775722e636f6d2f56784354684d752e706e67" width="500"></center>
+<center><img title="indent_blankline" src="https://camo.githubusercontent.com/795d0b92e1853b23f440265abcb75a8bad4d29bd9b8d1ed040885e00731d28b3/68747470733a2f2f692e696d6775722e636f6d2f56784354684d752e706e67" width="600"></center>
 <center>Indentation Guides with `indent-blankline.nvim` Plugin</center>
 
 ### Help
@@ -263,7 +263,7 @@ a file with vim/nvim and then type in normal mode `zz`. The same command closes 
 remapped here to `zz` for quicker access. 
 The basic NERDtree usage is explained [here](https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage).
 
-<center><img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" ></center>
+<center><img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" width="600"></center>
 <center>NERDtree in action</center>
 
 ### Useful resources for learning vim/nvim
