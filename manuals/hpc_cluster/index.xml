@@ -1572,6 +1572,11 @@ For a more complete listing type &lt;code>:set all&lt;/code> or consult the vim 
 &lt;li>&lt;code>yy&lt;/code>: copies line where cursor is or those that are selected via visual mode. Paste works with &lt;code>p&lt;/code> as above.&lt;/li>
 &lt;li>&lt;code>dd&lt;/code>: deletes line where cursor is or those that are selected via visual mode.&lt;/li>
 &lt;/ul>
+&lt;h3 id="indentation-guides">Indentation guides&lt;/h3>
+&lt;p>Vertical indentation lines (guides) are useful for tracking context in code. To
+enable indentation lines in nvim, one can use the
+&lt;a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim&lt;/a>
+plugin. Installation and configuration instructions for this plugin are &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides">here&lt;/a>.&lt;/p>
 &lt;h3 id="help">Help&lt;/h3>
 &lt;p>Vim has a comprehensive built-in help system. To access and navigate it, here
 are some important commands. For a more detailed overview, visit this
