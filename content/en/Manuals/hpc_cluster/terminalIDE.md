@@ -240,6 +240,9 @@ enable indentation lines in nvim, one can use the
 [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 plugin. Installation and configuration instructions for this plugin are [here](https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides). 
 
+<center><img title="indent_blankline" src="https://camo.githubusercontent.com/7b47d7af987d8cb183b47ba5b39d554247d6aa055ef8db64baf5dada35080041/68747470733a2f2f692e696d6775722e636f6d2f453342305055622e706e67"></center>
+<center>Indentation Guides with `indent-blankline.nvim` Plugin</center>
+
 ### Help
 
 Vim has a comprehensive built-in help system. To access and navigate it, here
