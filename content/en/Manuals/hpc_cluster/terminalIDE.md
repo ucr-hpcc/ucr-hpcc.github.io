@@ -136,7 +136,7 @@ them in parallel on the same system without interfering with each other. The
 usage of Nvim is almost identical to Vim. Emacs is a powerful alternative that
 can be used as an alternative to Nvim. 
 
-<center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif width="600""></center>
+<center><img title="neovim" src="https://user-images.githubusercontent.com/16662357/128590006-0fc1451f-fac1-49b2-bb95-8aba21bfa44e.gif" width="600"></center>
 <center>Neovim Example with Autocompletion</center>
 
 ### Nvim introduction
