@@ -233,6 +233,13 @@ For a more complete listing type `:set all` or consult the vim help with `:help`
 * `yy`: copies line where cursor is or those that are selected via visual mode. Paste works with `p` as above.
 * `dd`: deletes line where cursor is or those that are selected via visual mode.
 
+### Indentation guides
+
+Vertical indentation lines (guides) are useful for tracking context in code. To
+enable indentation lines in nvim, one can use the
+[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+plugin. Installation and configuration instructions for this plugin are [here](https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides). 
+
 ### Help
 
 Vim has a comprehensive built-in help system. To access and navigate it, here
