@@ -59,6 +59,12 @@ icon in the bottom left of VSCode. Select the "Connect to Tunnel..." option, the
 
 After VSCode connects, you should be able to open Files and Folders on the cluster as if it were your local machine.
 
+### Using the Built-In Terminal
+
+One feature that VSCode integrates is an in-editor terminal. To activate it, you can use the keyboard shortcut `` Ctrl+` ``, or via `View > Terminal` from the status bar.
+
+By default, you might be dropped into a basic shell without some of the features that you are used to (eg. with the prompt `bash-4.4$` instead of `username@node`). To fix this, you can type `bash -l` that should bring you to the terminal environment that you are used to, and from here you can navigate and use the cluster as if it was any other terminal program.
+
 ### Cleaning Up
 
 Once you have finished, make sure to close VSCode (locally or using your web browser). Then stop the Tunnel from running on the cluster using `Ctrl+C`.
