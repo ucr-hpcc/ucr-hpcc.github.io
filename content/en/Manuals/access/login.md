@@ -130,7 +130,8 @@ much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/man
 #### (a) SSH Key Creation
 
 An ssh key pair can be created with the following commands in a [terminal](#terminal) application of all major
-operating systems, including Windows, macOS, Linux and ChromeOS.
+operating systems, including Windows, macOS, Linux and ChromeOS. Note, the following commands need to be executed on 
+a user's local computer (not the cluster).
 
 __1.__ Create SSH directory
 
