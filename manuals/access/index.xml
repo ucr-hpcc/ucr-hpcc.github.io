@@ -95,7 +95,8 @@ This includes GUI based based options. However, we highly recommend to use the c
 much more straigthforward to use, including &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm">MobaXterm&lt;/a> on Windows.&lt;/p>
 &lt;h4 id="a-ssh-key-creation">(a) SSH Key Creation&lt;/h4>
 &lt;p>An ssh key pair can be created with the following commands in a &lt;a href="#terminal">terminal&lt;/a> application of all major
-operating systems, including Windows, macOS, Linux and ChromeOS.&lt;/p>
+operating systems, including Windows, macOS, Linux and ChromeOS. Note, the following commands need to be executed on
+a user&amp;rsquo;s local computer (not the cluster).&lt;/p>
 &lt;p>&lt;strong>1.&lt;/strong> Create SSH directory&lt;/p>
 &lt;pre>&lt;code class="language-bash">mkdir -p ~/.ssh
 &lt;/code>&lt;/pre>
