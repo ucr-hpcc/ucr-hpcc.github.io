@@ -14,6 +14,10 @@ aliases:
 <!-- 
 None currently observed.
 -->
+### 10-Apr-2023: Bigdata down
+
+* 4:30 PM - Bigdata is currently down. Please be patient...
+
 ### 22-Dec-2022: Network outage
 
 * 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
