@@ -14,6 +14,10 @@ aliases:
 <!-- 
 None currently observed.
 -->
+### 10-Apr-2023: Bigdata back
+
+* 5:30 PM - Bigdata is back. Please be patience.
+
 ### 10-Apr-2023: Bigdata down
 
 * 4:30 PM - Bigdata is currently down. Please be patient...
