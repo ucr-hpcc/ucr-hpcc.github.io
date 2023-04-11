@@ -16,7 +16,7 @@ None currently observed.
 -->
 ### 10-Apr-2023: Bigdata back
 
-* 5:30 PM - Bigdata is back. Please be patience.
+* 5:30 PM - Bigdata is back. Thank for for your patience.
 
 ### 10-Apr-2023: Bigdata down
 
