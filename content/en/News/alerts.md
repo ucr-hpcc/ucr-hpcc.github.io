@@ -8,6 +8,13 @@ aliases:
     - /alerts
 ---
 
+## Scheduled exceptions and downtimes
+
+### 6-May-2023: Tentative Full Shutdown of HPCC Cluster
+
+* UCR Facilities Services will be upgrading our electrical capacity in the Genomics Building. As a precaution, Slurm reservations
+  and node blocks have been issued to reduce the number of jobs that may be put in jeopardy by a power interruption. An e-mail
+  will be sent to all HPCC users once details are finalized.
 
 ## Unannounced exceptions
 
@@ -48,9 +55,6 @@ None currently observed.
 ### 11-Jan-2020: AC unit failed
 
 * 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
-
-## Scheduled exceptions and downtimes
-None currently scheduled.
 
 ## HPCC Operation During COVID-19 Crisis
 
