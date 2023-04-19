@@ -88,10 +88,12 @@ CPU quota per user is usually lower compared to the PI-based model.
 
 ## Using HPCC cluster for classes
 
-To use the HPCC cluster for teaching, please coordinate with the administrators
-at least 4 weeks prior to the start of a class so that there is enough time for
-planning. This includes the number of user accounts, software requirement, 
-creation of a class-specific slurm partition, data storage reservations, etc. 
+To use the HPCC cluster for teaching, please coordinate with the systems
+administrators (support@hpcc.ucr.edu) at least 4 weeks prior to the start of a
+class so that there is enough time for planning. Details that need be discussed
+includes the number of user accounts required, special software requirements,
+creation of a class-specific Slurm partition, data storage reservations, as well
+as other needs that may vary for different classes. 
 
 ## External user accounts
 Accounts for external customers can only be granted if a lab has a strong
