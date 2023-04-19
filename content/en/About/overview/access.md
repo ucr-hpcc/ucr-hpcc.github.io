@@ -86,6 +86,13 @@ that will be administered similarly as described above under the _Ownership
 model_. Due to the large number of expected users from departments, the
 CPU quota per user is usually lower compared to the PI-based model.
 
+## Using HPCC cluster for classes
+
+To use the HPCC cluster for teaching, please coordinate with the administrators
+at least 4 weeks prior to the start of a class so that there is enough time for
+planning. This includes the number of user accounts, software requirement, 
+creation of a class-specific slurm partition, data storage reservations, etc. 
+
 ## External user accounts
 Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
