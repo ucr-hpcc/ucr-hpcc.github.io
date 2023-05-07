@@ -10,7 +10,7 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-### 5-May-2023 - 6-May-2023: Maintenance and Electrical Power Upgrades in Server Room
+### 5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room
 
 * UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage 
 of the unavoidable system downtime, the HPCC perform general maintenance and various upgrades on the cluster. The 
