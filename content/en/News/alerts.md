@@ -13,8 +13,8 @@ aliases:
 ### 5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room
 
 * UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage 
-of the unavoidable system downtime, the HPCC perform general maintenance and various upgrades on the cluster. The 
-shutdown is expected to last 2 days.
+of the unavoidable system downtime, the HPCC will perform general maintenance and various upgrades on the cluster. The 
+shutdown is expected to last 2 days. It has been scheduled during a weekend to minimize disruptions for users.
 
 * Update: since Sat/Sun night, most systems are back online again. If users notice any missing functionality, please
 let us know at support@hpcc.ucr.edu, or at our Slack channel (https://ucr-hpcc.slack.com). Thanks you for your
