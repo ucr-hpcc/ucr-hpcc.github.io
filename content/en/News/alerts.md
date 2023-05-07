@@ -10,11 +10,15 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-### Friday 5-May-2023 8:00am: Full Maintenance Shutdown of HPCC Cluster
+### 5-May-2023 - 6-May-2023: Maintenance and Electrical Power Upgrades in Server Room
 
-* UCR Facilities Services will be upgrading our electrical capacity in the Genomics Building. To make the most of this
-  opportunity, HPCC will use this downtime to perform long-overdue maintenance on the cluster. The shutdown is expected
-  to last 2 days (into Saturday).
+* UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage 
+of the unavoidable system downtime, the HPCC perform general maintenance and various upgrades on the cluster. The 
+shutdown is expected to last 2 days.
+
+* Update: since Sat/Sun night, most systems are back online again. If users notice any missing functionality, please
+let us know at support@hpcc.ucr.edu, or at our Slack channel (https://ucr-hpcc.slack.com). Thanks you for your
+patience and understanding.
 
 ## Unannounced exceptions
 
