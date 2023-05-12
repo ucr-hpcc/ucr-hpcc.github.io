@@ -2,6 +2,7 @@
 title: Globus Connect Personal
 linkTitle: Globus Connect Personal
 type: docs
+weight: 2
 ---
 
 ## Overview
