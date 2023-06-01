@@ -1533,6 +1533,7 @@ for the older Vim version is &lt;code>~/.vimrc&lt;/code>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>arrow_keys&lt;/code>: move cursor in the text&lt;/li>
 &lt;li>&lt;code>Fn Up/Down&lt;/code>: faster scrolling via paging.&lt;/li>
+&lt;li>&lt;code>$&lt;/code> or &lt;code>0&lt;/code>: jump to back or beginning of line&lt;/li>
 &lt;li>&lt;code>G&lt;/code> or &lt;code>gg&lt;/code>: jump to end of document and back to beginning&lt;/li>
 &lt;li>&lt;code>w&lt;/code> or &lt;code>b&lt;/code>: move forward and backward by word&lt;/li>
 &lt;li>&lt;code>)&lt;/code> or &lt;code>(&lt;/code>: move forward and backward by sentence&lt;/li>
@@ -1559,6 +1560,7 @@ for the older Vim version is &lt;code>~/.vimrc&lt;/code>.&lt;/p>
 &lt;p>The &lt;code>set&lt;/code> command typed in the command mode provides access to a large number of additional functions. Only a small number of examples is given here.
 For a more complete listing type &lt;code>:set all&lt;/code> or consult the vim help with &lt;code>:help&lt;/code>.&lt;/p>
 &lt;ul>
+&lt;li>&lt;code>:set wrap&lt;/code> or &lt;code>:set nowrap&lt;/code>: toggle for turning line wrapping on/off&lt;/li>
 &lt;li>&lt;code>:set number&lt;/code> or &lt;code>:set nonumber&lt;/code>: toggle for turning line nubers on/off&lt;/li>
 &lt;li>&lt;code>:set syntax=bash&lt;/code>: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with &lt;code>set syntax=off&lt;/code>&lt;/li>
 &lt;/ul>
