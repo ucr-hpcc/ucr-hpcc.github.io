@@ -191,10 +191,10 @@ for the older Vim version is `~/.vimrc`.
 
 * `arrow_keys`: move cursor in the text 
 * `Fn Up/Down`: faster scrolling via paging.
+* `$` or `0`: jump to back or beginning of line
 * `G` or `gg`: jump to end of document and back to beginning 
 * `w` or `b`: move forward and backward by word
 * `)` or `(`: move forward and backward by sentence
-
 
 ### Important keybindings
 
@@ -220,6 +220,7 @@ For example, search and replace with regular expression support. A detailed over
 The `set` command typed in the command mode provides access to a large number of additional functions. Only a small number of examples is given here. 
 For a more complete listing type `:set all` or consult the vim help with `:help`.
 
+* `:set wrap` or `:set nowrap`: toggle for turning line wrapping on/off 
 * `:set number` or `:set nonumber`: toggle for turning line nubers on/off
 * `:set syntax=bash`: toggle syntax highlighting for different languages (e.g. python, perl, bash, etc) or turn off with `set syntax=off`
 
