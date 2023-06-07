@@ -44,3 +44,7 @@ After a few seconds the server will start. At this point you can navigate to "ht
 After navigating to the login page, you will be prompted for the password you originally gave the notebook.
 
 After logging in, you can use the notebook as you would on our hosted JupyterLab server.
+
+## Shutting Down
+
+When you are finished with your session, you can stop the Jupyter server from running by going to "File > Shut Down" in the notebook, or by entering Ctrl+C in the notebook window.
