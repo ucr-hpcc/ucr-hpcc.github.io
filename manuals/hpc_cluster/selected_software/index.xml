@@ -69,7 +69,9 @@ NOTE: Text will not show up when you type your password, this is expected.&lt;/p
 &lt;p>After a few seconds the server will start. At this point you can navigate to &amp;ldquo;http://127.0.0.1:PORT/lab&amp;rdquo; on your local machine, **replacing PORT with the port assigned when running the &lt;code>start-jupyter.sh&lt;/code> command (9345 in the example above).&lt;/p>
 &lt;h2 id="logging-in">Logging In&lt;/h2>
 &lt;p>After navigating to the login page, you will be prompted for the password you originally gave the notebook.&lt;/p>
-&lt;p>After logging in, you can use the notebook as you would on our hosted JupyterLab server.&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
+&lt;p>After logging in, you can use the notebook as you would on our hosted JupyterLab server.&lt;/p>
+&lt;h2 id="shutting-down">Shutting Down&lt;/h2>
+&lt;p>When you are finished with your session, you can stop the Jupyter server from running by going to &amp;ldquo;File &amp;gt; Shut Down&amp;rdquo; in the notebook, or by entering Ctrl+C in the notebook window.&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
 &lt;h2 id="using-vscode-on-the-cluster">Using VSCode on the Cluster&lt;/h2>
 &lt;p>VSCode is a code editor that can run locally on your computer, or while connected to the cluster.&lt;/p>
 &lt;p>When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.&lt;/p>
