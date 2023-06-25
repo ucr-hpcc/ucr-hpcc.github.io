@@ -1548,7 +1548,7 @@ for the older Vim version is &lt;code>~/.vimrc&lt;/code>.&lt;/p>
 &lt;li>&lt;code>:resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes height by specified value&lt;/li>
 &lt;li>&lt;code>:vertical resize &amp;lt;+5 or -5&amp;gt;&lt;/code>: resizes width by specified value&lt;/li>
 &lt;li>&lt;code>Ctrl-w H&lt;/code> or &lt;code>Ctrl-w K&lt;/code>: toggles between horizontal/vertical splits&lt;/li>
-&lt;li>&lt;code>vsplit term://bash&lt;/code> or &lt;code>terminal&lt;/code>: opens terminal in split mode or in a separate window, respectively.&lt;/li>
+&lt;li>&lt;code>:vsplit term://bash&lt;/code> or &lt;code>:terminal&lt;/code>: opens terminal in split mode or in a separate window, respectively.&lt;/li>
 &lt;li>&lt;code>Ctrl-s and Ctrl-x&lt;/code>: freezes/unfreezes vim (some systems)&lt;/li>
 &lt;/ul>
 &lt;h3 id="powerful-features-of-command-mode">Powerful features of command mode&lt;/h3>
