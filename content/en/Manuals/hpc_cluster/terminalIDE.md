@@ -206,6 +206,7 @@ for the older Vim version is `~/.vimrc`.
 * `:resize <+5 or -5>`: resizes height by specified value
 * `:vertical resize <+5 or -5>`: resizes width by specified value
 * `Ctrl-w H` or `Ctrl-w K`: toggles between horizontal/vertical splits
+* `vsplit term://bash` or `terminal`: opens terminal in split mode or in a separate window, respectively.
 * `Ctrl-s and Ctrl-x`: freezes/unfreezes vim (some systems)
 
 ### Powerful features of command mode
