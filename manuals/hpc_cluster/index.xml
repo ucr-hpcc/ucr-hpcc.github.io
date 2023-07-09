@@ -976,7 +976,8 @@ check_quota bigdata
 &lt;pre>&lt;code class="language-bash">du -sh .
 &lt;/code>&lt;/pre>
 &lt;p>To calculate the sizes of each separate sub directory, run:&lt;/p>
-&lt;pre>&lt;code class="language-bash">du -shc *
+&lt;pre>&lt;code class="language-bash">du -sch *
+du -sch .[!.]* * | sort -h # includes hidden files and directories
 &lt;/code>&lt;/pre>
 &lt;p>This may take some time to complete, please be patient.&lt;/p>
 &lt;p>For more information on your home directory, please see the &lt;a href="../../manuals/linux_basics/cmdline_basics/">Linux Basics Orientation&lt;/a>.&lt;/p>
