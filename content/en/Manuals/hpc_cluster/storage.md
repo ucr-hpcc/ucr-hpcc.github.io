@@ -94,7 +94,8 @@ du -sh .
 To calculate the sizes of each separate sub directory, run:
 
 ```bash
-du -shc *
+du -sch * 
+du -sch .[!.]* * | sort -h # includes hidden files and directories
 ```
 
 This may take some time to complete, please be patient.
