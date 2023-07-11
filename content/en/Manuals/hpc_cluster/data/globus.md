@@ -7,7 +7,7 @@ weight: 2
 
 ## Overview
 
-Globus is a file sharing and transfer service used by many research facilities worldwide. It aides collaboration by
+[Globus](https://www.globus.org/) is a file sharing and transfer service used by many research facilities worldwide. It aides collaboration by
 simplifying the process of securely sharing research data.
 
 File transfers are accomplished by running the Globus client (Globus Connect Personal, GCP) on the HPCC cluster,
