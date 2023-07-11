@@ -13,6 +13,9 @@ simplifying the process of securely sharing research data.
 File transfers are accomplished by running the Globus client (Globus Connect Personal, GCP) on the HPCC cluster,
 and using a web browser on another computer to initiate the transactions.
 
+__Note:__ Transfers between two sites (endpoints) require at least one endpoint to have a paid Globus subscripion. To inquire about subscriptions, 
+visit the [Globus Subscription Inquiry](https://www.globus.org/subscriptions/non-profit-subscription-inquiry?subscription_type=starter) page.
+
 ## Setup
 
 This page explains how to setup the GCP client on the HPCC cluster. For setting up GCP on your personal computer,
@@ -39,7 +42,7 @@ few modifications).
 Start the login process with the following command:
 
 ```bash
-globusconnect -setup
+globusconnect -setup # add `--no-gui` to use command-line only
 ```
 
 You will be given a long URL to open in your browser, followed by a prompt for an auth code:
