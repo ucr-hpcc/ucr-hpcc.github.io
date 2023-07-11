@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Data Transfer</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/data/</link><description>Recent content in Data Transfer on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/data/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: Globus Connect Personal</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/data/globus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/data/globus/</guid><description>
 &lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>Globus is a file sharing and transfer service used by many research facilities worldwide. It aides collaboration by
+&lt;p>&lt;a href="https://www.globus.org/">Globus&lt;/a> is a file sharing and transfer service used by many research facilities worldwide. It aides collaboration by
 simplifying the process of securely sharing research data.&lt;/p>
 &lt;p>File transfers are accomplished by running the Globus client (Globus Connect Personal, GCP) on the HPCC cluster,
 and using a web browser on another computer to initiate the transactions.&lt;/p>
