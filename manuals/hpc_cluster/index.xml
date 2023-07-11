@@ -1174,7 +1174,9 @@ rclone config
 &lt;li>
 &lt;p>After that, follow this &lt;a href="https://rclone.org/drive/">RClone Walkthrough&lt;/a> to complete your setup.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Manuals: Security</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
+&lt;/ol>
+&lt;h2 id="globus">Globus&lt;/h2>
+&lt;p>See Globus page &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/data/globus/">here&lt;/a>.&lt;/p></description></item><item><title>Manuals: Security</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/security/</guid><description>
 &lt;h2 id="protection-levels-and-classification">Protection Levels and Classification&lt;/h2>
 &lt;p>UCR protection levels, and data classifications are outlined by UCOP as a UC wide policy: &lt;a href="https://security.ucop.edu/policies/institutional-information-and-it-resource-classification.html">UCOP Institutional Information and IT Resource Classification&lt;/a>
 According to the above documentation, there are 4 levels of protection for 4 classifications of data:&lt;/p>
