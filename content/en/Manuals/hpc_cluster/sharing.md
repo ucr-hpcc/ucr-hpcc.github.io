@@ -260,3 +260,7 @@ There are several tools used to transfer files from Google Drive to the cluster,
 
   3. After that, follow this [RClone Walkthrough](https://rclone.org/drive/) to complete your setup.
 
+## Globus 
+
+See Globus page [here](https://hpcc.ucr.edu/manuals/hpc_cluster/data/globus/).
+
