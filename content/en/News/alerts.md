@@ -10,21 +10,26 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-### 5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room
+### 4-5 Aug, 2023: Maintenance and Electrical Power Upgrades in Server Room
 
-* UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage 
-of the unavoidable system downtime, the HPCC will perform general maintenance and various upgrades on the cluster. The 
-shutdown is expected to last 2 days. It has been scheduled during a weekend to minimize disruptions for users.
-
-* Update: since Sat/Sun night, most systems are back online again. If users notice any missing functionality, please
-let us know at support@hpcc.ucr.edu, or at our Slack channel (https://ucr-hpcc.slack.com). Thanks you for your
-patience and understanding.
+* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. Objectives for
+  this event include electrical reconfiguration to support the upcoming NSF node purchase, GPFS storage upgrades, and
+  a system upgrade to Rocky Linux 8.8.
 
 ## Unannounced exceptions
 
 <!-- 
 None currently observed.
 -->
+
+### 17-18 Aug, 2023: Incident involving excessive condensate from server room air conditioning, jobs halted
+
+* An HPCC sysadmin noticed excessive water puddling underneath the server room raised floor. Because that water is
+  coming into contact with high-power electrical junction boxes, UCR Facilities was called to assess and remedy the
+  situation. This involves the occasional shutdown of the AC units. To prevent server equipment from overheating,
+  pending Slurm jobs have been temporarily halted. Running jobs will be allowed to continue, provided that the server
+  room does not get too hot.
+
 ### 10-Apr-2023: Bigdata back
 
 * 5:30 PM - Bigdata is back. Thank for for your patience.
@@ -60,20 +65,6 @@ None currently observed.
 
 * 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
 
-## HPCC Operation During COVID-19 Crisis
-
-Since the research computing infrastructure of the HPCC is designed to be
-accessed remotely, we are currently not expecting any major downtimes or
-restrictions for users due to the campus access restrictions caused by the
-COVID-19 pandemic. However, even this may change depending on the extent of the
-restrictions our university may have to implement. A few exceptions that are
-currently in effect for the HPCC facility are the following: 
-
-  + Our offices in 1208/1207 Genomics Building are closed. The HPCC staff will continue to work as usual but exclusively via remote access from home. 
-  + All in person contacts such as office visits or in-person training events are not possible during the current COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
-
-If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on Slack ([ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](/news/announce) and [Alerts](/news/alerts) pages.
-
 ## Standard Operating Procedures
 
 ### SOP for unscheduled outages
@@ -106,6 +97,16 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room__
+
+* UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage
+of the unavoidable system downtime, the HPCC will perform general maintenance and various upgrades on the cluster. The
+shutdown is expected to last 2 days. It has been scheduled during a weekend to minimize disruptions for users.
+
+* Update: since Sat/Sun night, most systems are back online again. If users notice any missing functionality, please
+let us know at support@hpcc.ucr.edu, or at our Slack channel (https://ucr-hpcc.slack.com). Thanks you for your
+patience and understanding.
 
 __28-Oct-2020: Cluster jobs failed due to storage suspension__
 
