@@ -15,6 +15,7 @@ aliases:
 
 ## Recharging rates
 
+   * [Recharging rates: 2023/2024](https://rb.gy/wszgj)
    * [Recharging rates: 2022/2023](https://bit.ly/3IZUAQQ)
    * [Recharging rates: 2021/2022](https://bit.ly/3iPkbiv)
    * [Recharging rates: 2020/2021](https://bit.ly/3jeK3nF)
