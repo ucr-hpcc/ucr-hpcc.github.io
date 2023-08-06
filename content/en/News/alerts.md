@@ -10,7 +10,7 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-### 4-5 Aug, 2023: Maintenance for Electrical Power Upgrades
+__4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
 
 * HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. During this 
   Objectives for this event include electrical reconfiguration of PDUs, GPFS storage upgrades, and a system upgrade 
@@ -22,44 +22,44 @@ aliases:
 None currently observed.
 -->
 
-### 17-18 Jul, 2023: Slurm halted 
+__17-18 Jul, 2023: Slurm halted__ 
 
 * Facilities had to perform maintenance on the AC units due to the formation of excessive condensation water, 
   possibley caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating. 
   Running jobs will be allowed to continue, provided that the server room does not get too hot.
 
-### 10-Apr-2023: Bigdata back
+__10-Apr-2023: Bigdata back__
 
 * 5:30 PM - Bigdata is back. Thank for for your patience.
 
-### 10-Apr-2023: Bigdata down
+__10-Apr-2023: Bigdata down__
 
 * 4:30 PM - Bigdata is currently down. Please be patient...
 
-### 22-Dec-2022: Network outage
+__22-Dec-2022: Network outage__
 
 * 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
 
-### 1-Nov-2022: Network router repair
+__1-Nov-2022: Network router repair__
 
 * 9:00 PM - ITS had to repair a router in the Genomics Building. Around 4:00 AM 
   in the morning (Nov 2nd) network access to the Genomics Building became available 
   again. During the affected time window the cluster was not accessible (_e.g._ via ssh). 
   Processes running on the cluster were not affected.
 
-### 25-Jun-2021: Bigdata storage repaired
+__25-Jun-2021: Bigdata storage repaired__
 
 * 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
 
-### 25-Jun-2021: Bigdata storage failed
+__25-Jun-2021: Bigdata storage failed__
 
 * 3:30 PM - Server running our bigdata storage crashed, and bigdata directory went down with it.
 
-### 12-Jan-2020: AC unit repaired
+__12-Jan-2020: AC unit repaired__
 
 * 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.
 
-### 11-Jan-2020: AC unit failed
+__11-Jan-2020: AC unit failed__
 
 * 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
 
