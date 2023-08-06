@@ -16,6 +16,10 @@ __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
   Objectives for this event include electrical reconfiguration of PDUs, GPFS storage upgrades, and a system upgrade 
   to Rocky Linux 8.8.
 
+* STATUS UPDATE Aug 6: Due to unforseen complications during maintenance, services are still offline.
+  Basic functionality should be available by the end of Sunday (US West Coast time), and full functionality should be
+  achieved by Tuesday.
+
 ## Unannounced exceptions
 
 <!-- 
