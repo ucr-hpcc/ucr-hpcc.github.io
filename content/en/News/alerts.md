@@ -10,11 +10,11 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-### 4-5 Aug, 2023: Maintenance and Electrical Power Upgrades in Server Room
+### 4-5 Aug, 2023: Maintenance for Electrical Power Upgrades
 
-* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. Objectives for
-  this event include electrical reconfiguration to support the upcoming NSF node purchase, GPFS storage upgrades, and
-  a system upgrade to Rocky Linux 8.8.
+* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. During this 
+  Objectives for this event include electrical reconfiguration of PDUs, GPFS storage upgrades, and a system upgrade 
+  to Rocky Linux 8.8.
 
 ## Unannounced exceptions
 
@@ -22,13 +22,11 @@ aliases:
 None currently observed.
 -->
 
-### 17-18 Aug, 2023: Incident involving excessive condensate from server room air conditioning, jobs halted
+### 17-18 Jul, 2023: Slurm halted 
 
-* An HPCC sysadmin noticed excessive water puddling underneath the server room raised floor. Because that water is
-  coming into contact with high-power electrical junction boxes, UCR Facilities was called to assess and remedy the
-  situation. This involves the occasional shutdown of the AC units. To prevent server equipment from overheating,
-  pending Slurm jobs have been temporarily halted. Running jobs will be allowed to continue, provided that the server
-  room does not get too hot.
+* Facilities had to perform maintenance on the AC units due to the formation of excessive condensation water, 
+  possibley caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating. 
+  Running jobs will be allowed to continue, provided that the server room does not get too hot.
 
 ### 10-Apr-2023: Bigdata back
 
