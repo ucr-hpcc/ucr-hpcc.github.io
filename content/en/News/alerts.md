@@ -12,7 +12,7 @@ aliases:
 
 __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
 
-* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. During this 
+* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. 
   Objectives for this event include electrical reconfiguration of PDUs, GPFS storage upgrades, and a system upgrade 
   to Rocky Linux 8.8.
 
@@ -24,7 +24,7 @@ None currently observed.
 
 __17-18 Jul, 2023: Slurm halted__ 
 
-* Facilities had to perform maintenance on the AC units due to the formation of excessive condensation water, 
+* Facilities had to perform maintenance on the AC units due to the formation of condensation water by the AC units, 
   possibley caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating. 
   Running jobs will be allowed to continue, provided that the server room does not get too hot.
 
