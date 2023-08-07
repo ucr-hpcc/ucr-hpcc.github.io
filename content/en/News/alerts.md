@@ -20,6 +20,10 @@ __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
   Basic functionality should be available by the end of Sunday (US West Coast time), and full functionality should be
   achieved by Tuesday.
 
+* STATUS UPDATE Aug 7: We are still working on redeploying compute nodes and other services. Attempting to log in might
+  give a "No such file or directory" error, this is expected. **No files or data have been lost** and this error is due
+  to us not re-mounting our storage system on the nodes in an attempt to prevent cluster usage.
+
 ## Unannounced exceptions
 
 <!-- 
