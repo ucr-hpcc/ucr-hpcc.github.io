@@ -24,6 +24,11 @@ __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
   give a "No such file or directory" error, this is expected. **No files or data have been lost** and this error is due
   to us not re-mounting our storage system on the nodes in an attempt to prevent cluster usage.
 
+* STATUS UPDATE Aug 8: As of Tuesday morning, SSH access to `cluster.hpcc.ucr.edu` has been restored. You may access
+  your data and do some light work on the headnode. In addition, web file access and JupyterHub are available again.
+  We are aware of an issue with our RStudio servers and are looking into it. Work is still ongoing to bring up the
+  compute nodes and Slurm.
+
 ## Unannounced exceptions
 
 <!-- 
