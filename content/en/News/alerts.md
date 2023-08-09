@@ -29,6 +29,8 @@ __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
   We are aware of an issue with our RStudio servers and are looking into it. Work is still ongoing to bring up the
   compute nodes and Slurm.
 
+- STATUS UPDATE Aug 9: As of Wednesday morning, Slurm is operational, and nodes are gradually coming online.
+
 ## Unannounced exceptions
 
 <!-- 
