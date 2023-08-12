@@ -10,29 +10,27 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-__4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
+__4-Aug-2023: Upgrades: OS, GPFS, Slurm, Head Nodes and Electrical Power__
 
 * HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. 
-  Objectives for this event include electrical reconfiguration of PDUs, GPFS storage upgrades, and a system upgrade 
-  to Rocky Linux 8.8.
+  Objectives for this event include the following upgrades: GPFS, Slurm, system upgrade to Rocky Linux 8.8, 
+  electrical reconfiguration of PDUs.
 
-* STATUS UPDATE Aug 6: Due to unforseen complications during maintenance, services are still offline.
-  Basic functionality should be available by the end of Sunday (US West Coast time), and full functionality should be
-  achieved by Tuesday.
+* STATUS UPDATE Aug 6: Due to unforseen workload on maintenance tasks, services are still offline.
+  Basic functionality should be restored by the end of the day.
 
-* STATUS UPDATE Aug 7: We are still working on redeploying compute nodes and other services. Attempting to log in might
-  give a "No such file or directory" error, this is expected. **No files or data have been lost** and this error is due
-  to us not re-mounting our storage system on the nodes in an attempt to prevent cluster usage.
+* STATUS UPDATE Aug 7: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
+  User log in is restricted until central data storage system has been re-mounted.
 
-* STATUS UPDATE Aug 8: As of Tuesday morning, SSH access to `cluster.hpcc.ucr.edu` has been restored. You may access
-  your data and do some light work on the headnode. In addition, web file access and JupyterHub are available again.
-  We are aware of an issue with our RStudio servers and are looking into it. Work is still ongoing to bring up the
-  compute nodes and Slurm.
+* STATUS UPDATE Aug 8: SSH login has been restored. Users can access their data and perform light work on the headnode
+  until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
+  RStudio Server will be restored next. 
 
-- STATUS UPDATE Aug 9: As of Wednesday morning, Slurm is operational, and nodes are gradually coming online.
+- STATUS UPDATE Aug 9: Slurm has been redployed and is operational. A larger number of computer nodes have been redeployed and are available 
+  to users again.
 
-- FINAL UPDATE Aug 11: All Slurm partitions are online, as are the JupyterHub and RStudio web servers. We profusely
-  apologize for the extended downtime, and thank you for your patience and understanding.
+- FINAL UPDATE Aug 11: All remaining services are available again. This includes most CPU and GPU nodes, etc. We apologize for the extended time
+  it took us to bring all services online again. Thank you for your your understanding.
 
 ## Unannounced exceptions
 
