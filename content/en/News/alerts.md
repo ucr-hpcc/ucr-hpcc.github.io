@@ -10,11 +10,11 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-__4-Aug-2023: Upgrades: OS, GPFS, Slurm, Head Nodes and Electrical Power__
+__4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
 
-* HPCC staff will be performing maintenance work on Aug 4-5 that will require servers to be shut down. 
-  Objectives for this event include the following upgrades: GPFS, Slurm, system upgrade to Rocky Linux 8.8, 
-  electrical reconfiguration of PDUs.
+* HPCC staff will be performing maintenance work on Aug 4-5 that will require a shut down of the HPCC cluster. 
+  Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
+  electrical reconfiguration of PDUs, etc.
 
 * Update (Aug 6): Due to unforseen workload on maintenance tasks, services are still offline.
   Basic functionality should be restored by the end of the day.
