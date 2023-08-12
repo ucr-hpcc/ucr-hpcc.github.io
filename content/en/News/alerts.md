@@ -31,6 +31,9 @@ __4-5 Aug, 2023: Maintenance for Electrical Power Upgrades__
 
 - STATUS UPDATE Aug 9: As of Wednesday morning, Slurm is operational, and nodes are gradually coming online.
 
+- FINAL UPDATE Aug 11: All Slurm partitions are online, as are the JupyterHub and RStudio web servers. We profusely
+  apologize for the extended downtime, and thank you for your patience and understanding.
+
 ## Unannounced exceptions
 
 <!-- 
