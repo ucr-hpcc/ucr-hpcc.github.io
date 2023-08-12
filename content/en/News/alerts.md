@@ -14,15 +14,15 @@ __4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
 
 * HPCC staff will be performing maintenance work on Aug 4-5 that will require a shut down of the HPCC cluster. 
   Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
-  electrical reconfiguration of PDUs, etc.
+  electrical reconfiguration of PDUs, and various other maintenance tasks.
 
-* Update Aug 6th: Due to unforseen workload on maintenance tasks, services are still offline.
+* Update Aug 6th: Due to underestimated workload on planned maintenance tasks, services are still offline.
   Basic functionality should be restored by the end of the day.
 
 * Update Aug 7th: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
   User log in is restricted until central data storage system has been re-mounted.
 
-* Update Aug 8th: SSH login has been restored. Users can access their data and perform light work on the headnode
+* Update Aug 8th: SSH login has been restored. Users can access their data and perform light work on the head nodes
   until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
   RStudio Server will be restored next. 
 
