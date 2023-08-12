@@ -16,20 +16,20 @@ __4-Aug-2023: Upgrades: OS, GPFS, Slurm, Head Nodes and Electrical Power__
   Objectives for this event include the following upgrades: GPFS, Slurm, system upgrade to Rocky Linux 8.8, 
   electrical reconfiguration of PDUs.
 
-* STATUS UPDATE Aug 6: Due to unforseen workload on maintenance tasks, services are still offline.
+* Update (Aug 6): Due to unforseen workload on maintenance tasks, services are still offline.
   Basic functionality should be restored by the end of the day.
 
-* STATUS UPDATE Aug 7: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
+* Update (Aug 7): Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
   User log in is restricted until central data storage system has been re-mounted.
 
-* STATUS UPDATE Aug 8: SSH login has been restored. Users can access their data and perform light work on the headnode
+* Update (Aug 8): SSH login has been restored. Users can access their data and perform light work on the headnode
   until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
   RStudio Server will be restored next. 
 
-- STATUS UPDATE Aug 9: Slurm has been redployed and is operational. A larger number of computer nodes have been redeployed and are available 
+- Update (Aug 9): Slurm has been redployed and is operational. A larger number of computer nodes have been redeployed and are available 
   to users again.
 
-- FINAL UPDATE Aug 11: All remaining services are available again. This includes most CPU and GPU nodes, etc. We apologize for the extended time
+- Final Update (Aug 11): All remaining services are available again. This includes most CPU and GPU nodes, etc. We apologize for the extended time
   it took us to bring all services online again. Thank you for your your understanding.
 
 ## Unannounced exceptions
