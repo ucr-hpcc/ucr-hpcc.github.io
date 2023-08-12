@@ -12,7 +12,7 @@ aliases:
 
 __4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
 
-* HPCC staff will be performing maintenance work on Aug 4-5 that will require a shut down of the HPCC cluster. 
+* HPCC staff will be performing maintenance work on Aug 4th to Aug 5th that will require a shut down of the HPCC cluster. 
   Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
   electrical reconfiguration of PDUs, and various other maintenance tasks.
 
