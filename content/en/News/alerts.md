@@ -20,7 +20,7 @@ __4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
   Basic functionality should be restored by the end of the day.
 
 * Update Aug 7th: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
-  User log in is restricted until central data storage system has been re-mounted.
+  User log in is restricted until the central data storage system has been re-mounted.
 
 * Update Aug 8th: SSH login has been restored. Users can access their data and perform light work on the head nodes
   until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
