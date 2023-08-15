@@ -38,46 +38,11 @@ __4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
 None currently observed.
 -->
 
-__17-18 Jul, 2023: Slurm halted__ 
+__14 Aug, 2023: Login and GPFS storage issues__
 
-* Facilities had to perform maintenance on the AC units due to the formation of condensation water by the AC units, 
-  possibley caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating. 
-  Running jobs will be allowed to continue, provided that the server room does not get too hot.
-
-__10-Apr-2023: Bigdata back__
-
-* 5:30 PM - Bigdata is back. Thank for for your patience.
-
-__10-Apr-2023: Bigdata down__
-
-* 4:30 PM - Bigdata is currently down. Please be patient...
-
-__22-Dec-2022: Network outage__
-
-* 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
-
-__1-Nov-2022: Network router repair__
-
-* 9:00 PM - ITS had to repair a router in the Genomics Building. Around 4:00 AM 
-  in the morning (Nov 2nd) network access to the Genomics Building became available 
-  again. During the affected time window the cluster was not accessible (_e.g._ via ssh). 
-  Processes running on the cluster were not affected.
-
-__25-Jun-2021: Bigdata storage repaired__
-
-* 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
-
-__25-Jun-2021: Bigdata storage failed__
-
-* 3:30 PM - Server running our bigdata storage crashed, and bigdata directory went down with it.
-
-__12-Jan-2020: AC unit repaired__
-
-* 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.
-
-__11-Jan-2020: AC unit failed__
-
-* 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
+* The login service on the primary headnode failed on Monday afternoon. A new headnode with updated software is now
+  online, so users may access their files and do some light work. The GPFS cluster file system also exhibited some
+  performance stalls. The Slurm scheduler has been paused until this issue subsides.
 
 ## Standard Operating Procedures
 
@@ -111,6 +76,47 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__17-18 Jul, 2023: Slurm halted__
+
+* Facilities had to perform maintenance on the AC units due to the formation of condensation water by the AC units,
+  possibly caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating.
+  Running jobs will be allowed to continue, provided that the server room does not get too hot.
+
+__10-Apr-2023: Bigdata back__
+
+* 5:30 PM - Bigdata is back. Thank for for your patience.
+
+__10-Apr-2023: Bigdata down__
+
+* 4:30 PM - Bigdata is currently down. Please be patient...
+
+__22-Dec-2022: Network outage__
+
+* 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
+
+__1-Nov-2022: Network router repair__
+
+* 9:00 PM - ITS had to repair a router in the Genomics Building. Around 4:00 AM
+  in the morning (Nov 2nd) network access to the Genomics Building became available
+  again. During the affected time window the cluster was not accessible (_e.g._ via ssh).
+  Processes running on the cluster were not affected.
+
+__25-Jun-2021: Bigdata storage repaired__
+
+* 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
+
+__25-Jun-2021: Bigdata storage failed__
+
+* 3:30 PM - Server running our bigdata storage crashed, and bigdata directory went down with it.
+
+__12-Jan-2020: AC unit repaired__
+
+* 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.
+
+__11-Jan-2020: AC unit failed__
+
+* 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
 
 __5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room__
 
