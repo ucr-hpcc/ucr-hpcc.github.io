@@ -10,39 +10,15 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-__4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
-
-* HPCC staff will be performing maintenance work on Aug 4th to Aug 5th that will require a shut down of the HPCC cluster. 
-  Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
-  electrical reconfiguration of PDUs, and various other maintenance tasks.
-
-* Update Aug 6th: Due to underestimated workload on planned maintenance tasks, services are still offline.
-  Basic functionality should be restored by the end of the day.
-
-* Update Aug 7th: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
-  User login is restricted until the central data storage system has been re-mounted.
-
-* Update Aug 8th: SSH login has been restored. Users can access their data and perform light work on the head nodes
-  until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
-  RStudio Server will be restored next. 
-
-- Update Aug 9th: Slurm has been redployed and is operational. A larger number of computer nodes have been redeployed and are available 
-  to users again.
-
-- Final update Aug 11th: All remaining services are available again. The maintenance is complete. This includes remaining CPU and GPU nodes, etc. 
-  We apologize for the extended time it took us to bring all services online again. Thank you for your understanding.
+<!-- 
+None currently observed.
+-->
 
 ## Unannounced exceptions
 
 <!-- 
 None currently observed.
 -->
-
-__14 Aug, 2023: Login and GPFS storage issues__
-
-* The login service on the primary headnode failed on Monday afternoon. A new headnode with updated software is now
-  online, so users may access their files and do some light work. The GPFS cluster file system also exhibited some
-  performance stalls. The Slurm scheduler has been paused until this issue subsides.
 
 ## Standard Operating Procedures
 
@@ -76,6 +52,34 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__14 Aug, 2023: Login and GPFS storage issues__
+
+* The login service on the primary headnode failed on Monday afternoon. A new headnode with updated software is now
+  online, so users may access their files and do some light work. The GPFS cluster file system also exhibited some
+  performance stalls. The Slurm scheduler has been paused until this issue subsides.
+
+__4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
+
+* HPCC staff will be performing maintenance work on Aug 4th to Aug 5th that will require a shut down of the HPCC cluster. 
+  Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
+  electrical reconfiguration of PDUs, and various other maintenance tasks.
+
+* Update Aug 6th: Due to underestimated workload on planned maintenance tasks, services are still offline.
+  Basic functionality should be restored by the end of the day.
+
+* Update Aug 7th: Maintenance is still ongoing. Currently, we are redeploying computer nodes and other services. 
+  User login is restricted until the central data storage system has been re-mounted.
+
+* Update Aug 8th: SSH login has been restored. Users can access their data and perform light work on the head nodes
+  until access to a larger number of compute nodes has been restored. In addition, web-based file sharing and JupyterHub are available again.
+  RStudio Server will be restored next. 
+
+- Update Aug 9th: Slurm has been redployed and is operational. A larger number of computer nodes have been redeployed and are available 
+  to users again.
+
+- Final update Aug 11th: All remaining services are available again. The maintenance is complete. This includes remaining CPU and GPU nodes, etc. 
+  We apologize for the extended time it took us to bring all services online again. Thank you for your understanding.
 
 __17-18 Jul, 2023: Slurm halted__
 
