@@ -32,9 +32,9 @@ In the past we used queues under the old Torque system, we now refer to these lo
     * Time (walltime): 48 hours (2 days) default
 * gpu
     * Nodes: gpu01-gpu06
-    * Cores: AMD/Intel, 16 per job
+    * Cores: AMD/Intel, 16 per job, 48 per user
     * GPUs: 8 per group
-    * RAM: 1 GB default, 256 GB max per job
+    * RAM: 1 GB default, 256 GB per job, 512 per user
     * Time (walltime): 48 hours (2 days) default
 * short
     * Nodes: Mixed set of nodes from batch, intel, and group partitions
