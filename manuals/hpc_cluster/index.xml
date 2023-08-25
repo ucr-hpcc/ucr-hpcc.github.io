@@ -243,8 +243,9 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>gpu
 &lt;ul>
 &lt;li>Nodes: gpu01-gpu05&lt;/li>
+&lt;li>Cores: AMD/Intel, 16 per job&lt;/li>
 &lt;li>GPUs: 8 per group&lt;/li>
-&lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>RAM: 1 GB default, 256 GB max per job&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
