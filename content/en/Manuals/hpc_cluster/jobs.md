@@ -12,33 +12,33 @@ aliases:
 Submitting and managing jobs is at the heart of using the cluster.  A 'job' refers to the script, pipeline or experiment that you run on the nodes in the cluster.
 
 ## Partitions
-In the past we used queues under the old Torque system, we now refer to these logically grouped nodes as partitions. There are several different partitions available for cluster users to send jobs to:
+Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to our partitions are outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/)
 
 * intel
     * Default partition
     * Nodes: i01-02,i17-i40
-    * Cores: Intel, 256 per user
+    * CPU: Intel
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * batch
     * Nodes: c01-c48
-    * Cores: AMD, 256 per user
+    * CPU: AMD
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * highmem
     * Nodes: h01-h06
-    * Cores: Intel, 32 per user
-    * RAM: 100 GB min and 1000 GB max
+    * CPU: Intel
+    * RAM: 100 GB to 1000 GB
     * Time (walltime): 48 hours (2 days) default
 * gpu
     * Nodes: gpu01-gpu06
-    * Cores: AMD/Intel, 16 per job, 48 per user
-    * GPUs: 8 per group
-    * RAM: 1 GB default, 256 GB per job, 512 per user
+    * CPU: AMD/Intel
+    * GPUs: NVIDIA K80, A100, P100
+    * RAM: 1 GB default
     * Time (walltime): 48 hours (2 days) default
 * short
     * Nodes: Mixed set of nodes from batch, intel, and group partitions
-    * Cores: AMD/Intel, 256 per user
+    * Cores: AMD/Intel
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
 * Group Partition
