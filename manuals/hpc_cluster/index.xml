@@ -628,6 +628,61 @@ mpirun maker # Provide appropriate maker options here
 &lt;pre>&lt;code class="language-bash">squeue -u $USER --start
 &lt;/code>&lt;/pre>
 &lt;p>Start times are rough estimates based on the current state of the queue.&lt;/p>
+&lt;h2 id="partition-quotas">Partition Quotas&lt;/h2>
+&lt;p>Each partition has a specific usecase. Below outlines each partition, it&amp;rsquo;s usecase, as well as any job/user/group limits that are in place.
+Empty boxes imply no limit, but is still limited by the next higher limit.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Partition Name&lt;/th>
+&lt;th>Usecase&lt;/th>
+&lt;th>Per-Job Limit&lt;/th>
+&lt;th>Per-User Limit&lt;/th>
+&lt;th>Per-Group Limit&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>batch&lt;/td>
+&lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
+&lt;td>128GB memory per Core&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>intel&lt;/td>
+&lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
+&lt;td>128GB memory per Core&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>short&lt;/td>
+&lt;td>Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
+&lt;td>128GB memory per Core, 2-hour time limit&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>highmem&lt;/td>
+&lt;td>Memory Intensive Workloads&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>32 Cores, 1TB memory&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gpu&lt;/td>
+&lt;td>GPU-Enabled Workloads&lt;/td>
+&lt;td>16 Cores, 256GB memory&lt;/td>
+&lt;td>48 Cores, 512GB memory&lt;/td>
+&lt;td>8 GPUs&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
+to the above limits, there is also a 512 core group limit that spans all partitions. Upon request, a user or group’s quota can be extended
+temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to request additional resources,
+please contact us at &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with your justification.&lt;/p>
 &lt;h2 id="fair-share">Fair-Share&lt;/h2>
 &lt;p>Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
