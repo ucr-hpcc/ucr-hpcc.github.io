@@ -213,13 +213,13 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;h2 id="what-is-a-job">What is a Job?&lt;/h2>
 &lt;p>Submitting and managing jobs is at the heart of using the cluster. A &amp;lsquo;job&amp;rsquo; refers to the script, pipeline or experiment that you run on the nodes in the cluster.&lt;/p>
 &lt;h2 id="partitions">Partitions&lt;/h2>
-&lt;p>In the past we used queues under the old Torque system, we now refer to these logically grouped nodes as partitions. There are several different partitions available for cluster users to send jobs to:&lt;/p>
+&lt;p>Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to our partitions are outlined &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">here&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>intel
 &lt;ul>
 &lt;li>Default partition&lt;/li>
 &lt;li>Nodes: i01-02,i17-i40&lt;/li>
-&lt;li>Cores: Intel, 256 per user&lt;/li>
+&lt;li>CPU: Intel&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
@@ -227,7 +227,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>batch
 &lt;ul>
 &lt;li>Nodes: c01-c48&lt;/li>
-&lt;li>Cores: AMD, 256 per user&lt;/li>
+&lt;li>CPU: AMD&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
@@ -235,24 +235,24 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>highmem
 &lt;ul>
 &lt;li>Nodes: h01-h06&lt;/li>
-&lt;li>Cores: Intel, 32 per user&lt;/li>
-&lt;li>RAM: 100 GB min and 1000 GB max&lt;/li>
+&lt;li>CPU: Intel&lt;/li>
+&lt;li>RAM: 100 GB to 1000 GB&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>gpu
 &lt;ul>
 &lt;li>Nodes: gpu01-gpu06&lt;/li>
-&lt;li>Cores: AMD/Intel, 16 per job, 48 per user&lt;/li>
-&lt;li>GPUs: 8 per group&lt;/li>
-&lt;li>RAM: 1 GB default, 256 GB per job, 512 per user&lt;/li>
+&lt;li>CPU: AMD/Intel&lt;/li>
+&lt;li>GPUs: NVIDIA K80, A100, P100&lt;/li>
+&lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>short
 &lt;ul>
 &lt;li>Nodes: Mixed set of nodes from batch, intel, and group partitions&lt;/li>
-&lt;li>Cores: AMD/Intel, 256 per user&lt;/li>
+&lt;li>Cores: AMD/Intel&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 2 hours Maximum&lt;/li>
 &lt;/ul>
