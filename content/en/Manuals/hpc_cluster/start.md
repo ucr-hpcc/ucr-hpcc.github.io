@@ -167,17 +167,14 @@ module help
 
 ## Quotas
 
-### CPU
+### CPU and Memory
 
-Labs are limited to 512 cores across active jobs for all members of that lab. Users are further limited to 256 cores across their active jobs in the intel, batch, and short partition individually. Additional restrictions are placed on the highmem partition where users are limited to 32 cores across actively running jobs, and the GPU partition where users are limited to 16 cores per job and 48 cores across a user's running jobs. If a user submits jobs for more cores than limits allow, then the jobs will be queued until resources within the user's CPU quota become available. Upon request a user's upper CPU quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to request additional resources, please contact us at support@hpcc.ucr.edu with your justification.
+Please refer to our [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page for detail regarding CPU and Memory limits.
 
 ### Data Storage
 
 A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/about/overview/access/).
 
-### Memory
-
-From the cluster head node users can submit jobs to any available queue. The nodes associated with the batch and intel queue are mainly for CPU intensive tasks, the highmem queue is dedicated to memory intensive tasks, and the GPU queue is dedicated to jobs that support GPU acceleration. The batch and intel nodes allow a 1GB RAM minimum limit on jobs and and the highmem nodes allow for up to 1024 GB RAM jobs with a minimum 100GB needing to be requested. Additionally, the GPU partition is limited to 256 GB RAM per job and 512 GB across a user's running jobs.
 
 ## What's Next?
 
