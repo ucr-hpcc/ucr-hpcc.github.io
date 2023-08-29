@@ -15,6 +15,24 @@ squeue -u $USER --start
 ```
 Start times are rough estimates based on the current state of the queue.
 
+## Partition Quotas
+
+Each partition has a specific usecase. Below outlines each partition, it's usecase, as well as any job/user/group limits that are in place.
+Empty boxes imply no limit, but is still limited by the next higher limit.
+
+| Partition Name 	| Usecase                                                   	| Per-Job Limit                            	| Per-User Limit         	| Per-Group Limit 	|
+|----------------	|-----------------------------------------------------------	|------------------------------------------	|------------------------	|-----------------	|
+| batch          	| CPU Intensive Workloads, Multithreaded, MPI, OpenMP       	| 128GB memory per Core                    	| 256 Cores, 1TB memory  	|                 	|
+| intel          	| CPU Intensive Workloads, Multithreaded, MPI, OpenMP       	| 128GB memory per Core                    	| 256 Cores, 1TB memory  	|                 	|
+| short          	| Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP 	| 128GB memory per Core, 2-hour time limit 	| 256 Cores, 1TB memory  	|                 	|
+| highmem        	| Memory Intensive Workloads                                	|                                          	| 32 Cores, 1TB memory   	|                 	|
+| gpu            	| GPU-Enabled Workloads                                     	| 16 Cores, 256GB memory                   	| 48 Cores, 512GB memory 	| 8 GPUs          	|
+
+Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
+to the above limits, there is also a 512 core group limit that spans all partitions. Upon request, a user or group’s quota can be extended
+temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to request additional resources,
+please contact us at support@hpcc.ucr.edu with your justification.
+
 ## Fair-Share
 Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
