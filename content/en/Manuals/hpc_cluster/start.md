@@ -10,7 +10,7 @@ aliases:
 
 ## Login from Mac, Linux, MobaXTerm
 
-The initial login brings users into the cluster head node (i.e. pigeon, pelican, parrot). From there, users can submit jobs via `srun`/`sbatch` to the compute nodes to perform intensive tests.
+The initial login brings users into the cluster head node (i.e. jay, lark). From there, users can submit jobs via `srun`/`sbatch` to the compute nodes to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.
 
 Open the terminal and type
@@ -58,16 +58,14 @@ module avail
 This should output something like:
 
 ```bash
-------------------------- /usr/local/Modules/versions --------------------------
-3.2.9
---------------------- /usr/local/Modules/3.2.9/modulefiles ---------------------
-BEDTools/2.15.0(default) modules
-PeakSeq/1.1(default) python/3.2.2
-SOAP2/2.21(default) samtools/0.1.18(default)
-bowtie2/2.0.0-beta5(default) stajichlab
-cufflinks/1.3.0(default) subread/1.1.3(default)
-matrix2png/1.2.1(default) tophat/1.4.1(default)
-module-info
+------------------------ /opt/linux/rocky/8.x/x86_64/modules -------------------------
+AAFTF/0.5.0                                           workspace/scratch <aL>  
+abyss/2.3.4                                           wtdbg2/2.5              
+almabte/1.3.2                                         xpdf/4.03               
+alphafold/2.3.0                                       xsv/0.13.0              
+amber/22_mpi_cuda                                     yq/4.35.1               
+amptk/1.6                                             zoem/21-341
+...
 ```
 
 ### Using Modules
@@ -169,7 +167,7 @@ module help
 
 ### CPU and Memory
 
-Please refer to our [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page for detail regarding CPU and Memory limits.
+Please refer to our [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page for details regarding CPU and Memory limits.
 
 ### Data Storage
 
@@ -181,13 +179,13 @@ A standard user account has a storage quota of 20GB. Much more storage space, in
 You should now know the following:
 
 1. Basic orginization of the cluster
-+  How to login to the cluster
-+  How to use the Module system to gain access to the cluster software
-+  CPU, storage, and memory limitations (quotas and hardware limits)
+2. How to login to the cluster
+3. How to use the Module system to gain access to the cluster software
+4. CPU, storage, and memory limitations (quotas and hardware limits)
 
 Now you can start using the cluster.
 
 The HPCC cluster uses the Slurm queuing system and thus the recommended way to run your jobs (scripts, pipelines, experiments, etc...) is to submit them to this queuing system by using `sbatch`.
-Please **DO NOT RUN ANY** computationally intensive tasks on any head node (i.e. pigeon, pelican, parrot). If this policy is violated, your process will either run very slow or be killed.
+Please **DO NOT RUN ANY** computationally intensive tasks on any head node (i.e. jay, lark). If this policy is violated, your process will either run very slow or be killed automatically.
 The head nodes (login nodes) are a shared resource and should be accessible by all users. Negatively impacting performance would affect all users on the system and will not be tolerated.
 
