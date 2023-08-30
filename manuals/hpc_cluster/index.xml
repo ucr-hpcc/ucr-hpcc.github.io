@@ -31,30 +31,16 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;h3 id="head-nodes">Head Nodes&lt;/h3>
 &lt;p>All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.&lt;/p>
 &lt;ul>
-&lt;li>Penguin
+&lt;li>Jay
 &lt;ul>
-&lt;li>Resources: 8 cores, 64 GB memory&lt;/li>
+&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
 &lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Pigeon
+&lt;li>Lark
 &lt;ul>
-&lt;li>Resources: 16 cores, 128 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Pelican
-&lt;ul>
-&lt;li>Resources: 32 cores, 64 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Parrot
-&lt;ul>
-&lt;li>Resources: 32 cores, 32 GB memory&lt;/li>
+&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
 &lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
@@ -74,8 +60,10 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;/li>
 &lt;li>GPU
 &lt;ul>
-&lt;li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
-&lt;li>gpu03-gpu04: each with 32 (HT) cores Intel Haswell CPUs and 4 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory&lt;/li>
+&lt;li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Kepler K80 GPUs (2496 CUDA cores per GPU) and 128 GB memory&lt;/li>
+&lt;li>gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (2496 CUDA cores per GPU) and 512 GB memory&lt;/li>
+&lt;li>gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (3584 CUDA cores per GPU) and 256 GB memory&lt;/li>
+&lt;li>gpu06: 64 (HT) cores AMD EPYC Milan CPUs and 8 x NVIDIA Ampere A100 GPUs (6912 CUDA cores per GPU) and 1 TB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Intel
