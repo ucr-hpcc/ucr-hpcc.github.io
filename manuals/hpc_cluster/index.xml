@@ -712,18 +712,16 @@ This is because jobs submitted to the group&amp;rsquo;s partition will be evalua
 &lt;p>The scope of this manual is a brief introduction on how to manage Python packages.&lt;/p>
 &lt;h3 id="python-versions">Python Versions&lt;/h3>
 &lt;p>Different Python versions do not play nice with each other. It is best to only load one Python module at any given time.
-The miniconda2 module for Python is the default version. This will enable users to leverage the conda installer, but with as few Python packages pre-installed as possible. This is to avoid conflicts with future needs of individuals.&lt;/p>
+The miniconda3 module for Python is the default version. This will enable users to leverage the conda installer, but with as few Python packages pre-installed as possible. This is to avoid conflicts with future needs of individuals.&lt;/p>
 &lt;h4 id="conda">Conda&lt;/h4>
 &lt;p>We have several Conda software modules:&lt;/p>
 &lt;ol>
-&lt;li>miniconda2 - Basic Python 2 install (default)&lt;/li>
-&lt;li>miniconda3 - Basic Python 3 install&lt;/li>
-&lt;li>anaconda2 - Full Python 2 install&lt;/li>
-&lt;li>anaconda3 - Full Python 3 install
+&lt;li>miniconda3 - Basic Python 3 install (Default)&lt;/li>
+&lt;li>anaconda - Full Python 3 install
 For more information regarding our module system please refer to &lt;a href="../../manuals/hpc_cluster/start/#modules">Environment Modules&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>The miniconda modules are very basic installs, however users can choose to unload this basic install for a fuller one (anaconda), like so:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module load miniconda2 #This is the default
+&lt;pre>&lt;code class="language-bash">module load miniconda
 &lt;/code>&lt;/pre>
 &lt;p>After loading anaconda, you will see that there are many more Python packages installed (ie. numpy, scipy, pandas, jupyter, etc&amp;hellip;).
 For a list of installed Python packages try the following:&lt;/p>
@@ -746,13 +744,9 @@ envs_dirs:
 - ~/bigdata/.conda/envs
 auto_activate_base: false
 &lt;/code>&lt;/pre>
-&lt;p>Then create your Python 2 conda environment, like so:&lt;/p>
-&lt;pre>&lt;code class="language-bash">conda create -n NameForNewEnv python=2.7.14 # Many Python versions are available
-&lt;/code>&lt;/pre>
-&lt;p>For Python 3, please use the miniconda3, like so:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module unload miniconda2
-module load miniconda3
-conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
+&lt;p>Create a Python 3.10 conda environment, like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load miniconda3 # Should already be auto-loaded during login
+conda create -n NameForNewEnv python=3.10 # Many Python versions are available
 &lt;/code>&lt;/pre>
 &lt;h5 id="activating">Activating&lt;/h5>
 &lt;p>Once your virtual environment has been created, you need to activate it before you can use it:&lt;/p>
@@ -787,17 +781,24 @@ conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
 &lt;h4 id="more-info">More Info&lt;/h4>
 &lt;p>For more information regarding conda please visit &lt;a href="https://conda.io/docs/user-guide/">Conda Docs&lt;/a>.&lt;/p>
 &lt;h3 id="jupyter">Jupyter&lt;/h3>
-&lt;p>You can run jupyter as an interactive job using &lt;a href="../../manuals/hpc_cluster/jobs/#web-browser-access">tunneling&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
+&lt;p>You can run jupyter as an interactive job, see &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/jupyterlab/">JupyterLab Usage&lt;/a>, or you can use the web portal &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a>.&lt;/p>
 &lt;h4 id="virtual-environment">Virtual Environment&lt;/h4>
 &lt;p>In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash"># Create a virtual environment, if you don't already have one
-conda create -n ipykernel_py2 python=2 ipykernel
+conda create -n ipykernel_py3 python=3 ipykernel
 # Load the new environment
-conda activate ipykernel_py2
+conda activate ipykernel_py3
 # Install kernel
-python -m ipykernel install --user --name myenv --display-name &amp;quot;JupyterPy2&amp;quot;
+python -m ipykernel install --user --name myenv --display-name &amp;quot;JupyterPy3&amp;quot;
 &lt;/code>&lt;/pre>
-&lt;p>Now when you visit &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a> you should see the option &amp;ldquo;JupyterPy2&amp;rdquo; when you click the &amp;ldquo;New&amp;rdquo; dropdown menu in the upper left corner of the home page.&lt;/p>
+&lt;p>Now when you visit &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a> you should see the option &amp;ldquo;JupyterPy3&amp;rdquo; when you click the &amp;ldquo;New&amp;rdquo; dropdown menu in the upper left corner of the home page.&lt;/p>
+&lt;p>To remove an unwanted kernel, use the following commands:&lt;/p>
+&lt;pre>&lt;code class="language-bash">jupyter kernelspec list # List available kernels
+jupyter kernelspec uninstall UNWANTEDKERNEL
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Replace UNWANTEDKERNEL with the name of the kernel you wish to remove&lt;/p>
+&lt;/blockquote>
 &lt;h4 id="r">R&lt;/h4>
 &lt;p>For instructions on how to configure your R environment please visit &lt;a href="https://github.com/IRkernel/IRkernel">IRkernel&lt;/a>.
 Since we should already have IRkernel install in the latest version of R, you would only need to do the following within R:&lt;/p>
@@ -809,26 +810,17 @@ Since we should already have IRkernel install in the latest version of R, you wo
 &lt;blockquote>
 &lt;p>NOTE: Please be aware that this version of R is built with &lt;code>GCC/8.3.0&lt;/code>, which means that previously compiled modules may be incompatible.&lt;/p>
 &lt;/blockquote>
-&lt;p>Currently the default version of R is &lt;code>R/4.1.0&lt;/code> and is &lt;code>NOT&lt;/code> loaded automatically for you.&lt;/p>
-&lt;p>You will have to do this manually on your own, like so:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module load R/4.1.0_gcc-8.3.0
-&lt;/code>&lt;/pre>
-&lt;p>Or, you can &lt;code>rebase&lt;/code> by loading the &lt;code>base/gcc/8.3.0&lt;/code> module, which will load the latest version of &lt;code>R&lt;/code> and many other compatible modules:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module load base/gcc/8.3.0
-&lt;/code>&lt;/pre>
-&lt;p>If you wish to revert back to your previous modules, then you can simply unload the &lt;code>base&lt;/code> module, like so:&lt;/p>
-&lt;pre>&lt;code>module unload base
-&lt;/code>&lt;/pre>
+&lt;p>Currently the default version of R is &lt;code>R/4.3.0&lt;/code> and is loaded automatically for you.&lt;/p>
 &lt;p>When a new release of R is available, you should reinstall any local R packages, however keep in mind of the following:&lt;/p>
 &lt;ul>
 &lt;li>Remove redundantly installed local R packages with the &lt;code>RdupCheck&lt;/code> command.&lt;/li>
 &lt;li>Newer version of R packages are not backward compatible, once installed they only work for that specific version of &lt;code>R&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="older-r-versions">Older R Versions&lt;/h3>
-&lt;p>The older version of &lt;code>R/4.0.1&lt;/code> is loaded by default.&lt;/p>
 &lt;p>You can load other versions of R with the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module unload R
-module load R/3.4.2
+module avail R
+module load R/VERSION
 &lt;/code>&lt;/pre>
 &lt;h3 id="installing-r-packages">Installing R Packages&lt;/h3>
 &lt;p>The default version of &lt;code>R&lt;/code> has many of the most popular &lt;code>R&lt;/code> packages already installed and available.
