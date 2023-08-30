@@ -73,7 +73,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;/li>
 &lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
 &lt;h2 id="login-from-mac-linux-mobaxterm">Login from Mac, Linux, MobaXTerm&lt;/h2>
-&lt;p>The initial login brings users into the cluster head node (i.e. pigeon, pelican, parrot). From there, users can submit jobs via &lt;code>srun&lt;/code>/&lt;code>sbatch&lt;/code> to the compute nodes to perform intensive tests.
+&lt;p>The initial login brings users into the cluster head node (i.e. jay, lark). From there, users can submit jobs via &lt;code>srun&lt;/code>/&lt;code>sbatch&lt;/code> to the compute nodes to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.&lt;/p>
 &lt;p>Open the terminal and type&lt;/p>
 &lt;pre>&lt;code class="language-bash">ssh -X username@cluster.hpcc.ucr.edu
@@ -114,16 +114,14 @@ More advanced users may want to load modules within their bashrc, bash_profile, 
 &lt;pre>&lt;code class="language-bash">module avail
 &lt;/code>&lt;/pre>
 &lt;p>This should output something like:&lt;/p>
-&lt;pre>&lt;code class="language-bash">------------------------- /usr/local/Modules/versions --------------------------
-3.2.9
---------------------- /usr/local/Modules/3.2.9/modulefiles ---------------------
-BEDTools/2.15.0(default) modules
-PeakSeq/1.1(default) python/3.2.2
-SOAP2/2.21(default) samtools/0.1.18(default)
-bowtie2/2.0.0-beta5(default) stajichlab
-cufflinks/1.3.0(default) subread/1.1.3(default)
-matrix2png/1.2.1(default) tophat/1.4.1(default)
-module-info
+&lt;pre>&lt;code class="language-bash">------------------------ /opt/linux/rocky/8.x/x86_64/modules -------------------------
+AAFTF/0.5.0 workspace/scratch &amp;lt;aL&amp;gt;
+abyss/2.3.4 wtdbg2/2.5
+almabte/1.3.2 xpdf/4.03
+alphafold/2.3.0 xsv/0.13.0
+amber/22_mpi_cuda yq/4.35.1
+amptk/1.6 zoem/21-341
+...
 &lt;/code>&lt;/pre>
 &lt;h3 id="using-modules">Using Modules&lt;/h3>
 &lt;p>To load a module, run:&lt;/p>
@@ -179,22 +177,20 @@ legacy_blast.pl blastall -p blastp -i proteins.fasta -d $NCBI_DB/nr -o blast.out
 &lt;/code>&lt;/pre>
 &lt;h2 id="quotas">Quotas&lt;/h2>
 &lt;h3 id="cpu-and-memory">CPU and Memory&lt;/h3>
-&lt;p>Please refer to our &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">Queue Policies&lt;/a> page for detail regarding CPU and Memory limits.&lt;/p>
+&lt;p>Please refer to our &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">Queue Policies&lt;/a> page for details regarding CPU and Memory limits.&lt;/p>
 &lt;h3 id="data-storage">Data Storage&lt;/h3>
 &lt;p>A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account&amp;rsquo;s bigdata directory. The amount of storage space available in bigdata depends on a user group&amp;rsquo;s annual subscription. The pricing for extending the storage space in the bigdata directory is available &lt;a href="../../about/overview/access/">here&lt;/a>.&lt;/p>
 &lt;h2 id="whats-next">What&amp;rsquo;s Next?&lt;/h2>
 &lt;p>You should now know the following:&lt;/p>
 &lt;ol>
 &lt;li>Basic orginization of the cluster&lt;/li>
-&lt;/ol>
-&lt;ul>
 &lt;li>How to login to the cluster&lt;/li>
 &lt;li>How to use the Module system to gain access to the cluster software&lt;/li>
 &lt;li>CPU, storage, and memory limitations (quotas and hardware limits)&lt;/li>
-&lt;/ul>
+&lt;/ol>
 &lt;p>Now you can start using the cluster.&lt;/p>
 &lt;p>The HPCC cluster uses the Slurm queuing system and thus the recommended way to run your jobs (scripts, pipelines, experiments, etc&amp;hellip;) is to submit them to this queuing system by using &lt;code>sbatch&lt;/code>.
-Please &lt;strong>DO NOT RUN ANY&lt;/strong> computationally intensive tasks on any head node (i.e. pigeon, pelican, parrot). If this policy is violated, your process will either run very slow or be killed.
+Please &lt;strong>DO NOT RUN ANY&lt;/strong> computationally intensive tasks on any head node (i.e. jay, lark). If this policy is violated, your process will either run very slow or be killed automatically.
 The head nodes (login nodes) are a shared resource and should be accessible by all users. Negatively impacting performance would affect all users on the system and will not be tolerated.&lt;/p></description></item><item><title>Manuals: Managing Jobs</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/</guid><description>
 &lt;h2 id="what-is-a-job">What is a Job?&lt;/h2>
 &lt;p>Submitting and managing jobs is at the heart of using the cluster. A &amp;lsquo;job&amp;rsquo; refers to the script, pipeline or experiment that you run on the nodes in the cluster.&lt;/p>
