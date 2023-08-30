@@ -29,9 +29,11 @@ Empty boxes imply no limit, but is still limited by the next higher limit.
 | gpu            	| GPU-Enabled Workloads                                     	| 16 Cores, 256GB memory                   	| 48 Cores, 512GB memory 	| 8 GPUs          	|
 
 Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 512 core group limit that spans all partitions. Upon request, a user or group’s quota can be extended
-temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to request additional resources,
-please contact us at support@hpcc.ucr.edu with your justification.
+to the above limits, there is also a 512 core group limit that spans across all users in a group across all partitions. Upon request, a user or
+group’s quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to
+request additional resources, please contact us at support@hpcc.ucr.edu with your justification.
+
+Partition quotas can also be viewed on the cluster using the `slurm_limits` command.
 
 ## Fair-Share
 Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
