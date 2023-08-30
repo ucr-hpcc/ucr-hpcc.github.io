@@ -12,7 +12,7 @@ aliases:
 Submitting and managing jobs is at the heart of using the cluster.  A 'job' refers to the script, pipeline or experiment that you run on the nodes in the cluster.
 
 ## Partitions
-Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to our partitions are outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/)
+Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/)
 
 * intel
     * Default partition
@@ -41,8 +41,9 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * Cores: AMD/Intel
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
-* Group Partition
-    * This partition is unique to the group, if your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
+* Lab Partitions
+    * If your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
+
 In order to submit a job to different partitions add the optional '-p' parameter with the name of the partition you want to use:
 
 ```bash
@@ -54,7 +55,7 @@ sbatch -p mygroup SBATCH_SCRIPT.sh
 ```
 
 ## Slurm
-Slurm is now our default queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
+Slurm is used as a queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
 
 ```bash
 ssh -XY cluster.hpcc.ucr.edu
@@ -81,8 +82,11 @@ squeue --start -u $USER
 ```
 
 ### Submitting Jobs
-There are 2 basic ways to submit jobs; non-interactive, interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
-Non-interactive submission of a SBATCH script:
+There are 2 basic ways to submit jobs; non-interactive and interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
+
+#### Non-interactive Submission
+
+Non-interactive jobs are submitted as SBATCH scripts, an example is as follows:
 
 ```bash
 sbatch SBATCH_SCRIPT.sh
@@ -119,7 +123,9 @@ hostname
 The above job will request 1 node, 10 cores (parallel threads), 10GB of memory, for 1 day and 15 minutes. An email will be sent to the user when the status of the job changes (Start, Failed, Completed).
 For more information regarding parallel/multi core jobs refer to [Parallelization](#parallelization).
 
-Interactive submission:
+#### Interactive Submission
+
+Interactive jobs are submitted using `srun`. An example is as follows:
 
 ```bash
 srun --pty bash -l
@@ -133,7 +139,7 @@ Here is a more complete example:
 srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --x11 --pty bash -l
 ```
 
-The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.
+The above example enables X11 forwarding and requests 1GB of memory and 1 core for 10 hours within an interactive session.
 
 ### Monitoring Jobs
 To check on your jobs states, run the following:
@@ -142,7 +148,7 @@ To check on your jobs states, run the following:
 squeue -u $USER --start
 ```
 
-To list all the details of a specific job, run the following:
+To list all the details of a specific job (the JOBID can be found using `squeue`), run the following:
 
 ```bash
 scontrol show job JOBID
@@ -165,13 +171,13 @@ sacct -u $USER -S 2018-01-01 -E 2018-08-30 -l | less -S # Type 'q' to quit
 In cancel/stop your job run the following:
 
 ```bash
-scancel <JOBID>
+scancel JOBID
 ```
 
 You can also cancel multiple jobs:
 
 ```bash
-scancel <JOBID1> <JOBID2> <JOBID3>
+scancel JOBID1 JOBID2 JOBID3
 ```
 
 If you want to cancel/stop/kill ALL your jobs it is possible with the following:
@@ -222,7 +228,7 @@ srun -p highmem --mem=100g --time=24:00:00 --pty bash -l
 Of course you should adjust the time argument according to your job requirements.
 
 ### GPU Jobs
-GPU nodes have multiple GPUs, and very in type (K80 or P100). This means you need to request how many GPUs and of what type that you would like to use.
+GPU nodes have multiple GPUs, and vary in type (K80, P100, or A100). This means you need to request how many GPUs and of what type that you would like to use.
 
 To request a gpu of any type, only indicate how many GPUs you would like to use.
 
@@ -238,13 +244,14 @@ Interactive
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
-Since the HPCC Cluster has two types of GPUs installed (K80s and P100s), GPUs can be requested explicitly by type.
+Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type.
 
 Non-Interactive:
 
 ```bash
 sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
+sbatch -p gpu --gres=gpu:a100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 ```
 
 Interactive
@@ -252,13 +259,14 @@ Interactive
 ```bash
 srun -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 --pty bash -l
 srun -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 --pty bash -l
+srun -p gpu --gres=gpu:a100:1 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
 Of course you should adjust the time argument according to your job requirements.
 
 Once your job starts your code must reference the environment variable "CUDA_VISIBLE_DEVICES" which will indicate which GPUs have been assigned to your job. Most CUDA enabled software, like MegaHIT, will check this environment variable and automatically limit accordingly.
 
-For example, when reserving 4 GPUs for a NAMD2 job:
+For example, after reserving 4 GPUs for a NAMD2 job:
 
 ```bash
 echo $CUDA_VISIBLE_DEVICES
@@ -267,7 +275,7 @@ namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
 ```
 
 Each group is limited to a maximum of 8 GPUs on the gpu partition. Please be respectful of others and keep in mind that the GPU nodes are a limited shared resource.
-Since the CUDA libraries will only run with GPU hardward, development and compiling of code must be done within a job session on a GPU node.
+Since the CUDA libraries will only run with GPU hardware, development and compiling of code must be done within a job session on a GPU node.
 
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](https://github.com/ucr-hpcc/hpcc_slurm_examples)
@@ -284,15 +292,16 @@ Any port can be used on any compute node, as long as the port number is greater 
 #### Tunneling
 Once a job is running on a compute node and bound to a port, you may access this compute node via a web browser.
 This is accomplished by using 2 chained SSH tunnels to route traffic through our firewall.
-This acts much like 2 runners in a relay race, handing the baton to the next runer, to get past a security checkpoint.
+This acts much like 2 runners in a relay race, handing the baton to the next runner, to get past a security checkpoint.
 
-We will create a tunnel that goes though a headnode and connect to a compute node on a particular port:
+Running the following command on your local machine will create a tunnel that goes though a headnode and connect to a
+compute node on a particular port.
 
 ```bash
 ssh -NL 8888:NodeName:8888 username@cluster.hpcc.ucr.edu
 ```
 
-Port 8888 (first) is the local port you will be using on your laptop.
+Port 8888 (first) is the local port you will be using on your local machine.
 NodeName is the compute node where where job is running, which can be found by using the `squeue -u $USER` command.
 Port 8888 (second) is the remote port on the compute node.
 Again, the NodeName and ports will be different depending on where your job runs and what port your job uses.
@@ -315,7 +324,7 @@ https://localhost:8888
 
 #### Examples
 
-1. A perfect example of this method is used for Jupyter Lab/Notebook. For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/jupyter). 
+1. A perfect example of this method is used for Jupyter Lab/Notebook. For more details please refer to the [JupyterLab Usage](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/jupyterlab/) page.
 
 2. RStudio Server instances can also be started directly on a compute node and accessed via an SSH tunnel. For details see [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 
@@ -418,6 +427,7 @@ After launching the vncviewer, and providing your VNC password (not your cluster
 
 For more information regarding tunnels and VNC in MS Windows, please refer [More VNC Info](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/).
 
+<!--
 ### Licenses
 The cluster currently supports [Commercial Software](/about/software/commercial/). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
 
@@ -433,6 +443,7 @@ The above interactive submission will request 1 Intel license, 10GB of RAM, 10 C
 The short parititon can only be used for a maximum of 2 hours, however for compilation this could be sufficient.
 It is recommended that you separate your compilation job from your computation/analysis job.
 This way you will only have the license checked out for the duration of compilation, and not the during the execution of the analysis.
+-->
 
 ## Parallelization
 There are 3 major ways to parallelize work on the cluster:
