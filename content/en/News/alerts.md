@@ -10,15 +10,11 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-<!-- 
 None currently observed.
--->
 
 ## Unannounced exceptions
 
-<!-- 
 None currently observed.
--->
 
 ## Standard Operating Procedures
 
