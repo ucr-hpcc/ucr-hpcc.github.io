@@ -11,6 +11,9 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### Sep 2023
+* Stata 17 has been superceeded with Stata 18. Please update scripts relying on the stata/17 module to use the stata/18 module instead.
+
 ### Aug 2022
 * In August 2022 we were awarded an MRI equipment grant ([#2215705](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215705&HistoricalAwards=false)) by NSF for the acquisition of a Big Data HPC Cluster in the total amount of $942,829. 
 
