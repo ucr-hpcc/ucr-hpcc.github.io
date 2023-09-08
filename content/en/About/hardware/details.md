@@ -43,7 +43,7 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
 * Highmem
     * h01-h06: each with 32 Intel cores and 1024 GB memory
 * GPU
-    * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory
-    * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (~20000 CUDA cores) and 512 GB memory
-    * gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (~5200 CUDA cores) and 256 GB memory
-    * gpu06: with 128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB) and 1,024 GB memory
+    * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 128 GB memory
+    * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
+    * gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory
+    * gpu06: with 128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory
