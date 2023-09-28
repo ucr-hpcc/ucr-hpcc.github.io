@@ -116,12 +116,12 @@ that will be administered similarly as described above under the &lt;em>Ownershi
 model&lt;/em>. Due to the large number of expected users from departments, the
 CPU quota per user is usually lower compared to the PI-based model.&lt;/p>
 &lt;h2 id="using-hpcc-cluster-for-classes">Using HPCC cluster for classes&lt;/h2>
-&lt;p>To use the HPCC cluster for teaching, please coordinate with the systems
-administrators (&lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>) at least 4 weeks prior to the start of a
-class so that there is enough time for planning. Details that need be discussed
-includes the number of user accounts required, special software requirements,
-creation of a class-specific Slurm partition, data storage reservations, as well
-as other needs that may vary for different classes.&lt;/p>
+&lt;p>To use the HPCC cluster for teaching UCR classes, please coordinate with the
+systems administrators (&lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>) at least 4 weeks prior to the
+start of a class so that there is enough time for planning. Details that need
+be discussed includes the number of user accounts required, special software
+requirements, creation of a class-specific Slurm partition, data storage
+reservations, as well as other needs that may vary for different classes.&lt;/p>
 &lt;h2 id="external-user-accounts">External user accounts&lt;/h2>
 &lt;p>Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
