@@ -28,8 +28,6 @@ cat  <FILENAME>     # Concatenates files and prints content to screen
   * Non-graphical (`vim`) or window-based editor (`gvim`). Vim is the improved version of vi.
 * **Emacs**
   * Non-graphical or window-based editor.
-* **Atom**
-    * Window-based editor that runs on your local machine.
 * **Visual Studio Code**
     * Graphical editor that runs on your local machine that supports different plugins.
 
@@ -78,57 +76,6 @@ After that, just follow the on screen prompts at the bottom.
 
 For more commands in `emacs` please visit [GNU Emacs Reference Card](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
 
-## Atom
-
-### Install
-This editor should be installed on your local machine (ie. workstation, laptop).
-Please visit [Atom](https://atom.io/) for software download.
-
-### Remote Atom
-
-After you have `atom` installed, you need to install the `Remote Atom` plugin.
-Click on `edit`, then `preferences`, then look for the `install` item on the left side menu.
-You should then be able to type `remote-atom` in the search field, find it and install it.
-After installation, `atom` should restart.
-
-### Start Server
-
-Once you have `remote-atom` installed, click `Packages` in the top menu, then `Remote Atom`, and then click `Start Server`.
-`Atom` may need to be restarted in order for you to see these new menu items.
-
-### Cluster
-
-SSH into cluster using a socket (replace `<USERNAME>` with your real username on the cluster):
-
-```bash
-ssh -R /rhome/<USERNAME>/.rmate.socket:localhost:52698 cluster.hpcc.ucr.edu
-```
-
-> Note: Do not use a remote PORT, you must use a SOCKET FILE as shown above. There are security issues otherwise.
-
-After you have logged into the cluster load `rmate` (alias is optional):
-
-```bash
-module load rmate
-alias ratom=rmate
-```
-
-You can add this into your `~/.bashrc` for convenience.
-
-Then you should be able to open a file on the cluster and have it appear on your local machine:
-
-```bash
-rmate <FILENAME>
-```
-
-Once you have finished all your editing and close `atom`, be sure to delete the socket file from the cluster:
-
-```bash
-rm -f /rhome/<USERNAME>/.rmate.socket'
-```
-
-For more information regarding `remote-atom`, please visit [Remote-Atom](https://atom.io/packages/remote-atom).
-
 ## Visual Studio Code
 
 ### Install
@@ -138,7 +85,7 @@ Please visit [Visual Studio Code](https://code.visualstudio.com/download) for so
 
 ### Remote Editing
 
-To setup Visual Studio Code to remotely edit files on the cluster, please go to slides 13 on this [guide](https://docs.google.com/presentation/d/1pEXb4H47atpWruV0qxoYcZxtLc3dPk9ehIXNkf8Zv1g/edit?usp=sharing)
+To setup Visual Studio Code to remotely edit files on the cluster, please refer to our guide to [VSCode Usage on HPCC](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/).
 
 ## RStudio Server
 
