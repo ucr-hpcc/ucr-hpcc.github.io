@@ -25,6 +25,11 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * CPU: AMD
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
+* epyc
+    * Nodes: r21-r38
+    * CPU: AMD
+    * RAM: 1 GB default
+    * Time (walltime): 168 hours (7 days) default
 * highmem
     * Nodes: h01-h06
     * CPU: Intel
