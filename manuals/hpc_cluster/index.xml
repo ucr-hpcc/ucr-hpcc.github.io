@@ -214,6 +214,14 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>epyc
+&lt;ul>
+&lt;li>Nodes: r21-r38&lt;/li>
+&lt;li>CPU: AMD&lt;/li>
+&lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>highmem
 &lt;ul>
 &lt;li>Nodes: h01-h06&lt;/li>
