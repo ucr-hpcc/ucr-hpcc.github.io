@@ -24,6 +24,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit.
 |----------------	|-----------------------------------------------------------	|------------------------------------------	|------------------------	|-----------------	|
 | batch          	| CPU Intensive Workloads, Multithreaded, MPI, OpenMP       	| 128GB memory per Core                    	| 256 Cores, 1TB memory  	|                 	|
 | intel          	| CPU Intensive Workloads, Multithreaded, MPI, OpenMP       	| 128GB memory per Core                    	| 256 Cores, 1TB memory  	|                 	|
+| epyc          	| CPU Intensive Workloads, Multithreaded, MPI, OpenMP       	| 128GB memory per Core                    	| 256 Cores, 1TB memory  	|                 	|
 | short          	| Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP 	| 128GB memory per Core, 2-hour time limit 	| 256 Cores, 1TB memory  	|                 	|
 | highmem        	| Memory Intensive Workloads                                	|                                          	| 32 Cores, 1TB memory   	|                 	|
 | gpu            	| GPU-Enabled Workloads                                     	| 16 Cores, 256GB memory                   	| 48 Cores, 512GB memory 	| 8 GPUs          	|
