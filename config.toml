@@ -289,6 +289,13 @@ enable = true
         level = 2
     [[menu.main]]
       parent = "About"
+      name = "Conda Packages"
+      url = "/about/software/conda_packages/"
+      weight = 14
+      [menu.main.params]
+        level = 2
+    [[menu.main]]
+      parent = "About"
       name = "Modules"
       url = "/about/software/modules/"
       weight = 15
