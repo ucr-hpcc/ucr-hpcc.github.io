@@ -1,7 +1,8 @@
 ---
 title: Conda Packages
-linkTitle: conda_packages
-weight: 100
+linkTitle: Conda Packages
+weight: 2
+type: docs
 ---
 
 The following packages are available in the `base` conda environment.
