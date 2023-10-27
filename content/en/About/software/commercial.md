@@ -13,9 +13,7 @@ The following commercial software is available only for UCR accounts on the clus
 | Package Name | Version |
 | --- | --- |
 | Gaussian | 16 |
-| Intel Parallel Suite (replaced by OneAPI) | 2018 |
-| Mathematica | 12.1 |
-| MATLAB | R2020b |
-| SAS | 9.4 |
+| Mathematica | 12.3.1 |
+| MATLAB | R2021b |
 
 Please contact us at support@hpcc.ucr.edu to be added to the corresponding group in order to gain access to the software via our module system.
