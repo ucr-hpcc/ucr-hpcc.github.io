@@ -8,1752 +8,1468 @@ aliases:
     - /software_system
 ---
 
-The following packages are provided as part of the CentOS 7 operating system. They can be used without loading any modules.
+The following packages are provided as part of the CentOS 8 operating system. They can be used without loading any modules.
 
-| Package Name | Version |
-| --- | --- |
-| CharLS | 1.0 |
-| GConf2 | 3.2.6 |
-| ImageMagick | 6.7.8.9 |
-| ImageMagick-devel | 6.7.8.9 |
-| ImageMagick-perl | 6.7.8.9 |
-| NetworkManager | 1.0.0 |
-| NetworkManager-glib | 1.0.0 |
-| NetworkManager-libnm | 1.0.0 |
-| NetworkManager-team | 1.0.0 |
-| NetworkManager-tui | 1.0.0 |
-| ORBit2 | 2.14.19 |
-| OpenEXR-libs | 1.7.1 |
-| OpenIPMI | 2.0.19 |
-| OpenIPMI-libs | 2.0.19 |
-| OpenIPMI-modalias | 2.0.19 |
-| PyQt4 | 4.10.1 |
-| PyQt4-devel | 4.10.1 |
-| SuperLU | 4.3 |
-| a2ps | 4.14 |
-| abattis-cantarell-fonts | 0.0.12 |
-| acl | 2.2.51 |
-| adwaita-cursor-theme | 3.8.4 |
-| adwaita-gtk2-theme | 3.8.4 |
-| adwaita-gtk3-theme | 3.8.4 |
-| aic94xx-firmware | 30 |
-| alsa-firmware | 1.0.28 |
-| alsa-lib | 1.0.28 |
-| alsa-tools-firmware | 1.0.27 |
-| apr | 1.4.8 |
-| apr-util | 1.5.2 |
-| ar_mgr | 1.0 |
-| armadillo | 4.320.0 |
-| arpack | 3.1.3 |
-| aspell | 0.60.6.1 |
-| at-spi2-atk | 2.8.1 |
-| at-spi2-atk-devel | 2.8.1 |
-| at-spi2-core | 2.8.0 |
-| atk | 2.8.0 |
-| atk-devel | 2.8.0 |
-| atlas | 3.10.1 |
-| atlas-devel | 3.10.1 |
-| attica | 0.4.1 |
-| attr | 2.4.46 |
-| audit | 2.4.1 |
-| audit-libs | 2.4.1 |
-| augeas | 1.1.0 |
-| augeas-libs | 1.1.0 |
-| authconfig | 6.2.8 |
-| autoconf | 2.69 |
-| autogen | 5.18 |
-| autogen-libopts | 5.18 |
-| automake | 1.13.4 |
-| avahi-autoipd | 0.6.31 |
-| avahi-compat-libdns_sd | 0.6.31 |
-| avahi-glib | 0.6.31 |
-| avahi-libs | 0.6.31 |
-| basesystem | 10.0 |
-| bash | 4.2.46 |
-| bc | 1.06.95 |
-| bibutils-libs | 5.0 |
-| bind-libs | 9.9.4 |
-| bind-libs-lite | 9.9.4 |
-| bind-license | 9.9.4 |
-| bind-utils | 9.9.4 |
-| binutils | 2.23.52.0.1 |
-| binutils-c6x-linux-gnu | 2.23.88.0.1 |
-| biosdevname | 0.6.1 |
-| bison | 2.7 |
-| blas | 3.4.2 |
-| blas-devel | 3.4.2 |
-| boost | 1.53.0 |
-| boost-atomic | 1.53.0 |
-| boost-chrono | 1.53.0 |
-| boost-context | 1.53.0 |
-| boost-date-time | 1.53.0 |
-| boost-devel | 1.53.0 |
-| boost-filesystem | 1.53.0 |
-| boost-graph | 1.53.0 |
-| boost-iostreams | 1.53.0 |
-| boost-locale | 1.53.0 |
-| boost-math | 1.53.0 |
-| boost-program-options | 1.53.0 |
-| boost-python | 1.53.0 |
-| boost-random | 1.53.0 |
-| boost-regex | 1.53.0 |
-| boost-serialization | 1.53.0 |
-| boost-signals | 1.53.0 |
-| boost-static | 1.53.0 |
-| boost-system | 1.53.0 |
-| boost-test | 1.53.0 |
-| boost-thread | 1.53.0 |
-| boost-timer | 1.53.0 |
-| boost-wave | 1.53.0 |
-| btrfs-progs | 3.16.2 |
-| bupc | 2.18.0 |
-| bwidget | 1.9.0 |
-| byacc | 1.9.20130304 |
-| bzip2 | 1.0.6 |
-| bzip2-devel | 1.0.6 |
-| bzip2-libs | 1.0.6 |
-| ca-certificates | 2015.2.4 |
-| cairo | 1.12.14 |
-| cairo-devel | 1.12.14 |
-| cairo-gobject | 1.12.14 |
-| cairo-gobject-devel | 1.12.14 |
-| cairomm | 1.10.0 |
-| cc_mgr | 1.0 |
-| cdparanoia-libs | 10.2 |
-| centos-logos | 70.0.6 |
-| centos-release | 7 |
-| cfitsio | 3.370 |
-| check | 0.9.9 |
-| check-devel | 0.9.9 |
-| chkconfig | 1.3.61 |
-| clucene-core | 2.3.3.4 |
-| cmake | 2.8.11 |
-| colord-libs | 1.0.4 |
-| compat-db-headers | 4.7.25 |
-| compat-db47 | 4.7.25 |
-| compat-libf2c-34 | 3.4.6 |
-| compat-libstdc++-33 | 3.2.3 |
-| coreutils | 8.22 |
-| cpio | 2.11 |
-| cpp | 4.8.3 |
-| cracklib | 2.9.0 |
-| cracklib-dicts | 2.9.0 |
-| cronie | 1.4.11 |
-| cronie-anacron | 1.4.11 |
-| crontabs | 1.11 |
-| cross-binutils-common | 2.23.88.0.1 |
-| cross-gcc-common | 4.8.1 |
-| cryptsetup | 1.6.6 |
-| cryptsetup-libs | 1.6.6 |
-| csdiff | 1.3.0 |
-| ctags | 5.8 |
-| cups | 1.6.3 |
-| cups-client | 1.6.3 |
-| cups-filesystem | 1.6.3 |
-| cups-filters | 1.0.35 |
-| cups-filters-libs | 1.0.35 |
-| cups-libs | 1.6.3 |
-| cups-lpd | 1.6.3 |
-| curl | 7.29.0 |
-| cyrus-sasl | 2.1.26 |
-| cyrus-sasl-devel | 2.1.26 |
-| cyrus-sasl-lib | 2.1.26 |
-| cyrus-sasl-plain | 2.1.26 |
-| dapl | 2.1.3mlnx |
-| dapl-devel | 2.1.3mlnx |
-| dapl-devel-static | 2.1.3mlnx |
-| dapl-utils | 2.1.3mlnx |
-| dbus | 1.6.12 |
-| dbus-devel | 1.6.12 |
-| dbus-glib | 0.100 |
-| dbus-glib-devel | 0.100 |
-| dbus-libs | 1.6.12 |
-| dbus-python | 1.1.1 |
-| dbus-x11 | 1.6.12 |
-| dbusmenu-qt | 0.9.2 |
-| dejavu-fonts-common | 2.33 |
-| dejavu-sans-fonts | 2.33 |
-| dejavu-sans-mono-fonts | 2.33 |
-| dejavu-serif-fonts | 2.33 |
-| desktop-file-utils | 0.21 |
-| device-mapper | 1.02.93 |
-| device-mapper-event | 1.02.93 |
-| device-mapper-event-libs | 1.02.93 |
-| device-mapper-libs | 1.02.93 |
-| device-mapper-persistent-data | 0.4.1 |
-| dhclient | 4.2.5 |
-| dhcp-common | 4.2.5 |
-| dhcp-libs | 4.2.5 |
-| diffutils | 3.3 |
-| dmidecode | 2.12 |
-| dnsmasq | 2.66 |
-| docbook-dtds | 1.0 |
-| docbook-style-xsl | 1.78.1 |
-| dos2unix | 6.0.3 |
-| dosfstools | 3.0.20 |
-| doxygen | 1.8.5 |
-| dracut | 033 |
-| dracut-config-rescue | 033 |
-| dracut-network | 033 |
-| dump_pr | 1.0 |
-| dwz | 0.11 |
-| e2fsprogs | 1.42.9 |
-| e2fsprogs-libs | 1.42.9 |
-| ebtables | 2.0.10 |
-| ed | 1.9 |
-| elfutils | 0.160 |
-| elfutils-libelf | 0.160 |
-| elfutils-libs | 0.160 |
-| elinks | 0.12 |
-| emacs | 24.3 |
-| emacs-common | 24.3 |
-| emacs-filesystem | 24.3 |
-| emacs-gnuplot | 4.6.2 |
-| enchant | 1.6.0 |
-| environment-modules | 3.2.10 |
-| epel-release | 7 |
-| ethtool | 3.15 |
-| evince | 3.8.3 |
-| evince-libs | 3.8.3 |
-| exempi | 2.2.0 |
-| exiv2 | 0.23 |
-| exiv2-libs | 0.23 |
-| expat | 2.1.0 |
-| expat-devel | 2.1.0 |
-| fca | 2.5.2409 |
-| fftw | 3.3.3 |
-| fftw-devel | 3.3.3 |
-| fftw-doc | 3.3.3 |
-| fftw-libs | 3.3.3 |
-| fftw-libs-double | 3.3.3 |
-| fftw-libs-long | 3.3.3 |
-| fftw-libs-single | 3.3.3 |
-| fftw-static | 3.3.3 |
-| fftw2 | 2.1.5 |
-| fftw2-devel | 2.1.5 |
-| file | 5.11 |
-| file-devel | 5.11 |
-| file-libs | 5.11 |
-| filesystem | 3.2 |
-| findutils | 4.5.11 |
-| finger | 0.17 |
-| fipscheck | 1.4.1 |
-| fipscheck-lib | 1.4.1 |
-| firewalld | 0.3.9 |
-| flac-libs | 1.3.0 |
-| flex | 2.5.37 |
-| flite | 1.3 |
-| fltk | 1.3.0 |
-| fltk-devel | 1.3.0 |
-| fltk-fluid | 1.3.0 |
-| fontconfig | 2.10.95 |
-| fontconfig-devel | 2.10.95 |
-| fontpackages-filesystem | 1.44 |
-| fping | 3.10 |
-| freeglut | 2.8.1 |
-| freeglut-devel | 2.8.1 |
-| freetype | 2.4.11 |
-| freetype-devel | 2.4.11 |
-| freexl | 1.0.0f |
-| fuse | 2.9.2 |
-| fuse-devel | 2.9.2 |
-| fuse-libs | 2.9.2 |
-| fxload | 2002_04_11 |
-| gamin | 0.1.10 |
-| ganglia | 3.7.2 |
-| ganglia-gmond | 3.7.2 |
-| gawk | 4.0.2 |
-| gc | 7.2d |
-| gcc | 4.8.3 |
-| gcc-c++ | 4.8.3 |
-| gcc-c6x-linux-gnu | 4.8.1 |
-| gcc-gfortran | 4.8.3 |
-| gd | 2.0.35 |
-| gd-devel | 2.0.35 |
-| gdal | 1.11.2 |
-| gdal-libs | 1.11.2 |
-| gdb | 7.6.1 |
-| gdbm | 1.10 |
-| gdbm-devel | 1.10 |
-| gdisk | 0.8.6 |
-| gdk-pixbuf2 | 2.28.2 |
-| gdk-pixbuf2-devel | 2.28.2 |
-| geos | 3.4.2 |
-| geronimo-jms | 1.1.1 |
-| gettext | 0.18.2.1 |
-| gettext-libs | 0.18.2.1 |
-| ghc-HTTP | 4000.2.8 |
-| ghc-aeson | 0.6.2.1 |
-| ghc-aeson-pretty | 0.7.1 |
-| ghc-array | 0.4.0.1 |
-| ghc-attoparsec | 0.10.4.0 |
-| ghc-base | 4.6.0.1 |
-| ghc-base-unicode-symbols | 0.2.2.4 |
-| ghc-base64-bytestring | 1.0.0.1 |
-| ghc-binary | 0.5.1.1 |
-| ghc-blaze-builder | 0.3.1.1 |
-| ghc-blaze-html | 0.6.1.1 |
-| ghc-blaze-markup | 0.5.1.5 |
-| ghc-bytestring | 0.10.0.2 |
-| ghc-conduit | 1.0.3 |
-| ghc-containers | 0.5.0.0 |
-| ghc-data-default | 0.5.1 |
-| ghc-deepseq | 1.3.0.1 |
-| ghc-digest | 0.0.1.2 |
-| ghc-directory | 1.2.0.1 |
-| ghc-dlist | 0.5 |
-| ghc-extensible-exceptions | 0.1.1.4 |
-| ghc-filepath | 1.3.0.1 |
-| ghc-hashable | 1.1.2.5 |
-| ghc-highlighting-kate | 0.5.6 |
-| ghc-hs-bibutils | 5.0 |
-| ghc-hslua | 0.3.10 |
-| ghc-lifted-base | 0.2.1.0 |
-| ghc-monad-control | 0.3.2.1 |
-| ghc-mtl | 2.1.2 |
-| ghc-network | 2.4.1.2 |
-| ghc-old-locale | 1.0.0.5 |
-| ghc-old-time | 1.1.0.1 |
-| ghc-pandoc | 1.12.3.1 |
-| ghc-pandoc-citeproc | 0.3.0.1 |
-| ghc-pandoc-types | 1.12.3.1 |
-| ghc-parsec | 3.1.3 |
-| ghc-pcre-light | 0.4 |
-| ghc-pretty | 1.1.1.0 |
-| ghc-primitive | 0.5.0.1 |
-| ghc-process | 1.1.0.2 |
-| ghc-random | 1.0.1.1 |
-| ghc-resourcet | 0.4.6 |
-| ghc-rfc5051 | 0.1.0.3 |
-| ghc-semigroups | 0.8.5 |
-| ghc-split | 0.2.2 |
-| ghc-syb | 0.4.0 |
-| ghc-tagsoup | 0.12.8 |
-| ghc-template-haskell | 2.8.0.0 |
-| ghc-temporary | 1.1.2.4 |
-| ghc-texmath | 0.6.6 |
-| ghc-text | 0.11.3.1 |
-| ghc-time | 1.4.0.1 |
-| ghc-transformers | 0.3.0.0 |
-| ghc-transformers-base | 0.4.1 |
-| ghc-unix | 2.6.0.1 |
-| ghc-unordered-containers | 0.2.3.0 |
-| ghc-utf8-string | 0.3.7 |
-| ghc-vector | 0.10.0.1 |
-| ghc-void | 0.5.11 |
-| ghc-xml | 1.3.13 |
-| ghc-yaml | 0.8.5.3 |
-| ghc-zip-archive | 0.1.3.4 |
-| ghc-zlib | 0.5.4.1 |
-| ghostscript | 9.07 |
-| ghostscript-cups | 9.07 |
-| ghostscript-devel | 9.07 |
-| ghostscript-fonts | 5.50 |
-| giflib | 4.1.6 |
-| giflib-devel | 4.1.6 |
-| git | 1.8.3.1 |
-| git-svn | 1.8.3.1 |
-| gl-manpages | 1.1 |
-| gl2ps | 1.3.8 |
-| glew | 1.9.0 |
-| glew-devel | 1.9.0 |
-| glib | 1.2.10 |
-| glib-devel | 1.2.10 |
-| glib-networking | 2.40.0 |
-| glib2 | 2.40.0 |
-| glib2-devel | 2.40.0 |
-| glibc | 2.17 |
-| glibc | 2.17 |
-| glibc-common | 2.17 |
-| glibc-devel | 2.17 |
-| glibc-headers | 2.17 |
-| glibc-static | 2.17 |
-| glibmm24 | 2.36.2 |
-| globus-authz | 3.12 |
-| globus-authz-callout-error | 3.5 |
-| globus-callout | 3.14 |
-| globus-common | 16.4 |
-| globus-common-progs | 16.4 |
-| globus-connect-server | 4.0.36 |
-| globus-connect-server-common | 4.0.36 |
-| globus-connect-server-id | 4.0.36 |
-| globus-connect-server-io | 4.0.36 |
-| globus-connect-server-web | 4.0.36 |
-| globus-ftp-client | 8.29 |
-| globus-ftp-control | 6.10 |
-| globus-gass-copy | 9.19 |
-| globus-gass-copy-progs | 9.19 |
-| globus-gass-transfer | 8.8 |
-| globus-gfork | 4.8 |
-| globus-gridftp-server | 10.4 |
-| globus-gridftp-server-control | 4.1 |
-| globus-gridftp-server-progs | 10.4 |
-| globus-gridmap-callout-error | 2.4 |
-| globus-gridmap-eppn-callout | 1.11 |
-| globus-gridmap-verify-myproxy-callout | 2.7 |
-| globus-gsi-callback | 5.8 |
-| globus-gsi-cert-utils | 9.12 |
-| globus-gsi-cert-utils-progs | 9.12 |
-| globus-gsi-credential | 7.9 |
-| globus-gsi-openssl-error | 3.5 |
-| globus-gsi-proxy-core | 7.9 |
-| globus-gsi-proxy-ssl | 5.8 |
-| globus-gsi-sysconfig | 6.9 |
-| globus-gss-assist | 10.15 |
-| globus-gss-assist-progs | 10.15 |
-| globus-gssapi-error | 5.4 |
-| globus-gssapi-gsi | 12.1 |
-| globus-io | 11.5 |
-| globus-openssl-module | 4.6 |
-| globus-proxy-utils | 6.15 |
-| globus-simple-ca | 4.22 |
-| globus-toolkit-repo | 6 |
-| globus-usage | 4.4 |
-| globus-xio | 5.12 |
-| globus-xio-gsi-driver | 3.10 |
-| globus-xio-pipe-driver | 3.8 |
-| globus-xio-popen-driver | 3.5 |
-| globus-xio-udt-driver | 1.23 |
-| gmp | 6.0.0 |
-| gmp-devel | 6.0.0 |
-| gnome-common | 3.7.4 |
-| gnome-desktop3 | 3.8.4 |
-| gnome-icon-theme | 3.8.2 |
-| gnome-icon-theme-legacy | 3.8.2 |
-| gnome-themes-standard | 3.8.4 |
-| gnome-vfs2 | 2.24.4 |
-| gnupg2 | 2.0.22 |
-| gnuplot | 4.6.2 |
-| gnuplot-common | 4.6.2 |
-| gnutls | 3.3.8 |
-| gnutls-c++ | 3.3.8 |
-| gnutls-dane | 3.3.8 |
-| gnutls-devel | 3.3.8 |
-| gobject-introspection | 1.36.0 |
-| gpfs.base | 4.1.1 |
-| gpfs.docs | 4.1.1 |
-| gpfs.ext | 4.1.1 |
-| gpfs.gpl | 4.1.1 |
-| gpfs.gplbin.c-3.10.0-229.1.2.el7.x86_64 | 4.1.1 |
-| gpfs.gskit | 8.0.50 |
-| gpfs.hadoop-2-connector | 4.1.1 |
-| gpg-pubkey | 352c64e5 |
-| gpg-pubkey | f4a80eb5 |
-| gpg-pubkey | faf24365 |
-| gpgme | 1.3.2 |
-| gpm-libs | 1.20.7 |
-| gpsbabel | 1.5.0 |
-| graphite2 | 1.2.2 |
-| graphviz | 2.30.1 |
-| grep | 2.20 |
-| groff | 1.22.2 |
-| groff-base | 1.22.2 |
-| groff-perl | 1.22.2 |
-| grub2 | 2.02 |
-| grub2-tools | 2.02 |
-| grubby | 8.28 |
-| gsettings-desktop-schemas | 3.8.2 |
-| gsi-openssh | 7.1p2f |
-| gsi-openssh-clients | 7.1p2f |
-| gsl | 1.15 |
-| gsl-devel | 1.15 |
-| gsm | 1.0.13 |
-| gssdp | 0.14.3 |
-| gssproxy | 0.3.0 |
-| gstreamer | 0.10.36 |
-| gstreamer-devel | 0.10.36 |
-| gstreamer-plugins-base | 0.10.36 |
-| gstreamer-plugins-good | 0.10.31 |
-| gstreamer-tools | 0.10.36 |
-| gstreamer1 | 1.0.7 |
-| gstreamer1-plugins-base | 1.0.7 |
-| gtk2 | 2.24.22 |
-| gtk3 | 3.8.8 |
-| gtk3-devel | 3.8.8 |
-| guile | 2.0.9 |
-| gupnp | 0.20.3 |
-| gupnp-igd | 0.2.2 |
-| gutenprint | 5.2.9 |
-| gvfs | 1.16.4 |
-| gzip | 1.5 |
-| hardlink | 1.0 |
-| harfbuzz | 0.9.20 |
-| harfbuzz-devel | 0.9.20 |
-| harfbuzz-icu | 0.9.20 |
-| hcoll | 3.1.690 |
-| hdf5 | 1.8.12 |
-| hdparm | 9.43 |
-| hicolor-icon-theme | 0.12 |
-| hostname | 3.13 |
-| hpijs | 3.13.7 |
-| hplip-common | 3.13.7 |
-| hplip-libs | 3.13.7 |
-| html2ps | 1.0 |
-| httpd | 2.4.6 |
-| httpd-tools | 2.4.6 |
-| hunspell | 1.3.2 |
-| hunspell-en | 0.20121024 |
-| hunspell-en-GB | 0.20121024 |
-| hunspell-en-US | 0.20121024 |
-| hwdata | 0.252 |
-| ibacm | 1.0.8mlnx5 |
-| ibdump | 2.0.0 |
-| ibsim | 0.5 |
-| ibutils | 1.5.7.1 |
-| ibutils2 | 2.1.1 |
-| icoutils | 0.31.0 |
-| ilmbase | 1.0.3 |
-| imlib2 | 1.4.5 |
-| infiniband-diags | 1.6.4.MLNX20140817.10ee11a |
-| infiniband-diags-compat | 1.6.4.MLNX20140817.10ee11a |
-| info | 5.1 |
-| initscripts | 9.49.24 |
-| ipmitool | 1.8.13 |
-| iproute | 3.10.0 |
-| iprutils | 2.4.3 |
-| iptables | 1.4.21 |
-| iputils | 20121221 |
-| irqbalance | 1.0.7 |
-| iso-codes | 3.46 |
-| ivtv-firmware | 20080701 |
-| iwl100-firmware | 39.31.5.1 |
-| iwl1000-firmware | 39.31.5.1 |
-| iwl105-firmware | 18.168.6.1 |
-| iwl135-firmware | 18.168.6.1 |
-| iwl2000-firmware | 18.168.6.1 |
-| iwl2030-firmware | 18.168.6.1 |
-| iwl3160-firmware | 22.0.7.0 |
-| iwl3945-firmware | 15.32.2.9 |
-| iwl4965-firmware | 228.61.2.24 |
-| iwl5000-firmware | 8.83.5.1_1 |
-| iwl5150-firmware | 8.24.2.2 |
-| iwl6000-firmware | 9.221.4.1 |
-| iwl6000g2a-firmware | 17.168.5.3 |
-| iwl6000g2b-firmware | 17.168.5.2 |
-| iwl6050-firmware | 41.28.5.1 |
-| iwl7260-firmware | 22.0.7.0 |
-| jack-audio-connection-kit | 1.9.9.5 |
-| jansson | 2.4 |
-| jasper-devel | 1.900.1 |
-| jasper-libs | 1.900.1 |
-| java-1.7.0-openjdk | 1.7.0.91 |
-| java-1.7.0-openjdk-headless | 1.7.0.91 |
-| java-1.8.0-openjdk | 1.8.0.65 |
-| java-1.8.0-openjdk-headless | 1.8.0.65 |
-| javamail | 1.4.6 |
-| javapackages-tools | 3.4.1 |
-| jbigkit-libs | 2.0 |
-| jboss-servlet-3.0-api | 1.0.1 |
-| jemalloc | 3.6.0 |
-| js | 1.8.5 |
-| json-c | 0.11 |
-| kactivities | 4.10.5 |
-| kbd | 1.15.5 |
-| kbd-legacy | 1.15.5 |
-| kbd-misc | 1.15.5 |
-| kde-filesystem | 4 |
-| kde-runtime | 4.10.5 |
-| kde-runtime-drkonqi | 4.10.5 |
-| kde-runtime-libs | 4.10.5 |
-| kde-settings | 19 |
-| kdelibs | 4.10.5 |
-| kdelibs-common | 4.10.5 |
-| kdepimlibs | 4.10.5 |
-| kdepimlibs-kxmlrpcclient | 4.10.5 |
-| kernel | 3.10.0 |
-| kernel | 3.10.0 |
-| kernel-devel | 3.10.0 |
-| kernel-headers | 3.10.0 |
-| kernel-tools | 3.10.0 |
-| kernel-tools-libs | 3.10.0 |
-| kexec-tools | 2.0.7 |
-| keyutils | 1.5.8 |
-| keyutils-libs | 1.5.8 |
-| keyutils-libs-devel | 1.5.8 |
-| kmod | 14 |
-| kmod-iser | 1.5 |
-| kmod-kernel-mft-mlnx | 3.8.0 |
-| kmod-knem-mlnx | 1.1.1.90mlnx |
-| kmod-libs | 14 |
-| kmod-mlnx-ofa_kernel | 2.4 |
-| kmod-srp | 1.4 |
-| knem-mlnx | 1.1.1.90mlnx |
-| kpartx | 0.4.9 |
-| krb5-devel | 1.12.2 |
-| krb5-libs | 1.12.2 |
-| krb5-workstation | 1.12.2 |
-| ksh | 20120801 |
-| lapack | 3.4.2 |
-| lapack-devel | 3.4.2 |
-| lbzip2 | 2.5 |
-| lcms2 | 2.5 |
-| ldns | 1.6.16 |
-| less | 458 |
-| lftp | 4.4.8 |
-| libGLEW | 1.9.0 |
-| libGLEWmx | 1.9.0 |
-| libICE | 1.0.8 |
-| libICE-devel | 1.0.8 |
-| libIDL | 0.8.14 |
-| libSM | 1.2.1 |
-| libSM-devel | 1.2.1 |
-| libX11 | 1.6.0 |
-| libX11-common | 1.6.0 |
-| libX11-devel | 1.6.0 |
-| libXScrnSaver | 1.2.2 |
-| libXau | 1.0.8 |
-| libXau-devel | 1.0.8 |
-| libXaw | 1.0.11 |
-| libXcomposite | 0.4.4 |
-| libXcomposite-devel | 0.4.4 |
-| libXcursor | 1.1.14 |
-| libXcursor-devel | 1.1.14 |
-| libXdamage | 1.1.4 |
-| libXdamage-devel | 1.1.4 |
-| libXdmcp | 1.1.1 |
-| libXevie | 1.0.3 |
-| libXext | 1.3.2 |
-| libXext-devel | 1.3.2 |
-| libXfixes | 5.0.1 |
-| libXfixes-devel | 5.0.1 |
-| libXfont | 1.4.7 |
-| libXft | 2.3.1 |
-| libXft-devel | 2.3.1 |
-| libXi | 1.7.2 |
-| libXi-devel | 1.7.2 |
-| libXinerama | 1.1.3 |
-| libXinerama-devel | 1.1.3 |
-| libXmu | 1.1.1 |
-| libXp | 1.0.2 |
-| libXpm | 3.5.10 |
-| libXpm-devel | 3.5.10 |
-| libXrandr | 1.4.1 |
-| libXrandr-devel | 1.4.1 |
-| libXrender | 0.9.8 |
-| libXrender-devel | 0.9.8 |
-| libXres | 1.0.7 |
-| libXt | 1.1.4 |
-| libXt-devel | 1.1.4 |
-| libXtst | 1.2.2 |
-| libXv | 1.0.9 |
-| libXv-devel | 1.0.9 |
-| libXxf86dga | 1.1.4 |
-| libXxf86misc | 1.0.3 |
-| libXxf86vm | 1.1.3 |
-| libXxf86vm-devel | 1.1.3 |
-| libacl | 2.2.51 |
-| libaio | 0.3.109 |
-| libarchive | 3.1.2 |
-| libart_lgpl | 2.3.21 |
-| libassuan | 2.1.0 |
-| libasyncns | 0.8 |
-| libatasmart | 0.19 |
-| libattr | 2.4.46 |
-| libavc1394 | 0.5.3 |
-| libbasicobjects | 0.1.1 |
-| libblkid | 2.23.2 |
-| libbluray | 0.2.3 |
-| libbonobo | 2.32.1 |
-| libbonoboui | 2.24.5 |
-| libcanberra | 0.30 |
-| libcap | 2.22 |
-| libcap-ng | 0.7.3 |
-| libcdio | 0.92 |
-| libcdio-paranoia | 10.2+0.90 |
-| libcollection | 0.6.2 |
-| libcom_err | 1.42.9 |
-| libcom_err-devel | 1.42.9 |
-| libconfig | 1.4.9 |
-| libconfuse | 2.7 |
-| libcroco | 0.6.8 |
-| libcurl | 7.29.0 |
-| libcurl-devel | 7.29.0 |
-| libdaemon | 0.14 |
-| libdap | 3.13.1 |
-| libdb | 5.3.21 |
-| libdb-cxx | 5.3.21 |
-| libdb-cxx-devel | 5.3.21 |
-| libdb-devel | 5.3.21 |
-| libdb-utils | 5.3.21 |
-| libdrm | 2.4.56 |
-| libdrm-devel | 2.4.56 |
-| libdv | 1.0.0 |
-| libedit | 3.0 |
-| liberation-fonts-common | 1.07.2 |
-| liberation-mono-fonts | 1.07.2 |
-| libestr | 0.1.9 |
-| libevent | 2.0.21 |
-| libexif | 0.6.21 |
-| libffado | 2.1.0 |
-| libffi | 3.0.13 |
-| libffi-devel | 3.0.13 |
-| libfontenc | 1.1.1 |
-| libgcc | 4.8.3 |
-| libgcrypt | 1.5.3 |
-| libgcrypt-devel | 1.5.3 |
-| libgee | 0.10.1 |
-| libgeotiff | 1.2.5 |
-| libgfortran | 4.8.3 |
-| libglade2 | 2.6.4 |
-| libgnome | 2.32.1 |
-| libgnome-keyring | 3.8.0 |
-| libgnomecanvas | 2.30.3 |
-| libgomp | 4.8.3 |
-| libgpg-error | 1.12 |
-| libgpg-error-devel | 1.12 |
-| libgphoto2 | 2.5.2 |
-| libgsf | 1.14.26 |
-| libgta | 1.0.4 |
-| libgudev1 | 208 |
-| libgusb | 0.1.6 |
-| libgxps | 0.2.2 |
-| libibcm | 1.0.5mlnx1 |
-| libibcm-devel | 1.0.5mlnx1 |
-| libibmad | 1.3.11.MLNX20140817.fad53c6 |
-| libibmad-devel | 1.3.11.MLNX20140817.fad53c6 |
-| libibmad-static | 1.3.11.MLNX20140817.fad53c6 |
-| libibprof | 1.0.98 |
-| libibumad | 1.3.9.MLNX20140817.485ffa6 |
-| libibumad-devel | 1.3.9.MLNX20140817.485ffa6 |
-| libibumad-static | 1.3.9.MLNX20140817.485ffa6 |
-| libibverbs | 1.1.8mlnx1 |
-| libibverbs-devel | 1.1.8mlnx1 |
-| libibverbs-devel-static | 1.1.8mlnx1 |
-| libibverbs-utils | 1.1.8mlnx1 |
-| libical | 0.48 |
-| libicu | 50.1.2 |
-| libicu-devel | 50.1.2 |
-| libidn | 1.28 |
-| libiec61883 | 1.2.0 |
-| libieee1284 | 0.2.11 |
-| libimobiledevice | 1.1.5 |
-| libini_config | 1.1.0 |
-| libiodbc | 3.52.7 |
-| libiptcdata | 1.0.4 |
-| libirman | 0.4.5 |
-| libjpeg-turbo | 1.2.90 |
-| libjpeg-turbo-devel | 1.2.90 |
-| libjpeg-turbo-utils | 1.2.90 |
-| libldb | 1.1.17 |
-| liblockfile | 1.08 |
-| libmalaga | 7.12 |
-| libmlx4 | 1.0.6mlnx1 |
-| libmlx4-devel | 1.0.6mlnx1 |
-| libmlx5 | 1.0.1mlnx2 |
-| libmlx5-devel | 1.0.1mlnx2 |
-| libmng | 1.0.10 |
-| libmnl | 1.0.3 |
-| libmodman | 2.0.1 |
-| libmount | 2.23.2 |
-| libmpc | 1.0.1 |
-| libmudflap | 4.8.3 |
-| libndp | 1.2 |
-| libnetfilter_conntrack | 1.0.4 |
-| libnfnetlink | 1.0.1 |
-| libnfsidmap | 0.25 |
-| libnice | 0.1.3 |
-| libnl | 1.1.4 |
-| libnl3 | 3.2.21 |
-| libnl3-cli | 3.2.21 |
-| libnotify | 0.7.5 |
-| libodb | 2.3.0 |
-| libodb-boost | 2.3.0 |
-| libogg | 1.3.0 |
-| libopenraw | 0.0.9 |
-| liboping | 1.6.2 |
-| libosinfo | 0.2.11 |
-| libotf | 0.9.13 |
-| libpaper | 1.1.24 |
-| libpath_utils | 0.2.1 |
-| libpcap | 1.5.3 |
-| libpciaccess | 0.13.1 |
-| libpipeline | 1.2.3 |
-| libplist | 1.10 |
-| libpng | 1.5.13 |
-| libpng-devel | 1.5.13 |
-| libpng12 | 1.2.50 |
-| libproxy | 0.4.11 |
-| libpwquality | 1.2.3 |
-| libquadmath | 4.8.3 |
-| libquadmath-devel | 4.8.3 |
-| libquvi | 0.4.1 |
-| libquvi-scripts | 0.4.10 |
-| libraw1394 | 2.1.0 |
-| librdmacm | 1.0.19mlnx |
-| librdmacm-devel | 1.0.19mlnx |
-| librdmacm-utils | 1.0.19mlnx |
-| libref_array | 0.1.4 |
-| libreport-filesystem | 2.1.11 |
-| librsvg2 | 2.39.0 |
-| libsamplerate | 0.1.8 |
-| libsecret | 0.15 |
-| libselinux | 2.2.2 |
-| libselinux-devel | 2.2.2 |
-| libselinux-python | 2.2.2 |
-| libselinux-utils | 2.2.2 |
-| libsemanage | 2.1.10 |
-| libsepol | 2.1.9 |
-| libsepol-devel | 2.1.9 |
-| libshout | 2.2.2 |
-| libsigc++20 | 2.3.1 |
-| libsmbclient | 4.1.12 |
-| libsndfile | 1.0.25 |
-| libsoup | 2.46.0 |
-| libspectre | 0.2.7 |
-| libss | 1.42.9 |
-| libssh2 | 1.4.3 |
-| libstdc++ | 4.8.3 |
-| libstdc++-devel | 4.8.3 |
-| libstdc++-static | 4.8.3 |
-| libsysfs | 2.1.0 |
-| libtalloc | 2.1.1 |
-| libtasn1 | 3.8 |
-| libtasn1-devel | 3.8 |
-| libtdb | 1.3.0 |
-| libteam | 1.15 |
-| libtevent | 0.9.21 |
-| libthai | 0.1.14 |
-| libtheora | 1.1.1 |
-| libtiff | 4.0.3 |
-| libtiff-devel | 4.0.3 |
-| libtirpc | 0.2.4 |
-| libtomcrypt | 1.17 |
-| libtommath | 0.42.0 |
-| libtool | 2.4.2 |
-| libtool-ltdl | 2.4.2 |
-| libudisks2 | 2.1.2 |
-| libunistring | 0.9.3 |
-| libunwind | 1.1 |
-| libusb | 0.1.4 |
-| libusbx | 1.0.15 |
-| libuser | 0.60 |
-| libutempter | 1.1.6 |
-| libuuid | 2.23.2 |
-| libv4l | 0.9.5 |
-| libverto | 0.2.5 |
-| libverto-devel | 0.2.5 |
-| libverto-tevent | 0.2.5 |
-| libvisual | 0.4.0 |
-| libvorbis | 1.3.3 |
-| libwbclient | 4.1.12 |
-| libwebp | 0.3.0 |
-| libwmf-lite | 0.2.8.4 |
-| libwnck3 | 3.4.5 |
-| libxcb | 1.9 |
-| libxcb-devel | 1.9 |
-| libxkbfile | 1.0.8 |
-| libxml++ | 2.37.1 |
-| libxml2 | 2.9.1 |
-| libxml2-devel | 2.9.1 |
-| libxml2-python | 2.9.1 |
-| libxslt | 1.1.28 |
-| libxslt-devel | 1.1.28 |
-| libyaml | 0.1.4 |
-| libyaml-devel | 0.1.4 |
-| libzip | 0.10.1 |
-| links | 2.8 |
-| linux-firmware | 20140911 |
-| lirc | 0.9.1a |
-| lirc-libs | 0.9.1a |
-| lksctp-tools | 1.0.13 |
-| lm_sensors | 3.3.4 |
-| lm_sensors-libs | 3.3.4 |
-| lockdev | 1.0.4 |
-| lockfile-progs | 0.1.15 |
-| log4j | 1.2.17 |
-| logrotate | 3.8.6 |
-| lshw | B.02.17 |
-| lsof | 4.87 |
-| lua | 5.1.4 |
-| lvm2 | 2.02.115 |
-| lvm2-libs | 2.02.115 |
-| lzo | 2.06 |
-| lzo-devel | 2.06 |
-| lzo-minilzo | 2.06 |
-| m17n-contrib | 1.1.14 |
-| m17n-db | 1.6.4 |
-| m17n-lib | 1.6.4 |
-| m2crypto | 0.21.1 |
-| m4 | 1.4.16 |
-| mailcap | 2.1.41 |
-| mailx | 12.5 |
-| make | 3.82 |
-| malaga | 7.12 |
-| man-db | 2.6.3 |
-| mariadb | 5.5.44 |
-| mariadb-devel | 5.5.44 |
-| mariadb-libs | 5.5.44 |
-| marisa | 0.2.4 |
-| mdadm | 3.3.2 |
-| media-player-info | 17 |
-| mercurial | 2.6.2 |
-| mesa-libEGL | 10.2.7 |
-| mesa-libEGL-devel | 10.2.7 |
-| mesa-libGL | 10.2.7 |
-| mesa-libGL-devel | 10.2.7 |
-| mesa-libGLU | 9.0.0 |
-| mesa-libGLU-devel | 9.0.0 |
-| mesa-libgbm | 10.2.7 |
-| mesa-libglapi | 10.2.7 |
-| mft | 3.8.0 |
-| microcode_ctl | 2.1 |
-| mlnx-ofa_kernel | 2.4 |
-| mlnx-ofa_kernel-devel | 2.4 |
-| mlnxofed-docs | 2.4 |
-| mod_ssl | 2.4.6 |
-| mod_wsgi | 3.4 |
-| motif | 2.3.4 |
-| mozjs17 | 17.0.0 |
-| mpfr | 3.1.1 |
-| mpi-selector | 1.0.3 |
-| mstflint | 3.8.0 |
-| mtools | 4.0.18 |
-| mxm | 3.2.2990 |
-| myproxy | 6.1.18 |
-| myproxy-libs | 6.1.18 |
-| myproxy-oauth | 0.21 |
-| myproxy-server | 6.1.18 |
-| nagios-common | 4.0.8 |
-| nagios-plugins | 2.0.3 |
-| nagios-plugins-all | 2.0.3 |
-| nagios-plugins-breeze | 2.0.3 |
-| nagios-plugins-by_ssh | 2.0.3 |
-| nagios-plugins-cluster | 2.0.3 |
-| nagios-plugins-dhcp | 2.0.3 |
-| nagios-plugins-dig | 2.0.3 |
-| nagios-plugins-disk | 2.0.3 |
-| nagios-plugins-disk_smb | 2.0.3 |
-| nagios-plugins-dns | 2.0.3 |
-| nagios-plugins-dummy | 2.0.3 |
-| nagios-plugins-file_age | 2.0.3 |
-| nagios-plugins-flexlm | 2.0.3 |
-| nagios-plugins-fping | 2.0.3 |
-| nagios-plugins-game | 2.0.3 |
-| nagios-plugins-hpjd | 2.0.3 |
-| nagios-plugins-http | 2.0.3 |
-| nagios-plugins-icmp | 2.0.3 |
-| nagios-plugins-ide_smart | 2.0.3 |
-| nagios-plugins-ircd | 2.0.3 |
-| nagios-plugins-ldap | 2.0.3 |
-| nagios-plugins-load | 2.0.3 |
-| nagios-plugins-log | 2.0.3 |
-| nagios-plugins-mailq | 2.0.3 |
-| nagios-plugins-mrtg | 2.0.3 |
-| nagios-plugins-mrtgtraf | 2.0.3 |
-| nagios-plugins-mysql | 2.0.3 |
-| nagios-plugins-nagios | 2.0.3 |
-| nagios-plugins-nt | 2.0.3 |
-| nagios-plugins-ntp | 2.0.3 |
-| nagios-plugins-ntp-perl | 2.0.3 |
-| nagios-plugins-nwstat | 2.0.3 |
-| nagios-plugins-oracle | 2.0.3 |
-| nagios-plugins-overcr | 2.0.3 |
-| nagios-plugins-perl | 2.0.3 |
-| nagios-plugins-pgsql | 2.0.3 |
-| nagios-plugins-ping | 2.0.3 |
-| nagios-plugins-procs | 2.0.3 |
-| nagios-plugins-real | 2.0.3 |
-| nagios-plugins-rpc | 2.0.3 |
-| nagios-plugins-sensors | 2.0.3 |
-| nagios-plugins-smtp | 2.0.3 |
-| nagios-plugins-snmp | 2.0.3 |
-| nagios-plugins-ssh | 2.0.3 |
-| nagios-plugins-swap | 2.0.3 |
-| nagios-plugins-tcp | 2.0.3 |
-| nagios-plugins-time | 2.0.3 |
-| nagios-plugins-ups | 2.0.3 |
-| nagios-plugins-users | 2.0.3 |
-| nagios-plugins-wave | 2.0.3 |
-| nano | 2.3.1 |
-| nautilus | 3.8.2 |
-| nautilus-extensions | 3.8.2 |
-| ncftp | 3.2.5 |
-| ncurses | 5.9 |
-| ncurses-base | 5.9 |
-| ncurses-devel | 5.9 |
-| ncurses-libs | 5.9 |
-| neon | 0.30.0 |
-| nepomuk-core | 4.10.5 |
-| nepomuk-core-libs | 4.10.5 |
-| net-snmp-libs | 5.7.2 |
-| net-snmp-utils | 5.7.2 |
-| net-tools | 2.0 |
-| netcdf | 4.3.3.1 |
-| netpbm | 10.61.02 |
-| nettle | 2.7.1 |
-| nettle-devel | 2.7.1 |
-| newt | 0.52.15 |
-| newt-python | 0.52.15 |
-| nfs-utils | 1.3.0 |
-| nrpe | 2.15 |
-| nscd | 2.17 |
-| nspr | 4.10.8 |
-| nss | 3.19.1 |
-| nss-pam-ldapd | 0.8.13 |
-| nss-softokn | 3.16.2.3 |
-| nss-softokn-freebl | 3.16.2.3 |
-| nss-softokn-freebl | 3.16.2.3 |
-| nss-sysinit | 3.19.1 |
-| nss-tools | 3.19.1 |
-| nss-util | 3.19.1 |
-| nss_compat_ossl | 0.9.6 |
-| ntfs-3g | 2016.2.22 |
-| ntp | 4.2.6p5 |
-| ntpdate | 4.2.6p5 |
-| numactl | 2.0.9 |
-| numactl-libs | 2.0.9 |
-| nut-client | 2.7.2 |
-| ocaml | 4.01.0 |
-| ocaml-compiler-libs | 4.01.0 |
-| ocaml-runtime | 4.01.0 |
-| ofed-scripts | 2.4 |
-| ogdi | 3.2.0 |
-| openjade | 1.3.2 |
-| openjpeg-libs | 1.5.1 |
-| openldap | 2.4.39 |
-| openldap-clients | 2.4.39 |
-| openslp | 2.0.0 |
-| opensm | 4.3.0.MLNX20141222.713c9d5 |
-| opensm-devel | 4.3.0.MLNX20141222.713c9d5 |
-| opensm-libs | 4.3.0.MLNX20141222.713c9d5 |
-| opensm-static | 4.3.0.MLNX20141222.713c9d5 |
-| opensp | 1.5.2 |
-| openssh | 6.6.1p1 |
-| openssh-clients | 6.6.1p1 |
-| openssh-server | 6.6.1p1 |
-| openssl | 1.0.1e |
-| openssl-devel | 1.0.1e |
-| openssl-libs | 1.0.1e |
-| opus | 1.0.2 |
-| orc | 0.4.17 |
-| os-prober | 1.58 |
-| oxygen-icon-theme | 4.10.5 |
-| p11-kit | 0.20.7 |
-| p11-kit-devel | 0.20.7 |
-| p11-kit-trust | 0.20.7 |
-| p7zip | 15.09 |
-| pakchois | 0.4 |
-| pam | 1.1.8 |
-| pam_krb5 | 2.4.8 |
-| pandoc | 1.12.3.1 |
-| pandoc-citeproc | 0.3.0.1 |
-| pango | 1.34.1 |
-| pango-devel | 1.34.1 |
-| pangomm | 2.34.0 |
-| parted | 3.1 |
-| passwd | 0.79 |
-| patch | 2.7.1 |
-| patchutils | 0.3.3 |
-| pciutils | 3.2.1 |
-| pciutils-libs | 3.2.1 |
-| pcre | 8.32 |
-| pcre-devel | 8.32 |
-| pcsc-lite-libs | 1.8.8 |
-| perftest | 2.4 |
-| perl | 5.16.3 |
-| perl-Any-Moose | 0.21 |
-| perl-App-Nopaste | 0.90 |
-| perl-App-SVN-Bisect | 1.1 |
-| perl-AppConfig | 1.66 |
-| perl-Authen-SASL | 2.15 |
-| perl-B-Hooks-EndOfScope | 0.13 |
-| perl-B-Keywords | 1.13 |
-| perl-B-Utils | 0.21 |
-| perl-Bit-Vector | 7.3 |
-| perl-Browser-Open | 0.04 |
-| perl-Business-ISBN | 2.06 |
-| perl-Business-ISBN-Data | 20120719.001 |
-| perl-Cairo | 1.104 |
-| perl-Cairo-GObject | 1.001 |
-| perl-Carp | 1.26 |
-| perl-Carp-Clan | 6.04 |
-| perl-Class-Inspector | 1.28 |
-| perl-Class-Load | 0.20 |
-| perl-Clipboard | 0.13 |
-| perl-Clone | 0.34 |
-| perl-Compress-Raw-Bzip2 | 2.061 |
-| perl-Compress-Raw-Zlib | 2.061 |
-| perl-Config-GitLike | 1.10 |
-| perl-Convert-BinHex | 1.119 |
-| perl-Crypt-DES | 2.05 |
-| perl-Crypt-RC4 | 2.02 |
-| perl-DBD-MySQL | 4.023 |
-| perl-DBD-SQLite | 1.39 |
-| perl-DBI | 1.627 |
-| perl-DB_File | 1.830 |
-| perl-Data-Dump-Streamer | 2.36 |
-| perl-Data-Dumper | 2.145 |
-| perl-Data-Dumper-Concise | 2.020 |
-| perl-Data-OptList | 0.107 |
-| perl-Date-Calc | 6.3 |
-| perl-Date-Manip | 6.41 |
-| perl-Devel-Caller | 2.06 |
-| perl-Devel-GlobalDestruction | 0.12 |
-| perl-Devel-LexAlias | 0.05 |
-| perl-Devel-PartialDump | 0.15 |
-| perl-Devel-REPL | 1.003015 |
-| perl-Digest | 1.17 |
-| perl-Digest-HMAC | 1.03 |
-| perl-Digest-MD5 | 2.52 |
-| perl-Digest-Perl-MD5 | 1.9 |
-| perl-Digest-SHA | 5.85 |
-| perl-Digest-SHA1 | 2.13 |
-| perl-Dist-CheckConflicts | 0.06 |
-| perl-Email-Date-Format | 1.002 |
-| perl-Encode | 2.51 |
-| perl-Encode-Locale | 1.03 |
-| perl-Env | 1.04 |
-| perl-Error | 0.17020 |
-| perl-Eval-Closure | 0.08 |
-| perl-Exporter | 5.68 |
-| perl-ExtUtils-Install | 1.58 |
-| perl-ExtUtils-MakeMaker | 6.68 |
-| perl-ExtUtils-Manifest | 1.61 |
-| perl-ExtUtils-ParseXS | 3.18 |
-| perl-File-BaseDir | 0.03 |
-| perl-File-DesktopEntry | 0.08 |
-| perl-File-HomeDir | 1.00 |
-| perl-File-Listing | 6.04 |
-| perl-File-MimeInfo | 0.21 |
-| perl-File-Next | 1.12 |
-| perl-File-Path | 2.09 |
-| perl-File-ReadBackwards | 1.05 |
-| perl-File-Remove | 1.52 |
-| perl-File-Temp | 0.23.01 |
-| perl-File-Which | 1.09 |
-| perl-Filter | 1.49 |
-| perl-Font-AFM | 1.20 |
-| perl-Font-TTF | 1.02 |
-| perl-FreezeThaw | 0.5001 |
-| perl-GD | 2.49 |
-| perl-GDGraph | 1.44 |
-| perl-GDTextUtil | 0.86 |
-| perl-GSSAPI | 0.28 |
-| perl-Getopt-Long | 2.40 |
-| perl-Getopt-Long-Descriptive | 0.093 |
-| perl-Getopt-Simple | 1.49 |
-| perl-Git | 1.8.3.1 |
-| perl-Git-SVN | 1.8.3.1 |
-| perl-Glib | 1.305 |
-| perl-GraphViz | 2.14 |
-| perl-HTML-Form | 6.03 |
-| perl-HTML-Format | 2.10 |
-| perl-HTML-FormatText-WithLinks | 0.14 |
-| perl-HTML-FormatText-WithLinks-AndTables | 0.02 |
-| perl-HTML-Parser | 3.71 |
-| perl-HTML-Tagset | 3.20 |
-| perl-HTML-Template | 2.95 |
-| perl-HTML-Tree | 5.03 |
-| perl-HTTP-Cookies | 6.01 |
-| perl-HTTP-Daemon | 6.01 |
-| perl-HTTP-Date | 6.02 |
-| perl-HTTP-Message | 6.06 |
-| perl-HTTP-Negotiate | 6.01 |
-| perl-HTTP-ProxyAutoConfig | 0.3 |
-| perl-HTTP-Tiny | 0.033 |
-| perl-IO-All | 0.61 |
-| perl-IO-Compress | 2.061 |
-| perl-IO-HTML | 1.00 |
-| perl-IO-Multiplex | 1.13 |
-| perl-IO-SessionData | 1.03 |
-| perl-IO-Socket-IP | 0.21 |
-| perl-IO-Socket-SSL | 1.94 |
-| perl-IO-String | 1.08 |
-| perl-IO-Tty | 1.10 |
-| perl-IO-stringy | 2.110 |
-| perl-IPC-Run | 0.92 |
-| perl-IPC-Signal | 1.00 |
-| perl-Image-Base | 1.07 |
-| perl-Inline | 0.53 |
-| perl-JSON | 2.59 |
-| perl-Jcode | 2.07 |
-| perl-LWP-MediaTypes | 6.02 |
-| perl-Lexical-Persistence | 1.020 |
-| perl-List-MoreUtils | 0.33 |
-| perl-Locale-Maketext | 1.23 |
-| perl-Locale-Maketext-Simple | 0.21 |
-| perl-Log-Message | 0.08 |
-| perl-Log-Message-Simple | 0.10 |
-| perl-MIME-Lite | 3.030 |
-| perl-MIME-Types | 1.38 |
-| perl-MIME-tools | 5.505 |
-| perl-MRO-Compat | 0.12 |
-| perl-Mail-Sendmail | 0.79 |
-| perl-MailTools | 2.12 |
-| perl-Module-Implementation | 0.06 |
-| perl-Module-Load | 0.24 |
-| perl-Module-Pluggable | 4.8 |
-| perl-Module-Refresh | 0.17 |
-| perl-Module-Runtime | 0.013 |
-| perl-Moose | 2.1005 |
-| perl-MooseX-Getopt | 0.47 |
-| perl-MooseX-Object-Pluggable | 0.0011 |
-| perl-MooseX-Role-Parameterized | 1.07 |
-| perl-Net-DNS | 0.72 |
-| perl-Net-Daemon | 0.48 |
-| perl-Net-HTTP | 6.06 |
-| perl-Net-LibIDN | 0.12 |
-| perl-Net-SMTP-SSL | 1.01 |
-| perl-Net-SNMP | 6.0.1 |
-| perl-Net-SSLeay | 1.55 |
-| perl-Net-Server | 2.007 |
-| perl-Net-XMPP | 1.02 |
-| perl-Number-Compare | 0.03 |
-| perl-OLE-Storage_Lite | 0.19 |
-| perl-OpenGL | 0.6702 |
-| perl-PDF-API2 | 2.021 |
-| perl-PDL | 2.7.0 |
-| perl-PPI | 1.215 |
-| perl-Package-DeprecationManager | 0.13 |
-| perl-Package-Generator | 0.103 |
-| perl-Package-Stash | 0.34 |
-| perl-Package-Stash-XS | 0.26 |
-| perl-PadWalker | 1.96 |
-| perl-Params-Check | 0.38 |
-| perl-Params-Util | 1.07 |
-| perl-Params-Validate | 1.08 |
-| perl-Parse-RecDescent | 1.967009 |
-| perl-PathTools | 3.40 |
-| perl-PlRPC | 0.2020 |
-| perl-Pod-Escapes | 1.04 |
-| perl-Pod-Parser | 1.61 |
-| perl-Pod-Perldoc | 3.20 |
-| perl-Pod-Simple | 3.28 |
-| perl-Pod-Usage | 1.63 |
-| perl-Prima | 1.37 |
-| perl-Proc-WaitStat | 1.00 |
-| perl-SOAP-Lite | 1.10 |
-| perl-Scalar-List-Utils | 1.27 |
-| perl-Set-Scalar | 1.25 |
-| perl-Socket | 2.010 |
-| perl-Socket6 | 0.23 |
-| perl-Spreadsheet-ParseExcel | 0.5900 |
-| perl-Spreadsheet-WriteExcel | 2.40 |
-| perl-Storable | 2.45 |
-| perl-Sub-Exporter | 0.986 |
-| perl-Sub-Exporter-Progressive | 0.001011 |
-| perl-Sub-Identify | 0.04 |
-| perl-Sub-Install | 0.926 |
-| perl-Sub-Name | 0.09 |
-| perl-Sys-SigAction | 0.20 |
-| perl-Sys-Syslog | 0.33 |
-| perl-Task-Weaken | 1.04 |
-| perl-Term-UI | 0.36 |
-| perl-TermReadKey | 2.30 |
-| perl-Test-Harness | 3.28 |
-| perl-Test-Pod | 1.48 |
-| perl-Test-Simple | 0.98 |
-| perl-Text-ParseWords | 3.29 |
-| perl-Text-Unidecode | 0.04 |
-| perl-Thread-Queue | 3.02 |
-| perl-Tie-IxHash | 1.22 |
-| perl-Time-HiRes | 1.9725 |
-| perl-Time-Local | 1.2300 |
-| perl-Time-Piece | 1.20.1 |
-| perl-TimeDate | 2.30 |
-| perl-Tk | 804.030 |
-| perl-Try-Tiny | 0.12 |
-| perl-URI | 1.60 |
-| perl-Unicode-Map | 0.112 |
-| perl-Variable-Magic | 0.54 |
-| perl-WWW-Mechanize | 1.72 |
-| perl-WWW-Pastebin-PastebinCom-Create | 0.004 |
-| perl-WWW-RobotRules | 6.02 |
-| perl-XML-Filter-BufferText | 1.01 |
-| perl-XML-LibXML | 2.0018 |
-| perl-XML-LibXSLT | 1.80 |
-| perl-XML-NamespaceSupport | 1.11 |
-| perl-XML-Parser | 2.41 |
-| perl-XML-SAX | 0.99 |
-| perl-XML-SAX-Base | 1.08 |
-| perl-XML-SAX-Writer | 0.53 |
-| perl-XML-Simple | 2.20 |
-| perl-XML-Stream | 1.23 |
-| perl-XML-Twig | 3.44 |
-| perl-XML-Writer | 0.623 |
-| perl-XML-XPath | 1.13 |
-| perl-YAML | 0.84 |
-| perl-YAML-Syck | 1.27 |
-| perl-constant | 1.27 |
-| perl-devel | 5.16.3 |
-| perl-libintl | 1.20 |
-| perl-libs | 5.16.3 |
-| perl-libwww-perl | 6.05 |
-| perl-macros | 5.16.3 |
-| perl-namespace-autoclean | 0.19 |
-| perl-namespace-clean | 0.24 |
-| perl-parent | 0.225 |
-| perl-podlators | 2.5.1 |
-| perl-srpm-macros | 1 |
-| perl-threads | 1.87 |
-| perl-threads-shared | 1.43 |
-| perltidy | 20121207 |
-| phonon | 4.6.0 |
-| phonon-backend-gstreamer | 4.6.3 |
-| php-channel-horde | 1.0 |
-| php-cli | 5.4.16 |
-| php-common | 5.4.16 |
-| php-horde-Horde-Util | 2.5.6 |
-| php-horde-Horde-Xml-Wbxml | 2.0.2 |
-| php-intl | 5.4.16 |
-| php-mbstring | 5.4.16 |
-| php-pear | 1.9.4 |
-| php-process | 5.4.16 |
-| php-xml | 5.4.16 |
-| pigz | 2.3.3 |
-| pinentry | 0.8.1 |
-| pixman | 0.32.4 |
-| pixman-devel | 0.32.4 |
-| pkgconfig | 0.27.1 |
-| plymouth | 0.8.9 |
-| plymouth-core-libs | 0.8.9 |
-| plymouth-scripts | 0.8.9 |
-| pm-utils | 1.4.1 |
-| policycoreutils | 2.2.5 |
-| polkit | 0.112 |
-| polkit-pkla-compat | 0.1 |
-| polkit-qt | 0.103.0 |
-| poppler | 0.22.5 |
-| poppler-data | 0.4.6 |
-| poppler-glib | 0.22.5 |
-| poppler-qt | 0.22.5 |
-| poppler-utils | 0.22.5 |
-| popt | 1.13 |
-| portaudio | 19 |
-| postfix | 2.10.1 |
-| postgresql | 9.2.14 |
-| postgresql-libs | 9.2.14 |
-| postgresql-plperl | 9.2.14 |
-| postgresql-server | 9.2.14 |
-| ppp | 2.4.5 |
-| procps-ng | 3.3.10 |
-| proj | 4.8.0 |
-| proj-epsg | 4.8.0 |
-| proj-nad | 4.8.0 |
-| protobuf | 2.5.0 |
-| psacct | 6.6.1 |
-| psmisc | 22.20 |
-| psutils | 1.17 |
-| psutils-perl | 1.17 |
-| pth | 2.0.7 |
-| pulseaudio | 3.0 |
-| pulseaudio-libs | 3.0 |
-| pulseaudio-libs-glib2 | 3.0 |
-| pv | 1.4.6 |
-| pyOpenSSL | 0.13.1 |
-| pygobject3-base | 3.8.2 |
-| pygpgme | 0.3 |
-| pyliblzma | 0.5.3 |
-| pyparsing | 1.5.6 |
-| pytalloc | 2.1.1 |
-| python | 2.7.5 |
-| python-GnuPGInterface | 0.3.2 |
-| python-backports | 1.0 |
-| python-backports-ssl_match_hostname | 3.4.0.2 |
-| python-chardet | 2.2.1 |
-| python-configobj | 4.7.2 |
-| python-decorator | 3.4.0 |
-| python-devel | 2.7.5 |
-| python-iniparse | 0.4 |
-| python-javapackages | 3.4.1 |
-| python-kitchen | 1.1.1 |
-| python-ldap | 2.4.15 |
-| python-libs | 2.7.5 |
-| python-lxml | 3.2.1 |
-| python-pycurl | 7.19.0 |
-| python-pyudev | 0.15 |
-| python-setuptools | 0.9.8 |
-| python-slip | 0.4.0 |
-| python-slip-dbus | 0.4.0 |
-| python-urlgrabber | 3.10 |
-| python2-crypto | 2.6.1 |
-| pyxattr | 0.5.1 |
-| qca2 | 2.0.3 |
-| qpdf-libs | 5.0.1 |
-| qperf | 0.4.9 |
-| qrencode-libs | 3.4.1 |
-| qstat | 2.11 |
-| qt | 4.8.5 |
-| qt-devel | 4.8.5 |
-| qt-settings | 19 |
-| qt-x11 | 4.8.5 |
-| quota | 4.01 |
-| quota-nls | 4.01 |
-| raptor2 | 2.0.9 |
-| rasqal | 0.9.30 |
-| rds-devel | 2.0.7 |
-| rds-tools | 2.0.7 |
-| readline | 6.2 |
-| readline-devel | 6.2 |
-| redhat-menus | 12.0.2 |
-| redhat-rpm-config | 9.1.0 |
-| redland | 1.0.16 |
-| redland-virtuoso | 1.0.16 |
-| rootfiles | 8.1 |
-| rpcbind | 0.2.0 |
-| rpm | 4.11.1 |
-| rpm-build | 4.11.1 |
-| rpm-build-libs | 4.11.1 |
-| rpm-libs | 4.11.1 |
-| rpm-python | 4.11.1 |
-| rrdtool | 1.4.8 |
-| rsync | 3.0.9 |
-| rsyslog | 7.4.7 |
-| rtkit | 0.11 |
-| ruby | 2.0.0.598 |
-| ruby-irb | 2.0.0.598 |
-| ruby-libs | 2.0.0.598 |
-| ruby-shadow | 1.4.1 |
-| rubygem-bigdecimal | 1.2.0 |
-| rubygem-io-console | 0.4.2 |
-| rubygem-json | 1.7.7 |
-| rubygem-psych | 2.0.0 |
-| rubygem-rdoc | 4.0.0 |
-| rubygem-sqlite3 | 1.3.5 |
-| rubygems | 2.0.14 |
-| samba-client | 4.1.12 |
-| samba-common | 4.1.12 |
-| samba-libs | 4.1.12 |
-| sane-backends-libs | 1.0.24 |
-| screen | 4.1.0 |
-| sed | 4.2.2 |
-| selinux-policy | 3.13.1 |
-| selinux-policy-targeted | 3.13.1 |
-| setup | 2.8.71 |
-| sgml-common | 0.6.3 |
-| shadow-utils | 4.1.5.1 |
-| shapelib | 1.3.0 |
-| shared-desktop-ontologies | 0.11.0 |
-| shared-mime-info | 1.1 |
-| sip | 4.14.6 |
-| sip-devel | 4.14.6 |
-| sip-macros | 4.14.6 |
-| slang | 2.2.4 |
-| snappy | 1.1.0 |
-| soprano | 2.9.2 |
-| sound-theme-freedesktop | 0.8 |
-| source-highlight | 3.1.6 |
-| speex | 1.2 |
-| sqlite | 3.7.17 |
-| sqlite-devel | 3.7.17 |
-| srptools | 1.0.1 |
-| startup-notification | 0.12 |
-| strace | 4.8 |
-| strigi-libs | 0.7.7 |
-| subversion | 1.7.14 |
-| subversion-libs | 1.7.14 |
-| subversion-perl | 1.7.14 |
-| sudo | 1.8.6p7 |
-| suitesparse | 4.0.2 |
-| svn-bisect | 1.1 |
-| swig | 2.0.10 |
-| systemd | 208 |
-| systemd-libs | 208 |
-| systemd-sysv | 208 |
-| systemtap-sdt-devel | 2.6 |
-| sysvinit-tools | 2.88 |
-| taglib | 1.8 |
-| tar | 1.26 |
-| tbb | 4.1 |
-| tcl | 8.5.13 |
-| tcl-devel | 8.5.13 |
-| tcp_wrappers | 7.6 |
-| tcp_wrappers-libs | 7.6 |
-| tcpdump | 4.5.1 |
-| tcsh | 6.18.01 |
-| teamd | 1.15 |
-| texinfo | 5.1 |
-| texinfo-tex | 5.1 |
-| texlive | 2012 |
-| texlive-ae | svn15878.1.4 |
-| texlive-algorithms | svn15878.0.1 |
-| texlive-amscls | svn29207.0 |
-| texlive-amsfonts | svn29208.3.04 |
-| texlive-amsmath | svn29327.2.14 |
-| texlive-anysize | svn15878.0 |
-| texlive-attachfile | svn21866.v1.5b |
-| texlive-avantgar | svn28614.0 |
-| texlive-babel | svn24756.3.8m |
-| texlive-babelbib | svn25245.1.31 |
-| texlive-base | 2012 |
-| texlive-beamer | svn29349.3.26 |
-| texlive-bera | svn20031.0 |
-| texlive-beton | svn15878.0 |
-| texlive-bibtex | svn26689.0.99d |
-| texlive-bibtex-bin | svn26509.0 |
-| texlive-bookman | svn28614.0 |
-| texlive-booktabs | svn15878.1.61803 |
-| texlive-breakurl | svn15878.1.30 |
-| texlive-caption | svn29026.3.3__2013_02_03_ |
-| texlive-carlisle | svn18258.0 |
-| texlive-charter | svn15878.0 |
-| texlive-chngcntr | svn17157.1.0a |
-| texlive-cite | svn19955.5.3 |
-| texlive-cm | svn29581.0 |
-| texlive-cm-super | svn15878.0 |
-| texlive-cmap | svn26568.0 |
-| texlive-cmextra | svn14075.0 |
-| texlive-collection-basic | svn26314.0 |
-| texlive-collection-documentation-base | svn17091.0 |
-| texlive-collection-fontsrecommended | svn28082.0 |
-| texlive-collection-latex | svn25030.0 |
-| texlive-collection-latexrecommended | svn25795.0 |
-| texlive-colortbl | svn25394.v1.0a |
-| texlive-courier | svn28614.0 |
-| texlive-crop | svn15878.1.5 |
-| texlive-csquotes | svn24393.5.1d |
-| texlive-ctable | svn26694.1.23 |
-| texlive-currfile | svn29012.0.7b |
-| texlive-dvipdfm | svn26689.0.13.2d |
-| texlive-dvipdfm-bin | svn13663.0 |
-| texlive-dvipdfmx | svn26765.0 |
-| texlive-dvipdfmx-bin | svn26509.0 |
-| texlive-dvipdfmx-def | svn15878.0 |
-| texlive-dvips | svn29585.0 |
-| texlive-dvips-bin | svn26509.0 |
-| texlive-ec | svn25033.1.0 |
-| texlive-enctex | svn28602.0 |
-| texlive-enumitem | svn24146.3.5.2 |
-| texlive-epsf | svn21461.2.7.4 |
-| texlive-eso-pic | svn21515.2.0c |
-| texlive-etex | svn22198.2.1 |
-| texlive-etex-pkg | svn15878.2.0 |
-| texlive-etoolbox | svn20922.2.1 |
-| texlive-euler | svn17261.2.5 |
-| texlive-euro | svn22191.1.1 |
-| texlive-eurosym | svn17265.1.4_subrfix |
-| texlive-extsizes | svn17263.1.4a |
-| texlive-fancybox | svn18304.1.4 |
-| texlive-fancyhdr | svn15878.3.1 |
-| texlive-fancyref | svn15878.0.9c |
-| texlive-fancyvrb | svn18492.2.8 |
-| texlive-filecontents | svn24250.1.3 |
-| texlive-filehook | svn24280.0.5d |
-| texlive-fix2col | svn17133.0 |
-| texlive-float | svn15878.1.3d |
-| texlive-fontspec | svn29412.v2.3a |
-| texlive-footmisc | svn23330.5.5b |
-| texlive-fp | svn15878.0 |
-| texlive-fpl | svn15878.1.002 |
-| texlive-geometry | svn19716.5.6 |
-| texlive-glyphlist | svn28576.0 |
-| texlive-graphics | svn25405.1.0o |
-| texlive-gsftopk | svn26689.1.19.2 |
-| texlive-gsftopk-bin | svn26509.0 |
-| texlive-helvetic | svn28614.0 |
-| texlive-hyperref | svn28213.6.83m |
-| texlive-hyph-utf8 | svn29641.0 |
-| texlive-hyphen-base | svn29197.0 |
-| texlive-ifetex | svn24853.1.2 |
-| texlive-ifluatex | svn26725.1.3 |
-| texlive-ifxetex | svn19685.0.5 |
-| texlive-index | svn24099.4.1beta |
-| texlive-jknapltx | svn19440.0 |
-| texlive-kastrup | svn15878.0 |
-| texlive-koma-script | svn27255.3.11b |
-| texlive-kpathsea | svn28792.0 |
-| texlive-kpathsea-bin | svn27347.0 |
-| texlive-kpathsea-lib | 2012 |
-| texlive-l3experimental | svn29361.SVN_4467 |
-| texlive-l3kernel | svn29409.SVN_4469 |
-| texlive-l3packages | svn29361.SVN_4467 |
-| texlive-latex | svn27907.0 |
-| texlive-latex-bin | svn26689.0 |
-| texlive-latex-bin-bin | svn14050.0 |
-| texlive-latex-fonts | svn28888.0 |
-| texlive-latexconfig | svn28991.0 |
-| texlive-listings | svn15878.1.4 |
-| texlive-lm | svn28119.2.004 |
-| texlive-lm-math | svn29044.1.958 |
-| texlive-ltxmisc | svn21927.0 |
-| texlive-lua-alt-getopt | svn29349.0.7.0 |
-| texlive-lualatex-math | svn29346.1.2 |
-| texlive-luaotfload | svn26718.1.26 |
-| texlive-luaotfload-bin | svn18579.0 |
-| texlive-luatex | svn26689.0.70.1 |
-| texlive-luatex-bin | svn26912.0 |
-| texlive-luatexbase | svn22560.0.31 |
-| texlive-makeindex | svn26689.2.12 |
-| texlive-makeindex-bin | svn26509.0 |
-| texlive-marginnote | svn25880.v1.1i |
-| texlive-marvosym | svn29349.2.2a |
-| texlive-mathpazo | svn15878.1.003 |
-| texlive-mdwtools | svn15878.1.05.4 |
-| texlive-memoir | svn21638.3.6j_patch_6.0g |
-| texlive-metafont | svn26689.2.718281 |
-| texlive-metafont-bin | svn26912.0 |
-| texlive-metalogo | svn18611.0.12 |
-| texlive-mflogo | svn17487.0 |
-| texlive-mfnfss | svn19410.0 |
-| texlive-mfware | svn26689.0 |
-| texlive-mfware-bin | svn26509.0 |
-| texlive-mh | svn29420.0 |
-| texlive-microtype | svn29392.2.5 |
-| texlive-misc | svn24955.0 |
-| texlive-mparhack | svn15878.1.4 |
-| texlive-mptopdf | svn26689.0 |
-| texlive-mptopdf-bin | svn18674.0 |
-| texlive-ms | svn24467.0 |
-| texlive-multido | svn18302.1.42 |
-| texlive-natbib | svn20668.8.31b |
-| texlive-ncntrsbk | svn28614.0 |
-| texlive-ntgclass | svn15878.0 |
-| texlive-oberdiek | svn26725.0 |
-| texlive-palatino | svn28614.0 |
-| texlive-paralist | svn15878.2.3b |
-| texlive-parallel | svn15878.0 |
-| texlive-parskip | svn19963.2.0 |
-| texlive-pdfpages | svn27574.0.4t |
-| texlive-pdftex | svn29585.1.40.11 |
-| texlive-pdftex-bin | svn27321.0 |
-| texlive-pdftex-def | svn22653.0.06d |
-| texlive-pgf | svn22614.2.10 |
-| texlive-plain | svn26647.0 |
-| texlive-powerdot | svn25656.1.4i |
-| texlive-psfrag | svn15878.3.04 |
-| texlive-pslatex | svn16416.0 |
-| texlive-psnfss | svn23394.9.2a |
-| texlive-pspicture | svn15878.0 |
-| texlive-pst-3d | svn17257.1.10 |
-| texlive-pst-blur | svn15878.2.0 |
-| texlive-pst-coil | svn24020.1.06 |
-| texlive-pst-eps | svn15878.1.0 |
-| texlive-pst-fill | svn15878.1.01 |
-| texlive-pst-grad | svn15878.1.06 |
-| texlive-pst-math | svn20176.0.61 |
-| texlive-pst-node | svn27799.1.25 |
-| texlive-pst-plot | svn28729.1.44 |
-| texlive-pst-slpe | svn24391.1.31 |
-| texlive-pst-text | svn15878.1.00 |
-| texlive-pst-tree | svn24142.1.12 |
-| texlive-pstricks | svn29678.2.39 |
-| texlive-pstricks-add | svn28750.3.59 |
-| texlive-pxfonts | svn15878.0 |
-| texlive-qstest | svn15878.0 |
-| texlive-rcs | svn15878.0 |
-| texlive-rotating | svn16832.2.16b |
-| texlive-rsfs | svn15878.0 |
-| texlive-sansmath | svn17997.1.1 |
-| texlive-sauerj | svn15878.0 |
-| texlive-scheme-basic | svn25923.0 |
-| texlive-section | svn20180.0 |
-| texlive-seminar | svn18322.1.5 |
-| texlive-sepnum | svn20186.2.0 |
-| texlive-setspace | svn24881.6.7a |
-| texlive-showexpl | svn27790.v0.3j |
-| texlive-soul | svn15878.2.4 |
-| texlive-subfig | svn15878.1.3 |
-| texlive-symbol | svn28614.0 |
-| texlive-tetex | svn29585.3.0 |
-| texlive-tetex-bin | svn27344.0 |
-| texlive-tex | svn26689.3.1415926 |
-| texlive-tex-bin | svn26912.0 |
-| texlive-tex-gyre | svn18651.2.004 |
-| texlive-tex-gyre-math | svn29045.0 |
-| texlive-texconfig | svn29349.0 |
-| texlive-texconfig-bin | svn27344.0 |
-| texlive-texlive.infra | svn28217.0 |
-| texlive-texlive.infra-bin | svn22566.0 |
-| texlive-textcase | svn15878.0 |
-| texlive-thumbpdf | svn26689.3.15 |
-| texlive-thumbpdf-bin | svn6898.0 |
-| texlive-times | svn28614.0 |
-| texlive-tipa | svn29349.1.3 |
-| texlive-tools | svn26263.0 |
-| texlive-txfonts | svn15878.0 |
-| texlive-type1cm | svn21820.0 |
-| texlive-typehtml | svn17134.0 |
-| texlive-ucs | svn27549.2.1 |
-| texlive-underscore | svn18261.0 |
-| texlive-unicode-math | svn29413.0.7d |
-| texlive-url | svn16864.3.2 |
-| texlive-utopia | svn15878.0 |
-| texlive-varwidth | svn24104.0.92 |
-| texlive-wasy | svn15878.0 |
-| texlive-wasysym | svn15878.2.0 |
-| texlive-xcolor | svn15878.2.11 |
-| texlive-xdvi | svn26689.22.85 |
-| texlive-xdvi-bin | svn26509.0 |
-| texlive-xkeyval | svn27995.2.6a |
-| texlive-xunicode | svn23897.0.981 |
-| texlive-zapfchan | svn28614.0 |
-| texlive-zapfding | svn28614.0 |
-| tix | 8.4.3 |
-| tk | 8.5.13 |
-| tk-devel | 8.5.13 |
-| tkinter | 2.7.5 |
-| tmux | 1.8 |
-| totem-pl-parser | 3.4.5 |
-| tracker | 0.16.2 |
-| trousers | 0.3.11.2 |
-| ttmkfdir | 3.0.9 |
-| tuned | 2.4.1 |
-| tzdata | 2015g |
-| tzdata-java | 2015g |
-| udisks2 | 2.1.2 |
-| unbound-libs | 1.4.20 |
-| unixODBC | 2.3.1 |
-| unzip | 6.0 |
-| upower | 0.9.20 |
-| urw-fonts | 2.4 |
-| usbmuxd | 1.0.8 |
-| ustr | 1.0.4 |
-| util-linux | 2.23.2 |
-| uuid | 1.6.2 |
-| uuid-devel | 1.6.2 |
-| valgrind | 3.10.0 |
-| vim-X11 | 7.4.160 |
-| vim-common | 7.4.160 |
-| vim-enhanced | 7.4.160 |
-| vim-filesystem | 7.4.160 |
-| vim-minimal | 7.4.160 |
-| virt-what | 1.13 |
-| virtuoso-opensource | 6.1.6 |
-| wavpack | 4.60.1 |
-| webrtc-audio-processing | 0.1 |
-| wget | 1.14 |
-| which | 2.20 |
-| words | 3.0 |
-| wpa_supplicant | 2.0 |
-| xcb-util | 0.3.9 |
-| xclip | 0.12 |
-| xdg-user-dirs | 0.15 |
-| xdg-utils | 1.1.0 |
-| xerces-c | 3.1.1 |
-| xfsdump | 3.1.4 |
-| xfsprogs | 3.2.1 |
-| xkeyboard-config | 2.9 |
-| xml-common | 0.6.3 |
-| xml-commons-apis12 | 1.2.04 |
-| xml2 | 0.5 |
-| xorg-x11-font-utils | 7.5 |
-| xorg-x11-fonts-ISO8859-1-100dpi | 7.5 |
-| xorg-x11-fonts-ISO8859-1-75dpi | 7.5 |
-| xorg-x11-fonts-Type1 | 7.5 |
-| xorg-x11-proto-devel | 7.7 |
-| xorg-x11-server-Xorg | 1.15.0 |
-| xorg-x11-server-common | 1.15.0 |
-| xorg-x11-server-utils | 7.7 |
-| xorg-x11-xauth | 1.0.7 |
-| xorg-x11-xbitmaps | 1.1.1 |
-| xorg-x11-xinit | 1.3.2 |
-| xorg-x11-xkb-utils | 7.7 |
-| xpdf | 3.04 |
-| xterm | 295 |
-| xz | 5.1.2 |
-| xz-devel | 5.1.2 |
-| xz-libs | 5.1.2 |
-| yajl | 2.0.4 |
-| yum | 3.4.3 |
-| yum-cron | 3.4.3 |
-| yum-metadata-parser | 1.1.4 |
-| yum-plugin-fastestmirror | 1.1.31 |
-| yum-plugin-priorities | 1.1.31 |
-| yum-plugin-versionlock | 1.1.31 |
-| yum-utils | 1.1.31 |
-| zip | 3.0 |
-| zlib | 1.2.7 |
-| zlib-devel | 1.2.7 |
-| zlib-static | 1.2.7 |
-| zsh | 5.0.2 |
-| zziplib | 0.13.62 |
+|Package Name|Version|
+|---|---|
+|GConf2|3.2.6-22|
+|GMT|6.1.0-1|
+|GMT-common|6.1.0-1|
+|GraphicsMagick|1.3.38-1|
+|ImageMagick|6.9.12.86-1|
+|ImageMagick-c++|6.9.12.86-1|
+|ImageMagick-c++-devel|6.9.12.86-1|
+|ImageMagick-devel|6.9.12.86-1|
+|ImageMagick-libs|6.9.12.86-1|
+|LibRaw|0.19.5-3|
+|ModemManager-glib|1.20.2-1|
+|NetworkManager|1:1.40.16-4|
+|NetworkManager-libnm|1:1.40.16-4|
+|NetworkManager-team|1:1.40.16-4|
+|NetworkManager-tui|1:1.40.16-4|
+|NetworkManager-wifi|1:1.40.16-4|
+|OpenEXR-devel|2.2.0-12|
+|OpenEXR-libs|2.2.0-12|
+|SuperLU|5.2.0-7|
+|abattis-cantarell-fonts|0.0.25-6|
+|accountsservice|0.6.55-4|
+|accountsservice-libs|0.6.55-4|
+|acl|2.2.53-1.el8|
+|adcli|0.9.2-1|
+|adobe-mappings-cmap|20171205-3|
+|adobe-mappings-cmap-deprecated|20171205-3|
+|adobe-mappings-pdf|20180407-1|
+|adwaita-cursor-theme|3.28.0-3|
+|adwaita-gtk2-theme|3.22.3-4|
+|adwaita-icon-theme|3.28.0-3|
+|alsa-lib|1.2.8-2|
+|annobin|10.94-1|
+|apr|1.6.3-12|
+|apr-util|1.6.1-6.el8_8|
+|apr-util-bdb|1.6.1-6.el8_8|
+|apr-util-openssl|1.6.1-6.el8_8|
+|ar_mgr|1.0-0.2.MLNX20201014.g8577618|
+|armadillo|10.8.2-1|
+|arpack|3.7.0-1|
+|aspell|12:0.60.6.1-22|
+|at-spi2-atk|2.26.2-1|
+|at-spi2-core|2.28.0-1|
+|atk|2.28.1-1|
+|atk-devel|2.28.1-1|
+|atlas|3.10.3-8.el8|
+|audit|3.0.7-4|
+|audit-libs|3.0.7-4|
+|authselect|1.2.6-1|
+|authselect-libs|1.2.6-1|
+|autoconf|2.69-29|
+|automake|1.16.1-7|
+|avahi-glib|0.7-20|
+|avahi-libs|0.7-20|
+|basesystem|11-5|
+|bash|4.4.20-4|
+|bc|1.07.1-5|
+|bind-export-libs|32:9.11.36-8.el8_8|
+|bind-libs|32:9.11.36-8.el8_8|
+|bind-libs-lite|32:9.11.36-8.el8_8|
+|bind-license|32:9.11.36-8.el8_8|
+|bind-utils|32:9.11.36-8.el8_8|
+|binutils|2.30-119|
+|biosdevname|0.7.3-2|
+|bison|3.0.4-10|
+|blas|3.8.0-8|
+|blas-devel|3.8.0-8|
+|bluez|5.63-1|
+|bluez-libs|5.63-1|
+|bluez-obexd|5.63-1|
+|bolt|0.9.1-1|
+|boost|1.66.0-13|
+|boost-atomic|1.66.0-13|
+|boost-chrono|1.66.0-13|
+|boost-container|1.66.0-13|
+|boost-context|1.66.0-13|
+|boost-coroutine|1.66.0-13|
+|boost-date-time|1.66.0-13|
+|boost-devel|1.66.0-13|
+|boost-fiber|1.66.0-13|
+|boost-filesystem|1.66.0-13|
+|boost-graph|1.66.0-13|
+|boost-iostreams|1.66.0-13|
+|boost-locale|1.66.0-13|
+|boost-log|1.66.0-13|
+|boost-math|1.66.0-13|
+|boost-program-options|1.66.0-13|
+|boost-random|1.66.0-13|
+|boost-regex|1.66.0-13|
+|boost-serialization|1.66.0-13|
+|boost-signals|1.66.0-13|
+|boost-stacktrace|1.66.0-13|
+|boost-system|1.66.0-13|
+|boost-test|1.66.0-13|
+|boost-thread|1.66.0-13|
+|boost-timer|1.66.0-13|
+|boost-type_erasure|1.66.0-13|
+|boost-wave|1.66.0-13|
+|brotli|1.0.6-3|
+|bubblewrap|0.4.0-1|
+|bzip2|1.0.6-26|
+|bzip2-devel|1.0.6-26|
+|bzip2-libs|1.0.6-26|
+|c-ares|1.13.0-6.el8_8|
+|ca-certificates|2022.2.54-80.2|
+|cairo|1.15.12-6|
+|cairo-devel|1.15.12-6|
+|cairo-gobject|1.15.12-6|
+|cfitsio|3.47-1|
+|checkpolicy|2.9-1|
+|cheese-libs|2:3.28.0-4|
+|chkconfig|1.19.1-1|
+|chrony|4.2-1.el8.rocky.1|
+|clutter|1.26.2-8|
+|clutter-gst3|3.0.26-1|
+|clutter-gtk|1.8.4-3|
+|cmake|3.20.2-5|
+|cmake-data|3.20.2-5|
+|cmake-filesystem|3.20.2-5|
+|cmake-rpm-macros|3.20.2-5|
+|cogl|1.22.2-10|
+|color-filesystem|1-20|
+|colord|1.4.2-1|
+|colord-gtk|0.1.26-8|
+|colord-libs|1.4.2-1|
+|compat-libgfortran-48|4.8.5-36.1|
+|coreutils|8.30-15|
+|coreutils-common|8.30-15|
+|cpio|2.12-11|
+|cpp|8.5.0-18|
+|cracklib|2.9.6-15|
+|cracklib-dicts|2.9.6-15|
+|crda|3.18_2020.04.29-1|
+|createrepo_c|0.17.7-6|
+|createrepo_c-libs|0.17.7-6|
+|cronie|1.5.2-8|
+|cronie-anacron|1.5.2-8|
+|crontabs|1.11-17.20190603git|
+|crypto-policies|20221215-1.gitece0092|
+|crypto-policies-scripts|20221215-1.gitece0092|
+|cryptsetup-libs|2.3.7-5|
+|ctags|5.8-23|
+|cups-libs|1:2.2.6-51|
+|cups-pk-helper|0.2.6-5|
+|curl|7.61.1-30.el8_8|
+|cyrus-sasl|2.1.27-6|
+|cyrus-sasl-devel|2.1.27-6|
+|cyrus-sasl-gssapi|2.1.27-6|
+|cyrus-sasl-lib|2.1.27-6|
+|dapl|2.1.10.1.mlnx-OFED.4.9.0.1.4|
+|dapl-devel|2.1.10.1.mlnx-OFED.4.9.0.1.4|
+|dapl-devel-static|2.1.10.1.mlnx-OFED.4.9.0.1.4|
+|dapl-utils|2.1.10.1.mlnx-OFED.4.9.0.1.4|
+|dbus|1:1.12.8-24.el8_8|
+|dbus-common|1:1.12.8-24.el8_8|
+|dbus-daemon|1:1.12.8-24.el8_8|
+|dbus-glib|0.110-2|
+|dbus-libs|1:1.12.8-24.el8_8|
+|dbus-tools|1:1.12.8-24.el8_8|
+|dbus-x11|1:1.12.8-24.el8_8|
+|dconf|0.28.0-4|
+|dcw-gmt|1.1.4-1|
+|dejavu-fonts-common|2.35-7|
+|dejavu-sans-fonts|2.35-7|
+|dejavu-sans-mono-fonts|2.35-7|
+|desktop-file-utils|0.26-1|
+|device-mapper|8:1.02.181-9|
+|device-mapper-libs|8:1.02.181-9|
+|dhcp-client|12:4.3.6-49|
+|dhcp-common|12:4.3.6-49|
+|dhcp-libs|12:4.3.6-49|
+|diffutils|3.6-6|
+|dmidecode|1:3.3-4|
+|dnf|4.7.0-16|
+|dnf-data|4.7.0-16|
+|dnf-plugins-core|4.0.21-19|
+|dos2unix|7.4.0-3|
+|dosfstools|4.1-6|
+|doxygen|1:1.8.14-12|
+|dracut|049-223.git20230119|
+|dracut-config-rescue|049-223.git20230119|
+|dracut-network|049-223.git20230119|
+|dracut-squash|049-223.git20230119|
+|drpm|0.4.1-3|
+|dump_pr|1.0-0.2.MLNX20201014.g8577618|
+|duo_unix|1.12.1-5|
+|duo_unix-selinux|1.12.1-5|
+|dwz|0.12-10|
+|e2fsprogs|1.45.6-5|
+|e2fsprogs-libs|1.45.6-5|
+|efi-srpm-macros|3-3|
+|efivar-libs|37-4|
+|eigen3-devel|3.3.4-6|
+|elfutils|0.188-3|
+|elfutils-debuginfod-client|0.188-3|
+|elfutils-default-yama-scope|0.188-3|
+|elfutils-libelf|0.188-3|
+|elfutils-libelf-devel|0.188-3|
+|elfutils-libs|0.188-3|
+|elinks|0.12-0.58.pre6|
+|emacs|1:26.1-10.el8_8|
+|emacs-common|1:26.1-10.el8_8|
+|emacs-filesystem|1:26.1-10.el8_8|
+|enchant2|2.2.3-3|
+|environment-modules|5.0.1-1|
+|eog|3.28.4-1|
+|esmtp|1.2-15|
+|ethtool|2:5.13-2|
+|evolution-data-server|3.28.5-20|
+|evolution-data-server-langpacks|3.28.5-20|
+|exempi|2.4.5-2|
+|exiv2|0.27.5-2|
+|exiv2-libs|0.27.5-2|
+|expat|2.2.5-11|
+|expat-devel|2.2.5-11|
+|fail2ban|1.0.2-3|
+|fail2ban-firewalld|1.0.2-3|
+|fail2ban-selinux|1.0.2-3|
+|fail2ban-sendmail|1.0.2-3|
+|fail2ban-server|1.0.2-3|
+|fftw|3.3.5-11|
+|fftw-devel|3.3.5-11|
+|fftw-libs|3.3.5-11|
+|fftw-libs-double|3.3.5-11|
+|fftw-libs-long|3.3.5-11|
+|fftw-libs-quad|3.3.5-11|
+|fftw-libs-single|3.3.5-11|
+|fftw2|2.1.5-40|
+|fftw2-devel|2.1.5-40|
+|file|5.33-24|
+|file-libs|5.33-24|
+|filesystem|3.8-6|
+|findutils|1:4.6.0-20|
+|firewalld|0.9.3-13|
+|firewalld-filesystem|0.9.3-13|
+|flac-libs|1.3.2-9|
+|flatpak|1.10.7-1|
+|flatpak-selinux|1.10.7-1|
+|flatpak-session-helper|1.10.7-1|
+|flex|2.6.1-9|
+|fontconfig|2.13.1-4|
+|fontconfig-devel|2.13.1-4|
+|fontpackages-filesystem|1.44-22|
+|freeglut|3.0.0-8|
+|freetype|2.9.1-9|
+|freetype-devel|2.9.1-9|
+|freexl|1.0.6-4|
+|fribidi|1.0.4-9|
+|fribidi-devel|1.0.4-9|
+|fstrm|0.6.1-3|
+|ftp|0.17-78|
+|fuse|2.9.7-16|
+|fuse-common|3.3.0-16|
+|fuse-libs|2.9.7-16|
+|gawk|4.2.1-4|
+|gc|7.6.4-3|
+|gc-devel|7.6.4-3|
+|gcc|8.5.0-18|
+|gcc-c++|8.5.0-18|
+|gcc-gfortran|8.5.0-18|
+|gcc-objc|8.5.0-19|
+|gcc-objc++|8.5.0-19|
+|gcc-plugin-annobin|8.5.0-18|
+|gcc-toolset-9|9.0-4|
+|gcc-toolset-9-annobin|9.08-4|
+|gcc-toolset-9-binutils|2.32-17|
+|gcc-toolset-9-dwz|0.12-1.1|
+|gcc-toolset-9-dyninst|10.1.0-1|
+|gcc-toolset-9-elfutils|0.176-5|
+|gcc-toolset-9-elfutils-libelf|0.176-5|
+|gcc-toolset-9-elfutils-libs|0.176-5|
+|gcc-toolset-9-gcc|9.2.1-2.3|
+|gcc-toolset-9-gcc-c++|9.2.1-2.3|
+|gcc-toolset-9-gcc-gdb-plugin|9.2.1-2.3|
+|gcc-toolset-9-gcc-gfortran|9.2.1-2.3|
+|gcc-toolset-9-gdb|8.3-1|
+|gcc-toolset-9-libquadmath-devel|9.2.1-2.3|
+|gcc-toolset-9-libstdc++-devel|9.2.1-2.3|
+|gcc-toolset-9-ltrace|0.7.91-1|
+|gcc-toolset-9-make|1:4.2.1-2|
+|gcc-toolset-9-perftools|9.0-4|
+|gcc-toolset-9-runtime|9.0-4|
+|gcc-toolset-9-strace|5.1-6|
+|gcc-toolset-9-systemtap|4.1-4|
+|gcc-toolset-9-systemtap-client|4.1-4|
+|gcc-toolset-9-systemtap-devel|4.1-4|
+|gcc-toolset-9-systemtap-runtime|4.1-4|
+|gcc-toolset-9-toolchain|9.0-4|
+|gcc-toolset-9-valgrind|1:3.15.0-9|
+|gcr|3.28.0-1|
+|gd|2.2.5-7|
+|gdal|3.0.4-11|
+|gdal-devel|3.0.4-11|
+|gdal-libs|3.0.4-11|
+|gdb-headless|8.2-19|
+|gdbm|1:1.18-2|
+|gdbm-devel|1:1.18-2|
+|gdbm-libs|1:1.18-2|
+|gdisk|1.0.3-11|
+|gdk-pixbuf2|2.36.12-5|
+|gdk-pixbuf2-devel|2.36.12-5|
+|gdk-pixbuf2-modules|2.36.12-5|
+|gdm|1:40.0-27|
+|geoclue2|2.5.5-2|
+|geoclue2-libs|2.5.5-2|
+|geocode-glib|3.26.0-3|
+|geolite2-city|20180605-1|
+|geolite2-country|20180605-1|
+|geos|3.7.2-1|
+|geos-devel|3.7.2-1|
+|gettext|0.19.8.1-17|
+|gettext-libs|0.19.8.1-17|
+|ghc-srpm-macros|1.4.2-7|
+|ghostscript|9.27-6|
+|giflib|5.1.4-3|
+|git|2.39.3-1|
+|git-core|2.39.3-1|
+|git-core-doc|2.39.3-1|
+|gjs|1.56.2-5|
+|gl-manpages|1.1-15.20161227|
+|glib-networking|2.56.1-1.1|
+|glib2|2.56.4-161|
+|glib2-devel|2.56.4-161|
+|glibc|2.28-225|
+|glibc-common|2.28-225|
+|glibc-devel|2.28-225|
+|glibc-gconv-extra|2.28-225|
+|glibc-headers|2.28-225|
+|glibc-langpack-en|2.28-225|
+|glx-utils|8.4.0-5.20181118git1830dcb|
+|gmp|1:6.1.2-10|
+|gmp-c++|1:6.1.2-10|
+|gmp-devel|1:6.1.2-10|
+|gnome-autoar|0.2.3-2|
+|gnome-bluetooth|1:3.34.3-1|
+|gnome-bluetooth-libs|1:3.34.3-1|
+|gnome-classic-session|3.32.1-33|
+|gnome-control-center|3.28.2-37|
+|gnome-control-center-filesystem|3.28.2-37|
+|gnome-desktop3|3.32.2-1.el8_8|
+|gnome-keyring|3.28.2-1|
+|gnome-keyring-pam|3.28.2-1|
+|gnome-menus|3.13.3-11|
+|gnome-online-accounts|3.28.2-4|
+|gnome-session|3.28.1-20|
+|gnome-session-wayland-session|3.28.1-20|
+|gnome-session-xsession|3.28.1-20|
+|gnome-settings-daemon|3.32.0-19|
+|gnome-shell|3.32.2-50|
+|gnome-shell-extension-apps-menu|3.32.1-33|
+|gnome-shell-extension-common|3.32.1-33|
+|gnome-shell-extension-desktop-icons|3.32.1-33|
+|gnome-shell-extension-horizontal-workspaces|3.32.1-33|
+|gnome-shell-extension-launch-new-instance|3.32.1-33|
+|gnome-shell-extension-places-menu|3.32.1-33|
+|gnome-shell-extension-window-list|3.32.1-33|
+|gnome-terminal|3.28.3-3|
+|gnome-themes-standard|3.22.3-4|
+|gnupg2|2.2.20-3|
+|gnupg2-smime|2.2.20-3|
+|gnuplot|5.2.4-3|
+|gnuplot-common|5.2.4-3|
+|gnutls|3.6.16-6|
+|go-srpm-macros|2-17|
+|gobject-introspection|1.56.1-1|
+|google-droid-sans-fonts|20120715-13|
+|gperftools-devel|1:2.7-9|
+|gperftools-libs|1:2.7-9|
+|gpfs|5.1|
+|gpfs|5.1|
+|gpfs|5.1|
+|gpfs|5.1|
+|gpfs|8.0.55-19|
+|gpfs|5.1.8-0|
+|gpfs|5.1|
+|gpfs|5.1|
+|gpgme|1.13.1-11|
+|gpgme-devel|1.13.1-11|
+|gpm-libs|1.20.7-17|
+|gpsbabel|1.6.0-3|
+|graphite2|1.3.10-10|
+|graphite2-devel|1.3.10-10|
+|graphviz|2.40.1-44|
+|grep|3.1-6|
+|grilo|0.3.6-3|
+|groff-base|1.22.3-18|
+|grub2-common|1:2.02-148.el8_8.1.rocky.0|
+|grub2-pc|1:2.02-148.el8_8.1.rocky.0|
+|grub2-pc-modules|1:2.02-148.el8_8.1.rocky.0|
+|grub2-tools|1:2.02-148.el8_8.1.rocky.0|
+|grub2-tools-efi|1:2.02-148.el8_8.1.rocky.0|
+|grub2-tools-extra|1:2.02-148.el8_8.1.rocky.0|
+|grub2-tools-minimal|1:2.02-148.el8_8.1.rocky.0|
+|grubby|8.40-47|
+|gsettings-desktop-schemas|3.32.0-6|
+|gshhg-gmt-nc4|2.3.7-1|
+|gshhg-gmt-nc4-full|2.3.7-1|
+|gshhg-gmt-nc4-high|2.3.7-1|
+|gsl|2.5-1|
+|gsl-devel|2.5-1|
+|gsm|1.0.17-5|
+|gssproxy|0.8.0-21|
+|gstreamer1|1.16.1-2|
+|gstreamer1-plugins-bad-free|1.16.1-1|
+|gstreamer1-plugins-base|1.16.1-2|
+|gstreamer1-plugins-good|1.16.1-3|
+|gtk-update-icon-cache|3.22.30-11|
+|gtk2|2.24.32-5|
+|gtk2-devel|2.24.32-5|
+|gtk3|3.22.30-11|
+|guile|5:2.0.14-7|
+|gvfs|1.36.2-14|
+|gvfs-client|1.36.2-14|
+|gzip|1.9-13|
+|hardlink|1:1.3-6|
+|harfbuzz|1.7.5-3|
+|harfbuzz-devel|1.7.5-3|
+|harfbuzz-icu|1.7.5-3|
+|hcoll|4.4.2970-1|
+|hdf|4.2.14-5|
+|hdf5|1.10.5-4|
+|hdf5-devel|1.10.5-4|
+|hdparm|9.54-4|
+|hicolor-icon-theme|0.17-2|
+|hostname|3.20-6|
+|htop|3.2.1-1|
+|httpd-tools|2.4.37-56.module+el8.8.0+1284+07ef499e|
+|hunspell|1.6.2-1|
+|hunspell-en|0.20140811.1-12|
+|hunspell-en-GB|0.20140811.1-12|
+|hunspell-en-US|0.20140811.1-12|
+|hwdata|0.314-8.16|
+|hwloc|2.2.0-3|
+|hwloc-devel|2.2.0-3|
+|hwloc-libs|2.2.0-3|
+|hyphen|2.8.8-9|
+|ibacm|41mlnx1-OFED.4.3.3.0.0|
+|ibdump|6.0.0-1|
+|ibsim|0.10-1|
+|ibus|1.5.19-14|
+|ibus-gtk2|1.5.19-14|
+|ibus-gtk3|1.5.19-14|
+|ibus-libs|1.5.19-14|
+|ibus-setup|1.5.19-14|
+|ibutils2|2.1.1-0.121.MLNX20200324.g061a520|
+|iio-sensor-proxy|2.4-3|
+|ilmbase|2.2.0-13|
+|ilmbase-devel|2.2.0-13|
+|ima-evm-utils|1.3.2-12|
+|infiniband-diags|5.6.0.MLNX20200211.354e4b7-0.1|
+|infiniband-diags-compat|5.6.0.MLNX20200211.354e4b7-0.1|
+|info|6.5-7|
+|initscripts|10.00.18-1|
+|ipcalc|0.2.4-4|
+|ipmitool|1.8.18-18|
+|iproute|5.18.0-1.1|
+|iprutils|2.4.19-1|
+|ipset|7.1-1|
+|ipset-libs|7.1-1|
+|iptables|1.8.4-24|
+|iptables-ebtables|1.8.4-24|
+|iptables-libs|1.8.4-24|
+|iputils|20180629-10|
+|irqbalance|2:1.9.0-4|
+|iser|4.9-OFED.4.9.7.1.0.1.kver.4.18.0_477.21.1.el8_8|
+|isert|4.9-OFED.4.9.7.1.0.1.kver.4.18.0_477.21.1.el8_8|
+|isl|0.16.1-6|
+|iso-codes|3.79-2|
+|iw|4.14-5|
+|iwl100-firmware|39.31.5.1-114.el8_8|
+|iwl1000-firmware|1:39.31.5.1-114.el8_8|
+|iwl105-firmware|18.168.6.1-114.el8_8|
+|iwl135-firmware|18.168.6.1-114.el8_8|
+|iwl2000-firmware|18.168.6.1-114.el8_8|
+|iwl2030-firmware|18.168.6.1-114.el8_8|
+|iwl3160-firmware|1:25.30.13.0-114.el8_8|
+|iwl5000-firmware|8.83.5.1_1-114.el8_8|
+|iwl5150-firmware|8.24.2.2-114.el8_8|
+|iwl6000-firmware|9.221.4.1-114.el8_8|
+|iwl6000g2a-firmware|18.168.6.1-114.el8_8|
+|iwl6050-firmware|41.28.5.1-114.el8_8|
+|iwl7260-firmware|1:25.30.13.0-114.el8_8|
+|jansson|2.14-1|
+|jasper-devel|2.0.14-5|
+|jasper-libs|2.0.14-5|
+|jbig2dec-libs|0.16-1|
+|jbigkit-libs|2.1-14|
+|json-c|0.13.1-3|
+|json-glib|1.4.4-1|
+|kbd|2.0.4-10|
+|kbd-legacy|2.0.4-10|
+|kbd-misc|2.0.4-10|
+|kernel|4.18.0-477.15.1|
+|kernel|4.18.0-477.21.1|
+|kernel-core|4.18.0-477.15.1|
+|kernel-core|4.18.0-477.21.1|
+|kernel-devel|4.18.0-477.15.1|
+|kernel-devel|4.18.0-477.21.1|
+|kernel-headers|4.18.0-477.21.1|
+|kernel-mft|4.15.1-9.kver.4.18.0_477.21.1.el8_8|
+|kernel-modules|4.18.0-477.15.1|
+|kernel-modules|4.18.0-477.21.1|
+|kernel-rpm-macros|131-1|
+|kernel-tools|4.18.0-477.21.1|
+|kernel-tools-libs|4.18.0-477.21.1|
+|kexec-tools|2.0.25-5.el8_8|
+|keyutils|1.5.10-9|
+|keyutils-libs|1.5.10-9|
+|keyutils-libs-devel|1.5.10-9|
+|kmod|25-19|
+|kmod-libs|25-19|
+|knem|1.1.4.90mlnx2-OFED.23.04.0.5.2.1|
+|knem-modules|1.1.4.90mlnx2-OFED.23.04.0.5.2.1.kver.4.18.0_477.21.1.el8_8|
+|kpartx|0.8.4-37|
+|krb5-devel|1.18.2-25|
+|krb5-libs|1.18.2-25|
+|krb5-workstation|1.18.2-25|
+|ksh|20120801-257|
+|lame-libs|3.100-6|
+|langpacks-en|1.0-12|
+|lapack|3.8.0-8|
+|lapack-devel|3.8.0-8|
+|lapack-static|3.8.0-8|
+|lcms2|2.9-2|
+|lcms2-devel|2.9-2|
+|less|530-1|
+|lftp|4.8.4-2|
+|libICE|1.0.9-15|
+|libICE-devel|1.0.9-15|
+|libSM|1.2.3-1|
+|libSM-devel|1.2.3-1|
+|libX11|1.6.8-5|
+|libX11-common|1.6.8-5|
+|libX11-devel|1.6.8-5|
+|libX11-xcb|1.6.8-5|
+|libXau|1.0.9-3|
+|libXau-devel|1.0.9-3|
+|libXaw|1.0.13-10|
+|libXcomposite|0.4.4-14|
+|libXcomposite-devel|0.4.4-14|
+|libXcursor|1.1.15-3|
+|libXcursor-devel|1.1.15-3|
+|libXdamage|1.1.4-14|
+|libXdmcp|1.1.3-1|
+|libXext|1.3.4-1|
+|libXext-devel|1.3.4-1|
+|libXfixes|5.0.3-7|
+|libXfixes-devel|5.0.3-7|
+|libXfont2|2.0.3-2|
+|libXft|2.3.3-1|
+|libXft-devel|2.3.3-1|
+|libXi|1.7.10-1|
+|libXi-devel|1.7.10-1|
+|libXinerama|1.1.4-1|
+|libXinerama-devel|1.1.4-1|
+|libXmu|1.1.3-1|
+|libXmu-devel|1.1.3-1|
+|libXp|1.0.3-3|
+|libXp-devel|1.0.3-3|
+|libXpm|3.5.12-9|
+|libXrandr|1.5.2-1|
+|libXrandr-devel|1.5.2-1|
+|libXrender|0.9.10-7|
+|libXrender-devel|0.9.10-7|
+|libXt|1.1.5-12|
+|libXt-devel|1.1.5-12|
+|libXtst|1.2.3-7|
+|libXv|1.0.11-7|
+|libXxf86misc|1.0.4-1|
+|libXxf86vm|1.1.4-9|
+|libacl|2.2.53-1.el8|
+|libaec|1.0.2-3|
+|libaec-devel|1.0.2-3|
+|libaio|0.3.112-1|
+|libaio-devel|0.3.112-1|
+|libappstream-glib|0.7.14-3|
+|libarchive|3.3.3-5|
+|libassuan|2.5.1-3|
+|libasyncns|0.8-14|
+|libatasmart|0.19-14|
+|libatomic|8.5.0-18|
+|libatomic_ops|7.6.2-3|
+|libattr|2.4.48-3|
+|libavc1394|0.5.4-7|
+|libbabeltrace|1.5.4-4|
+|libbasicobjects|0.1.1-40|
+|libblkid|2.32.1-42|
+|libblockdev|2.28-2|
+|libblockdev-crypto|2.28-2|
+|libblockdev-fs|2.28-2|
+|libblockdev-loop|2.28-2|
+|libblockdev-mdraid|2.28-2|
+|libblockdev-part|2.28-2|
+|libblockdev-swap|2.28-2|
+|libblockdev-utils|2.28-2|
+|libbpf|0.5.0-1|
+|libbsd|0.11.7-2|
+|libbytesize|1.4-3|
+|libcanberra|0.30-18|
+|libcanberra-gtk3|0.30-18|
+|libcap|2.48-5|
+|libcap-ng|0.7.11-1|
+|libcdio|2.0.0-3|
+|libcdio-paranoia|10.2+0.94+2-3|
+|libcollection|0.7.0-40|
+|libcom_err|1.45.6-5|
+|libcom_err-devel|1.45.6-5|
+|libcomps|0.1.18-1|
+|libcroco|0.6.12-4.el8_2|
+|libcurl|7.61.1-30.el8_8|
+|libcurl-devel|7.61.1-30.el8_8|
+|libdaemon|0.14-15|
+|libdap|3.19.1-2|
+|libdatrie|0.2.9-7|
+|libdb|5.3.28-42|
+|libdb-utils|5.3.28-42|
+|libdhash|0.5.0-40|
+|libdnf|0.63.0-14|
+|libdrm|2.4.114-1|
+|libdv|1.0.0-27|
+|libdvdnav|5.0.3-8|
+|libdvdread|5.0.3-9|
+|libedit|3.1-23.20170329cvs|
+|libepoxy|1.5.8-1|
+|libesmtp|1.0.6-18|
+|libestr|0.1.10-3|
+|libev|4.24-6|
+|libevdev|1.10.0-1|
+|libevent|2.1.8-5|
+|libevent-devel|2.1.8-5|
+|libexif|0.6.22-5|
+|libfastjson|0.99.9-1|
+|libfdisk|2.32.1-42|
+|libffi|3.1-24|
+|libffi-devel|3.1-24|
+|libfontenc|1.1.3-8|
+|libgcc|8.5.0-18|
+|libgcrypt|1.8.5-7|
+|libgdata|0.17.9-4|
+|libgeotiff|1.5.1-1|
+|libgexiv2|0.10.8-4|
+|libgfortran|8.5.0-18|
+|libglvnd|1:1.3.4-1|
+|libglvnd-core-devel|1:1.3.4-1|
+|libglvnd-devel|1:1.3.4-1|
+|libglvnd-egl|1:1.3.4-1|
+|libglvnd-gles|1:1.3.4-1|
+|libglvnd-glx|1:1.3.4-1|
+|libglvnd-opengl|1:1.3.4-1|
+|libgnomekbd|3.26.0-4|
+|libgomp|8.5.0-18|
+|libgpg-error|1.31-1|
+|libgpg-error-devel|1.31-1|
+|libgs|9.27-6|
+|libgs-devel|9.27-6|
+|libgsf|1.14.41-5|
+|libgta|1.2.1-1|
+|libgtop2|2.38.0-3|
+|libgudev|232-4|
+|libgusb|0.3.0-1|
+|libgweather|3.28.2-4|
+|libgxps|0.3.0-5|
+|libibcm|41mlnx1-OFED.4.1.0.1.0|
+|libibcm-devel|41mlnx1-OFED.4.1.0.1.0|
+|libibmad|5.4.0.MLNX20190423.1d917ae-0.1|
+|libibmad-devel|5.4.0.MLNX20190423.1d917ae-0.1|
+|libibmad-static|5.4.0.MLNX20190423.1d917ae-0.1|
+|libibumad|43.1.1.MLNX20200211.078947f-0.1|
+|libibumad-devel|43.1.1.MLNX20200211.078947f-0.1|
+|libibumad-static|43.1.1.MLNX20200211.078947f-0.1|
+|libibverbs|41mlnx1-OFED.4.9.3.0.0|
+|libibverbs-devel|41mlnx1-OFED.4.9.3.0.0|
+|libibverbs-devel-static|41mlnx1-OFED.4.9.3.0.0|
+|libibverbs-utils|41mlnx1-OFED.4.9.3.0.0|
+|libical|3.0.3-3|
+|libicu|60.3-2|
+|libicu-devel|60.3-2|
+|libidn|1.34-5|
+|libidn2|2.2.0-1|
+|libidn2-devel|2.2.0-1|
+|libiec61883|1.2.0-18|
+|libijs|0.35-5|
+|libimobiledevice|1.2.0-16|
+|libini_config|1.3.1-40|
+|libinput|1.16.3-3|
+|libipa_hbac|2.8.2-3|
+|libipt|1.6.1-8|
+|libiptcdata|1.0.4-21|
+|libjpeg-turbo|1.5.3-12|
+|libjpeg-turbo-devel|1.5.3-12|
+|libkadm5|1.18.2-25|
+|libkcapi|1.2.0-2|
+|libkcapi-hmaccalc|1.2.0-2|
+|libkml|1.3.0-24|
+|libksba|1.3.5-9|
+|libldb|2.6.1-1|
+|liblockfile|1.14-2|
+|libmaxminddb|1.2.0-10|
+|libmcpp|2.7.2-20|
+|libmd|1.1.0-1|
+|libmemcached|1.0.18-17|
+|libmemcached-devel|1.0.18-17|
+|libmemcached-libs|1.0.18-17|
+|libmetalink|0.1.3-7|
+|libmlx4|41mlnx1-OFED.4.7.3.0.3|
+|libmlx4-devel|41mlnx1-OFED.4.7.3.0.3|
+|libmlx5|41mlnx1-OFED.4.9.0.1.2|
+|libmlx5-devel|41mlnx1-OFED.4.9.0.1.2|
+|libmnl|1.0.4-6|
+|libmodman|2.0.1-17|
+|libmodulemd|2.13.0-1|
+|libmount|2.32.1-42|
+|libmpc|1.1.0-9.1|
+|libndp|1.7-6|
+|libnetfilter_conntrack|1.0.6-5|
+|libnfnetlink|1.0.1-13|
+|libnfsidmap|1:2.3.3-59|
+|libnftnl|1.1.5-5|
+|libnghttp2|1.33.0-3.el8_3|
+|libnl3|3.7.0-1|
+|libnl3-cli|3.7.0-1|
+|libnma|1.8.38-1|
+|libnotify|0.7.7-6|
+|libnsl|2.28-225|
+|libnsl2|1.2.0-2.20180605git4a062cf|
+|liboauth|1.0.3-9|
+|libobjc|8.5.0-19|
+|libogg|2:1.3.2-10|
+|libosinfo|1.9.0-3|
+|libotf|0.9.13-11|
+|libpaper|1.1.24-22|
+|libpath_utils|0.2.1-40|
+|libpcap|14:1.9.1-5|
+|libpciaccess|0.14-1|
+|libpeas|1.22.0-6|
+|libpeas-gtk|1.22.0-6|
+|libpipeline|1.5.0-2|
+|libpkgconf|1.4.2-1|
+|libplist|2.0.0-10|
+|libpng|2:1.6.34-5|
+|libpng-devel|2:1.6.34-5|
+|libpng12|1.2.57-5|
+|libpq|13.5-1|
+|libpq-devel|13.5-1|
+|libproxy|0.4.15-5.2|
+|libpsl|0.20.2-6|
+|libpwquality|1.4.4-6|
+|libquadmath|8.5.0-18|
+|libquadmath-devel|8.5.0-18|
+|libquvi|0.9.4-12|
+|libquvi-scripts|0.9.20131130-9|
+|libraqm|0.7.0-4|
+|libraw1394|2.1.2-5|
+|librdmacm|41mlnx1-OFED.4.7.3.0.6|
+|librdmacm-devel|41mlnx1-OFED.4.7.3.0.6|
+|librdmacm-utils|41mlnx1-OFED.4.7.3.0.6|
+|libref_array|0.1.5-40|
+|librepo|1.14.2-4|
+|libreport-filesystem|2.9.5-15.el8.rocky.6|
+|libretls|3.7.0-1|
+|librsvg2|2.42.7-4|
+|librsvg2-devel|2.42.7-4|
+|libseccomp|2.5.2-1|
+|libsecret|0.18.6-1.el8.0|
+|libselinux|2.9-8|
+|libselinux-devel|2.9-8|
+|libselinux-utils|2.9-8|
+|libsemanage|2.9-9|
+|libsepol|2.9-3|
+|libsepol-devel|2.9-3|
+|libserf|1.3.9-9.module+el8.7|
+|libshout|2.2.2-19|
+|libsigsegv|2.11-5|
+|libsmartcols|2.32.1-42|
+|libsmbclient|4.17.5-3|
+|libsndfile|1.0.28-13|
+|libsolv|0.7.20-4|
+|libsoup|2.62.3-3|
+|libspatialite|5.0.0-1|
+|libsrtp|1.5.4-8|
+|libss|1.45.6-5|
+|libssh|0.9.6-10|
+|libssh-config|0.9.6-10|
+|libsss_autofs|2.8.2-3|
+|libsss_certmap|2.8.2-3|
+|libsss_idmap|2.8.2-3|
+|libsss_nss_idmap|2.8.2-3|
+|libsss_sudo|2.8.2-3|
+|libstdc++|8.5.0-18|
+|libstdc++-devel|8.5.0-18|
+|libstdc++-static|8.5.0-18|
+|libstemmer|0-10.585svn|
+|libsysfs|2.1.0-25|
+|libtalloc|2.3.4-1|
+|libtasn1|4.13-4|
+|libtdb|1.4.7-1|
+|libteam|1.31-4|
+|libtevent|0.13.0-1|
+|libthai|0.1.27-2|
+|libtheora|1:1.1.1-21|
+|libtiff|4.0.9-28|
+|libtiff-devel|4.0.9-28|
+|libtirpc|1.1.4-8|
+|libtirpc-devel|1.1.4-8|
+|libtool|2.4.6-25|
+|libtool-ltdl|2.4.6-25|
+|libtraceevent|1.5.3-1|
+|libudisks2|2.9.0-13|
+|libunistring|0.9.9-3|
+|libunwind|1.3.1-3|
+|libusb|1:0.1.5-12|
+|libusbmuxd|1.0.10-9|
+|libusbx|1.0.23-4|
+|libuser|0.62-25|
+|libutempter|1.1.6-14|
+|libuuid|2.32.1-42|
+|libuuid-devel|2.32.1-42|
+|libuv|1:1.41.1-1|
+|libv4l|1.14.2-3|
+|libverto|0.3.2-2|
+|libverto-devel|0.3.2-2|
+|libverto-libev|0.3.2-2|
+|libvisual|1:0.4.0-25|
+|libvorbis|1:1.3.6-2|
+|libvpx|1.7.0-8|
+|libwacom|1.6-3|
+|libwacom-data|1.6-3|
+|libwayland-client|1.21.0-1|
+|libwayland-cursor|1.21.0-1|
+|libwayland-egl|1.21.0-1|
+|libwayland-server|1.21.0-1|
+|libwbclient|4.17.5-3|
+|libwebp|1.0.0-8|
+|libwebp-devel|1.0.0-8|
+|libwmf-lite|0.2.9-8|
+|libwpe|1.10.0-4|
+|libxcb|1.13.1-1|
+|libxcb-devel|1.13.1-1|
+|libxcrypt|4.1.1-6|
+|libxcrypt-devel|4.1.1-6|
+|libxkbcommon|0.9.1-1|
+|libxkbcommon-x11|0.9.1-1|
+|libxkbfile|1.1.0-1|
+|libxklavier|5.4-11|
+|libxml2|2.9.7-16.el8_8|
+|libxml2-devel|2.9.7-16.el8_8|
+|libxshmfence|1.3-2|
+|libxslt|1.1.32-6|
+|libyaml|0.1.7-5|
+|libzstd|1.4.4-1|
+|linux-firmware|20230404-114.git2e92a49f|
+|llvm-libs|15.0.7-1.module+el8.8|
+|lmdb-libs|0.9.24-2|
+|logrotate|3.14.0-6|
+|lshell|0.9|
+|lshw|B.02.19.2-6|
+|lsof|4.93.2-1|
+|lsscsi|0.32-3|
+|lua|5.3.4-12|
+|lua-expat|1.3.0-12.el8|
+|lua-json|1.3.2-9|
+|lua-libs|5.3.4-12|
+|lua-lpeg|1.0.1-6|
+|lua-socket|3.0-0.17.rc1|
+|lz4-libs|1.8.3-3|
+|lzo|2.08-14|
+|m17n-db|1.8.0-3|
+|m17n-lib|1.8.0-2|
+|m4|1.4.18-7|
+|make|1:4.2.1-11|
+|man-db|2.7.6.1-18|
+|mariadb-connector-c|3.1.11-2|
+|mariadb-connector-c-config|3.1.11-2|
+|mariadb-connector-c-devel|3.1.11-2|
+|mariadb-devel|3:10.3.35-1.module+el8.6|
+|mcpp|2.7.2-20|
+|mdadm|4.2-7|
+|memcached|1.5.22-2|
+|memstrack|0.2.4-2|
+|mesa-dri-drivers|22.3.0-2|
+|mesa-filesystem|22.3.0-2|
+|mesa-libEGL|22.3.0-2|
+|mesa-libGL|22.3.0-2|
+|mesa-libGLU|9.0.0-15|
+|mesa-libGLU-devel|9.0.0-15|
+|mesa-libgbm|22.3.0-2|
+|mesa-libglapi|22.3.0-2|
+|mft|4.15|
+|microcode_ctl|4:20220809-2.20230214.1|
+|minizip|2.8.9-2|
+|mlnx-ethtool|5.4-1|
+|mlnx-fw-updater|4.9-7.1.0|
+|mlnx-iproute2|5.4.0-1|
+|mlnx-ofa_kernel|4.9-OFED.4.9.7.1.0.1|
+|mlnx-ofa_kernel-devel|4.9-OFED.4.9.7.1.0.1|
+|mlnx-ofa_kernel-modules|4.9-OFED.4.9.7.1.0.1.kver.4.18.0_477.21.1.el8_8|
+|mlnxofed-docs|4.9-7.1.0|
+|mobile-broadband-provider-info|20210805-1|
+|mokutil|1:0.3.0-12|
+|moreutils|0.63-1|
+|motif|2.3.4-19|
+|motif-devel|2.3.4-19|
+|motif-static|2.3.4-19|
+|mozjs60|60.9.0-4|
+|mpfr|3.1.6-1|
+|mpfr-devel|3.1.6-1|
+|mpg123-libs|1.25.10-2|
+|mpi-selector|1.0.3-1|
+|mpitests_openmpi|3.2.20-e1a0676|
+|mstflint|4.14.0-3|
+|mtdev|1.1.5-12|
+|munge|0.5.13-2|
+|munge-libs|0.5.13-2|
+|mutter|3.32.2-70|
+|nano|2.9.8-1|
+|nautilus|3.28.1-23|
+|nautilus-extensions|3.28.1-23|
+|ncurses|6.1-9.20180224|
+|ncurses-base|6.1-9.20180224|
+|ncurses-c++-libs|6.1-9.20180224|
+|ncurses-compat-libs|6.1-9.20180224|
+|ncurses-devel|6.1-9.20180224|
+|ncurses-libs|6.1-9.20180224|
+|net-tools|2.0-0.52.20160912git|
+|netcat|1.225-1|
+|netcdf|4.7.0-3|
+|netcdf-devel|4.7.0-3|
+|nettle|3.4.1-7|
+|newt|0.52.20-11|
+|nfs-utils|1:2.3.3-59|
+|nfs4-acl-tools|0.3.5-3|
+|nftables|1:0.9.3-26|
+|nm-connection-editor|1.26.0-1|
+|nmap-ncat|2:7.70-8|
+|npth|1.5-4|
+|nspr|4.34.0-3|
+|nss|3.79.0-11|
+|nss-softokn|3.79.0-11|
+|nss-softokn-freebl|3.79.0-11|
+|nss-sysinit|3.79.0-11|
+|nss-util|3.79.0-11|
+|numactl|2.0.12-13|
+|numactl-devel|2.0.12-13|
+|numactl-libs|2.0.12-13|
+|ocaml-srpm-macros|5-4|
+|ofed-scripts|4.9-OFED.4.9.7.1|
+|ogdi|4.1.0-1|
+|openblas|0.3.15-6|
+|openblas-devel|0.3.15-6|
+|openblas-openmp|0.3.15-6|
+|openblas-openmp64|0.3.15-6|
+|openblas-openmp64_|0.3.15-6|
+|openblas-serial64|0.3.15-6|
+|openblas-serial64_|0.3.15-6|
+|openblas-srpm-macros|2-2|
+|openblas-static|0.3.15-6|
+|openblas-threads|0.3.15-6|
+|openblas-threads64|0.3.15-6|
+|openblas-threads64_|0.3.15-6|
+|openjpeg2|2.4.0-5|
+|openldap|2.4.46-18|
+|openldap-clients|2.4.46-18|
+|openldap-devel|2.4.46-18|
+|openmpi|4.0.3rc4-1|
+|opensm|5.7.2.MLNX20201014.9378048-0.1|
+|opensm-devel|5.7.2.MLNX20201014.9378048-0.1|
+|opensm-libs|5.7.2.MLNX20201014.9378048-0.1|
+|opensm-static|5.7.2.MLNX20201014.9378048-0.1|
+|openssh|8.0p1-19|
+|openssh-clients|8.0p1-19|
+|openssh-server|8.0p1-19|
+|openssl|1:1.1.1k-9|
+|openssl-devel|1:1.1.1k-9|
+|openssl-libs|1:1.1.1k-9|
+|openssl-pkcs11|0.4.10-3|
+|opus|1.3-0.4.beta|
+|orc|0.4.28-3|
+|os-prober|1.74-9|
+|osinfo-db|20220727-2|
+|osinfo-db-tools|1.9.0-1|
+|ostree-libs|2022.2-6|
+|p11-kit|0.23.22-1|
+|p11-kit-server|0.23.22-1|
+|p11-kit-trust|0.23.22-1|
+|p7zip|16.02-20|
+|p7zip-plugins|16.02-20|
+|pam|1.3.1-25|
+|pam_duo|1.12.1-5|
+|pango|1.42.4-8|
+|pango-devel|1.42.4-8|
+|parted|3.2-39|
+|passwd|0.80-4|
+|patch|2.7.6-11|
+|pciutils|3.7.0-3|
+|pciutils-libs|3.7.0-3|
+|pcre|8.42-6|
+|pcre-cpp|8.42-6|
+|pcre-devel|8.42-6|
+|pcre-utf16|8.42-6|
+|pcre-utf32|8.42-6|
+|pcre2|10.32-3|
+|pcre2-devel|10.32-3|
+|pcre2-utf16|10.32-3|
+|pcre2-utf32|10.32-3|
+|pdsh|2.34-5|
+|pdsh-rcmd-ssh|2.34-5|
+|perf|4.18.0-477.21.1|
+|perftest|4.5.0.mlnxlibs-0.3.g1121951.49417|
+|perl|4:5.26.3-422|
+|perl-Algorithm-Diff|1.1903-9|
+|perl-Archive-Tar|2.30-1|
+|perl-Archive-Zip|1.60-3|
+|perl-Attribute-Handlers|0.99-422|
+|perl-B-Debug|1.26-2|
+|perl-CPAN|2.18-397|
+|perl-CPAN-Meta|2.150010-396|
+|perl-CPAN-Meta-Requirements|2.140-396|
+|perl-CPAN-Meta-YAML|0.018-397|
+|perl-Carp|1.42-396|
+|perl-Compress-Bzip2|2.26-6|
+|perl-Compress-Raw-Bzip2|2.081-1|
+|perl-Compress-Raw-Zlib|2.081-1|
+|perl-Config-Perl-V|0.30-1|
+|perl-DB_File|1.842-1|
+|perl-Data-Dumper|2.167-399|
+|perl-Data-OptList|0.110-6|
+|perl-Data-Section|0.200007-3|
+|perl-Devel-PPPort|3.36-5|
+|perl-Devel-Peek|1.26-422|
+|perl-Devel-SelfStubber|1.06-422|
+|perl-Devel-Size|0.81-2|
+|perl-Digest|1.17-395|
+|perl-Digest-MD5|2.55-396|
+|perl-Digest-SHA|1:6.02-1|
+|perl-Encode|4:2.97-3|
+|perl-Encode-Locale|1.05-10.module+el8.6|
+|perl-Encode-devel|4:2.97-3|
+|perl-Env|1.04-395|
+|perl-Errno|1.28-422|
+|perl-Error|1:0.17025-2|
+|perl-Exporter|5.72-396|
+|perl-ExtUtils-CBuilder|1:0.280230-2|
+|perl-ExtUtils-Command|1:7.34-1|
+|perl-ExtUtils-Embed|1.34-422|
+|perl-ExtUtils-Install|2.14-4|
+|perl-ExtUtils-MM-Utils|1:7.34-1|
+|perl-ExtUtils-MakeMaker|1:7.34-1|
+|perl-ExtUtils-Manifest|1.70-395|
+|perl-ExtUtils-Miniperl|1.06-422|
+|perl-ExtUtils-ParseXS|1:3.35-2|
+|perl-File-Fetch|0.56-2|
+|perl-File-HomeDir|1.002-4|
+|perl-File-Path|2.15-2|
+|perl-File-Temp|0.230.600-1|
+|perl-File-Which|1.22-2|
+|perl-Filter|2:1.58-2|
+|perl-Filter-Simple|0.94-2|
+|perl-Getopt-Long|1:2.50-4|
+|perl-Git|2.39.3-1|
+|perl-HTTP-Tiny|0.074-1|
+|perl-IO|1.38-422|
+|perl-IO-Compress|2.081-1|
+|perl-IO-Socket-IP|0.39-5|
+|perl-IO-Socket-SSL|2.066-4.module+el8.6|
+|perl-IO-Tty|1.12-11|
+|perl-IO-Zlib|1:1.10-422|
+|perl-IPC-Cmd|2:1.02-1|
+|perl-IPC-Run|0.99-1|
+|perl-IPC-SysV|2.07-397|
+|perl-IPC-System-Simple|1.25-17|
+|perl-JSON-PP|1:2.97.001-3|
+|perl-Locale-Codes|3.57-1|
+|perl-Locale-Maketext|1.28-396|
+|perl-Locale-Maketext-Simple|1:0.21-422|
+|perl-MIME-Base64|3.15-396|
+|perl-MRO-Compat|0.13-4|
+|perl-Math-BigInt|1:1.9998.11-7|
+|perl-Math-BigInt-FastCalc|0.500.600-6|
+|perl-Math-BigRat|0.2614-1|
+|perl-Math-Complex|1.59-422|
+|perl-Memoize|1.03-422|
+|perl-Module-Build|2:0.42.24-5|
+|perl-Module-CoreList|1:5.20181130-1|
+|perl-Module-CoreList-tools|1:5.20181130-1|
+|perl-Module-Load|1:0.32-395|
+|perl-Module-Load-Conditional|0.68-395|
+|perl-Module-Loaded|1:0.08-422|
+|perl-Module-Metadata|1.000033-395|
+|perl-Mozilla-CA|20160104-7.module+el8.6|
+|perl-Net-Ping|2.55-422|
+|perl-Net-SSLeay|1.88-2.module+el8.6|
+|perl-Package-Generator|1.106-11|
+|perl-Params-Check|1:0.38-395|
+|perl-Params-Util|1.07-22|
+|perl-PathTools|3.74-1|
+|perl-Perl-OSType|1.010-396|
+|perl-PerlIO-via-QuotedPrint|0.08-395|
+|perl-Pod-Checker|4:1.73-395|
+|perl-Pod-Escapes|1:1.07-395|
+|perl-Pod-Html|1.22.02-422|
+|perl-Pod-Parser|1.63-396|
+|perl-Pod-Perldoc|3.28-396|
+|perl-Pod-Simple|1:3.35-395|
+|perl-Pod-Usage|4:1.69-395|
+|perl-Scalar-List-Utils|3:1.49-2|
+|perl-SelfLoader|1.23-422|
+|perl-Socket|4:2.027-3|
+|perl-Software-License|0.103013-2|
+|perl-Storable|1:3.11-3|
+|perl-Sub-Exporter|0.987-15|
+|perl-Sub-Install|0.928-14|
+|perl-Sys-Syslog|0.35-397|
+|perl-Term-ANSIColor|4.06-396|
+|perl-Term-Cap|1.17-395|
+|perl-TermReadKey|2.37-7|
+|perl-Test|1.30-422|
+|perl-Test-Harness|1:3.42-1|
+|perl-Test-Simple|1:1.302135-1|
+|perl-Text-Balanced|2.03-395|
+|perl-Text-Diff|1.45-2|
+|perl-Text-Glob|0.11-4|
+|perl-Text-ParseWords|3.30-395|
+|perl-Text-Tabs+Wrap|2013.0523-395|
+|perl-Text-Template|1.51-1|
+|perl-Text-Unidecode|1.30-5|
+|perl-Thread-Queue|3.13-1|
+|perl-Time-Duration|1.21-3|
+|perl-Time-HiRes|4:1.9758-2|
+|perl-Time-Local|1:1.280-1|
+|perl-Time-Piece|1.31-422|
+|perl-TimeDate|1:2.30-15.module+el8.6|
+|perl-URI|1.73-3|
+|perl-Unicode-Collate|1.25-2|
+|perl-Unicode-Normalize|1.25-396|
+|perl-XML-Parser|2.44-11|
+|perl-XML-XPath|1.42-3|
+|perl-autodie|2.29-396|
+|perl-bignum|0.49-2|
+|perl-constant|1.33-396|
+|perl-devel|4:5.26.3-422|
+|perl-encoding|4:2.22-3|
+|perl-experimental|0.019-2|
+|perl-inc-latest|2:0.500-9|
+|perl-interpreter|4:5.26.3-422|
+|perl-libnet|3.11-3|
+|perl-libnetcfg|4:5.26.3-422|
+|perl-libs|4:5.26.3-422|
+|perl-local-lib|2.000024-2|
+|perl-macros|4:5.26.3-422|
+|perl-open|1.11-422|
+|perl-parent|1:0.237-1|
+|perl-perlfaq|5.20180605-1|
+|perl-podlators|4.11-1|
+|perl-srpm-macros|1-25|
+|perl-threads|1:2.21-2|
+|perl-threads-shared|1.58-2|
+|perl-utils|5.26.3-422|
+|perl-version|6:0.99.24-1|
+|pigz|2.4-4|
+|pinentry|1.1.0-2|
+|pinentry-gtk|1.1.0-2|
+|pipewire|0.3.6-1|
+|pipewire-libs|0.3.6-1|
+|pixman|0.38.4-2|
+|pixman-devel|0.38.4-2|
+|pkgconf|1.4.2-1|
+|pkgconf-m4|1.4.2-1|
+|pkgconf-pkg-config|1.4.2-1|
+|platform-python|3.6.8-51.el8_8.1.rocky|
+|platform-python-devel|3.6.8-51.el8_8.1.rocky|
+|platform-python-pip|9.0.3-22.el8.rocky|
+|platform-python-setuptools|39.2.0-7|
+|plymouth|0.9.4-11.20200615git1e36e30|
+|plymouth-core-libs|0.9.4-11.20200615git1e36e30|
+|plymouth-scripts|0.9.4-11.20200615git1e36e30|
+|policycoreutils|2.9-24|
+|policycoreutils-python-utils|2.9-24|
+|polkit|0.115-15|
+|polkit-libs|0.115-15|
+|polkit-pkla-compat|0.1-12|
+|poppler|20.11.0-6|
+|poppler-data|0.4.9-1|
+|poppler-glib|20.11.0-6|
+|popt|1.18-1|
+|prefixdevname|0.1.0-6|
+|procps-ng|3.3.15-13|
+|proj|6.3.2-4|
+|proj-datumgrid|1.8-6.3.2.4|
+|proj-devel|6.3.2-4|
+|protobuf|3.5.0-15|
+|protobuf-c|1.3.0-6|
+|protobuf-compiler|3.5.0-15|
+|protobuf-devel|3.5.0-15|
+|protobuf-lite|3.5.0-15|
+|protobuf-lite-devel|3.5.0-15|
+|psmisc|23.1-5|
+|publicsuffix-list-dafsa|20180723-1|
+|pulseaudio|14.0-4|
+|pulseaudio-libs|14.0-4|
+|pulseaudio-libs-glib2|14.0-4|
+|pulseaudio-module-bluetooth|14.0-4|
+|python-rpm-macros|3-45|
+|python-srpm-macros|3-45|
+|python2|2.7.18-13.module+el8.8.0+1314+be03569e.1.rocky.0|
+|python2-libs|2.7.18-13.module+el8.8.0+1314+be03569e.1.rocky.0|
+|python2-pip|9.0.3-19.module+el8.6|
+|python2-pip-wheel|9.0.3-19.module+el8.6|
+|python2-setuptools|39.0.1-13.module+el8.4|
+|python2-setuptools-wheel|39.0.1-13.module+el8.4|
+|python3-audit|3.0.7-4|
+|python3-bind|32:9.11.36-8.el8_8|
+|python3-cairo|1.16.3-6|
+|python3-chardet|3.0.4-7|
+|python3-cups|1.9.72-21.el8|
+|python3-dateutil|1:2.6.1-6|
+|python3-dbus|1.2.4-15|
+|python3-decorator|4.2.1-2|
+|python3-dnf|4.7.0-16|
+|python3-dnf-plugins-core|4.0.21-19|
+|python3-firewall|0.9.3-13|
+|python3-gobject|3.28.3-2|
+|python3-gobject-base|3.28.3-2|
+|python3-gpg|1.13.1-11|
+|python3-hawkey|0.63.0-14|
+|python3-idna|2.5-5|
+|python3-libcomps|0.1.18-1|
+|python3-libdnf|0.63.0-14|
+|python3-libs|3.6.8-51.el8_8.1.rocky|
+|python3-libselinux|2.9-8|
+|python3-libsemanage|2.9-9|
+|python3-linux-procfs|0.7.1-1|
+|python3-nftables|1:0.9.3-26|
+|python3-perf|4.18.0-477.21.1|
+|python3-pip|9.0.3-22.el8.rocky|
+|python3-pip-wheel|9.0.3-22.el8.rocky|
+|python3-ply|3.9-9|
+|python3-policycoreutils|2.9-24|
+|python3-pycurl|7.43.0.2-4|
+|python3-pyparsing|2.1.10-7|
+|python3-pysocks|1.6.8-3|
+|python3-pyudev|0.21.0-7|
+|python3-pyyaml|3.12-12|
+|python3-requests|2.20.0-2.1|
+|python3-rpm|4.14.3-26|
+|python3-rpm-generators|5-8|
+|python3-rpm-macros|3-45|
+|python3-setools|4.3.0-3|
+|python3-setuptools|39.2.0-7|
+|python3-setuptools-wheel|39.2.0-7|
+|python3-six|1.11.0-8|
+|python3-slip|0.6.4-13|
+|python3-slip-dbus|0.6.4-13|
+|python3-sssdconfig|2.8.2-3|
+|python3-syspurpose|1.28.36-2|
+|python3-systemd|234-8|
+|python3-unbound|1.16.2-5|
+|python3-urllib3|1.24.2-5|
+|python36|3.6.8-38.module+el8.5|
+|python36-devel|3.6.8-38.module+el8.5|
+|qperf|0.4.11-1|
+|qt5-qtbase|5.15.3-1|
+|qt5-qtbase-common|5.15.3-1|
+|qt5-qtbase-gui|5.15.3-1|
+|qt5-qtsvg|5.15.3-1|
+|qt5-srpm-macros|5.15.3-1|
+|quota|1:4.04-14|
+|quota-nls|1:4.04-14|
+|readline|7.0-10|
+|readline-devel|7.0-10|
+|redhat-rpm-config|131-1|
+|rest|0.8.1-2|
+|rocky-backgrounds|86.3-1|
+|rocky-gpg-keys|8.8-1.8|
+|rocky-logos|86.3-1|
+|rocky-release|8.8-1.8|
+|rocky-repos|8.8-1.8|
+|rootfiles|8.1-22|
+|rpcbind|1.2.5-10|
+|rpm|4.14.3-26|
+|rpm-build|4.14.3-26|
+|rpm-build-libs|4.14.3-26|
+|rpm-libs|4.14.3-26|
+|rpm-plugin-selinux|4.14.3-26|
+|rpm-plugin-systemd-inhibit|4.14.3-26|
+|rsync|3.1.3-19.el8_7|
+|rsyslog|8.2102.0-13|
+|rtkit|0.11-19|
+|rust-srpm-macros|5-2|
+|samba-client-libs|4.17.5-3|
+|samba-common|4.17.5-3|
+|samba-common-libs|4.17.5-3|
+|sbc|1.3-9|
+|scl-utils|1:2.0.2-16|
+|screen|4.6.2-12|
+|sed|4.5-5|
+|selinux-policy|3.14.3-117.el8_8|
+|selinux-policy-targeted|3.14.3-117.el8_8|
+|setup|2.12.2-9|
+|sg3_utils|1.44-6|
+|sg3_utils-libs|1.44-6|
+|shadow-utils|2:4.6-17|
+|shapelib|1.5.0-12|
+|shared-mime-info|1.9-3|
+|sharp|2.1.2.MLNX20200428.ddda184-1|
+|slang|2.3.2-3|
+|smem|1.5-6|
+|snappy|1.1.8-3|
+|sound-theme-freedesktop|0.8-9|
+|soundtouch|2.0.0-3|
+|source-highlight|3.1.8-17|
+|speex|1.2.0-1|
+|speexdsp|1.2-0.13.rc3|
+|sqlite|3.26.0-18|
+|sqlite-devel|3.26.0-18|
+|sqlite-libs|3.26.0-18|
+|squashfs-tools|4.3-20|
+|srp|4.9-OFED.4.9.7.1.0.1.kver.4.18.0_477.21.1.el8_8|
+|srptools|41mlnx1-5|
+|sssd|2.8.2-3|
+|sssd-ad|2.8.2-3|
+|sssd-client|2.8.2-3|
+|sssd-common|2.8.2-3|
+|sssd-common-pac|2.8.2-3|
+|sssd-ipa|2.8.2-3|
+|sssd-kcm|2.8.2-3|
+|sssd-krb5|2.8.2-3|
+|sssd-krb5-common|2.8.2-3|
+|sssd-ldap|2.8.2-3|
+|sssd-nfs-idmap|2.8.2-3|
+|sssd-proxy|2.8.2-3|
+|startup-notification|0.12-15|
+|subversion|1.10.2-5.module+el8.7|
+|subversion-libs|1.10.2-5.module+el8.7|
+|sudo|1.8.29-10|
+|switcheroo-control|1.1-5|
+|system-config-printer-libs|1.5.11-13|
+|systemd|239-74.el8_8|
+|systemd-libs|239-74.el8_8|
+|systemd-pam|239-74.el8_8|
+|systemd-udev|239-74.el8_8|
+|systemtap-sdt-devel|4.8-2|
+|taglib|1.11.1-8|
+|tar|2:1.30-9|
+|tbb|2018.2-9|
+|tcl|1:8.6.8-2|
+|tcl-devel|1:8.6.8-2|
+|tcsh|6.20.00-15|
+|teamd|1.31-4|
+|texlive-base|7:20180414-29|
+|texlive-kpathsea|7:20180414-29|
+|texlive-lib|7:20180414-29|
+|texlive-tetex|7:20180414-29|
+|texlive-texlive|7:20180414-29|
+|tigervnc-license|1.12.0-15|
+|tigervnc-selinux|1.12.0-15|
+|tigervnc-server|1.12.0-15|
+|tigervnc-server-minimal|1.12.0-15|
+|time|1.9-3|
+|timedatex|0.5-3|
+|tk|1:8.6.8-1|
+|tk-devel|1:8.6.8-1|
+|totem-pl-parser|3.26.1-2|
+|tpm2-tss|2.3.2-4|
+|tracker|2.1.5-2|
+|tracker-miners|2.1.5-1|
+|tree|1.7.0-15|
+|trousers|0.3.15-1|
+|trousers-lib|0.3.15-1|
+|tuned|2.20.0-1|
+|twolame-libs|0.3.13-12|
+|tzdata|2023c-1|
+|ucx|1.8.0-1|
+|ucx-cma|1.8.0-1|
+|ucx-devel|1.8.0-1|
+|ucx-ib|1.8.0-1|
+|ucx-ib-cm|1.8.0-1|
+|ucx-knem|1.8.0-1|
+|ucx-rdmacm|1.8.0-1|
+|udisks2|2.9.0-13|
+|udunits2|2.2.26-5|
+|udunits2-devel|2.2.26-5|
+|unbound-libs|1.16.2-5|
+|unixODBC|2.3.7-1|
+|unzip|6.0-46|
+|upower|0.99.7-4|
+|uriparser|0.9.7-1|
+|urw-base35-bookman-fonts|20170801-10|
+|urw-base35-c059-fonts|20170801-10|
+|urw-base35-d050000l-fonts|20170801-10|
+|urw-base35-fonts|20170801-10|
+|urw-base35-fonts-common|20170801-10|
+|urw-base35-gothic-fonts|20170801-10|
+|urw-base35-nimbus-mono-ps-fonts|20170801-10|
+|urw-base35-nimbus-roman-fonts|20170801-10|
+|urw-base35-nimbus-sans-fonts|20170801-10|
+|urw-base35-p052-fonts|20170801-10|
+|urw-base35-standard-symbols-ps-fonts|20170801-10|
+|urw-base35-z003-fonts|20170801-10|
+|usbutils|010-3|
+|utf8proc|2.6.1-3.module+el8.7|
+|util-linux|2.32.1-42|
+|uuid|1.6.2-43|
+|vim-common|2:8.0.1763-19.el8_6|
+|vim-enhanced|2:8.0.1763-19.el8_6|
+|vim-filesystem|2:8.0.1763-19.el8_6|
+|vim-minimal|2:8.0.1763-19.el8_6|
+|vino|3.22.0-11|
+|virt-what|1.25-3|
+|volume_key-libs|0.3.11-5|
+|vte-profile|0.52.4-2|
+|vte291|0.52.4-2|
+|wavpack|5.1.0-16|
+|webkit2gtk3|2.38.5-1.el8_8|
+|webkit2gtk3-jsc|2.38.5-1.el8_8|
+|webrtc-audio-processing|0.3-10|
+|wget|1.19.5-11|
+|which|2.21-18|
+|woff2|1.0.2-5|
+|wpa_supplicant|1:2.10-1|
+|wpebackend-fdo|1.10.0-3|
+|xcb-util|0.4.0-10|
+|xcb-util-image|0.4.0-9|
+|xcb-util-keysyms|0.4.0-7|
+|xcb-util-renderutil|0.3.9-10|
+|xcb-util-wm|0.4.1-12|
+|xdg-desktop-portal|1.8.1-1|
+|xdg-desktop-portal-gtk|1.8.0-1|
+|xdg-utils|1.1.2-5|
+|xerces-c|3.2.3-5|
+|xfsprogs|5.0.0-11|
+|xkeyboard-config|2.28-1|
+|xml-common|0.6.3-50|
+|xorg-x11-apps|7.7-21|
+|xorg-x11-drv-fbdev|0.5.0-2|
+|xorg-x11-drv-libinput|0.29.0-1|
+|xorg-x11-drv-vesa|2.4.0-3|
+|xorg-x11-font-utils|1:7.5-41|
+|xorg-x11-fonts-ISO8859-1-100dpi|7.5-19|
+|xorg-x11-fonts-misc|7.5-19|
+|xorg-x11-proto-devel|2020.1-3|
+|xorg-x11-server-Xorg|1.20.11-15|
+|xorg-x11-server-Xvfb|1.20.11-15|
+|xorg-x11-server-Xwayland|21.1.3-10|
+|xorg-x11-server-common|1.20.11-15|
+|xorg-x11-server-utils|7.7-27|
+|xorg-x11-xauth|1:1.0.9-12|
+|xorg-x11-xbitmaps|1.1.1-13|
+|xorg-x11-xinit|1.3.4-18|
+|xorg-x11-xkb-utils|7.7-28|
+|xterm|331-1.el8_3|
+|xterm-resize|331-1.el8_3|
+|xz|5.2.4-4|
+|xz-devel|5.2.4-4|
+|xz-libs|5.2.4-4|
+|yasm|1.3.0-7|
+|yum|4.7.0-16|
+|zenity|3.28.1-2|
+|zip|3.0-23|
+|zlib|1.2.11-21|
+|zlib-devel|1.2.11-21|
+|zsh|5.5.1-10|
+|zstd|1.4.4-1|
