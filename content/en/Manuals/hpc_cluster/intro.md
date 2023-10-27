@@ -46,13 +46,15 @@ All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this a
 ### Worker Nodes
 * Batch
     * c01-c48: each with 64 AMD cores and 512 GB memory
+* Intel
+    * i01-i40: each with 32 Intel Broadwell cores and 512 GB memory
+* Epyc
+    * r21-r38: each with 64 AMD EPYC cores and 1 TB memory
 * Highmem
     * h01-h06: each with 32 Intel cores and 1024 GB memory
 * GPU
-    * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Kepler K80 GPUs (2496 CUDA cores per GPU) and 128 GB memory
-    * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (2496 CUDA cores per GPU) and 512 GB memory
-    * gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (3584 CUDA cores per GPU) and 256 GB memory
-    * gpu06: 64 (HT) cores AMD EPYC Milan CPUs and 8 x NVIDIA Ampere A100 GPUs (6912 CUDA cores per GPU) and 1 TB memory
-* Intel
-    * i01-i40: each with 32 Intel Broadwell cores and 512 GB memory
+    * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Kepler K80 GPUs (12GB and 2496 CUDA cores per GPU) and 128 GB memory
+    * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
+    * gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory
+    * gpu06-gpu08: with 64-128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory
 
