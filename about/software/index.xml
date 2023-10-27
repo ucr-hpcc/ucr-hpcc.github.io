@@ -9086,20 +9086,12 @@ installed, users want to consult the software listing
 &lt;td>16&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Intel Parallel Suite (replaced by OneAPI)&lt;/td>
-&lt;td>2018&lt;/td>
-&lt;/tr>
-&lt;tr>
 &lt;td>Mathematica&lt;/td>
-&lt;td>12.1&lt;/td>
+&lt;td>12.3.1&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>MATLAB&lt;/td>
-&lt;td>R2020b&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SAS&lt;/td>
-&lt;td>9.4&lt;/td>
+&lt;td>R2021b&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
