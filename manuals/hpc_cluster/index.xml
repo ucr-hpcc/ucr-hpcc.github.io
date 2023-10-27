@@ -628,45 +628,45 @@ mpirun maker # Provide appropriate maker options here
 &lt;p>Start times are rough estimates based on the current state of the queue.&lt;/p>
 &lt;h2 id="partition-quotas">Partition Quotas&lt;/h2>
 &lt;p>Each partition has a specific usecase. Below outlines each partition, it&amp;rsquo;s usecase, as well as any job/user/group limits that are in place.
-Empty boxes imply no limit, but is still limited by the next higher limit.&lt;/p>
+Empty boxes imply no limit, but is still limited by the next higher limit. Job limits are capped by user limits, and user limits are capped by group limits.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th>Partition Name&lt;/th>
 &lt;th>Usecase&lt;/th>
-&lt;th>Per-Job Limit&lt;/th>
-&lt;th>Per-User Limit&lt;/th>
 &lt;th>Per-Group Limit&lt;/th>
+&lt;th>Per-User Limit&lt;/th>
+&lt;th>Per-Job Limit&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
 &lt;td>batch&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>128GB memory per Core&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>128GB memory per Core&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>intel&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>128GB memory per Core&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>128GB memory per Core&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>epyc&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>128GB memory per Core&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>128GB memory per Core&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>short&lt;/td>
 &lt;td>Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>128GB memory per Core, 2-hour time limit&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>128GB memory per Core, 2-hour time limit&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>highmem&lt;/td>
@@ -678,9 +678,9 @@ Empty boxes imply no limit, but is still limited by the next higher limit.&lt;/p
 &lt;tr>
 &lt;td>gpu&lt;/td>
 &lt;td>GPU-Enabled Workloads&lt;/td>
-&lt;td>16 Cores, 256GB memory&lt;/td>
-&lt;td>48 Cores, 512GB memory&lt;/td>
 &lt;td>8 GPUs&lt;/td>
+&lt;td>48 Cores, 512GB memory&lt;/td>
+&lt;td>16 Cores, 256GB memory&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
