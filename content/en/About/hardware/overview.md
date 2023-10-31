@@ -11,10 +11,10 @@ aliases:
 
 ## Computer cluster
 
-* Over 6,500 CPU cores (60% Intel, 40% AMD)
+* Over 16,000 CPU cores (60% AMD, 40% Intel)
 * 512-1024GB RAM per node
-* GPU: 6x K80, 2x P100, 8x A100 
-* IB network @ 56Gbs
+* GPU: 24x K80, 2x P100, 24x A100
+* IB network @ 56Gbs - 200Gbps
 * Queueing system Slurm
 
 ## Parallel data storage system
