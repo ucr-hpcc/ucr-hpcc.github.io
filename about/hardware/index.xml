@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Hardware</title><link>https://hpcc.ucr.edu/about/hardware/</link><description>Recent content in Hardware on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/about/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>About: Hardware Overview</title><link>https://hpcc.ucr.edu/about/hardware/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/hardware/overview/</guid><description>
 &lt;h2 id="computer-cluster">Computer cluster&lt;/h2>
 &lt;ul>
-&lt;li>Over 6,500 CPU cores (60% Intel, 40% AMD)&lt;/li>
+&lt;li>Over 16,000 CPU cores (60% AMD, 40% Intel)&lt;/li>
 &lt;li>512-1024GB RAM per node&lt;/li>
-&lt;li>GPU: 6x K80, 2x P100, 8x A100&lt;/li>
-&lt;li>IB network @ 56Gbs&lt;/li>
+&lt;li>GPU: 24x K80, 2x P100, 24x A100&lt;/li>
+&lt;li>IB network @ 56Gbs - 200Gbps&lt;/li>
 &lt;li>Queueing system Slurm&lt;/li>
 &lt;/ul>
 &lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
