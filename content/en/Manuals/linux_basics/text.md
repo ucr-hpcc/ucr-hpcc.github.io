@@ -142,3 +142,58 @@ This involves the following steps.
 
 The steps for launching an interactive job can be integrated into a script and submitted non-interactvely for a quicker deployment of a `RStudio Server` instance on a compute node.
 Instructions outling how to do this are located [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive).
+
+## Jupyter Server
+
+Two options exist to access [JupyterLab](https://jupyter.org/):
+
+  1. [Web Instance](#1-jupyter-web-instance)
+  2. [Compute Node Instance](#2-jupyter-compute-node-instance)
+
+### 1. Jupyter Web Instance
+
+Users can log into their HPCC accounts via the JupyterHub server instance. To do so, visit the [HPCC JupyterHub server](https://jupyter.hpcc.ucr.edu/). Next provide your HPCC login credentials and click the `Sign In` button.
+
+Account changes can sometimes lead to users needing to restart active cluster sessions, and Jupyter is no different. To restart your Jupyter session, from the "File" tab click "Hub Control Panel". From the new screen click "Stop My Server", then "Start My Server". After a few seconds your session will be restarted.
+
+### 2. Jupyter Compute Node Instance
+
+#### Steps
+
+First, start an interactive session on a compute node
+
+```
+srun -p epyc -t 4:00:00 -c 4 --mem=10GB --pty bash -l    # Customize as needed
+```
+
+After your job has been scheduled, activate the jupyterlab module and start the server.
+
+```
+module load jupyterlab/
+start-jupyter.sh
+```
+
+A fed seconds after running `start-jupyter.sh` it will prompt you for a password. Enter a password that you would like to use to access the notebook.
+NOTE: Text will not show up when you type your password, this is expected.
+
+![jupyter start](/img/jupyter1.png)
+
+After entering a password, it will print some text guiding you on creating a tunnel.
+
+![jupyter info](/img/jupyter2.png)
+
+**NOTE: The port and node will likely be different than pictured. This is expected, and unique to each session.**
+
+As the text suggests, enter the `ssh -NL` command in your terminal or setup MobaXTerm with the supplied details. If using the `ssh` method, the **terminal is expected to hang after logging in and no further output should be generated.**
+
+After a few seconds the server will start. At this point you can navigate to "http://127.0.0.1:PORT/lab" on your local machine, **replacing PORT with the port assigned when running the `start-jupyter.sh` command (9345 in the example above).
+
+#### Logging In
+
+After navigating to the login page, you will be prompted for the password you originally gave the notebook.
+
+After logging in, you can use the notebook as you would on our hosted JupyterLab server.
+
+#### Shutting Down
+
+When you are finished with your session, you can stop the Jupyter server from running by going to "File > Shut Down" in the notebook, or by entering Ctrl+C in the terminal window.
