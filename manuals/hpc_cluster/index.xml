@@ -427,7 +427,7 @@ Leave this session connected, if you close it your tunnel will be closed.&lt;/p>
 &lt;h4 id="examples">Examples&lt;/h4>
 &lt;ol>
 &lt;li>
-&lt;p>A perfect example of this method is used for Jupyter Lab/Notebook. For more details please refer to the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/jupyterlab/">JupyterLab Usage&lt;/a> page.&lt;/p>
+&lt;p>A perfect example of this method is used for Jupyter Lab/Notebook. For more details please refer to the &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server">JupyterLab Usage&lt;/a> page.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>RStudio Server instances can also be started directly on a compute node and accessed via an SSH tunnel. For details see &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance">here&lt;/a>.&lt;/p>
