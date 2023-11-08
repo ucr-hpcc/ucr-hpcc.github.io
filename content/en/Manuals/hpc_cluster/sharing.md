@@ -186,6 +186,8 @@ The sever2.xyz.edu machine must be a server that accepts Rsync connections via S
 
 ## Sharing Files on the Web
 
+> Note: This is not intended to be used as a long-term solution or referenced in publications. It should be used for internal project purposes only. A long-term solution is required, please use a web or cloud-based installation.
+
 Simply create a symbolic link or move the files into your html directory when you want to share them.
 For exmaple, log into the HPC cluster and run the following:
 
@@ -210,6 +212,12 @@ ln -s ~/www-project ~/.html/
 
 Now, test it out by pointing your web-browser to https://cluster.hpcc.ucr.edu/~username/www-project/
 Be sure to replace `username` with your actual user name. **The forward slash at the end is important.**
+
+### Common Problems
+
+#### "403 Forbidden" / You don't have permissions
+
+If using a symbolic link to data stored elsewhere on the cluster, every folder in the tree leading up to the shared folder must, at a minimum, have the execute permission (`chmod a+x folder_name`). For example, if you have a symbolic link to `/bigdata/mylab/myuser/data/web-content`, then `myuser`, `data`, and `web-content` must all have the execute permission (`bigdata` and `mylab` should already have them).
 
 ## Password Protect Web Pages
 
