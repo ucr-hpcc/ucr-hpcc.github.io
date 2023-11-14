@@ -54,6 +54,7 @@ In order to submit a job to different partitions add the optional '-p' parameter
 ```bash
 sbatch -p batch SBATCH_SCRIPT.sh
 sbatch -p highmem SBATCH_SCRIPT.sh
+sbatch -p epyc SBATCH_SCRIPT.sh
 sbatch -p gpu SBATCH_SCRIPT.sh
 sbatch -p intel SBATCH_SCRIPT.sh
 sbatch -p mygroup SBATCH_SCRIPT.sh
