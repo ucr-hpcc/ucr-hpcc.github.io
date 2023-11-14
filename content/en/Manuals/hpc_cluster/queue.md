@@ -36,6 +36,34 @@ request additional resources, please contact us at support@hpcc.ucr.edu with you
 
 Partition quotas can also be viewed on the cluster using the `slurm_limits` command.
 
+### Example Scenarios
+
+#### Per-Job Limit
+
+A job is submitted on the gpu partition. The job requests 32 cores.
+
+> This job will be able to be submitted, as 32 cores is above the partition's 16 core per-job limit.
+
+#### Per-User Limit
+
+A job is started on the highmem partition, requesting 32 cores.
+
+> This first job will start successfully, as it is within the partition's core limit.
+
+A second job is submitted while the first job is still running. The new job is requesting 32 cores.
+
+> Because the user is already at their per-user core limit on the highmem partition, the second job will be queued.
+
+#### Per-Lab Limit
+
+User A submits 2 jobs, one on the intel partition and one on the epyc partition, each requesting 256 cores.
+
+> Because per-user limits are per-partition, both jobs will be submitted and run in parallel.
+
+User B submits a job on the epyc partition, requesting 16 cores.
+
+> Because user A is using all 512 cores within the lab, user B's job will be queued until one of user A's jobs finishes.
+
 ## Fair-Share
 Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
