@@ -156,8 +156,6 @@ Users can log into their HPCC accounts via the JupyterHub server instance. To do
 
 Account changes can sometimes lead to users needing to restart active cluster sessions, and Jupyter is no different. To restart your Jupyter session, from the "File" tab click "Hub Control Panel". From the new screen click "Stop My Server", then "Start My Server". After a few seconds your session will be restarted.
 
-<!--
-
 #### Choosing A Profile
 
 There are a handful of profiles that can be selected from, below is a chart displaying the existing profiles.
@@ -174,8 +172,6 @@ There are a handful of profiles that can be selected from, below is a chart disp
 **NOTE** that when your job reaches the specified time limit the job will be terminated and jupyter session closed. Jupyter autosaves every 2 minutes, but any new work will be lost and any running jobs cancelled once the time limit is reached.
 
 If your job requires more flexible resources, please refer to the below section for running Jupyter directly on a compute node.
-
--->
 
 ### 2. Jupyter Compute Node Instance
 
