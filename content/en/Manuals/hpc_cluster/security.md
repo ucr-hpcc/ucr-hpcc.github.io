@@ -104,6 +104,9 @@ You can use `gocryptfs` directly or use the `gocryptfsmgr`, which automates a fe
 Here are the basics when using `gocryptfsmgr`:
 
 ```bash
+# Load the gocryptfs module. Not strictly required, but sets a handful of useful environment variables
+module load gocryptfs
+
 # Create new encrypted data directory
 gocryptfsmgr create bigdata privatedata1
 
