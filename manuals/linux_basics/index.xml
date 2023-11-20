@@ -445,20 +445,65 @@ Instructions outling how to do this are located &lt;a href="https://github.com/u
 &lt;h3 id="1-jupyter-web-instance">1. Jupyter Web Instance&lt;/h3>
 &lt;p>Users can log into their HPCC accounts via the JupyterHub server instance. To do so, visit the &lt;a href="https://jupyter.hpcc.ucr.edu/">HPCC JupyterHub server&lt;/a>. Next provide your HPCC login credentials and click the &lt;code>Sign In&lt;/code> button.&lt;/p>
 &lt;p>Account changes can sometimes lead to users needing to restart active cluster sessions, and Jupyter is no different. To restart your Jupyter session, from the &amp;ldquo;File&amp;rdquo; tab click &amp;ldquo;Hub Control Panel&amp;rdquo;. From the new screen click &amp;ldquo;Stop My Server&amp;rdquo;, then &amp;ldquo;Start My Server&amp;rdquo;. After a few seconds your session will be restarted.&lt;/p>
-&lt;!--
-#### Choosing A Profile
-There are a handful of profiles that can be selected from, below is a chart displaying the existing profiles.
-| **Profile Name** | **Partition** | **Resources** | **Time Limit** | **Notes** |
-|------------------|---------------|-----------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Immediate Server | - | Shared | None | This will run Jupyter on a shared machine with all other users who choose this option. Choose this if you want a server with no time limit at the expense of worse performance. |
-| Quick Server | Short | 2 cores, 8GB memory | 2 Hours | This is for a quick session lasting under 2 hours. Good for testing or debugging work quickly. |
-| Compute Intel | Intel | 8 cores, 32GB memory | 24 hours | This will run on an Intel machine with a 24 hour time limit. |
-| Compute Batch | Batch | 8 cores, 32GB memory | 24 hours | This will run on an Batch (AMD) machine with a 24 hour time limit. |
-| Compute Epyc | Epyc | 8 cores, 32GB memory | 24 hours | This will run on an AMD machine with a 24 hour time limit. |
-| Highmem | Highmem | 8 cores, 128GB memory | 24 hours | This will run on the highmem partition, good for jobs that require a lot of memory. |
-**NOTE** that when your job reaches the specified time limit the job will be terminated and jupyter session closed. Jupyter autosaves every 2 minutes, but any new work will be lost and any running jobs cancelled once the time limit is reached.
-If your job requires more flexible resources, please refer to the below section for running Jupyter directly on a compute node.
--->
+&lt;h4 id="choosing-a-profile">Choosing A Profile&lt;/h4>
+&lt;p>There are a handful of profiles that can be selected from, below is a chart displaying the existing profiles.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Profile Name&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Partition&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Resources&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Time Limit&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Immediate Server&lt;/td>
+&lt;td>-&lt;/td>
+&lt;td>Shared&lt;/td>
+&lt;td>None&lt;/td>
+&lt;td>This will run Jupyter on a shared machine with all other users who choose this option. Choose this if you want a server with no time limit at the expense of worse performance.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Quick Server&lt;/td>
+&lt;td>Short&lt;/td>
+&lt;td>2 cores, 8GB memory&lt;/td>
+&lt;td>2 Hours&lt;/td>
+&lt;td>This is for a quick session lasting under 2 hours. Good for testing or debugging work quickly.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Compute Intel&lt;/td>
+&lt;td>Intel&lt;/td>
+&lt;td>8 cores, 32GB memory&lt;/td>
+&lt;td>24 hours&lt;/td>
+&lt;td>This will run on an Intel machine with a 24 hour time limit.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Compute Batch&lt;/td>
+&lt;td>Batch&lt;/td>
+&lt;td>8 cores, 32GB memory&lt;/td>
+&lt;td>24 hours&lt;/td>
+&lt;td>This will run on an Batch (AMD) machine with a 24 hour time limit.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Compute Epyc&lt;/td>
+&lt;td>Epyc&lt;/td>
+&lt;td>8 cores, 32GB memory&lt;/td>
+&lt;td>24 hours&lt;/td>
+&lt;td>This will run on an AMD machine with a 24 hour time limit.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Highmem&lt;/td>
+&lt;td>Highmem&lt;/td>
+&lt;td>8 cores, 128GB memory&lt;/td>
+&lt;td>24 hours&lt;/td>
+&lt;td>This will run on the highmem partition, good for jobs that require a lot of memory.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>NOTE&lt;/strong> that when your job reaches the specified time limit the job will be terminated and jupyter session closed. Jupyter autosaves every 2 minutes, but any new work will be lost and any running jobs cancelled once the time limit is reached.&lt;/p>
+&lt;p>If your job requires more flexible resources, please refer to the below section for running Jupyter directly on a compute node.&lt;/p>
 &lt;h3 id="2-jupyter-compute-node-instance">2. Jupyter Compute Node Instance&lt;/h3>
 &lt;h4 id="a-steps">a. Steps&lt;/h4>
 &lt;p>First, start an interactive session on a compute node&lt;/p>
