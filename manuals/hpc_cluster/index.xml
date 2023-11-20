@@ -1373,7 +1373,9 @@ Thus, during transfer they will be GPG encrypted. However, decryption must occur
 &lt;h4 id="gocryptfsmgr">GocryptfsMgr&lt;/h4>
 &lt;p>You can use &lt;code>gocryptfs&lt;/code> directly or use the &lt;code>gocryptfsmgr&lt;/code>, which automates a few steps in order to simplify things.&lt;/p>
 &lt;p>Here are the basics when using &lt;code>gocryptfsmgr&lt;/code>:&lt;/p>
-&lt;pre>&lt;code class="language-bash"># Create new encrypted data directory
+&lt;pre>&lt;code class="language-bash"># Load the gocryptfs module. Not strictly required, but sets a handful of useful environment variables
+module load gocryptfs
+# Create new encrypted data directory
 gocryptfsmgr create bigdata privatedata1
 # List all encrypted and unencrypted (access point) directories
 gocryptfsmgr list
