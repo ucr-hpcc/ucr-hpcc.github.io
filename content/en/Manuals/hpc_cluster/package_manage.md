@@ -131,7 +131,8 @@ You can run jupyter as an interactive job or you can use the web instance, see [
 In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:
 
 ```bash
-# Create a virtual environment, if you don't already have one
+# Create a virtual environment named "ipykernel_py3", if you don't already have one
+# It can be named whatever you like, "ipykernel_py3" is just an example
 conda create -n ipykernel_py3 python=3 ipykernel
 
 # Load the new environment
