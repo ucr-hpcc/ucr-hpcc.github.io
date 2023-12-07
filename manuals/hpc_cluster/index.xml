@@ -832,7 +832,8 @@ conda create -n NameForNewEnv python=3.10 # Many Python versions are available
 &lt;p>You can run jupyter as an interactive job or you can use the web instance, see &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server">Jupyter Usage&lt;/a> for details.&lt;/p>
 &lt;h4 id="virtual-environment">Virtual Environment&lt;/h4>
 &lt;p>In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:&lt;/p>
-&lt;pre>&lt;code class="language-bash"># Create a virtual environment, if you don't already have one
+&lt;pre>&lt;code class="language-bash"># Create a virtual environment named &amp;quot;ipykernel_py3&amp;quot;, if you don't already have one
+# It can be named whatever you like, &amp;quot;ipykernel_py3&amp;quot; is just an example
 conda create -n ipykernel_py3 python=3 ipykernel
 # Load the new environment
 conda activate ipykernel_py3
