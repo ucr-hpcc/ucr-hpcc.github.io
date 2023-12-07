@@ -56,7 +56,9 @@ without having to tediously log in.&lt;/p>
 &lt;h3 id="running-the-gcp-client">Running the GCP client&lt;/h3>
 &lt;p>The GCP client must be running on the endpoint in order to send or receive files there. It is recommended to run the
 client in the background (the ampersand at the end creates a background process):&lt;/p>
-&lt;pre>&lt;code class="language-bash">globusconnect -start &amp;amp;
+&lt;p>In order for bigdata folders to appear in the Globus interface, you must use the &amp;ldquo;-restrict-paths&amp;rdquo; argument when running Globus
+to allow it access to other folders. If you omit this, then only your home directory will be available.&lt;/p>
+&lt;pre>&lt;code class="language-bash">globusconnect -start -restrict-paths rw/rhome,rw/bigdata &amp;amp;
 &lt;/code>&lt;/pre>
 &lt;h3 id="locating-your-new-endpoint-in-the-globus-web-app">Locating your new endpoint in the Globus Web App&lt;/h3>
 &lt;p>Login to Globus in your web browser. Open the &amp;ldquo;File Manager&amp;rdquo;.&lt;/p>
