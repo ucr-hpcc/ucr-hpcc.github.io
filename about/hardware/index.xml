@@ -4,17 +4,17 @@
 &lt;li>Over 16,000 CPU cores (60% AMD, 40% Intel)&lt;/li>
 &lt;li>512-1024GB RAM per node&lt;/li>
 &lt;li>GPU: 24x K80, 2x P100, 24x A100&lt;/li>
-&lt;li>IB network @ 56Gbs - 200Gbps&lt;/li>
+&lt;li>IB network @ 56Gbs - 200Gbps (FDR, HDR and NDR)&lt;/li>
 &lt;li>Queueing system Slurm&lt;/li>
 &lt;/ul>
 &lt;h2 id="parallel-data-storage-system">Parallel data storage system&lt;/h2>
 &lt;ul>
-&lt;li>3PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
+&lt;li>5PB GPFS storage (scales to &amp;gt;50PB)&lt;/li>
 &lt;li>Home directories on dedicated system&lt;/li>
 &lt;/ul>
 &lt;h2 id="backup-system">Backup system&lt;/h2>
 &lt;ul>
-&lt;li>3PB GPFS storage&lt;/li>
+&lt;li>5PB GPFS storage&lt;/li>
 &lt;li>Geographically separated server room&lt;/li>
 &lt;/ul>
 &lt;h2 id="server-room">Server room&lt;/h2>
