@@ -43,7 +43,7 @@
 &lt;/li>
 &lt;li>Interconnect
 &lt;ul>
-&lt;li>56 Gb/s InfiniBand (FDR)&lt;/li>
+&lt;li>56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
