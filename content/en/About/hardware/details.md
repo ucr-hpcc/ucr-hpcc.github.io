@@ -21,7 +21,7 @@ aliases:
     * 1 x 10 Gb/s switch for campus high performance research network
     * Redundant, load balanced, robust mesh topology
 * Interconnect
-    * 56 Gb/s InfiniBand (FDR)
+    * 56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)
 
 ## Head Nodes
 All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This address will automatically balance traffic to one of the available head nodes.
