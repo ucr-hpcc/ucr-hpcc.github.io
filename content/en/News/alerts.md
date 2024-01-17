@@ -14,7 +14,12 @@ None currently observed.
 
 ## Unannounced exceptions
 
-None currently observed.
+__17-Jan-2024: AC Unit repair__
+
+The AC units in the HPCC server room are experiencing issues. To keep the
+operating temperature within safe limits, the job queue has been halted. New
+and pending jobs will stay queued, while currently running jobs will be allowed
+to finish. We apologize for the inconvenience.
 
 ## Standard Operating Procedures
 
