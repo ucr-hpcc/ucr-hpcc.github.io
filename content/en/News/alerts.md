@@ -14,12 +14,7 @@ None currently observed.
 
 ## Unannounced exceptions
 
-__19-Jan-2024: AC Unit Repair Followup__
-
-Due to followup maintenance required following the January 17th repairs, the
-slurm queue will once again need to be haulted in order to manage heat output
-in the server room. Maintenance should only take a few hours, after which the
-queue will be released again.
+None currently observed.
 
 ## Standard Operating Procedures
 
@@ -54,6 +49,15 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions
 
+__19-Jan-2024: AC Unit Repair Followup__
+
+Due to followup maintenance required following the January 17th repairs, the
+slurm queue will once again need to be haulted in order to manage heat output
+in the server room. Maintenance should only take a few hours, after which the
+queue will be released again.
+
+**Update**: The repair has been completed. Nodes will be resumed and queue opened.
+
 __17-Jan-2024: AC Unit repair__
 
 The AC units in the HPCC server room are experiencing issues. To keep the
@@ -61,7 +65,7 @@ operating temperature within safe limits, the job queue has been halted. New
 and pending jobs will stay queued, while currently running jobs will be allowed
 to finish. We apologize for the inconvenience.
 
-**Update** The maintenance has completed, but a followup repair will be required in
+**Update**: The maintenance has completed, but a followup repair will be required in
 order to return to 100% operation of the AC units.
 
 __14 Aug, 2023: Login and GPFS storage issues__
