@@ -49,7 +49,32 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;/code>&lt;/pre>
 &lt;p>Remember to fill in your fasta path and output dir if you wish to use these templates.&lt;/p>
 &lt;p>Additionally, these are not the only two methods of running AlphaFold, and different modes might require different sets of arguments to be passed to &lt;code>alphafold.py&lt;/code>. For more details regarding what parameters are available, as well as more examples, please refer to the &lt;a href="https://github.com/deepmind/alphafold">Alphafold Github Repo&lt;/a>.&lt;/p></description></item><item><title>Manuals: JupyterLab Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/jupyterlab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/jupyterlab/</guid><description>
-&lt;p>Please refer to to the &amp;ldquo;Jupyter Server&amp;rdquo; section of the &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server">Text Editors&lt;/a> page for information using Jupyter.&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
+&lt;p>Please refer to to the &amp;ldquo;Jupyter Server&amp;rdquo; section of the &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server">Text Editors&lt;/a> page for information using Jupyter.&lt;/p></description></item><item><title>Manuals: Open OnDemand Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/</guid><description>
+&lt;h2 id="what-is-ondemand">What is OnDemand?&lt;/h2>
+&lt;p>OnDemand allows users to access our cluster resources purely through a web browser. No additional client software is required. OnDemand gives users the ability to launch &amp;ldquo;Interactive Apps&amp;rdquo; such as Jupyter, RStudio, Matlab, Mathematica, and VSCode and connect to them through your browser.&lt;/p>
+&lt;p>User&amp;rsquo;s also have the ability to upload/download files to/from the cluster, connect to the cluster via SSH, and create batch job templates.&lt;/p>
+&lt;p>The sections below go over using OnDemand, as well as a couple pieces of popular software.&lt;/p>
+&lt;h2 id="accessing-ondemand">Accessing OnDemand&lt;/h2>
+&lt;p>Our OnDemand instance is located here: &lt;a href="https://ondemand.hpcc.ucr.edu/">https://ondemand.hpcc.ucr.edu/&lt;/a>. Log in with your &lt;strong>cluster&lt;/strong> login details and verify your login with Duo&amp;rsquo;s two-factor authentication.&lt;/p>
+&lt;h2 id="jupyter-on-ondemand">Jupyter on OnDemand&lt;/h2>
+&lt;p>After logging in, select &amp;ldquo;Jupyter Notebook&amp;rdquo; from the &amp;ldquo;Interactive Apps&amp;rdquo; tab from the menu bar.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_jupyter1.png" alt="jupytermenu">&lt;/p>
+&lt;p>From there, select the resources you need, time you want, partition to run the job on, and click &amp;ldquo;Launch&amp;rdquo;.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_jupyter2.png" alt="jupyterparams">&lt;/p>
+&lt;p>Your job will then be queued and eventually start running.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_jupyter3.png" alt="jupyterqueue1">&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_jupyter4.png" alt="jupyterqueue2">&lt;/p>
+&lt;p>Click &amp;ldquo;Connect to Jupyter&amp;rdquo; to open a new window containing Jupyter and start working!&lt;/p>
+&lt;h2 id="rstudio-on-ondemand">RStudio on OnDemand&lt;/h2>
+&lt;p>The process of launching RStudio is almost identical to that of starting Jupyter, but selecting &amp;ldquo;RStudio Server&amp;rdquo; instead of &amp;ldquo;Jupyter Notebook&amp;rdquo; from the menu.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_rstudio1.png" alt="rstudiomenu">&lt;/p>
+&lt;p>Please see the Jupyter section for selecting resources and opening the RStudio window.&lt;/p>
+&lt;h2 id="desktop-session-on-ondemand">Desktop Session on OnDemand&lt;/h2>
+&lt;p>A Desktop session is a Virtual Desktop that is running on the cluster. It will allow you to run programs that require GUIs without going through the steps of forwarding X11 sessions.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_desktop2.png" alt="rstudiomenu">&lt;/p>
+&lt;p>Similar to Jupyter and RStudio, a Desktop Session can be started by selecting &amp;ldquo;HPCC Desktop&amp;rdquo; from the menu dropdown.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_desktop1.png" alt="rstudiomenu">&lt;/p>
+&lt;p>Please see the Jupyter section for selecting resources and opening the Desktop Window.&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
 &lt;h2 id="using-vscode-on-the-cluster">Using VSCode on the Cluster&lt;/h2>
 &lt;p>VSCode is a code editor that can run locally on your computer, or while connected to the cluster.&lt;/p>
 &lt;p>When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.&lt;/p>
