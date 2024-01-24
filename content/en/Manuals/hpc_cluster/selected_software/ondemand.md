@@ -7,7 +7,7 @@ weight: 1
 
 ## What is OnDemand?
 
-OnDemand allows users to access our cluster resources purely through a web browser. No additional client software is required. OnDemand gives users the ability to launch "Interactive Apps" such as Jupyter, RStudio, Matlab, Mathematica, and VSCode and connect to them through your browser.
+[Open OnDemand](https://openondemand.org/) allows users to access our cluster resources purely through a web browser. No additional client software is required. OnDemand gives users the ability to launch "Interactive Apps" such as Jupyter, RStudio, Matlab, Mathematica, and VSCode and connect to them through your browser.
 
 User's also have the ability to upload/download files to/from the cluster, connect to the cluster via SSH, and create batch job templates.
 
