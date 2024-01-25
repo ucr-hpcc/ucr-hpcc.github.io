@@ -17,8 +17,9 @@ to an upgrade of the Operating System as well as our central storage system. Any
 be queued with the reason "ReqNodeNotAvail" and will need to be requeued with a shorter time or wait until the maintenance is over
 at which point they will automatically start.
 
-During the shutdown SSH, RStudio, JupyterHub, OnDemand, and web-based file access will be unavailable. If you need additional information or help,
-you can reach us at our [Slack](https://ucr-hpcc.slack.com/) or outside of the shutdown through email (support@hpcc.ucr.edu).
+During the shutdown services will be unavailable including, but not limited to: SSH, RStudio, JupyterHub, OnDemand, and web-based file access.
+If you need additional information or help, you can reach us at our [Slack](https://ucr-hpcc.slack.com/) or outside of the shutdown through
+email (support@hpcc.ucr.edu).
 
 ## Unannounced exceptions
 
