@@ -42,7 +42,7 @@ Partition quotas can also be viewed on the cluster using the `slurm_limits` comm
 
 A job is submitted on the gpu partition. The job requests 32 cores.
 
-> This job will be able to be submitted, as 32 cores is above the partition's 16 core per-job limit.
+> This job will not be able to be submitted, as 32 cores is above the partition's 16 core per-job limit.
 
 #### Per-User Limit
 
