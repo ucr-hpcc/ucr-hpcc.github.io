@@ -699,7 +699,7 @@ request additional resources, please contact us at &lt;a href="mailto:support@hp
 &lt;h4 id="per-job-limit">Per-Job Limit&lt;/h4>
 &lt;p>A job is submitted on the gpu partition. The job requests 32 cores.&lt;/p>
 &lt;blockquote>
-&lt;p>This job will be able to be submitted, as 32 cores is above the partition&amp;rsquo;s 16 core per-job limit.&lt;/p>
+&lt;p>This job will not be able to be submitted, as 32 cores is above the partition&amp;rsquo;s 16 core per-job limit.&lt;/p>
 &lt;/blockquote>
 &lt;h4 id="per-user-limit">Per-User Limit&lt;/h4>
 &lt;p>A job is started on the highmem partition, requesting 32 cores.&lt;/p>
