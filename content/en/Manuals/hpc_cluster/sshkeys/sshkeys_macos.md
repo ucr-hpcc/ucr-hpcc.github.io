@@ -167,7 +167,7 @@ If you already have configured [Password+DUO](/manuals/login/#passwordduo) authe
 
 #### Private SSH Key
 
-Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `secure.hpcc.ucr.edu` server.
+Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `cluster.hpcc.ucr.edu` server.
 
 1. Start the `Filezilla` application
 
@@ -203,7 +203,7 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    ![fig5](/img/sshkeys_macos/61.png)
 
-9. Remember to select the `secure.hpcc.ucr.edu` address.
+9. Remember to select the `cluster.hpcc.ucr.edu` address.
 
    ![fig5](/img/sshkeys_macos/62.png)
 
