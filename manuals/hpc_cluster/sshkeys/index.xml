@@ -150,7 +150,7 @@ Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&
 &lt;li>Once the &lt;code>id_rsa.pub&lt;/code> file is transferred to the cluster, be sure to rename it to &lt;code>authorized_keys&lt;/code>.&lt;/li>
 &lt;/ol>
 &lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
-&lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>secure.hpcc.ucr.edu&lt;/code> server.&lt;/p>
+&lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>cluster.hpcc.ucr.edu&lt;/code> server.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Start the &lt;code>Filezilla&lt;/code> application&lt;/p>
@@ -186,7 +186,7 @@ Navigate to the &lt;code>Transfer Settings&lt;/code> tab and set the following:&
 &lt;p>&lt;img src="../../../img/sshkeys_macos/61.png" alt="fig5">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Remember to select the &lt;code>secure.hpcc.ucr.edu&lt;/code> address.&lt;/p>
+&lt;p>Remember to select the &lt;code>cluster.hpcc.ucr.edu&lt;/code> address.&lt;/p>
 &lt;p>&lt;img src="../../../img/sshkeys_macos/62.png" alt="fig5">&lt;/p>
 &lt;/li>
 &lt;li>
