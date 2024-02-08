@@ -800,6 +800,10 @@ conda create -n NameForNewEnv python=3.10 # Many Python versions are available
 &lt;p>Once your virtual environment has been created, you need to activate it before you can use it:&lt;/p>
 &lt;pre>&lt;code class="language-bash">conda activate NameForNewEnv
 &lt;/code>&lt;/pre>
+&lt;p>With more modules being added as conda environments, it&amp;rsquo;s sometimes requried to &amp;ldquo;stack&amp;rdquo; user environments on top of module-provided environments.
+Running &lt;code>conda activate&lt;/code> will deactivate the current environment before activating the new environment..
+To counter this, the &lt;code>--stack&lt;/code> flag can be used to effectively &amp;ldquo;combine&amp;rdquo; environments. For example &lt;code>conda activate --stack NameForNewEnv&lt;/code>. Please see the conda page
+on &lt;a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#nested-activation">Nested Activation&lt;/a> for more details.&lt;/p>
 &lt;h5 id="deactivating">Deactivating&lt;/h5>
 &lt;p>In order to exit from your virtual environment, do the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash">conda deactivate
