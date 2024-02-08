@@ -73,6 +73,11 @@ Once your virtual environment has been created, you need to activate it before y
 conda activate NameForNewEnv
 ```
 
+With more modules being added as conda environments, it's sometimes requried to "stack" user environments on top of module-provided environments.
+Running `conda activate` will deactivate the current environment before activating the new environment..
+To counter this, the `--stack` flag can be used to effectively "combine" environments. For example `conda activate --stack NameForNewEnv`. Please see the conda page
+on [Nested Activation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#nested-activation) for more details.
+
 ##### Deactivating
 In order to exit from your virtual environment, do the following:
 
