@@ -11,8 +11,7 @@ weight: 7
 ## Facility 
 
 * [Austin Leong](mailto:aleon008@ucr.edu), Sr. HPC Systems Administrator
-* [Emerson Jacobson](mailto:ejaco020@ucr.edu), HPC Systems Administrator
-* [Tomin Kappiarumalayil](mailto:tkapp001@ucr.edu), HPC Systems Administrator, Assistant
+* [Emerson Jacobson](mailto:emerson.jacobson@ucr.edu), HPC Systems Administrator
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 
 ## Advisory Board (executive committee)
