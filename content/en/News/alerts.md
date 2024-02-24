@@ -10,16 +10,7 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-__22-Feb-2023: Upgrades of OS and GPFS__
-
-Starting Thursday, February 22nd at 8:00am and lasting until Friday, February 23rd at 8:00pm, the cluster will be unavailable due 
-to an upgrade of the Operating System as well as our central storage system. Any submitted jobs that overlap with the shutdown time will
-be queued with the reason "ReqNodeNotAvail" and will need to be requeued with a shorter time or wait until the maintenance is over
-at which point they will automatically start.
-
-During the shutdown services will be unavailable including, but not limited to: SSH, RStudio, JupyterHub, OnDemand, and web-based file access.
-If you need additional information or help, you can reach us at our [Slack](https://ucr-hpcc.slack.com/) or outside of the shutdown through
-email (support@hpcc.ucr.edu).
+None currently observed.
 
 ## Unannounced exceptions
 
@@ -57,6 +48,19 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__22-Feb-2023: Upgrades of OS and GPFS__
+
+Starting Thursday, February 22nd at 8:00am and lasting until Friday, February 23rd at 8:00pm, the cluster will be unavailable due 
+to an upgrade of the Operating System as well as our central storage system. Any submitted jobs that overlap with the shutdown time will
+be queued with the reason "ReqNodeNotAvail" and will need to be requeued with a shorter time or wait until the maintenance is over
+at which point they will automatically start.
+
+During the shutdown services will be unavailable including, but not limited to: SSH, RStudio, JupyterHub, OnDemand, and web-based file access.
+If you need additional information or help, you can reach us at our [Slack](https://ucr-hpcc.slack.com/) or outside of the shutdown through
+email (support@hpcc.ucr.edu).
+
+**Update**: The shutdown had finished and the Slurm queue has been reopened.
 
 __19-Jan-2024: AC Unit Repair Followup__
 
