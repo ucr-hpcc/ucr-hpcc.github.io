@@ -52,7 +52,7 @@ The following lists the most frequently visted pages of the HPCC site. They can 
 #### Help and contacts
 
 + For questions or requesting user accounts, please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
-+ For discussions with other users, please consider joining the [ucr-hpcc](https://ucr-hpcc.slack.com/) workspace on Slack.
++ For discussions with other users, please consider asking on [our Forums](https://community.hpcc.ucr.edu/) or joining the [ucr-hpcc](https://ucr-hpcc.slack.com/) workspace on Slack.
 + [Contact information](https://hpcc.ucr.edu/about/overview/people/)
 
 
