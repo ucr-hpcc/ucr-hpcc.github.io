@@ -7,6 +7,7 @@ aliases:
 weight: 7
 ---
 
+For cluster support, please email support@hpcc.ucr.edu.
 
 ## Facility 
 
