@@ -103,7 +103,7 @@ conda activate pytorch_env
 &lt;p>The below steps will focus on running it through OnDemand.&lt;/p>
 &lt;p>From within OnDemand, start a new Jupyter Notebook using the highlighted options below.&lt;/p>
 &lt;p>&lt;img src="../../../img/pytorch_jupyter.png" alt="pytorch jupyter">&lt;/p>
-&lt;p>Once the session has started, be sure to use the &amp;ldquo;PyTorch Env&amp;rdquo; that we created earlier.&lt;/p>
+&lt;p>Once the session has started, be sure to use the &amp;ldquo;PyTorch Env&amp;rdquo; kernel that we created earlier when creating a new notebook or within existing notebooks.&lt;/p>
 &lt;p>The following code can be used to verify that the GPU is properly working.&lt;/p>
 &lt;pre>&lt;code class="language-Python">import torch
 dev = torch.device(&amp;quot;cuda&amp;quot;) if torch.cuda.is_available() else torch.device(&amp;quot;cpu&amp;quot;)
