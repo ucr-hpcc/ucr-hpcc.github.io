@@ -73,7 +73,44 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;p>&lt;img src="../../../img/ondemand_desktop2.png" alt="rstudiomenu">&lt;/p>
 &lt;p>Similar to Jupyter and RStudio, a Desktop Session can be started by selecting &amp;ldquo;HPCC Desktop&amp;rdquo; from the menu dropdown.&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_desktop1.png" alt="rstudiomenu">&lt;/p>
-&lt;p>Please see the Jupyter section for selecting resources and opening the Desktop Window.&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
+&lt;p>Please see the Jupyter section for selecting resources and opening the Desktop Window.&lt;/p></description></item><item><title>Manuals: PyTorch In Jupyter</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</guid><description>
+&lt;h2 id="pytorch-in-a-jupyter-notebook">PyTorch in a Jupyter Notebook&lt;/h2>
+&lt;p>There are many ways to run PyTorch within Jupyter, though some methods are needlessly complicated or are more prone to errors. If you intend to use PyTorch within Jupyter, the following steps should get you up and running.&lt;/p>
+&lt;h2 id="setting-up-the-environment">Setting Up The Environment&lt;/h2>
+&lt;p>Creating a new Conda environment is necessary as we do not provide PyTorch through our global Python installation.&lt;/p>
+&lt;pre>&lt;code class="language-bash">conda create -n pytorch_env
+conda activate pytorch_env
+&lt;/code>&lt;/pre>
+&lt;p>After activating the conda environment, install python and ipykernel.&lt;/p>
+&lt;blockquote>
+&lt;p>Warning: The &lt;a href="https://pytorch.org/get-started/locally/">PyTorch instructions&lt;/a> provide a method of installing through Conda. &lt;strong>Do not use this method&lt;/strong> as the CUDA packages installed through Conda can conflict with the system installation.&lt;/p>
+&lt;/blockquote>
+&lt;pre>&lt;code class="language-bash">conda install python=3 ipykernel
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>At this point run &lt;code>which pip&lt;/code>, it should return a path ending in something similar to &lt;code>...../.conda/envs/pytorch_env/bin/pip&lt;/code>. If the output path begins with &lt;code>/opt/linux/...&lt;/code> then the environment has not been set up correctly.&lt;/p>
+&lt;/blockquote>
+&lt;p>With &lt;code>ipykernel&lt;/code> installed, add the environment as a Jupyter Kernel.&lt;/p>
+&lt;pre>&lt;code class="language-bash">python -m ipykernel install --user --name pytorch_env --display-name &amp;quot;PyTorch Env&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>For more info on Jupyter Kernels, see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#virtual-environment">Package Management&lt;/a> page.&lt;/p>
+&lt;/blockquote>
+&lt;p>PyTorch can now be installed in the Conda environment using Pip&lt;/p>
+&lt;pre>&lt;code class="language-bash">pip3 install torch torchvision torchaudio
+&lt;/code>&lt;/pre>
+&lt;p>From this point, the PyTorch kernel should be ready to use within Jupyter. Because of it&amp;rsquo;s requirement for a GPU, it will need to be run using OnDemand or through an interactive session.&lt;/p>
+&lt;p>The below steps will focus on running it through OnDemand.&lt;/p>
+&lt;p>From within OnDemand, start a new Jupyter Notebook using the highlighted options below.&lt;/p>
+&lt;p>&lt;img src="../../../img/pytorch_jupyter.png" alt="pytorch jupyter">&lt;/p>
+&lt;p>Once the session has started, be sure to use the &amp;ldquo;PyTorch Env&amp;rdquo; that we created earlier.&lt;/p>
+&lt;p>The following code can be used to verify that the GPU is properly working.&lt;/p>
+&lt;pre>&lt;code class="language-Python">import torch
+dev = torch.device(&amp;quot;cuda&amp;quot;) if torch.cuda.is_available() else torch.device(&amp;quot;cpu&amp;quot;)
+print(dev)
+&lt;/code>&lt;/pre>
+&lt;p>If the output prints &amp;ldquo;cuda&amp;rdquo;, then you&amp;rsquo;re good to go. If it prints &amp;ldquo;cpu&amp;rdquo;, then please double check that all of the above steps are correct.&lt;/p>
+&lt;p>&lt;img src="../../../img/pytorch_jupyter2.png" alt="pytorch jupyter">&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
 &lt;h2 id="using-vscode-on-the-cluster">Using VSCode on the Cluster&lt;/h2>
 &lt;p>VSCode is a code editor that can run locally on your computer, or while connected to the cluster.&lt;/p>
 &lt;p>When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.&lt;/p>
