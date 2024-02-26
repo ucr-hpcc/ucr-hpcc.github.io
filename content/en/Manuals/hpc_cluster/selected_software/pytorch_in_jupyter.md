@@ -51,7 +51,7 @@ From within OnDemand, start a new Jupyter Notebook using the highlighted options
 
 ![pytorch jupyter](/img/pytorch_jupyter.png)
 
-Once the session has started, be sure to use the "PyTorch Env" that we created earlier.
+Once the session has started, be sure to use the "PyTorch Env" kernel that we created earlier when creating a new notebook or within existing notebooks.
 
 The following code can be used to verify that the GPU is properly working.
 
