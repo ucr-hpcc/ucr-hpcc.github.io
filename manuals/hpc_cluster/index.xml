@@ -643,6 +643,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;th>Per-Group Limit&lt;/th>
 &lt;th>Per-User Limit&lt;/th>
 &lt;th>Per-Job Limit&lt;/th>
+&lt;th>Max Job Time&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -652,6 +653,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>128GB memory per Core&lt;/td>
+&lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>intel&lt;/td>
@@ -659,6 +661,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>128GB memory per Core&lt;/td>
+&lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>epyc&lt;/td>
@@ -666,6 +669,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>128GB memory per Core&lt;/td>
+&lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>short&lt;/td>
@@ -673,6 +677,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
 &lt;td>128GB memory per Core, 2-hour time limit&lt;/td>
+&lt;td>2 Hours&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>highmem&lt;/td>
@@ -680,6 +685,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>&lt;/td>
 &lt;td>32 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
+&lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>gpu&lt;/td>
@@ -687,6 +693,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>8 GPUs&lt;/td>
 &lt;td>48 Cores, 512GB memory&lt;/td>
 &lt;td>16 Cores, 256GB memory&lt;/td>
+&lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
