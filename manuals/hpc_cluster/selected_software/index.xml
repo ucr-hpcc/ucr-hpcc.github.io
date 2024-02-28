@@ -113,8 +113,8 @@ print(dev)
 &lt;p>&lt;img src="../../../img/pytorch_jupyter2.png" alt="pytorch jupyter">&lt;/p></description></item><item><title>Manuals: VSCode Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/</guid><description>
 &lt;h2 id="using-vscode-on-the-cluster">Using VSCode on the Cluster&lt;/h2>
 &lt;p>VSCode is a code editor that can run locally on your computer, or while connected to the cluster.&lt;/p>
-&lt;p>When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.&lt;/p>
-&lt;p>Instead, we can use a feature of VSCode: tunnels.&lt;/p>
+&lt;p>When using VSCode on the cluster, please do not use Remote SSH as it will launch the code server on a head node, causing unneeded load.&lt;/p>
+&lt;p>Instead, we can use a feature of VSCode: &lt;a href="https://code.visualstudio.com/docs/remote/tunnels">Remote Tunnels&lt;/a>.&lt;/p>
 &lt;h2 id="setting-up-vscode-tunnels">Setting up VSCode Tunnels&lt;/h2>
 &lt;p>Using a tunnel allows us to work on a compute node, rather than on a head node. This allows us to use more resources than we would normally be allowed to on a head node.&lt;/p>
 &lt;h3 id="installing-the-remote-tunnels-extension">Installing the Remote Tunnels extension&lt;/h3>
