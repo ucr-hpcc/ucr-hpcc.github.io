@@ -9,9 +9,9 @@ weight: 1
 
 VSCode is a code editor that can run locally on your computer, or while connected to the cluster.
 
-When using VSCode on the cluster, please attempt to not use Remote SSH, as it will launch the code server on a head node, possibly creating resource conflicts if many users are doing it at once.
+When using VSCode on the cluster, please do not use Remote SSH as it will launch the code server on a head node, causing unneeded load.
 
-Instead, we can use a feature of VSCode: tunnels.
+Instead, we can use a feature of VSCode: [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels).
 
 ## Setting up VSCode Tunnels
 
