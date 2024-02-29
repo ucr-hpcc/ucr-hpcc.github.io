@@ -57,7 +57,7 @@ envs_dirs:
 auto_activate_base: false
 ```
 
-> After changing the configuration, environments can be moved to the new bigdata location using `conda rename -n NAME NAME_tmp`, then `conda rename -N NAME_tmp NAME` to return it to it's original name. Replacing `NAME` with the name of the environment you wish to move.
+> After changing the configuration, environments can be moved to the new bigdata location using `conda rename -n NAME NAME_tmp`, then `conda rename -n NAME_tmp NAME` to return it to it's original name. Replacing `NAME` with the name of the environment you wish to move.
 
 Create a Python 3.10 conda environment, like so:
 
