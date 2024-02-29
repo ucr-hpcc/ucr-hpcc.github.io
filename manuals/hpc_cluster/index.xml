@@ -797,7 +797,7 @@ envs_dirs:
 auto_activate_base: false
 &lt;/code>&lt;/pre>
 &lt;blockquote>
-&lt;p>After changing the configuration, environments can be moved to the new bigdata location using &lt;code>conda rename -n NAME NAME_tmp&lt;/code>, then &lt;code>conda rename -N NAME_tmp NAME&lt;/code> to return it to it&amp;rsquo;s original name. Replacing &lt;code>NAME&lt;/code> with the name of the environment you wish to move.&lt;/p>
+&lt;p>After changing the configuration, environments can be moved to the new bigdata location using &lt;code>conda rename -n NAME NAME_tmp&lt;/code>, then &lt;code>conda rename -n NAME_tmp NAME&lt;/code> to return it to it&amp;rsquo;s original name. Replacing &lt;code>NAME&lt;/code> with the name of the environment you wish to move.&lt;/p>
 &lt;/blockquote>
 &lt;p>Create a Python 3.10 conda environment, like so:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load miniconda3 # Should already be auto-loaded during login
