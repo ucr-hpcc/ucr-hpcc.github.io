@@ -199,7 +199,7 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
 #### Private SSH Key
 
-Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `secure.hpcc.ucr.edu` server.
+Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `cluster.hpcc.ucr.edu` server.
 
 1. Open Filezilla `Site Manager` button in the top bar of icons.
 
@@ -212,7 +212,7 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 3. Make sure the following fields are correctly filled before adding your `SSH key` file:
 
    * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
-   * `Host`: type in `secure.hpcc.ucr.edu`
+   * `Host`: type in `cluster.hpcc.ucr.edu`
    * `Port`: type `22`
    * `Logon Type`: set to `Key file`
    * `User`: type in your HPCC username
@@ -225,7 +225,7 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    ![filezilla9](/img/filezilla9.png)
 
-5. Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button. Remember to select the `secure.hpcc.ucr.edu` address.
+5. Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button. Remember to select the `cluster.hpcc.ucr.edu` address.
 
    ![filezilla11](/img/filezilla11.png)
 
