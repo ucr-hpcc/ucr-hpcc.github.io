@@ -18,6 +18,8 @@ __08-Mar-2024 AC Unit Refrigerant Leak, Queue Paused__
 
 The UCR HPCC Slurm queue has been paused due to another AC malfunction in the server room. Earlier on Thursday (March 7th) afternoon, UCR Facilities was called in to check an AC alarm and determined that one of our AC units had low refrigerant. While attempting to recharge the AC refrigerant a leak occurred, forcing personnel to evacuate the room for their own safety. They intend to start the repair first thing on Friday (March 8th) morning. But because that AC unit is still not running at full capacity, cooling is limited. As such, the Slurm queue has been paused as a precaution to keep the room within a safe temperature. We understand that this will be disruptive to your work, and we apologize for this development.
 
+Update 1: After speaking with the person performing the repair, they said that the repair could take all day. We will make further announcements as we receive updates.
+
 ## Standard Operating Procedures
 
 ### SOP for unscheduled outages
