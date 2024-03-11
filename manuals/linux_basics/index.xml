@@ -389,6 +389,9 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;h3 id="remote-editing">Remote Editing&lt;/h3>
 &lt;p>To setup Visual Studio Code to remotely edit files on the cluster, please refer to our guide to &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/vscode/">VSCode Usage on HPCC&lt;/a>.&lt;/p>
 &lt;h2 id="rstudio-server">RStudio Server&lt;/h2>
+&lt;blockquote>
+&lt;p>The shared web instances of RStudio will soon be deprecated and replaced with &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/">Open OnDemand&lt;/a>. Please start transitioning there to receive the best performance from RStudio.&lt;/p>
+&lt;/blockquote>
 &lt;p>Two options exist to access the &lt;code>RStudio Server&lt;/code> &lt;a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE&lt;/a>:&lt;/p>
 &lt;ol>
 &lt;li>&lt;a href="#1-shared-web-instance">Shared Web Instance&lt;/a>&lt;/li>
@@ -397,9 +400,6 @@ Please visit &lt;a href="https://code.visualstudio.com/download">Visual Studio C
 &lt;p>While the &lt;code>Shared Web Instance&lt;/code> is easier for less experienced users, it does not allow to load a specific R version nor access more extensive computing resources.
 Thus, experienced users may prefer the &lt;code>Compute Node Instance&lt;/code> as it does not share these limitations.&lt;/p>
 &lt;h3 id="1-shared-web-instance">1. Shared Web Instance&lt;/h3>
-&lt;blockquote>
-&lt;p>The shared web instances of RStudio will soon be deprecated and replaced with &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/">Open OnDemand&lt;/a>. Please start transitioning there to receive the best performance from RStudio.&lt;/p>
-&lt;/blockquote>
 &lt;p>R users can log in to their HPCC accounts via an RStudio Server instance.
 To do so, visit the &lt;a href="https://rstudio.hpcc.ucr.edu">HPCC RStudio Server&lt;/a>.
 Next provide your HPCC login credentials and click the &lt;code>Sign In&lt;/code> button.&lt;/p>
@@ -440,15 +440,15 @@ in these instructions need be executed in a terminal of a user&amp;rsquo;s local
 &lt;p>The steps for launching an interactive job can be integrated into a script and submitted non-interactvely for a quicker deployment of a &lt;code>RStudio Server&lt;/code> instance on a compute node.
 Instructions outling how to do this are located &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples/blob/master/rstudio-server/README.md#non-interactive">here&lt;/a>.&lt;/p>
 &lt;h2 id="jupyter-server">Jupyter Server&lt;/h2>
+&lt;blockquote>
+&lt;p>The shared web instance of Jupyter will soon be deprecated and replaced with &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/">Open OnDemand&lt;/a>. Please start transitioning there to receive the best performance from Jupyter.&lt;/p>
+&lt;/blockquote>
 &lt;p>Two options exist to access &lt;a href="https://jupyter.org/">JupyterLab&lt;/a>:&lt;/p>
 &lt;ol>
 &lt;li>&lt;a href="#1-jupyter-web-instance">Web Instance&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#2-jupyter-compute-node-instance">Compute Node Instance&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="1-jupyter-web-instance">1. Jupyter Web Instance&lt;/h3>
-&lt;blockquote>
-&lt;p>The shared web instance of Jupyter will soon be deprecated and replaced with &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/">Open OnDemand&lt;/a>. Please start transitioning there to receive the best performance from Jupyter.&lt;/p>
-&lt;/blockquote>
 &lt;p>Users can log into their HPCC accounts via the JupyterHub server instance. To do so, visit the &lt;a href="https://jupyter.hpcc.ucr.edu/">HPCC JupyterHub server&lt;/a>. Next provide your HPCC login credentials and click the &lt;code>Sign In&lt;/code> button.&lt;/p>
 &lt;p>Account changes can sometimes lead to users needing to restart active cluster sessions, and Jupyter is no different. To restart your Jupyter session, from the &amp;ldquo;File&amp;rdquo; tab click &amp;ldquo;Hub Control Panel&amp;rdquo;. From the new screen click &amp;ldquo;Stop My Server&amp;rdquo;, then &amp;ldquo;Start My Server&amp;rdquo;. After a few seconds your session will be restarted.&lt;/p>
 &lt;h4 id="choosing-a-profile">Choosing A Profile&lt;/h4>
