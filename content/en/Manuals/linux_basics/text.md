@@ -89,6 +89,8 @@ To setup Visual Studio Code to remotely edit files on the cluster, please refer 
 
 ## RStudio Server
 
+> The shared web instances of RStudio will soon be deprecated and replaced with [Open OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/). Please start transitioning there to receive the best performance from RStudio.
+
 Two options exist to access the `RStudio Server` [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment):
 
   1. [Shared Web Instance](#1-shared-web-instance)
@@ -98,8 +100,6 @@ While the `Shared Web Instance` is easier for less experienced users, it does no
 Thus, experienced users may prefer the `Compute Node Instance` as it does not share these limitations.
 
 ### 1. Shared Web Instance
-
-> The shared web instances of RStudio will soon be deprecated and replaced with [Open OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/). Please start transitioning there to receive the best performance from RStudio.
 
 R users can log in to their HPCC accounts via an RStudio Server instance.
 To do so, visit the [HPCC RStudio Server](https://rstudio.hpcc.ucr.edu).
@@ -147,14 +147,14 @@ Instructions outling how to do this are located [here](https://github.com/ucr-hp
 
 ## Jupyter Server
 
+> The shared web instance of Jupyter will soon be deprecated and replaced with [Open OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/). Please start transitioning there to receive the best performance from Jupyter.
+
 Two options exist to access [JupyterLab](https://jupyter.org/):
 
   1. [Web Instance](#1-jupyter-web-instance)
   2. [Compute Node Instance](#2-jupyter-compute-node-instance)
 
 ### 1. Jupyter Web Instance
-
-> The shared web instance of Jupyter will soon be deprecated and replaced with [Open OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/). Please start transitioning there to receive the best performance from Jupyter.
 
 Users can log into their HPCC accounts via the JupyterHub server instance. To do so, visit the [HPCC JupyterHub server](https://jupyter.hpcc.ucr.edu/). Next provide your HPCC login credentials and click the `Sign In` button.
 
