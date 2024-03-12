@@ -58,3 +58,19 @@ Similar to Jupyter and RStudio, a Desktop Session can be started by selecting "H
 
 Please see the Jupyter section for selecting resources and opening the Desktop Window.
 
+## Troubleshooting Jobs
+
+### RStudio Crashes
+
+![jupyterqueue2](/img/ondemand_r_crash.png)
+
+If your RStudio session crashes with an error similar to the following, first try increasing the memory allocated to your job. If your R program attempts to allocate too much memory it will be killed by Slurm, causing an error similar to the one pictured.
+
+To confirm whether or not this is the problem you are encountering:
+1. Copy the Job ID from OnDemand
+2. Delete the job (This will remove the dialog, so make sure you copy the JobID first)
+3. Using a terminal, run `sacct -j ####`
+
+If one of the job steps existed with the reason "OUT_OF_MEM", then you need to allocate more memory to RStudio.
+
+![jupyterqueue2](/img/ondemand_r_crash2.png)
