@@ -73,7 +73,19 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;p>&lt;img src="../../../img/ondemand_desktop2.png" alt="rstudiomenu">&lt;/p>
 &lt;p>Similar to Jupyter and RStudio, a Desktop Session can be started by selecting &amp;ldquo;HPCC Desktop&amp;rdquo; from the menu dropdown.&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_desktop1.png" alt="rstudiomenu">&lt;/p>
-&lt;p>Please see the Jupyter section for selecting resources and opening the Desktop Window.&lt;/p></description></item><item><title>Manuals: PyTorch In Jupyter</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</guid><description>
+&lt;p>Please see the Jupyter section for selecting resources and opening the Desktop Window.&lt;/p>
+&lt;h2 id="troubleshooting-jobs">Troubleshooting Jobs&lt;/h2>
+&lt;h3 id="rstudio-crashes">RStudio Crashes&lt;/h3>
+&lt;p>&lt;img src="../../../img/ondemand_r_crash.png" alt="jupyterqueue2">&lt;/p>
+&lt;p>If your RStudio session crashes with an error similar to the following, first try increasing the memory allocated to your job. If your R program attempts to allocate too much memory it will be killed by Slurm, causing an error similar to the one pictured.&lt;/p>
+&lt;p>To confirm whether or not this is the problem you are encountering:&lt;/p>
+&lt;ol>
+&lt;li>Copy the Job ID from OnDemand&lt;/li>
+&lt;li>Delete the job (This will remove the dialog, so make sure you copy the JobID first)&lt;/li>
+&lt;li>Using a terminal, run &lt;code>sacct -j ####&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>If one of the job steps existed with the reason &amp;ldquo;OUT_OF_MEM&amp;rdquo;, then you need to allocate more memory to RStudio.&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_r_crash2.png" alt="jupyterqueue2">&lt;/p></description></item><item><title>Manuals: PyTorch In Jupyter</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/pytorch_in_jupyter/</guid><description>
 &lt;h2 id="pytorch-in-a-jupyter-notebook">PyTorch in a Jupyter Notebook&lt;/h2>
 &lt;p>There are many ways to run PyTorch within Jupyter, though some methods are needlessly complicated or are more prone to errors. If you intend to use PyTorch within Jupyter, the following steps should get you up and running.&lt;/p>
 &lt;h2 id="setting-up-the-environment">Setting Up The Environment&lt;/h2>
