@@ -242,7 +242,7 @@ enable indentation lines in nvim, one can use the
 [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 plugin. Installation and configuration instructions for this plugin are [here](https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides). 
 
-<center><img title="indent_blankline" src="https://camo.githubusercontent.com/795d0b92e1853b23f440265abcb75a8bad4d29bd9b8d1ed040885e00731d28b3/68747470733a2f2f692e696d6775722e636f6d2f56784354684d752e706e67" width="600"></center>
+<center><img title="indent_blankline" src="https://private-user-images.githubusercontent.com/12900252/265404807-64a1a3c6-74e6-4183-901d-ad94c1edc59c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MjAxMTgsIm5iZiI6MTcxMTQxOTgxOCwicGF0aCI6Ii8xMjkwMDI1Mi8yNjU0MDQ4MDctNjRhMWEzYzYtNzRlNi00MTgzLTkwMWQtYWQ5NGMxZWRjNTljLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzI2VDAyMjMzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk4Nzk0NTk1YTg0YjZiMjZmMjA5MGYzYTAxNGFhNDg2ZjY4OTJkYTg5NWYxOTkwYTEwMzQxZDc0ZTVhMGY5ZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ICFg324IVK2rsQBWBmc8MqNAF2Bh9zyRihje4FxFnkg" width="600"></center>
 <center>Indentation Guides with `indent-blankline.nvim` Plugin</center>
 
 ### Help
