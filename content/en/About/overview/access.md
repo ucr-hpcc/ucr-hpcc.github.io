@@ -14,7 +14,7 @@ aliases:
 
 ## User account requests
 
-To create new user or lab accounts please, follow these instructions:
+To create new user or lab accounts, please follow these instructions:
 
 * Please email user account requests to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Include the full name, NetID and email address of both users and PI. Users need to be members of the PI's group. Preferentially, user account requests should come from the corresponding PI directly. If the request comes from a new user then the PI needs to be CC'ed in the email exchange. 
 * If a PI's lab is not registered yet, please provide in the same email a COA (formerly FAU) required to pay for the annual subscription fee, and optionally for additional data storage (see [here](https://hpcc.ucr.edu/about/overview/access/#recharging-rates)). If additional storage is needed, mention how much and the COA to be used for the additional recharge.  
