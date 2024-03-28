@@ -15,7 +15,7 @@ aliases:
 ## User account requests
 
 * Email user account request to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Please include full name, NetID and email address of both user and PI. Users need to be members of the PI's group. Prefrentially, user account requests should come from the correspoding PI directly. If the request comes from a new user then the PI needs to be included in the email exchange (CC'ed). 
-* An FAU for the annual subscription fee (see below) is required if a PI's lab is not registered yet.
+* If a PI's lab is not registered yet, please provide in the same email a COA (formerly FAU) that should be charged to pay for the annual subscription fee (see below). If additional bigdata storage is needed, mention how much.  
 
 After the access information for an account has been received via email, new users want to follow the login instructions [here](/manuals/login).
 
