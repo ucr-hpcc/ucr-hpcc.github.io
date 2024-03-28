@@ -21,7 +21,7 @@ After the access information for an account has been received via email, new use
 
 ## Recharging rates
 
-HPCC's recharging rate structure is outlined below. A more formal summary is available [here](/about/facility/rates). 
+HPCC's recharging rate structure is outlined below. A more formal summary is available in the _Recharging Rate PDFs_ [here](/about/facility/rates). 
 
 ## Lab-based Registration Fee
 
