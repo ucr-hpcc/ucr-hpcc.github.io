@@ -30,7 +30,7 @@ HPCC's recharging rate structure is outlined below. A more formal summary is ava
 An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
-  * Over 16,000 CPU cores (60% AMD and 40% Intel), ~230,000 cuda cores (Nvidia A100, P100 and K80 GPUs), ~3PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the [hardware pages](https://hpcc.ucr.edu/about/hardware/).
+  * Over 16,000 CPU cores (60% AMD and 40% Intel), ~230,000 cuda cores (Nvidia A100, P100 and K80 GPUs), ~5PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the [hardware pages](https://hpcc.ucr.edu/about/hardware/).
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
