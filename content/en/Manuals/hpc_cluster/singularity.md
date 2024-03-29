@@ -51,6 +51,8 @@ singularity pull docker://ubuntu:22.04
 
 Note that the environment within these containers will be limited, mainly you lose the ability to use the module system. This is expected, as the environment (and the operating system) within the container will be different than the one we are running on our nodes. Even if you are able to get the modules mounted within the container, compatability can not be guatanteed as different libraries versions and packages might be present within the container that the modules were not compiled with.
 
+> NOTE: If you get an error similar to "unexpected HTTP status: 401", make sure your [project](https://cloud.sylabs.io/dashboard#projects) on the Container Builder website is set to "Public".
+
 #### HPCC Provided Images
 
 In an attempt to preserve some legacy software, we created a CentOS 7 image that integrates with the old CentOS 7 modules. Access to the CentOS 7 container can be granted by running `module load centos/7.9`. This will set the `CENTOS7_SING` environment variable, which is the location of the CentOS 7 container image. Usage examples of the CentOS 7 image are in the below sections.
