@@ -1934,45 +1934,101 @@ Since &lt;code>Docker&lt;/code> requires root access and HPC users are not typic
 &lt;p>We will be using &lt;code>Apptainer&lt;/code> when it is ready for production use.
 However, in the meantime, &lt;code>singularity-ce&lt;/code> is currently availble on the cluster.&lt;/p>
 &lt;h2 id="limitations">Limitations&lt;/h2>
-&lt;p>Currently we are not supporting Slurm jobs bening submitted from within a container.
+&lt;p>Currently we are not supporting Slurm jobs being submitted from within a container.
 If you load the container &lt;code>centos/7.9&lt;/code> and try to submit a job from within it will fail.
 Please contact support in order to work around this issue.&lt;/p>
+&lt;p>Additionally, the building of Singularity contains on the cluster is not possible due to the steps requiring elevated permissions. If custom containers are required, you will need to build them on a machine that you have root/&lt;code>sudo&lt;/code> access on (such as your local machine) or use a &lt;a href="https://cloud.sylabs.io/builder">Remote Builder&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-use-singularity">How to use Singularity&lt;/h2>
-&lt;p>&lt;code>Singularity&lt;/code> is easy to use.
-You can run &lt;code>singularity&lt;/code> in an interactive mode by calling a shell, or you can run &lt;code>singularity&lt;/code> in a non-interactive mode and just pass it a script.
-This 2 modes are very similar to job submission on the cluster; &lt;code>srun&lt;/code> is used for interactive, while &lt;code>sbatch&lt;/code> is used for non-interactive.&lt;/p>
+&lt;p>You can use Singularity by running &lt;code>module load singularity&lt;/code>.
+You can run &lt;code>singularity&lt;/code> in an interactive mode by calling a shell, or you can run &lt;code>singularity&lt;/code> in a non-interactive mode and just pass it a script/program to run.
+These 2 modes are very similar to job submission on the cluster; &lt;code>srun&lt;/code> is used for interactive, while &lt;code>sbatch&lt;/code> is used for non-interactive.&lt;/p>
+&lt;h3 id="pulling-container-images">Pulling Container Images&lt;/h3>
+&lt;p>The first step in using Singularity is to get a container to run inside of. Containers can be custom built, pulled from &lt;a href="https://hub.docker.com/">Docker Hub&lt;/a> or from &lt;a href="https://cloud.sylabs.io/">SyLabs Container Library&lt;/a>.&lt;/p>
+&lt;p>For example, if you wanted to run your program within an Ubuntu environment you could use the following command to pull the Ubuntu 22.04:&lt;/p>
+&lt;pre>&lt;code class="language-bash"># From Singularity Library:
+singularity pull library://library/default/ubuntu:22.04
+# From Docker Hub:
+singularity pull docker://ubuntu:22.04
+&lt;/code>&lt;/pre>
+&lt;p>Note that the environment within these containers will be limited, mainly you lose the ability to use the module system. This is expected, as the environment (and the operating system) within the container will be different than the one we are running on our nodes. Even if you are able to get the modules mounted within the container, compatability can not be guatanteed as different libraries versions and packages might be present within the container that the modules were not compiled with.&lt;/p>
+&lt;blockquote>
+&lt;p>NOTE: If you get an error similar to &amp;ldquo;unexpected HTTP status: 401&amp;rdquo;, make sure your &lt;a href="https://cloud.sylabs.io/dashboard#projects">project&lt;/a> on the Container Builder website is set to &amp;ldquo;Public&amp;rdquo;.&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="hpcc-provided-images">HPCC Provided Images&lt;/h4>
+&lt;p>In an attempt to preserve some legacy software, we created a CentOS 7 image that integrates with the old CentOS 7 modules. Access to the CentOS 7 container can be granted by running &lt;code>module load centos/7.9&lt;/code>. This will set the &lt;code>CENTOS7_SING&lt;/code> environment variable, which is the location of the CentOS 7 container image. Usage examples of the CentOS 7 image are in the below sections.&lt;/p>
+&lt;h3 id="building-container-images">Building Container Images&lt;/h3>
+&lt;p>In order to build a custom image, you must use a machine you have &lt;code>sudo&lt;/code> access on or use a &lt;a href="https://cloud.sylabs.io/builder">Remote Builder&lt;/a>.&lt;/p>
+&lt;h4 id="localsudo-machine">Local/Sudo Machine&lt;/h4>
+&lt;p>Installing Singularity is outside of the scope for this tutorial. Please see the &lt;a href="https://docs.sylabs.io/guides/3.9/admin-guide/installation.html">Installing SingularityCE&lt;/a> steps.&lt;/p>
+&lt;p>Once Singularity is installed, you must create a definition (def) file. More details on creating a definition file can be found on the Singularity &lt;a href="https://docs.sylabs.io/guides/3.9/user-guide/definition_files.html">The Definition File&lt;/a> documentation, but a simple definition file of a Debian container that installs Python3 is the following:&lt;/p>
+&lt;pre>&lt;code>BootStrap: docker
+From: debian:12
+%post
+apt-get update -y
+apt-get install -y python3
+&lt;/code>&lt;/pre>
+&lt;p>If the above file was named &amp;ldquo;debian.def&amp;rdquo;, then an image could be build using &lt;code>singularity build debian.sif debian.def&lt;/code>. This will create an image called &lt;code>debian.sif&lt;/code> that can be ran using the sections below.&lt;/p>
+&lt;h4 id="remote-builder">Remote Builder&lt;/h4>
+&lt;p>After signing up for the &lt;a href="https://cloud.sylabs.io/builder">remote builder &lt;/a>, log in using the steps from &lt;code>singularity remote login&lt;/code>.&lt;/p>
+&lt;p>After logging in, you must create a definition file. We can use the same &amp;ldquo;debian.sif&amp;rdquo; file from the &amp;ldquo;Local/Sudo Machine&amp;rdquo; section. With the definition file, build the container image using &lt;code>singularity build --remote debian.sif debian.def&lt;/code>. After the image has been built and downloaded, you can run it using the sections below.&lt;/p>
 &lt;h3 id="interactive-singularity">Interactive Singularity&lt;/h3>
 &lt;p>When running singularity you need to provide the path to a &lt;code>singularity&lt;/code> image file.
 For example, this would be the most basic way to get a shell within your container:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load singularity
-singularity shell /path/to/singularity/image
+singularity pull library://library/default/ubuntu:22.04
+singularity shell ubuntu_22.04.sif
+cat /etc/os-release # Inside Container
+&amp;gt; PRETTY_NAME=&amp;quot;Ubuntu 22.04.4 LTS&amp;quot;
+&amp;gt; NAME=&amp;quot;Ubuntu&amp;quot;
+&amp;gt; VERSION_ID=&amp;quot;22.04&amp;quot;
 &lt;/code>&lt;/pre>
-&lt;p>Typically when we install &lt;code>singularity&lt;/code> enabled software, we will also create an environment variable which holds the location of the &lt;code>singularity&lt;/code> image file.
-For example, this would be how we would use the &lt;code>centos&lt;/code> module:&lt;/p>
+&lt;p>To run the CentOS 7 container:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
 singularity shell $CENTOS7_SING
 &lt;/code>&lt;/pre>
-&lt;p>There is a special shortcut for the &lt;code>centos&lt;/code> module that allows us to run the above more simply, as:&lt;/p>
+&lt;p>Additionally, there is a special shortcut for the &lt;code>centos&lt;/code> module that allows us to run the above more simply, as:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
 centos.sh
 &lt;/code>&lt;/pre>
-&lt;p>Here is a another example that utilizes an interactive job:&lt;/p>
-&lt;pre>&lt;code>module load centos
-srun -p batch --mem=1g -c 4 --time=2:00:00 --pty centos.sh
+&lt;p>While running containers on a head node is technically possible, compute resources are still limited. You can use the following commands to run a job on a compute node:&lt;/p>
+&lt;p>Ubuntu:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity pull library://library/default/ubuntu:22.04
+singularity shell ubuntu_22.04.sif
+srun -p epyc --mem=1g -c 4 --time=2:00:00 --pty singularity shell ubuntu_22.04.sif
+hostname # Inside container
+&amp;gt; r21
+cat /etc/os-release # Inside container
+&amp;gt; PRETTY_NAME=&amp;quot;Ubuntu 22.04.4 LTS&amp;quot;
+&amp;gt; NAME=&amp;quot;Ubuntu&amp;quot;
+&amp;gt; VERSION_ID=&amp;quot;22.04
+&lt;/code>&lt;/pre>
+&lt;p>CentOS 7:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load centos
+srun -p epyc --mem=1g -c 4 --time=2:00:00 --pty centos.sh
+cat /etc/os-release # Inside container
+&amp;gt; PRETTY_NAME=&amp;quot;CentOS Linux 7 (Core)&amp;quot;
+&amp;gt; NAME=&amp;quot;CentOS Linux&amp;quot;
+&amp;gt; VERSION_ID=&amp;quot;7&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;h3 id="non-interactive-singularity">Non-Interactive Singularity&lt;/h3>
-&lt;p>When running singularity as non-interactive, the same basic rules apply, we need a path to our &lt;code>singularity&lt;/code> image file as well as a command.&lt;/p>
+&lt;p>When running singularity non-interactivly, the same basic rules apply. We need a path to our &lt;code>singularity&lt;/code> image file as well as a command to run.&lt;/p>
 &lt;h4 id="basics">Basics&lt;/h4>
 &lt;p>For example, here is the basic syntax:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load singularity
 singularity exec /path/to/singularity/image someCommand
 &lt;/code>&lt;/pre>
-&lt;p>Using &lt;code>centos&lt;/code> as an example, you can execute an abitraty command like so:&lt;/p>
+&lt;p>Using &lt;code>ubuntu.sif&lt;/code> as an example, you can execute an abitraty command like so:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity pull library://library/default/ubuntu:22.04
+singularity exec ubuntu_22.04.sif cat /etc/os-release
+&lt;/code>&lt;/pre>
+&lt;p>And using our CentOS 7 image:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load singularity
 singularity exec $CENTOS7_SING cat /etc/redhat-release
 &lt;/code>&lt;/pre>
 &lt;h4 id="shortcuts">Shortcuts&lt;/h4>
-&lt;p>Now using the &lt;code>centos&lt;/code> shortcut:&lt;/p>
+&lt;p>Using the &lt;code>centos.sh&lt;/code> shortcut that we provide for CentOS 7:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
 centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
 &lt;/code>&lt;/pre>
@@ -1981,9 +2037,14 @@ centos.sh &amp;quot;cat /etc/redhat-release&amp;quot;
 centos.sh &amp;quot;module load samtools; samtools --help&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;h4 id="jobs">Jobs&lt;/h4>
-&lt;p>Here is an example submitted as a job:&lt;/p>
+&lt;p>Here is an example job submitted using an Ubuntu container:&lt;/p>
+&lt;pre>&lt;code class="language-bash">module load singularity
+singularity pull library://library/default/ubuntu:22.04
+sbatch -p epyc --wrap=&amp;quot;singularity exec ubuntu_22.04.sif cat /etc/os-release; whoami; date&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;p>Here is an example submitted as a job using the CentOS 7 container:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load centos
-sbatch -p batch --wrap=&amp;quot;centos.sh 'module load samtools; samtools --help'&amp;quot;
+sbatch -p epyc --wrap=&amp;quot;centos.sh 'module load samtools; samtools --help'&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;h4 id="variables">Variables&lt;/h4>
 &lt;p>Here is an example with passing environment variables:&lt;/p>
