@@ -14,11 +14,7 @@ None currently observed.
 
 ## Unannounced exceptions
 
-The campus network is currently experiencing problems. This is outside of our control, but jobs that do not actively rely on an internet connection should be unaffected. 
-
-Keep up to date with the status of the problem here: https://techalerts.ucr.edu/pages/incident/5967bcc208eee84e0e0028b6/661046524e2bf8052fe8b5d1
-
-<!-- None currently observed. -->
+None currently observed.
 
 ## Standard Operating Procedures
 
