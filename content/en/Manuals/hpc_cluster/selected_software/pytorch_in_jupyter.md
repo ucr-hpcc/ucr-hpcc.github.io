@@ -45,6 +45,8 @@ pip3 install torch torchvision torchaudio
 
 From this point, the PyTorch kernel should be ready to use within Jupyter. Because of it's requirement for a GPU, it will need to be run using OnDemand or through an interactive session.
 
+## Running on Jupyter
+
 The below steps will focus on running it through OnDemand.
 
 From within OnDemand, start a new Jupyter Notebook using the highlighted options below. 
