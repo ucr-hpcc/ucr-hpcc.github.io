@@ -112,6 +112,7 @@ conda activate pytorch_env
 &lt;pre>&lt;code class="language-bash">pip3 install torch torchvision torchaudio
 &lt;/code>&lt;/pre>
 &lt;p>From this point, the PyTorch kernel should be ready to use within Jupyter. Because of it&amp;rsquo;s requirement for a GPU, it will need to be run using OnDemand or through an interactive session.&lt;/p>
+&lt;h2 id="running-on-jupyter">Running on Jupyter&lt;/h2>
 &lt;p>The below steps will focus on running it through OnDemand.&lt;/p>
 &lt;p>From within OnDemand, start a new Jupyter Notebook using the highlighted options below.&lt;/p>
 &lt;p>&lt;img src="../../../img/pytorch_jupyter.png" alt="pytorch jupyter">&lt;/p>
