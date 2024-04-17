@@ -1,5 +1,5 @@
 ---
-title: Training Events
+title: Workshops
 linkTitle: Workshops
 type: docs
 weight: 1
