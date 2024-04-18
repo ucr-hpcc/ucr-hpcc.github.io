@@ -652,7 +652,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>128GB memory per Core *&lt;/td>
+&lt;td>64GB memory per Core †, *&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -660,7 +660,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>128GB memory per Core **&lt;/td>
+&lt;td>64GB memory per Core †, **&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -668,7 +668,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>128GB memory per Core ***&lt;/td>
+&lt;td>64GB memory per Core †, ‡&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -676,7 +676,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>128GB memory per Core, 2-hour time limit&lt;/td>
+&lt;td>64GB memory per Core, 2-hour time limit&lt;/td>
 &lt;td>2 Hours&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -692,16 +692,17 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>GPU-Enabled Workloads&lt;/td>
 &lt;td>8 GPUs&lt;/td>
 &lt;td>48 Cores, 512GB memory&lt;/td>
-&lt;td>16 Cores, 256GB memory ****&lt;/td>
+&lt;td>16 Cores, 256GB memory †, ‡‡&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;ul>
+&lt;li>† A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.&lt;/li>
 &lt;li>* Allocatable memory per-node in the &lt;strong>batch&lt;/strong> partition is limited to &lt;strong>~500GB&lt;/strong> to allow for system overhead.&lt;/li>
 &lt;li>** Allocatable memory per-node in the &lt;strong>intel&lt;/strong> partition is limited to &lt;strong>~450GB&lt;/strong> to allow for system overhead.&lt;/li>
-&lt;li>*** Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&lt;/li>
-&lt;li>**** Allocatable memory per-node in the &lt;strong>gpu&lt;/strong> partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]&lt;/li>
+&lt;li>‡ Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&lt;/li>
+&lt;li>‡‡ Allocatable memory per-node in the &lt;strong>gpu&lt;/strong> partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]&lt;/li>
 &lt;li>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.&lt;/li>
 &lt;/ul>
 &lt;p>Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
