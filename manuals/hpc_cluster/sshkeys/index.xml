@@ -212,6 +212,10 @@ The &lt;code>Password+DUO&lt;/code> method requires a UCR NetID, if you do not h
 &lt;li>Unzip&lt;/li>
 &lt;li>Double click portable version of exe and run the &lt;code>MobaXterm&lt;/code> application.&lt;/li>
 &lt;/ol>
+&lt;h5 id="persistent-home-directory">Persistent Home Directory&lt;/h5>
+&lt;p>By default, MobaXterm will not have a presistent home directory, meaning any files saved there will be lost the next time you start it. To use a persistent home directory, go to &amp;ldquo;Setting &amp;gt; General &amp;gt; Persistent Home Directory&amp;rdquo;. If this shows &amp;ldquo;&amp;lt; Temp Directory &amp;gt;&amp;rdquo;, then change it to where you would like your home directory to be stored on your computer.&lt;/p>
+&lt;h5 id="finding-files-on-windows">Finding Files on Windows&lt;/h5>
+&lt;p>To find where a file is located on windows from within a MobaXterm terminal, you can use the &lt;code>open&lt;/code> command. For example &lt;code>open .&lt;/code> to open the directory you are currently in, or &lt;code>open ~&lt;/code> to open your home directory.&lt;/p>
 &lt;h4 id="filezilla">FileZilla&lt;/h4>
 &lt;p>If you choose to upload you SSH key to the HPCC cluster with a &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation">GUI app&lt;/a>, you will need to install &lt;code>FileZilla&lt;/code> or a similar sFTP/SCP client.
 Note, FileZilla is not required if you use the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#a-command-line-based-ssh-key-creation">command-line approach&lt;/a> below.&lt;/p>
