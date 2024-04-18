@@ -652,7 +652,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -660,7 +660,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -668,7 +668,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -692,7 +692,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>GPU-Enabled Workloads&lt;/td>
 &lt;td>8 GPUs&lt;/td>
 &lt;td>48 Cores, 512GB memory&lt;/td>
-&lt;td>16 Cores, 256GB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>16 Cores, 256GB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;/tbody>
