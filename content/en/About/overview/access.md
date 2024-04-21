@@ -40,8 +40,8 @@ The registration provides access to the following resources:
 For data storage the HPCC uses a central parallel GPFS storage system that
 scales to many thousands of TBs. This high-availability storage system is
 directly attached (mounted) to all its CPU and GPU nodes, meaning users can
-immediately process their data with high-performance computing power without 
-moving them from one locaton to another. 
+immediately process their data with high-performance computing hardware without 
+moving them from one location (_e.g._ a data archival system) to another. 
 
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
 * Storage rental option
