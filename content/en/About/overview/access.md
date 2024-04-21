@@ -43,7 +43,7 @@ directly attached (mounted) to all its CPU and GPU nodes, meaning users can
 immediately process their data with high-performance computing hardware without 
 moving them from one location (_e.g._ a data archival system) to another. 
 
-* Rented bit data storage
+* Rented big data storage
 
     * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
     * Storage rental option
