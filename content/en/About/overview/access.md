@@ -37,6 +37,11 @@ The registration provides access to the following resources:
   * Note: there is no extra charge for CPU usage but each user and lab have CPU quotas of 256 and 512 CPU cores, respectively. Computing jobs exceeding these quotas can be submitted but will stay in a queued state until resources within the quota limits become available. 
 
 ## Big data storage
+For data storage the HPCC uses a central parallel GPFS storage system that
+scales to many thousands of TBs. This high-availability storage system is
+directly attached (mounted) to all its CPU and GPU nodes, meaning users can
+immediately process their data with high-performance computing power without 
+moving them from one locaton to another. 
 
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
 * Storage rental option
