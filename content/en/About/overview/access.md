@@ -41,7 +41,7 @@ The registration provides access to the following resources:
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
 * Storage rental option
     
-    * $1000 per 10TB of usable and backed up storage space. The storage pool is shared among all user accounts of a registered lab.
+    * $1000 per 10TB of usable and backed up storage space per year. In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). The storage pool is shared among all user accounts of a registered lab.
  
 ## Ownership models
 
