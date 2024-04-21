@@ -48,11 +48,11 @@ The registration provides access to the following resources:
 * Disk storage
         
     * A lab purchases storage hardware (_e.g._ hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility's parallel GPFS storage systems including production and backup storage. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable and backed up space is the equivalent of almost 30TB of raw disk space. Note, owned storage space is only available to the users of a PI's group or those a PI wishes to give access to.
-    * Owned storage can be attractive for labs with storage needs above 40 TBs.
+    * Owned storage can be attractive for labs with storage needs above 40TBs.
 
 * Compute nodes
         
-    * Lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: [HDX XT24-5260V4](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) and [HDX XN24-52S1](https://www.thinkmate.com/system/hdx-xn24-52s1). A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for [AMD EPYC](https://www.gigabyte.com/us/High-Density-Server/H262-Z63-rev-100#ov) and [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
+    * Lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: [HDX XT24-5260V4](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) and [HDX XN24-52S1](https://www.thinkmate.com/system/hdx-xn24-52s1). A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for [AMD EPYC](https://www.gigabyte.com/us/Enterprise/High-Density-Server) and [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
     * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
