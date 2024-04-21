@@ -49,6 +49,7 @@ moving them from one location (_e.g._ a data archival system) to another.
     * Storage rental option
     
         * $1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (_e.g._ 100GB units). For details see [here](https://hpcc.ucr.edu/about/overview/rates/). In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
+        * Since the HPCC backs up all user data to a secondary server room and uses snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the cost for rented storage is $33.33 for 1TB/yr raw disk space.
         * The rented storage pool can be shared among all user accounts of a registered lab.
  
 ## Ownership models
