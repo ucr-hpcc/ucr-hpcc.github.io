@@ -80,13 +80,13 @@ The registration provides access to the following resources:&lt;/p>
 &lt;p>Disk storage&lt;/p>
 &lt;ul>
 &lt;li>A lab purchases storage hardware (&lt;em>e.g.&lt;/em> hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility&amp;rsquo;s parallel GPFS storage systems including production and backup storage. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable and backed up space is the equivalent of almost 30TB of raw disk space. Note, owned storage space is only available to the users of a PI&amp;rsquo;s group or those a PI wishes to give access to.&lt;/li>
-&lt;li>Owned storage can be attractive for labs with storage needs above 40 TBs.&lt;/li>
+&lt;li>Owned storage can be attractive for labs with storage needs above 40TBs.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Compute nodes&lt;/p>
 &lt;ul>
-&lt;li>Lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: &lt;a href="http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3">HDX XT24-5260V4&lt;/a> and &lt;a href="https://www.thinkmate.com/system/hdx-xn24-52s1">HDX XN24-52S1&lt;/a>. A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for &lt;a href="https://www.gigabyte.com/us/High-Density-Server/H262-Z63-rev-100#ov">AMD EPYC&lt;/a> and &lt;a href="https://www.thinkmate.com/systems/servers/gpx">GPU&lt;/a> nodes.&lt;/li>
+&lt;li>Lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: &lt;a href="http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3">HDX XT24-5260V4&lt;/a> and &lt;a href="https://www.thinkmate.com/system/hdx-xn24-52s1">HDX XN24-52S1&lt;/a>. A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for &lt;a href="https://www.gigabyte.com/us/Enterprise/High-Density-Server">AMD EPYC&lt;/a> and &lt;a href="https://www.thinkmate.com/systems/servers/gpx">GPU&lt;/a> nodes.&lt;/li>
 &lt;li>Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab&amp;rsquo;s overall CPU quota (see above) by the number of owned CPU cores.&lt;/li>
 &lt;li>Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.&lt;/li>
 &lt;/ul>
