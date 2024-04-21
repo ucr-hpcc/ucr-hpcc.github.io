@@ -54,7 +54,7 @@ The registration provides access to the following resources:
 
 * Computer nodes
         
-    * Lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: [HDX XT24-5260V4](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) and [HDX XN24-52S1](https://www.thinkmate.com/system/hdx-xn24-52s1). A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for [AMD EPYC](https://www.gigabyte.com/us/Enterprise/High-Density-Server) and [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
+    * A lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown here: [HDX XT24-5260V4](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) and [HDX XN24-52S1](https://www.thinkmate.com/system/hdx-xn24-52s1). A quad node system includes 4 nodes each configured with two 16 core Intel chips (total physical core count 128), 512GB of RAM, 1.2TB SSD and FDR-IB interconnect. Similar options exist for [AMD EPYC](https://www.gigabyte.com/us/Enterprise/High-Density-Server) and [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
     * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
