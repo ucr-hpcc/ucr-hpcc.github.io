@@ -43,15 +43,17 @@ directly attached (mounted) to all its CPU and GPU nodes, meaning users can
 immediately process their data with high-performance computing hardware without 
 moving them from one location (_e.g._ a data archival system) to another. 
 
-* Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
-* Storage rental option
+* Rented bit data storage
+
+    * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
+    * Storage rental option
     
-    * $1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (_e.g._ 100GB units). For details see [here](https://hpcc.ucr.edu/about/overview/rates/). In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
-    * The rented storage pool can be shared among all user accounts of a registered lab.
+        * $1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (_e.g._ 100GB units). For details see [here](https://hpcc.ucr.edu/about/overview/rates/). In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
+        * The rented storage pool can be shared among all user accounts of a registered lab.
  
 ## Ownership models
 
-* Data storage
+* Owned big data storage
         
     * A lab purchases storage hardware (_e.g._ hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility's parallel GPFS storage systems including production and backup storage. There is no extra charge for the required storage infrastructure including hard drive enclosures (servers) and high-speed network. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the cost for owned storage is $8.67 for 1TB/yr raw disk space. Note, owned storage space is only available to the users of a PI's group or those a PI wishes to give access to.
     * The rented storage pool can be shared among all user accounts of a registered lab.
