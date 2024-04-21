@@ -37,6 +37,14 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 2. Unzip
 3. Double click portable version of exe and run the `MobaXterm` application.
 
+##### Persistent Home Directory
+
+By default, MobaXterm will not have a presistent home directory, meaning any files saved there will be lost the next time you start it. To use a persistent home directory, go to "Setting > General > Persistent Home Directory". If this shows "< Temp Directory >", then change it to where you would like your home directory to be stored on your computer.
+
+##### Finding Files on Windows
+
+To find where a file is located on windows from within a MobaXterm terminal, you can use the `open` command. For example `open .` to open the directory you are currently in, or `open ~` to open your home directory.
+
 #### FileZilla
 
 If you choose to upload you SSH key to the HPCC cluster with a [GUI app](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#b-gui-based-ssh-key-creation), you will need to install `FileZilla` or a similar sFTP/SCP client.
