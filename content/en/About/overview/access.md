@@ -46,7 +46,7 @@ moving them from one locaton to another.
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools, PIs have the option to rent or own storage space.
 * Storage rental option
     
-    * $1000 per 10TB of usable and backed up storage space per year. In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
+    * $1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (_e.g._ 100GB units). For details see [here](https://hpcc.ucr.edu/about/overview/rates/). In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
     * The rented storage pool can be shared among all user accounts of a registered lab.
  
 ## Ownership models
