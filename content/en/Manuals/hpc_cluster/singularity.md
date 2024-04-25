@@ -226,3 +226,9 @@ module load centos
 export SINGULARITY_NV=1
 centos.sh
 ```
+
+## Singularity Usecases
+
+In addition to using Singularity to run operating system containers (Debian, Ubuntu, CentOS, etc), it can also be used to run certain software on the cluster.
+
+The most prominent example of this is AlphaFold. If you are interested in using AlphaFold on the cluster, see the [AlphaFold Usage on HPCC](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/) page of our documentation. In addition to AlphaFold, we also offer `freefem` and `prymetime` through singularity, available by using `module load freefem` and `module load prymetime` respectively, and runnable with using `singularity shell $FREEFEM_SING` and `singularity shell $PRYMETIME_SING`.
