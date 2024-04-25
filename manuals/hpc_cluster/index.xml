@@ -2086,7 +2086,10 @@ singularity exec -nv $CENTOS7_SING cat /etc/redhat-release
 &lt;pre>&lt;code class="language-bash">module load centos
 export SINGULARITY_NV=1
 centos.sh
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Data Transfer</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/data/</guid><description>
+&lt;/code>&lt;/pre>
+&lt;h2 id="singularity-usecases">Singularity Usecases&lt;/h2>
+&lt;p>In addition to using Singularity to run operating system containers (Debian, Ubuntu, CentOS, etc), it can also be used to run certain software on the cluster.&lt;/p>
+&lt;p>The most prominent example of this is AlphaFold. If you are interested in using AlphaFold on the cluster, see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/">AlphaFold Usage on HPCC&lt;/a> page of our documentation. In addition to AlphaFold, we also offer &lt;code>freefem&lt;/code> and &lt;code>prymetime&lt;/code> through singularity, available by using &lt;code>module load freefem&lt;/code> and &lt;code>module load prymetime&lt;/code> respectively, and runnable with using &lt;code>singularity shell $FREEFEM_SING&lt;/code> and &lt;code>singularity shell $PRYMETIME_SING&lt;/code>.&lt;/p></description></item><item><title>Manuals: Data Transfer</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/data/</guid><description>
 &lt;blockquote>
 &lt;p>These pages describe how to use common data transfer software on the UCR HPCC cluster.&lt;/p>
 &lt;/blockquote></description></item></channel></rss>
