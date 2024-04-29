@@ -200,7 +200,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;h2 id="what-is-a-job">What is a Job?&lt;/h2>
 &lt;p>Submitting and managing jobs is at the heart of using the cluster. A &amp;lsquo;job&amp;rsquo; refers to the script, pipeline or experiment that you run on the nodes in the cluster.&lt;/p>
 &lt;h2 id="partitions">Partitions&lt;/h2>
-&lt;p>Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">here&lt;/a>&lt;/p>
+&lt;p>Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined on the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">Queue Policies&lt;/a> page.&lt;/p>
 &lt;ul>
 &lt;li>intel
 &lt;ul>
