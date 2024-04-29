@@ -18,21 +18,25 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * Default partition
     * Nodes: i01-02,i17-i40
     * CPU: Intel
+    * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * batch
     * Nodes: c01-c48
     * CPU: AMD
+    * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * epyc
     * Nodes: r21-r38
     * CPU: AMD
+    * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * highmem
     * Nodes: h01-h06
     * CPU: Intel
+    * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 100 GB to 1000 GB
     * Time (walltime): 48 hours (2 days) default
 * gpu
@@ -48,6 +52,8 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * Time (walltime): 2 hours Maximum
 * Lab Partitions
     * If your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
+
+[^1]: These only list the most common CPU Extensions for each platform. A full list of supported extensions can be found using the `lscpu` command on the respective node type.
 
 In order to submit a job to different partitions add the optional '-p' parameter with the name of the partition you want to use:
 
