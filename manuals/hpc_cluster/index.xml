@@ -207,6 +207,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>Default partition&lt;/li>
 &lt;li>Nodes: i01-02,i17-i40&lt;/li>
 &lt;li>CPU: Intel&lt;/li>
+&lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
@@ -215,6 +216,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: c01-c48&lt;/li>
 &lt;li>CPU: AMD&lt;/li>
+&lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
@@ -223,6 +225,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: r21-r38&lt;/li>
 &lt;li>CPU: AMD&lt;/li>
+&lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
@@ -231,6 +234,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: h01-h06&lt;/li>
 &lt;li>CPU: Intel&lt;/li>
+&lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 100 GB to 1000 GB&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
@@ -626,7 +630,15 @@ mpirun maker # Provide appropriate maker options here
 3. Graphical user interfaces
 4. Etc ...
 &lt;/code>&lt;/pre>
-&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p></description></item><item><title>Manuals: Queue Policies</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
+&lt;p>For a growing list of examples please visit &lt;a href="https://github.com/ucr-hpcc/hpcc_slurm_examples">HPCC Slurm Examples&lt;/a>.&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>These only list the most common CPU Extensions for each platform. A full list of supported extensions can be found using the &lt;code>lscpu&lt;/code> command on the respective node type.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Manuals: Queue Policies</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/queue/</guid><description>
 &lt;h2 id="start-times">Start Times&lt;/h2>
 &lt;p>Start times are a great way to track your jobs:&lt;/p>
 &lt;pre>&lt;code class="language-bash">squeue -u $USER --start
