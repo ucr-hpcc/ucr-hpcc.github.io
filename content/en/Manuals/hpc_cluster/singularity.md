@@ -68,11 +68,11 @@ Installing Singularity is outside of the scope for this tutorial. Please see the
 Once Singularity is installed, you must create a definition (def) file. More details on creating a definition file can be found on the Singularity [The Definition File](https://docs.sylabs.io/guides/3.9/user-guide/definition_files.html) documentation, but a simple definition file of a Debian container that installs Python3 is the following:
 
 ```
-BootStrap: docker    
-From: debian:12    
-    
-%post    
-  apt-get update -y    
+BootStrap: docker
+From: debian:12
+
+%post
+  apt-get update -y
   apt-get install -y python3
 ```
 
