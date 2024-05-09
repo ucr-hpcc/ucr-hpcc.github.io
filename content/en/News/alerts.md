@@ -20,7 +20,7 @@ After investigating a High Temperature warning on one of our AC units, campus Fa
 
 **Update 1:** Facilities was unable to complete the job in their time allotted for today, and will continue work tomorrow the morning (May 9th).
 
-**Update 2:** While performing the repair, facilities identified a leak which needs to be patched before refilling the refrigerant, otherwise any refrigerant would immeditally escape. This repair is slated to start the morning of the 10th.
+**Update 2:** While performing the repair, facilities identified a leak which needs to be patched before refilling the refrigerant, otherwise any refrigerant would immediately escape. The ETA for this repair, as given to us by facilities, is May 10th.
 
 
 ## Standard Operating Procedures
