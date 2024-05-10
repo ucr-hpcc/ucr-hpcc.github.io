@@ -22,6 +22,7 @@ After investigating a High Temperature warning on one of our AC units, campus Fa
 
 **Update 2:** While performing the repair, facilities identified a leak which needs to be patched before refilling the refrigerant, otherwise any refrigerant would immediately escape. The ETA for this repair, as given to us by facilities, is May 10th.
 
+**Update 3:** Facilities has contacted us to say that they are finishing up the repairs and that we can begin to start loading the servers again. As such we've released ~50% of the nodes to begin running jobs again.
 
 ## Standard Operating Procedures
 
