@@ -132,19 +132,23 @@ For more information regarding conda please visit [Conda Docs](https://conda.io/
 ### Jupyter
 You can run jupyter as an interactive job or you can use the web instance, see [Jupyter Usage](https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server) for details.
 
-#### Virtual Environment
-In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:
+#### Virtual Environments (Kernels)
+In order to use a custom Python/Conda virtual environment within Jupyter, it must be configured as a kernel. You will need to do the following:
 
 ```bash
 # Create a virtual environment named "ipykernel_py3", if you don't already have one
-# It can be named whatever you like, "ipykernel_py3" is just an example
+# It can be named whatever you like, "ipykernel_py3" is just an example.
+# You can also indicate a more specific version of Python here. Otherwise you'll get
+# the latest version provided by Anaconda.
 conda create -n ipykernel_py3 python=3 ipykernel
 
 # Load the new environment
 conda activate ipykernel_py3
 
 # Install kernel
-python -m ipykernel install --user --name myenv --display-name "JupyterPy3"
+# --name is used to define the internal name used by Jupyter, and should not contain spaces.
+# --display-name is the name you will see in the Jupyter web interface, should be descriptive.
+python -m ipykernel install --user --name ipykernel_py3 --display-name "IPyKernel (Python 3)"
 ```
 
 Now when you visit [Jupyter-Hub](https://jupyter.hpcc.ucr.edu) you should see the option "JupyterPy3" when you click the "New" dropdown menu in the upper left corner of the home page.
@@ -156,6 +160,8 @@ jupyter kernelspec list  # List available kernels
 jupyter kernelspec uninstall UNWANTEDKERNEL
 ```
 > Replace UNWANTEDKERNEL with the name of the kernel you wish to remove
+
+Further reading: [Installing the IPython kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 
 #### R
 For instructions on how to configure your R environment please visit [IRkernel](https://github.com/IRkernel/IRkernel).
