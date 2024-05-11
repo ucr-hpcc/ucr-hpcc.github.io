@@ -874,15 +874,19 @@ on &lt;a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage
 &lt;p>For more information regarding conda please visit &lt;a href="https://conda.io/docs/user-guide/">Conda Docs&lt;/a>.&lt;/p>
 &lt;h3 id="jupyter">Jupyter&lt;/h3>
 &lt;p>You can run jupyter as an interactive job or you can use the web instance, see &lt;a href="https://hpcc.ucr.edu/manuals/linux_basics/text/#jupyter-server">Jupyter Usage&lt;/a> for details.&lt;/p>
-&lt;h4 id="virtual-environment">Virtual Environment&lt;/h4>
-&lt;p>In order to enable your conda virtual environemnt within the Jupyter web portal you will need to do the following:&lt;/p>
+&lt;h4 id="virtual-environments-kernels">Virtual Environments (Kernels)&lt;/h4>
+&lt;p>In order to use a custom Python/Conda virtual environment within Jupyter, it must be configured as a kernel. You will need to do the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash"># Create a virtual environment named &amp;quot;ipykernel_py3&amp;quot;, if you don't already have one
-# It can be named whatever you like, &amp;quot;ipykernel_py3&amp;quot; is just an example
+# It can be named whatever you like, &amp;quot;ipykernel_py3&amp;quot; is just an example.
+# You can also indicate a more specific version of Python here. Otherwise you'll get
+# the latest version provided by Anaconda.
 conda create -n ipykernel_py3 python=3 ipykernel
 # Load the new environment
 conda activate ipykernel_py3
 # Install kernel
-python -m ipykernel install --user --name myenv --display-name &amp;quot;JupyterPy3&amp;quot;
+# --name is used to define the internal name used by Jupyter, and should not contain spaces.
+# --display-name is the name you will see in the Jupyter web interface, should be descriptive.
+python -m ipykernel install --user --name ipykernel_py3 --display-name &amp;quot;IPyKernel (Python 3)&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;p>Now when you visit &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a> you should see the option &amp;ldquo;JupyterPy3&amp;rdquo; when you click the &amp;ldquo;New&amp;rdquo; dropdown menu in the upper left corner of the home page.&lt;/p>
 &lt;p>To remove an unwanted kernel, use the following commands:&lt;/p>
@@ -892,6 +896,7 @@ jupyter kernelspec uninstall UNWANTEDKERNEL
 &lt;blockquote>
 &lt;p>Replace UNWANTEDKERNEL with the name of the kernel you wish to remove&lt;/p>
 &lt;/blockquote>
+&lt;p>Further reading: &lt;a href="https://ipython.readthedocs.io/en/stable/install/kernel_install.html">Installing the IPython kernel&lt;/a>&lt;/p>
 &lt;h4 id="r">R&lt;/h4>
 &lt;p>For instructions on how to configure your R environment please visit &lt;a href="https://github.com/IRkernel/IRkernel">IRkernel&lt;/a>.
 Since we should already have IRkernel install in the latest version of R, you would only need to do the following within R:&lt;/p>
