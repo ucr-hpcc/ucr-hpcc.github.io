@@ -24,6 +24,8 @@ After investigating a High Temperature warning on one of our AC units, campus Fa
 
 **Update 3:** Facilities has contacted us to say that they are finishing up the repairs and that we can begin to start loading the servers again. As such we've released ~50% of the nodes to begin running jobs again.
 
+**Update 4:** Facilities has completed the repairs, and all nodes have been released.
+
 ## Standard Operating Procedures
 
 ### SOP for unscheduled outages
