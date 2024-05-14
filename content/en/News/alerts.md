@@ -14,17 +14,7 @@ None currently observed.
 
 ## Unannounced exceptions
 
-__7-May-2024: AC Unit Repairs, Slurm Paused__
-
-After investigating a High Temperature warning on one of our AC units, campus Facilities determined a component in one of the AC units appears to be faulty and needs to be replaced. They are planning on receiving the replacement part the morning of the 8th, but in order to do the replacement both AC units will need to be taken offline. We've began putting nodes into a "draining" state in an attempt to bring the load on the cluster as low as possible to best manage heat in the server room. Existing jobs will continue to run, but newly scheduled jobs will be put in the queue until we can confirm that the repair has been completed and the AC units are online again. We know this is disruptive to your research and teaching, and we apologize for this development.
-
-**Update 1:** Facilities was unable to complete the job in their time allotted for today, and will continue work tomorrow the morning (May 9th).
-
-**Update 2:** While performing the repair, facilities identified a leak which needs to be patched before refilling the refrigerant, otherwise any refrigerant would immediately escape. The ETA for this repair, as given to us by facilities, is May 10th.
-
-**Update 3:** Facilities has contacted us to say that they are finishing up the repairs and that we can begin to start loading the servers again. As such we've released ~50% of the nodes to begin running jobs again.
-
-**Update 4:** Facilities has completed the repairs, and all nodes have been released.
+None currently observed.
 
 ## Standard Operating Procedures
 
@@ -58,6 +48,18 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__7-May-2024: AC Unit Repairs, Slurm Paused__
+
+After investigating a High Temperature warning on one of our AC units, campus Facilities determined a component in one of the AC units appears to be faulty and needs to be replaced. They are planning on receiving the replacement part the morning of the 8th, but in order to do the replacement both AC units will need to be taken offline. We've began putting nodes into a "draining" state in an attempt to bring the load on the cluster as low as possible to best manage heat in the server room. Existing jobs will continue to run, but newly scheduled jobs will be put in the queue until we can confirm that the repair has been completed and the AC units are online again. We know this is disruptive to your research and teaching, and we apologize for this development.
+
+**Update 1:** Facilities was unable to complete the job in their time allotted for today, and will continue work tomorrow the morning (May 9th).
+
+**Update 2:** While performing the repair, facilities identified a leak which needs to be patched before refilling the refrigerant, otherwise any refrigerant would immediately escape. The ETA for this repair, as given to us by facilities, is May 10th.
+
+**Update 3:** Facilities has contacted us to say that they are finishing up the repairs and that we can begin to start loading the servers again. As such we've released ~50% of the nodes to begin running jobs again.
+
+**Update 4:** Facilities has completed the repairs, and all nodes have been released.
 
 __08-Mar-2024 AC Unit Refrigerant Leak, Queue Paused__
 
