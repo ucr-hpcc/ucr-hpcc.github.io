@@ -10,7 +10,13 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
-None currently observed.
+__June 14th Shutdown Ahead of Genomics Electrical Maintenance__
+
+Starting on Friday, June 14th at 8am and extending to Saturday, June 15th at 11pm UCR HPCC will be powering down the cluster ahead of a scheduled electrical shutdown of the UCR Genomics Building. To make the most of this downtime, HPCC will offline the cluster on the 14th in order to install routine software updates and perform other minor maintenance tasks. These updates need to be installed to ensure continued security, reliability, and performance of our systems. During the shutdown, most of our online services hosted from the UCR Genomics Building will be unavailable. This includes, but is not limited to: SSH, Slurm, Rstudio, JupyterHub, OnDemand, and web file access. Please save your work on any of these services before the maintenance window. E-mail support may be temporarily interrupted, but should otherwise remain online. We recommend checking our [Slack channel](https://ucr-hpcc.slack.com/) for any minor status updates during the shutdown.
+
+If you submit a Slurm or OnDemand job that extends into the maintenance window, you will receive an error containing "ReqNodeNotAvail", and your job will queue, but will not start until maintenance is over. If you want your job to start sooner, cancel the job request, and resubmit your job with a shorter --time duration, such that your job will finish before the maintenance window begins.
+
+We apologize for the disruption to your research and teaching workflows. Thanks for your understanding.
 
 ## Unannounced exceptions
 
