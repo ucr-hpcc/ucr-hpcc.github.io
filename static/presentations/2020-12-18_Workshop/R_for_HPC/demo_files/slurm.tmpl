@@ -33,6 +33,7 @@ log.file = fs::path_expand(log.file)
 #SBATCH --partition=<%= resources$partition %>
 <%= if (!is.null(resources$partition)) sprintf(paste0("#SBATCH --partition='", resources$partition, "'")) %>
 <%= if (array.jobs) sprintf("#SBATCH --array=1-%i", nrow(jobs)) else "" %>
+<%= if (!is.null(resources$account)) sprintf(paste0("#SBATCH --account='", resources$account, "'")) %>
 
 ## Initialize work environment like
 ## source /etc/profile
