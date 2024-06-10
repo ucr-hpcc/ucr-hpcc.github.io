@@ -62,7 +62,7 @@ rm ~/acls.txt
 For more information regarding GPFS ACLs refer to the following: [GPFS ACLs](https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm)
 
 ### XFS ACLs
-The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc), as well as /secure.
+The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc).
 For more information on how to use ACLs under XFS, please refer to the following: [CentOS 7 XFS](https://vishmule.com/2015/06/11/access-control-list-acl-permissions-in-rhel7centos7/)
 
 > Note: ACLs are not applicable to gocryptfs, which is a FUSE filesystem, not GPFS nor XFS.
@@ -82,7 +82,6 @@ When transferring files make sure that files are encrypted in flight with one of
 The destination for sensitive data on the cluster must also be encrypted at rest under one of the follow secure locations:
 
 * /dev/shm/ - This location is in RAM, so it does not exist at rest (ensure proper ACLs)
-* /secure - This location is encrypted at rest with AES 256 key length (ensure proper ACLs)
 * /run/user/$EUID/unencrypted - This location is manually managed, and should be created for access to unencrypted files.
 
 
@@ -94,8 +93,7 @@ Thus, during transfer they will be GPG encrypted. However, decryption must occur
 ### At Rest
 There are 3 methods available on the cluster for encryption at rest:
   1. GPG encryption of files via the command line [GPG Example](https://kb.iu.edu/d/awio), however you must ensure proper ACLs and decryption must occur in a secure location.
-  2. The location "/secure" is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.
-  3. Create your own location with [gocryptfs](https://nuetzlich.net/gocryptfs/forward_mode_crypto/).
+  2. Create your own location with [gocryptfs](https://nuetzlich.net/gocryptfs/forward_mode_crypto/).
 
 #### GocryptfsMgr
 
