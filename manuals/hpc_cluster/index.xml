@@ -1386,7 +1386,7 @@ rm ~/acls.txt
 &lt;/code>&lt;/pre>
 &lt;p>For more information regarding GPFS ACLs refer to the following: &lt;a href="https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm">GPFS ACLs&lt;/a>&lt;/p>
 &lt;h3 id="xfs-acls">XFS ACLs&lt;/h3>
-&lt;p>The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc), as well as /secure.
+&lt;p>The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc).
 For more information on how to use ACLs under XFS, please refer to the following: &lt;a href="https://vishmule.com/2015/06/11/access-control-list-acl-permissions-in-rhel7centos7/">CentOS 7 XFS&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Note: ACLs are not applicable to gocryptfs, which is a FUSE filesystem, not GPFS nor XFS.&lt;/p>
@@ -1405,7 +1405,6 @@ This means, when you move the data (transit) or when the data is not in use (res
 &lt;p>The destination for sensitive data on the cluster must also be encrypted at rest under one of the follow secure locations:&lt;/p>
 &lt;ul>
 &lt;li>/dev/shm/ - This location is in RAM, so it does not exist at rest (ensure proper ACLs)&lt;/li>
-&lt;li>/secure - This location is encrypted at rest with AES 256 key length (ensure proper ACLs)&lt;/li>
 &lt;li>/run/user/$EUID/unencrypted - This location is manually managed, and should be created for access to unencrypted files.&lt;/li>
 &lt;/ul>
 &lt;p>It is also possible to encrypt your files with GPG (&lt;a href="https://kb.iu.edu/d/awio">GPG Example&lt;/a>), before they are transferred.
@@ -1417,7 +1416,6 @@ Thus, during transfer they will be GPG encrypted. However, decryption must occur
 &lt;p>There are 3 methods available on the cluster for encryption at rest:&lt;/p>
 &lt;ol>
 &lt;li>GPG encryption of files via the command line &lt;a href="https://kb.iu.edu/d/awio">GPG Example&lt;/a>, however you must ensure proper ACLs and decryption must occur in a secure location.&lt;/li>
-&lt;li>The location &amp;ldquo;/secure&amp;rdquo; is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.&lt;/li>
 &lt;li>Create your own location with &lt;a href="https://nuetzlich.net/gocryptfs/forward_mode_crypto/">gocryptfs&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;h4 id="gocryptfsmgr">GocryptfsMgr&lt;/h4>
