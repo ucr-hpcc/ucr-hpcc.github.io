@@ -198,13 +198,18 @@ See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
 ## B. Web-based Access 
 
-Web-based HPCC cluster access is provided via [RStudio Server](https://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu). 
-Users with an HPCC cluster account can access them with the same login credential used for [ssh access](#a-ssh-login-from-terminal). The `Username+Password` 
-authentication method with Duo is currently not required for these services. For load balancing RStudio Server has two instances:
-[RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
+Web-based HPCC cluster access is provided via [OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/), allowing users to
+launch JupyterHub, RStudio, VSCode, Desktop Sessions, and more all from their web browser. All jobs will run on compute nodes, meaning that resources
+are dedicated to your instance and provide the best performance possible for these applications.
+
+Alternatively we host instances of [RStudio Server](https://rstudio.hpcc.ucr.edu) and [JupyterHub](https://jupyter.hpcc.ucr.edu), though resources are
+shared for all users accessing them, so performance is likely to be worse than what you would get through OnDemand. For load balancing RStudio Server
+has two instances: [RStudio Server 1](https://rstudio.hpcc.ucr.edu) and [RStudio Server 2](http://rstudio2.hpcc.ucr.edu). If one of these services
 is slow or not available, users want to choose the alternative instance. A much more efficient method for using RStudio Server are 
 custom compute node instances using `srun`. This option is described [here](https://hpcc.ucr.edu/manuals/linux_basics/text/#2-compute-node-instance).
 Related options for Jupyter are outlined [here](https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/#jupyter).
+
+Users with an HPCC cluster account can access them with the same login credential used for [ssh access](#a-ssh-login-from-terminal).
 
 ## C. Data Sharing Access
 
