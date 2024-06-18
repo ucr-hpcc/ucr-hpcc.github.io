@@ -222,6 +222,28 @@ exit
 
 Under a multi step job the salloc command will request resources and then your parent shell will be running on the head node. This means that all commands will be executed on the head node unless preceeded by the srun command. You will also need to exit this shell in order to terminate your job.
 
+#### Array Jobs
+
+If a large batch of fairly similar jobs need to be submitted, an Array Job might be a good option. For an array job, include the `--array` parameter in your sbatch script, similar to the following:
+
+```bash
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2     # This will be the number of CPUs per individual array job
+#SBATCH --mem=1G     # This will be the memory per individual array job
+#SBATCH --time=0-00:15:00     # 15 minutes
+#SBATCH --array=1-2500
+#SBATCH --job-name="just_a_test"
+
+echo "I have array ID ${SLURM_ARRAY_TASK_ID}"
+
+```
+
+Within each job, the `SLURM_ARRAY_TASK_ID` environment variable is set and can be used to slightly change how each job is run.
+
+More information can be found on the [Slurm Documentation](https://slurm.schedmd.com/job_array.html) including other Environment Variables that are set per-job.
+
 ### Highmem Jobs
 The highmem partition does not have a default amount of memory set, however it does has a minimum limit of 100GB per job. This means that you need to explicity request at least 100GB or more of memory.
 
