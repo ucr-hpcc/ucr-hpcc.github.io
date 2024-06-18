@@ -362,6 +362,20 @@ srun &amp;lt;command&amp;gt;
 exit
 &lt;/code>&lt;/pre>
 &lt;p>Under a multi step job the salloc command will request resources and then your parent shell will be running on the head node. This means that all commands will be executed on the head node unless preceeded by the srun command. You will also need to exit this shell in order to terminate your job.&lt;/p>
+&lt;h4 id="array-jobs">Array Jobs&lt;/h4>
+&lt;p>If a large batch of fairly similar jobs need to be submitted, an Array Job might be a good option. For an array job, include the &lt;code>--array&lt;/code> parameter in your sbatch script, similar to the following:&lt;/p>
+&lt;pre>&lt;code class="language-bash">#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2 # This will be the number of CPUs per individual array job
+#SBATCH --mem=1G # This will be the memory per individual array job
+#SBATCH --time=0-00:15:00 # 15 minutes
+#SBATCH --array=1-2500
+#SBATCH --job-name=&amp;quot;just_a_test&amp;quot;
+echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;p>Within each job, the &lt;code>SLURM_ARRAY_TASK_ID&lt;/code> environment variable is set and can be used to slightly change how each job is run.&lt;/p>
+&lt;p>More information can be found on the &lt;a href="https://slurm.schedmd.com/job_array.html">Slurm Documentation&lt;/a> including other Environment Variables that are set per-job.&lt;/p>
 &lt;h3 id="highmem-jobs">Highmem Jobs&lt;/h3>
 &lt;p>The highmem partition does not have a default amount of memory set, however it does has a minimum limit of 100GB per job. This means that you need to explicity request at least 100GB or more of memory.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
