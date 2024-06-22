@@ -283,7 +283,6 @@ __11:22 AM, 13-Apr-17: Cluster back up running__
 Situation is resolved for now and things are working. We are currently discussing the situation with our electricians to avoid future instances.
 
 
-{{< comment >}}
 ## Scheduled exceptions and downtimes
 
 None currently observed.
@@ -323,4 +322,3 @@ of this and other pages of the HPCC website.
 ## Team collaborations with Slack
 
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
-{{< /comment >}}
