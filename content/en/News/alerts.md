@@ -14,47 +14,6 @@ __21-Jun-2024: Network Outage__
 
 Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/).
 
-{{< comment >}}
-## Scheduled exceptions and downtimes
-
-None currently observed.
-
-## Unannounced exceptions
-
-None currently observed.
-
-## Standard Operating Procedures
-
-### SOP for unscheduled outages
-
-When unforeseen issues arise they are categorized by severity:
-
-0. Green - Normal operation, no current issues
-1. Yellow - Minor issue[s], likely not observed by users (ie. jobs are not affected)
-2. Orange - Medium issue[s], likely observed by users but not fatal (ie. jobs may perform slower than usual)
-3. Red - Critical issue[s], major service or entire cluster is not functioning as expected (ie. jobs have terminated prematurely)
-
-Email notifications are only sent to users if there is a Red critical issue.
-
-### SOP for scheduled shutdowns
-
-The following outlines the timeline for advance email notifications on scheduled shutdowns of the HPCC cluster and other exceptions:
-
-1. Four weeks advance notice
-2. Followed by weekly reminders
-3. Final reminder the day before the outage
-
-## Twitter feed
-
-For additional news and information, please consult the [HPCC Twitter
-site](https://twitter.com/UCR_HPCC). Also see the Tweets window at the bottom
-of this and other pages of the HPCC website. 
-
-
-## Team collaborations with Slack
-
-Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
-{{< /comment >}}
 
 ## Past exceptions
 
@@ -323,3 +282,45 @@ __11:22 AM, 13-Apr-17: Cluster back up running__
 
 Situation is resolved for now and things are working. We are currently discussing the situation with our electricians to avoid future instances.
 
+
+{{< comment >}}
+## Scheduled exceptions and downtimes
+
+None currently observed.
+
+## Unannounced exceptions
+
+None currently observed.
+
+## Standard Operating Procedures
+
+### SOP for unscheduled outages
+
+When unforeseen issues arise they are categorized by severity:
+
+0. Green - Normal operation, no current issues
+1. Yellow - Minor issue[s], likely not observed by users (ie. jobs are not affected)
+2. Orange - Medium issue[s], likely observed by users but not fatal (ie. jobs may perform slower than usual)
+3. Red - Critical issue[s], major service or entire cluster is not functioning as expected (ie. jobs have terminated prematurely)
+
+Email notifications are only sent to users if there is a Red critical issue.
+
+### SOP for scheduled shutdowns
+
+The following outlines the timeline for advance email notifications on scheduled shutdowns of the HPCC cluster and other exceptions:
+
+1. Four weeks advance notice
+2. Followed by weekly reminders
+3. Final reminder the day before the outage
+
+## Twitter feed
+
+For additional news and information, please consult the [HPCC Twitter
+site](https://twitter.com/UCR_HPCC). Also see the Tweets window at the bottom
+of this and other pages of the HPCC website. 
+
+
+## Team collaborations with Slack
+
+Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
+{{< /comment >}}
