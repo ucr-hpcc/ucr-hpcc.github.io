@@ -15,7 +15,7 @@ __21-Jun-2024: Network Outage__
 Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/).
 
 
-<! ––
+<!––
 ## Scheduled exceptions and downtimes
 
 None currently observed.
