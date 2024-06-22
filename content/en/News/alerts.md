@@ -12,7 +12,7 @@ aliases:
 
 __21-Jun-2024: Network Outage__
 
-Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/). Update 7:30 PM: the netword connection is working again, but as it turns out there also is a problem with one of the HVAC units in the server room. At this point, it is unclear how the two problems are connected. Currently, facilities has the situation under control. To avoid overheating, the Slurm queue has been paused by the sys admins. Current jobs will continue to run, while pending jobs will need to wait until the situation improves. 
+Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/). Update 7:30 PM: the network connection is working again, but as it turns out there also is a problem with one of the HVAC units in the server room. It is still unclear how the two problems are connected. Currently, facilities is working on the HVAC problem. To avoid overheating, the Slurm queue has been paused by the sys admins. Current jobs will continue to run, while pending jobs will need to wait until the situation improves. 
 
 
 ## Past exceptions
