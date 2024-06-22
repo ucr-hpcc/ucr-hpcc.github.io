@@ -8,6 +8,13 @@ aliases:
     - /alerts
 ---
 
+
+__21-Jun-2024: Network Outage__
+
+Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/).
+
+
+<! ––
 ## Scheduled exceptions and downtimes
 
 None currently observed.
@@ -42,6 +49,8 @@ The following outlines the timeline for advance email notifications on scheduled
 For additional news and information, please consult the [HPCC Twitter
 site](https://twitter.com/UCR_HPCC). Also see the Tweets window at the bottom
 of this and other pages of the HPCC website. 
+
+-->
 
 ## Team collaborations with Slack
 
