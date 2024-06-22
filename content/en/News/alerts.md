@@ -8,6 +8,7 @@ aliases:
     - /alerts
 ---
 
+## Unannounced exceptions
 
 __21-Jun-2024: Network Outage__
 
