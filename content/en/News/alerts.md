@@ -10,15 +10,18 @@ aliases:
 
 ## Unannounced exceptions
 
+__24-Jun-2024: AC Work Completed__
+The AC repairs have been completed by facilities. Over the next few hours we will slowly begin to bring nodes back online.
+
 __22-Jun-2024: Update on AC Unit Problems__
 
 UCR Facilities was able to return the affected AC unit to working order. However, the unit is still in suboptimal condition, and will have to be powered off for full maintenance on Monday (Jun 24). Until then, HPCC will have to limit the capacity of the Slurm cluster. This compromise will allow maintenance to be safely performed without resorting to a full emergency cancellation of all jobs.
 
+## Past exceptions
+
 __21-Jun-2024: Network Outage and HVAC Problem__
 
 Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/). Update 7:30 PM: the network connection is working again, but as it turns out there also is a problem with one of the HVAC units in the server room. It is still unclear how the two problems are connected. Currently, facilities is working on the HVAC problem. To avoid overheating, the Slurm queue has been paused by the sys admins. Current jobs will continue to run, while pending jobs will need to wait until the situation improves. 
-
-## Past exceptions
 
 __CANCELLED: June 14th Shutdown Ahead of Genomics Electrical Maintenance__
 
