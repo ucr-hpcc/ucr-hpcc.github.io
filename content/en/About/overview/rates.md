@@ -24,6 +24,13 @@ aliases:
    * [Recharging rates: 2017/2018](https://goo.gl/QjJgzu)
    * [Recharging rates: 2016/2017](https://goo.gl/jJWpon)
 
+## Additional Purchased Disk Storage Information
+
+To achieve our desired balance of performance and density in our storage systems
+we must place some restrictions on the lifetime of purchased storage. Details can
+be found in our [Owned Storage Information](https://docs.google.com/document/d/1Up48pPWidYAN0wHsFiiqGQ676C-lPKinqBV_kXKSF0k/edit)
+document
+
 ## External user accounts
 Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
