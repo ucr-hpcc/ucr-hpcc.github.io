@@ -24,7 +24,7 @@ aliases:
    * [Recharging rates: 2017/2018](https://goo.gl/QjJgzu)
    * [Recharging rates: 2016/2017](https://goo.gl/jJWpon)
 
-## Additional Purchased Disk Storage Information
+## Purchased Disk Information
 
 To achieve our desired balance of performance and density in our storage systems
 we must place some restrictions on the lifetime of purchased storage. Details can
