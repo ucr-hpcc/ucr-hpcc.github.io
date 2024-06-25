@@ -178,7 +178,7 @@ It summarizes CPU cluster activity on HPCC&amp;rsquo;s computing resources inclu
 &lt;li>&lt;a href="https://goo.gl/QjJgzu">Recharging rates: 2017/2018&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://goo.gl/jJWpon">Recharging rates: 2016/2017&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="additional-purchased-disk-storage-information">Additional Purchased Disk Storage Information&lt;/h2>
+&lt;h2 id="purchased-disk-information">Purchased Disk Information&lt;/h2>
 &lt;p>To achieve our desired balance of performance and density in our storage systems
 we must place some restrictions on the lifetime of purchased storage. Details can
 be found in our &lt;a href="https://docs.google.com/document/d/1Up48pPWidYAN0wHsFiiqGQ676C-lPKinqBV_kXKSF0k/edit">Owned Storage Information&lt;/a>
