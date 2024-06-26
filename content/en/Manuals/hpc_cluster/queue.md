@@ -54,13 +54,13 @@ A job is submitted on the gpu partition. The job requests 32 cores.
 
 #### Per-User Limit
 
-A job is started on the highmem partition, requesting 32 cores.
+You submit a job the highmem partition, requesting 32 cores.
 
 > This job will start successfully, as it is within the partition's core limit.
 
-A second job is submitted while the first job is still running. The new job is requesting 32 cores.
+You submit a second job while the first job is still running. The new job is requesting 32 cores.
 
-> Because the user is already at their per-user core limit on the highmem partition, the second job will be queued until the first job finishes.
+> Because you are at your per-user core limit on the highmem partition, the second job will be queued until the first job finishes.
 
 #### Per-Lab Limit
 
