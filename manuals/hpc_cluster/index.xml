@@ -736,13 +736,13 @@ request additional resources, please contact us at &lt;a href="mailto:support@hp
 &lt;p>This job will not be able to be submitted, as 32 cores is above the partition&amp;rsquo;s 16 core per-job limit.&lt;/p>
 &lt;/blockquote>
 &lt;h4 id="per-user-limit">Per-User Limit&lt;/h4>
-&lt;p>A job is started on the highmem partition, requesting 32 cores.&lt;/p>
+&lt;p>You submit a job the highmem partition, requesting 32 cores.&lt;/p>
 &lt;blockquote>
 &lt;p>This job will start successfully, as it is within the partition&amp;rsquo;s core limit.&lt;/p>
 &lt;/blockquote>
-&lt;p>A second job is submitted while the first job is still running. The new job is requesting 32 cores.&lt;/p>
+&lt;p>You submit a second job while the first job is still running. The new job is requesting 32 cores.&lt;/p>
 &lt;blockquote>
-&lt;p>Because the user is already at their per-user core limit on the highmem partition, the second job will be queued until the first job finishes.&lt;/p>
+&lt;p>Because you are at your per-user core limit on the highmem partition, the second job will be queued until the first job finishes.&lt;/p>
 &lt;/blockquote>
 &lt;h4 id="per-lab-limit">Per-Lab Limit&lt;/h4>
 &lt;p>User A submits 2 jobs, one on the intel partition and one on the epyc partition, each requesting 256 cores.&lt;/p>
