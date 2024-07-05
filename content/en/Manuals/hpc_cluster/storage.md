@@ -44,26 +44,27 @@ Quota Responsibility | Lab
 ## Non-Persistent Space
 
 Frequently, there is a need for faster temporary storage. For example activities like the following would fall under this category:
-    1. Output a significant amount of intermediate data during a job
-    2. Access a dataset from a faster medium than bigdata or the home directories
-    3. Write out lock files
+
+1. Output a significant amount of intermediate data during a job
+2. Access a dataset from a faster medium than bigdata or the home directories
+3. Write out lock files
 
 These types of activities are well suited to the use of fast non-persistent spaces. Below are the filesystems available on the HPC cluster that would best suited for these actions.
+
+__SSD Backed Scratch Space__
+This space is much faster than the persistent space (/rhome,/bigdata), but slower than using RAM based storage. The scratch space should be used with the `$SCRATCH` environment variable which is automatically set for each job. This location is local to the node it is ran on and is automatically deleted once a job has finished.
+
+Path                 | /scratch
+-------------------- | --------
+User Availability    | All Users
+Node Availability    | All Nodes
+Quota Responsibility | N/A
 
 __Temporary Space__
 This is a standard space available on all Linux systems. Please be aware that it is limited to the amount of free disk space on the node you are running on.
 
 Path                 | /tmp
 -------------------- | ---------
-User Availability    | All Users
-Node Availability    | All Nodes
-Quota Responsibility | N/A
-
-__SSD Backed Space__
-This space is much faster than the persistent space (/rhome,/bigdata), but slower than using RAM based storage.
-
-Path                 | /scratch
--------------------- | --------
 User Availability    | All Users
 Node Availability    | All Nodes
 Quota Responsibility | N/A
