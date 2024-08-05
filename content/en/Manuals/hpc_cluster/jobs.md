@@ -201,6 +201,31 @@ squeue --user $USER --noheader --format '%i' | xargs scancel
 
 For more information please refer to [Slurm scancel documentation](https://slurm.schedmd.com/scancel.html "Slurm scancel doc").
 
+### Optimizing Jobs
+After a job has been completed, you can use `seff` to check how many resources your job _actually_ consumed during it's run. For example:
+```
+$ seff 123123
+
+Job ID: 123123
+Cluster: hpcc
+User/Group: your_username/yourlab
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 20
+CPU Utilized: 03:26:14
+CPU Efficiency: 95.04% of 03:37:00 core-walltime
+Job Wall-clock time: 00:10:51
+Memory Utilized: 81.20 GB
+Memory Efficiency: 81.20% of 100.00 GB
+```
+
+In the above example, we can see good utilization of the CPU cores (95%) as well as good utilization of memory usage (81%).
+
+If CPU Efficiency is low, make sure that the program(s) you are running makes use of multi-threading correctly. Requesting more cores for a job will not make your program run faster if it does not properly take advantage of them.
+
+If Memory Efficiency is low, then you can try reducing the requested memory for a job. **Note:*** Just because you see your job uses 81.20GB of memory **does not** mean that next time you should request exactly 81.20GB of memory. Variations in input data **will** cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it's better to overestimate on initial runs, and scale back once you find a good limit.
+
+
 ### Advanced Jobs
 There is a third way of submitting jobs by using steps.
 Single Step submission:
