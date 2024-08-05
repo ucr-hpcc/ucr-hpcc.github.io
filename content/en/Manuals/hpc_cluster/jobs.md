@@ -202,7 +202,9 @@ squeue --user $USER --noheader --format '%i' | xargs scancel
 For more information please refer to [Slurm scancel documentation](https://slurm.schedmd.com/scancel.html "Slurm scancel doc").
 
 ### Optimizing Jobs
-After a job has been completed, you can use `seff` to check how many resources your job _actually_ consumed during it's run. For example:
+After a job has been completed, you can use `seff ##` ("##" being your Slurm Job ID) to check how many resources your job _actually_ consumed during it's run. `seff` is only useful **after** a job has completed, and will not give useful information on currently-running jobs.
+
+For example:
 ```
 $ seff 123123
 
