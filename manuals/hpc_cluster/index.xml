@@ -349,7 +349,8 @@ squeue --user $USER --noheader --format '%i' | xargs scancel
 &lt;/code>&lt;/pre>
 &lt;p>For more information please refer to &lt;a href="https://slurm.schedmd.com/scancel.html" title="Slurm scancel doc">Slurm scancel documentation&lt;/a>.&lt;/p>
 &lt;h3 id="optimizing-jobs">Optimizing Jobs&lt;/h3>
-&lt;p>After a job has been completed, you can use &lt;code>seff&lt;/code> to check how many resources your job &lt;em>actually&lt;/em> consumed during it&amp;rsquo;s run. For example:&lt;/p>
+&lt;p>After a job has been completed, you can use &lt;code>seff ##&lt;/code> (&amp;quot;##&amp;quot; being your Slurm Job ID) to check how many resources your job &lt;em>actually&lt;/em> consumed during it&amp;rsquo;s run. &lt;code>seff&lt;/code> is only useful &lt;strong>after&lt;/strong> a job has completed, and will not give useful information on currently-running jobs.&lt;/p>
+&lt;p>For example:&lt;/p>
 &lt;pre>&lt;code>$ seff 123123
 Job ID: 123123
 Cluster: hpcc
