@@ -223,7 +223,7 @@ In the above example, we can see good utilization of the CPU cores (95%) as well
 
 If CPU Efficiency is low, make sure that the program(s) you are running makes use of multi-threading correctly. Requesting more cores for a job will not make your program run faster if it does not properly take advantage of them.
 
-If Memory Efficiency is low, then you can try reducing the requested memory for a job. **Note:*** Just because you see your job uses 81.20GB of memory **does not** mean that next time you should request exactly 81.20GB of memory. Variations in input data **will** cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it's better to overestimate on initial runs, and scale back once you find a good limit.
+If Memory Efficiency is low, then you can try reducing the requested memory for a job. **Note:** Just because you see your job uses 81.20GB of memory **does not** mean that next time you should request exactly 81.20GB of memory. Variations in input data **will** cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it's better to overestimate on initial runs, and scale back once you find a good limit.
 
 
 ### Advanced Jobs
