@@ -321,25 +321,29 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;p>Start the &lt;code>Filezilla&lt;/code> application.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill in the &lt;code>Quickconnect&lt;/code> fields at the top of the application window:&lt;/p>
+&lt;p>Open the &lt;code>Site Manager&lt;/code> button in the top bar of icons.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla5.png" alt="filezilla5">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;code>New Site&lt;/code>, rename it (optional) and press enter.&lt;/p>
+&lt;p>&lt;img src="../../../img/filezilla6.png" alt="filezilla6">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Make sure to use the following settings for the site:&lt;/p>
 &lt;ul>
-&lt;li>Enter your HPCC username in the &lt;code>Username&lt;/code> field.&lt;/li>
-&lt;li>Enter the HPCC servername &lt;code>cluster.hpcc.ucr.edu&lt;/code> for the &lt;code>Host&lt;/code> field.&lt;/li>
-&lt;li>Enter your password in the &lt;code>Password&lt;/code> field.&lt;/li>
-&lt;li>Enter &lt;code>22&lt;/code> in the &lt;code>Port&lt;/code> field.&lt;/li>
+&lt;li>&lt;code>Protocol&lt;/code>: should be set to &lt;code>SFTP - SSH File Transfer Protocol&lt;/code>&lt;/li>
+&lt;li>&lt;code>Host&lt;/code>: type in &lt;code>cluster.hpcc.ucr.edu&lt;/code>&lt;/li>
+&lt;li>&lt;code>Port&lt;/code>: type &lt;code>22&lt;/code>&lt;/li>
+&lt;li>&lt;code>Logon Type&lt;/code>: set to &lt;code>Interactive&lt;/code>&lt;/li>
+&lt;li>&lt;code>User&lt;/code>: type in your HPCC username&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="../../../img/filezilla1.png" alt="filezilla1">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;code>Quickconnect&lt;/code>&lt;/p>
-&lt;p>&lt;img src="../../../img/filezilla2.png" alt="filezilla2">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If the next pop up prompts you, then check the box that states &lt;code>Always trust this host, add this key to the cache&lt;/code>, then click the &lt;code>OK&lt;/code> button.&lt;/p>
+&lt;p>Click &amp;ldquo;Connect&amp;rdquo;. If the next pop up prompts you, then check the box that states &lt;code>Always trust this host, add this key to the cache&lt;/code>, then click the &lt;code>OK&lt;/code> button.&lt;/p>
 &lt;p>&lt;img src="../../../img/filezilla3.png" alt="filezilla3">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You will need to create a &lt;code>.ssh&lt;/code> directory to hold your SSH keys. On the right hand side, right click and click on the &lt;code>Create directory option&lt;/code> under your home folder location.
+&lt;p>You will need to create a &lt;code>.ssh&lt;/code> directory, if it doesn&amp;rsquo;t already exist, to hold your SSH keys. On the right hand side, right click and click on the &lt;code>Create directory option&lt;/code> under your home folder location.
 &lt;img src="../../../img/createsshdir.png" alt="createsshdir">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -356,11 +360,11 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;/li>
 &lt;li>
 &lt;p>Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file &lt;code>id_rsa.pub&lt;/code> and dropping it into the HPCC cluster direcotry &lt;code>/rhome/username/.ssh/&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="../../../img/filezilla4.png" alt="filezilla4">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once the file is transferred to the cluster, be sure to rename &lt;code>id_rsa.pub&lt;/code> to &lt;code>authorized_keys&lt;/code>.&lt;/p>
-&lt;/li>
+&lt;ol start="11">
+&lt;li>Once the file is transferred to the cluster, be sure to rename &lt;code>id_rsa.pub&lt;/code> to &lt;code>authorized_keys&lt;/code>. Alternatively, if an &lt;code>authorized_keys&lt;/code> file already exists, then you can edit the &lt;code>authorized_keys&lt;/code> file (Right Click &amp;gt; View/Edit) and place the contents of the &lt;code>id_rsa.pub&lt;/code> file inside of it.&lt;/li>
 &lt;/ol>
 &lt;h4 id="private-ssh-key">Private SSH Key&lt;/h4>
 &lt;p>Once your public key is in place, now you can configure &lt;code>Filezilla&lt;/code> to use your private &lt;code>SSH key&lt;/code> and connect to the cluster through the &lt;code>cluster.hpcc.ucr.edu&lt;/code> server.&lt;/p>
@@ -370,11 +374,10 @@ Click on &lt;code>Save private key&lt;/code> to save the private key with an ext
 &lt;p>&lt;img src="../../../img/filezilla5.png" alt="filezilla5">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;code>New Site&lt;/code>, rename it (optional) and press enter.&lt;/p>
-&lt;p>&lt;img src="../../../img/filezilla6.png" alt="filezilla6">&lt;/p>
+&lt;p>Click on the HPCC created in the &amp;ldquo;Public SSH Key&amp;rdquo; section&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Make sure the following fields are correctly filled before adding your &lt;code>SSH key&lt;/code> file:&lt;/p>
+&lt;p>Change the settings to the following:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>Protocol&lt;/code>: should be set to &lt;code>SFTP - SSH File Transfer Protocol&lt;/code>&lt;/li>
 &lt;li>&lt;code>Host&lt;/code>: type in &lt;code>cluster.hpcc.ucr.edu&lt;/code>&lt;/li>
