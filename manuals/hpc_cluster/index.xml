@@ -317,7 +317,7 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;p>Interactive jobs are submitted using &lt;code>srun&lt;/code>. An example is as follows:&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>If you do not specify a partition then the intel partition is used by default.&lt;/p>
+&lt;p>If you do not specify a partition then the &amp;ldquo;hpcc_default&amp;rdquo; partition is used by default.&lt;/p>
 &lt;p>Here is a more complete example:&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --x11 --pty bash -l
 &lt;/code>&lt;/pre>
