@@ -143,7 +143,7 @@ Interactive jobs are submitted using `srun`. An example is as follows:
 srun --pty bash -l
 ```
 
-If you do not specify a partition then the intel partition is used by default.
+If you do not specify a partition then the "hpcc_default" partition is used by default.
 
 Here is a more complete example:
 
