@@ -336,6 +336,9 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 For example, the following command uses start and end times:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sacct -u $USER -S 2018-01-01 -E 2018-08-30 -l | less -S # Type 'q' to quit
 &lt;/code>&lt;/pre>
+&lt;p>Custom command for summarizing activity of all users on cluster&lt;/p>
+&lt;pre>&lt;code class="language-bash">jobMonitor # or qstatMonitor
+&lt;/code>&lt;/pre>
 &lt;h3 id="canceling-jobs">Canceling Jobs&lt;/h3>
 &lt;p>In cancel/stop your job run the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash">scancel JOBID
