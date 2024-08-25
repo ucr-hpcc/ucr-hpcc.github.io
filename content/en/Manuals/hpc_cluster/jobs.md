@@ -179,6 +179,12 @@ For example, the following command uses start and end times:
 sacct -u $USER -S 2018-01-01 -E 2018-08-30 -l | less -S # Type 'q' to quit
 ```
 
+Custom command for summarizing activity of all users on cluster 
+
+```bash
+jobMonitor # or qstatMonitor
+```
+
 ### Canceling Jobs
 In cancel/stop your job run the following:
 
