@@ -169,40 +169,43 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
 1. Start the `Filezilla` application.
 
-2. Fill in the `Quickconnect` fields at the top of the application window:
+2. Open the `Site Manager` button in the top bar of icons.
 
-   * Enter your HPCC username in the `Username` field.
-   * Enter the HPCC servername `cluster.hpcc.ucr.edu` for the `Host` field.
-   * Enter your password in the `Password` field.
-   * Enter `22` in the `Port` field.
+   ![filezilla5](/img/filezilla5.png)
 
-   ![filezilla1](/img/filezilla1.png)
+3. Click on `New Site`, rename it (optional) and press enter.
 
-3. Click on `Quickconnect`
+   ![filezilla6](/img/filezilla6.png)
 
-   ![filezilla2](/img/filezilla2.png)
+4. Make sure to use the following settings for the site:
 
-4. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
+   * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
+   * `Host`: type in `cluster.hpcc.ucr.edu`
+   * `Port`: type `22`
+   * `Logon Type`: set to `Interactive`
+   * `User`: type in your HPCC username
+
+5. Click "Connect". If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
 
    ![filezilla3](/img/filezilla3.png)
 
-5. You will need to create a `.ssh` directory to hold your SSH keys. On the right hand side, right click and click on the `Create directory option` under your home folder location.
+6. You will need to create a `.ssh` directory, if it doesn't already exist, to hold your SSH keys. On the right hand side, right click and click on the `Create directory option` under your home folder location.
    ![createsshdir](/img/createsshdir.png)
 
-6. A window will appear to name the new directory. Name should be the following format: `/rhome/username/.ssh`. After naming the new directory click on `OK`.
+7. A window will appear to name the new directory. Name should be the following format: `/rhome/username/.ssh`. After naming the new directory click on `OK`.
    ![createsshdir](/img/createsshdir2.png)
 
-7. Right click on the new `.ssh` directory that has been created. Find and click on `File permissions`.
+8. Right click on the new `.ssh` directory that has been created. Find and click on `File permissions`.
    ![createsshdir](/img/createsshdir3.png)
 
-8. A window with the directory permissions will appear. The `.ssh` directory needs exact permissions in order for it to function properly. Follow the image below to apply the permissions.
+9. A window with the directory permissions will appear. The `.ssh` directory needs exact permissions in order for it to function properly. Follow the image below to apply the permissions.
    ![createsshdir](/img/createsshdir4.png)
 
-9. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
+10. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
 
    ![filezilla4](/img/filezilla4.png)
 
-10. Once the file is transferred to the cluster, be sure to rename `id_rsa.pub` to `authorized_keys`.
+11. Once the file is transferred to the cluster, be sure to rename `id_rsa.pub` to `authorized_keys`. Alternatively, if an `authorized_keys` file already exists, then you can edit the `authorized_keys` file (Right Click > View/Edit) and place the contents of the `id_rsa.pub` file inside of it.
 
 
 #### Private SSH Key
@@ -213,11 +216,9 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    ![filezilla5](/img/filezilla5.png)
 
-2. Click on `New Site`, rename it (optional) and press enter.
+2. Click on the HPCC created in the "Public SSH Key" section
 
-   ![filezilla6](/img/filezilla6.png)
-
-3. Make sure the following fields are correctly filled before adding your `SSH key` file:
+3. Change the settings to the following:
 
    * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
    * `Host`: type in `cluster.hpcc.ucr.edu`
