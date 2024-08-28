@@ -696,7 +696,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>batch&lt;/td>
+&lt;td>epyc (2021 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
@@ -704,7 +704,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>intel&lt;/td>
+&lt;td>intel (2016 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
@@ -712,7 +712,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>epyc&lt;/td>
+&lt;td>batch (2012 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>256 Cores, 1TB memory&lt;/td>
@@ -816,13 +816,13 @@ This is because jobs submitted to the group&amp;rsquo;s partition will be evalua
 &lt;p>A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>batch&lt;/strong> partition is limited to &lt;strong>~500GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:3" role="doc-endnote">
 &lt;p>Allocatable memory per-node in the &lt;strong>intel&lt;/strong> partition is limited to &lt;strong>~450GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:4" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Allocatable memory per-node in the &lt;strong>batch&lt;/strong> partition is limited to &lt;strong>~500GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:5" role="doc-endnote">
 &lt;p>Allocatable memory per-node in the &lt;strong>gpu&lt;/strong> partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
