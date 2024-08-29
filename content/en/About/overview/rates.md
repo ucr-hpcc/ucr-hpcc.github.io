@@ -32,6 +32,10 @@ we must place some restrictions on the lifetime of purchased storage. Details ca
 be found in our [Owned Storage Information](https://docs.google.com/document/d/1Up48pPWidYAN0wHsFiiqGQ676C-lPKinqBV_kXKSF0k/edit)
 document
 
+## Ownership Models
+
+For more information relating to owned storage, see the [Ownership models](https://hpcc.ucr.edu/about/overview/access/#ownership-models) section of the Access page.
+
 ## External user accounts
 Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
