@@ -11,6 +11,9 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### Nov 2023
+* The new NSF-MRI funded cluster is now available to users. It includes 2 head and 20 compute nodes, each with two 64-core AMD EPYC CPUs and 1TB of RAM. In total this adds 2,816 CPU cores to our HPC infrastructure. In addition, 2 powerful GPU nodes were installed, each with 8x A100 GPUs and two AMD EPYC CPUs. Combined with our existing 8x A100 GPU HGX system, this gives us a total of 24x A100 GPUs which are some of the most powerful GPUs on the market. The new CPU and GPU nodes are connected via the latest NDR Infiniband network (400-800Gb/s).
+
 ### Sep 2023
 * Stata 17 has been superseded with Stata 18. Please update scripts relying on the stata/17 module to use the stata/18 module instead.
 
