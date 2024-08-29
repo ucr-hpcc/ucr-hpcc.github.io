@@ -184,6 +184,8 @@ It summarizes CPU cluster activity on HPCC&amp;rsquo;s computing resources inclu
 we must place some restrictions on the lifetime of purchased storage. Details can
 be found in our &lt;a href="https://docs.google.com/document/d/1Up48pPWidYAN0wHsFiiqGQ676C-lPKinqBV_kXKSF0k/edit">Owned Storage Information&lt;/a>
 document&lt;/p>
+&lt;h2 id="ownership-models">Ownership Models&lt;/h2>
+&lt;p>For more information relating to owned storage, see the &lt;a href="https://hpcc.ucr.edu/about/overview/access/#ownership-models">Ownership models&lt;/a> section of the Access page.&lt;/p>
 &lt;h2 id="external-user-accounts">External user accounts&lt;/h2>
 &lt;p>Accounts for external customers can only be granted if a lab has a strong
 affiliation with UC Riverside, such as a research collaboration with UCR
