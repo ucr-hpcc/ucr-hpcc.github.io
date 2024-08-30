@@ -135,7 +135,7 @@ print(dev)
 &lt;p>&lt;img src="../../../img/vscode-ext-install.png" alt="vscodeinstall">&lt;/p>
 &lt;h3 id="starting-vscode-tunnel-on-the-cluster">Starting VSCode Tunnel on the Cluster&lt;/h3>
 &lt;p>Create an interactive session using srun&lt;/p>
-&lt;pre>&lt;code class="language-sh">srun -p batch -t 5:00:00 --pty -c 4 --mem=4g bash -l # Customize as needed
+&lt;pre>&lt;code class="language-sh">srun -p epyc -t 5:00:00 --pty -c 4 --mem=4g bash -l # Customize as needed
 &lt;/code>&lt;/pre>
 &lt;p>Load the VSCode module and start the tunnel&lt;/p>
 &lt;pre>&lt;code class="language-sh">module load vscode
