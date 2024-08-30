@@ -14,6 +14,12 @@ Submitting and managing jobs is at the heart of using the cluster.  A 'job' refe
 ## Partitions
 Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined on the [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page.
 
+* epyc
+    * Nodes: r21-r38
+    * CPU: AMD
+    * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
+    * RAM: 1 GB default
+    * Time (walltime): 168 hours (7 days) default
 * intel
     * Default partition
     * Nodes: i01-02,i17-i40
@@ -25,12 +31,6 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * Nodes: c01-c48
     * CPU: AMD
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
-    * RAM: 1 GB default
-    * Time (walltime): 168 hours (7 days) default
-* epyc
-    * Nodes: r21-r38
-    * CPU: AMD
-    * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * highmem
@@ -117,7 +117,7 @@ Here is an example of an SBATCH script:
 #SBATCH --mail-user=useremail@address.com
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="just_a_test"
-#SBATCH -p intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
+#SBATCH -p epyc # You can use any of the following; epyc, intel, batch, highmem, gpu
 
 # Print current date
 date
@@ -424,7 +424,7 @@ echo '/usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/gnome
 After your vncserver is configured, submit a vncserver job to get it started:
 
 ```bash
-sbatch -p short,batch --cpus-per-task=4 --mem=10g --time=2:00:00 --wrap='vncserver -fg' --output='vncserver-%j.out'
+sbatch -p short,epyc --cpus-per-task=4 --mem=10g --time=2:00:00 --wrap='vncserver -fg' --output='vncserver-%j.out'
 ```
 
 > Note: Appropriate job resources should be requested based on the processes you will be running from within the VNC session.
@@ -591,7 +591,7 @@ To run a NAMD2 process as an OpenMPI job on the cluster:
    #!/bin/bash -l
 
    #SBATCH -J c3d_cr2_md
-   #SBATCH -p batch
+   #SBATCH -p epyc
    #SBATCH --ntasks=32
    #SBATCH --mem=16gb
    #SBATCH --time=01:00:00
@@ -621,7 +621,7 @@ Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
 ```bash
 #!/bin/bash -l
 
-#SBATCH -p intel
+#SBATCH -p epyc
 #SBATCH --ntasks=32
 #SBATCH --mem=16gb
 #SBATCH --time=01:00:00

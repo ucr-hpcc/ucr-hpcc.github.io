@@ -28,7 +28,7 @@ On your local machine, install the "Remote - Tunnels" extension.
 Create an interactive session using srun
 
 ```sh
-srun -p batch -t 5:00:00 --pty -c 4 --mem=4g bash -l  # Customize as needed
+srun -p epyc -t 5:00:00 --pty -c 4 --mem=4g bash -l  # Customize as needed
 ```
 
 Load the VSCode module and start the tunnel
