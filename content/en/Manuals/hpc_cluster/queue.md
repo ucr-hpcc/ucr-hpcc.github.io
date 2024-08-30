@@ -74,7 +74,7 @@ User B submits a job on the epyc partition, requesting 16 cores.
 
 ## Changing Partitions
 
-In `sbatch` and `srun` scripts, the `-p` or `--partition` flag controls which partition/queue a job will run on. For example,
+In `srun` commands and `sbatch` scripts, the `-p` or `--partition` flag controls which partition/queue a job will run on. For example,
 using `-p epyc` will have your job queued and ran on the `epyc` partition. For more examples and information on running jobs,
 see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page of our documentation.
 
