@@ -775,6 +775,10 @@ request additional resources, please contact us at &lt;a href="mailto:support@hp
 &lt;blockquote>
 &lt;p>Because user A is using all 512 cores within the lab, user B&amp;rsquo;s job will be queued until one of user A&amp;rsquo;s jobs finishes.&lt;/p>
 &lt;/blockquote>
+&lt;h2 id="changing-partitions">Changing Partitions&lt;/h2>
+&lt;p>In &lt;code>sbatch&lt;/code> and &lt;code>srun&lt;/code> scripts, the &lt;code>-p&lt;/code> or &lt;code>--partition&lt;/code> flag controls which partition/queue a job will run on. For example,
+using &lt;code>-p epyc&lt;/code> will have your job queued and ran on the &lt;code>epyc&lt;/code> partition. For more examples and information on running jobs,
+see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/">Managing Jobs&lt;/a> page of our documentation.&lt;/p>
 &lt;h2 id="fair-share">Fair-Share&lt;/h2>
 &lt;p>Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
