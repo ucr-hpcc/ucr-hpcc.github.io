@@ -72,6 +72,12 @@ User B submits a job on the epyc partition, requesting 16 cores.
 
 > Because user A is using all 512 cores within the lab, user B's job will be queued until one of user A's jobs finishes.
 
+## Changing Partitions
+
+In `sbatch` and `srun` scripts, the `-p` or `--partition` flag controls which partition/queue a job will run on. For example,
+using `-p epyc` will have your job queued and ran on the `epyc` partition. For more examples and information on running jobs,
+see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page of our documentation.
+
 ## Fair-Share
 Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
