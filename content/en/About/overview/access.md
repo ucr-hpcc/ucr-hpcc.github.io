@@ -34,7 +34,7 @@ The registration provides access to the following resources:
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
-  * Note: there is no extra charge for CPU usage but each user and lab have CPU quotas of 256 and 512 CPU cores, respectively. Computing jobs exceeding these quotas can be submitted but will stay in a queued state until resources within the quota limits become available. 
+  * Note: there is no extra charge for CPU usage but each user and lab have CPU quotas of 384 and 768 CPU cores, respectively. Computing jobs exceeding these quotas can be submitted but will stay in a queued state until resources within the quota limits become available. 
 
 ## Big data storage
 For data storage the HPCC uses a central parallel GPFS storage system that

@@ -22,10 +22,10 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 
 | Partition Name   | Usecase                                                   | Per-Group Limit | Per-User Limit         | Per-Job Limit                             | Max Job Time |
 |------------------|-----------------------------------------------------------|-----------------|------------------------|-------------------------------------------|--------------|
-| epyc (2021 CPU)  | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 256 Cores, 1TB memory  | 64GB memory per Core [^1],[^4]            | 30 Days      |
-| intel (2016 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 256 Cores, 1TB memory  | 64GB memory per Core [^1],[^3]            | 30 Days      |
-| batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 256 Cores, 1TB memory  | 64GB memory per Core [^1],[^2]            | 30 Days      |
-| short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP |                 | 256 Cores, 1TB memory  | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
+| epyc (2021 CPU)  | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^4]            | 30 Days      |
+| intel (2016 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^3]            | 30 Days      |
+| batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^2]            | 30 Days      |
+| short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP |                 | 384 Cores, 1TB memory  | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
 | highmem          | Memory Intensive Workloads                                |                 | 32 Cores, 1TB memory   |                                           | 30 Days      |
 | gpu              | GPU-Enabled Workloads                                     | 8 GPUs          | 48 Cores, 512GB memory | 16 Cores, 256GB memory [^1],[^5]          | 30 Days      |
 
@@ -38,7 +38,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
  Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.  
 
 Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 512 core group limit that spans across all users in a group across all partitions. Upon request, a user or
+to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. Upon request, a user or
 group’s quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to
 request additional resources, please contact us at support@hpcc.ucr.edu with your justification.
 
@@ -64,13 +64,13 @@ You submit a second job while the first job is still running. The new job is req
 
 #### Per-Lab Limit
 
-User A submits 2 jobs, one on the intel partition and one on the epyc partition, each requesting 256 cores.
+User A submits a job requesting 384 cores. User B submits a job requesting 384 cores.
 
-> Because per-user limits are per-partition, both jobs will be submitted and run in parallel.
+> Because each user is within their per-user limits and the lab is within their limit, the jobs will run in parallel.
 
-User B submits a job on the epyc partition, requesting 16 cores.
+User C submits a job, requesting 16 cores.
 
-> Because user A is using all 512 cores within the lab, user B's job will be queued until one of user A's jobs finishes.
+> Because User A and User B are using all 768 cores within the lab, User C's job will be queued until either User A's or User B's jobs finishes.
 
 ## Changing Partitions
 
