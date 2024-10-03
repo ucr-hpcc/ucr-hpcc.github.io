@@ -699,7 +699,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>epyc (2021 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
@@ -707,7 +707,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>intel (2016 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
@@ -715,7 +715,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>batch (2012 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
@@ -723,7 +723,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>short&lt;/td>
 &lt;td>Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>256 Cores, 1TB memory&lt;/td>
+&lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core, 2-hour time limit&lt;/td>
 &lt;td>2 Hours&lt;/td>
 &lt;/tr>
@@ -747,7 +747,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;/table>
 &lt;p>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.&lt;/p>
 &lt;p>Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 512 core group limit that spans across all users in a group across all partitions. Upon request, a user or
+to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. Upon request, a user or
 group’s quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to
 request additional resources, please contact us at &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with your justification.&lt;/p>
 &lt;p>Partition quotas can also be viewed on the cluster using the &lt;code>slurm_limits&lt;/code> command.&lt;/p>
@@ -767,13 +767,13 @@ request additional resources, please contact us at &lt;a href="mailto:support@hp
 &lt;p>Because you are at your per-user core limit on the highmem partition, the second job will be queued until the first job finishes.&lt;/p>
 &lt;/blockquote>
 &lt;h4 id="per-lab-limit">Per-Lab Limit&lt;/h4>
-&lt;p>User A submits 2 jobs, one on the intel partition and one on the epyc partition, each requesting 256 cores.&lt;/p>
+&lt;p>User A submits a job requesting 384 cores. User B submits a job requesting 384 cores.&lt;/p>
 &lt;blockquote>
-&lt;p>Because per-user limits are per-partition, both jobs will be submitted and run in parallel.&lt;/p>
+&lt;p>Because each user is within their per-user limits and the lab is within their limit, the jobs will run in parallel.&lt;/p>
 &lt;/blockquote>
-&lt;p>User B submits a job on the epyc partition, requesting 16 cores.&lt;/p>
+&lt;p>User C submits a job, requesting 16 cores.&lt;/p>
 &lt;blockquote>
-&lt;p>Because user A is using all 512 cores within the lab, user B&amp;rsquo;s job will be queued until one of user A&amp;rsquo;s jobs finishes.&lt;/p>
+&lt;p>Because User A and User B are using all 768 cores within the lab, User C&amp;rsquo;s job will be queued until either User A&amp;rsquo;s or User B&amp;rsquo;s jobs finishes.&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="changing-partitions">Changing Partitions&lt;/h2>
 &lt;p>In &lt;code>srun&lt;/code> commands and &lt;code>sbatch&lt;/code> scripts, the &lt;code>-p&lt;/code> or &lt;code>--partition&lt;/code> flag controls which partition/queue a job will run on. For example,
