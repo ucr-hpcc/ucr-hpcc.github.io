@@ -208,6 +208,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Feature Constraints: ryzen&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -218,6 +219,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: Intel&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Feature Constraints: intel&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -227,6 +229,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Feature Constraints: amd&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -236,6 +239,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: Intel&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 100 GB to 1000 GB&lt;/li>
+&lt;li>Feature Constraints: mem&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -245,6 +249,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD/Intel&lt;/li>
 &lt;li>GPUs: NVIDIA K80, A100, P100&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Feature Constraints: gpu&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
