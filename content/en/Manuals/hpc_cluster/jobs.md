@@ -19,6 +19,7 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * CPU: AMD
     * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
+    * Feature Constraints: ryzen
     * Time (walltime): 168 hours (7 days) default
 * intel
     * Default partition
@@ -26,24 +27,28 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * CPU: Intel
     * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
+    * Feature Constraints: intel
     * Time (walltime): 168 hours (7 days) default
 * batch
     * Nodes: c01-c48
     * CPU: AMD
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 1 GB default
+    * Feature Constraints: amd
     * Time (walltime): 168 hours (7 days) default
 * highmem
     * Nodes: h01-h06
     * CPU: Intel
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 100 GB to 1000 GB
+    * Feature Constraints: mem
     * Time (walltime): 48 hours (2 days) default
 * gpu
     * Nodes: gpu01-gpu06
     * CPU: AMD/Intel
     * GPUs: NVIDIA K80, A100, P100
     * RAM: 1 GB default
+    * Feature Constraints: gpu
     * Time (walltime): 48 hours (2 days) default
 * short
     * Nodes: Mixed set of nodes from batch, intel, and group partitions
