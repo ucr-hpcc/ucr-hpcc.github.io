@@ -59,7 +59,7 @@ mmputacl -i ~/acls.txt /path/to/file
 rm ~/acls.txt
 ```
 
-For more information regarding GPFS ACLs refer to the following: [GPFS ACLs](https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm)
+For more information regarding GPFS ACLs refer to the following: [GPFS ACLs](https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm). An example for granting another user access to a file is given [here](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024359#modify). 
 
 ### XFS ACLs
 The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc).
