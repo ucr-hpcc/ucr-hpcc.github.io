@@ -11,6 +11,9 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### Oct 2024
+* To allow for more users to gain access our GPUs, we have reduced the per-user GPU limit from 8 to 4. Additionally, we have reduced the maximum job runtime for the GPU partition from 30 days down to 7. Should you need an increase in the time limit or number of GPUs you can use in parallel, please email support@hpcc.ucr.edu (please also CC your PI) with a short justification and timeline for the increase.
+
 ### Oct 2023
 * The new NSF-MRI funded cluster is now available to users. It includes 2 head (called `bluejay` and `skylark`) and 20 compute nodes, each with two 64-core AMD EPYC CPUs and 1TB of RAM. In total this adds 2,816 CPU cores to our HPC infrastructure. In addition, 2 powerful GPU nodes were installed, each with 8x A100 GPUs and two AMD EPYC CPUs. Combined with our existing 8x A100 GPU HGX system, this gives us a total of 24x A100 GPUs which are some of the most powerful GPUs on the market. The new CPU and GPU nodes are connected via the latest NDR Infiniband network (400-800Gb/s). 
 * The new CPU nodes can be accessed via a newly added partition (queue) called “epyc”. The A100 GPU nodes (`gpu[07-08]`) can be accessed via the “gpu” partition. Additional details on using the new partitions and user quota can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) and [here](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/). 
