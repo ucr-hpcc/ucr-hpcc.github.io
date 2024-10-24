@@ -27,13 +27,14 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 | batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^2]            | 30 Days      |
 | short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP |                 | 384 Cores, 1TB memory  | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
 | highmem          | Memory Intensive Workloads                                |                 | 32 Cores, 1TB memory   |                                           | 30 Days      |
-| gpu              | GPU-Enabled Workloads                                     | 8 GPUs          | 48 Cores, 512GB memory | 16 Cores, 256GB memory [^1],[^5]          | 30 Days      |
+| gpu              | GPU-Enabled Workloads                                     | 8 GPUs          | 4 GPUs[^6],48 Cores, 512GB memory | 16 Cores, 256GB memory [^1],[^5]          | 30 Days      |
 
  [^1]: A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.  
  [^2]: Allocatable memory per-node in the **batch** partition is limited to **~500GB** to allow for system overhead.  
  [^3]: Allocatable memory per-node in the **intel** partition is limited to **~450GB** to allow for system overhead.  
  [^4]: Allocatable memory per-node in the **epyc** partition is limited to **~950GB** to allow for system overhead.  
  [^5]: Allocatable memory per-node in the **gpu** partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]  
+ [^6]: If a user needs more than 4 GPUs, please contact support@hpcc.ucr.edu with a short justification for a temporary increase.
  
  Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.  
 
