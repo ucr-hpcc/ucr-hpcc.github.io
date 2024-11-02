@@ -10,6 +10,11 @@ aliases:
 
 ## Unannounced exceptions
 
+__02-Nov-2024: AC Issues__
+One of our 2 redundent AC units has began blowing hot air into the server room. While facilities diagnoses and resolves the issue we have paused the Slurm queue. We are sorry for the interruption.
+
+## Past exceptions
+
 __24-Jun-2024: AC Work Completed__
 The AC repairs have been completed by facilities. Over the next few hours we will slowly begin to bring nodes back online.
 
@@ -17,7 +22,6 @@ __22-Jun-2024: Update on AC Unit Problems__
 
 UCR Facilities was able to return the affected AC unit to working order. However, the unit is still in suboptimal condition, and will have to be powered off for full maintenance on Monday (Jun 24). Until then, HPCC will have to limit the capacity of the Slurm cluster. This compromise will allow maintenance to be safely performed without resorting to a full emergency cancellation of all jobs.
 
-## Past exceptions
 
 __21-Jun-2024: Network Outage and HVAC Problem__
 
