@@ -11,9 +11,10 @@ aliases:
 ## Unannounced exceptions
 
 __02-Nov-2024: AC Issues__
-One of our 2 redundent AC units has began blowing hot air into the server room. While facilities diagnoses and resolves the issue we have paused the Slurm queue. We are sorry for the interruption.
 
-Update: All equipment in the HPCC server room have lost power. This affects all services hosted from UCR Genomics, including SSH login, Slurm jobs, and e-mail support. We're working to bring services up safely and quickly.
++ 11:00AM: One of our 2 redundent AC units has began blowing hot air into the server room. While facilities diagnoses and resolves the issue we have paused the Slurm queue. We are sorry for the interruption.
++ 12:00PM: Update: to avoid overheating the power in the HPCC had to be shut down. This affects all HPCC services hosted from the Genomics Server room, including SSH login, Slurm jobs, and e-mail ticket system. We're working on bringing services up safely and quickly.
++ 4:00PM: Currently, the cluster is still down because of a problem with one of the AC units. Physical plant and the systems administrator are working hard to bring everything back online again. As of now, it is hard to tell how long it will take until things are back to normal again. Please be patient and check the alert page here as well as your Slack messages.
 
 ## Past exceptions
 
