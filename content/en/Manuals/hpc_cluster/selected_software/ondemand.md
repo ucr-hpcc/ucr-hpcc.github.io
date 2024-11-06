@@ -37,6 +37,7 @@ Your job will then be queued and eventually start running.
 
 Click "Connect to Jupyter" to open a new window containing Jupyter and start working!
 
+
 ## RStudio on OnDemand
 
 The process of launching RStudio is almost identical to that of starting Jupyter, but selecting "RStudio Server" instead of "Jupyter Notebook" from the menu.
@@ -57,6 +58,18 @@ Similar to Jupyter and RStudio, a Desktop Session can be started by selecting "H
 ![rstudiomenu](/img/ondemand_desktop1.png)
 
 Please see the Jupyter section for selecting resources and opening the Desktop Window.
+
+
+## Using GPUs on OnDemand
+
+In many of the interactive session launch pages, the "Additional Slurm Arguments" option is available.
+
+![GPU Menu1](/imgs/ondemand_use_gpu.png)
+
+To select a GPU, you can use the same `--gres` argument as you would with the `srun` command or in `sbatch` scripts.
+
+For example, to get 1x A100 GPU for a job, be sure to select the `gpu` partition and enter `--gres=gpu:a100:1` in the Additional SLurm Arguments box.
+
 
 ## Troubleshooting Jobs
 
