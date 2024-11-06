@@ -17,7 +17,7 @@ __02-Nov-2024: AC Issues__
 + 4:00PM: Currently, the cluster is still down because of a problem with one of the AC units. Physical plant and the systems administrator are working hard to bring everything back online again. As of now, it is hard to tell how long it will take until things are back to normal again. Please be patient and check the alert page here as well as your Slack messages.
 + 5:00AM (Nov 3): **Headnodes are available for login. The /rhome and /bigdata storage systems are fully functional, so you may retrieve your files and do some light work.** A limited number of compute and GPU nodes may come online depending on sysadmin discretion and cooling constraints. AC repairs will begin on Monday at the earliest, and these repairs must be completed before we can bring the cluster back fully online. Again, we apologize for the disruption.
 + 12:00PM (Nov 3): A small number of nodes from each partition have been made available. We will slowly release more nodes as we monitor the temperature and work on the AC unit continues.
-+ 12:00PM (Nov 4): A temporary fix is in place as facilities awaits parts for a complete fix. **We are slowly increasing the number of available compute nodes, though with limited job runtimes. (Currently 4 days max)** As temperatures in the room hold, we will increase the time limit and number of nodes in operation.
++ 12:00PM (Nov 4): A temporary fix is in place as facilities awaits parts for a complete fix. **We are slowly increasing the number of available compute nodes, though with limited job runtimes. Currently any job with a runtime that will end before Nov 10 at Midnight will run.** As temperatures in the room hold, we will increase the time limit and number of nodes in operation.
 
 ## Past exceptions
 
