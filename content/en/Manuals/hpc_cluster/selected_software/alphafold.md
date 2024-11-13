@@ -7,6 +7,8 @@ weight: 1
 
 ## AlphaFold3 (Tenative)
 
+**We are still waiting on receiving the model parameters from the AlphaFold team. Instructions will be updated once they have been received and testing has been done.**
+
 ### Loading the module
 
 You can load AlphaFold3 using the following commands:
