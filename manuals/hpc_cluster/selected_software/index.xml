@@ -13,7 +13,10 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;h3 id="using-alphafold-databases">Using AlphaFold databases&lt;/h3>
 &lt;p>A handful of databases are available at &lt;code>$ALPHAFOLD_DB&lt;/code> (available after loading the &lt;code>alphafold/3&lt;/code> module).&lt;/p>
 &lt;p>An example command is as follows:&lt;/p>
-&lt;pre>&lt;code class="language-bash">python3 /app/alphafold/run_alphafold.py \
+&lt;pre>&lt;code class="language-bash">module load alphafold/3
+singularity shell --nv $ALPHAFOLD_SING
+# Commands from here on are run inside of the Alphafold container
+python3 /app/alphafold/run_alphafold.py \
 --model_dir=$ALPHAFOLD_DB/model \
 --db_dir=$ALPHAFOLD_DB \
 --json_path=fold_input.json \
