@@ -28,6 +28,9 @@ A handful of databases are available at `$ALPHAFOLD_DB` (available after loading
 
 An example command is as follows:
 ```bash
+module load alphafold/3
+singularity shell --nv $ALPHAFOLD_SING
+# Commands from here on are run inside of the Alphafold container
 python3 /app/alphafold/run_alphafold.py \
 --model_dir=$ALPHAFOLD_DB/model \
 --db_dir=$ALPHAFOLD_DB \
