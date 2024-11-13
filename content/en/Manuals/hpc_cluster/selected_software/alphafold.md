@@ -16,7 +16,7 @@ You can load AlphaFold3 using the following commands:
 module load alphafold/3
 singularity shell $ALPHAFOLD_SING
 ```
-You can also run AlphaFold3 with a gpu. If you wish to use a GPU, [log into a P100 gpu node](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#gpu-jobs) and then use the following commands:
+You can also run AlphaFold3 with a gpu. If you wish to use a GPU, [log into an A100 gpu node](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#gpu-jobs) and then use the following commands:
 ```bash
 module load alphafold/3
 singularity shell --nv $ALPHAFOLD_SING
