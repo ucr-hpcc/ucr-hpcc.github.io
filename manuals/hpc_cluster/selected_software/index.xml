@@ -1,6 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HPCC – Selected Research Software Usage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/</link><description>Recent content in Selected Research Software Usage on HPCC</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/index.xml" rel="self" type="application/rss+xml"/><item><title>Manuals: AlphaFold Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/alphafold/</guid><description>
-&lt;h2 id="alphafold3-tenative">AlphaFold3 (Tenative)&lt;/h2>
-&lt;p>&lt;strong>We are still waiting on receiving the model parameters from the AlphaFold team. Instructions will be updated once they have been received and testing has been done.&lt;/strong>&lt;/p>
+&lt;h2 id="alphafold3">AlphaFold3&lt;/h2>
 &lt;h3 id="loading-the-module">Loading the module&lt;/h3>
 &lt;p>You can load AlphaFold3 using the following commands:&lt;/p>
 &lt;pre>&lt;code class="language-bash">module load alphafold/3
@@ -22,6 +21,7 @@ python3 /app/alphafold/run_alphafold.py \
 --json_path=fold_input.json \
 --output_dir=my_output_folder/
 &lt;/code>&lt;/pre>
+&lt;p>More information on using Alphafold3 can be found in the &lt;a href="https://github.com/google-deepmind/alphafold3">Alphafold3 GitHub repo&lt;/a>, including &lt;a href="https://github.com/google-deepmind/alphafold3/blob/main/docs/input.md">input documentation&lt;/a> and &lt;a href="https://github.com/google-deepmind/alphafold3/blob/main/docs/output.md">output documentation&lt;/a>.&lt;/p>
 &lt;h2 id="alphafold2">AlphaFold2&lt;/h2>
 &lt;p>Description of AlphaFold2&lt;/p>
 &lt;h3 id="loading-the-module-1">Loading the module&lt;/h3>
