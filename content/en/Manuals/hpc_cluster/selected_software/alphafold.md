@@ -5,9 +5,7 @@ type: docs
 weight: 1
 ---
 
-## AlphaFold3 (Tenative)
-
-**We are still waiting on receiving the model parameters from the AlphaFold team. Instructions will be updated once they have been received and testing has been done.**
+## AlphaFold3
 
 ### Loading the module
 
@@ -37,6 +35,8 @@ python3 /app/alphafold/run_alphafold.py \
 --json_path=fold_input.json \
 --output_dir=my_output_folder/
 ```
+
+More information on using Alphafold3 can be found in the [Alphafold3 GitHub repo](https://github.com/google-deepmind/alphafold3), including [input documentation](https://github.com/google-deepmind/alphafold3/blob/main/docs/input.md) and [output documentation](https://github.com/google-deepmind/alphafold3/blob/main/docs/output.md).
 
 
 ## AlphaFold2 
