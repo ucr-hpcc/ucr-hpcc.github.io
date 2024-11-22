@@ -39,11 +39,24 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
  Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.  
 
 Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. Upon request, a user or
-group’s quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to
-request additional resources, please contact us at support@hpcc.ucr.edu with your justification.
+to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. If you require additional
+resourced beyond the listed limits, please see the "[Additional Resource Request](#additional-resource-request)" section below.
 
 Partition quotas can also be viewed on the cluster using the `slurm_limits` command.
+
+### Additional Resource Request
+
+Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
+a temporary increase in quotas, please reach out to support@hpcc.ucr.edu with a short justification as to why additional resources are needed.
+The following are typical circumstances that could justify increased quotas:
+ - **Urgent Deadlines**: ie. Grant submissions, conference presentations, paper deadlines
+ - **Special Technical Needs**: The limits do not meet the technical requirements for the program(s) that are trying to be ran.
+
+The amount of additional resources as well as the length of time that the resources are needed are both factors that determine whether your request
+will be accepted. It also must be within the capacity of the HPCC's infrastructure while also ensuring minimal disruption to other users. The final decision of approving
+exception requests, and how many extra resources to provide, will be decided by the HPCC Staff, the Director, and in exceptional cases the HPCC Oversight Committee.
+
+Requests limited by unoptimized code/datasets or strictly for the sake of convenience will be denied.
 
 ### Example Scenarios
 
