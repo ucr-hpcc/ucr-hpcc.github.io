@@ -52,7 +52,7 @@ The following are typical circumstances that could justify increased quotas:
  - **Urgent Deadlines**: ie. Grant submissions, conference presentations, paper deadlines
  - **Special Technical Needs**: The limits do not meet the technical requirements for the program(s) that are trying to be ran.
 
-The amount of additional resources as well as the length of time that the resources are needed are both factors that determine whether your request
+The amount of additional resources, the length of time that the resources are needed, and the frequency of the requests are all factors that determine whether your request
 will be accepted. It also must be within the capacity of the HPCC's infrastructure while also ensuring minimal disruption to other users. The final decision of approving
 exception requests, and how many extra resources to provide, will be decided by the HPCC Staff, the Director, and in exceptional cases the HPCC Oversight Committee.
 
