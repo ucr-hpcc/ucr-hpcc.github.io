@@ -144,7 +144,7 @@ __2.__ Create key pair (private and public)
 ssh-keygen -t rsa -f ~/.ssh/id_rsa
 ```
 
-Follow the prompts and complete the processes. Once the command has completed, one will find two files in the `~/.ssh` directory of 
+Follow the prompts and complete the processes. You might be prompted to enter a passcode/passphrase for this key generation, enter one if you like it leave it blank for no passcode. This passcode is unrelated to your cluster password and HPCC system administrators have no control over this. If you forget this passcode then the SSH key must be renegerated, there's no way to recover it. Once the command has completed, one will find two files in the `~/.ssh` directory of 
 a user account.
 
 __3.__ Inspect `~/.ssh`  directory
