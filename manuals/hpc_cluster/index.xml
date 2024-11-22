@@ -752,10 +752,21 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;/table>
 &lt;p>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.&lt;/p>
 &lt;p>Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. Upon request, a user or
-group’s quota can be extended temporarily, but only if sufficient CPU resources are available and with adequate justification. If you wish to
-request additional resources, please contact us at &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with your justification.&lt;/p>
+to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. If you require additional
+resourced beyond the listed limits, please see the &amp;ldquo;&lt;a href="#additional-resource-request">Additional Resource Request&lt;/a>&amp;rdquo; section below.&lt;/p>
 &lt;p>Partition quotas can also be viewed on the cluster using the &lt;code>slurm_limits&lt;/code> command.&lt;/p>
+&lt;h3 id="additional-resource-request">Additional Resource Request&lt;/h3>
+&lt;p>Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
+a temporary increase in quotas, please reach out to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with a short justification as to why additional resources are needed.
+The following are typical circumstances that could justify increased quotas:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Urgent Deadlines&lt;/strong>: ie. Grant submissions, conference presentations, paper deadlines&lt;/li>
+&lt;li>&lt;strong>Special Technical Needs&lt;/strong>: The limits do not meet the technical requirements for the program(s) that are trying to be ran.&lt;/li>
+&lt;/ul>
+&lt;p>The amount of additional resources as well as the length of time that the resources are needed are both factors that determine whether your request
+will be accepted. It also must be within the capacity of the HPCC&amp;rsquo;s infrastructure while also ensuring minimal disruption to other users. The final decision of approving
+exception requests, and how many extra resources to provide, will be decided by the HPCC Staff, the Director, and in exceptional cases the HPCC Oversight Committee.&lt;/p>
+&lt;p>Requests limited by unoptimized code/datasets or strictly for the sake of convenience will be denied.&lt;/p>
 &lt;h3 id="example-scenarios">Example Scenarios&lt;/h3>
 &lt;h4 id="per-job-limit">Per-Job Limit&lt;/h4>
 &lt;p>A job is submitted on the gpu partition. The job requests 32 cores.&lt;/p>
