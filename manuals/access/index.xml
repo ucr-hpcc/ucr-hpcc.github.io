@@ -103,7 +103,7 @@ a user&amp;rsquo;s local computer (not the cluster).&lt;/p>
 &lt;p>&lt;strong>2.&lt;/strong> Create key pair (private and public)&lt;/p>
 &lt;pre>&lt;code class="language-bash">ssh-keygen -t rsa -f ~/.ssh/id_rsa
 &lt;/code>&lt;/pre>
-&lt;p>Follow the prompts and complete the processes. Once the command has completed, one will find two files in the &lt;code>~/.ssh&lt;/code> directory of
+&lt;p>Follow the prompts and complete the processes. You might be prompted to enter a passcode/passphrase for this key generation, enter one if you like it leave it blank for no passcode. This passcode is unrelated to your cluster password and HPCC system administrators have no control over this. If you forget this passcode then the SSH key must be renegerated, there&amp;rsquo;s no way to recover it. Once the command has completed, one will find two files in the &lt;code>~/.ssh&lt;/code> directory of
 a user account.&lt;/p>
 &lt;p>&lt;strong>3.&lt;/strong> Inspect &lt;code>~/.ssh&lt;/code> directory&lt;/p>
 &lt;pre>&lt;code class="language-bash">ls ~/.ssh/
