@@ -239,7 +239,7 @@ If CPU Efficiency is low, make sure that the program(s) you are running makes us
 If Memory Efficiency is low, then you can try reducing the requested memory for a job. **Note:** Just because you see your job uses 81.20GB of memory **does not** mean that next time you should request exactly 81.20GB of memory. Variations in input data **will** cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it's better to overestimate on initial runs, and scale back once you find a good limit.
 
 
-### Job Error Codes
+### Slurm Job Reason/Error Codes
 
 If a job is stuck in the queue or fails to start, there are typically Slurm error codes assigned that explain the reason. Typically these are a bit hard to parse, so below is a table of common error codes and how to work around them.
 
@@ -252,6 +252,8 @@ If a job is stuck in the queue or fails to start, there are typically Slurm erro
 | AssocGrpCpuLimit | You are exceeding the Per-User CPU limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
 | AssocGrpMemLimit | You are exceeding the Per-User Memory limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
 | MaxSubmitJobLimit | You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs. | Wait until some of your jobs finish, then you can continue submitting jobs. |
+
+This is only a small number of the most common reasons. For a full list please see Slurm's [Job Reason Codes](https://slurm.schedmd.com/job_reason_codes.html) page. If you are confused as to why you're getting a specific reason, please reach out to support.
 
 
 ### Advanced Jobs
