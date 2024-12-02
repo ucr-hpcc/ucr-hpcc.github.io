@@ -375,7 +375,7 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;p>In the above example, we can see good utilization of the CPU cores (95%) as well as good utilization of memory usage (81%).&lt;/p>
 &lt;p>If CPU Efficiency is low, make sure that the program(s) you are running makes use of multi-threading correctly. Requesting more cores for a job will not make your program run faster if it does not properly take advantage of them.&lt;/p>
 &lt;p>If Memory Efficiency is low, then you can try reducing the requested memory for a job. &lt;strong>Note:&lt;/strong> Just because you see your job uses 81.20GB of memory &lt;strong>does not&lt;/strong> mean that next time you should request exactly 81.20GB of memory. Variations in input data &lt;strong>will&lt;/strong> cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it&amp;rsquo;s better to overestimate on initial runs, and scale back once you find a good limit.&lt;/p>
-&lt;h3 id="job-error-codes">Job Error Codes&lt;/h3>
+&lt;h3 id="slurm-job-reasonerror-codes">Slurm Job Reason/Error Codes&lt;/h3>
 &lt;p>If a job is stuck in the queue or fails to start, there are typically Slurm error codes assigned that explain the reason. Typically these are a bit hard to parse, so below is a table of common error codes and how to work around them.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -418,6 +418,7 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;p>This is only a small number of the most common reasons. For a full list please see Slurm&amp;rsquo;s &lt;a href="https://slurm.schedmd.com/job_reason_codes.html">Job Reason Codes&lt;/a> page. If you are confused as to why you&amp;rsquo;re getting a specific reason, please reach out to support.&lt;/p>
 &lt;h3 id="advanced-jobs">Advanced Jobs&lt;/h3>
 &lt;p>There is a third way of submitting jobs by using steps.
 Single Step submission:&lt;/p>
