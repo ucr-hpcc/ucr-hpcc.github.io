@@ -280,6 +280,8 @@ echo "I have array ID ${SLURM_ARRAY_TASK_ID}"
 
 Within each job, the `SLURM_ARRAY_TASK_ID` environment variable is set and can be used to slightly change how each job is run.
 
+Note that there is a 2500 job limit for array jobs.
+
 More information can be found on the [Slurm Documentation](https://slurm.schedmd.com/job_array.html) including other Environment Variables that are set per-job.
 
 ### Highmem Jobs
