@@ -756,6 +756,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. If you require additional
 resourced beyond the listed limits, please see the &amp;ldquo;&lt;a href="#additional-resource-request">Additional Resource Request&lt;/a>&amp;rdquo; section below.&lt;/p>
 &lt;p>Partition quotas can also be viewed on the cluster using the &lt;code>slurm_limits&lt;/code> command.&lt;/p>
+&lt;p>Additionally, users can have up to 5000 jobs in queue/running at the same time. Attempting to queue more than 5000 jobs will cause jobs submissions to fail with the reason &amp;ldquo;MaxSubmitJobLimit&amp;rdquo;.&lt;/p>
 &lt;h3 id="additional-resource-request">Additional Resource Request&lt;/h3>
 &lt;p>Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
 a temporary increase in quotas, please reach out to &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with a short justification as to why additional resources are needed.
