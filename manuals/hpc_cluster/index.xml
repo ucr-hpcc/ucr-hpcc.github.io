@@ -402,6 +402,7 @@ exit
 echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;p>Within each job, the &lt;code>SLURM_ARRAY_TASK_ID&lt;/code> environment variable is set and can be used to slightly change how each job is run.&lt;/p>
+&lt;p>Note that there is a 2500 job limit for array jobs.&lt;/p>
 &lt;p>More information can be found on the &lt;a href="https://slurm.schedmd.com/job_array.html">Slurm Documentation&lt;/a> including other Environment Variables that are set per-job.&lt;/p>
 &lt;h3 id="highmem-jobs">Highmem Jobs&lt;/h3>
 &lt;p>The highmem partition does not have a default amount of memory set, however it does has a minimum limit of 100GB per job. This means that you need to explicity request at least 100GB or more of memory.&lt;/p>
