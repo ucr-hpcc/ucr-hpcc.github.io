@@ -44,6 +44,8 @@ resourced beyond the listed limits, please see the "[Additional Resource Request
 
 Partition quotas can also be viewed on the cluster using the `slurm_limits` command.
 
+Additionally, users can have up to 5000 jobs in queue/running at the same time. Attempting to queue more than 5000 jobs will cause jobs submissions to fail with the reason "MaxSubmitJobLimit".
+
 ### Additional Resource Request
 
 Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
