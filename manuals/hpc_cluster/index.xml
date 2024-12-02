@@ -375,6 +375,49 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;p>In the above example, we can see good utilization of the CPU cores (95%) as well as good utilization of memory usage (81%).&lt;/p>
 &lt;p>If CPU Efficiency is low, make sure that the program(s) you are running makes use of multi-threading correctly. Requesting more cores for a job will not make your program run faster if it does not properly take advantage of them.&lt;/p>
 &lt;p>If Memory Efficiency is low, then you can try reducing the requested memory for a job. &lt;strong>Note:&lt;/strong> Just because you see your job uses 81.20GB of memory &lt;strong>does not&lt;/strong> mean that next time you should request exactly 81.20GB of memory. Variations in input data &lt;strong>will&lt;/strong> cause different memory usage characteristics. You should try to aim to request ~20% higher memory then will actually be used to account for any spikes in memory usage. Slurm might miss some quick spikes of memory usage, but the Operating System will not. In this regard it&amp;rsquo;s better to overestimate on initial runs, and scale back once you find a good limit.&lt;/p>
+&lt;h3 id="job-error-codes">Job Error Codes&lt;/h3>
+&lt;p>If a job is stuck in the queue or fails to start, there are typically Slurm error codes assigned that explain the reason. Typically these are a bit hard to parse, so below is a table of common error codes and how to work around them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Error Code&lt;/th>
+&lt;th>Reason&lt;/th>
+&lt;th>Fix&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Resources&lt;/td>
+&lt;td>This isn&amp;rsquo;t an error, but rather why your job can&amp;rsquo;t start immediately.&lt;/td>
+&lt;td>Once requested resources are available, then your job will start.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Priority&lt;/td>
+&lt;td>This isn&amp;rsquo;t an error, but rather why your job can&amp;rsquo;t start immediately.&lt;/td>
+&lt;td>You have likely submitted many jobs in a short period of time and Slurm&amp;rsquo;s Fair-Share algorithm is allowing other higher priority jobs to run first.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>QOSMaxWallDurationPerJobLimit&lt;/td>
+&lt;td>The time limit requested on the selected partition goes over the limits. For example, requesting 2 days on the &amp;ldquo;short&amp;rdquo; partition.&lt;/td>
+&lt;td>Make sure that you are within the partition&amp;rsquo;s time limit. Please refer to the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/#partition-quotas">Queue Policies&lt;/a> page for the per-partition time limits.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AssocGrpCpuLimit&lt;/td>
+&lt;td>You are exceeding the Per-User CPU limit on a specific partition.&lt;/td>
+&lt;td>You must wait until jobs finish within a partition to free up resources to allow additional jobs to run.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AssocGrpMemLimit&lt;/td>
+&lt;td>You are exceeding the Per-User Memory limit on a specific partition.&lt;/td>
+&lt;td>You must wait until jobs finish within a partition to free up resources to allow additional jobs to run.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MaxSubmitJobLimit&lt;/td>
+&lt;td>You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs.&lt;/td>
+&lt;td>Wait until some of your jobs finish, then you can continue submitting jobs.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h3 id="advanced-jobs">Advanced Jobs&lt;/h3>
 &lt;p>There is a third way of submitting jobs by using steps.
 Single Step submission:&lt;/p>
