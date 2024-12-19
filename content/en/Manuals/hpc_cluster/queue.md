@@ -46,6 +46,18 @@ Partition quotas can also be viewed on the cluster using the `slurm_limits` comm
 
 Additionally, users can have up to 5000 jobs in queue/running at the same time. Attempting to queue more than 5000 jobs will cause jobs submissions to fail with the reason "MaxSubmitJobLimit".
 
+### External Labs
+
+Labs external to UCR will have reduced resource limits as follows:
+- Labs will have a CPU quota of 256 cores across all lab users
+- Per user CPU quotas on epyc, intel, batch, and short will be 128 cores
+- Per user CPU quotas on highmem will be 16
+- GPU quotas on gpu will be 4 per-lab, and 2 per-user
+
+### Private Node Ownership
+
+Labs have the ability to purchase nodes and connect them to the cluster for increased quotas. More information can be found in the [Ownership Model](https://hpcc.ucr.edu/about/overview/access/#ownership-models) section of our Access page.
+
 ### Additional Resource Request
 
 Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
