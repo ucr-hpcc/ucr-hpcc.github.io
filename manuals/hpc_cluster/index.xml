@@ -804,10 +804,11 @@ resourced beyond the listed limits, please see the &amp;ldquo;&lt;a href="#addit
 &lt;h3 id="external-labs">External Labs&lt;/h3>
 &lt;p>Labs external to UCR will have reduced resource limits as follows:&lt;/p>
 &lt;ul>
-&lt;li>Labs will have a CPU quota of 256 cores across all lab users&lt;/li>
+&lt;li>Labs will have a CPU quota of 256 cores across all lab users across all partitions&lt;/li>
 &lt;li>Per user CPU quotas on epyc, intel, batch, and short will be 128 cores&lt;/li>
 &lt;li>Per user CPU quotas on highmem will be 16&lt;/li>
-&lt;li>GPU quotas on gpu will be 4 per-lab, and 2 per-user&lt;/li>
+&lt;li>GPU quotas on the gpu partition will be 4 per-lab, and 2 per-user&lt;/li>
+&lt;li>CPU quotas on the gpu partition will be 24 per-user and 8 per-job&lt;/li>
 &lt;/ul>
 &lt;h3 id="private-node-ownership">Private Node Ownership&lt;/h3>
 &lt;p>Labs have the ability to purchase nodes and connect them to the cluster for increased quotas. More information can be found in the &lt;a href="https://hpcc.ucr.edu/about/overview/access/#ownership-models">Ownership Model&lt;/a> section of our Access page.&lt;/p>
