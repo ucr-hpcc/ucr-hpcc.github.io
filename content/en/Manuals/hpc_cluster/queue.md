@@ -49,10 +49,11 @@ Additionally, users can have up to 5000 jobs in queue/running at the same time. 
 ### External Labs
 
 Labs external to UCR will have reduced resource limits as follows:
-- Labs will have a CPU quota of 256 cores across all lab users
+- Labs will have a CPU quota of 256 cores across all lab users across all partitions
 - Per user CPU quotas on epyc, intel, batch, and short will be 128 cores
 - Per user CPU quotas on highmem will be 16
-- GPU quotas on gpu will be 4 per-lab, and 2 per-user
+- GPU quotas on the gpu partition will be 4 per-lab, and 2 per-user
+- CPU quotas on the gpu partition will be 24 per-user and 8 per-job
 
 ### Private Node Ownership
 
