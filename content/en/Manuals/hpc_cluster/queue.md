@@ -20,14 +20,14 @@ Start times are rough estimates based on the current state of the queue.
 Each partition has a specific usecase. Below outlines each partition, it's usecase, as well as any job/user/group limits that are in place.
 Empty boxes imply no limit, but is still limited by the next higher limit. Job limits are capped by user limits, and user limits are capped by group limits.
 
-| Partition Name   | Usecase                                                   | Per-Group Limit | Per-User Limit         | Per-Job Limit                             | Max Job Time |
-|------------------|-----------------------------------------------------------|-----------------|------------------------|-------------------------------------------|--------------|
-| epyc (2021 CPU)  | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^4]            | 30 Days      |
-| intel (2016 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^3]            | 30 Days      |
-| batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       |                 | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^2]            | 30 Days      |
-| short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP |                 | 384 Cores, 1TB memory  | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
-| highmem          | Memory Intensive Workloads                                |                 | 32 Cores, 1TB memory   |                                           | 30 Days      |
-| gpu              | GPU-Enabled Workloads                                     | 8 GPUs          | 4 GPUs[^6],48 Cores, 512GB memory | 16 Cores, 256GB memory [^1],[^5]          | 7 Days      |
+| Partition Name   | Usecase                                                   | Per-User Limit         | Per-Job Limit                             | Max Job Time |
+|------------------|-----------------------------------------------------------|------------------------|-------------------------------------------|--------------|
+| epyc (2021 CPU)  | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^4]            | 30 Days      |
+| intel (2016 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^3]            | 30 Days      |
+| batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       | 384 Cores, 1TB memory  | 64GB memory per Core [^1],[^2]            | 30 Days      |
+| short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP | 384 Cores, 1TB memory  | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
+| highmem          | Memory Intensive Workloads                                | 32 Cores, 1TB memory   |                                           | 30 Days      |
+| gpu              | GPU-Enabled Workloads                                     | 4 GPUs[^6],48 Cores, 512GB memory | 16 Cores, 256GB memory [^1],[^5]          | 7 Days      |
 
  [^1]: A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.  
  [^2]: Allocatable memory per-node in the **batch** partition is limited to **~500GB** to allow for system overhead.  
@@ -35,11 +35,13 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
  [^4]: Allocatable memory per-node in the **epyc** partition is limited to **~950GB** to allow for system overhead.  
  [^5]: Allocatable memory per-node in the **gpu** partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]  
  [^6]: If a user needs more than 4 GPUs, please contact support@hpcc.ucr.edu with a short justification for a temporary increase.
- 
- Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.  
 
-Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. If you require additional
+In addition to the above limits, there is:
+- A 768 core group limit that spans across all users in a group across all partitions.
+- A 8 GPU group limit that spans across all users in a group across all GPU-enabled partitions.
+
+Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail. Limits are for actively running jobs,
+and any newly queued job that exceeds a limit will be queued until resources become available. If you require additional
 resourced beyond the listed limits, please see the "[Additional Resource Request](#additional-resource-request)" section below.
 
 Partition quotas can also be viewed on the cluster using the `slurm_limits` command.
