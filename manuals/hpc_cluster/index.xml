@@ -738,7 +738,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;th>Partition Name&lt;/th>
 &lt;th>Usecase&lt;/th>
-&lt;th>Per-Group Limit&lt;/th>
 &lt;th>Per-User Limit&lt;/th>
 &lt;th>Per-Job Limit&lt;/th>
 &lt;th>Max Job Time&lt;/th>
@@ -748,7 +747,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>epyc (2021 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>&lt;/td>
 &lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
@@ -756,7 +754,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>intel (2016 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>&lt;/td>
 &lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
@@ -764,7 +761,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>batch (2012 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>&lt;/td>
 &lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
@@ -772,7 +768,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>short&lt;/td>
 &lt;td>Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>&lt;/td>
 &lt;td>384 Cores, 1TB memory&lt;/td>
 &lt;td>64GB memory per Core, 2-hour time limit&lt;/td>
 &lt;td>2 Hours&lt;/td>
@@ -780,7 +775,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>highmem&lt;/td>
 &lt;td>Memory Intensive Workloads&lt;/td>
-&lt;td>&lt;/td>
 &lt;td>32 Cores, 1TB memory&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>30 Days&lt;/td>
@@ -788,16 +782,19 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>gpu&lt;/td>
 &lt;td>GPU-Enabled Workloads&lt;/td>
-&lt;td>8 GPUs&lt;/td>
 &lt;td>4 GPUs&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>,48 Cores, 512GB memory&lt;/td>
 &lt;td>16 Cores, 256GB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>7 Days&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail.&lt;/p>
-&lt;p>Limits are for actively running jobs, and any newly queued job that exceeds a limit will be queued until resources become available. In addition
-to the above limits, there is also a 768 core group limit that spans across all users in a group across all partitions. If you require additional
+&lt;p>In addition to the above limits, there is:&lt;/p>
+&lt;ul>
+&lt;li>A 768 core group limit that spans across all users in a group across all partitions.&lt;/li>
+&lt;li>A 8 GPU group limit that spans across all users in a group across all GPU-enabled partitions.&lt;/li>
+&lt;/ul>
+&lt;p>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail. Limits are for actively running jobs,
+and any newly queued job that exceeds a limit will be queued until resources become available. If you require additional
 resourced beyond the listed limits, please see the &amp;ldquo;&lt;a href="#additional-resource-request">Additional Resource Request&lt;/a>&amp;rdquo; section below.&lt;/p>
 &lt;p>Partition quotas can also be viewed on the cluster using the &lt;code>slurm_limits&lt;/code> command.&lt;/p>
 &lt;p>Additionally, users can have up to 5000 jobs in queue/running at the same time. Attempting to queue more than 5000 jobs will cause jobs submissions to fail with the reason &amp;ldquo;MaxSubmitJobLimit&amp;rdquo;.&lt;/p>
