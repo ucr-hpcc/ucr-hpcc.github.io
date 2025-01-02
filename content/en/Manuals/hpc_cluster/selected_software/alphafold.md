@@ -38,6 +38,29 @@ python3 /app/alphafold/run_alphafold.py \
 
 More information on using Alphafold3 can be found in the [Alphafold3 GitHub repo](https://github.com/google-deepmind/alphafold3), including [input documentation](https://github.com/google-deepmind/alphafold3/blob/main/docs/input.md) and [output documentation](https://github.com/google-deepmind/alphafold3/blob/main/docs/output.md).
 
+### Processing Large Datasets
+
+Sometimes the dataset cannot fit within the memory of a single GPU. In this case you'll need to use Unified Memory ("Combined" GPU and System memory). This does come with a drop in performance, but might be the only way to get large datasets processed.
+
+To use Unified Memory, you can add these additional flags to the alphafold command:
+```bash
+--env XLA_PYTHON_CLIENT_PREALLOCATE=false \
+--env TF_FORCE_UNIFIED_MEMORY=true \
+--env XLA_CLIENT_MEM_FRACTION=3.2
+```
+
+For example:
+```bash
+python3 /app/alphafold/run_alphafold.py \
+--model_dir=$ALPHAFOLD_DB/model \
+--db_dir=$ALPHAFOLD_DB \
+--json_path=fold_input.json \
+--env XLA_PYTHON_CLIENT_PREALLOCATE=false \
+--env TF_FORCE_UNIFIED_MEMORY=true \
+--env XLA_CLIENT_MEM_FRACTION=3.2 \
+--output_dir=my_output_folder/
+```
+
 
 ## AlphaFold2 
 Description of AlphaFold2
