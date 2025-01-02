@@ -22,6 +22,23 @@ python3 /app/alphafold/run_alphafold.py \
 --output_dir=my_output_folder/
 &lt;/code>&lt;/pre>
 &lt;p>More information on using Alphafold3 can be found in the &lt;a href="https://github.com/google-deepmind/alphafold3">Alphafold3 GitHub repo&lt;/a>, including &lt;a href="https://github.com/google-deepmind/alphafold3/blob/main/docs/input.md">input documentation&lt;/a> and &lt;a href="https://github.com/google-deepmind/alphafold3/blob/main/docs/output.md">output documentation&lt;/a>.&lt;/p>
+&lt;h3 id="processing-large-datasets">Processing Large Datasets&lt;/h3>
+&lt;p>Sometimes the dataset cannot fit within the memory of a single GPU. In this case you&amp;rsquo;ll need to use Unified Memory (&amp;ldquo;Combined&amp;rdquo; GPU and System memory). This does come with a drop in performance, but might be the only way to get large datasets processed.&lt;/p>
+&lt;p>To use Unified Memory, you can add these additional flags to the alphafold command:&lt;/p>
+&lt;pre>&lt;code class="language-bash">--env XLA_PYTHON_CLIENT_PREALLOCATE=false \
+--env TF_FORCE_UNIFIED_MEMORY=true \
+--env XLA_CLIENT_MEM_FRACTION=3.2
+&lt;/code>&lt;/pre>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code class="language-bash">python3 /app/alphafold/run_alphafold.py \
+--model_dir=$ALPHAFOLD_DB/model \
+--db_dir=$ALPHAFOLD_DB \
+--json_path=fold_input.json \
+--env XLA_PYTHON_CLIENT_PREALLOCATE=false \
+--env TF_FORCE_UNIFIED_MEMORY=true \
+--env XLA_CLIENT_MEM_FRACTION=3.2 \
+--output_dir=my_output_folder/
+&lt;/code>&lt;/pre>
 &lt;h2 id="alphafold2">AlphaFold2&lt;/h2>
 &lt;p>Description of AlphaFold2&lt;/p>
 &lt;h3 id="loading-the-module-1">Loading the module&lt;/h3>
