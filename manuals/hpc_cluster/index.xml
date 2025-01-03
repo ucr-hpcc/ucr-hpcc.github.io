@@ -919,7 +919,7 @@ The miniconda3 module for Python is the default version. This will enable users 
 For more information regarding our module system please refer to &lt;a href="../../manuals/hpc_cluster/start/#modules">Environment Modules&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>The miniconda modules are very basic installs, however users can choose to unload this basic install for a fuller one (anaconda), like so:&lt;/p>
-&lt;pre>&lt;code class="language-bash">module load miniconda
+&lt;pre>&lt;code class="language-bash">module load miniconda3
 &lt;/code>&lt;/pre>
 &lt;p>After loading anaconda, you will see that there are many more Python packages installed (ie. numpy, scipy, pandas, jupyter, etc&amp;hellip;).
 For a list of installed Python packages try the following:&lt;/p>
