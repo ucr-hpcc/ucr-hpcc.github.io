@@ -24,7 +24,7 @@ For more information regarding our module system please refer to [Environment Mo
 The miniconda modules are very basic installs, however users can choose to unload this basic install for a fuller one (anaconda), like so:
 
 ```bash
-module load miniconda
+module load miniconda3
 ```
 
 After loading anaconda, you will see that there are many more Python packages installed (ie. numpy, scipy, pandas, jupyter, etc...).
