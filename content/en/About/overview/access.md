@@ -25,7 +25,7 @@ After receiving the access information for a new account, users want to follow t
 
 HPCC's recharging rate structure is outlined below. A more formal summary is available in the most recent _Recharging Rate PDF_ [here](/about/facility/rates). 
 
-## Lab-based Registration Fee
+## PI-based Registration Fee
 
 An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
@@ -56,7 +56,7 @@ moving them from one location (_e.g._ a data archival system) to another.
 
 * Owned big data storage
         
-    * A lab purchases storage hardware (_e.g._ hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility's parallel GPFS storage systems including production and backup storage. There is no extra charge for the additional storage infrastructure required for operation, including hard drive enclosures (servers) and high-speed network. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the maintenance cost for owned storage is $8.67 for 1TB/yr raw disk space. Note, owned storage space is only available to the users of a PI's group or those a PI wishes to give access to.
+    * A lab/PI purchases storage hardware (_e.g._ hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility's parallel GPFS storage systems including production and backup storage. There is no extra charge for the additional storage infrastructure required for operation, including hard drive enclosures (servers) and high-speed network. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the maintenance cost for owned storage is $8.67 for 1TB/yr raw disk space. Note, owned storage space is only available to the users of a PI's group or those a PI wishes to give access to.
     * The owned storage pool can be shared among all user accounts of a registered lab.
     * Owned storage can be attractive for labs with storage needs above 40TBs. For smaller amounts the rental option is often a better and more flexible choice (_e.g._ available within a few days).
 
@@ -64,7 +64,7 @@ moving them from one location (_e.g._ a data archival system) to another.
 
 * Computer nodes
         
-    * A lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown [here](https://www.thinkmate.com/systems/servers/hdx). A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect ([additional example](https://www.gigabyte.com/us/Enterprise/High-Density-Server)). Similar options are available for [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
+    * A lab/PI purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown [here](https://www.thinkmate.com/systems/servers/hdx). A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect ([additional example](https://www.gigabyte.com/us/Enterprise/High-Density-Server)). Similar options are available for [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
     * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
