@@ -75,6 +75,9 @@ exception requests, and how many extra resources to provide, will be decided by 
 
 Requests limited by unoptimized code/datasets or strictly for the sake of convenience will be denied.
 
+Additionally at this time we are unable to grant additional resource requests for external labs due to how our cluster is partially subsidized by our campus. We appologize for this,
+and suggest looking into national computing facilities or cloud offerings to fill the gap in compute.
+
 ### Example Scenarios
 
 #### Per-Job Limit
