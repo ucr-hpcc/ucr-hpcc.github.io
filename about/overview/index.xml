@@ -52,7 +52,7 @@ This year the HPCC was awarded an MRI equipment grant (#2215705) by NSF for the 
 &lt;p>After receiving the access information for a new account, users want to follow the login instructions &lt;a href="../../manuals/login">here&lt;/a>.&lt;/p>
 &lt;h2 id="recharging-rates">Recharging rates&lt;/h2>
 &lt;p>HPCC&amp;rsquo;s recharging rate structure is outlined below. A more formal summary is available in the most recent &lt;em>Recharging Rate PDF&lt;/em> &lt;a href="../../about/facility/rates">here&lt;/a>.&lt;/p>
-&lt;h2 id="lab-based-registration-fee">Lab-based Registration Fee&lt;/h2>
+&lt;h2 id="pi-based-registration-fee">PI-based Registration Fee&lt;/h2>
 &lt;p>An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources:&lt;/p>
 &lt;ul>
@@ -91,7 +91,7 @@ moving them from one location (&lt;em>e.g.&lt;/em> a data archival system) to an
 &lt;li>
 &lt;p>Owned big data storage&lt;/p>
 &lt;ul>
-&lt;li>A lab purchases storage hardware (&lt;em>e.g.&lt;/em> hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility&amp;rsquo;s parallel GPFS storage systems including production and backup storage. There is no extra charge for the additional storage infrastructure required for operation, including hard drive enclosures (servers) and high-speed network. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the maintenance cost for owned storage is $8.67 for 1TB/yr raw disk space. Note, owned storage space is only available to the users of a PI&amp;rsquo;s group or those a PI wishes to give access to.&lt;/li>
+&lt;li>A lab/PI purchases storage hardware (&lt;em>e.g.&lt;/em> hard drives) according to the specifications of the facility. Owned hard drives will be added to the facility&amp;rsquo;s parallel GPFS storage systems including production and backup storage. There is no extra charge for the additional storage infrastructure required for operation, including hard drive enclosures (servers) and high-speed network. The annual support fee for owned disk storage is $260 per 10TB of usable and backed up storage space. Since we back everything up to a secondary server room and use snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the maintenance cost for owned storage is $8.67 for 1TB/yr raw disk space. Note, owned storage space is only available to the users of a PI&amp;rsquo;s group or those a PI wishes to give access to.&lt;/li>
 &lt;li>The owned storage pool can be shared among all user accounts of a registered lab.&lt;/li>
 &lt;li>Owned storage can be attractive for labs with storage needs above 40TBs. For smaller amounts the rental option is often a better and more flexible choice (&lt;em>e.g.&lt;/em> available within a few days).&lt;/li>
 &lt;/ul>
@@ -102,7 +102,7 @@ moving them from one location (&lt;em>e.g.&lt;/em> a data archival system) to an
 &lt;li>
 &lt;p>Computer nodes&lt;/p>
 &lt;ul>
-&lt;li>A lab purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown &lt;a href="https://www.thinkmate.com/systems/servers/hdx">here&lt;/a>. A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect (&lt;a href="https://www.gigabyte.com/us/Enterprise/High-Density-Server">additional example&lt;/a>). Similar options are available for &lt;a href="https://www.thinkmate.com/systems/servers/gpx">GPU&lt;/a> nodes.&lt;/li>
+&lt;li>A lab/PI purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown &lt;a href="https://www.thinkmate.com/systems/servers/hdx">here&lt;/a>. A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect (&lt;a href="https://www.gigabyte.com/us/Enterprise/High-Density-Server">additional example&lt;/a>). Similar options are available for &lt;a href="https://www.thinkmate.com/systems/servers/gpx">GPU&lt;/a> nodes.&lt;/li>
 &lt;li>Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab&amp;rsquo;s overall CPU quota (see above) by the number of owned CPU cores.&lt;/li>
 &lt;li>Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.&lt;/li>
 &lt;/ul>
