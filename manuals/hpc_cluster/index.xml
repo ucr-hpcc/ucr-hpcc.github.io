@@ -821,6 +821,8 @@ The following are typical circumstances that could justify increased quotas:&lt;
 will be accepted. It also must be within the capacity of the HPCC&amp;rsquo;s infrastructure while also ensuring minimal disruption to other users. The final decision of approving
 exception requests, and how many extra resources to provide, will be decided by the HPCC Staff, the Director, and in exceptional cases the HPCC Oversight Committee.&lt;/p>
 &lt;p>Requests limited by unoptimized code/datasets or strictly for the sake of convenience will be denied.&lt;/p>
+&lt;p>Additionally at this time we are unable to grant additional resource requests for external labs due to how our cluster is partially subsidized by our campus. We appologize for this,
+and suggest looking into national computing facilities or cloud offerings to fill the gap in compute.&lt;/p>
 &lt;h3 id="example-scenarios">Example Scenarios&lt;/h3>
 &lt;h4 id="per-job-limit">Per-Job Limit&lt;/h4>
 &lt;p>A job is submitted on the gpu partition. The job requests 32 cores.&lt;/p>
