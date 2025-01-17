@@ -431,24 +431,20 @@ Log into the cluster:
 ssh username@cluster.hpcc.ucr.edu
 ```
 
-The first time you run the vncserver it will need to be configured:
+The VNC programs are only available on Compute Nodes, and additionally the first time you run the vncserver it will need to be configured:
 
 ```bash
-vncserver -fg
+srun -p epyc -c 2 --mem 4GB -t 10:00 --pty bash -l # Start compute session
+vncserver -fg # Configure VNC
+exit # Leave compute session
 ```
 
 You should set a password for yourself, and the read-only password is optional.
 
-Then configure X Startup with the following command:
-
-```bash
-echo '/usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/gnome-session --session=gnome-classic' > /rhome/$USER/.vnc/xstartup
-```
-
 After your vncserver is configured, submit a vncserver job to get it started:
 
 ```bash
-sbatch -p short,epyc --cpus-per-task=4 --mem=10g --time=2:00:00 --wrap='vncserver -fg' --output='vncserver-%j.out'
+sbatch -p epyc --cpus-per-task=4 --mem=10g --time=2:00:00 --wrap='vncserver -fg' --output='vncserver-%j.out'
 ```
 
 > Note: Appropriate job resources should be requested based on the processes you will be running from within the VNC session.
