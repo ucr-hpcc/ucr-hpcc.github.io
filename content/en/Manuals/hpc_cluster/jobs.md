@@ -171,7 +171,7 @@ Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of mac
 | r[41-43]   | ryzen, amd, milan       |
 | x[01-06]   | intel, cascade          |
 
-#### Constraint Usage
+#### Constraint Examples
 
 Since jobs on the "short" partition can run on any node, jobs can be narrowed down using constraints.
 
@@ -189,6 +189,7 @@ If you want to run on a modern GPU machine:
 ```
 srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint "gpu_latest" --pty bash -l
 ```
+> When using constraints with GPUs, make sure to request a generic GPU
 
 ### Monitoring Jobs
 To check on your jobs states, run the following:
