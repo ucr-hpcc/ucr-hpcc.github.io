@@ -19,7 +19,6 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * CPU: AMD
     * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
-    * Feature Constraints: ryzen
     * Time (walltime): 168 hours (7 days) default
 * intel
     * Default partition
@@ -27,28 +26,24 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * CPU: Intel
     * Supported Extensions[^1]: AVX, AVX2, SSE, SSE2, SSE4
     * RAM: 1 GB default
-    * Feature Constraints: intel
     * Time (walltime): 168 hours (7 days) default
 * batch
     * Nodes: c01-c48
     * CPU: AMD
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 1 GB default
-    * Feature Constraints: amd
     * Time (walltime): 168 hours (7 days) default
 * highmem
     * Nodes: h01-h06
     * CPU: Intel
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 100 GB to 1000 GB
-    * Feature Constraints: mem
     * Time (walltime): 48 hours (2 days) default
 * gpu
     * Nodes: gpu01-gpu06
     * CPU: AMD/Intel
     * GPUs: NVIDIA K80, A100, P100
     * RAM: 1 GB default
-    * Feature Constraints: gpu
     * Time (walltime): 48 hours (2 days) default
 * short
     * Nodes: Mixed set of nodes from batch, intel, and group partitions
@@ -157,6 +152,43 @@ srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --x11 --pty bash -l
 ```
 
 The above example enables X11 forwarding and requests 1GB of memory and 1 core for 10 hours within an interactive session.
+
+### Feature Constraints
+
+Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of machine your job can run on, mainly useful on the "short" partitions. Below is a list of nodes as well as what features exist for each node type.
+
+| Nodes      | Features                |
+|------------|-------------------------|
+| c[01-47]   | amd, abu_dhabi          |
+| h[01-06]   |                         |
+| gpu[01-04] | gpu_legacy              |
+| gpu05      | gpu_prev                |
+| gpu[06-08] | gpu_latest, gpu_highmem |
+| gpu09      | gpu_latest              |
+| i[01-62]   | intel, broadwell        |
+| r[01-06]   | ryzen, amd, rome        |
+| r[07-38]   | ryzen, amd, milan       |
+| r[41-43]   | ryzen, amd, milan       |
+| x[01-06]   | intel, cascade          |
+
+#### Constraint Usage
+
+Since jobs on the "short" partition can run on any node, jobs can be narrowed down using constraints.
+
+If you require an Intel node of any generation:
+```
+srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint intel --pty bash -l
+```
+
+If you require an AMD node, but want it to be Rome or Milan generation (ie. **not** Abu Dhabi):
+```
+srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint "amd&(rome|milan)" --pty bash -l
+```
+
+If you want to run on a modern GPU machine:
+```
+srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint "gpu_latest" --pty bash -l
+```
 
 ### Monitoring Jobs
 To check on your jobs states, run the following:
