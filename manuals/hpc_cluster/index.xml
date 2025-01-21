@@ -378,7 +378,7 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h4 id="constraint-usage">Constraint Usage&lt;/h4>
+&lt;h4 id="constraint-examples">Constraint Examples&lt;/h4>
 &lt;p>Since jobs on the &amp;ldquo;short&amp;rdquo; partition can run on any node, jobs can be narrowed down using constraints.&lt;/p>
 &lt;p>If you require an Intel node of any generation:&lt;/p>
 &lt;pre>&lt;code>srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint intel --pty bash -l
@@ -389,6 +389,9 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;p>If you want to run on a modern GPU machine:&lt;/p>
 &lt;pre>&lt;code>srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint &amp;quot;gpu_latest&amp;quot; --pty bash -l
 &lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>When using constraints with GPUs, make sure to request a generic GPU&lt;/p>
+&lt;/blockquote>
 &lt;h3 id="monitoring-jobs">Monitoring Jobs&lt;/h3>
 &lt;p>To check on your jobs states, run the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash">squeue -u $USER --start
