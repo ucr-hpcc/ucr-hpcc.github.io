@@ -208,7 +208,6 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
-&lt;li>Feature Constraints: ryzen&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -219,7 +218,6 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: Intel&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, AVX2, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
-&lt;li>Feature Constraints: intel&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -229,7 +227,6 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
-&lt;li>Feature Constraints: amd&lt;/li>
 &lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -239,7 +236,6 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: Intel&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 100 GB to 1000 GB&lt;/li>
-&lt;li>Feature Constraints: mem&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -249,7 +245,6 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>CPU: AMD/Intel&lt;/li>
 &lt;li>GPUs: NVIDIA K80, A100, P100&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
-&lt;li>Feature Constraints: gpu&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -327,6 +322,73 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;pre>&lt;code class="language-bash">srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --x11 --pty bash -l
 &lt;/code>&lt;/pre>
 &lt;p>The above example enables X11 forwarding and requests 1GB of memory and 1 core for 10 hours within an interactive session.&lt;/p>
+&lt;h3 id="feature-constraints">Feature Constraints&lt;/h3>
+&lt;p>Using the &lt;code>--constraint&lt;/code> (or &lt;code>-C&lt;/code> flag) allows you to fine-tune what type of machine your job can run on, mainly useful on the &amp;ldquo;short&amp;rdquo; partitions. Below is a list of nodes as well as what features exist for each node type.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Nodes&lt;/th>
+&lt;th>Features&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>c[01-47]&lt;/td>
+&lt;td>amd, abu_dhabi&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>h[01-06]&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gpu[01-04]&lt;/td>
+&lt;td>gpu_legacy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gpu05&lt;/td>
+&lt;td>gpu_prev&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gpu[06-08]&lt;/td>
+&lt;td>gpu_latest, gpu_highmem&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gpu09&lt;/td>
+&lt;td>gpu_latest&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i[01-62]&lt;/td>
+&lt;td>intel, broadwell&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>r[01-06]&lt;/td>
+&lt;td>ryzen, amd, rome&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>r[07-38]&lt;/td>
+&lt;td>ryzen, amd, milan&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>r[41-43]&lt;/td>
+&lt;td>ryzen, amd, milan&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x[01-06]&lt;/td>
+&lt;td>intel, cascade&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="constraint-usage">Constraint Usage&lt;/h4>
+&lt;p>Since jobs on the &amp;ldquo;short&amp;rdquo; partition can run on any node, jobs can be narrowed down using constraints.&lt;/p>
+&lt;p>If you require an Intel node of any generation:&lt;/p>
+&lt;pre>&lt;code>srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint intel --pty bash -l
+&lt;/code>&lt;/pre>
+&lt;p>If you require an AMD node, but want it to be Rome or Milan generation (ie. &lt;strong>not&lt;/strong> Abu Dhabi):&lt;/p>
+&lt;pre>&lt;code>srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint &amp;quot;amd&amp;amp;(rome|milan)&amp;quot; --pty bash -l
+&lt;/code>&lt;/pre>
+&lt;p>If you want to run on a modern GPU machine:&lt;/p>
+&lt;pre>&lt;code>srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint &amp;quot;gpu_latest&amp;quot; --pty bash -l
+&lt;/code>&lt;/pre>
 &lt;h3 id="monitoring-jobs">Monitoring Jobs&lt;/h3>
 &lt;p>To check on your jobs states, run the following:&lt;/p>
 &lt;pre>&lt;code class="language-bash">squeue -u $USER --start
