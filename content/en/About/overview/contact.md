@@ -11,7 +11,9 @@ weight: 7
 
 For cluster support, see the [Help and Contacts](https://hpcc.ucr.edu/about/overview/introduction/#help-and-contacts) section of our Introduction.
 
-## Facility 
+## Facility
+
+Please do not contact the System Administrators directly for general cluster/software support. Our support email (support [at] hpcc.ucr.edu) will make sure the most eyes see the ticket and prevent it from getting lost in cluttered email inboxes.
 
 * [Austin Leong](mailto:aleon008@ucr.edu), Sr. HPC Systems Administrator
 * [Emerson Jacobson](mailto:emerson.jacobson@ucr.edu), HPC Systems Administrator
