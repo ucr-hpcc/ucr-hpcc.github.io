@@ -949,18 +949,27 @@ You can use the &lt;code>sqmore&lt;/code> command to see a list of all jobs sort
 &lt;h2 id="priority-partition">Priority Partition&lt;/h2>
 &lt;p>Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
 This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p>
-&lt;h2 id="using-the-preempt-partition">Using the Preempt Partition&lt;/h2>
+&lt;h2 id="using-the-preempt-partitions">Using the Preempt Partitions&lt;/h2>
 &lt;p>&lt;strong>NOTE&lt;/strong> The full release of the preempt partition is planned for future release and &lt;strong>is not&lt;/strong> yet available!&lt;/p>
 &lt;p>This guide assumes that you know how to run Interactive and Batch jobs through Slurm. If you do not, then please see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/">Managing Jobs&lt;/a> page of our documentation.&lt;/p>
+&lt;p>There are two partitions that will have preemption enabled: &amp;ldquo;preempt&amp;rdquo; for CPU jobs, and &amp;ldquo;preempt_gpu&amp;rdquo; for GPU jobs.&lt;/p>
 &lt;p>To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.&lt;/p>
 &lt;p>Your job is only guaranteed 5 minutes of runtime when it starts before it is elegible to be preempted.&lt;/p>
+&lt;h3 id="job-limitations">Job Limitations&lt;/h3>
+&lt;h4 id="time">Time&lt;/h4>
+&lt;p>As mentioned above, jobs can be killed at any time after the 5 minute grace period. Jobs should be set up such that any initialization steps that cannot tolerate being randomly killed happen within those first 5 minutes. The max walltime of a job is currently set to 1 day (24 hours).&lt;/p>
+&lt;h4 id="resources">Resources&lt;/h4>
+&lt;p>Currently, users are allowed to use an equal number of CPU cores as their current per-partition CPU limit. If you&amp;rsquo;re currently allowed to use 384 cores on the epyc partition, then you can use 384 cores on the preempt partition. The same applies to memory. For the GPU partition, users are currently allowed to use 1 GPU on the &amp;ldquo;preempt_gpu&amp;rdquo; partition.&lt;/p>
 &lt;h3 id="starting-a-job">Starting a job&lt;/h3>
 &lt;p>Similar to other partitions, you must specifically queue jobs to the &lt;code>preempt&lt;/code> partition. One special thing that is required is to also specify the &lt;code>preempt&lt;/code> account using &lt;code>-A preempt&lt;/code>. Jobs started on the preempt partition &lt;strong>do not&lt;/strong> count against your lab&amp;rsquo;s CPU quota.&lt;/p>
 &lt;h4 id="interactive-example">Interactive Example&lt;/h4>
-&lt;p>To start a preemptable interactive job, you can build off of the following command:&lt;/p>
+&lt;p>To start a CPU preemptable interactive job, you can build off of the following command:&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun -A preempt -p preempt -c 8 --mem 8GB --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>This will start a job with 8 cores and 8GB of memory on the &lt;code>preempt&lt;/code> partition under the &lt;code>preempt&lt;/code> account. Jobs that do not explicitly state &lt;code>-A preempt&lt;/code> will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice.&lt;/p>
+&lt;p>This will start a job with 8 cores and 8GB of memory on the &lt;code>preempt&lt;/code> partition under the &lt;code>preempt&lt;/code> account. Jobs that do not explicitly state &lt;code>-A preempt&lt;/code> will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice after the 5 minute grace period.&lt;/p>
+&lt;p>To start a GPU preemptable interactive job, you can build off of the following command:&lt;/p>
+&lt;pre>&lt;code class="language-bash">srun -A preempt -p preempt_gpu --gres=gpu:1 -c 8 --mem 8GB --pty bash -l
+&lt;/code>&lt;/pre>
 &lt;h4 id="non-interactive-batch-example">Non-interactive (batch) Example&lt;/h4>
 &lt;p>As with all preemptable jobs, batch jobs can be cancelled at any time without notice and the programs &lt;em>must&lt;/em> be able to tolerate this. Jobs that have been preempted will automatically be requeued to resume running at a later time when resources become available. The &lt;code>$SLURM_RESTART_COUNT&lt;/code> environment variable can be used to check if the job has been preempted and restarted to allow you to recover and resume running.&lt;/p>
 &lt;p>To start a batch job, you can build off of the following sbatch file:&lt;/p>
