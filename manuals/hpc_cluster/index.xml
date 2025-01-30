@@ -953,6 +953,7 @@ This is because jobs submitted to the group&amp;rsquo;s partition will be evalua
 &lt;p>&lt;strong>NOTE&lt;/strong> The full release of the preempt partition is planned for future release and &lt;strong>is not&lt;/strong> yet available!&lt;/p>
 &lt;p>This guide assumes that you know how to run Interactive and Batch jobs through Slurm. If you do not, then please see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/">Managing Jobs&lt;/a> page of our documentation.&lt;/p>
 &lt;p>To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.&lt;/p>
+&lt;p>Your job is only guaranteed 5 minutes of runtime when it starts before it is elegible to be preempted.&lt;/p>
 &lt;h3 id="starting-a-job">Starting a job&lt;/h3>
 &lt;p>Similar to other partitions, you must specifically queue jobs to the &lt;code>preempt&lt;/code> partition. One special thing that is required is to also specify the &lt;code>preempt&lt;/code> account using &lt;code>-A preempt&lt;/code>. Jobs started on the preempt partition &lt;strong>do not&lt;/strong> count against your lab&amp;rsquo;s CPU quota.&lt;/p>
 &lt;h4 id="interactive-example">Interactive Example&lt;/h4>
@@ -974,12 +975,14 @@ if [ &amp;quot;$SLURM_RESTART_COUNT&amp;quot; -eq 0 ]; then
 echo &amp;quot;This is the first time running the job&amp;quot;
 # Put the code for the first run here
 # Example: initializing data or setting up environment
-# Note that a job can be interrupted mid-run of this, do not
-# assume that all initialization has taken place!
+# Remember that a job only has 5 minutes of guaranteed runtime. Keep
+# any initialization/recovery short otherwise it might be interrupted
 else
 echo &amp;quot;The job is being resumed after a preemption&amp;quot;
 # Put the code for a resumed job here
 # Example: resuming from a checkpoint or continuing work
+# Remember that a job only has 5 minutes of guaranteed runtime. Keep
+# any initialization/recovery short otherwise it might be interrupted
 fi
 # Common job code that runs regardless of first run or resume
 echo &amp;quot;Running main job tasks...&amp;quot;
