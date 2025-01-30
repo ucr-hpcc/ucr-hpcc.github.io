@@ -161,3 +161,66 @@ Some small jobs may start before yours, only if they can complete before yours s
 ## Priority Partition
 Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
 This is because jobs submitted to the group's partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.
+
+## Using the Preempt Partition
+
+**NOTE** The full release of the preempt partition is planned for future release and **is not** yet available!
+
+This guide assumes that you know how to run Interactive and Batch jobs through Slurm. If you do not, then please see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page of our documentation.
+
+To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.
+
+### Starting a job
+
+Similar to other partitions, you must specifically queue jobs to the `preempt` partition. One special thing that is required is to also specify the `preempt` account using `-A preempt`. Jobs started on the preempt partition **do not** count against your lab's CPU quota.
+
+#### Interactive Example
+
+To start a preemptable interactive job, you can build off of the following command:
+```bash
+srun -A preempt -p preempt -c 8 --mem 8GB --pty bash -l
+```
+
+This will start a job with 8 cores and 8GB of memory on the `preempt` partition under the `preempt` account. Jobs that do not explicitly state `-A preempt` will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice.
+
+#### Non-interactive (batch) Example
+
+As with all preemptable jobs, batch jobs can be cancelled at any time without notice and the programs *must* be able to tolerate this. Jobs that have been preempted will automatically be requeued to resume running at a later time when resources become available. The `$SLURM_RESTART_COUNT` environment variable can be used to check if the job has been preempted and restarted to allow you to recover and resume running.
+
+To start a batch job, you can build off of the following sbatch file:
+```
+#!/bin/bash -l
+
+#SBATCH -A preempt
+#SBATCH -p preempt
+#SBATCH -c 8
+#SBATCH --mem 8GB
+#SBATCH --time 1-00:00:00
+
+# Check if this is the first run or a resumed job
+if [ "$SLURM_RESTART_COUNT" -eq 0 ]; then
+    echo "This is the first time running the job"
+    # Put the code for the first run here
+    # Example: initializing data or setting up environment
+    # Note that a job can be interrupted mid-run of this, do not
+    # assume that all initialization has taken place!
+else
+    echo "The job is being resumed after a preemption"
+    # Put the code for a resumed job here
+    # Example: resuming from a checkpoint or continuing work
+fi
+
+# Common job code that runs regardless of first run or resume
+echo "Running main job tasks..."
+# Put your main job code here
+```
+
+Jobs that do not explicitly state `#SBATCH -A preempt` will fail to start. Note that because this is a preemptable job, your job can be cancelled at any moment without notice.
+
+#### Selecting Resources
+
+Similar to the Short partition, the Preempt partition is a union of all public and private machines, excluding specialty machines like highmem and GPU. This means that if you do not specify any restrictions, your job can run on nodes in the batch, intel, or epyc partition. If a certain architecture is required for your job, then you can use the `--constraint` flag.
+
+For example, if you want your job to run on an Intel machine, you can include `#SBATCH --constraint=intel` in your sbatch script, or `--constraint=intel` in your srun command. If you want either an Intel or Epyc Rome machine, then you could use `#SBATCH --constraint=intel|rome` in your sbatch script, or `constraint=intel|rome` in your srun command. More information on constraints is available in the [Slurm Documentation](https://slurm.schedmd.com/sbatch.html#OPT_constraint). 
+
+To view which nodes contain which features, see the Feature Constraints listed on the [Feature Constraints](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#feature-constraints) page
