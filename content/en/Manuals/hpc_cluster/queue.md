@@ -162,15 +162,28 @@ Some small jobs may start before yours, only if they can complete before yours s
 Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
 This is because jobs submitted to the group's partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.
 
-## Using the Preempt Partition
+
+## Using the Preempt Partitions
 
 **NOTE** The full release of the preempt partition is planned for future release and **is not** yet available!
 
 This guide assumes that you know how to run Interactive and Batch jobs through Slurm. If you do not, then please see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page of our documentation.
 
+There are two partitions that will have preemption enabled: "preempt" for CPU jobs, and "preempt_gpu" for GPU jobs.
+
 To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.
 
 Your job is only guaranteed 5 minutes of runtime when it starts before it is elegible to be preempted.
+
+### Job Limitations
+
+#### Time
+
+As mentioned above, jobs can be killed at any time after the 5 minute grace period. Jobs should be set up such that any initialization steps that cannot tolerate being randomly killed happen within those first 5 minutes. The max walltime of a job is currently set to 1 day (24 hours).
+
+#### Resources
+
+Currently, users are allowed to use an equal number of CPU cores as their current per-partition CPU limit. If you're currently allowed to use 384 cores on the epyc partition, then you can use 384 cores on the preempt partition. The same applies to memory. For the GPU partition, users are currently allowed to use 1 GPU on the "preempt_gpu" partition.
 
 ### Starting a job
 
@@ -178,12 +191,17 @@ Similar to other partitions, you must specifically queue jobs to the `preempt` p
 
 #### Interactive Example
 
-To start a preemptable interactive job, you can build off of the following command:
+To start a CPU preemptable interactive job, you can build off of the following command:
 ```bash
 srun -A preempt -p preempt -c 8 --mem 8GB --pty bash -l
 ```
 
-This will start a job with 8 cores and 8GB of memory on the `preempt` partition under the `preempt` account. Jobs that do not explicitly state `-A preempt` will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice.
+This will start a job with 8 cores and 8GB of memory on the `preempt` partition under the `preempt` account. Jobs that do not explicitly state `-A preempt` will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice after the 5 minute grace period.
+
+To start a GPU preemptable interactive job, you can build off of the following command:
+```bash
+srun -A preempt -p preempt_gpu --gres=gpu:1 -c 8 --mem 8GB --pty bash -l
+```
 
 #### Non-interactive (batch) Example
 
