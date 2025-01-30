@@ -170,6 +170,8 @@ This guide assumes that you know how to run Interactive and Batch jobs through S
 
 To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.
 
+Your job is only guaranteed 5 minutes of runtime when it starts before it is elegible to be preempted.
+
 ### Starting a job
 
 Similar to other partitions, you must specifically queue jobs to the `preempt` partition. One special thing that is required is to also specify the `preempt` account using `-A preempt`. Jobs started on the preempt partition **do not** count against your lab's CPU quota.
@@ -202,12 +204,14 @@ if [ "$SLURM_RESTART_COUNT" -eq 0 ]; then
     echo "This is the first time running the job"
     # Put the code for the first run here
     # Example: initializing data or setting up environment
-    # Note that a job can be interrupted mid-run of this, do not
-    # assume that all initialization has taken place!
+    # Remember that a job only has 5 minutes of guaranteed runtime. Keep
+    # any initialization/recovery short otherwise it might be interrupted
 else
     echo "The job is being resumed after a preemption"
     # Put the code for a resumed job here
     # Example: resuming from a checkpoint or continuing work
+    # Remember that a job only has 5 minutes of guaranteed runtime. Keep
+    # any initialization/recovery short otherwise it might be interrupted
 fi
 
 # Common job code that runs regardless of first run or resume
