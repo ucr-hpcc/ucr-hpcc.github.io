@@ -362,15 +362,15 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;/tr>
 &lt;tr>
 &lt;td>r[01-06]&lt;/td>
-&lt;td>ryzen, amd, rome&lt;/td>
+&lt;td>amd, rome&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>r[07-38]&lt;/td>
-&lt;td>ryzen, amd, milan&lt;/td>
+&lt;td>amd, milan&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>r[41-43]&lt;/td>
-&lt;td>ryzen, amd, milan&lt;/td>
+&lt;td>amd, milan&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>x[01-06]&lt;/td>
