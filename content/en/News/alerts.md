@@ -12,7 +12,7 @@ aliases:
 
 __10-Mar-2025 to 14-Mar-2025__
 
-__Move in New Server Room:__ The HPCC's long-awaited move to a much larger and newly renovated server room
+_Move into New Server Room:_ The HPCC's long-awaited move to a much larger and newly renovated server room
 in the SOM-ED1 building is finally happening! This major improvement will
 unfortunately require about 5 days of downtime to move all HPCC systems to the
 new server room, and redeploy and test them. We apologize for the disruption
@@ -20,15 +20,13 @@ this will cause to your research. This is a rare and unique event (once every
 20+ years) that requires extensive organization and coordination between
 multiple parties and is a major logistical undertaking.
 
-__Benefits:__ The relocation of the HPCC will result in considerably more rack space, electrical and cooling capacity, and more dependable system operation, allowing us to accommodate substantially more CPU/GPU computing resources and data storage now and in the future. These enhancements will translate to significant benefits for all users.
+_Benefits:_ The relocation of the HPCC will result in considerably more rack space, electrical and cooling capacity, and more dependable system operation, allowing us to accommodate substantially more CPU/GPU computing resources and data storage now and in the future. These enhancements will translate to significant benefits for all users.
 
-__Schedule:__ Starting the morning of March 10th, users' access will be stopped, and we will begin shutting down all running jobs and services (see below). Any computing jobs that will still be running during the shutdown will need to be terminated by us. Users can restart or re-submit them after the move. Most services will be available again in the evening of March 14th.
+_Schedule:_ Starting the morning of March 10th, users' access will be stopped, and we will begin shutting down all running jobs and services (see below). Any computing jobs that will still be running during the shutdown will need to be terminated by us. Users can restart or re-submit them after the move. Most services will be available again in the evening of March 14th.
 
-__Services Impacted:__ All services hosted by the HPCC will be down during this
+_Services Impacted:_ All services hosted by the HPCC will be down during this
 period. This includes, but is not limited to cluster access (SSH, Slurm, data
-access), including HTTP access to user data; as well as services provided by OnDemand; RStudio/Posit, MATLAB, Jupyter, etc. 
-
-__Please note:__ email sent to support@hpcc.ucr.edu will also not work (only direct email). During the move,
+access), including HTTP access to user data; as well as services provided by OnDemand; RStudio/Posit, MATLAB, Jupyter, etc. Please note, email sent to support@hpcc.ucr.edu will also not work (only direct email). During the move,
 HPCC’s Slack workspace (https://ucr-hpcc.slack.com) will be the main means of
 group communication with users.
 
