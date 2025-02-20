@@ -64,7 +64,7 @@ Please see the Jupyter section for selecting resources and opening the Desktop W
 
 In many of the interactive session launch pages, the "Additional Slurm Arguments" option is available.
 
-![GPU Menu1](/imgs/ondemand_use_gpu.png)
+![GPU Menu1](/img/ondemand_use_gpu.png)
 
 To select a GPU, you can use the same `--gres` argument as you would with the `srun` command or in `sbatch` scripts.
 
