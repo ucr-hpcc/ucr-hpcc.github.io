@@ -33,6 +33,13 @@ group communication with users.
 
 ## Unannounced exceptions
 
+__23-Feb-2025: AC Issues__
+
++ 8:00AM: The condencers on the roof of the Genomics building both lost power, which caused both CRAC units in our server room to stop cooling. Facilities is on site and are working to bring the AC units back online.
++ 9:00AM: Facilities was able to bring one of the condencers back online, and are working on bringing one of the AC units back to alleviate some of the heat.
+
+## Past exceptions
+
 __02-Nov-2024: AC Issues__
 
 + 11:00AM: One of our 2 redundent AC units has began blowing hot air into the server room. While facilities diagnoses and resolves the issue we have paused the Slurm queue. We are sorry for the interruption.
@@ -43,7 +50,6 @@ __02-Nov-2024: AC Issues__
 + 12:00PM (Nov 4): A temporary fix is in place as facilities awaits parts for a complete fix. We are slowly increasing the number of available compute nodes, though with limited job runtimes. Currently any job with a runtime that will end before Nov 10 at Midnight will run. As temperatures in the room hold, we will increase the time limit and number of nodes in operation.
 + 11:00AM (Nov 7): Facilities is in the process of obtaining the equipment necessary for the repairs. We've been told by them that the repair will not require shutting down the AC units, so **we can resume operations as normal. We have removed the existing reservation, so long-running jobs may begin. We will continue to release the remaining offline nodes throughout the day as well.**
 
-## Past exceptions
 
 __24-Jun-2024: AC Work Completed__
 The AC repairs have been completed by facilities. Over the next few hours we will slowly begin to bring nodes back online.
