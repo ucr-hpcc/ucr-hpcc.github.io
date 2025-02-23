@@ -35,8 +35,8 @@ group communication with users.
 
 __23-Feb-2025: AC Issues__
 
-+ 8:00AM: The condencers on the roof of the Genomics building both lost power, which caused both CRAC units in our server room to stop cooling. Facilities is on site and are working to bring the AC units back online.
-+ 9:00AM: Facilities was able to bring one of the condencers back online, and are working on bringing one of the AC units back to alleviate some of the heat.
++ 8:00AM: The condensers on the roof of the Genomics building both lost power, which caused both CRAC units in our server room to stop cooling. Facilities is on site and are working to bring the AC units back online.
++ 9:00AM: Facilities was able to bring one of the condensers back online, and are working on bringing one of the AC units back to alleviate some of the heat. To prevent our power infrastructure from overheating, we've had to kill running jobs on the cluster. We apologize for this inconvenience.
 
 ## Past exceptions
 
