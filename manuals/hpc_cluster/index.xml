@@ -483,8 +483,8 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;/tr>
 &lt;tr>
 &lt;td>ReqNodeNotAvail, Reserved for maintenance&lt;/td>
-&lt;td>The time limit of your job would cause it to overlap with an upcoming maintenance. Either reduce your job&amp;rsquo;s runtime or wait for the maintenance to complete.&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>The time limit of your job would cause it to overlap with an upcoming maintenance.&lt;/td>
+&lt;td>You can either reduce your job&amp;rsquo;s runtime or wait for the maintenance to complete.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
