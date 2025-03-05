@@ -12,7 +12,7 @@ aliases:
 
 __10-Mar-2025 to 14-Mar-2025__
 
-_Move into New Server Room:_ The HPCC's __long-awaited move to a much larger and newly renovated server room__
+**_Move into New Server Room:_** The HPCC's long-awaited move to a much larger and newly renovated server room
 in the SOM-ED1 building is finally happening! This major improvement will
 unfortunately require about 5 days of downtime to move all HPCC systems to the
 new server room, and redeploy and test them. We apologize for the disruption
