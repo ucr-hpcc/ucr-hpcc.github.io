@@ -285,6 +285,7 @@ If a job is stuck in the queue or fails to start, there are typically Slurm erro
 | AssocGrpCpuLimit | You are exceeding the Per-User CPU limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
 | AssocGrpMemLimit | You are exceeding the Per-User Memory limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
 | MaxSubmitJobLimit | You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs. | Wait until some of your jobs finish, then you can continue submitting jobs. |
+| ReqNodeNotAvail, Reserved for maintenance | The time limit of your job would cause it to overlap with an upcoming maintenance. Either reduce your job's runtime or wait for the maintenance to complete. |
 
 This is only a small number of the most common reasons. For a full list please see Slurm's [Job Reason Codes](https://slurm.schedmd.com/job_reason_codes.html) page. If you are confused as to why you're getting a specific reason, please reach out to support.
 
