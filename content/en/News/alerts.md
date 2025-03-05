@@ -20,17 +20,17 @@ this will cause to your research. This is a rare and unique event (once every
 20+ years) that requires extensive organization and coordination between
 multiple parties and is a major logistical undertaking.
 
-_Benefits:_ The relocation of the HPCC will result in considerably more rack space, electrical and cooling capacity, and more dependable system operation, allowing us to accommodate substantially more CPU/GPU computing resources and data storage now and in the future. These enhancements will translate to significant benefits for all users.
+**_Benefits:_** The relocation of the HPCC will result in considerably more rack space, electrical and cooling capacity, and more dependable system operation, allowing us to accommodate substantially more CPU/GPU computing resources and data storage now and in the future. These enhancements will translate to significant benefits for all users.
 
-_Schedule:_ Starting the morning of March 10th, users' access will be stopped, and we will begin shutting down all running jobs and services (see below). Any computing jobs that will still be running during the shutdown will need to be terminated by us. Users can restart or re-submit them after the move. Most services will be available again in the evening of March 14th.
+**_Schedule:_** Starting the morning of March 10th, users' access will be stopped, and we will begin shutting down all running jobs and services (see below). Any computing jobs that will still be running during the shutdown will need to be terminated by us. Users can restart or re-submit them after the move. Most services will be available again in the evening of March 14th.
 
-_Services Impacted:_ All services hosted by the HPCC will be down during this
+**_Services Impacted:_** All services hosted by the HPCC will be down during this
 period. This includes, but is not limited to cluster access (SSH, Slurm, data
 access), including HTTP access to user data; as well as services provided by OnDemand; RStudio/Posit, MATLAB, Jupyter, etc. Please note, email sent to support@hpcc.ucr.edu will also not work (only direct email). During the move,
 HPCC’s Slack workspace (https://ucr-hpcc.slack.com) will be the main means of
 group communication with users.
 
-_Notes:_ As we get closer to the shutdown you might see your jobs get queued with the reason "ReqNodeNotAvail, Reserved for maintenance". This will happen when the runtime of your job will overlap with the shutdown. If your job can tolerate a shorter runtime, please adjust it to not overlap. If the job requires a longer runtime, then it will need to wait until after our servers are back online.
+**_Notes:_** As we get closer to the shutdown you might see your jobs get queued with the reason "ReqNodeNotAvail, Reserved for maintenance". This will happen when the runtime of your job will overlap with the shutdown. If your job can tolerate a shorter runtime, please adjust it to not overlap. If the job requires a longer runtime, then it will need to wait until after our servers are back online.
 
 ## Past exceptions
 
