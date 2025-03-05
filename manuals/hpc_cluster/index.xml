@@ -481,6 +481,11 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;td>You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs.&lt;/td>
 &lt;td>Wait until some of your jobs finish, then you can continue submitting jobs.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>ReqNodeNotAvail, Reserved for maintenance&lt;/td>
+&lt;td>The time limit of your job would cause it to overlap with an upcoming maintenance. Either reduce your job&amp;rsquo;s runtime or wait for the maintenance to complete.&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;p>This is only a small number of the most common reasons. For a full list please see Slurm&amp;rsquo;s &lt;a href="https://slurm.schedmd.com/job_reason_codes.html">Job Reason Codes&lt;/a> page. If you are confused as to why you&amp;rsquo;re getting a specific reason, please reach out to support.&lt;/p>
