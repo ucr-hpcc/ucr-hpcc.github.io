@@ -10,6 +10,14 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
+__15-Mar-2025__
+
+The cluster shutdown is unfortunately running behind schedule, due to unexpected delays in the moving process.
+We apologize for the extended shutdown, and the negative impact this will have on your research.
+
+* 1:30 AM: Core HPCC infrastructure booted successfully.
+* 10:00 AM: Sysadmins are on site to continue work on restoring cluster functionality.
+
 __10-Mar-2025 to 14-Mar-2025__
 
 **_Move into New Server Room:_** The HPCC's long-awaited move to a much larger and newly renovated server room
