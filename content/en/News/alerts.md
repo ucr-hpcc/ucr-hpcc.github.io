@@ -12,9 +12,10 @@ aliases:
 
 __17-Mar-2025__
 
-We are still working on the getting the internal network configured in the new server room.
-We are optimistic to finalize the configuration later today. Sorry again for these delays. 
-
+* 8:00 AM: We are still working on the getting the internal network configured in the new server room.
+We are optimistic to finalize the configuration later today. Sorry again for these delays.
+* 4:30 PM: Headnodes are available for user login! We're now working on bringing up some compute nodes.
+It's unlikely that all compute resources will come online by tonight.
 
 __15-Mar-2025__
 
@@ -23,6 +24,7 @@ We apologize for the extended shutdown, and the negative impact this will have o
 
 * 1:30 AM: Core HPCC infrastructure booted successfully.
 * 10:00 AM: Sysadmins are on site to continue work on restoring cluster functionality.
+* 9:00 PM: Sysadmins have concluded their efforts for the weekend. Network difficulties hindered our progress.
 
 __10-Mar-2025 to 14-Mar-2025__
 
