@@ -12,7 +12,7 @@ aliases:
 
 __17-Mar-2025__
 
-We are still working on the getting the network configured for running and accessing the cluster.
+We are still working on the getting the internal network configured in the new server room.
 We are optimistic to finalize the configuration later today. Sorry again for these delays. 
 
 
