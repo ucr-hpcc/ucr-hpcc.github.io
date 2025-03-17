@@ -10,6 +10,12 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
+__17-Mar-2025__
+
+We are still working on the getting the network configured for running and accessing the cluster.
+We are optimistic to finalize the configuration later today. Sorry again for these delays. 
+
+
 __15-Mar-2025__
 
 The cluster shutdown is unfortunately running behind schedule, due to unexpected delays in the moving process.
