@@ -16,6 +16,9 @@ __17-Mar-2025__
 We are optimistic to finalize the configuration later today. Sorry again for these delays.
 * 4:30 PM: __Headnodes are available for user login again!!!__ We're now working on bringing up some compute nodes.
 It's unlikely that all compute resources will come online by tonight.
+* 8:00 PM: A significant portion of compute and GPU nodes have been brought online. The remaining nodes will
+follow when we've properly assessed power/network load balancing and server room cooling capacity. OnDemand
+should be functional. Other secondary services like JupyterHub and license servers will come online tomorrow.
 
 __15-Mar-2025__
 
