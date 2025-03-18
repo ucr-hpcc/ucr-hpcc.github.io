@@ -14,7 +14,7 @@ __17-Mar-2025__
 
 * 8:00 AM: We are still working on the getting the internal network configured in the new server room.
 We are optimistic to finalize the configuration later today. Sorry again for these delays.
-* 4:30 PM: Headnodes are available for user login! We're now working on bringing up some compute nodes.
+* 4:30 PM: __Headnodes are available for user login again!!!__ We're now working on bringing up some compute nodes.
 It's unlikely that all compute resources will come online by tonight.
 
 __15-Mar-2025__
