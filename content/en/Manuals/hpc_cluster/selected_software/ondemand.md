@@ -37,6 +37,21 @@ Your job will then be queued and eventually start running.
 
 Click "Connect to Jupyter" to open a new window containing Jupyter and start working!
 
+### Using Remote Kernels in VSCode
+
+VSCode allows you to run your code using a remote kernel. They provide some instructions [here](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server). Using the OnDemand Jupyter requires a couple of additional extra steps.
+
+When you start a new Jupyter session on OnDemand, it should provide you with a command to set up an [SSH Tunnel](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#tunneling). This command should be run **on your local machine** and *not* on the cluster. Note that numbers and node name will likely be different!
+
+![jupyterqueue2](/img/ondemand_jupyter5.png)
+
+
+At this point, you should be able to navigate to the provided URL along with the provided password to access your Jupyter session.
+
+To connect within VSCode you'll need the [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension installed. Within a `.ipynb` file, find the "Select Kernel" option in the top right of your screen, select "Existing Jupyter Server", and paste the URL provided by OnDemand. When asked for a password, use the one provided by OnDemand.
+
+From there you should be able to select the kernel that you would like to run.
+
 
 ## RStudio on OnDemand
 
