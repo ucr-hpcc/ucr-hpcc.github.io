@@ -104,6 +104,13 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;p>&lt;img src="../../../img/ondemand_jupyter3.png" alt="jupyterqueue1">&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_jupyter4.png" alt="jupyterqueue2">&lt;/p>
 &lt;p>Click &amp;ldquo;Connect to Jupyter&amp;rdquo; to open a new window containing Jupyter and start working!&lt;/p>
+&lt;h3 id="using-remote-kernels-in-vscode">Using Remote Kernels in VSCode&lt;/h3>
+&lt;p>VSCode allows you to run your code using a remote kernel. They provide some instructions &lt;a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server">here&lt;/a>. Using the OnDemand Jupyter requires a couple of additional extra steps.&lt;/p>
+&lt;p>When you start a new Jupyter session on OnDemand, it should provide you with a command to set up an &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#tunneling">SSH Tunnel&lt;/a>. This command should be run &lt;strong>on your local machine&lt;/strong> and &lt;em>not&lt;/em> on the cluster. Note that numbers and node name will likely be different!&lt;/p>
+&lt;p>&lt;img src="../../../img/ondemand_jupyter5.png" alt="jupyterqueue2">&lt;/p>
+&lt;p>At this point, you should be able to navigate to the provided URL along with the provided password to access your Jupyter session.&lt;/p>
+&lt;p>To connect within VSCode you&amp;rsquo;ll need the &lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter&lt;/a> extension installed. Within a &lt;code>.ipynb&lt;/code> file, find the &amp;ldquo;Select Kernel&amp;rdquo; option in the top right of your screen, select &amp;ldquo;Existing Jupyter Server&amp;rdquo;, and paste the URL provided by OnDemand. When asked for a password, use the one provided by OnDemand.&lt;/p>
+&lt;p>From there you should be able to select the kernel that you would like to run.&lt;/p>
 &lt;h2 id="rstudio-on-ondemand">RStudio on OnDemand&lt;/h2>
 &lt;p>The process of launching RStudio is almost identical to that of starting Jupyter, but selecting &amp;ldquo;RStudio Server&amp;rdquo; instead of &amp;ldquo;Jupyter Notebook&amp;rdquo; from the menu.&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_rstudio1.png" alt="rstudiomenu">&lt;/p>
