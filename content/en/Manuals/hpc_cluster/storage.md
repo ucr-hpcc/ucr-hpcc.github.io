@@ -9,7 +9,7 @@ aliases:
 ---
 
 ## Dashboard
-HPCC cluster users are able to check on their home and bigdata storage usage from the [Dashboard Portal](https://dashboard.hpcc.ucr.edu).
+HPCC cluster users are able to check on their home and bigdata storage usage from the [Dashboard Portal](https://dashboard.hpcc.ucr.edu). Note that there is a known issue with the dashboard's display of usage when users are a part of multiple labs.
 
 ## Home
 Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster.  This is usually where you place the scripts and various things you are working on.  This space is very limited.  Please remember that the home storage space quota per user account is 20 GB.
