@@ -1188,7 +1188,7 @@ install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&a
 &lt;p>The below links to usage manuals of selected research software requiring more complex usage instructions.&lt;/p>
 &lt;/blockquote></description></item><item><title>Manuals: Data Storage</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/storage/</guid><description>
 &lt;h2 id="dashboard">Dashboard&lt;/h2>
-&lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>.&lt;/p>
+&lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>. Note that there is a known issue with the dashboard&amp;rsquo;s display of usage when users are a part of multiple labs.&lt;/p>
 &lt;h2 id="home">Home&lt;/h2>
 &lt;p>Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster. This is usually where you place the scripts and various things you are working on. This space is very limited. Please remember that the home storage space quota per user account is 20 GB.&lt;/p>
 &lt;table>
