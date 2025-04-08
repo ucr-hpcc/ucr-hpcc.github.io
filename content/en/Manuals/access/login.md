@@ -136,7 +136,7 @@ a user's local computer (not the cluster).
 __1.__ Create SSH directory
 
 ```bash
-mkdir -p ~/.ssh
+mkdir -m 700 ${HOME}/.ssh
 ```
 __2.__ Create key pair (private and public)
 
