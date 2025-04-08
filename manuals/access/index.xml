@@ -98,7 +98,7 @@ much more straigthforward to use, including &lt;a href="https://hpcc.ucr.edu/man
 operating systems, including Windows, macOS, Linux and ChromeOS. Note, the following commands need to be executed on
 a user&amp;rsquo;s local computer (not the cluster).&lt;/p>
 &lt;p>&lt;strong>1.&lt;/strong> Create SSH directory&lt;/p>
-&lt;pre>&lt;code class="language-bash">mkdir -p ~/.ssh
+&lt;pre>&lt;code class="language-bash">mkdir -m 700 ${HOME}/.ssh
 &lt;/code>&lt;/pre>
 &lt;p>&lt;strong>2.&lt;/strong> Create key pair (private and public)&lt;/p>
 &lt;pre>&lt;code class="language-bash">ssh-keygen -t rsa -f ~/.ssh/id_rsa
