@@ -151,7 +151,7 @@ conda activate ipykernel_py3
 python -m ipykernel install --user --name ipykernel_py3 --display-name "IPyKernel (Python 3)"
 ```
 
-Now when you visit [Jupyter-Hub](https://jupyter.hpcc.ucr.edu) you should see the option "JupyterPy3" when you click the "New" dropdown menu in the upper left corner of the home page.
+Now when you visit the notebook you should see the option "JupyterPy3" when you click the "New" dropdown menu in the upper left corner of the home page.
 
 To remove an unwanted kernel, use the following commands:
 
