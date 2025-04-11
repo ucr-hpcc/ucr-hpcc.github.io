@@ -1125,7 +1125,7 @@ conda activate ipykernel_py3
 # --display-name is the name you will see in the Jupyter web interface, should be descriptive.
 python -m ipykernel install --user --name ipykernel_py3 --display-name &amp;quot;IPyKernel (Python 3)&amp;quot;
 &lt;/code>&lt;/pre>
-&lt;p>Now when you visit &lt;a href="https://jupyter.hpcc.ucr.edu">Jupyter-Hub&lt;/a> you should see the option &amp;ldquo;JupyterPy3&amp;rdquo; when you click the &amp;ldquo;New&amp;rdquo; dropdown menu in the upper left corner of the home page.&lt;/p>
+&lt;p>Now when you visit the notebook you should see the option &amp;ldquo;JupyterPy3&amp;rdquo; when you click the &amp;ldquo;New&amp;rdquo; dropdown menu in the upper left corner of the home page.&lt;/p>
 &lt;p>To remove an unwanted kernel, use the following commands:&lt;/p>
 &lt;pre>&lt;code class="language-bash">jupyter kernelspec list # List available kernels
 jupyter kernelspec uninstall UNWANTEDKERNEL
