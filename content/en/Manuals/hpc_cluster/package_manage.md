@@ -59,6 +59,8 @@ auto_activate_base: false
 
 > After changing the configuration, environments can be moved to the new bigdata location using `conda rename -n NAME NAME_tmp`, then `conda rename -n NAME_tmp NAME` to return it to it's original name. Replacing `NAME` with the name of the environment you wish to move. If you receive an error while trying to rename, try activting the base conda environment using `conda activate base` and running the `conda rename` commands again.
 
+> It's also recommended to clean your old conda packages using `conda clean -a`. Note that this command can take a while (>>1 hour) if there are a lot of downloaded packages.
+
 Create a Python 3.10 conda environment, like so:
 
 ```bash
