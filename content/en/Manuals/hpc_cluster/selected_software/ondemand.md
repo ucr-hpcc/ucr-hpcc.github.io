@@ -16,7 +16,7 @@ The sections below go over using OnDemand, as well as a couple pieces of popular
 
 ## Accessing OnDemand
 
-Our OnDemand instance is located here: [https://ondemand.hpcc.ucr.edu/](https://ondemand.hpcc.ucr.edu/). Log in with your **cluster** login details and verify your login with Duo's two-factor authentication.
+Our OnDemand instance is located here: [https://ondemand.hpcc.ucr.edu/](https://ondemand.hpcc.ucr.edu/). Log in with your **cluster** login details (UCR NetID and Password) and verify your login with Duo's two-factor authentication.
 
 
 ## Jupyter on OnDemand
