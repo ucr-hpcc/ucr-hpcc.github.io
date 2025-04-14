@@ -94,7 +94,7 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;p>User&amp;rsquo;s also have the ability to upload/download files to/from the cluster, connect to the cluster via SSH, and create batch job templates.&lt;/p>
 &lt;p>The sections below go over using OnDemand, as well as a couple pieces of popular software.&lt;/p>
 &lt;h2 id="accessing-ondemand">Accessing OnDemand&lt;/h2>
-&lt;p>Our OnDemand instance is located here: &lt;a href="https://ondemand.hpcc.ucr.edu/">https://ondemand.hpcc.ucr.edu/&lt;/a>. Log in with your &lt;strong>cluster&lt;/strong> login details and verify your login with Duo&amp;rsquo;s two-factor authentication.&lt;/p>
+&lt;p>Our OnDemand instance is located here: &lt;a href="https://ondemand.hpcc.ucr.edu/">https://ondemand.hpcc.ucr.edu/&lt;/a>. Log in with your &lt;strong>cluster&lt;/strong> login details (UCR NetID and Password) and verify your login with Duo&amp;rsquo;s two-factor authentication.&lt;/p>
 &lt;h2 id="jupyter-on-ondemand">Jupyter on OnDemand&lt;/h2>
 &lt;p>After logging in, select &amp;ldquo;Jupyter Notebook&amp;rdquo; from the &amp;ldquo;Interactive Apps&amp;rdquo; tab from the menu bar.&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_jupyter1.png" alt="jupytermenu">&lt;/p>
