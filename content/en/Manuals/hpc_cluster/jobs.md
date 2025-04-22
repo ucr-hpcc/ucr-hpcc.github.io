@@ -284,6 +284,7 @@ If a job is stuck in the queue or fails to start, there are typically Slurm erro
 | QOSMaxWallDurationPerJobLimit | The time limit requested on the selected partition goes over the limits. For example, requesting 2 days on the "short" partition. | Make sure that you are within the partition's time limit. Please refer to the [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/#partition-quotas) page for the per-partition time limits. |
 | AssocGrpCpuLimit | You are exceeding the Per-User CPU limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
 | AssocGrpMemLimit | You are exceeding the Per-User Memory limit on a specific partition. | You must wait until jobs finish within a partition to free up resources to allow additional jobs to run. |
+| AssocGrpGRES | You are exceeding the Per-User GRES (GPU) limit | You must wait until your GPU jobs finish to free up resources to allow additional jobs to run. |
 | MaxSubmitJobLimit | You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs. | Wait until some of your jobs finish, then you can continue submitting jobs. |
 | ReqNodeNotAvail, Reserved for maintenance | The time limit of your job would cause it to overlap with an upcoming maintenance. | You can either reduce your job's runtime or wait for the maintenance to complete. |
 
