@@ -477,6 +477,11 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;td>You must wait until jobs finish within a partition to free up resources to allow additional jobs to run.&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>AssocGrpGRES&lt;/td>
+&lt;td>You are exceeding the Per-User GRES (GPU) limit&lt;/td>
+&lt;td>You must wait until your GPU jobs finish to free up resources to allow additional jobs to run.&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>MaxSubmitJobLimit&lt;/td>
 &lt;td>You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs.&lt;/td>
 &lt;td>Wait until some of your jobs finish, then you can continue submitting jobs.&lt;/td>
