@@ -959,7 +959,7 @@ You can use the &lt;code>sqmore&lt;/code> command to see a list of all jobs sort
 &lt;h2 id="priority-partition">Priority Partition&lt;/h2>
 &lt;p>Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
 This is because jobs submitted to the group&amp;rsquo;s partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.&lt;/p>
-&lt;h2 id="using-the-preempt-partitions">Using the Preempt Partitions&lt;/h2>
+&lt;h2 id="using-the-preempt-partitions-tenative">Using the Preempt Partitions (TENATIVE)&lt;/h2>
 &lt;p>&lt;strong>NOTE&lt;/strong> The full release of the preempt partition is planned for future release and &lt;strong>is not&lt;/strong> yet available!&lt;/p>
 &lt;p>This guide assumes that you know how to run Interactive and Batch jobs through Slurm. If you do not, then please see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/">Managing Jobs&lt;/a> page of our documentation.&lt;/p>
 &lt;p>There are two partitions that will have preemption enabled: &amp;ldquo;preempt&amp;rdquo; for CPU jobs, and &amp;ldquo;preempt_gpu&amp;rdquo; for GPU jobs.&lt;/p>
