@@ -163,7 +163,7 @@ Some groups on our system have purchased additional hardware. These nodes will n
 This is because jobs submitted to the group's partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.
 
 
-## Using the Preempt Partitions
+## Using the Preempt Partitions (TENATIVE)
 
 **NOTE** The full release of the preempt partition is planned for future release and **is not** yet available!
 
