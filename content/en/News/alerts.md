@@ -12,11 +12,13 @@ aliases:
 
 __14-May-2025__
 
-* 1:00AM: There was a power outage affecting several buildings on campus, including our server room in SOMED1 at approximately 1AM. Until the larger 500kW UPS will be installed in late
+* __1:00 AM__: There was a power outage affecting several buildings on campus, including our server room in SOMED1 at approximately 1AM. Until the larger 500kW UPS will be installed in late
 summer, not all of our computing nodes are battery backed up. However, our core infrastructure (storage, backend administration nodes) UPS backed up. 
 Our newer "epyc" and modern GPU nodes (`gpu[06-09]`) are battery backed up and should not have lost any jobs. Nodes in the "intel", "batch", and "highmem" partitions, and 
 nodes gpu[01-05], are not on battery backup, so any jobs running on them at the time of the outage were lost and will need to be resubmitted. We're sorry for this disruption, 
 and we're working on bringing the remaining nodes back online.
+
+* __9:00 AM__: Most or all machines and services should be operational again. Jobs that were impacted should be requeued automatically.
 
 
 ## Scheduled exceptions and downtimes
