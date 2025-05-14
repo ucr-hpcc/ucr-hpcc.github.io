@@ -83,7 +83,7 @@ In many of the interactive session launch pages, the "Additional Slurm Arguments
 
 To select a GPU, you can use the same `--gres` argument as you would with the `srun` command or in `sbatch` scripts.
 
-For example, to get 1x A100 GPU for a job, be sure to select the `gpu` partition and enter `--gres=gpu:a100:1` in the Additional SLurm Arguments box.
+For example, to get 1x A100 GPU for a job, be sure to select the `gpu` partition and enter `--gres=gpu:a100:1` in the Additional Slurm Arguments box. You might also want to load one of the "cuda" modules as well in the "Additional Modules" box.
 
 
 ## Troubleshooting Jobs
