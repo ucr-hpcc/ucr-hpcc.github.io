@@ -12,7 +12,8 @@ aliases:
 
 __14-May-2025__
 
-* 1:00AM: There was a power outage in the SOM server room at approximately 1AM. While not all of our servers are battery backed up, our core infrastructure (storage, backend administration nodes) is. Our "epyc" and modern GPU nodes (`gpu[06-09]`) were also battery backed up and should not have had jobs killed. Nodes in the "intel", "batch", and "highmem" partitions, and nodes gpu[01-05], are not on battery backup, so any jobs running on them at the time of the outage were lost and will need to be resubmitted. We're sorry for this disruption, and we're working on bringing the remaining nodes back online.
+* __1:00 AM__: There was a power outage in the SOM server room at approximately 1AM. While not all of our servers are battery backed up, our core infrastructure (storage, backend administration nodes) is. Our "epyc" and modern GPU nodes (`gpu[06-09]`) were also battery backed up and should not have had jobs killed. Nodes in the "intel", "batch", and "highmem" partitions, and nodes gpu[01-05], are not on battery backup, so any jobs running on them at the time of the outage were lost and will need to be resubmitted. We're sorry for this disruption, and we're working on bringing the remaining nodes back online.
+* __9:00 AM__: Most or all machines and services should be operational again. Jobs that were impacted should be requeued automatically.
 
 
 ## Scheduled exceptions and downtimes
