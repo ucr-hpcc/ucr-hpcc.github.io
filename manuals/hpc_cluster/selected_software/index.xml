@@ -125,7 +125,7 @@ singularity shell --nv $ALPHAFOLD_SING
 &lt;p>In many of the interactive session launch pages, the &amp;ldquo;Additional Slurm Arguments&amp;rdquo; option is available.&lt;/p>
 &lt;p>&lt;img src="../../../img/ondemand_use_gpu.png" alt="GPU Menu1">&lt;/p>
 &lt;p>To select a GPU, you can use the same &lt;code>--gres&lt;/code> argument as you would with the &lt;code>srun&lt;/code> command or in &lt;code>sbatch&lt;/code> scripts.&lt;/p>
-&lt;p>For example, to get 1x A100 GPU for a job, be sure to select the &lt;code>gpu&lt;/code> partition and enter &lt;code>--gres=gpu:a100:1&lt;/code> in the Additional SLurm Arguments box.&lt;/p>
+&lt;p>For example, to get 1x A100 GPU for a job, be sure to select the &lt;code>gpu&lt;/code> partition and enter &lt;code>--gres=gpu:a100:1&lt;/code> in the Additional Slurm Arguments box. You might also want to load one of the &amp;ldquo;cuda&amp;rdquo; modules as well in the &amp;ldquo;Additional Modules&amp;rdquo; box.&lt;/p>
 &lt;h2 id="troubleshooting-jobs">Troubleshooting Jobs&lt;/h2>
 &lt;h3 id="rstudio-crashes">RStudio Crashes&lt;/h3>
 &lt;p>&lt;img src="../../../img/ondemand_r_crash.png" alt="jupyterqueue2">&lt;/p>
