@@ -10,6 +10,10 @@ aliases:
 
 ## Scheduled exceptions and downtimes
 
+
+
+## Past exceptions
+
 __17-Mar-2025__
 
 * 8:00 AM: We are still working on the getting the internal network configured in the new server room.
@@ -50,8 +54,6 @@ HPCC’s Slack workspace (https://ucr-hpcc.slack.com) will be the main means of
 group communication with users.
 
 **_Notes:_** As we get closer to the shutdown you might see your jobs get queued with the reason "ReqNodeNotAvail, Reserved for maintenance". This will happen when the runtime of your job will overlap with the shutdown. If your job can tolerate a shorter runtime, please adjust it to not overlap. If the job requires a longer runtime, then it will need to wait until after our servers are back online.
-
-## Past exceptions
 
 __23-Feb-2025: AC Issues__
 
