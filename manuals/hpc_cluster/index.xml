@@ -829,22 +829,22 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>epyc (2021 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>384 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>384 Cores, 1TB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>,&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>intel (2016 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>384 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>384 Cores, 1TB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>,&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>batch (2012 CPU)&lt;/td>
 &lt;td>CPU Intensive Workloads, Multithreaded, MPI, OpenMP&lt;/td>
-&lt;td>384 Cores, 1TB memory&lt;/td>
-&lt;td>64GB memory per Core &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>384 Cores, 1TB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>64GB memory per Core &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>,&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -864,8 +864,8 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>gpu&lt;/td>
 &lt;td>GPU-Enabled Workloads&lt;/td>
-&lt;td>4 GPUs&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>,48 Cores, 512GB memory&lt;/td>
-&lt;td>16 Cores, 256GB memory &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>,&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>&lt;/td>
+&lt;td>4 GPUs&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>,48 Cores, 512GB memory&lt;/td>
+&lt;td>16 Cores, 256GB memory &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>,&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup>&lt;/td>
 &lt;td>7 Days&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -1024,22 +1024,25 @@ echo &amp;quot;Running main job tasks...&amp;quot;
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>The 384 core/1TB limit is per-user across all CPU compute partitions (epyc, intel, and batch). Attempting to run more then 384 cores, even if across multiple CPU compute partitions, will be queued until resources become available. Specialized partitions (eg. short, highmem, gpu) will not count against the CPU compute partition&amp;rsquo;s quotas.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>A 64GB-per-core limit is placed to prevent over allocating memory compared to CPUs. If more than a 64GB-per-core ratio is requested, the core count will be increased to match.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:3" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>intel&lt;/strong> partition is limited to &lt;strong>~450GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Allocatable memory per-node in the &lt;strong>epyc&lt;/strong> partition is limited to &lt;strong>~950GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:4" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>batch&lt;/strong> partition is limited to &lt;strong>~500GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Allocatable memory per-node in the &lt;strong>intel&lt;/strong> partition is limited to &lt;strong>~450GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:5" role="doc-endnote">
-&lt;p>If a user needs more than 4 GPUs, please contact &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with a short justification for a temporary increase.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Allocatable memory per-node in the &lt;strong>batch&lt;/strong> partition is limited to &lt;strong>~500GB&lt;/strong> to allow for system overhead.&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:6" role="doc-endnote">
-&lt;p>Allocatable memory per-node in the &lt;strong>gpu&lt;/strong> partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>If a user needs more than 4 GPUs, please contact &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a> with a short justification for a temporary increase.&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:7" role="doc-endnote">
+&lt;p>Allocatable memory per-node in the &lt;strong>gpu&lt;/strong> partition is dependent on the node. 115GB for gpu[01-02], 500GB for gpu[03-04], 200GB for gpu05, 922GB for gpu06, 950GB for gpu[07-08]&amp;#160;&lt;a href="#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>Manuals: Package Management</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/package_manage/</guid><description>
