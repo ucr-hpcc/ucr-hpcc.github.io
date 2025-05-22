@@ -169,6 +169,7 @@ Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of mac
 | r[01-06]   | amd, rome               |
 | r[07-38]   | amd, milan              |
 | r[41-43]   | amd, milan              |
+| r[44-51]   | amd, genoa              |
 | x[01-06]   | intel, cascade          |
 | h[01-06]   | intel, ivy              |
 | h07        | intel, sapphire         |
