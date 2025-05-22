@@ -376,6 +376,14 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;td>x[01-06]&lt;/td>
 &lt;td>intel, cascade&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>h[01-06]&lt;/td>
+&lt;td>intel, ivy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>h07&lt;/td>
+&lt;td>intel, sapphire&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h4 id="constraint-examples">Constraint Examples&lt;/h4>
