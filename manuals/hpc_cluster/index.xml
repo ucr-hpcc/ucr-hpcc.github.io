@@ -553,7 +553,7 @@ echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;p>Interactive&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type.&lt;/p>
+&lt;p>Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Worker Node&lt;/a> section of our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/">Hardware Details&lt;/a> page.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
