@@ -373,7 +373,7 @@ Interactive
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
-Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type.
+Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the [Worker Node](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) section of our [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/) page.
 
 Non-Interactive:
 
