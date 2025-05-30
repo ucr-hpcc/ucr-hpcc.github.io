@@ -239,6 +239,15 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>highclock
+&lt;ul>
+&lt;li>Nodes: hz01-hz04&lt;/li>
+&lt;li>CPU: Intel&lt;/li>
+&lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
+&lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Time (walltime): 168 hours (7 days) default&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>gpu
 &lt;ul>
 &lt;li>Nodes: gpu01-gpu06&lt;/li>
@@ -268,6 +277,7 @@ sbatch -p highmem SBATCH_SCRIPT.sh
 sbatch -p epyc SBATCH_SCRIPT.sh
 sbatch -p gpu SBATCH_SCRIPT.sh
 sbatch -p intel SBATCH_SCRIPT.sh
+sbatch -p highclock SBATCH_SCRIPT.sh
 sbatch -p mygroup SBATCH_SCRIPT.sh
 &lt;/code>&lt;/pre>
 &lt;h2 id="slurm">Slurm&lt;/h2>
