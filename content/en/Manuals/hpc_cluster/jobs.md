@@ -39,6 +39,12 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 100 GB to 1000 GB
     * Time (walltime): 48 hours (2 days) default
+* highclock
+    * Nodes: hz01-hz04
+    * CPU: Intel
+    * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
+    * RAM: 1 GB default
+    * Time (walltime): 168 hours (7 days) default
 * gpu
     * Nodes: gpu01-gpu06
     * CPU: AMD/Intel
@@ -63,6 +69,7 @@ sbatch -p highmem SBATCH_SCRIPT.sh
 sbatch -p epyc SBATCH_SCRIPT.sh
 sbatch -p gpu SBATCH_SCRIPT.sh
 sbatch -p intel SBATCH_SCRIPT.sh
+sbatch -p highclock SBATCH_SCRIPT.sh
 sbatch -p mygroup SBATCH_SCRIPT.sh
 ```
 
