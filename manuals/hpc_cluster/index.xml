@@ -866,6 +866,13 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>highclock&lt;/td>
+&lt;td>Low Parallelism Workloads&lt;/td>
+&lt;td>32 Cores, 1TB memory&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>30 Days&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>gpu&lt;/td>
 &lt;td>GPU-Enabled Workloads&lt;/td>
 &lt;td>4 GPUs&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>,48 Cores, 512GB memory&lt;/td>
