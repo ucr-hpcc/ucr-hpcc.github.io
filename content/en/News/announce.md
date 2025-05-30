@@ -11,9 +11,11 @@ aliases:
 Note: for the most current information on exceptions on HPCC's cluster please
 consult its [Alerts](/news/alerts) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
+### May 2025
+* The HPCC is proud to announce the deployment of a new high-memory node (h07) as well as 4 "high clock" nodes (hz01-hz04). The high memory node is equipt with 3TB of memory as well as a modern Intel Xeon Max 9468 CPU. Since this node is a part of the normal "highmem" partition, to access it you can use the `--constraint=sapphire` flag. More info on Slurm constraints can be found on our documentation [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#feature-constraints). The high clock machines are available to use in the "highclock" partition and are equipt with Intel Xeon Gold 6558Q processors capable of boosting up to 4.1GHz. Quotas for the "highclock" partition can be found on our [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/#partition-quotas) page.
+
 ### Mar 2025
 * Finally the HPCC will be moving its computing infrastructure from Genomics to the newly renovated and much larger server room in the SOM-ED1 building. Details are provided [here](https://hpcc.ucr.edu/news/alerts/#scheduled-exceptions-and-downtimes). 
-
 
 ### Oct 2024
 * To allow for more users to gain access our GPUs, we have reduced the per-user GPU limit from 8 to 4. Additionally, we have reduced the maximum job runtime for the GPU partition from 30 days down to 7. Should you need an increase in the time limit or number of GPUs you can use in parallel, please email support@hpcc.ucr.edu (please also CC your PI) with a short justification and timeline for the increase.
