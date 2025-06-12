@@ -485,7 +485,7 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;/tr>
 &lt;tr>
 &lt;td>QOSMaxWallDurationPerJobLimit&lt;/td>
-&lt;td>The time limit requested on the selected partition goes over the limits. For example, requesting 2 days on the &amp;ldquo;short&amp;rdquo; partition.&lt;/td>
+&lt;td>The time limit requested on the selected partition goes over the limits. For example, requesting 3 days on the &amp;ldquo;short&amp;rdquo; partition.&lt;/td>
 &lt;td>Make sure that you are within the partition&amp;rsquo;s time limit. Please refer to the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/#partition-quotas">Queue Policies&lt;/a> page for the per-partition time limits.&lt;/td>
 &lt;/tr>
 &lt;tr>
