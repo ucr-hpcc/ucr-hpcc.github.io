@@ -13,6 +13,11 @@ When using VSCode on the cluster, please do not use Remote SSH as it will launch
 
 Instead, we can use a feature of VSCode: [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels).
 
+## OnDemand
+
+A browser-based version of VSCode can be used through OnDemand for basic programming and cluster access. Not all extensions are available through the browser-based version of VSCode, so setting up a remote tunnel might be preferred in instances where those extensions are needed. More information on using OnDemand can be found on our [Open OnDemand Usage](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/) page.
+
+
 ## Setting up VSCode Tunnels
 
 Using a tunnel allows us to work on a compute node, rather than on a head node. This allows us to use more resources than we would normally be allowed to on a head node.
