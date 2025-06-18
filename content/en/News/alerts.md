@@ -10,6 +10,12 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
+__18-June-2025__
+
+* __2:45 PM__: Power is restored and ssh into our systems is working again. More detailed information to follow...
+
+* __12:45 PM__: Serveral buidlings including SOMED1 where our server room is, lost power. Updates will be posted here and/or on Slack. 
+
 __14-May-2025__
 
 * __1:00 AM__: There was a power outage affecting several buildings on campus, including our server room in SOMED1 at approximately 1AM. Until the larger 500kW UPS will be installed in late
