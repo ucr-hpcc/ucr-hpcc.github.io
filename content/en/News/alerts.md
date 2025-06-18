@@ -12,9 +12,9 @@ aliases:
 
 __18-June-2025__
 
-* __2:45 PM__: Power is restored and ssh into our systems is working again. More detailed information to follow...
+* __2:45 PM__: Power is restored and ssh into our head nodes is working again. More detailed information to follow...
 
-* __12:45 PM__: Serveral buidlings including SOMED1 where our server room is, lost power. Updates will be posted here and/or on Slack. 
+* __12:45 PM__: Serveral buidlings on campus including SOMED1 (where HPCC server room is located) lost electrical power. Updates will be posted here and/or on Slack. 
 
 __14-May-2025__
 
