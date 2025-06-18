@@ -297,6 +297,7 @@ If a job is stuck in the queue or fails to start, there are typically Slurm erro
 | AssocGrpGRES | You are exceeding the Per-User GRES (GPU) limit | You must wait until your GPU jobs finish to free up resources to allow additional jobs to run. |
 | MaxSubmitJobLimit | You are trying to submit more than 5000 jobs. There is a 5000 job limit per-user for queued and running jobs. | Wait until some of your jobs finish, then you can continue submitting jobs. |
 | ReqNodeNotAvail, Reserved for maintenance | The time limit of your job would cause it to overlap with an upcoming maintenance. | You can either reduce your job's runtime or wait for the maintenance to complete. |
+| PartitionConfig | The job has been queued to the wrong partition under the wrong account. | Some partitions require that you queue under a specific account. eg. preempt jobs need to use the preempt account (`-A preempt`) |
 
 This is only a small number of the most common reasons. For a full list please see Slurm's [Job Reason Codes](https://slurm.schedmd.com/job_reason_codes.html) page. If you are confused as to why you're getting a specific reason, please reach out to support.
 
