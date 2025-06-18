@@ -513,6 +513,11 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;td>The time limit of your job would cause it to overlap with an upcoming maintenance.&lt;/td>
 &lt;td>You can either reduce your job&amp;rsquo;s runtime or wait for the maintenance to complete.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>PartitionConfig&lt;/td>
+&lt;td>The job has been queued to the wrong partition under the wrong account.&lt;/td>
+&lt;td>Some partitions require that you queue under a specific account. eg. preempt jobs need to use the preempt account (&lt;code>-A preempt&lt;/code>)&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;p>This is only a small number of the most common reasons. For a full list please see Slurm&amp;rsquo;s &lt;a href="https://slurm.schedmd.com/job_reason_codes.html">Job Reason Codes&lt;/a> page. If you are confused as to why you&amp;rsquo;re getting a specific reason, please reach out to support.&lt;/p>
