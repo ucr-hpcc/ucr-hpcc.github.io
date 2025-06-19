@@ -16,6 +16,16 @@ __18-June-2025__
 
 * __12:45 PM__: Serveral buidlings on campus including SOMED1 (where HPCC server room is located) lost electrical power. Updates will be posted here and/or on Slack. 
 
+* __3:00 PM__: All HPCC Services should be available again. Please reach out to support if you find anything misbehaiving, and stay up to date with the remaining ITS outages on the [TechAlerts](https://techalerts.ucr.edu/) page.
+
+## Scheduled exceptions and downtimes
+
+None observed at this time.
+
+
+## Past exceptions
+
+
 __14-May-2025__
 
 * __1:00 AM__: There was a power outage affecting several buildings on campus, including our server room in SOMED1 at approximately 1AM. Until the larger 500kW UPS will be installed in late
@@ -26,13 +36,6 @@ and we're working on bringing the remaining nodes back online.
 
 * __9:00 AM__: Most or all machines and services should be operational again. Jobs that were impacted should be requeued automatically.
 
-
-## Scheduled exceptions and downtimes
-
-None observed at this time.
-
-
-## Past exceptions
 
 __17-Mar-2025__
 
