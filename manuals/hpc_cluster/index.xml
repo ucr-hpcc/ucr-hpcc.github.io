@@ -876,7 +876,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;tr>
 &lt;td>highmem&lt;/td>
 &lt;td>Memory Intensive Workloads&lt;/td>
-&lt;td>32 Cores, 1TB memory&lt;/td>
+&lt;td>32 Cores, 2TB memory&lt;/td>
 &lt;td>&lt;/td>
 &lt;td>30 Days&lt;/td>
 &lt;/tr>
