@@ -518,6 +518,11 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;td>The job has been queued to the wrong partition under the wrong account.&lt;/td>
 &lt;td>Some partitions require that you queue under a specific account. eg. preempt jobs need to use the preempt account (&lt;code>-A preempt&lt;/code>)&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>QOSMinGRES&lt;/td>
+&lt;td>The job has not requested the minimum resources required for the specified partition.&lt;/td>
+&lt;td>Some partitions require that you request a minimum number of resources. For example, for &amp;ldquo;highmem&amp;rdquo; you must request &amp;gt;= 100GB, and for &amp;ldquo;gpu&amp;rdquo; you must request a GPU using the &lt;code>--gres&lt;/code> flag.&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;p>This is only a small number of the most common reasons. For a full list please see Slurm&amp;rsquo;s &lt;a href="https://slurm.schedmd.com/job_reason_codes.html">Job Reason Codes&lt;/a> page. If you are confused as to why you&amp;rsquo;re getting a specific reason, please reach out to support.&lt;/p>
