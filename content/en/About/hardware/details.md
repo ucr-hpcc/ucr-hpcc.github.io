@@ -12,7 +12,7 @@ aliases:
 * Four enterprise class HPC storage systems
 * Approximately 3 PB production and 3 PB backup storage (total 6 PB or 6,144 TB)
 * GPFS (NFS and SAMBA via GPFS)
-* Automatic snapshots and archival backups
+* Automatic snapshots and monthly backups
 
 ## Network
 * Ethernet
