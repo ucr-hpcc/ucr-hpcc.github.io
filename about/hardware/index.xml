@@ -29,7 +29,7 @@
 &lt;li>Four enterprise class HPC storage systems&lt;/li>
 &lt;li>Approximately 3 PB production and 3 PB backup storage (total 6 PB or 6,144 TB)&lt;/li>
 &lt;li>GPFS (NFS and SAMBA via GPFS)&lt;/li>
-&lt;li>Automatic snapshots and archival backups&lt;/li>
+&lt;li>Automatic snapshots and monthly backups&lt;/li>
 &lt;/ul>
 &lt;h2 id="network">Network&lt;/h2>
 &lt;ul>
