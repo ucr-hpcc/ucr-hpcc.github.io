@@ -10,13 +10,8 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-__18-June-2025__
+None observed at this time.
 
-* __2:45 PM__: Power is restored and ssh into our head nodes is working again. More detailed information to follow...
-
-* __12:45 PM__: Serveral buidlings on campus including SOMED1 (where HPCC server room is located) lost electrical power. Updates will be posted here and/or on Slack. 
-
-* __3:00 PM__: All HPCC Services should be available again. Please reach out to support if you find anything misbehaiving, and stay up to date with the remaining ITS outages on the [TechAlerts](https://techalerts.ucr.edu/) page.
 
 ## Scheduled exceptions and downtimes
 
@@ -24,6 +19,14 @@ None observed at this time.
 
 
 ## Past exceptions
+
+__18-June-2025__
+
+* __2:45 PM__: Power is restored and ssh into our head nodes is working again. More detailed information to follow...
+
+* __12:45 PM__: Serveral buidlings on campus including SOMED1 (where HPCC server room is located) lost electrical power. Updates will be posted here and/or on Slack. 
+
+* __3:00 PM__: All HPCC Services should be available again. Please reach out to support if you find anything misbehaiving, and stay up to date with the remaining ITS outages on the [TechAlerts](https://techalerts.ucr.edu/) page.
 
 
 __14-May-2025__
