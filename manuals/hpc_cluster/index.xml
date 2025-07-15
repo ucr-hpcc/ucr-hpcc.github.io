@@ -250,9 +250,9 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;/li>
 &lt;li>gpu
 &lt;ul>
-&lt;li>Nodes: gpu01-gpu06&lt;/li>
+&lt;li>Nodes: gpu01-gpu08&lt;/li>
 &lt;li>CPU: AMD/Intel&lt;/li>
-&lt;li>GPUs: NVIDIA K80, A100, P100&lt;/li>
+&lt;li>GPUs: NVIDIA k80, a100, p100&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
@@ -261,6 +261,15 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: Mixed set of nodes from batch, intel, and group partitions&lt;/li>
 &lt;li>Cores: AMD/Intel&lt;/li>
+&lt;li>RAM: 1 GB default&lt;/li>
+&lt;li>Time (walltime): 2 hours Maximum&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>short_gpu
+&lt;ul>
+&lt;li>Nodes: gpu01-gpu10&lt;/li>
+&lt;li>CPU: AMD/Intel&lt;/li>
+&lt;li>GPUs: NVIDIA k80, a100, p100, ada6000&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 2 hours Maximum&lt;/li>
 &lt;/ul>
