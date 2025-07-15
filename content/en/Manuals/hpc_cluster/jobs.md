@@ -46,14 +46,20 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * gpu
-    * Nodes: gpu01-gpu06
+    * Nodes: gpu01-gpu08
     * CPU: AMD/Intel
-    * GPUs: NVIDIA K80, A100, P100
+    * GPUs: NVIDIA k80, a100, p100
     * RAM: 1 GB default
     * Time (walltime): 48 hours (2 days) default
 * short
     * Nodes: Mixed set of nodes from batch, intel, and group partitions
     * Cores: AMD/Intel
+    * RAM: 1 GB default
+    * Time (walltime): 2 hours Maximum
+* short_gpu
+    * Nodes: gpu01-gpu10
+    * CPU: AMD/Intel
+    * GPUs: NVIDIA k80, a100, p100, ada6000
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
 * Lab Partitions
