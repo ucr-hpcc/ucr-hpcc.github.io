@@ -85,6 +85,7 @@
 &lt;li>Highmem
 &lt;ul>
 &lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
+&lt;li>h07: 192 Intel Cores and 3TB of memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Highclock
