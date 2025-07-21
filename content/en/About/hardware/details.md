@@ -44,6 +44,7 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * r21-r38: each with 256 AMD EPYC cores and 1 TB memory
 * Highmem
     * h01-h06: each with 32 Intel cores and 1024 GB memory
+    * h07: 192 Intel Cores and 3TB of memory
 * Highclock
     * hz01-hz04: each with 64 Intel cores and 1024 GB memory
 * GPU
