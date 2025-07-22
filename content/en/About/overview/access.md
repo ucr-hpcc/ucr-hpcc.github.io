@@ -117,6 +117,13 @@ maintain an HPCC subscription. External accounts are subject to an annual
 review and approval process. To be approved, the external and internal PIs have
 to complete this [External Usage Justification](https://bit.ly/32O1lC9).
 
+## Trial Accounts
+If you're not sure if the HPCC might work for your use case, we can offer limited-compute
+accounts to allow for you to test the performance and compatability of your software.
+A limited number of trial accounts can be created for a lab, with access to limited compute
+compared to a standard account. Please reach out to HPCC support if you're interested in a
+trial account.
+
 ## Facility description
 
    * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
