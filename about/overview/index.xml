@@ -147,6 +147,12 @@ researchers. Both the corresponding UCR PI and external collaborator need to
 maintain an HPCC subscription. External accounts are subject to an annual
 review and approval process. To be approved, the external and internal PIs have
 to complete this &lt;a href="https://bit.ly/32O1lC9">External Usage Justification&lt;/a>.&lt;/p>
+&lt;h2 id="trial-accounts">Trial Accounts&lt;/h2>
+&lt;p>If you&amp;rsquo;re not sure if the HPCC might work for your use case, we can offer limited-compute
+accounts to allow for you to test the performance and compatability of your software.
+A limited number of trial accounts can be created for a lab, with access to limited compute
+compared to a standard account. Please reach out to HPCC support if you&amp;rsquo;re interested in a
+trial account.&lt;/p>
 &lt;h2 id="facility-description">Facility description&lt;/h2>
 &lt;ul>
 &lt;li>The latest hardware/facility description (&lt;em>e.g.&lt;/em> for grant applications) is available &lt;a href="https://goo.gl/43eOwQ">here&lt;/a>.&lt;/li>
