@@ -93,4 +93,5 @@
 &lt;li>gpu06-gpu08: with dual 32c/32t AMD EPYC 7543 CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul>
+&lt;p>For more info about queueing jobs see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/">Managing Jobs&lt;/a> page. For queueing jobs to nodes with specific features, see the &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#feature-constraints">Feature Constraints&lt;/a> section.&lt;/p></description></item></channel></rss>
