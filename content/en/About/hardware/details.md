@@ -47,3 +47,5 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * gpu03-gpu04: each with dual 12c/24t Intel E5-2650 v4 Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
     * gpu05: with dual 16c/32t Intel E5-2683 v4 Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory
     * gpu06-gpu08: with dual 32c/32t AMD EPYC 7543 CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory
+
+For more info about queueing jobs see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page. For queueing jobs to nodes with specific features, see the [Feature Constraints](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#feature-constraints) section.
