@@ -69,28 +69,28 @@
 &lt;ul>
 &lt;li>Batch
 &lt;ul>
-&lt;li>c01-c48: each with 64 AMD cores and 512 GB memory&lt;/li>
+&lt;li>c01-c48: each with 64x AMD cores (AMD Opteron 6376) and 512 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Intel
 &lt;ul>
-&lt;li>i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory&lt;/li>
+&lt;li>i[01-02,17-40]: each with 32 Intel cores (Intel Xeon E5-2683 v4) and 512 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Epyc
 &lt;ul>
-&lt;li>r21-r38: each with 256 AMD EPYC cores and 1 TB memory&lt;/li>
+&lt;li>r21-r38: each with 256 AMD cores (AMD EPYC 7713) and 1 TB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Highmem
 &lt;ul>
-&lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
-&lt;li>h07: 192 Intel Cores and 3TB of memory&lt;/li>
+&lt;li>h01-h06: each with 32x Intel cores (Intel Xeon E5-4620 v2) and 1024 GB memory&lt;/li>
+&lt;li>h07: 192x Intel Cores (Xeon Max 9468) and 3TB of memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Highclock
 &lt;ul>
-&lt;li>hz01-hz04: each with 64 Intel cores and 1024 GB memory&lt;/li>
+&lt;li>hz01-hz04: each with 64x Intel cores (Xeon Gold 6558Q) and 1024 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>GPU
