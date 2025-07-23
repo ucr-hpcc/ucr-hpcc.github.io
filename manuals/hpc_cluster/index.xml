@@ -356,10 +356,6 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;td>amd, abu_dhabi&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>h[01-06]&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;tr>
 &lt;td>gpu[01-04]&lt;/td>
 &lt;td>gpu_legacy&lt;/td>
 &lt;/tr>
@@ -409,6 +405,7 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;p>For more info on hardware details, see our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Hardware Details&lt;/a> page.&lt;/p>
 &lt;h4 id="constraint-examples">Constraint Examples&lt;/h4>
 &lt;p>Since jobs on the &amp;ldquo;short&amp;rdquo; partition can run on any node, jobs can be narrowed down using constraints.&lt;/p>
 &lt;p>If you require an Intel node of any generation:&lt;/p>
