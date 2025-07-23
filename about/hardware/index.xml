@@ -35,9 +35,8 @@
 &lt;ul>
 &lt;li>Ethernet
 &lt;ul>
-&lt;li>5 x 1 Gb/s switch&lt;/li>
-&lt;li>5 x 1 Gb/s switch 10 Gig uplink&lt;/li>
-&lt;li>1 x 10 Gb/s switch for campus high performance research network&lt;/li>
+&lt;li>2 x 40 Gb/s switch for campus high performance research network&lt;/li>
+&lt;li>1 x 10 Gb/s connection to public internet&lt;/li>
 &lt;li>Redundant, load balanced, robust mesh topology&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -50,18 +49,11 @@
 &lt;h2 id="head-nodes">Head Nodes&lt;/h2>
 &lt;p>All users should access the cluster via SSH through &lt;code>cluster.hpcc.ucr.edu&lt;/code>. This address will automatically balance traffic to one of the available head nodes.&lt;/p>
 &lt;ul>
-&lt;li>Jay
+&lt;li>bluejay, skylark
 &lt;ul>
-&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
+&lt;li>Resources: 256 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Lark (Currently acting as a &amp;ldquo;hot-spare&amp;rdquo;)
-&lt;ul>
-&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
-&lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 0.5 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
