@@ -12,7 +12,7 @@ aliases:
 Submitting and managing jobs is at the heart of using the cluster.  A 'job' refers to the script, pipeline or experiment that you run on the nodes in the cluster.
 
 ## Partitions
-Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined on the [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page.
+Jobs are submitted to so-called partitions (or queues). Each partition is a group of nodes, often with similar hardware specifications (e.g. CPU or RAM configurations). The quota policies applying to each partitions are outlined on the [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/queue/) page. For more detailed hardware info, see the [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) page.
 
 * epyc
     * Nodes: r21-r38
