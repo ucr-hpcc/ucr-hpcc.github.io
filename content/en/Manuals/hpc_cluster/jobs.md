@@ -173,7 +173,6 @@ Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of mac
 | Nodes      | Features                |
 |------------|-------------------------|
 | c[01-47]   | amd, abu_dhabi          |
-| h[01-06]   |                         |
 | gpu[01-04] | gpu_legacy              |
 | gpu05      | gpu_prev                |
 | gpu[06-08] | gpu_latest, gpu_highmem |
@@ -186,6 +185,8 @@ Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of mac
 | x[01-06]   | intel, cascade          |
 | h[01-06]   | intel, ivy              |
 | h07        | intel, sapphire         |
+
+For more info on hardware details, see our [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) page.
 
 #### Constraint Examples
 
