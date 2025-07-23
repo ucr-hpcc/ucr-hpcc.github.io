@@ -16,9 +16,8 @@ aliases:
 
 ## Network
 * Ethernet
-    * 5 x 1 Gb/s switch
-    * 5 x 1 Gb/s switch 10 Gig uplink
-    * 1 x 10 Gb/s switch for campus high performance research network
+    * 2 x 40 Gb/s switch for campus high performance research network
+    * 1 x 10 Gb/s connection to public internet
     * Redundant, load balanced, robust mesh topology
 * Interconnect
     * 56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)
@@ -26,14 +25,10 @@ aliases:
 ## Head Nodes
 All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This address will automatically balance traffic to one of the available head nodes.
 
-* Jay
-    * Resources: 64 cores, 512 GB memory
+* bluejay, skylark
+    * Resources: 256 cores, 512 GB memory
     * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
-* Lark (Currently acting as a "hot-spare")
-    * Resources: 64 cores, 512 GB memory
-    * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
+    * Secondary function: development; code editing and running small (under 50 % CPU and under 0.5 GB RAM) sample jobs
 
 ## Worker Nodes
 * Batch
