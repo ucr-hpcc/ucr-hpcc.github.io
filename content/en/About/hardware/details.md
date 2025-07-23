@@ -37,16 +37,16 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
 
 ## Worker Nodes
 * Batch
-    * c01-c48: each with 64 AMD cores and 512 GB memory
+    * c01-c48: each with 64x AMD cores (AMD Opteron 6376) and 512 GB memory
 * Intel
-    * i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory
+    * i[01-02,17-40]: each with 32 Intel cores (Intel Xeon E5-2683 v4) and 512 GB memory
 * Epyc
-    * r21-r38: each with 256 AMD EPYC cores and 1 TB memory
+    * r21-r38: each with 256 AMD cores (AMD EPYC 7713) and 1 TB memory
 * Highmem
-    * h01-h06: each with 32 Intel cores and 1024 GB memory
-    * h07: 192 Intel Cores and 3TB of memory
+    * h01-h06: each with 32x Intel cores (Intel Xeon E5-4620 v2) and 1024 GB memory
+    * h07: 192x Intel Cores (Xeon Max 9468) and 3TB of memory
 * Highclock
-    * hz01-hz04: each with 64 Intel cores and 1024 GB memory
+    * hz01-hz04: each with 64x Intel cores (Xeon Gold 6558Q) and 1024 GB memory
 * GPU
     * gpu01-gpu02: each with dual 8c/16t Intel E5-2630 v3 Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 128 GB memory
     * gpu03-gpu04: each with dual 12c/24t Intel E5-2650 v4 Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
