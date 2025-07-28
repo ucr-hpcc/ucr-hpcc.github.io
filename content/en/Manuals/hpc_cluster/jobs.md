@@ -176,7 +176,6 @@ Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of mac
 | gpu[01-04]    | gpu_legacy              |
 | gpu05         | gpu_prev                |
 | gpu[06-08,11] | gpu_latest, gpu_highmem |
-| gpu[09-10]    | gpu_latest              |
 | i[01-62]      | intel, broadwell        |
 | r[01-06]      | amd, rome               |
 | r[07-38]      | amd, milan              |
