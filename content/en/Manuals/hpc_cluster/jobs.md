@@ -48,7 +48,7 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
 * gpu
     * Nodes: gpu01-gpu08
     * CPU: AMD/Intel
-    * GPUs: NVIDIA k80, a100, p100
+    * GPUs: NVIDIA k80, p100, a100, h100
     * RAM: 1 GB default
     * Time (walltime): 48 hours (2 days) default
 * short
@@ -59,7 +59,7 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
 * short_gpu
     * Nodes: gpu01-gpu10
     * CPU: AMD/Intel
-    * GPUs: NVIDIA k80, a100, p100, ada6000
+    * GPUs: NVIDIA k80, p100, a100, h100, ada6000
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
 * Lab Partitions
@@ -373,7 +373,7 @@ srun -p highmem --mem=100g --time=24:00:00 --pty bash -l
 Of course you should adjust the time argument according to your job requirements.
 
 ### GPU Jobs
-GPU nodes have multiple GPUs, and vary in type (K80, P100, or A100). This means you need to request how many GPUs and of what type that you would like to use.
+GPU nodes have multiple GPUs, and vary in type (K80, P100, A100, or H100). This means you need to request how many GPUs and of what type that you would like to use.
 
 To request a gpu of any type, only indicate how many GPUs you would like to use.
 
@@ -389,7 +389,7 @@ Interactive
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
-Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the [Worker Node](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) section of our [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/) page.
+Since the HPCC Cluster has many different types of GPUs installed (eg. K80, P100, A100, H100), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the [Worker Node](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) section of our [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/) page.
 
 Non-Interactive:
 
