@@ -42,6 +42,8 @@ In addition to the above limits, there is:
 - A 768 core group limit that spans across all users in a group across all partitions.
 - A 8 GPU group limit that spans across all users in a group across all GPU-enabled partitions.
 
+For more detailed information on node hardware, see our [Node List](https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/) spreadsheet.
+
 Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail. Limits are for actively running jobs,
 and any newly queued job that exceeds a limit will be queued until resources become available. If you require additional
 resourced beyond the listed limits, please see the "[Additional Resource Request](#additional-resource-request)" section below.
