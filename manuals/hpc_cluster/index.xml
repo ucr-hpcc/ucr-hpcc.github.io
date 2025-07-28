@@ -364,11 +364,11 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;td>gpu_prev&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>gpu[06-08]&lt;/td>
+&lt;td>gpu[06-08,11]&lt;/td>
 &lt;td>gpu_latest, gpu_highmem&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>gpu09&lt;/td>
+&lt;td>gpu[09-10]&lt;/td>
 &lt;td>gpu_latest&lt;/td>
 &lt;/tr>
 &lt;tr>
