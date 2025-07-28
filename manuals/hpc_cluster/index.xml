@@ -342,65 +342,8 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;/code>&lt;/pre>
 &lt;p>The above example enables X11 forwarding and requests 1GB of memory and 1 core for 10 hours within an interactive session.&lt;/p>
 &lt;h3 id="feature-constraints">Feature Constraints&lt;/h3>
-&lt;p>Using the &lt;code>--constraint&lt;/code> (or &lt;code>-C&lt;/code> flag) allows you to fine-tune what type of machine your job can run on, mainly useful on the &amp;ldquo;short&amp;rdquo; partitions. Below is a list of nodes as well as what features exist for each node type.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Nodes&lt;/th>
-&lt;th>Features&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>c[01-47]&lt;/td>
-&lt;td>amd, abu_dhabi&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>gpu[01-04]&lt;/td>
-&lt;td>gpu_legacy&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>gpu05&lt;/td>
-&lt;td>gpu_prev&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>gpu[06-08,11]&lt;/td>
-&lt;td>gpu_latest, gpu_highmem&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>i[01-62]&lt;/td>
-&lt;td>intel, broadwell&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>r[01-06]&lt;/td>
-&lt;td>amd, rome&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>r[07-38]&lt;/td>
-&lt;td>amd, milan&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>r[41-43]&lt;/td>
-&lt;td>amd, milan&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>r[44-51]&lt;/td>
-&lt;td>amd, genoa&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>x[01-06]&lt;/td>
-&lt;td>intel, cascade&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>h[01-06]&lt;/td>
-&lt;td>intel, ivy&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>h07&lt;/td>
-&lt;td>intel, sapphire&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;p>Using the &lt;code>--constraint&lt;/code> (or &lt;code>-C&lt;/code> flag) allows you to fine-tune what type of machine your job can run on, mainly useful on the &amp;ldquo;short&amp;rdquo; partitions. Our &lt;a href="https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/">Node List&lt;/a> contains all of the different nodes that we have (both public and private) as well as any feature constraints they have.&lt;/p>
+&lt;p>&lt;a href="https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/">Node List&lt;/a>&lt;/p>
 &lt;p>For more info on hardware details, see our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Hardware Details&lt;/a> page.&lt;/p>
 &lt;h4 id="constraint-examples">Constraint Examples&lt;/h4>
 &lt;p>Since jobs on the &amp;ldquo;short&amp;rdquo; partition can run on any node, jobs can be narrowed down using constraints.&lt;/p>
