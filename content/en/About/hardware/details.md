@@ -31,22 +31,6 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * Secondary function: development; code editing and running small (under 50 % CPU and under 0.5 GB RAM) sample jobs
 
 ## Worker Nodes
-* Batch
-    * c01-c48: each with 64x AMD cores (AMD Opteron 6376) and 512 GB memory
-* Intel
-    * i[01-02,17-40]: each with 32 Intel cores (Intel Xeon E5-2683 v4) and 512 GB memory
-* Epyc
-    * r21-r38: each with 256 AMD cores (AMD EPYC 7713) and 1 TB memory
-* Highmem
-    * h01-h06: each with 32x Intel cores (Intel Xeon E5-4620 v2) and 1024 GB memory
-    * h07: 192x Intel Cores (Xeon Max 9468) and 3TB of memory
-* Highclock
-    * hz01-hz04: each with 64x Intel cores (Xeon Gold 6558Q) and 1024 GB memory
-* GPU
-    * gpu01-gpu02: each with dual 8c/16t Intel E5-2630 v3 Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 128 GB memory
-    * gpu03-gpu04: each with dual 12c/24t Intel E5-2650 v4 Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
-    * gpu05: with dual 16c/32t Intel E5-2683 v4 Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory
-    * gpu06-gpu08: with dual 32c/32t AMD EPYC 7543 CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory
-    * gpu11: with dual 64c/64t AMD EPYC 9554 CPUs and 2 x NVIDIA H100 GPUs (94GB and 16896 CUDA cores per GPU) and 1,536 GB memory
+For a full list of nodes, please see our [Node List](https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/) sheet. This contains info on all nodes (public and private) that we have. This includes CPU, memory, and GPU specs, as well as any features that the nodes have.
 
 For more info about queueing jobs see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page. For queueing jobs to nodes with specific features, see the [Feature Constraints](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/#feature-constraints) section.
