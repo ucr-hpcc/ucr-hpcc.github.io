@@ -252,7 +252,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: gpu01-gpu08&lt;/li>
 &lt;li>CPU: AMD/Intel&lt;/li>
-&lt;li>GPUs: NVIDIA k80, a100, p100&lt;/li>
+&lt;li>GPUs: NVIDIA k80, p100, a100, h100&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
@@ -269,7 +269,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;ul>
 &lt;li>Nodes: gpu01-gpu10&lt;/li>
 &lt;li>CPU: AMD/Intel&lt;/li>
-&lt;li>GPUs: NVIDIA k80, a100, p100, ada6000&lt;/li>
+&lt;li>GPUs: NVIDIA k80, p100, a100, h100, ada6000&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 2 hours Maximum&lt;/li>
 &lt;/ul>
@@ -571,7 +571,7 @@ echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;p>Of course you should adjust the time argument according to your job requirements.&lt;/p>
 &lt;h3 id="gpu-jobs">GPU Jobs&lt;/h3>
-&lt;p>GPU nodes have multiple GPUs, and vary in type (K80, P100, or A100). This means you need to request how many GPUs and of what type that you would like to use.&lt;/p>
+&lt;p>GPU nodes have multiple GPUs, and vary in type (K80, P100, A100, or H100). This means you need to request how many GPUs and of what type that you would like to use.&lt;/p>
 &lt;p>To request a gpu of any type, only indicate how many GPUs you would like to use.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
@@ -579,7 +579,7 @@ echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;p>Interactive&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>Since the HPCC Cluster has three types of GPUs installed (K80s, P100s, and A100s), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Worker Node&lt;/a> section of our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/">Hardware Details&lt;/a> page.&lt;/p>
+&lt;p>Since the HPCC Cluster has many different types of GPUs installed (eg. K80, P100, A100, H100), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Worker Node&lt;/a> section of our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/">Hardware Details&lt;/a> page.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
