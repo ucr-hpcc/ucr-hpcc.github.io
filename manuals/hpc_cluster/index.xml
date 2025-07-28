@@ -368,10 +368,6 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;td>gpu_latest, gpu_highmem&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>gpu[09-10]&lt;/td>
-&lt;td>gpu_latest&lt;/td>
-&lt;/tr>
-&lt;tr>
 &lt;td>i[01-62]&lt;/td>
 &lt;td>intel, broadwell&lt;/td>
 &lt;/tr>
