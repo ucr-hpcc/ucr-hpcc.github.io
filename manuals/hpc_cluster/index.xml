@@ -851,6 +851,7 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 &lt;li>A 768 core group limit that spans across all users in a group across all partitions.&lt;/li>
 &lt;li>A 8 GPU group limit that spans across all users in a group across all GPU-enabled partitions.&lt;/li>
 &lt;/ul>
+&lt;p>For more detailed information on node hardware, see our &lt;a href="https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/">Node List&lt;/a> spreadsheet.&lt;/p>
 &lt;p>Attempting to allocate more member than a node can support, eg 500GB on an Intel node, will cause the job to immediately fail. Limits are for actively running jobs,
 and any newly queued job that exceeds a limit will be queued until resources become available. If you require additional
 resourced beyond the listed limits, please see the &amp;ldquo;&lt;a href="#additional-resource-request">Additional Resource Request&lt;/a>&amp;rdquo; section below.&lt;/p>
