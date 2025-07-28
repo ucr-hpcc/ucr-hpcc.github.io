@@ -170,21 +170,21 @@ The above example enables X11 forwarding and requests 1GB of memory and 1 core f
 
 Using the `--constraint` (or `-C` flag) allows you to fine-tune what type of machine your job can run on, mainly useful on the "short" partitions. Below is a list of nodes as well as what features exist for each node type.
 
-| Nodes      | Features                |
-|------------|-------------------------|
-| c[01-47]   | amd, abu_dhabi          |
-| gpu[01-04] | gpu_legacy              |
-| gpu05      | gpu_prev                |
-| gpu[06-08] | gpu_latest, gpu_highmem |
-| gpu09      | gpu_latest              |
-| i[01-62]   | intel, broadwell        |
-| r[01-06]   | amd, rome               |
-| r[07-38]   | amd, milan              |
-| r[41-43]   | amd, milan              |
-| r[44-51]   | amd, genoa              |
-| x[01-06]   | intel, cascade          |
-| h[01-06]   | intel, ivy              |
-| h07        | intel, sapphire         |
+| Nodes         | Features                |
+|---------------|-------------------------|
+| c[01-47]      | amd, abu_dhabi          |
+| gpu[01-04]    | gpu_legacy              |
+| gpu05         | gpu_prev                |
+| gpu[06-08,11] | gpu_latest, gpu_highmem |
+| gpu[09-10]    | gpu_latest              |
+| i[01-62]      | intel, broadwell        |
+| r[01-06]      | amd, rome               |
+| r[07-38]      | amd, milan              |
+| r[41-43]      | amd, milan              |
+| r[44-51]      | amd, genoa              |
+| x[01-06]      | intel, cascade          |
+| h[01-06]      | intel, ivy              |
+| h07           | intel, sapphire         |
 
 For more info on hardware details, see our [Hardware Details](https://hpcc.ucr.edu/about/hardware/details/#worker-nodes) page.
 
