@@ -8,6 +8,8 @@ aliases:
     - /alerts
 ---
 
+<iframe src="https://status.hpcc.ucr.edu/status/hpcc" style="text-align:center;width:100%;height:75vh;"></iframe>
+
 ## Unscheduled exceptions and downtimes
 
 None observed at this time.
