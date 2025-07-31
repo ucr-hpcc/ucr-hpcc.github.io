@@ -3,7 +3,7 @@
 &lt;ul>
 &lt;li>Over 16,000 CPU cores (60% AMD, 40% Intel)&lt;/li>
 &lt;li>512-1024GB RAM per node&lt;/li>
-&lt;li>GPU: 24x K80, 2x P100, 24x A100&lt;/li>
+&lt;li>GPU: 24x K80, 2x P100, 24x A100, 2x H100&lt;/li>
 &lt;li>IB network @ 56Gbs - 200Gbps (FDR, HDR and NDR)&lt;/li>
 &lt;li>Queueing system Slurm&lt;/li>
 &lt;/ul>
