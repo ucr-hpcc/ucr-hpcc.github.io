@@ -17,7 +17,12 @@ None observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-None observed at this time.
+__8-August-2025 (TENTATIVE)__
+
+The previously announce July 28th shutdown has been postponed. This is to combine our shutdown with an expected electrical outage in the server room for the installation of a new backup battery system. A date for the 
+battery installation has not yet been confirmed, so the SLURM shutdown reservation has been tentatively set for August 8th to prevent long-running jobs from being started and overlapping with the electrical shutdown.
+
+We will occasionally move the SLURM reservation to allow jobs to start until a date for the electrical shutdown has been scheduled.
 
 
 ## Past exceptions
