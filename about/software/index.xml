@@ -10,6 +10,7 @@ installed, users want to consult the software listing
 &lt;h2 id="software-install-requests">Software install requests&lt;/h2>
 &lt;p>Registered users can email software install requests to HPCC&amp;rsquo;s issue tracking system @ &lt;a href="mailto:support@hpcc.ucr.edu">support@hpcc.ucr.edu&lt;/a>. Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.&lt;/p></description></item><item><title>About: Conda Packages</title><link>https://hpcc.ucr.edu/about/software/conda_packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/about/software/conda_packages/</guid><description>
 &lt;p>The following packages are available in the &lt;code>base&lt;/code> conda environment.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong> That this list is not routinely updated. For the most accurate list, use the &lt;code>conda list&lt;/code> command.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
