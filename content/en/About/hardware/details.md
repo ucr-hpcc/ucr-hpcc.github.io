@@ -16,8 +16,8 @@ aliases:
 
 ## Network
 * Ethernet
-    * 2 x 40 Gb/s switch for campus high performance research network
-    * 1 x 10 Gb/s connection to public internet
+    * 2 x 40 Gb/s redundant connections to the campus high performance research network
+    * 1 x 10 Gb/s connection to the public internet
     * Redundant, load balanced, robust mesh topology
 * Interconnect
     * 56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)
