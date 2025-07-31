@@ -19,6 +19,8 @@ To load a specific version of a module, use:
 To view this list at the command line, use:
 `module avail`
 
+**Note** that this list is not routinely updated. For a more accurate list of software and versions, see our [Modules Repo](https://github.com/ucr-hpcc/hpcc_modules).
+
 |Package Name|Versions|
 |---|---|
 |AAFTF|0.3.0|
