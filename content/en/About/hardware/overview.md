@@ -30,8 +30,8 @@ aliases:
 
 ## Server room
 
-* Genomics Building, Rm 1120A
-* Size 600 sqft
+* School of Medicine Server Room
+* Size 600+ sqft
 * Raised floor cooling with redundant AC units 
 * Backup power: UPS plus generator
 
