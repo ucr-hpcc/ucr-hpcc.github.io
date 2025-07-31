@@ -7,6 +7,8 @@ type: docs
 
 The following packages are available in the `base` conda environment.
 
+**Note** That this list is not routinely updated. For the most accurate list, use the `conda list` command.
+
 | Package | Version |
 | --- | --- |
 | _libgcc_mutex | 0.1 |
