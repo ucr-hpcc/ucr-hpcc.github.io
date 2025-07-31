@@ -548,6 +548,7 @@ installed, users want to consult the software listing
 &lt;code>module load [package]/[version]&lt;/code>&lt;/p>
 &lt;p>To view this list at the command line, use:
 &lt;code>module avail&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong> that this list is not routinely updated. For a more accurate list of software and versions, see our &lt;a href="https://github.com/ucr-hpcc/hpcc_modules">Modules Repo&lt;/a>.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
