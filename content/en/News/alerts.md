@@ -17,7 +17,7 @@ None observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-__8-August-2025 (FINAL)__
+__8-August-2025__
 
 The previous July 28 maintenance shutdown has been rescheduled to midnight on
 August 8. This is to combine cluster maintenance with the installation of a new
