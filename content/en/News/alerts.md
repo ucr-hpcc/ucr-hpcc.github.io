@@ -19,14 +19,14 @@ None observed at this time.
 
 __8-August-2025__
 
-The previous July 28 maintenance shutdown has been rescheduled to midnight on
-August 8. This is to combine cluster maintenance with the installation of a new
-battery backup system in the SOMED data center.
+The HPCC has just been informed that there was a miscommunication between UCR and the electrical contractors regarding the
+exact date of the SOMED-1 power shutdown. Power is scheduled to go down early Monday (8/11), rather than early Friday (8/8).
 
-A previous estimate led us to place a Slurm reservation block for 6pm. Because
-the final shutdown time is sooner, you might have scheduled jobs that extend
-into the maintenance window. If so, your job will be interrupted and re-queued
-automatically.
+In the interest of minimizing downtime for our users, we've decided once again to shift our maintenance window. We will now
+plan to shutdown the cluster on Sunday, August 10, at 9pm, and bring everything back up by Tuesday evening.
+
+The HPCC apologizes for the uncertainty and disruptions caused by these sudden developments. These maintenance events are
+necessary for the long-term health of the cluster and related systems. Thanks for your continued support and understanding.
 
 
 ## Past exceptions
