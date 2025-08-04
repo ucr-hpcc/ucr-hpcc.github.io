@@ -17,7 +17,9 @@ None observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-__8-August-2025__
+__11-August-2025 (UPDATED)__
+
+The shutdown previously scheduled for August 8th has been rescheduled for Monday, August 11th.
 
 The HPCC has just been informed that there was a miscommunication between UCR and the electrical contractors regarding the
 exact date of the SOMED-1 power shutdown. Power is scheduled to go down early Monday (8/11), rather than early Friday (8/8).
