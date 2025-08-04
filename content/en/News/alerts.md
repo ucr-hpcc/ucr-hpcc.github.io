@@ -17,12 +17,16 @@ None observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-__8-August-2025 (TENTATIVE)__
+__8-August-2025 (FINAL)__
 
-The previously announce July 28th shutdown has been postponed. This is to combine our shutdown with an expected electrical outage in the server room for the installation of a new backup battery system. A date for the 
-battery installation has not yet been confirmed, so the SLURM shutdown reservation has been tentatively set for August 8th to prevent long-running jobs from being started and overlapping with the electrical shutdown.
+The previous July 28 maintenance shutdown has been rescheduled to midnight on
+August 8. This is to combine cluster maintenance with the installation of a new
+battery backup system in the SOMED data center.
 
-We will occasionally move the SLURM reservation to allow jobs to start until a date for the electrical shutdown has been scheduled.
+A previous estimate led us to place a Slurm reservation block for 6pm. Because
+the final shutdown time is sooner, you might have scheduled jobs that extend
+into the maintenance window. If so, your job will be interrupted and re-queued
+automatically.
 
 
 ## Past exceptions
