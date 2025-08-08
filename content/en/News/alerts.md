@@ -17,19 +17,21 @@ None observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-__11-August-2025 (UPDATED)__
+__12-August-2025 (Updated Aug 7)__
 
-The shutdown previously scheduled for August 8th has been rescheduled for Monday, August 11th.
+Begins: Tuesday, August 12, 9pm
+Ends: Thursday, August 14, evening
 
-The HPCC has just been informed that there was a miscommunication between UCR and the electrical contractors regarding the
-exact date of the SOMED-1 power shutdown. Power is scheduled to go down early Monday (8/11), rather than early Friday (8/8).
-
-In the interest of minimizing downtime for our users, we've decided once again to shift our maintenance window. We will now
-plan to shutdown the cluster on Sunday, August 10, at 9pm, and bring everything back up by Tuesday evening.
+The upcoming HPCC maintenance shutdown once again has been shifted due to another schedule change by the electrical
+contractors.
 
 The HPCC apologizes for the uncertainty and disruptions caused by these sudden developments. These maintenance events are
 necessary for the long-term health of the cluster and related systems. Thanks for your continued support and understanding.
 
+__Early September__
+
+There will be a follow-up power shutdown in the SOMED-1 Data Center, tentatively scheduled for early September.
+We will send out alert emails as more details are confirmed.
 
 ## Past exceptions
 
