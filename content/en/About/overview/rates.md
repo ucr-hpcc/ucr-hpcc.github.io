@@ -15,6 +15,7 @@ aliases:
 
 ## Recharging rates
 
+   * [Recharging rates: 2025/2026](https://docs.google.com/document/d/19MTJSkKeqhz6QVmOrGfkuK7gvwRbRjTEpnZgx8EFQDM/edit?usp=sharing)
    * [Recharging rates: 2024/2025](https://rebrand.ly/da3b3z3)
    * [Recharging rates: 2023/2024](https://rb.gy/wszgj)
    * [Recharging rates: 2022/2023](https://bit.ly/3IZUAQQ)
