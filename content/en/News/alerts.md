@@ -32,6 +32,8 @@ Update Aug 14: Maintenance is unfortunately behind schedule. At this time, headn
 available for data access and light work. Compute nodes will come up over the
 next 24 hours. Apologies for the delays.
 
+Update Aug 15 11am: The Slurm reservation block has been lifted, so jobs are now running on the cluster.
+However, there are still many problematic nodes that need special attention. Thanks for your patience.
 
 __Early September__
 
