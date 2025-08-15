@@ -28,6 +28,11 @@ contractors.
 The HPCC apologizes for the uncertainty and disruptions caused by these sudden developments. These maintenance events are
 necessary for the long-term health of the cluster and related systems. Thanks for your continued support and understanding.
 
+Update Aug 14: Maintenance is unfortunately behind schedule. At this time, headnodes are
+available for data access and light work. Compute nodes will come up over the
+next 24 hours. Apologies for the delays.
+
+
 __Early September__
 
 There will be a follow-up power shutdown in the SOMED-1 Data Center, tentatively scheduled for early September.
