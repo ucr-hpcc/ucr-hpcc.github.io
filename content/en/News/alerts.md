@@ -25,8 +25,8 @@ __12-August-2025 (Updated Aug 7)__
 The upcoming HPCC shutdown due to the electrical upgrades in our server room (install of 500kW UPS) were delayed but the construction company. 
 Unfortunately, these changes are out of our control. The final schedule for the shutdown has been set to Aug 12th-14th.
 
-The HPCC apologizes for the uncertainty and disruptions caused by these sudden developments. These maintenance events are
-necessary for the long-term health of the cluster and related systems. Thanks for your continued support and understanding.
+The HPCC apologizes for these scheduling changes. These electrical upgrades are extremely important for the long-term health 
+of UCR's research computing infrastructure. 
 
 __Aug 14__: The electrical work has been completed by the construction company. 
 To avoid additional shutdowns, we are implementing as many maintenance upgrades as possible (e.g.,
