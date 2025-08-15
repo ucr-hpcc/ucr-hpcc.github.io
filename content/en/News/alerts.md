@@ -33,10 +33,9 @@ shutdowns, we are implementing as many maintenance upgrades as possible (e.g.,
 OSs, file system, Slurm), and we were planning to complete them within the
 planned shutdown time. At this time (Thursday evening), the headnodes are
 available for data access and light work. Compute nodes will be functional in
-the next 24 hours. We apologize for these delays. We apologize for delay of
-bringing all services online. 
+the next 24 hours. We apologize for these delays. 
 
-__Update Aug 15 (11:00am)__: The Slurm reservation block has been lifted. Computing job are running again on the cluster, and we are bringing more and more 
+__Update Aug 15 (11:00am)__: The Slurm reservation block has been lifted. Computing jobs are running again on the cluster, and we are bringing more and more 
 nodes back online. We are optimistic that all services will be back online today. 
 
 __Early September__
