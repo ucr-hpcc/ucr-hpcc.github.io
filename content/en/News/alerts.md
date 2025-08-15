@@ -28,12 +28,16 @@ Unfortunately, these changes are out of our control. The final schedule for the 
 The HPCC apologizes for the uncertainty and disruptions caused by these sudden developments. These maintenance events are
 necessary for the long-term health of the cluster and related systems. Thanks for your continued support and understanding.
 
-__Update Aug 14__: The electrical work has been completed. Since we are trying to use this forced shutdown to implement as many maintenance upgrades to our 
-systems (_e.g._ OSs, file system, Slurm, etc) as possible to avoid additional shutdowns, we are unfortunately a bit behind schedule. At this time, headnodes are
-available for data access and light work. Compute nodes will be functional in the next 24 hours. We apologize for these delays.
+__Update Aug 14__: The electrical work has been completed. To avoid additional
+shutdowns, we are implementing as many maintenance upgrades as possible (e.g.,
+OSs, file system, Slurm), and we were planning to complete them within the
+planned shutdown time. At this time (Thursday evening), the headnodes are
+available for data access and light work. Compute nodes will be functional in
+the next 24 hours. We apologize for these delays. We apologize for delay of
+bringing all services online. 
 
 __Update Aug 15 (11:00am)__: The Slurm reservation block has been lifted. Computing job are running again on the cluster, and we are bringing more and more 
-nodes back online
+nodes back online. We are optimistic that all services will be back online today. 
 
 __Early September__
 
