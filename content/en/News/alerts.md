@@ -19,18 +19,18 @@ None observed at this time.
 
 __12-August-2025 (Updated Aug 7)__
 
-* Start: 9am, Tuesday, August 12th 
-* End: evening of Thursday, August 14th
+* Start: 9:00AM, Tuesday August 12th 
+* End: evening, Thursday August 14th
 
-The upcoming HPCC shutdown due to the electrical upgrades in our server room (install of 500kW UPS) were delayed but the construction company. 
+The upcoming HPCC shutdown, due to major electrical upgrades in our server room (install of a 500kW UPS) were again delayed by the construction company. 
 Unfortunately, these changes are out of our control. The final schedule for the shutdown has been set to Aug 12th-14th.
 
 The HPCC apologizes for these scheduling changes. These electrical upgrades are extremely important for the long-term health 
 of UCR's research computing infrastructure. 
 
 __Aug 14__: The electrical work has been completed by the construction company. 
-To avoid additional shutdowns, we are implementing as many maintenance upgrades as possible (e.g.,
-OSs, file system, Slurm), and we were planning to complete them within the
+To avoid additional shutdowns, we are implementing as many maintenance upgrades as possible during this shutdown
+(e.g. file system, network, Slurm, etc), and we were planning to complete them within the
 planned shutdown time. At this time (Thursday evening), the headnodes are
 available for data access and light work. Compute nodes will be functional in
 the next 24 hours. We apologize for the delay in bringing all services back online. 
