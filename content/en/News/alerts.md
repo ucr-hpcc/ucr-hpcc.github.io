@@ -19,8 +19,8 @@ None observed at this time.
 
 __12-August-2025 (Updated Aug 7)__
 
-Start: 9am, Tuesday, August 12th <\br>
-End: evening of Thursday, August 14th
+* Start: 9am, Tuesday, August 12th 
+* End: evening of Thursday, August 14th
 
 The upcoming HPCC shutdown due to the electrical upgrades in our server room (install of 500kW UPS) were delayed but the construction company. 
 Unfortunately, these changes are out of our control. The final schedule for the shutdown has been set to Aug 12th-14th.
