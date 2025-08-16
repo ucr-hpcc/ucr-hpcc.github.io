@@ -29,9 +29,9 @@ shutdown has been set to Aug 12th-14th. The HPCC apologizes for these
 scheduling changes. These electrical upgrades are extremely important for the
 long-term health of UCR's research computing infrastructure. 
 
-__14-Aug-2025__: 
+__14-Aug-2025__ 
 
-* __12:00 PM __ The electrical work has been completed by the construction
+* __12:00 PM __: The electrical work has been completed by the construction
   company. To avoid additional shutdowns, we are deploying as many maintenance
   upgrades as possible during this shutdown (e.g. file system, network, Slurm,
   etc), and we were trying to complete them within the planned shutdown time. 
@@ -40,7 +40,7 @@ __14-Aug-2025__:
   light work. Compute nodes will be functional in the next 24 hours. We
   apologize for the delay in bringing all services back online. 
 
-__15-Aug-2025__: 
+__15-Aug-2025__ 
 
 * __11:00 AM __: The Slurm reservation block has been lifted. Computing jobs
   are running again on the cluster, and we are bringing more and more nodes
@@ -48,7 +48,7 @@ __15-Aug-2025__:
 
 * __3:00 PM __: Almost all services are back online, with the exception of few
   non-essential nodes. Again, sorry for the additional time it took to get back
-  to normal. 
+  to normal.  
 
 __Early September__
 
