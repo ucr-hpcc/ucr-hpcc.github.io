@@ -43,7 +43,8 @@ __15-Aug-2025__
 
 __Early September__
 
-There will be a follow-up power shutdown in the SOMED-1 Data Center, tentatively during the week of Sept 8th. We will send out alert emails as more details are confirmed.
+Please be prepared that the final install of the 500kW by the contractor will require a second electrical power outage in our server room. This additional unavoidable shutdown is 
+tentatively scheduled for the week of Sept 8th. We will send out alert emails as more details are confirmed.
 
 ## Past exceptions
 
