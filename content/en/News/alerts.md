@@ -12,7 +12,9 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-__01-September-2025__
+__01-September-2025 (Updated Sept. 2)__
+
+**Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
 
 On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
 
