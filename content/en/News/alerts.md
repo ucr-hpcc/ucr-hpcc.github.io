@@ -12,7 +12,11 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-None observed at this time.
+__01-September-2025__
+
+On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
+
+In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
 
 
 ## Scheduled exceptions and downtimes
