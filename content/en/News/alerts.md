@@ -12,13 +12,7 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-__01-September-2025 (Updated Sept. 2)__
-
-**Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
-
-On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
-
-In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
+No exceptions observed at this time.
 
 
 ## Scheduled exceptions and downtimes
@@ -53,6 +47,16 @@ Please be prepared that the final install of the 500kW by the contractor will re
 tentatively scheduled for the week of Sept 8th. We will send out alert emails as more details are confirmed.
 
 ## Past exceptions
+
+
+__01-September-2025 (Updated Sept. 2)__
+
+**Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
+
+On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
+
+In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
+
 
 __18-June-2025__
 
