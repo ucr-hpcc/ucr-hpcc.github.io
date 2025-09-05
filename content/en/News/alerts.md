@@ -17,6 +17,38 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
+__5-Sept-2025 HPCC Follow-up Shutdown__
+
+* Start: Friday, September 5, 9pm PDT
+* Ends: Saturday, September 6, evening PDT
+
+Please be prepared that the final install of the 500kW by the contractor will require this second electrical power outage in our server room.
+
+HPCC is not planning any significant cluster maintenance tasks for this shutdown; we will only be shutting down the cluster to allow for electrical work to proceed.
+As such, downtime should be much shorter than previous scheduled shutdowns.
+
+## Past exceptions
+
+__01-September-2025 (Updated Sept. 2)__
+
+**Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
+
+On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
+
+In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
+
+__15-Aug-2025__ 
+
+* __11:00 AM__: The Slurm reservation block has been lifted. Computing jobs are running again on the cluster, and we are bringing more and more nodes back online. We are optimistic that all services will be back online today. 
+
+* __3:00 PM__: Almost all services are back online, with the exception of few non-essential nodes. Again, sorry for the additional time it took to get back to normal.  
+
+__14-Aug-2025__ 
+
+* __12:00 PM__: The electrical work has been completed by the construction company. To avoid additional shutdowns, we are deploying as many maintenance upgrades as possible during this shutdown (e.g. file system, network, Slurm, etc), and we were trying to complete them within the planned shutdown time. 
+
+* __6:00 PM__: At the moment, the headnodes are available for data access and light work. Compute nodes will be functional in the next 24 hours. We apologize for the delay in bringing all services back online. 
+
 __12-August-2025 (Updated Aug 7)__
 
 * Start: 9:00AM, Tuesday August 12th 
@@ -28,35 +60,6 @@ Unfortunately, these changes are out of our control. The final schedule for the
 shutdown has been set to Aug 12th-14th. The HPCC apologizes for these
 scheduling changes. These electrical upgrades are extremely important for the
 long-term health of UCR's research computing infrastructure. 
-
-__14-Aug-2025__ 
-
-* __12:00 PM__: The electrical work has been completed by the construction company. To avoid additional shutdowns, we are deploying as many maintenance upgrades as possible during this shutdown (e.g. file system, network, Slurm, etc), and we were trying to complete them within the planned shutdown time. 
-
-* __6:00 PM__: At the moment, the headnodes are available for data access and light work. Compute nodes will be functional in the next 24 hours. We apologize for the delay in bringing all services back online. 
-
-__15-Aug-2025__ 
-
-* __11:00 AM__: The Slurm reservation block has been lifted. Computing jobs are running again on the cluster, and we are bringing more and more nodes back online. We are optimistic that all services will be back online today. 
-
-* __3:00 PM__: Almost all services are back online, with the exception of few non-essential nodes. Again, sorry for the additional time it took to get back to normal.  
-
-__Early September__
-
-Please be prepared that the final install of the 500kW by the contractor will require a second electrical power outage in our server room. This additional unavoidable shutdown is 
-tentatively scheduled for the week of Sept 8th. We will send out alert emails as more details are confirmed.
-
-## Past exceptions
-
-
-__01-September-2025 (Updated Sept. 2)__
-
-**Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
-
-On the evening of September 1st, the machine that handles storage for various virtual machines was found in a locked up state. This caused many of the core HPCC services (including DNS, Slurm, and importantly email) to become unresponsive. HPCC Administrators are on site diagnosing the issue and are attempting to bring servers back online as soon as possible.
-
-In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
-
 
 __18-June-2025__
 
