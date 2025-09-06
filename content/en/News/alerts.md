@@ -17,7 +17,9 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-__5-Sept-2025 HPCC Follow-up Shutdown__
+__5-Sept-2025 HPCC Follow-up Shutdown (Updated. Sept 6)__
+
+**Update Sept. 6 3:00PM**: Head nodes and OnDemand are back online. The Slurm reservation is still in place but is expected to be removed shortly to allow for jobs to start running.
 
 * Start: Friday, September 5, 9pm PDT
 * Ends: Saturday, September 6, evening PDT
