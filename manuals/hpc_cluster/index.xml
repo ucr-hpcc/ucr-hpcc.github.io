@@ -425,7 +425,7 @@ Memory Efficiency: 81.20% of 100.00 GB
 &lt;/tr>
 &lt;tr>
 &lt;td>Priority&lt;/td>
-&lt;td>This isn&amp;rsquo;t an error, but rather why your job can&amp;rsquo;t start immediately.&lt;/td>
+&lt;td>A job with a higher priority than yours is pending and needs to run first.&lt;/td>
 &lt;td>You have likely submitted many jobs in a short period of time and Slurm&amp;rsquo;s Fair-Share algorithm is allowing other higher priority jobs to run first.&lt;/td>
 &lt;/tr>
 &lt;tr>
