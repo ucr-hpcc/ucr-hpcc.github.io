@@ -12,14 +12,12 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-<!-- No exceptions observed at this time. -->
-
-__25-Sept-2025 Problems connecting to VSCode Tunnels__
-
-We've had a number of users reach out to us regarding not being able to connect to VSCode Tunnels, specifically errors including https://usw3.rel.tunnels.api.visualstudio.com/ . Unfortunately, it looks like campus is blocking the IP address that this domain resolves to, breaking the ability for some users to use VSCode tunnels. Because this problem originates outside of our infrastructure, there isn't much that we can do to resolve it, though we are attempting to make contact with security teams at ITS to attempt and address this. We're sorry for any disruption this might be causing, and we hope that it's resolved soon.
+No exceptions observed at this time.
 
 
 ## Scheduled exceptions and downtimes
+
+No exceptions observed at this time.
 
 
 ## Past exceptions
