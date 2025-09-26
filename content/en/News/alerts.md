@@ -12,10 +12,18 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-No exceptions observed at this time.
+<!-- No exceptions observed at this time. -->
+
+__25-Sept-2025 Problems connecting to VSCode Tunnels__
+
+We've had a number of users reach out to us regarding not being able to connect to VSCode Tunnels, specifically errors including https://usw3.rel.tunnels.api.visualstudio.com/ . Unfortunately, it looks like campus is blocking the IP address that this domain resolves to, breaking the ability for some users to use VSCode tunnels. Because this problem originates outside of our infrastructure, there isn't much that we can do to resolve it, though we are attempting to make contact with security teams at ITS to attempt and address this. We're sorry for any disruption this might be causing, and we hope that it's resolved soon.
 
 
 ## Scheduled exceptions and downtimes
+
+
+## Past exceptions
+
 
 __5-Sept-2025 HPCC Follow-up Shutdown__
 
@@ -31,7 +39,6 @@ Please be prepared that the final install of the 500kW by the contractor will re
 HPCC is not planning any significant cluster maintenance tasks for this shutdown; we will only be shutting down the cluster to allow for electrical work to proceed.
 As such, downtime should be much shorter than previous scheduled shutdowns.
 
-## Past exceptions
 
 __01-September-2025 (Updated Sept. 2)__
 
