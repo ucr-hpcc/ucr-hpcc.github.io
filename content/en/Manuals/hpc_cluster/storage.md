@@ -106,7 +106,7 @@ For more information on your home directory, please see the [Linux Basics Orient
 ## Automatic Backups
 
 The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
-The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. **The HPCC is not a data archiving system.** Research or data plans requiring long-term (>30 days) of data retention must seek other solutions.
+The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. **The HPCC is not a long-term data archiving system.** Research or data plans requiring long-term (>30 days) of data retention for deleted data must seek other solutions.
 
 Home backups are created daily and kept for one week.
 Bigdata backups are created weekly and kept for one month.
