@@ -1355,7 +1355,7 @@ du -sch .[!.]* * | sort -h # includes hidden files and directories
 &lt;p>For more information on your home directory, please see the &lt;a href="../../manuals/linux_basics/cmdline_basics/">Linux Basics Orientation&lt;/a>.&lt;/p>
 &lt;h2 id="automatic-backups">Automatic Backups&lt;/h2>
 &lt;p>The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
-The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. &lt;strong>The HPCC is not a data archiving system.&lt;/strong> Research or data plans requiring long-term (&amp;gt;30 days) of data retention must seek other solutions.&lt;/p>
+The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. &lt;strong>The HPCC is not a long-term data archiving system.&lt;/strong> Research or data plans requiring long-term (&amp;gt;30 days) of data retention for deleted data must seek other solutions.&lt;/p>
 &lt;p>Home backups are created daily and kept for one week.
 Bigdata backups are created weekly and kept for one month.&lt;/p>
 &lt;p>Home and bigdata backups are located under the following respective directories:&lt;/p>
