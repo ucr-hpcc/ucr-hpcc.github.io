@@ -23,7 +23,6 @@ Empty boxes imply no limit, but is still limited by the next higher limit. Job l
 | Partition Name   | Usecase                                                   | Per-User Limit             | Per-Job Limit                             | Max Job Time |
 |------------------|-----------------------------------------------------------|----------------------------|-------------------------------------------|--------------|
 | epyc (2021 CPU), intel (2016 CPU), batch (2012 CPU)  | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       | 384 Cores, 1TB memory [^7] | 64GB memory per Core [^1],[^4]            | 30 Days      |
-| batch (2012 CPU) | CPU Intensive Workloads, Multithreaded, MPI, OpenMP       | 384 Cores, 1TB memory [^7] | 64GB memory per Core [^1],[^2]            | 30 Days      |
 | short            | Short CPU Intensive Workloads, Multithreaded, MPI, OpenMP | 384 Cores, 1TB memory      | 64GB memory per Core, 2-hour time limit   | 2 Hours      |
 | highmem          | Memory Intensive Workloads                                | 32 Cores, 2TB memory       |                                           | 30 Days      |
 | highclock        | Low Parallelism Workloads                                 | 32 Cores, 256GB memory       |                                           | 30 Days      |
