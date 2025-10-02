@@ -177,13 +177,13 @@ There are two partitions that will have preemption enabled: "preempt" for CPU jo
 
 To fully take advantage of preemption, your jobs must be be able to tolerate being cancelled at a random time and restarted at some later point in the future. When your job is preempted, it will be cancelled and requeued. When the job is elegible to start again, it will start from the beginning of the sbatch script as if it were newly run.
 
-Your job is only guaranteed 5 minutes of runtime when it starts before it is elegible to be preempted.
+Your job is only guaranteed **1 minute** of uninterrupted runtime after it starts before it is elegible to be preempted by higher priority jobs.
 
 ### Job Limitations
 
 #### Time
 
-As mentioned above, jobs can be killed at any time after the 5 minute grace period. Jobs should be set up such that any initialization steps that cannot tolerate being randomly killed happen within those first 5 minutes. The max walltime of a job is currently set to 1 day (24 hours).
+As mentioned above, jobs can be killed at any time after the 1 minute grace period. Jobs should be set up such that any initialization steps that cannot tolerate being randomly killed happen within that first minute. The max walltime of a job is currently set to 1 day (24 hours).
 
 #### Resources
 
@@ -200,7 +200,7 @@ To start a CPU preemptable interactive job, you can build off of the following c
 srun -A preempt -p preempt -c 8 --mem 8GB --pty bash -l
 ```
 
-This will start a job with 8 cores and 8GB of memory on the `preempt` partition under the `preempt` account. Jobs that do not explicitly state `-A preempt` will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice after the 5 minute grace period.
+This will start a job with 8 cores and 8GB of memory on the `preempt` partition under the `preempt` account. Jobs that do not explicitly state `-A preempt` will fail to start. Note that because this is a preemptable job, your session can be terminated at any moment without notice after the 1 minute grace period.
 
 To start a GPU preemptable interactive job, you can build off of the following command:
 ```bash
@@ -209,7 +209,7 @@ srun -A preempt -p preempt_gpu --gres=gpu:1 -c 8 --mem 8GB --pty bash -l
 
 #### Non-interactive (batch) Example
 
-As with all preemptable jobs, batch jobs can be cancelled at any time without notice and the programs *must* be able to tolerate this. Jobs that have been preempted will automatically be requeued to resume running at a later time when resources become available. The `$SLURM_RESTART_COUNT` environment variable can be used to check if the job has been preempted and restarted to allow you to recover and resume running.
+As with all preemptable jobs, batch jobs can be cancelled at any time without notice and your programs/scripts *must* be able to tolerate this. Jobs that have been preempted will automatically be requeued to resume running at a later time when resources become available. The `$SLURM_RESTART_COUNT` environment variable can be used to check if the job has been preempted and restarted to allow you to recover and resume running.
 
 To start a batch job, you can build off of the following sbatch file:
 ```
@@ -226,13 +226,13 @@ if [ "$SLURM_RESTART_COUNT" -eq 0 ]; then
     echo "This is the first time running the job"
     # Put the code for the first run here
     # Example: initializing data or setting up environment
-    # Remember that a job only has 5 minutes of guaranteed runtime. Keep
+    # Remember that a job only has 1 minute of guaranteed runtime. Keep
     # any initialization/recovery short otherwise it might be interrupted
 else
     echo "The job is being resumed after a preemption"
     # Put the code for a resumed job here
     # Example: resuming from a checkpoint or continuing work
-    # Remember that a job only has 5 minutes of guaranteed runtime. Keep
+    # Remember that a job only has 1 minute of guaranteed runtime. Keep
     # any initialization/recovery short otherwise it might be interrupted
 fi
 
@@ -245,7 +245,7 @@ Jobs that do not explicitly state `#SBATCH -A preempt` will fail to start. Note 
 
 #### Selecting Resources
 
-Similar to the Short partition, the Preempt partition is a union of all public and private machines, excluding specialty machines like highmem and GPU. This means that if you do not specify any restrictions, your job can run on nodes in the batch, intel, or epyc partition. If a certain architecture is required for your job, then you can use the `--constraint` flag.
+Similar to the Short partition, the Preempt partition is a union of all public and private machines, excluding specialty partitions like highmem, highclock, GPU, etc. This means that if you do not specify any restrictions, your job can run on nodes in the batch, intel, or epyc partition. If a certain architecture is required for your job, then you can use the `--constraint` flag.
 
 For example, if you want your job to run on an Intel machine, you can include `#SBATCH --constraint=intel` in your sbatch script, or `--constraint=intel` in your srun command. If you want either an Intel or Epyc Rome machine, then you could use `#SBATCH --constraint=intel|rome` in your sbatch script, or `constraint=intel|rome` in your srun command. More information on constraints is available in the [Slurm Documentation](https://slurm.schedmd.com/sbatch.html#OPT_constraint). 
 
