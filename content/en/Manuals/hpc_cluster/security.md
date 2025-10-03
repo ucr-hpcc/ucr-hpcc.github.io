@@ -178,7 +178,7 @@ gocryptfssh $BIGDATA_ENCRYPTED/privatedata1
 # Transfer files (ie. SCP,SFTP,RSYNC)
 scp user@remote-server:sensitive_file.txt $UNENCRYPTED/sensitive_file.txt
 
-# Exiting this shell will automatically unmount the unencrypted directory
+# Exiting the `gocryptfssh` shell will automatically close the mount
 exit
 ```
 
