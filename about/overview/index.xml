@@ -80,7 +80,7 @@ moving them from one location (&lt;em>e.g.&lt;/em> a data archival system) to an
 &lt;ul>
 &lt;li>$1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (&lt;em>e.g.&lt;/em> 100GB units). For details see &lt;a href="https://hpcc.ucr.edu/about/overview/rates/">here&lt;/a>. In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below).&lt;/li>
 &lt;li>Since the HPCC backs up all user data and uses snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the cost for rented storage is $33.33 for 1TB/yr raw disk space.&lt;/li>
-&lt;li>User account and big data backups are performed weekly and stored long-term, or as long as users maintain their storage subscriptions and/or owned hard drives are not older than seven years. To prevent the accumulation of unwanted data which is very costly, any data deleted by users in their user account or bigdata will also be removed from the backup system.&lt;/li>
+&lt;li>User account and big data backups are performed monthly and stored long-term, or as long as users maintain their storage subscriptions and/or owned hard drives are not older than seven years. To prevent the accumulation of unwanted data which is very costly, any data deleted by users in their user account or bigdata will also be removed from the backup system. To retrieve recent unwanted changes to data, the snapshoting system can be used, this allows retrieval of recently deleted files.&lt;/li>
 &lt;li>The rented storage pool can be shared among all user accounts of a registered lab.&lt;/li>
 &lt;/ul>
 &lt;/li>
