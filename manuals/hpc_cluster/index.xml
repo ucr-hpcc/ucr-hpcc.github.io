@@ -1599,7 +1599,7 @@ mmputacl -i ~/acls.txt /path/to/file
 # Delete acls file
 rm ~/acls.txt
 &lt;/code>&lt;/pre>
-&lt;p>For more information regarding GPFS ACLs refer to the following: &lt;a href="https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm">GPFS ACLs&lt;/a>. An example for granting another user access to a file is given &lt;a href="https://servicenow.iu.edu/kb?id=kb_article_view&amp;amp;sysparm_article=KB0024359#modify">here&lt;/a>.&lt;/p>
+&lt;p>For more information regarding GPFS ACLs refer to the following: &lt;a href="https://www.ibm.com/docs/en/storage-scale/5.2.2?topic=lists-traditional-gpfs-acl-administration">GPFS ACLs&lt;/a>. An example for granting another user access to a file is given &lt;a href="https://servicenow.iu.edu/kb?id=kb_article_view&amp;amp;sysparm_article=KB0024359#modify">here&lt;/a>.&lt;/p>
 &lt;h3 id="xfs-acls">XFS ACLs&lt;/h3>
 &lt;p>The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc).
 For more information on how to use ACLs under XFS, please refer to the following: &lt;a href="https://vishmule.com/2015/06/11/access-control-list-acl-permissions-in-rhel7centos7/">CentOS 7 XFS&lt;/a>&lt;/p>
