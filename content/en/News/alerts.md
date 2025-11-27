@@ -17,7 +17,15 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
-No exceptions observed at this time.
+__19-Oct-2025 UCR Campus Network Maintenance__
+
+UCR Information Technology Services (ITS) will be performing campus network maintenance on **Sunday, Oct 19 2025, from 4am to 12pm**.
+This will likely disrupt network activity for the HPCC facility.
+Please save any open sessions prior to the maintenance window, and avoid connecting to HPCC services until ITS confirms all operations are complete.
+
+[Official announcement - UCR ITS](https://insideucr.ucr.edu/announcements/2025/10/13/campus-network-service-disruption-oct-19-maintenance)
+
+[TechAlerts - UCR ITS](https://techalerts.ucr.edu)
 
 
 ## Past exceptions
