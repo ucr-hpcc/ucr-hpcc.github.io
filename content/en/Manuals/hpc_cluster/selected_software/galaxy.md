@@ -83,3 +83,27 @@ fastqc -i $input -o $output
 ```
 
 If a tool is installed from Galaxy’s tool shed repository and the same environment module tool corresponds to the specific installed tool, then the tool installed via Galaxy's tool shed repository will take precedence over the environment module and act as the default. Most tools from Galaxy’s tool shed repository are unique to the tool they were made for, so they will have custom parameters that reflect this. This guide will not go over how to modify a tool configuration file, instead please refer to the Galaxy's [documentation](https://docs.galaxyproject.org/en/latest/dev/schema.html) on the topic.
+
+## Common Issues
+
+While the HPCC admins have configured Galaxy on the cluster to be in a usable state, due to how detailed and large the Galaxy project is—there are still some issues the HPCC admins are still actively working to resolve. The following section details these issues. It is important to note that these issues do not hinder the usability of Galaxy on the cluster.
+
+**LocalProtocolError**
+<br>
+When a user uploads a file from their local computer to their running Galaxy session, the following debug message can be seen in the 'output.log' file created for every OnDemand session.
+
+```
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+```
+
+The local file will still be uploaded successfully to a user's Galaxy session and can still be used normally within Galaxy.
+
+**Proxy Error 502**
+<br>
+When a user attempts to install tools via Galaxy's tool shed repository or tries to resolve dependencies for Galaxy specific tools, the following message will be displayed after 3 to 5 minutes.
+
+![proxyerror](/img/galaxy_proxy_error.png)
+
+The 'output.log' file shows no indication of this error, and while the message is still displayed—the task will still run in the background until it is fully complete. Meaning that tools installed via Galaxy's tool shed repository will install successfully and dependencies will still be resolved after awhile. The progress of such tasks can be viewed in the 'output.log' file for a user's OnDemand session.
+
+This section will be updated continuously as issues are resolved or encountered. If you encounter any issues while using Galaxy on the cluster, please report them to our support email [support@hpcc.ucr.edu](support@hpcc.ucr.edu)
