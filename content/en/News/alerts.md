@@ -17,6 +17,20 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
+__[18-Feb-2026] HPCC Cluster Maintenance Shutdown__
+
+UCR HPCC will be performing routine maintenance on the cluster between the following times:
+
+* Start: **Wednesday, Feb 18 2026, 8am**
+* End:   **Thursday, Feb 19 2026, 8pm**
+
+A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
+"ReqNodeNotAvail", you may either reduce the duration of your job to finish before the shutdown, or leave the job in the queue where it
+will start once nodes are brought online. We apologize for the disruption that this shutdown will cause.
+
+
+## Past exceptions
+
 __19-Oct-2025 UCR Campus Network Maintenance__
 
 UCR Information Technology Services (ITS) will be performing campus network maintenance on **Sunday, Oct 19 2025, from 4am to 12pm**.
@@ -26,10 +40,6 @@ Please save any open sessions prior to the maintenance window, and avoid connect
 [Official announcement - UCR ITS](https://insideucr.ucr.edu/announcements/2025/10/13/campus-network-service-disruption-oct-19-maintenance)
 
 [TechAlerts - UCR ITS](https://techalerts.ucr.edu)
-
-
-## Past exceptions
-
 
 __5-Sept-2025 HPCC Follow-up Shutdown__
 
