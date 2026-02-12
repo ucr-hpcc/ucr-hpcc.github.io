@@ -25,7 +25,7 @@ UCR HPCC will be performing routine maintenance on the cluster between the follo
 * End:   **Thursday, Feb 19 2026, 8pm**
 
 A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
-"ReqNodeNotAvail", you may either reduce the duration of your job to finish before the shutdown, or leave the job in the queue where it
+"ReqNodeNotAvail", you may either reduce the duration of your job (using the `-t` flag) to finish before the shutdown, or leave the job in the queue where it
 will start once nodes are brought online. We apologize for the disruption that this shutdown will cause.
 
 
