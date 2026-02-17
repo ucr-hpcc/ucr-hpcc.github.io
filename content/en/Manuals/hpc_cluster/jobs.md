@@ -188,9 +188,9 @@ If you require an AMD node, but want it to be Rome or Milan generation (ie. **no
 srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint "amd&(rome|milan)" --pty bash -l
 ```
 
-If you want to run on a modern GPU machine:
+If you want to run on a modern GPU machine, requesting 1 GPU:
 ```
-srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint "gpu_latest" --pty bash -l
+srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpus=1 --constraint "gpu_latest" --pty bash -l
 ```
 > When using constraints with GPUs, make sure to request a generic GPU
 
