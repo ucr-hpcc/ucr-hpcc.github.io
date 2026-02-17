@@ -353,8 +353,8 @@ For more information regarding parallel/multi core jobs refer to &lt;a href="#pa
 &lt;p>If you require an AMD node, but want it to be Rome or Milan generation (ie. &lt;strong>not&lt;/strong> Abu Dhabi):&lt;/p>
 &lt;pre>&lt;code>srun -p short -t 2:00:00 -c 8 --mem 8GB --constraint &amp;quot;amd&amp;amp;(rome|milan)&amp;quot; --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>If you want to run on a modern GPU machine:&lt;/p>
-&lt;pre>&lt;code>srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpu:1 --constraint &amp;quot;gpu_latest&amp;quot; --pty bash -l
+&lt;p>If you want to run on a modern GPU machine, requesting 1 GPU:&lt;/p>
+&lt;pre>&lt;code>srun -p short_gpu -t 2:00:00 -c 8 --mem 8GB --gpus=1 --constraint &amp;quot;gpu_latest&amp;quot; --pty bash -l
 &lt;/code>&lt;/pre>
 &lt;blockquote>
 &lt;p>When using constraints with GPUs, make sure to request a generic GPU&lt;/p>
