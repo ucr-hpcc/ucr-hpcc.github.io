@@ -1720,7 +1720,69 @@ Also, be mindful of reamaining job time and make sure that you have unmounted th
 &lt;p>The above command will overwrite the file with random data, and then remove (unlink) it.&lt;/p>
 &lt;p>If we want to be even more secure, we can pass over the file seven times to ensure that reconstruction is nearly impossible, then remove it:&lt;/p>
 &lt;pre>&lt;code>shred -v -n 6 -z -u somefile
-&lt;/code>&lt;/pre></description></item><item><title>Manuals: Communicating</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Manuals: File Permission Advice</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/permadvice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/permadvice/</guid><description>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This page provides detailed advice on choosing and setting permissions on your files on the HPCC cluster. Permissions need to strike an important balance between security and convenience. As a user on a shared computing environment, it is important to choose these permissions carefully.&lt;/p>
+&lt;p>Readers should be familiar with &lt;a href="../../manuals/linux_basics/permissions/">Permissions and Ownership&lt;/a> before proceeding with this documentation.&lt;/p>
+&lt;h2 id="specific-filedirectory-permissions">Specific File/Directory Permissions&lt;/h2>
+&lt;p>HPCC users should concern themselves primarily with permissions on a few specific locations. Removing permissions on a parent directory provides protection on all files within that directory. As such, it provides the most benefit with the least amount of effort.&lt;/p>
+&lt;h3 id="home-directory">Home Directory&lt;/h3>
+&lt;p>Home directories should have one of the following permissions:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>u=rwx,g=,o=&lt;/code> - Default and most restrictive. Safest choice.&lt;/li>
+&lt;li>&lt;code>u=rwx,g=,o=x&lt;/code> - Necessary for sharing files over the web (via &lt;code>${HOME}/.html/&lt;/code>).&lt;/li>
+&lt;/ul>
+&lt;h3 id="web-files-directory">Web Files Directory&lt;/h3>
+&lt;p>Users sharing files over the web must create a directory at &lt;code>${HOME}/.html/&lt;/code>, and should have one of the following permissions:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>u=rwx,g=,o=rx&lt;/code> - Allows listing of files in the web browser.&lt;/li>
+&lt;li>&lt;code>u=rwx,g=,o=x&lt;/code> - Files will not be listed in the web browser, but files inside can be read/traversed if their names are known, and &lt;code>o=rX&lt;/code> permissions are set on them. Safer but less convenient.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ssh-settings-directory">SSH Settings Directory&lt;/h3>
+&lt;p>A user&amp;rsquo;s SSH settings are stored at &lt;code>${HOME}/.ssh/&lt;/code>, and &lt;strong>MUST&lt;/strong> have its permissions set to &lt;code>u=rwx,g=,o=&lt;/code>. Occasionally, a user might accidentally change this directory&amp;rsquo;s permission by running a recursive &lt;code>chmod&lt;/code> on their home directory. If permissions on this directory are too relaxed, you may experience problems with SSH keys, among other issues. To ensure you have adequately safe permissions, run the following command (note: the upper-case &amp;lsquo;X&amp;rsquo; is intentional):&lt;/p>
+&lt;p>&lt;code>chmod --recursive --verbose u=rwX,g=,o= ${HOME}/.ssh/&lt;/code>&lt;/p>
+&lt;h3 id="bigdata-user-directory">Bigdata User Directory&lt;/h3>
+&lt;p>Users' bigdata directory (&lt;code>/bigdata/LABNAME/USERNAME/&lt;/code>) should have one of the following permissions:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>u=rwx,g=rx,o=&lt;/code> - Default. Reasonably safe.&lt;/li>
+&lt;li>&lt;code>u=rwx,g=,o=&lt;/code> - Most restrictive. Safest but can&amp;rsquo;t share data inside.&lt;/li>
+&lt;li>&lt;code>u=rwx,g=rx,o=x&lt;/code> - To share files with users in other labs, or over the web (i.e. symlinked from ${HOME}/.html/)&lt;/li>
+&lt;/ul>
+&lt;p>It is &lt;strong>not&lt;/strong> recommended to add group-write permissions on this directory. It is better to selectively add group-write to individual sub-directories that need it.&lt;/p>
+&lt;h2 id="default-permissions-umask">Default Permissions (umask)&lt;/h2>
+&lt;h3 id="hpcc-defaults">HPCC Defaults&lt;/h3>
+&lt;p>As of Feb 19, 2026, the default permissions for &lt;strong>new files&lt;/strong> on HPCC is as follows:&lt;/p>
+&lt;ul>
+&lt;li>User (owner) has full access (read, write, exec)&lt;/li>
+&lt;li>Group members can read and exec, but not write&lt;/li>
+&lt;li>Others have no access&lt;/li>
+&lt;/ul>
+&lt;p>In more technical terms, the default &lt;code>umask -S&lt;/code> value is &lt;code>u=rwx,g=rx,o=&lt;/code>.&lt;/p>
+&lt;p>This default should be kept by most users, but may affect the following users:&lt;/p>
+&lt;ul>
+&lt;li>Users that frequently collaborate with other labs outside their own&lt;/li>
+&lt;li>Users that frequently share files over the web (via &lt;code>${HOME}/.html/&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;h3 id="previous-defaults">Previous Defaults&lt;/h3>
+&lt;p>Before Feb 19, 2026, HPCC used the following settings, which allowed &amp;ldquo;other&amp;rdquo; users to read and exec files by default:&lt;/p>
+&lt;ul>
+&lt;li>User (owner) has full access (read, write, exec)&lt;/li>
+&lt;li>Group members can read and exec, but not write&lt;/li>
+&lt;li>Others can read and exec, but not write&lt;/li>
+&lt;/ul>
+&lt;p>In more technical terms, the previous default &lt;code>umask -S&lt;/code> value was &lt;code>u=rwx,g=rx,o=rx&lt;/code>. Most Linux systems use this default unless changed by the administrator.&lt;/p>
+&lt;p>Set the session umask by running &lt;code>umask u=rwx,g=rx,o=rx&lt;/code>. This will temporarily restore the previous default for the current session.&lt;/p>
+&lt;p>For users that feel that the new HPCC defaults are too restrictive, and understand the security implications, they may permanently restore the previous behavior:&lt;/p>
+&lt;pre>&lt;code># Add the following line to ${HOME}/.bashrc
+umask u=rwx,g=rx,o=rx
+&lt;/code>&lt;/pre>
+&lt;h3 id="optimal-defaults-for-lab-collaboration">Optimal Defaults for Lab Collaboration&lt;/h3>
+&lt;p>If a user is working in a shared workspace (e.g. &lt;code>/bigdata/LABNAME/shared/&lt;/code>), they may want to set their &lt;strong>session&lt;/strong> &lt;code>umask&lt;/code> to &lt;code>u=rwx,g=rwx,o=&lt;/code>. This will alleviate the need to tediously use &lt;code>chmod&lt;/code> on every shared file.&lt;/p>
+&lt;p>Set the session umask by running &lt;code>umask u=rwx,g=rwx,o=&lt;/code> at the beginning of each relevant session. It is &lt;strong>not&lt;/strong> recommended to set this default in &lt;code>.bashrc&lt;/code>.&lt;/p>
+&lt;h3 id="optimal-defaults-for-privacy">Optimal Defaults for Privacy&lt;/h3>
+&lt;p>If a user is working with sensitive data, they may want to set their &lt;strong>session&lt;/strong> &lt;code>umask&lt;/code> to &lt;code>u=rwx,g=,o=&lt;/code>.&lt;/p>
+&lt;p>Note that it is usually better to set &lt;code>g=,o=&lt;/code> on a parent directory (with &lt;code>chmod&lt;/code>) to prevent unwanted access. But in the rare situation that a user must create private files within a shared workspace, &lt;code>umask&lt;/code> is the correct solution.&lt;/p>
+&lt;p>For data that falls under IS-3 P3 or P4, &lt;code>umask&lt;/code> and &lt;code>chmod&lt;/code> controls are inadequate. Please read our &lt;a href="../../manuals/hpc_cluster/security/">Data Security&lt;/a> page for datasets requiring high security.&lt;/p></description></item><item><title>Manuals: Communicating</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/users/</guid><description>
 &lt;h2 id="communicating-with-others">Communicating with others&lt;/h2>
 &lt;p>The cluster is a shared resource, and communicating with other users can help to schedule large computations.&lt;/p>
 &lt;p>&lt;strong>Looking-Up Specific Users&lt;/strong>&lt;/p>
