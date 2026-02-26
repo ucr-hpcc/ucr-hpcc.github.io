@@ -30,7 +30,7 @@ HPCC's recharging rate structure is outlined below. A more formal summary is ava
 An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
-  * Over 16,000 CPU cores (60% AMD and 40% Intel), ~230,000 cuda cores (Nvidia A100, P100 and K80 GPUs), ~5PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the [hardware pages](https://hpcc.ucr.edu/about/hardware/).
+  * Over 16,000 CPU cores (60% AMD and 40% Intel), ~230,000 cuda cores (Nvidia A100, H100, P100 and K80 GPUs), ~5PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the [hardware pages](https://hpcc.ucr.edu/about/hardware/).
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
@@ -50,11 +50,7 @@ moving them from one location (_e.g._ a data archival system) to another.
     
         * $1000 per 10TB of usable and backed up storage space per year. Smaller units than 10TB are also available (_e.g._ 100GB units). For details see [here](https://hpcc.ucr.edu/about/overview/rates/). In comparison, the maintenance cost for the same amount of owned storage is $260 per year (see below). 
         * Since the HPCC backs up all user data and uses snapshotting as an additional data security measure, 10TB of usable backed up space is the equivalent of almost 30TB of raw disk space. Thus, the cost for rented storage is $33.33 for 1TB/yr raw disk space.
-<<<<<<< HEAD
-        * User account and big data backups are performed monthly and stored long-term, or as long as users maintain their storage subscriptions and/or owned hard drives are not older than seven years. To prevent the accumulation of unwanted data which is very costly, any data deleted by users in their user account or bigdata will also be removed from the backup system. To retrieve recent unwanted changes to data, the snapshotting system can be used. This allows retrieval of recently deleted files.  
-=======
         * User account and big data backups are performed monthly and stored long-term, or as long as users maintain their storage subscriptions and/or owned hard drives are not older than seven years. To prevent the accumulation of unwanted data which is very costly, any data deleted by users in their user account or bigdata will also be removed from the backup system. To retrieve recent unwanted changes to data, previous snapshots can be used assuming data was there before the snapshot. This allows retrieval of recently deleted files. More info on snapshots can be found [here](https://hpcc.ucr.edu/manuals/hpc_cluster/storage/#automatic-backups-and-snapshots).
->>>>>>> f1a24833b7dd64bb693e75e18dc093f8a07fe41a
         * The rented storage pool can be shared among all user accounts of a registered lab.
  
 ## Ownership models
