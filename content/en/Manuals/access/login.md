@@ -106,7 +106,7 @@ and on UCR's [MyAccount](https://its.ucr.edu/blog/2020/06/11/customer-support-en
 page. Importantly, the login via the `Password+DUO` method will only work if a
 user's NetID matches the username of the corresponding HPCC account. If
 this is not the case then the HPCC username can be changed to a user's NetID.
-This change can be initiated by emailing [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
+This change can be initiated by emailing [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 As mentioned above, external users will not have access to UCR's Duo system, and thus have to use
 the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources.
 
@@ -122,7 +122,7 @@ public key on the remote system.
 The following introduces how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
 public key to the remote system. The latter upload will only work if a user can access the remote system, 
 _e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
-ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
+ssh key to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
 public key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 This includes GUI based based options. However, we highly recommend to use the command-line option on all OSs which are
 much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows. 
