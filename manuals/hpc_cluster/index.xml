@@ -1824,13 +1824,8 @@ work on remote systems. Major advantages of tmux are:&lt;/p>
 It has similar functionalities as tmux.&lt;/p>
 &lt;p>Tmux can be downloaded and installed from
 &lt;a href="https://github.com/tmux/tmux/wiki/Installing">here&lt;/a>. A custom tmux (and nvim)
-environment with extensions can be installed by HPCC users with a
-single command (here &lt;code>Install_Nvim-R_Tmux&lt;/code>). The same
-script also installs several useful Nvim plugins (see
-&lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#nvim-introduction">below&lt;/a>).
-Alternatively, the install script can be downloaded from
-&lt;a href="https://github.com/tgirke/Nvim-R_Tmux#2-installation">here&lt;/a>. After installing
-the provided tmux environment in a user account, one needs to log out and in
+environment with extensions can be installed by HPCC users following the instructions &lt;a href="https://github.com/tgirke/nvim-R-Tmux/tree/main">here&lt;/a>).
+After installing the provided tmux environment in a user account, one needs to log out and in
 again to activate the environment. Note, installing the custom environment is
 optional and not required for any of the following examples. Users also need to
 be aware that the install script will make changes to their .bashrc&lt;code> and&lt;/code>.tmux.conf` files. If this is not desirable, then one can install the
@@ -1918,8 +1913,8 @@ can be used as an alternative to Nvim.&lt;/p>
 &lt;h3 id="nvim-introduction">Nvim introduction&lt;/h3>
 &lt;p>The following opens a file (here &lt;code>myfile&lt;/code>) with nvim (or vim). If nvim is not
 found then one might need to load it with &lt;code>module load neovim&lt;/code> first. A custom
-nvim/tmux environment with extensions can be installed by HPCC users with the
-&lt;code>Install_Nvim-R_Tmux&lt;/code> command. For details about this install script, see the
+nvim/tmux environment with extensions can be installed by HPCC users by following
+the install instructions &lt;a href="https://github.com/tgirke/nvim-R-Tmux">here&lt;/a>. For details about this install script, see the
 corresponding tmux section
 &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>.&lt;/p>
 &lt;h3 id="open-file-with-nvim">Open file with Nvim&lt;/h3>
@@ -2001,10 +1996,7 @@ For a more complete listing type &lt;code>:set all&lt;/code> or consult the vim 
 &lt;h3 id="indentation-guides">Indentation guides&lt;/h3>
 &lt;p>Vertical indentation lines (guides) are useful for tracking context in code. To
 enable indentation lines in nvim, one can use the
-&lt;a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim&lt;/a>
-plugin. Installation and configuration instructions for this plugin are &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#28-indentation-guides">here&lt;/a>.&lt;/p>
-&lt;center>&lt;img title="indent_blankline" src="https://private-user-images.githubusercontent.com/12900252/265404807-64a1a3c6-74e6-4183-901d-ad94c1edc59c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MjAxMTgsIm5iZiI6MTcxMTQxOTgxOCwicGF0aCI6Ii8xMjkwMDI1Mi8yNjU0MDQ4MDctNjRhMWEzYzYtNzRlNi00MTgzLTkwMWQtYWQ5NGMxZWRjNTljLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzI2VDAyMjMzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk4Nzk0NTk1YTg0YjZiMjZmMjA5MGYzYTAxNGFhNDg2ZjY4OTJkYTg5NWYxOTkwYTEwMzQxZDc0ZTVhMGY5ZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ICFg324IVK2rsQBWBmc8MqNAF2Bh9zyRihje4FxFnkg" width="600">&lt;/center>
-&lt;center>Indentation Guides with `indent-blankline.nvim` Plugin&lt;/center>
+&lt;a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim&lt;/a>.&lt;/p>
 &lt;h3 id="help">Help&lt;/h3>
 &lt;p>Vim has a comprehensive built-in help system. To access and navigate it, here
 are some important commands. For a more detailed overview, visit this
@@ -2017,9 +2009,8 @@ Help&lt;/a> page.&lt;/p>
 &lt;li>&lt;code>:help quickhelp&lt;/code> or &lt;code>:help index&lt;/code>: short help overview&lt;/li>
 &lt;/ul>
 &lt;h3 id="file-browser-built-into-vim-nerdtree">File browser built into vim: &lt;code>NERDtree&lt;/code>&lt;/h3>
-&lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in the account configuration
-with &lt;code>Install_Nvim-R_Tmux&lt;/code> mentioned &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>. To use NERDtree, open
-a file with vim/nvim and then type in normal mode &lt;code>zz&lt;/code>. The same command closes NERDtree. Note the default for opening NERDtree is &lt;code>:NERDtree&lt;/code> which has been
+&lt;p>NERDtree provides file browser functionality for Vim. To enable it, the NERDtree plugin needs to be installed. It is included in the above installation instructions.
+To use NERDtree, open a file with vim/nvim and then type in normal mode &lt;code>zz&lt;/code>. The same command closes NERDtree. Note the default for opening NERDtree is &lt;code>:NERDtree&lt;/code> which has been
 remapped here to &lt;code>zz&lt;/code> for quicker access.
 The basic NERDtree usage is explained &lt;a href="https://github.com/tgirke/Nvim-R_Tmux#33-basic-nerdtree-usage">here&lt;/a>.&lt;/p>
 &lt;center>&lt;img title="nerdtree" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*yFuOEvHxG9U0AUjrDlpbrQ.png" width="600">&lt;/center>
@@ -2044,7 +2035,7 @@ re-attached (see tmux session above).&lt;/p>
 &lt;p>The following steps 1-3 can be skipped if Nvim, Tmux and nvimR are already configured on a user&amp;rsquo;s system or account. One can also follow the &lt;a href="https://github.com/tgirke/Nvim-R_Tmux">detailed
 instructions&lt;/a> for installing &lt;code>Nvim-R-Tmux&lt;/code> from scratch.&lt;/p>
 &lt;ol>
-&lt;li>Log in to your user account on HPCC and execute &lt;code>Install_Nvim-R_Tmux&lt;/code> (old: &lt;code>install_nvimRtmux&lt;/code>). Additional details on this install are given in the tmux section &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/terminalide/#tmux-virtual-terminal-multiplexer">above&lt;/a>. Alternatively, one can use the step-by-step install &lt;a href="https://github.com/tgirke/Nvim-R_Tmux">here&lt;/a>.&lt;/li>
+&lt;li>Log in to your user account on HPCC and follow the install instructions &lt;a href="https://github.com/tgirke/nvim-R-Tmux">here&lt;/a>.&lt;/li>
 &lt;li>To enable the nvim-R-tmux environment, log out and in again.&lt;/li>
 &lt;li>Follow usage instructions of next section.&lt;/li>
 &lt;/ol>
