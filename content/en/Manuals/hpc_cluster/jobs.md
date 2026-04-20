@@ -411,6 +411,12 @@ Since the CUDA libraries will only run with GPU hardware, development and compil
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](https://github.com/ucr-hpcc/hpcc_slurm_examples)
 
+#### GPU Policies
+
+Please be mindful that GPUs are a fairly limited resource for our center. "Reserving", idling, or otherwise sitting on GPUs without actively using them will typically result in a warning to utilize the resources, otherwise your job will be cancelled. In extreme or excessive cases, your jobs might be killed without warning. Repeat offenses of leaving GPUs idle might result in your GPU access to be limited, with a complete ban on GPU resources in the most extreme of cases.
+
+For interactive sessions such as VSCode, Bash, or OnDemand sessions, we recommend that users take advantage of the "[--mail-user](https://slurm.schedmd.com/sbatch.html#OPT_mail-user)" and "[--mail-type](https://slurm.schedmd.com/sbatch.html#OPT_mail-type)" flags to be alerted when their jobs have started so as not to delay the start of their usage.
+
 ### Web Browser Access
 
 #### Ports
