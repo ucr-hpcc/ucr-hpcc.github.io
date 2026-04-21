@@ -88,7 +88,93 @@ singularity shell --nv $ALPHAFOLD_SING
 --output_dir=&amp;lt;path to output directory&amp;gt;
 &lt;/code>&lt;/pre>
 &lt;p>Remember to fill in your fasta path and output dir if you wish to use these templates.&lt;/p>
-&lt;p>Additionally, these are not the only two methods of running AlphaFold, and different modes might require different sets of arguments to be passed to &lt;code>alphafold.py&lt;/code>. For more details regarding what parameters are available, as well as more examples, please refer to the &lt;a href="https://github.com/deepmind/alphafold">Alphafold Github Repo&lt;/a>.&lt;/p></description></item><item><title>Manuals: Galaxy Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/galaxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/galaxy/</guid><description>
+&lt;p>Additionally, these are not the only two methods of running AlphaFold, and different modes might require different sets of arguments to be passed to &lt;code>alphafold.py&lt;/code>. For more details regarding what parameters are available, as well as more examples, please refer to the &lt;a href="https://github.com/deepmind/alphafold">Alphafold Github Repo&lt;/a>.&lt;/p></description></item><item><title>Manuals: Databases on the HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/databases/</guid><description>
+&lt;p>&lt;strong>NOTE: This page is a work in progress. Some information is subject to change.&lt;/strong>&lt;/p>
+&lt;h2 id="databases">Databases&lt;/h2>
+&lt;p>The following is a list of databases maintained by the HPCC. Due to the fairly large nature of the databases, we cannot commit to storing databases forever, so a retention period is put in place. For projects that require older databases, please plan to mirror the database to your own storage.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Database&lt;/th>
+&lt;th>Download Frequency&lt;/th>
+&lt;th>Retention Length&lt;/th>
+&lt;th>Module Name&lt;/th>
+&lt;th>Download Location&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>NCBI nr&lt;/td>
+&lt;td>6 months&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-ncbi&lt;/td>
+&lt;td>&lt;a href="https://ftp.ncbi.nlm.nih.gov/blast/db/">https://ftp.ncbi.nlm.nih.gov/blast/db/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NCBI nt&lt;/td>
+&lt;td>6 months&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-ncbi&lt;/td>
+&lt;td>&lt;a href="https://ftp.ncbi.nlm.nih.gov/blast/db/">https://ftp.ncbi.nlm.nih.gov/blast/db/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NCBI core_nt&lt;/td>
+&lt;td>6 months&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-ncbi&lt;/td>
+&lt;td>&lt;a href="https://ftp.ncbi.nlm.nih.gov/blast/db/">https://ftp.ncbi.nlm.nih.gov/blast/db/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NCBI swissprot&lt;/td>
+&lt;td>6 months&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-swissprot&lt;/td>
+&lt;td>&lt;a href="https://ftp.ncbi.nlm.nih.gov/blast/db/">https://ftp.ncbi.nlm.nih.gov/blast/db/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NCBI nr_clustered_seq&lt;/td>
+&lt;td>6 months&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-ncbi&lt;/td>
+&lt;td>&lt;a href="https://ftp.ncbi.nlm.nih.gov/blast/db/experimental/">https://ftp.ncbi.nlm.nih.gov/blast/db/experimental/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>uniref&lt;/td>
+&lt;td>As released/Manual&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-uniprot&lt;/td>
+&lt;td>&lt;a href="https://ftp.uniprot.org/pub/databases/uniprot/">https://ftp.uniprot.org/pub/databases/uniprot/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pfam&lt;/td>
+&lt;td>As released/Manual&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-pfam&lt;/td>
+&lt;td>&lt;a href="https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/">https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CAZy&lt;/td>
+&lt;td>As released/Manual&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-cazy&lt;/td>
+&lt;td>&lt;a href="https://pro.unl.edu/dbCAN2/browse_download.php?path=Databases">https://pro.unl.edu/dbCAN2/browse_download.php?path=Databases&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>interpro&lt;/td>
+&lt;td>TBD&lt;/td>
+&lt;td>TBD&lt;/td>
+&lt;td>TBD&lt;/td>
+&lt;td>TBD&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>UNITE&lt;/td>
+&lt;td>As released/Manual&lt;/td>
+&lt;td>3 yrs&lt;/td>
+&lt;td>db-unite&lt;/td>
+&lt;td>&lt;a href="https://unite.ut.ee/repository.php">https://unite.ut.ee/repository.php&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Manuals: Galaxy Usage on HPCC</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/galaxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/galaxy/</guid><description>
 &lt;h2 id="what-is-galaxy">What is Galaxy?&lt;/h2>
 &lt;p>&lt;a href="https://galaxyproject.org/">Galaxy&lt;/a> is a free and open source scientific platform designed to make research accessible and reproducible. The HPCC has configured Galaxy to work on the cluster as an OnDemand application, allowing users to launch and maintain their very own Galaxy platform. The following sections below will explain how to use Galaxy on the cluster.&lt;/p>
 &lt;h2 id="how-to-start-a-galaxy-session">How to start a Galaxy session?&lt;/h2>
