@@ -205,7 +205,7 @@ chmod a+rx www-project
 
 # Create a default test file
 echo '<h1>Hello!</h1>' > ~/www-project/index.html
-chmod o+w ~/www-project/index.html
+chmod o+r ~/www-project/index.html
 
 # Create shortcut/link for new web project in html directory 
 ln -s ~/www-project ~/.html/
