@@ -1490,7 +1490,7 @@ mkdir www-project
 chmod a+rx www-project
 # Create a default test file
 echo '&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;' &amp;gt; ~/www-project/index.html
-chmod o+w ~/www-project/index.html
+chmod o+r ~/www-project/index.html
 # Create shortcut/link for new web project in html directory
 ln -s ~/www-project ~/.html/
 &lt;/code>&lt;/pre>
