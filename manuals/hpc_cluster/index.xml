@@ -1490,6 +1490,7 @@ mkdir www-project
 chmod a+rx www-project
 # Create a default test file
 echo '&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;' &amp;gt; ~/www-project/index.html
+chmod o+w ~/www-project/index.html
 # Create shortcut/link for new web project in html directory
 ln -s ~/www-project ~/.html/
 &lt;/code>&lt;/pre>
@@ -1497,7 +1498,7 @@ ln -s ~/www-project ~/.html/
 Be sure to replace &lt;code>username&lt;/code> with your actual user name. &lt;strong>The forward slash at the end is important.&lt;/strong>&lt;/p>
 &lt;h3 id="common-problems">Common Problems&lt;/h3>
 &lt;h4 id="403-forbidden--you-dont-have-permissions">&amp;ldquo;403 Forbidden&amp;rdquo; / You don&amp;rsquo;t have permissions&lt;/h4>
-&lt;p>If using a symbolic link to data stored elsewhere on the cluster, every folder in the tree leading up to the shared folder must, at a minimum, have the execute permission (&lt;code>chmod a+x folder_name&lt;/code>). For example, if you have a symbolic link to &lt;code>/bigdata/mylab/myuser/data/web-content&lt;/code>, then &lt;code>myuser&lt;/code>, &lt;code>data&lt;/code>, and &lt;code>web-content&lt;/code> must all have the execute permission (&lt;code>bigdata&lt;/code> and &lt;code>mylab&lt;/code> should already have them).&lt;/p>
+&lt;p>Make sure that any &lt;strong>files&lt;/strong> that need to be accessed have the &amp;ldquo;other-read&amp;rdquo; permission applied to them. Additionally, every folder in the tree leading up to the shared folder must, at a minimum, have the execute permission (&lt;code>chmod a+x folder_name&lt;/code>). If you use symbolic links, then every directory leading to the link must also have other-execute permissions as well. For example, if you have a symbolic link to &lt;code>/bigdata/mylab/myuser/data/web-content&lt;/code>, then &lt;code>myuser&lt;/code>, &lt;code>data&lt;/code>, and &lt;code>web-content&lt;/code> must all have the execute permission (&lt;code>bigdata&lt;/code> and &lt;code>mylab&lt;/code> should already have them).&lt;/p>
 &lt;h2 id="password-protect-web-pages">Password Protect Web Pages&lt;/h2>
 &lt;p>Files in web directories can be password protected.
 First create a password file and then create a new user:&lt;/p>
