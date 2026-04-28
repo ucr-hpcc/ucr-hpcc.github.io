@@ -205,6 +205,7 @@ chmod a+rx www-project
 
 # Create a default test file
 echo '<h1>Hello!</h1>' > ~/www-project/index.html
+chmod o+w ~/www-project/index.html
 
 # Create shortcut/link for new web project in html directory 
 ln -s ~/www-project ~/.html/
@@ -217,7 +218,7 @@ Be sure to replace `username` with your actual user name. **The forward slash at
 
 #### "403 Forbidden" / You don't have permissions
 
-If using a symbolic link to data stored elsewhere on the cluster, every folder in the tree leading up to the shared folder must, at a minimum, have the execute permission (`chmod a+x folder_name`). For example, if you have a symbolic link to `/bigdata/mylab/myuser/data/web-content`, then `myuser`, `data`, and `web-content` must all have the execute permission (`bigdata` and `mylab` should already have them).
+Make sure that any **files** that need to be accessed have the "other-read" permission applied to them. Additionally, every folder in the tree leading up to the shared folder must, at a minimum, have the execute permission (`chmod a+x folder_name`). If you use symbolic links, then every directory leading to the link must also have other-execute permissions as well. For example, if you have a symbolic link to `/bigdata/mylab/myuser/data/web-content`, then `myuser`, `data`, and `web-content` must all have the execute permission (`bigdata` and `mylab` should already have them).
 
 ## Password Protect Web Pages
 
