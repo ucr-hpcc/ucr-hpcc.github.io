@@ -17,6 +17,23 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
+__[8 May 2026] Unavoidable HPCC Cluster Maintenance Shutdown__
+
+When: Friday, May 8 2026, 8am-8pm
+
+UCR HPCC has to perform an unscheduled maintenance shutdown on Friday, May 8, to apply a critical
+security update. This issue affects almost all Linux-based systems worldwide, not just UCR’s HPCC.
+
+We expect this maintenance to be shorter than a typical full maintenance shutdown.
+
+Because this is an unscheduled shutdown, running jobs and active SSH, tmux, or screen sessions
+will need to be terminated when maintenance begins. Users are encouraged to save work and stop jobs
+or sessions before 8:00 AM to reduce the risk of lost work.
+
+We apologize for the short notice and appreciate your understanding.
+
+## Past exceptions
+
 __[18-Feb-2026] HPCC Cluster Maintenance Shutdown__
 
 UCR HPCC will be performing routine maintenance on the cluster between the following times:
@@ -27,9 +44,6 @@ UCR HPCC will be performing routine maintenance on the cluster between the follo
 A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
 "ReqNodeNotAvail", you may either reduce the duration of your job (using the `-t` flag) to finish before the shutdown, or leave the job in the queue where it
 will start once nodes are brought online. We apologize for the disruption that this shutdown will cause.
-
-
-## Past exceptions
 
 __19-Oct-2025 UCR Campus Network Maintenance__
 
