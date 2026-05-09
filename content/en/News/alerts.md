@@ -17,6 +17,10 @@ No exceptions observed at this time.
 
 ## Scheduled exceptions and downtimes
 
+No downtime events scheduled at this time.
+
+## Past exceptions
+
 __[8 May 2026] Unavoidable HPCC Cluster Maintenance Shutdown__
 
 When: Friday, May 8 2026, 8am-8pm
@@ -31,8 +35,6 @@ will need to be terminated when maintenance begins. Users are encouraged to save
 or sessions before 8:00 AM to reduce the risk of lost work.
 
 We apologize for the short notice and appreciate your understanding.
-
-## Past exceptions
 
 __[18-Feb-2026] HPCC Cluster Maintenance Shutdown__
 
