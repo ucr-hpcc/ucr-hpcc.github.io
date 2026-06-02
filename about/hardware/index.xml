@@ -53,7 +53,7 @@
 &lt;ul>
 &lt;li>Resources: 256 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 0.5 GB RAM) sample jobs&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>

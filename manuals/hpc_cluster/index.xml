@@ -55,7 +55,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;/li>
 &lt;li>Intel
 &lt;ul>
-&lt;li>i01-i40: each with 32 Intel Broadwell cores and 512 GB memory&lt;/li>
+&lt;li>i01-i02,i17-i40: each with 32 Intel Broadwell cores and 512 GB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Epyc
@@ -66,6 +66,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;li>Highmem
 &lt;ul>
 &lt;li>h01-h06: each with 32 Intel cores and 1024 GB memory&lt;/li>
+&lt;li>h07: Intel Xeon Max 9468 and 3 TB memory&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>GPU
@@ -74,11 +75,7 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;li>gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory&lt;/li>
 &lt;li>gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory&lt;/li>
 &lt;li>gpu06-gpu08: with 64-128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory&lt;/li>
-&lt;li>gpu09 (private): 10 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
-&lt;li>gpu10 (private): 4 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
 &lt;li>gpu11: 2 x NVIDIA H100 GPUs (80GB per GPU)&lt;/li>
-&lt;li>gpu12 (private): 2 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
-&lt;li>gpu13-gpu14 (private): each with 9 x NVIDIA RTX Pro 6000 Blackwell GPUs (96GB per GPU)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
@@ -237,7 +234,7 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;/li>
 &lt;li>highmem
 &lt;ul>
-&lt;li>Nodes: h01-h06&lt;/li>
+&lt;li>Nodes: h01-h07&lt;/li>
 &lt;li>CPU: Intel&lt;/li>
 &lt;li>Supported Extensions&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>: AVX, SSE, SSE2, SSE4&lt;/li>
 &lt;li>RAM: 100 GB to 1000 GB&lt;/li>
