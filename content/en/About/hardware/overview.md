@@ -13,19 +13,19 @@ aliases:
 
 * Over 16,000 CPU cores (60% AMD, 40% Intel)
 * 512-1024GB RAM per node
-* GPU: 24x K80, 2x P100, 24x A100, 2x H100
-* IB network @ 56Gbs - 200Gbps (FDR, HDR and NDR)
+* GPU: 24x K80, 2x P100, 24x A100, 2x H100, 16x A6000 Ada, 18x RTX Pro 6000 Blackwell
+* IB network @ 56Gbps - 400Gbps (FDR, HDR and NDR)
 * Queueing system Slurm
 
 ## Parallel data storage system
 
-* 5PB GPFS storage (scales to >50PB)
+* 6PB GPFS storage (scales to >50PB)
 * Home directories on dedicated system
 
 
 ## Backup system
 
-* 5PB GPFS storage
+* 6PB GPFS storage
 * Geographically separated server room
 
 ## Server room

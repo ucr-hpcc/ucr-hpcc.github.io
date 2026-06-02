@@ -29,19 +29,19 @@ The latest hardware/facility description for grant applications is available [he
     * 10 Gb/s switch for Campus wide Science DMZ
     * redundant, load balanced, robust mesh topology
 * Interconnect
-    * 56 Gb/s InfiniBand (FDR)
+    * 56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)
 
 ### Head Nodes
 All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.
 
-* Jay
-    * Resources: 64 cores, 512 GB memory
+* bluejay
+    * Resources: 256 cores, 512 GB memory
     * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs
-* Lark
-    * Resources: 64 cores, 512 GB memory
+    * Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs
+* skylark
+    * Resources: 256 cores, 512 GB memory
     * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs
+    * Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs
 
 ### Worker Nodes
 * Batch
@@ -57,4 +57,9 @@ All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this a
     * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory
     * gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory
     * gpu06-gpu08: with 64-128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory
+    * gpu09 (private): 10 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)
+    * gpu10 (private): 4 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)
+    * gpu11: 2 x NVIDIA H100 GPUs (80GB per GPU)
+    * gpu12 (private): 2 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)
+    * gpu13-gpu14 (private): each with 9 x NVIDIA RTX Pro 6000 Blackwell GPUs (96GB per GPU)
 
