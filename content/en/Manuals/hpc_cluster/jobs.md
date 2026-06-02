@@ -34,7 +34,7 @@ Jobs are submitted to so-called partitions (or queues). Each partition is a grou
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
 * highmem
-    * Nodes: h01-h06
+    * Nodes: h01-h07
     * CPU: Intel
     * Supported Extensions[^1]: AVX, SSE, SSE2, SSE4
     * RAM: 100 GB to 1000 GB

@@ -28,7 +28,7 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
 * bluejay, skylark
     * Resources: 256 cores, 512 GB memory
     * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 0.5 GB RAM) sample jobs
+    * Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs
 
 ## Worker Nodes
 For a full list of nodes, please see our [Node List](https://docs.google.com/spreadsheets/d/1SVH1-c1i075vjt-B0wNPiK87wmLkPltWJlIPgLkmoqU/) sheet. This contains info on all nodes (public and private) that we have. This includes CPU, memory, and GPU specs, as well as any features that the nodes have.
