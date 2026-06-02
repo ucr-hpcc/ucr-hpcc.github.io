@@ -32,6 +32,8 @@ For example:
 
 ```bash
 mpirun --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
+# or
+mpiexec --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
 ```
 
 Or in a Slurm batch script:
@@ -42,6 +44,8 @@ Or in a Slurm batch script:
 #SBATCH -n 4
 
 mpirun --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
+# or
+mpiexec --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
 ```
 
 If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
