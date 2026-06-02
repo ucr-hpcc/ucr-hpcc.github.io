@@ -24,25 +24,25 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;/li>
 &lt;li>Interconnect
 &lt;ul>
-&lt;li>56 Gb/s InfiniBand (FDR)&lt;/li>
+&lt;li>56/200/400 Gb/s InfiniBand (FDR/HDR/NDR)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="head-nodes">Head Nodes&lt;/h3>
 &lt;p>All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.&lt;/p>
 &lt;ul>
-&lt;li>Jay
+&lt;li>bluejay
 &lt;ul>
-&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
+&lt;li>Resources: 256 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Lark
+&lt;li>skylark
 &lt;ul>
-&lt;li>Resources: 64 cores, 512 GB memory&lt;/li>
+&lt;li>Resources: 256 cores, 512 GB memory&lt;/li>
 &lt;li>Primary function: submitting jobs to the queuing system&lt;/li>
-&lt;li>Secondary function: development; code editing and running small (under 50 % CPU and under 1 GB RAM) sample jobs&lt;/li>
+&lt;li>Secondary function: development; code editing and running small (under 100 % CPU and under 1 GB RAM) sample jobs&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -74,6 +74,11 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;li>gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Kepler K80 GPUs (12GB and 2496 CUDA cores per GPU) and 512 GB memory&lt;/li>
 &lt;li>gpu05: 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Pascal P100 GPUs (16GB and 3584 CUDA cores per GPU) and 256 GB memory&lt;/li>
 &lt;li>gpu06-gpu08: with 64-128 (HT) cores AMD CPUs and 8 x NVIDIA A100 GPUs (80GB and 6912 CUDA cores per GPU) and 1,024 GB memory&lt;/li>
+&lt;li>gpu09 (private): 10 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
+&lt;li>gpu10 (private): 4 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
+&lt;li>gpu11: 2 x NVIDIA H100 GPUs (80GB per GPU)&lt;/li>
+&lt;li>gpu12 (private): 2 x NVIDIA RTX A6000 Ada GPUs (48GB per GPU)&lt;/li>
+&lt;li>gpu13-gpu14 (private): each with 9 x NVIDIA RTX Pro 6000 Blackwell GPUs (96GB per GPU)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
@@ -250,9 +255,9 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;/li>
 &lt;li>gpu
 &lt;ul>
-&lt;li>Nodes: gpu01-gpu08&lt;/li>
+&lt;li>Nodes: gpu01-gpu14&lt;/li>
 &lt;li>CPU: AMD/Intel&lt;/li>
-&lt;li>GPUs: NVIDIA k80, p100, a100, h100&lt;/li>
+&lt;li>GPUs: NVIDIA k80, p100, a100, h100, ada6000, blackwell6000&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 48 hours (2 days) default&lt;/li>
 &lt;/ul>
@@ -267,9 +272,9 @@ The head nodes (login nodes) are a shared resource and should be accessible by a
 &lt;/li>
 &lt;li>short_gpu
 &lt;ul>
-&lt;li>Nodes: gpu01-gpu10&lt;/li>
+&lt;li>Nodes: gpu01-gpu14&lt;/li>
 &lt;li>CPU: AMD/Intel&lt;/li>
-&lt;li>GPUs: NVIDIA k80, p100, a100, h100, ada6000&lt;/li>
+&lt;li>GPUs: NVIDIA k80, p100, a100, h100, ada6000, blackwell6000&lt;/li>
 &lt;li>RAM: 1 GB default&lt;/li>
 &lt;li>Time (walltime): 2 hours Maximum&lt;/li>
 &lt;/ul>
@@ -510,7 +515,7 @@ echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;p>Of course you should adjust the time argument according to your job requirements.&lt;/p>
 &lt;h3 id="gpu-jobs">GPU Jobs&lt;/h3>
-&lt;p>GPU nodes have multiple GPUs, and vary in type (K80, P100, A100, or H100). This means you need to request how many GPUs and of what type that you would like to use.&lt;/p>
+&lt;p>GPU nodes have multiple GPUs, and vary in type (K80, P100, A100, H100, A6000 Ada, or RTX Pro 6000 Blackwell). This means you need to request how many GPUs and of what type that you would like to use.&lt;/p>
 &lt;p>To request a gpu of any type, only indicate how many GPUs you would like to use.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
@@ -518,7 +523,7 @@ echo &amp;quot;I have array ID ${SLURM_ARRAY_TASK_ID}&amp;quot;
 &lt;p>Interactive&lt;/p>
 &lt;pre>&lt;code class="language-bash">srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 &lt;/code>&lt;/pre>
-&lt;p>Since the HPCC Cluster has many different types of GPUs installed (eg. K80, P100, A100, H100), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Worker Node&lt;/a> section of our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/">Hardware Details&lt;/a> page.&lt;/p>
+&lt;p>Since the HPCC Cluster has many different types of GPUs installed (eg. K80, P100, A100, H100, A6000 Ada, RTX Pro 6000 Blackwell), GPUs can be requested explicitly by type. More info on what GPUs are available can be found in the &lt;a href="https://hpcc.ucr.edu/about/hardware/details/#worker-nodes">Worker Node&lt;/a> section of our &lt;a href="https://hpcc.ucr.edu/about/hardware/details/">Hardware Details&lt;/a> page.&lt;/p>
 &lt;p>Non-Interactive:&lt;/p>
 &lt;pre>&lt;code class="language-bash">sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
