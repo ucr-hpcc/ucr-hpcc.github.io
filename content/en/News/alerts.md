@@ -38,7 +38,7 @@ Or in a Slurm batch script:
 
 ```bash
 #!/bin/bash
-#SBATCH -p batch
+#SBATCH -p epyc
 #SBATCH -n 4
 
 mpirun --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
