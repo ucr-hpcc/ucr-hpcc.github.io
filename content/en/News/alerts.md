@@ -12,7 +12,39 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-No exceptions observed at this time.
+__[2 Jun 2026] MPI Job Failures Due to Security Update__
+
+In response to a recent vulnerability, the system's ptrace scope has been restricted. This change can cause certain MPI jobs to fail, particularly those that rely on cross-memory attach (CMA) for inter-process communication.
+
+If your MPI job is failing unexpectedly, check your job output for errors such as:
+
+```
+Read -1, expected 2642383392, errno = 1
+```
+
+If you see this, you can work around this by disabling the vader CMA mechanism with the following flag:
+
+```
+--mca btl_vader_single_copy_mechanism none
+```
+
+For example:
+
+```bash
+mpirun --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
+```
+
+Or in a Slurm batch script:
+
+```bash
+#!/bin/bash
+#SBATCH -p batch
+#SBATCH -n 4
+
+mpirun --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
+```
+
+If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
 
 
 ## Scheduled exceptions and downtimes
