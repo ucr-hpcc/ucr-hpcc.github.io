@@ -334,9 +334,14 @@ enable = true
     weight = 2
   [[menu.main]]
     parent = "News"
+    name = "Updates"
+    url = "/news/updates/"
+    weight = 3
+  [[menu.main]]
+    parent = "News"
     name = "Upgrades"
     url = "/changes/"
-    weight = 3
+    weight = 4
 
 # Events
 [[menu.main]]
