@@ -12,6 +12,26 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
+__[3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH__
+
+The `apptainer` module (`module load apptainer`) no longer automatically sets the `APPTAINER_BINDPATH` environment variable. If your Apptainer containers rely on this variable to bind host paths (e.g. `/rhome`, `/bigdata`), they may fail to find expected files.
+
+To fix this, explicitly pass bind paths using the `--bind` flag when running your container:
+
+```bash
+apptainer exec --bind /rhome,/bigdata my_container.sif my_command
+```
+
+Alternatively, you can set `APPTAINER_BINDPATH` yourself before running Apptainer:
+
+```bash
+export APPTAINER_BINDPATH=/rhome,/bigdata
+apptainer exec my_container.sif my_command
+```
+
+If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
+
+
 __[2 Jun 2026] MPI Job Failures Due to Security Update__
 
 In response to a recent vulnerability, the system's ptrace scope has been restricted. This change can cause certain MPI jobs to fail, particularly those that rely on cross-memory attach (CMA) for inter-process communication.
