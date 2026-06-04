@@ -9,9 +9,7 @@ Smaller updates and notices about the HPCC cluster. For outages and downtime eve
 
 ## Recent Updates
 
-### June 2026
-
-#### [3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH
+### [3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH
 
 The `apptainer` module (`module load apptainer`) no longer automatically sets the `APPTAINER_BINDPATH` environment variable. If your Apptainer containers rely on this variable to bind host paths (e.g. `/rhome`, `/bigdata`), they may fail to find expected files.
 
