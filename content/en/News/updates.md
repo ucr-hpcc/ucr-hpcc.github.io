@@ -7,7 +7,11 @@ weight: 3
 
 Smaller updates and notices about the HPCC cluster. For outages and downtime events, see [Alerts](/news/alerts). For major announcements, see [Announcements](/news/announce).
 
-__[3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH__
+## Recent Updates
+
+### June 2026
+
+#### [3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH
 
 The `apptainer` module (`module load apptainer`) no longer automatically sets the `APPTAINER_BINDPATH` environment variable. If your Apptainer containers rely on this variable to bind host paths (e.g. `/rhome`, `/bigdata`), they may fail to find expected files.
 
@@ -26,3 +30,4 @@ apptainer exec my_container.sif my_command
 
 If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
 
+## Old Updates
