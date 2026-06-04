@@ -12,7 +12,7 @@ aliases:
 
 ## Unscheduled exceptions and downtimes
 
-__[3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH__
+### [3 Jun 2026] Apptainer Module No Longer Sets APPTAINER_BINDPATH
 
 The `apptainer` module (`module load apptainer`) no longer automatically sets the `APPTAINER_BINDPATH` environment variable. If your Apptainer containers rely on this variable to bind host paths (e.g. `/rhome`, `/bigdata`), they may fail to find expected files.
 
@@ -32,7 +32,7 @@ apptainer exec my_container.sif my_command
 If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
 
 
-__[2 Jun 2026] MPI Job Failures Due to Security Update__
+### [2 Jun 2026] MPI Job Failures Due to Security Update
 
 In response to a recent vulnerability, the system's ptrace scope has been restricted. This change can cause certain MPI jobs to fail, particularly those that rely on cross-memory attach (CMA) for inter-process communication.
 
@@ -77,7 +77,7 @@ No downtime events scheduled at this time.
 
 ## Past exceptions
 
-__[8 May 2026] Unavoidable HPCC Cluster Maintenance Shutdown__
+### [8 May 2026] Unavoidable HPCC Cluster Maintenance Shutdown
 
 When: Friday, May 8 2026, 8am-8pm
 
@@ -92,7 +92,7 @@ or sessions before 8:00 AM to reduce the risk of lost work.
 
 We apologize for the short notice and appreciate your understanding.
 
-__[18-Feb-2026] HPCC Cluster Maintenance Shutdown__
+### [18-Feb-2026] HPCC Cluster Maintenance Shutdown
 
 UCR HPCC will be performing routine maintenance on the cluster between the following times:
 
@@ -103,7 +103,7 @@ A Slurm reservation block has been set to prevent jobs from running during maint
 "ReqNodeNotAvail", you may either reduce the duration of your job (using the `-t` flag) to finish before the shutdown, or leave the job in the queue where it
 will start once nodes are brought online. We apologize for the disruption that this shutdown will cause.
 
-__19-Oct-2025 UCR Campus Network Maintenance__
+### 19-Oct-2025 UCR Campus Network Maintenance
 
 UCR Information Technology Services (ITS) will be performing campus network maintenance on **Sunday, Oct 19 2025, from 4am to 12pm**.
 This will likely disrupt network activity for the HPCC facility.
@@ -113,7 +113,7 @@ Please save any open sessions prior to the maintenance window, and avoid connect
 
 [TechAlerts - UCR ITS](https://techalerts.ucr.edu)
 
-__5-Sept-2025 HPCC Follow-up Shutdown__
+### 5-Sept-2025 HPCC Follow-up Shutdown
 
 **Update Sept. 6 3:45PM**: The Slurm reservation has been removed and queued jobs have started running!
 
@@ -128,7 +128,7 @@ HPCC is not planning any significant cluster maintenance tasks for this shutdown
 As such, downtime should be much shorter than previous scheduled shutdowns.
 
 
-__01-September-2025 (Updated Sept. 2)__
+### 01-September-2025 (Updated Sept. 2)
 
 **Update**: Most HPCC services should have resumed normal operations, including email support. Any emails sent between approx. 5pm Sept 1st and 8AM Sept 2nd should be resent as they were likely lost.
 
@@ -136,19 +136,19 @@ On the evening of September 1st, the machine that handles storage for various vi
 
 In the meantime, since email support might be flakey, our main form of communication will be via our Slack Workspace: [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)
 
-__15-Aug-2025__ 
+### 15-Aug-2025
 
 * __11:00 AM__: The Slurm reservation block has been lifted. Computing jobs are running again on the cluster, and we are bringing more and more nodes back online. We are optimistic that all services will be back online today. 
 
 * __3:00 PM__: Almost all services are back online, with the exception of few non-essential nodes. Again, sorry for the additional time it took to get back to normal.  
 
-__14-Aug-2025__ 
+### 14-Aug-2025
 
 * __12:00 PM__: The electrical work has been completed by the construction company. To avoid additional shutdowns, we are deploying as many maintenance upgrades as possible during this shutdown (e.g. file system, network, Slurm, etc), and we were trying to complete them within the planned shutdown time. 
 
 * __6:00 PM__: At the moment, the headnodes are available for data access and light work. Compute nodes will be functional in the next 24 hours. We apologize for the delay in bringing all services back online. 
 
-__12-August-2025 (Updated Aug 7)__
+### 12-August-2025 (Updated Aug 7)
 
 * Start: 9:00AM, Tuesday August 12th 
 * End: evening, Thursday August 14th
@@ -160,7 +160,7 @@ shutdown has been set to Aug 12th-14th. The HPCC apologizes for these
 scheduling changes. These electrical upgrades are extremely important for the
 long-term health of UCR's research computing infrastructure. 
 
-__18-June-2025__
+### 18-June-2025
 
 * __2:45 PM__: Power is restored and ssh into our head nodes is working again. More detailed information to follow...
 
@@ -169,7 +169,7 @@ __18-June-2025__
 * __3:00 PM__: All HPCC Services should be available again. Please reach out to support if you find anything misbehaiving, and stay up to date with the remaining ITS outages on the [TechAlerts](https://techalerts.ucr.edu/) page.
 
 
-__14-May-2025__
+### 14-May-2025
 
 * __1:00 AM__: There was a power outage affecting several buildings on campus, including our server room in SOMED1 at approximately 1AM. Until the larger 500kW UPS will be installed in late
 summer, not all of our computing nodes are battery backed up. However, our core infrastructure is UPS backed up, including storage, administration nodes, etc. 
@@ -180,7 +180,7 @@ and we're working on bringing the remaining nodes back online.
 * __9:00 AM__: Most or all machines and services should be operational again. Jobs that were impacted should be requeued automatically.
 
 
-__17-Mar-2025__
+### 17-Mar-2025
 
 * 8:00 AM: We are still working on the getting the internal network configured in the new server room.
 We are optimistic to finalize the configuration later today. Sorry again for these delays.
@@ -190,7 +190,7 @@ It's unlikely that all compute resources will come online by tonight.
 follow when we've properly assessed power/network load balancing and server room cooling capacity. OnDemand
 should be functional. Other secondary services like JupyterHub and license servers will come online tomorrow.
 
-__15-Mar-2025__
+### 15-Mar-2025
 
 The cluster shutdown is unfortunately running behind schedule, due to unexpected delays in the moving process.
 We apologize for the extended shutdown, and the negative impact this will have on your research.
@@ -199,7 +199,7 @@ We apologize for the extended shutdown, and the negative impact this will have o
 * 10:00 AM: Sysadmins are on site to continue work on restoring cluster functionality.
 * 9:00 PM: Sysadmins have concluded their efforts for the weekend. Network difficulties hindered our progress.
 
-__10-Mar-2025 to 14-Mar-2025__
+### 10-Mar-2025 to 14-Mar-2025
 
 **_Move into New Server Room:_** The HPCC's long-awaited move to a much larger and newly renovated server room
 in the SOM-ED1 building is finally happening! This major improvement will
@@ -221,13 +221,13 @@ group communication with users.
 
 **_Notes:_** As we get closer to the shutdown you might see your jobs get queued with the reason "ReqNodeNotAvail, Reserved for maintenance". This will happen when the runtime of your job will overlap with the shutdown. If your job can tolerate a shorter runtime, please adjust it to not overlap. If the job requires a longer runtime, then it will need to wait until after our servers are back online.
 
-__23-Feb-2025: AC Issues__
+### 23-Feb-2025: AC Issues
 
 + 8:00AM: The condensers on the roof of the Genomics building both lost power, which caused both CRAC units in our server room to stop cooling. Facilities is on site and are working to bring the AC units back online.
 + 9:00AM: Facilities was able to bring one of the condensers back online, and are working on bringing one of the AC units back to alleviate some of the heat. To prevent our power infrastructure from overheating, we've had to kill running jobs on the cluster. We apologize for this inconvenience.
 + 12:00PM: Emergency repairs on the AC system are complete, and load-shedded servers have been brought back online. Thank you for your patience.
 
-__02-Nov-2024: AC Issues__
+### 02-Nov-2024: AC Issues
 
 + 11:00AM: One of our 2 redundent AC units has began blowing hot air into the server room. While facilities diagnoses and resolves the issue we have paused the Slurm queue. We are sorry for the interruption.
 + 12:00PM: Update: to avoid overheating the power in the HPCC had to be shut down. This affects all HPCC services hosted from the Genomics Server room, including SSH login, Slurm jobs, and e-mail ticket system. We're working on bringing services up safely and quickly.
@@ -238,19 +238,19 @@ __02-Nov-2024: AC Issues__
 + 11:00AM (Nov 7): Facilities is in the process of obtaining the equipment necessary for the repairs. We've been told by them that the repair will not require shutting down the AC units, so **we can resume operations as normal. We have removed the existing reservation, so long-running jobs may begin. We will continue to release the remaining offline nodes throughout the day as well.**
 
 
-__24-Jun-2024: AC Work Completed__
+### 24-Jun-2024: AC Work Completed
 The AC repairs have been completed by facilities. Over the next few hours we will slowly begin to bring nodes back online.
 
-__22-Jun-2024: Update on AC Unit Problems__
+### 22-Jun-2024: Update on AC Unit Problems
 
 UCR Facilities was able to return the affected AC unit to working order. However, the unit is still in suboptimal condition, and will have to be powered off for full maintenance on Monday (Jun 24). Until then, HPCC will have to limit the capacity of the Slurm cluster. This compromise will allow maintenance to be safely performed without resorting to a full emergency cancellation of all jobs.
 
 
-__21-Jun-2024: Network Outage and HVAC Problem__
+### 21-Jun-2024: Network Outage and HVAC Problem
 
 Starting 5:15 PM the network connection to the HPCC server room is down. This might be related to a larger network problem on campus, see [here](https://techalerts.ucr.edu/). Update 7:30 PM: the network connection is working again, but as it turns out there also is a problem with one of the HVAC units in the server room. It is still unclear how the two problems are connected. Currently, facilities is working on the HVAC problem. To avoid overheating, the Slurm queue has been paused by the sys admins. Current jobs will continue to run, while pending jobs will need to wait until the situation improves. 
 
-__CANCELLED: June 14th Shutdown Ahead of Genomics Electrical Maintenance__
+### CANCELLED: June 14th Shutdown Ahead of Genomics Electrical Maintenance
 
 Starting on Friday, June 14th at 8am and extending to Saturday, June 15th at 11pm UCR HPCC will be powering down the cluster ahead of a scheduled electrical shutdown of the UCR Genomics Building. To make the most of this downtime, HPCC will offline the cluster on the 14th in order to install routine software updates and perform other minor maintenance tasks. During the shutdown, most of our online services hosted from the UCR Genomics Building will be unavailable including, but is not limited to: SSH, Slurm, Rstudio, JupyterHub, OnDemand, and web file access. Please save your work on any of these services before the maintenance window. E-mail support may be temporarily interrupted, but should otherwise remain online. We recommend checking our [Slack channel](https://ucr-hpcc.slack.com/) for any minor status updates during the shutdown.
 
@@ -258,7 +258,7 @@ If you submit a Slurm or OnDemand job that extends into the maintenance window, 
 
 We apologize for the disruption to your research and teaching workflows. Thanks for your understanding.
 
-__7-May-2024: AC Unit Repairs, Slurm Paused__
+### 7-May-2024: AC Unit Repairs, Slurm Paused
 
 After investigating a High Temperature warning on one of our AC units, campus Facilities determined a component in one of the AC units appears to be faulty and needs to be replaced. They are planning on receiving the replacement part the morning of the 8th, but in order to do the replacement both AC units will need to be taken offline. We've began putting nodes into a "draining" state in an attempt to bring the load on the cluster as low as possible to best manage heat in the server room. Existing jobs will continue to run, but newly scheduled jobs will be put in the queue until we can confirm that the repair has been completed and the AC units are online again. We know this is disruptive to your research and teaching, and we apologize for this development.
 
@@ -270,7 +270,7 @@ After investigating a High Temperature warning on one of our AC units, campus Fa
 
 **Update 4:** Facilities has completed the repairs, and all nodes have been released.
 
-__08-Mar-2024 AC Unit Refrigerant Leak, Queue Paused__
+### 08-Mar-2024 AC Unit Refrigerant Leak, Queue Paused
 
 The UCR HPCC Slurm queue has been paused due to another AC malfunction in the server room. Earlier on Thursday (March 7th) afternoon, UCR Facilities was called in to check an AC alarm and determined that one of our AC units had low refrigerant. While attempting to recharge the AC refrigerant a leak occurred, forcing personnel to evacuate the room for their own safety. They intend to start the repair first thing on Friday (March 8th) morning. But because that AC unit is still not running at full capacity, cooling is limited. As such, the Slurm queue has been paused as a precaution to keep the room within a safe temperature. We understand that this will be disruptive to your work, and we apologize for this development.
 
@@ -278,7 +278,7 @@ Update 1: After speaking with the person performing the repair, they said that t
 
 Update 2: The repair has been completed and the Slurm queue has been released.
 
-__22-Feb-2023: Upgrades of OS and GPFS__
+### 22-Feb-2023: Upgrades of OS and GPFS
 
 Starting Thursday, February 22nd at 8:00am and lasting until Friday, February 23rd at 8:00pm, the cluster will be unavailable due 
 to an upgrade of the Operating System as well as our central storage system. Any submitted jobs that overlap with the shutdown time will
@@ -291,7 +291,7 @@ email (support@hpcc.ucr.edu).
 
 **Update**: The shutdown had finished and the Slurm queue has been reopened.
 
-__19-Jan-2024: AC Unit Repair Followup__
+### 19-Jan-2024: AC Unit Repair Followup
 
 Due to followup maintenance required following the January 17th repairs, the
 slurm queue will once again need to be haulted in order to manage heat output
@@ -300,7 +300,7 @@ queue will be released again.
 
 **Update**: The repair has been completed. Nodes will be resumed and queue opened.
 
-__17-Jan-2024: AC Unit repair__
+### 17-Jan-2024: AC Unit repair
 
 The AC units in the HPCC server room are experiencing issues. To keep the
 operating temperature within safe limits, the job queue has been halted. New
@@ -310,13 +310,13 @@ to finish. We apologize for the inconvenience.
 **Update**: The maintenance has completed, but a followup repair will be required in
 order to return to 100% operation of the AC units.
 
-__14 Aug, 2023: Login and GPFS storage issues__
+### 14 Aug, 2023: Login and GPFS storage issues
 
 * The login service on the primary headnode failed on Monday afternoon. A new headnode with updated software is now
   online, so users may access their files and do some light work. The GPFS cluster file system also exhibited some
   performance stalls. The Slurm scheduler has been paused until this issue subsides.
 
-__4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
+### 4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution
 
 * HPCC staff will be performing maintenance work on Aug 4th to Aug 5th that will require a shut down of the HPCC cluster. 
   Objectives for this event include the following upgrades: GPFS, Slurm, OS upgrade to Rocky Linux 8.8, 
@@ -338,48 +338,48 @@ __4-Aug-2023: Upgrades of OS, GPFS, Slurm, Head Nodes and Power Distribution__
 - Final update Aug 11th: All remaining services are available again. The maintenance is complete. This includes remaining CPU and GPU nodes, etc. 
   We apologize for the extended time it took us to bring all services online again. Thank you for your understanding.
 
-__17-18 Jul, 2023: Slurm halted__
+### 17-18 Jul, 2023: Slurm halted
 
 * Facilities had to perform maintenance on the AC units due to the formation of condensation water by the AC units,
   possibly caused by hot summer days. During the maintenance Slurm jobs had to be halted to avoid overheating.
   Running jobs will be allowed to continue, provided that the server room does not get too hot.
 
-__10-Apr-2023: Bigdata back__
+### 10-Apr-2023: Bigdata back
 
 * 5:30 PM - Bigdata is back. Thank for for your patience.
 
-__10-Apr-2023: Bigdata down__
+### 10-Apr-2023: Bigdata down
 
 * 4:30 PM - Bigdata is currently down. Please be patient...
 
-__22-Dec-2022: Network outage__
+### 22-Dec-2022: Network outage
 
 * 9:00 AM - Due to a network outage the cluster was inaccessible for several hours.
 
-__1-Nov-2022: Network router repair__
+### 1-Nov-2022: Network router repair
 
 * 9:00 PM - ITS had to repair a router in the Genomics Building. Around 4:00 AM
   in the morning (Nov 2nd) network access to the Genomics Building became available
   again. During the affected time window the cluster was not accessible (_e.g._ via ssh).
   Processes running on the cluster were not affected.
 
-__25-Jun-2021: Bigdata storage repaired__
+### 25-Jun-2021: Bigdata storage repaired
 
 * 5:00 PM - Server running our bigdata storage have been recovered, and all functions of bigdata directory is now back to normal.
 
-__25-Jun-2021: Bigdata storage failed__
+### 25-Jun-2021: Bigdata storage failed
 
 * 3:30 PM - Server running our bigdata storage crashed, and bigdata directory went down with it.
 
-__12-Jan-2020: AC unit repaired__
+### 12-Jan-2020: AC unit repaired
 
 * 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.
 
-__11-Jan-2020: AC unit failed__
+### 11-Jan-2020: AC unit failed
 
 * 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
 
-__5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room__
+### 5-6 May, 2023: Maintenance and Electrical Power Upgrades in Server Room
 
 * UCR Facilities Services will be upgrading our electrical capacity in the Genomics server room. To take advantage
 of the unavoidable system downtime, the HPCC will perform general maintenance and various upgrades on the cluster. The
@@ -389,30 +389,30 @@ shutdown is expected to last 2 days. It has been scheduled during a weekend to m
 let us know at support@hpcc.ucr.edu, or at our Slack channel (https://ucr-hpcc.slack.com). Thanks you for your
 patience and understanding.
 
-__28-Oct-2020: Cluster jobs failed due to storage suspension__
+### 28-Oct-2020: Cluster jobs failed due to storage suspension
 
 * 3:00 PM - During a routine extension of the bigdata filesystem, there were some complications and disk i/o had to be suspended.
 * 5:30 PM - We have repaired the issue, and everything should be functioning as usual. However, this means that all computing jobs running during timeframe were stopped and will need to be restarted.
 
-__19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
+### 19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg
 
 * 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
 * 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
 * 10:00 PM - Facilities was able to bring up the power and cooling again.
 * 8:30 PM - Facilities is investigating and trying to reactivate power and cooling.
 
-__10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
+### 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg
 
 At 5:10 PM: Facilities has restored power and cooling systems in the server room. HPC systems admin Jordan Hayes is restarting the cluster and storage systems.
 At 10:10 PM:  All HPCC services were restored (computing cluster, storage systems, web services).
 
-__22-Mar-2020: Cluster inaccessible due to campus-wide network outage__
+### 22-Mar-2020: Cluster inaccessible due to campus-wide network outage
 
 Due to a campus-wide network outage at UCR, many HPCC services were not accessible between 8:00 AM and 1:00 PM. 
 Currently, most HPCC services are accessible again. Note, running jobs on the cluster should not have been affected by this disruption.
 Updates about the current situations can be found [here](https://techalerts.ucr.edu/). 
 
-__13-Mar-2020: Routine maintenance shutdown__
+### 13-Mar-2020: Routine maintenance shutdown
 
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 13th.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, 
@@ -420,7 +420,7 @@ virtual environments/machines, storage systems, backup systems, and network serv
 We ask that you please make sure that you do not have any jobs running in the queue, 
 and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
-__08-Jan-2020: Storage outage__
+### 08-Jan-2020: Storage outage
 
 We had some issues with our storage systems this evening that may have caused
 disruptions in your work. These issues should be resolved. We're continuing to
@@ -429,13 +429,13 @@ any inconveniences this may have caused. Please let us know at
 support@hpcc.ucr.edu if you require any assistance regarding job status and
 recovery.
 
-__21-Nov-2019: Routine filesystem maintenance and diagnostics__
+### 21-Nov-2019: Routine filesystem maintenance and diagnostics
 
 We have scheduled an HPCC Cluster Maintenance Shutdown for this Thursday, November 21st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services.
 We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
-__23-Aug-2019: Routine maintenance shutdown__
+### 23-Aug-2019: Routine maintenance shutdown
 
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
@@ -445,7 +445,7 @@ jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: completed.
 For user changes related to this maintenance please see [here](/changes).
 
-__01-Mar-2019: Routine Maintenance Shutdown__
+### 01-Mar-2019: Routine Maintenance Shutdown
 
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
@@ -454,27 +454,27 @@ network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: successfully completed.
 
-__1:00 PM, 20-Dec-18: Outage due to AC failure__
+### 1:00 PM, 20-Dec-18: Outage due to AC failure
 
 All systems were down for 3 hours due to a failure of the AC units in our server
 room. Electricians and AC technicians have repaired the units.
 
-__2:30 PM, 11-Jul-18: Storage Issues__
+### 2:30 PM, 11-Jul-18: Storage Issues
 
 For the past several weeks we have been observing slower storage access.
 In some cases the /bigdata storage was inaccessible for several minutes and caused some jobs to terminate prematurely.
 We have identified the issue and have taken steps to ensure that this problem does not reoccur.
 
-__6:00 PM, 02-Jul-18: Storage Issues__
+### 6:00 PM, 02-Jul-18: Storage Issues
 
 Storage issues on the afternoon of July 2, 2018 caused disruptions in some cluster services. The issues should be resolved, but we're continuing to monitor the situation for any other developments.
 
-__12:00 AM, 31-Jan-18: routine maintenance shutdown__
+### 12:00 AM, 31-Jan-18: routine maintenance shutdown
 
 For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
 shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. (complete) 
 
-__12:00 AM, 05-Dec-17: NFS & SMB issues__
+### 12:00 AM, 05-Dec-17: NFS & SMB issues
 
 NFS and SMB services have been suspended temporarily.
 This will cause many of our web services to not function properly.
@@ -487,14 +487,14 @@ These include, but not limited to:
 
 Note, this issue was resolved soon after it occurred. 
 
-__11:00 AM, 13-Aug-17: Cooling problem__
+### 11:00 AM, 13-Aug-17: Cooling problem
 
 Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
 we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
 is repaired we will power these nodes back on. Note, this issue was resolved on 17-Aug-17.
 UCR facility services has repaired the broken HVAC unit and serviced the second one. 
 
-__12:00 AM, 16-Jun-17 to 17-Jun-17: maintenance shutdown__
+### 12:00 AM, 16-Jun-17 to 17-Jun-17: maintenance shutdown
 
 To sustain future growth, the power load in the HPCC server room needs to be
 optimized. For this we have scheduled an HPCC (Biocluster) shutdown in four
@@ -505,13 +505,13 @@ network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, owl, penguin, pelican, globus) before the shutdown. 
 
-__10:02 AM, 13-Apr-17: UPS failure__
+### 10:02 AM, 13-Apr-17: UPS failure
 
 Our UPS unit went down some time last night causing a power failure on all systems. Jordan is bypassing the UPS to bring things back up in the next
 few hours. Nationwide Power will come in asap to repair the UPS. Note, this failure has not resulted in any overheating problems since the AC units
 are running on a different power cricuit.
 
-__11:22 AM, 13-Apr-17: Cluster back up running__
+### 11:22 AM, 13-Apr-17: Cluster back up running
 
 Situation is resolved for now and things are working. We are currently discussing the situation with our electricians to avoid future instances.
 
