@@ -186,7 +186,7 @@ legacy_blast.pl blastall -p blastp -i proteins.fasta -d $NCBI_DB/nr -o blast.out
 &lt;h3 id="cpu-and-memory">CPU and Memory&lt;/h3>
 &lt;p>Please refer to our &lt;a href="https://hpcc.ucr.edu/manuals/hpc_cluster/queue/">Queue Policies&lt;/a> page for details regarding CPU and Memory limits.&lt;/p>
 &lt;h3 id="data-storage">Data Storage&lt;/h3>
-&lt;p>A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account&amp;rsquo;s bigdata directory. The amount of storage space available in bigdata depends on a user group&amp;rsquo;s annual subscription. The pricing for extending the storage space in the bigdata directory is available &lt;a href="../../about/overview/access/">here&lt;/a>.&lt;/p>
+&lt;p>A standard user account has a storage quota of 50GB. Much more storage space, in the range of many TBs, can be made available in a user account&amp;rsquo;s bigdata directory. The amount of storage space available in bigdata depends on a user group&amp;rsquo;s annual subscription. The pricing for extending the storage space in the bigdata directory is available &lt;a href="../../about/overview/access/">here&lt;/a>.&lt;/p>
 &lt;h2 id="whats-next">What&amp;rsquo;s Next?&lt;/h2>
 &lt;p>You should now know the following:&lt;/p>
 &lt;ol>
@@ -1033,7 +1033,7 @@ Conda allows you to do this through virtual environments.&lt;/p>
 &lt;h5 id="initialize">Initialize&lt;/h5>
 &lt;p>Conda will now auto initialize when you load the corresponding module. No need to run the &lt;code>conda init&lt;/code> or make any modifications to your &lt;code>~/.bashrc&lt;/code> file.&lt;/p>
 &lt;h5 id="configure">Configure&lt;/h5>
-&lt;p>Installing many packages can consume a large (ie. &amp;gt;20GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
+&lt;p>Installing many packages can consume a large (ie. &amp;gt;50GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
 If you have bigdata, create the &lt;code>.condarc&lt;/code> file (otherwise conda environments will be created under your home directory).&lt;/p>
 &lt;p>Create the file &lt;code>.condarc&lt;/code> in your home, with the following content:&lt;/p>
 &lt;pre>&lt;code>channels:
@@ -1171,7 +1171,7 @@ install.packages(&amp;quot;http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz&a
 &lt;h2 id="dashboard">Dashboard&lt;/h2>
 &lt;p>HPCC cluster users are able to check on their home and bigdata storage usage from the &lt;a href="https://dashboard.hpcc.ucr.edu">Dashboard Portal&lt;/a>. Note that there is a known issue with the dashboard&amp;rsquo;s display of usage when users are a part of multiple labs.&lt;/p>
 &lt;h2 id="home">Home&lt;/h2>
-&lt;p>Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster. This is usually where you place the scripts and various things you are working on. This space is very limited. Please remember that the home storage space quota per user account is 20 GB.&lt;/p>
+&lt;p>Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster. This is usually where you place the scripts and various things you are working on. This space is very limited. Please remember that the home storage space quota per user account is 50 GB.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>

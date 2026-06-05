@@ -171,7 +171,7 @@ These two &amp;ldquo;bigdata&amp;rdquo; directories &lt;code>/bigdata/groupname/
 |-- opt | |
 |-- proc | |
 |-- rhome | |
-|-- username (20GB Quota) | |
+|-- username (50GB Quota) | |
 |-- shared ----------&amp;gt;| |
 |-- bigdata --------------&amp;gt;|
 |-- root
