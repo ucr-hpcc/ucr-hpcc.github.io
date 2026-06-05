@@ -68,7 +68,7 @@ These two "bigdata" directories `/bigdata/groupname/username` and `/bigdata/grou
 |-- opt                       |    |
 |-- proc                      |    |
 |-- rhome                     |    |
-    |-- username (20GB Quota) |    |
+    |-- username (50GB Quota) |    |
         |-- shared ---------->|    |
         |-- bigdata -------------->|
 |-- root

@@ -42,7 +42,7 @@ Conda allows you to do this through virtual environments.
 Conda will now auto initialize when you load the corresponding module. No need to run the `conda init` or make any modifications to your `~/.bashrc` file.
 
 ##### Configure
-Installing many packages can consume a large (ie. >20GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
+Installing many packages can consume a large (ie. >50GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
 If you have bigdata, create the `.condarc` file (otherwise conda environments will be created under your home directory).
 
  Create the file `.condarc` in your home, with the following content:

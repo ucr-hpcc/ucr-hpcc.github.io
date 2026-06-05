@@ -171,7 +171,7 @@ Please refer to our [Queue Policies](https://hpcc.ucr.edu/manuals/hpc_cluster/qu
 
 ### Data Storage
 
-A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/about/overview/access/).
+A standard user account has a storage quota of 50GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/about/overview/access/).
 
 
 ## What's Next?
