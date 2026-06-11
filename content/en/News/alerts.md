@@ -53,7 +53,15 @@ If you continue to experience issues, please contact us at support@hpcc.ucr.edu 
 
 ## Scheduled exceptions and downtimes
 
-No downtime events scheduled at this time.
+__[7 Jul 2026] HPCC Cluster Maintenance Shutdown__
+
+UCR HPCC will be performing routine maintenance on the cluster between the following times:
+
+* Start: **Monday, Jul 7 2026, 8am**
+* End:   **Tuesday, Jul 8 2026, 8pm**
+
+A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
+"ReqNodeNotAvail", please be aware that **jobs will not automatically start after the shutdown** — any jobs remaining in the queue at the start of maintenance will be cancelled and will need to be manually requeued once the cluster is back online. We apologize for the disruption that this shutdown will cause.
 
 ## Past exceptions
 
