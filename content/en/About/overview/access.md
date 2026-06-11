@@ -119,6 +119,8 @@ maintain an HPCC subscription. External accounts are subject to an annual
 review and approval process. To be approved, the external and internal PIs have
 to complete this [External Usage Justification](https://bit.ly/32O1lC9).
 
+An exception applies if the external user holds a UCR affiliate account (e.g. visiting scholars, affiliates, or non-salaried positions), in which case a standard account can be requested. More information about UCR affiliate accounts is available [here](https://ucrcard.ucr.edu/affiliates-visiting-scholars-and-non-salaried-positions).
+
 ## Trial Accounts
 If you're not sure if the HPCC might work for your use case, we can offer limited-compute
 accounts to allow for you to test the performance and compatability of your software.
