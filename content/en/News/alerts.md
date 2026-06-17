@@ -10,6 +10,18 @@ aliases:
 
 <!--<iframe src="https://status.hpcc.ucr.edu/status/hpcc" style="text-align:center;width:100%;height:75vh;"></iframe>-->
 
+## Scheduled exceptions and downtimes
+
+__[7 Jul 2026] HPCC Cluster Maintenance Shutdown__
+
+UCR HPCC will be performing routine maintenance on the cluster between the following times:
+
+* Start: **Thursday, Jul 9 2026, 8am**
+* End:   **Friday, Jul 10 2026, 8pm**
+
+A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
+"ReqNodeNotAvail", please be aware that **jobs will not automatically start after the shutdown** — any jobs remaining in the queue at the start of maintenance will be cancelled and will need to be manually requeued once the cluster is back online. We apologize for the disruption that this shutdown will cause.
+
 ## Unscheduled exceptions and downtimes
 
 __[2 Jun 2026] MPI Job Failures Due to Security Update__
@@ -49,19 +61,6 @@ mpiexec --mca btl_vader_single_copy_mechanism none -np 4 ./my_mpi_program
 ```
 
 If you continue to experience issues, please contact us at support@hpcc.ucr.edu or via [Slack](https://ucr-hpcc.slack.com).
-
-
-## Scheduled exceptions and downtimes
-
-__[7 Jul 2026] HPCC Cluster Maintenance Shutdown__
-
-UCR HPCC will be performing routine maintenance on the cluster between the following times:
-
-* Start: **Thursday, Jul 9 2026, 8am**
-* End:   **Friday, Jul 10 2026, 8pm**
-
-A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
-"ReqNodeNotAvail", please be aware that **jobs will not automatically start after the shutdown** — any jobs remaining in the queue at the start of maintenance will be cancelled and will need to be manually requeued once the cluster is back online. We apologize for the disruption that this shutdown will cause.
 
 ## Past exceptions
 
