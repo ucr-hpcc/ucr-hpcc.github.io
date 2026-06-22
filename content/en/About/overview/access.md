@@ -67,7 +67,7 @@ moving them from one location (_e.g._ a data archival system) to another.
 * Computer nodes
         
     * A lab/PI purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown [here](https://www.thinkmate.com/systems/servers/hdx). A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect ([additional example](https://www.gigabyte.com/us/Enterprise/High-Density-Server)). Similar options are available for [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
-    * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
+    * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores. To maximize utilization of computing hardware and server room space, idle capacity may be used for short jobs submitted by other registered users while preserving scheduling priority for the owner laboratory, and HPCC will provide standard system administration and operational maintenance without an additional compute-node maintenance fee.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
 ## Software install
