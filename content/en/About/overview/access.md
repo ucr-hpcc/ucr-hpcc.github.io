@@ -65,10 +65,10 @@ moving them from one location (_e.g._ a data archival system) to another.
 <p></p>
 
 * Computer nodes
-        
-    * A lab/PI purchases compatible computer nodes (e.g. with supported network cards). Examples of popular high-density architecture are quad node systems shown [here](https://www.thinkmate.com/systems/servers/hdx). A quad node system includes 4 nodes where each node can be configured, for example, with two 64 core AMD or Intel chips (providing 128 cores per node or 512 cores per quad node system), 1,024GB of RAM, 2TB SSD and NDR-IB interconnect ([additional example](https://www.gigabyte.com/us/Enterprise/High-Density-Server)). Similar options are available for [GPU](https://www.thinkmate.com/systems/servers/gpx) nodes. 
-    * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores. To maximize utilization of computing hardware and server room space, idle capacity may be used for short jobs submitted by other registered users while preserving scheduling priority for the owner laboratory, and HPCC will provide standard system administration and operational maintenance without an additional compute-node maintenance fee.
-    * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
+      
+    * A lab or PI may purchase compute nodes that meet HPCC hardware and networking requirements. Available configurations include high-density CPU and GPU systems equipped with current-generation Intel, AMD, or NVIDIA processors, large-memory configurations, local NVMe storage, and high-speed InfiniBand networking.
+    * Owned nodes are integrated into the HPCC cluster and administered through a priority-queueing model that provides members of the owner laboratory with preferential access. The laboratory’s applicable CPU or GPU resource quota is increased according to the capacity of its owned systems. To maximize the utilization of computing hardware and server-room infrastructure, idle capacity may be used for short jobs submitted by other registered users while preserving scheduling priority for the owner laboratory. HPCC provides rack space, power, cooling, standard system administration, and operational maintenance for integrated compute nodes without an additional hosting or compute-node maintenance fee.
+    * The ownership model is an attractive and cost-effective option for laboratories requiring continuous, high-priority access to substantial CPU or GPU capacity with minimal queueing delays. It also provides immediate integration with HPCC’s high-speed networking, central storage, extensive software environment, and professionally maintained research-computing infrastructure.
 
 ## Software install
 
