@@ -215,7 +215,7 @@ Users with an HPCC cluster account can access them with the same login credentia
 
 Users accessing HPCC's infrastructure mainly for file transfers and data sharing want to 
 follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
-Users with accounts restricted to data sharing have to provide their public [SSH Key](#ssh-keys) when accesing the system for the first time 
+Users with accounts restricted to data sharing have to provide their public [SSH Key](#ssh-keys) when accessing the system for the first time 
 by following the instructions in the [SSH Key](#ssh-keys) section above. 
 
 
