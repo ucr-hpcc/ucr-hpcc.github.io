@@ -14,13 +14,18 @@ aliases:
 
 __[7 Jul 2026] HPCC Cluster Maintenance Shutdown__
 
+**Update**: During the shutdown, normal email support will be offline for a few hours. If you send an email during the shutdown, there is a chance that it may be lost without warning. For help during the shutdown, please use Slack. For urgent requests, you can also use the personal UCR emails of the HPC Admins (please CC both admins for best chance of a timely response).
+
 UCR HPCC will be performing routine maintenance on the cluster between the following times:
 
 * Start: **Thursday, Jul 9 2026, 8am**
 * End:   **Friday, Jul 10 2026, 8pm**
 
 A Slurm reservation block has been set to prevent jobs from running during maintenance. If your job is stuck in the queue with the reason
-"ReqNodeNotAvail", please be aware that **jobs will not automatically start after the shutdown** — any jobs remaining in the queue at the start of maintenance will be cancelled and will need to be manually requeued once the cluster is back online. We apologize for the disruption that this shutdown will cause.
+"ReqNodeNotAvail", you may resubmit your job with a shorter duration. Please be aware that **jobs will not automatically start after the shutdown** — any jobs remaining in the queue at the start of maintenance will be cancelled and will need to be manually requeued once the cluster is back online. We apologize for the disruption that this shutdown will cause.
+
+Impacted Services will include cluster access - SSH, Slurm, data access (including HTTP access); all OnDemand Services; normal email support (emails to support@hpcc.ucr.edu).
+
 
 ## Unscheduled exceptions and downtimes
 
