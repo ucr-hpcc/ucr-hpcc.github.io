@@ -220,7 +220,7 @@ To start a batch job, you can build off of the following sbatch file:
 #SBATCH --time 1-00:00:00
 
 # Check if this is the first run or a resumed job
-if [ "$SLURM_RESTART_COUNT" -eq 0 ]; then
+if [ -n "$SLURM_RESTART_COUNT" ] && ["$SLURM_RESTART_COUNT" -eq 0 ]; then
     echo "This is the first time running the job"
     # Put the code for the first run here
     # Example: initializing data or setting up environment
