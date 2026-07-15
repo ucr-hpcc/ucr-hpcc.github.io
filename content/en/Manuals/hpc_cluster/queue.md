@@ -165,9 +165,7 @@ Some groups on our system have purchased additional hardware. These nodes will n
 This is because jobs submitted to the group's partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.
 
 
-## Using the Preempt Partitions (TENATIVE)
-
-**NOTE** The full release of the preempt partition is planned for future release and **is not** yet available!
+## Using the Preempt Partitions
 
 This guide assumes that you know how to run Interactive and Batch jobs through Slurm. This is a more advanced job that expands on other jobs, so if you are not familiar with running jobs then please see the [Managing Jobs](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/) page of our documentation.
 
