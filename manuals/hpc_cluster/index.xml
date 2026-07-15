@@ -966,7 +966,7 @@ This is because jobs submitted to the group&amp;rsquo;s partition will be evalua
 #SBATCH --mem 8GB
 #SBATCH --time 1-00:00:00
 # Check if this is the first run or a resumed job
-if [ &amp;quot;$SLURM_RESTART_COUNT&amp;quot; -eq 0 ]; then
+if [ -n &amp;quot;$SLURM_RESTART_COUNT&amp;quot; ] &amp;amp;&amp;amp; [&amp;quot;$SLURM_RESTART_COUNT&amp;quot; -eq 0 ]; then
 echo &amp;quot;This is the first time running the job&amp;quot;
 # Put the code for the first run here
 # Example: initializing data or setting up environment
