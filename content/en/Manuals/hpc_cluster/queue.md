@@ -220,16 +220,16 @@ To start a batch job, you can build off of the following sbatch file:
 #SBATCH --time 1-00:00:00
 
 # Check if this is the first run or a resumed job
-if [ -n "$SLURM_RESTART_COUNT" ] && ["$SLURM_RESTART_COUNT" -eq 0 ]; then
-    echo "This is the first time running the job"
-    # Put the code for the first run here
-    # Example: initializing data or setting up environment
-    # Remember that a job only has 1 minute of guaranteed runtime. Keep
-    # any initialization/recovery short otherwise it might be interrupted
-else
+if [ -n "$SLURM_RESTART_COUNT" ] && [ "$SLURM_RESTART_COUNT" -gt 0 ]; then
     echo "The job is being resumed after a preemption"
     # Put the code for a resumed job here
     # Example: resuming from a checkpoint or continuing work
+    # Remember that a job only has 1 minute of guaranteed runtime. Keep
+    # any initialization/recovery short otherwise it might be interrupted
+else
+    echo "This is the first time running the job"
+    # Put the code for the first run here
+    # Example: initializing data or setting up environment
     # Remember that a job only has 1 minute of guaranteed runtime. Keep
     # any initialization/recovery short otherwise it might be interrupted
 fi
