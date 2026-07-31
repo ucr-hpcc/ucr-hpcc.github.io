@@ -80,10 +80,10 @@ The latest hardware/facility description for grant applications is available &lt
 &lt;/li>
 &lt;/ul></description></item><item><title>Manuals: Getting Started</title><link>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hpcc.ucr.edu/manuals/hpc_cluster/start/</guid><description>
 &lt;h2 id="login-from-mac-linux-mobaxterm">Login from Mac, Linux, MobaXTerm&lt;/h2>
-&lt;p>The initial login brings users into the cluster head node (i.e. jay, lark). From there, users can submit jobs via &lt;code>srun&lt;/code>/&lt;code>sbatch&lt;/code> to the compute nodes to perform intensive tests.
+&lt;p>The initial login brings users into the cluster head node (i.e. bluejay, skylark). From there, users can submit jobs via &lt;code>srun&lt;/code>/&lt;code>sbatch&lt;/code> to the compute nodes to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.&lt;/p>
-&lt;p>Open the terminal and type&lt;/p>
-&lt;pre>&lt;code class="language-bash">ssh -X username@cluster.hpcc.ucr.edu
+&lt;p>Open a terminal and type the following (replace USERNAME with your HPCC username, e.g. jsmit001):&lt;/p>
+&lt;pre>&lt;code class="language-bash">ssh USERNAME@cluster.hpcc.ucr.edu
 &lt;/code>&lt;/pre>
 &lt;h2 id="login-from-windows">Login from Windows&lt;/h2>
 &lt;p>Please refer to the login instructions of our &lt;a href="../../manuals/linux_basics/intro/#windows">Linux Basics manual&lt;/a>.&lt;/p>
