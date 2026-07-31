@@ -10,13 +10,13 @@ aliases:
 
 ## Login from Mac, Linux, MobaXTerm
 
-The initial login brings users into the cluster head node (i.e. jay, lark). From there, users can submit jobs via `srun`/`sbatch` to the compute nodes to perform intensive tests.
+The initial login brings users into the cluster head node (i.e. bluejay, skylark). From there, users can submit jobs via `srun`/`sbatch` to the compute nodes to perform intensive tests.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.
 
-Open the terminal and type
+Open a terminal and type the following (replace USERNAME with your HPCC username, e.g. jsmit001):
 
 ```bash
-ssh -X username@cluster.hpcc.ucr.edu
+ssh USERNAME@cluster.hpcc.ucr.edu
 ```
 
 ## Login from Windows
