@@ -68,7 +68,7 @@ Labs have the ability to purchase nodes and connect them to the cluster for incr
 Sometimes, whether it be due to deadlines or technical limitations, more resources might be needed than are supplied by default. If you require
 a temporary increase in quotas, please reach out to support@hpcc.ucr.edu with a complete "[Justification for Quota Exception](https://docs.google.com/document/d/1Ate2yOdmaYrwzcjNp8S4-8VeAuH2WYwAuyVxAv0FDfo/)" form.
 The following are typical circumstances that could justify increased quotas:
- - **Urgent Deadlines**: ie. Grant submissions, conference presentations, paper deadlines
+ - **Urgent Deadlines**: ie. Grant submissions, conference presentations, paper deadlines (please include dates in the request, to allow us to best judge timelines)
  - **Special Technical Needs**: The limits do not meet the technical requirements for the program(s) that are trying to be ran.
 
 The amount of additional resources, the length of time that the resources are needed (typically 2 weeks or less), and the frequency of the requests are all factors that determine whether your request
