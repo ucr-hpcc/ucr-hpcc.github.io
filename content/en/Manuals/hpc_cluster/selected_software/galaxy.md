@@ -47,15 +47,15 @@ When starting a Galaxy session, you have the option to select which 'runner' to 
 
 ![slurmgalaxyexample](/img/slurm_ex.gif)
 <br>
-The cluster's environment module system has been configured to work with Galaxy via Galaxy's tool configuration file system. You can interact with any module on the cluster through Galaxy via the 'Environment modules' section in Galaxy's Tool bar. Below you can see where this section is located.
+The cluster's environment module system has been configured to work with Galaxy via Galaxy's tool configuration file system. You can interact with any module on the cluster through Galaxy via the 'Run Module' tool under the 'UCR HPCC Tools' section in Galaxy's Tool bar. Below you can see where to find the tool.
 <br>
-![envtoolsloc](/img/env_modules_ex.png)
+![runmoduletoolloc](/img/run_module1.png)
 
-When interacting with an environment module tool in Galaxy, you will notice that each tool follows the same format. This is because since each environment module is unique, trying to create a unique configuration file for each module would be time-consuming. Instead, all environment module tools are created with a template that allows each tool to still be run from within Galaxy, using their command line specific commands. If this setup isn't to your liking, you can either install the tool directly from Galaxy's tool shed repository or edit the specific environment module tool configuration file. All environment module tool configurations can be found under your '.galaxy' directory in the 'tools' directory under 'modules'. Below is an example image of how an environment module tool looks, the tool shown is fastqc.
+![runmoduletoolexample](/img/run_module2.png)
 
-![envtoolex](/img/env_module_tool_ex.png)
+The tool will display all current environment modules available on the cluster. You can select multiple modules to load in for a job, similar to how you would define a list of modules to load in an SBATCH script. This manual will briefly explain what each parameter does, using the fastqc tool as an example.
 
-An explanation on what each parameter does can be found under each environment module tool. This manual will briefly explain what each parameter does, using the fastqc tool as an example.
+**Select Environment Modules**: This field specifies the Environment Modules you would like to be used for the tool. You can search through the list through the text field. All modules in the 'Selected' section will be used when running the tool.
 
 **What upload type would you like to use**: This field specifies the files you would like to be used as input for the tool. Here you can either provide a ‘Dataset’ which is Galaxy's custom format for files, or you can provide the full path of a file on the cluster as an input. One benefit for this method is that you don't need to directly upload a file to the Galaxy in order for it to be used as input.
 
@@ -83,6 +83,51 @@ fastqc -i $input -o $output
 ```
 
 If a tool is installed from Galaxy’s tool shed repository and the same environment module tool corresponds to the specific installed tool, then the tool installed via Galaxy's tool shed repository will take precedence over the environment module and act as the default. Most tools from Galaxy’s tool shed repository are unique to the tool they were made for, so they will have custom parameters that reflect this. This guide will not go over how to modify a tool configuration file, instead please refer to the Galaxy's [documentation](https://docs.galaxyproject.org/en/latest/dev/schema.html) on the topic.
+
+## How to upload data to your Galaxy instance
+The standard way to upload data to Galaxy is by using their upload tool, typically located on the top left of the left side panel. Galaxy has its own internal schema for interpreting data, that schema being what Galaxy call's 'Datasets'. In order to work with Galaxy tools and or workflows, you must upload your data to Galaxy such that it is interpreted by Galaxy as a Dataset.
+
+Normally, using the standard upload tool will create a copy of whatever data you are uploading. Depending on how large the data you're uploading, this process can take a while. The HPCC team has explored alternative ways to speed up this process and found that the best way to upload data to Galaxy is by uploading data as part of a 'Data Library'. Below you can see an example on where to find this feature.
+
+![howtoupload1](/img/howtoupload1.png)
+
+A 'Data Library' is a collection of Datasets with additional options for uploading data, not seen in the standard Galaxy upload tool. The main option with data libraries is the ability to have files symbolically linked (should they already exist on the cluster) to your Galaxy instance. Data uploaded through this method is still transformed into a Dataset, so it can be interpreted by Galaxy, however now a copy isn't created and therefore no time or space is wasted.
+
+This manual will provide a quick example on how to upload data using this method. The image above shows the location where you can find the 'Data Library' feature. Once you have located it, create a library by clicking on the 'Library' button, filling in the fields for your library as seen below.
+
+![howtoupload2](/img/howtoupload2.png)
+
+Now select the library by clicking on its name. From there click on the 'Datasets' and under 'Admins Only', click on 'from Path' as seen in the image below.
+
+![howtoupload3](/img/howtoupload3.png)
+
+Afterwards, a new menu will appear where you will be prompted to enter the full path of the files on the cluster you wish to import. It is recommended to specify each file individually rather than the directory where the files reside.
+
+![howtoupload4](/img/howtoupload4.png)
+
+The reason for this is that if you specify a directory then Galaxy will only create one job to upload all files, which will essentially make the entire upload process sequential. Whereas if you specify each file individually then Galaxy will create a job for each file, allowing the upload process to be parallelized.
+
+You can use the following command to quickly list all the files in a directory in the format required to upload for Galaxy to process each file individually.
+
+```
+mcuay001@skylark:~/Fasta_Data$ ls -1 $PWD/*
+/rhome/mcuay001/Fasta_Data/sample_1.fasta
+/rhome/mcuay001/Fasta_Data/sample_2.fasta
+/rhome/mcuay001/Fasta_Data/sample_3.fasta
+```
+
+A file is fully uploaded once its 'State' is empty. Once all files have been uploaded, navigate to 'Add to history', select the format you wish to upload your data as, and finally you provide the name of the 'History' for the data. The final output will look like the image below:
+
+![howtoupload5](/img/howtoupload5.png)
+
+## Preconfigured Tool Set
+The HPCC team has configured Galaxy OnDemand with over 100+ preconfigured tools from the official Galaxy Project ToolShed repository. Due to the size of this tool set, it is not loaded in by default as doing so would cause Galaxy instances to take longer than necessary to fully initialize. Users have the option to load in this tool set should they require it by clicking on the reload symbol as seen in the image below:
+
+Again, due to the size of the tool set it takes about 7 to 10 minutes before all the tools become accessible to a user. Once all tools have been loaded in, Galaxy will automatically refresh your instance with all the preconfigured tools available through the tool panel as seen in the image below.
+
+![toolbox1](/img/toolbox1.png)
+
+![toolbox2](/img/toolbox2.png)
 
 ## Common Issues
 
