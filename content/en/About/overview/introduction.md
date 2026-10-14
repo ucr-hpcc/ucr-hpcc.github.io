@@ -50,8 +50,6 @@ The following lists the most frequently visted pages of the HPCC site. They can 
 + [Facility description document](https://goo.gl/43eOwQ) for grant applications and related purposes 
 
 #### Help and contacts
-
-+ For Support please consider asking on [our Forums](https://community.hpcc.ucr.edu/).
 + For requesting user accounts, password help, or software requests, please email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 + You can also join our Slack at [ucr-hpcc](https://ucr-hpcc.slack.com/).
 + [Contact information](https://hpcc.ucr.edu/about/overview/people/)
