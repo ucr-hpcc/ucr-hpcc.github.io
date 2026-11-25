@@ -9,207 +9,139 @@ aliases:
     - /manuals/login/
 ---
 
-## Requirements
+## Before You Start
 
-A user account is required to access HPCC's research computing infrastructure.
-How to obtain a user account is described
-[here](https://hpcc.ucr.edu/about/facility/access/). A new user's login
-credentials (username and password) are emailed to the address provided in the
-corresponding account request. For external users it is important to know that
-the below [Password+DUO](#passwordduo) multifactor authenication system is only
-available to UCR users. Thus, external users have to use the alternative [SSH
-Key](#ssh-keys) based authentication method, which is both secure and
-convenient to use. 
+You need an HPCC user account. If you don't have one, see this article on [requesting access](https://hpcc.ucr.edu/about/facility/access/). Your login credentials will be emailed to you upon approval.
 
-The login instructions of this page are organized in three main sections:
+There are three ways to access the cluster:
 
-+ [A. SSH Login via Terminal](#a-ssh-login-from-terminal)
-+ [B. Web-based Access](#b-web-based-access)
-+ [C. Data Sharing Access](#c-data-sharing-access)
+| Method | Best for | Section |
+|---|---|---|
+| SSH from a terminal | Command-line work, job submission | [A. SSH Login](#a-ssh-login-from-a-terminal) |
+| Web browser (OnDemand) | JupyterHub, RStudio, VSCode, remote desktop | [B. Web-based Access](#b-web-based-access) |
+| Data-sharing account | Restricted accounts for file transfer | [C. Data-Sharing Account Access](#c-data-sharing-account-access) |
 
-## A. `SSH` Login from Terminal
+### Choose your authentication method
 
-Terminal-based login is the most feature-rich method for accessing HPC
-resources. Web-based alternatives via [JupyterHub](#b-web-based-access) and
-[RStudio Server](#b-web-based-access) are also provided. To access the HPCC
-cluster with the standard `ssh` protocol, users want to follow steps 1-3. Only
-step 1 is required after setting up ssh key based access.
+Passwords alone provide inadequate security. Use one of these:
 
+| Method | Services | Who can use it |
+|---|---|---|
+| [Password + Duo](#password--duo) | All | UCR users only. |
+| [SSH keys](#ssh-keys) | SSH/SFTP only | Everyone. **External (non-UCR) users must use SSH keys.** |
 
-__1.__ Type the following `ssh` login command from a terminal application, where `<username>` needs to be replaced by the actual account name of a user. The `<>` characters indicate a placeholder and need to be removed. Next, press enter to execute the `ssh` command.
+---
 
-```bash
-ssh -X <username>@cluster.hpcc.ucr.edu
-```
+## A. SSH Login from a Terminal
 
-The `-X` argument enables X11 support, which is required for opening GUI applications on remote systems.
+1. Open a terminal (see [Terminal Options](#terminal-options) if you need one).
+2. Connect to the cluster, replacing `<USERNAME>` with your HPCC username:
 
-__2.__ Type your password and hit enter. Note, when typing the password the cursor will not move and nothing is printed to the screen. If ssh key access is enabled, both the password and Duo steps will be skipped automatically during the log in process.
+    ```bash
+    ssh <USERNAME>@cluster.hpcc.ucr.edu
+    ```
 
-__3.__ Follow the Duo multifactor authenication instructions printed to the screen. As external users do not have access to UCR's Duo system, they can only log in via the alternative ssh key method. How to enable ssh keys is described [here](#ssh-keys). Note, Duo will be bypassed if ssh key based login is enabled. This can be more conveniet than Duo when accessing the cluster frequently. 
-    
-If the login is performed via a GUI application, which is an option in MobaXterm,
-then one can provide the same login information given under the above `ssh`
-commad in the corresponding fields of the login window as follows:
+3. Authenticate:
+    - **Password + Duo:** enter your password, then approve the Duo prompt.
+    - **SSH key:** no password or Duo prompt is needed.
 
-+ Host name: `cluster.hpcc.ucr.edu`
-+ User name: ...
-+ Password: ...
+4. **First login or after a password reset:** change your password immediately:
 
-__Importantly__, after the first login into a new account (or a password reset),
-users need to change their password with the `passwd` command and then follow
-the on-screen instructions. This requires to enter the current password once
-and the new password twice. New passwords need to be at least 8 characters 
-long and meet at least 3 of the following requirments: lowercase character, 
-uppercase character, number, and punctuation character.
+    ```bash
+    passwd
+    ```
 
-__What to do if password/Duo is not working?__ If this happens then most often the login is blocked because a password was typed too many times incorrectly, or 
-not changed after the first login (see above). To correct this, please request a password reset by emailing [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). 
-Remember, password/Duo based access is only possible if a user's UCR NetID matches the corresponding HPCC username. If this is not the case then 
-UCR users can request to change their HPCC user account name to their NetID or use the [ssh key](#ssh-keys) based access method.
+    New passwords must be at least 8 characters long and contain at least 3 of the following: lowercase letters, uppercase letters, numbers, punctuation.
+
+> **Warning:** Skipping the password change, or entering a wrong password repeatedly, can lock you out. If that happens, email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to request a reset.
 
 ### Terminal Options
 
-Various ssh terminal applications are available for all major operating systems. Examples include:
+| Operating system | Recommended terminal |
+|---|---|
+| macOS | Built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/) |
+| Linux | Built-in terminal |
+| Windows | [MobaXterm](https://mobaxterm.mobatek.net/) (recommended; see the [demos](https://mobaxterm.mobatek.net/demo.html)). You can type the `ssh` command, or fill in the host (`cluster.hpcc.ucr.edu`), user name and password in its session window. |
+| ChromeOS | Linux terminal (enable Linux apps in ChromeOS settings first) |
 
-+ macOS: built-in macOS [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or [iTerm2](https://iterm2.com/) 
-+ Windows: [MobaXterm](http://mobaxterm.mobatek.net/) is a very feature rich terminal option for Windows users. [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) is an alternative, but outdated and not recommended anymore. [Here](https://mobaxterm.mobatek.net/demo.html) are annimated usage introductions for MobaXterm.
-+ Linux: a wide range of Terminal applications is available for Linux. Usually, the default terminal available on a Linux distribution will be sufficient. 
-+ ChromeOS: after enabling Linux apps on Chromebooks one can use the default terminal that is similar to those on Linux systems. 
+---
 
-### Remote Graphics Support
+## Authentication Details
 
-X11 support is included in the terminal applications of most OSs. This includes MobaXterm on Windows, Linux and ChromeOS terminals. On macOS systems, users need to run XQuartz 
-in the background to enable X11 graphics display support. XQuartz can be downloaded from [here](https://www.xquartz.org/) (also see this video [here](https://www.youtube.com/watch?v=uS4zTqfwSSQ)). 
-Note, XQuartz is optional if remote graphics support is not needed.
-    
+### Password + Duo
 
-## Additional Authentication Details
+Password + Duo is available **only to UCR users whose UCR NetID matches their HPCC username**.
 
-In early 2022 the HPCC adopted a more secure authentication method for logging
-into its clusters. Passwords alone will no longer be allowed for `SSH` or file
-tansfer protocols. Instead [Password+DUO](#passwordduo) or [SSH
-Keys](#ssh-keys) will be required. Because `Password+DUO` authentication
-requires a UCR NetID, this access method is only available to UCR users for
-both `ssh` and file transfer protocols (_e.g._ sFTP or SCP). Thus, external
-users need to use the alternative [ssh key](#ssh-keys) method. To enable ssh key access,
-external users need to email their public key to
-[support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) (see below for details).
-
-### Password+Duo
-
-Users familiar with UCR's Duo system can log in to HPCC's clusters by following the
-on screen instructions during the [ssh login](#log-in-via-ssh-from-terminal). For new users, instructions 
-for UCR's Duo Multifactor Authenication system are available
-in this [PDF](https://its.ucr.edu/sites/default/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf)
-and on UCR's [MyAccount](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount)
-page. Importantly, the login via the `Password+DUO` method will only work if a
-user's NetID matches the username of the corresponding HPCC account. If
-this is not the case then the HPCC username can be changed to a user's NetID.
-This change can be initiated by emailing [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
-As mentioned above, external users will not have access to UCR's Duo system, and thus have to use
-the alternative [ssh key](#ssh-keys) access method to log in to HPCC's resources.
+- To set up Duo, see UCR's [Multi-Factor Authentication handout](https://its.ucr.edu/sites/default/files/2018-06/Multi-Factor%20Authentication%20Handout.pdf) and [MyAccount page](https://its.ucr.edu/blog/2020/06/11/customer-support-enhancements-myaccount).
+- If your HPCC username differs from your NetID, email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to request a username change, or use [SSH keys](#ssh-keys) instead.
 
 ### SSH Keys
 
-SSH keys are an access credential used by the Secure Shell (SSH) protocol. For this a key pair is
-created comprised of a private key and a public key. The private key remains on a user's system and should 
-not be shared. The public key will be uploaded to the remote system, here `~/.ssh` directory of a user's account
-on the HPCC cluster. SSH key based access works analogous to how a key and a lock are used in the real world, where 
-one uniquely fits into the other. Access can only be established if the private key on a user's system fits the 
-public key on the remote system.
+An SSH key pair has two parts:
 
-The following introduces how to create an ssh key pair from the command-line in a [terminal](#terminal) and upload the
-public key to the remote system. The latter upload will only work if a user can access the remote system, 
-_e.g._ via temporary [Password+DUO](#passwordduo) access. User without this option have to email their public
-ssh key to [suppor@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) so that the systems administrator can upload the 
-public key for them. Additional details on ssh key generation and uploads are provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
-This includes GUI based based options. However, we highly recommend to use the command-line option on all OSs which are
-much more straigthforward to use, including [MobaXterm](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm) on Windows. 
+- **Private key** (`~/.ssh/id_ed25519`): stays on your computer. **Never share it.**
+- **Public key** (`~/.ssh/id_ed25519.pub`): uploaded to the cluster, or emailed to support. This is the only file you share.
 
-#### (a) SSH Key Creation
+With a proper SSH key setup, the server will not ask for a password or Duo approval.
 
-An ssh key pair can be created with the following commands in a [terminal](#terminal) application of all major
-operating systems, including Windows, macOS, Linux and ChromeOS. Note, the following commands need to be executed on 
-a user's local computer (not the cluster).
+#### Step 1: Create a key pair
 
-__1.__ Create SSH directory
+Run these commands **on your own computer, not on the cluster**. They work in the terminal on macOS, Linux, ChromeOS and MobaXterm. (MobaXterm users can also follow the [MobaXterm key guide](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/sshkeys_winos/#create-ssh-keys-mobaxterm).)
 
-```bash
-mkdir -m 700 ${HOME}/.ssh
-```
-__2.__ Create key pair (private and public)
+1. Generate the key pair. When prompted, accept the default file location. You will also be asked to enter a passphrase. This provides additional protection, but is optional:
 
-```bash
-ssh-keygen -t rsa -f ~/.ssh/id_rsa
-```
+    ```bash
+    ssh-keygen -t ed25519
+    ```
 
-Follow the prompts and complete the processes. You might be prompted to enter a passcode/passphrase for this key generation, enter one if you like it leave it blank for no passcode. This passcode is unrelated to your cluster password and HPCC system administrators have no control over this. If you forget this passcode then the SSH key must be renegerated, there's no way to recover it. Once the command has completed, one will find two files in the `~/.ssh` directory of 
-a user account.
+3. Confirm both files were created:
 
-__3.__ Inspect `~/.ssh`  directory
+    ```bash
+    ls ~/.ssh/
+    ```
 
-```bash 
-ls ~/.ssh/
-  id_rsa
-  id_rsa.pub
-```
+    You should see `id_ed25519` and `id_ed25519.pub`.
 
-#### (b) SSH Key Upload
+> **Note:** The ssh-keygen passphrase is separate from your cluster password. If you forget it, it can't be recovered. Create a new key pair and upload the new public key.
 
-The `id_rsa` and `id_rsa.pub` files are the private and public keys,
-respectively. The private key should never be shared with anyone. This means it
-should not be emailed or uploaded to a remote system. Only the public key will
-be uploaded to the remote system, here HPCC user account. Specifically, the public key will
-be stored in a file called `authorized_keys` under a directory called `~/.ssh`.
-If not present yet both need to be created. Note, `~/` refers to the higest (root)
-level of a user account. 
+#### Step 2: Upload the public key
 
-__1.__ Upload of first public ssh key
+Choose the option that matches your situation:
 
-If the `authorized_keys` doesn't exist yet, the following `scp` command can be run from a user's system. 
-This command will create the `~/.ssh/authorized_keys` file and populate it with the public key.
+- **UCR users:** you need Password + Duo to log in for this step. Run this on your computer:
+
+    ```bash
+    ssh-copy-id -i ~/.ssh/id_ed25519.pub <USERNAME>@cluster.hpcc.ucr.edu
+    ```
+
+- **External users** (no Password + Duo access): email your **public** key (`id_ed25519.pub`) to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) and staff will install it for you.
+
+#### Step 3: Test the key
 
 ```bash
-scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:.ssh/authorized_keys
+ssh <USERNAME>@cluster.hpcc.ucr.edu
 ```
 
-__2.__ Upload of subsequent public ssh keys
+You should be logged in without a password or Duo prompt.
 
-If the `authorized_keys` file already exists, one can append the new public key as follows.
+For more on SSH keys, see the [SSH Keys manual](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
 
-```bash
-scp .ssh/id_rsa.pub username@cluster.hpcc.ucr.edu:tmpkey && ssh username@cluster.hpcc.ucr.edu "cat tmpkey >> ~/.ssh/authorized_keys && rm tmpkey"
-```
+---
 
-__3.__ Check ssh key based access
+## B. Web-based Access
 
-To test whether ssh key based access is functional, the following log in should work without asking for a password. However,
-it may ask for a passphrase if the ssh key pair was created this way. 
+[OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/) lets you use the cluster from a web browser. We provide JupyterHub, RStudio, VSCode, and full remote desktop sessions through the OnDemand portal. These applications are queued onto the same compute nodes as other Slurm jobs, providing the best performance possible.
 
-```bash
-ssh <username>@cluster.hpcc.ucr.edu
-```
+The OnDemand portal is currently not available to external users, due to Duo MFA requirements.
 
-#### (c) Additional Details on SSH Keys
+---
 
-See [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sshkeys/).
+## C. Data-Sharing Account Access
 
+Data-sharing accounts are a special type of external account, restricted to data access operations on the HPCC cluster. These accounts must use the same [SSH Key](#ssh-keys) authentication method as other external accounts. Additional information on sharing data is provided [here](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers).
 
-## B. Web-based Access 
+---
 
-Web-based HPCC cluster access is provided via [OnDemand](https://hpcc.ucr.edu/manuals/hpc_cluster/selected_software/ondemand/), allowing users to
-launch JupyterHub, RStudio, VSCode, Desktop Sessions, and more all from their web browser. All jobs will run on compute nodes, meaning that resources
-are dedicated to your instance and provide the best performance possible for these applications.
+## Need Help?
 
-Users with an HPCC cluster account can access them with the same login credential used for [ssh access](#a-ssh-login-from-terminal).
-
-## C. Data Sharing Access
-
-Users accessing HPCC's infrastructure mainly for file transfers and data sharing want to 
-follow the corresponding instructions on the [Data Sharing](https://hpcc.ucr.edu/manuals/hpc_cluster/sharing/#file-transfers) page.
-Users with accounts restricted to data sharing have to provide their public [SSH Key](#ssh-keys) when accesing the system for the first time 
-by following the instructions in the [SSH Key](#ssh-keys) section above. 
-
-
-
+Email [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) for password resets, username changes or SSH key installation.
